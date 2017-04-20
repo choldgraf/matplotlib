@@ -1,0 +1,20 @@
+.. _style_sheets-examples-index:
+
+##############################################
+style_sheets Examples
+##############################################
+
+.. htmlonly::
+
+    :Release: |version|
+    :Date: |today|
+
+.. toctree::
+    :maxdepth: 1
+
+    bmh <bmh.rst>
+    dark_background <dark_background.rst>
+    fivethirtyeight <fivethirtyeight.rst>
+    ggplot <ggplot.rst>
+    grayscale <grayscale.rst>
+    style_sheets_reference <style_sheets_reference.rst>

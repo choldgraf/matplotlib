@@ -1,0 +1,7 @@
+matplotlib\.axes\.Axes\.axes
+============================
+
+.. currentmodule:: matplotlib.axes
+
+.. autoattribute:: Axes.axes
+

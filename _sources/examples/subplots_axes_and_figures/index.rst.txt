@@ -1,0 +1,18 @@
+.. _subplots_axes_and_figures-examples-index:
+
+##############################################
+subplots_axes_and_figures Examples
+##############################################
+
+.. htmlonly::
+
+    :Release: |version|
+    :Date: |today|
+
+.. toctree::
+    :maxdepth: 1
+
+    equal_aspect_ratio <equal_aspect_ratio.rst>
+    fahrenheit_celsius_scales <fahrenheit_celsius_scales.rst>
+    ganged_plots <ganged_plots.rst>
+    subplot <subplot.rst>

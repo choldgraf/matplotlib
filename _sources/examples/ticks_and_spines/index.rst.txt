@@ -1,0 +1,22 @@
+.. _ticks_and_spines-examples-index:
+
+##############################################
+ticks_and_spines Examples
+##############################################
+
+.. htmlonly::
+
+    :Release: |version|
+    :Date: |today|
+
+.. toctree::
+    :maxdepth: 1
+
+    scalarformatter <scalarformatter.rst>
+    spines <spines.rst>
+    spines_bounds <spines_bounds.rst>
+    spines_dropped <spines_dropped.rst>
+    tick-formatters <tick-formatters.rst>
+    tick-locators <tick-locators.rst>
+    tick_labels_from_values <tick_labels_from_values.rst>
+    ticklabels_rotation <ticklabels_rotation.rst>

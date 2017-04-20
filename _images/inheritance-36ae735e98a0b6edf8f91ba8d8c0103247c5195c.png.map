@@ -1,0 +1,23 @@
+<map id="inheritance1bda3e63b5" name="inheritance1bda3e63b5">
+<area shape="rect" id="node1" href="#matplotlib.dates.AutoDateFormatter" target="_top" title="This class attempts to figure out the best format to use. &#160;This is" alt="" coords="323,69,443,90"/>
+<area shape="rect" id="node2" href="ticker_api.html#matplotlib.ticker.Formatter" target="_top" title="Create a string based on a tick value and location." alt="" coords="190,132,260,154"/>
+<area shape="rect" id="node7" href="#matplotlib.dates.DateFormatter" target="_top" title="Tick location is seconds since the epoch. &#160;Use a :func:`strftime`" alt="" coords="336,111,431,132"/>
+<area shape="rect" id="node13" href="#matplotlib.dates.IndexDateFormatter" target="_top" title="Use with :class:`~matplotlib.ticker.IndexLocator` to cycle format" alt="" coords="321,154,445,175"/>
+<area shape="rect" id="node3" href="#matplotlib.dates.AutoDateLocator" target="_top" title="On autoscale, this class picks the best" alt="" coords="497,132,604,154"/>
+<area shape="rect" id="node4" href="#matplotlib.dates.DateLocator" target="_top" title="Determines the tick locations when plotting dates." alt="" coords="341,196,425,218"/>
+<area shape="rect" id="node10" href="#matplotlib.dates.RRuleLocator" target="_top" title="RRuleLocator" alt="" coords="505,175,596,196"/>
+<area shape="rect" id="node14" href="#matplotlib.dates.MicrosecondLocator" target="_top" title="Make ticks on occurances of each microsecond." alt="" coords="488,218,613,239"/>
+<area shape="rect" id="node19" href="#matplotlib.dates.YearLocator" target="_top" title="Make ticks on a given day of each year that is a multiple of base." alt="" coords="509,260,592,282"/>
+<area shape="rect" id="node5" href="units_api.html#matplotlib.units.ConversionInterface" target="_top" title="The minimal interface for a converter to take custom instances (or" alt="" coords="5,90,130,111"/>
+<area shape="rect" id="node6" title="Converter for datetime.date and datetime.datetime data," alt="" coords="177,90,273,111"/>
+<area shape="rect" id="node8" href="ticker_api.html#matplotlib.ticker.Locator" target="_top" title="Determine the tick locations;" alt="" coords="193,196,257,218"/>
+<area shape="rect" id="node9" href="#matplotlib.dates.DayLocator" target="_top" title="Make ticks on occurances of each day of the month. &#160;For example," alt="" coords="670,69,749,90"/>
+<area shape="rect" id="node12" href="#matplotlib.dates.HourLocator" target="_top" title="Make ticks on occurances of each hour." alt="" coords="668,111,752,132"/>
+<area shape="rect" id="node15" href="#matplotlib.dates.MinuteLocator" target="_top" title="Make ticks on occurances of each minute." alt="" coords="663,154,756,175"/>
+<area shape="rect" id="node16" href="#matplotlib.dates.MonthLocator" target="_top" title="Make ticks on occurances of each month month, e.g., 1, 3, 12." alt="" coords="664,196,755,218"/>
+<area shape="rect" id="node17" href="#matplotlib.dates.SecondLocator" target="_top" title="Make ticks on occurances of each second." alt="" coords="660,239,759,260"/>
+<area shape="rect" id="node18" href="#matplotlib.dates.WeekdayLocator" target="_top" title="Make ticks on occurances of each weekday." alt="" coords="656,282,763,303"/>
+<area shape="rect" id="node11" href="ticker_api.html#matplotlib.ticker.TickHelper" target="_top" title="TickHelper" alt="" coords="30,175,105,196"/>
+<area shape="rect" id="node20" title="Use this class to parse date strings to matplotlib datenums when" alt="" coords="172,47,278,69"/>
+<area shape="rect" id="node21" title="Use this class to parse date strings to matplotlib datenums when" alt="" coords="21,47,113,69"/>
+</map>

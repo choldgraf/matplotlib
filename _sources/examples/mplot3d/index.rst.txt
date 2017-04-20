@@ -1,0 +1,46 @@
+.. _mplot3d-examples-index:
+
+##############################################
+mplot3d Examples
+##############################################
+
+.. htmlonly::
+
+    :Release: |version|
+    :Date: |today|
+
+.. toctree::
+    :maxdepth: 1
+
+    2dcollections3d <2dcollections3d.rst>
+    3d_bars <3d_bars.rst>
+    bars3d <bars3d.rst>
+    contour3d <contour3d.rst>
+    contour3d_2 <contour3d_2.rst>
+    contour3d_3 <contour3d_3.rst>
+    contourf3d <contourf3d.rst>
+    contourf3d_2 <contourf3d_2.rst>
+    custom_shaded_3d_surface <custom_shaded_3d_surface.rst>
+    hist3d <hist3d.rst>
+    lines3d <lines3d.rst>
+    lorenz_attractor <lorenz_attractor.rst>
+    mixed_subplots <mixed_subplots.rst>
+    offset <offset.rst>
+    pathpatch3d <pathpatch3d.rst>
+    polys3d <polys3d.rst>
+    quiver3d <quiver3d.rst>
+    rotate_axes3d <rotate_axes3d.rst>
+    scatter3d <scatter3d.rst>
+    subplot3d <subplot3d.rst>
+    surface3d <surface3d.rst>
+    surface3d_2 <surface3d_2.rst>
+    surface3d_3 <surface3d_3.rst>
+    surface3d_radial <surface3d_radial.rst>
+    text3d <text3d.rst>
+    tricontour3d <tricontour3d.rst>
+    tricontourf3d <tricontourf3d.rst>
+    trisurf3d <trisurf3d.rst>
+    trisurf3d_2 <trisurf3d_2.rst>
+    wire3d <wire3d.rst>
+    wire3d_animation <wire3d_animation.rst>
+    wire3d_zero_stride <wire3d_zero_stride.rst>

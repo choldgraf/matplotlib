@@ -1,0 +1,25 @@
+.. _misc-examples-index:
+
+##############################################
+misc Examples
+##############################################
+
+.. htmlonly::
+
+    :Release: |version|
+    :Date: |today|
+
+.. toctree::
+    :maxdepth: 1
+
+    contour_manual <contour_manual.rst>
+    font_indexing <font_indexing.rst>
+    ftface_props <ftface_props.rst>
+    image_thumbnail_sgskip <image_thumbnail_sgskip.rst>
+    multiprocess_sgskip <multiprocess_sgskip.rst>
+    rasterization_demo <rasterization_demo.rst>
+    rc_traits_sgskip <rc_traits_sgskip.rst>
+    rec_groupby_demo <rec_groupby_demo.rst>
+    svg_filter_line <svg_filter_line.rst>
+    svg_filter_pie <svg_filter_pie.rst>
+    tight_bbox_test <tight_bbox_test.rst>
