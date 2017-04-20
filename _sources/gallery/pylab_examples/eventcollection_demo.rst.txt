@@ -75,7 +75,7 @@ and y data points on the respective axes for each curve
     # display the plot
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.051 seconds)
+**Total running time of the script:** ( 0 minutes  0.039 seconds)
 
 
 

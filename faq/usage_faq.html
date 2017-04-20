@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Usage &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation</title>
+    <title>Usage &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b14686d',
+        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation"
+          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="How-To" href="howto_faq.html" />
     <link rel="prev" title="Installation" href="installing_faq.html" /> 
@@ -193,7 +193,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 </div>
 <div class="section" id="general-concepts">
 <span id="id1"></span><h2>General Concepts<a class="headerlink" href="#general-concepts" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../api/pyplot_api.html#module-matplotlib" title="matplotlib"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code></a> has an extensive codebase that can be daunting to many
+<p><code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code> has an extensive codebase that can be daunting to many
 new users. However, most of matplotlib can be understood with a fairly
 simple conceptual framework and knowledge of a few important points.</p>
 <p>Plotting requires action on a range of levels, from the most general
@@ -205,7 +205,7 @@ the time, and still have the ability to use the low-level commands when
 needed.</p>
 <p>Therefore, everything in matplotlib is organized in a hierarchy. At the top
 of the hierarchy is the matplotlib &#8220;state-machine environment&#8221; which is
-provided by the <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> module. At this level, simple
+provided by the <a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> module. At this level, simple
 functions are used to add plot elements (lines, images, text, etc.) to
 the current axes in the current figure.</p>
 <div class="admonition note">
@@ -302,9 +302,9 @@ convert these to <code class="xref py py-obj docutils literal"><span class="pre"
 </div>
 <div class="section" id="matplotlib-pyplot-and-pylab-how-are-they-related">
 <span id="pylab"></span><h2>Matplotlib, pyplot and pylab: how are they related?<a class="headerlink" href="#matplotlib-pyplot-and-pylab-how-are-they-related" title="Permalink to this headline">¶</a></h2>
-<p>Matplotlib is the whole package; <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a>
+<p>Matplotlib is the whole package; <a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a>
 is a module in matplotlib; and <code class="xref py py-mod docutils literal"><span class="pre">pylab</span></code> is a module
-that gets installed alongside <a class="reference internal" href="../api/pyplot_api.html#module-matplotlib" title="matplotlib"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code></a>.</p>
+that gets installed alongside <code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code>.</p>
 <p>Pyplot provides the state-machine interface to the underlying
 object-oriented plotting library.  The state-machine implicitly and
 automatically creates figures and axes to achieve the desired
@@ -335,7 +335,7 @@ Setting the title, legend, and axis labels also automatically use the
 current axes and set the title, create the legend, and label the axis
 respectively.</p>
 <p><code class="xref py py-mod docutils literal"><span class="pre">pylab</span></code> is a convenience module that bulk imports
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> (for plotting) and <code class="xref py py-mod docutils literal"><span class="pre">numpy</span></code>
+<a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> (for plotting) and <code class="xref py py-mod docutils literal"><span class="pre">numpy</span></code>
 (for mathematics and working with arrays) in a single name space.
 Although many examples use <code class="xref py py-mod docutils literal"><span class="pre">pylab</span></code>, it is no longer recommended.</p>
 <p>For non-interactive plotting it is suggested
@@ -478,7 +478,7 @@ might lead to counter-intuitive behavior.</p>
 </pre></div>
 </div>
 <p>If you use the <a class="reference internal" href="../api/matplotlib_configuration_api.html#matplotlib.use" title="matplotlib.use"><code class="xref py py-func docutils literal"><span class="pre">use()</span></code></a> function, this must be done before
-importing <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a>. Calling <a class="reference internal" href="../api/matplotlib_configuration_api.html#matplotlib.use" title="matplotlib.use"><code class="xref py py-func docutils literal"><span class="pre">use()</span></code></a> after
+importing <a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a>. Calling <a class="reference internal" href="../api/matplotlib_configuration_api.html#matplotlib.use" title="matplotlib.use"><code class="xref py py-func docutils literal"><span class="pre">use()</span></code></a> after
 pyplot has been imported will have no effect.  Using
 <a class="reference internal" href="../api/matplotlib_configuration_api.html#matplotlib.use" title="matplotlib.use"><code class="xref py py-func docutils literal"><span class="pre">use()</span></code></a> will require changes in your code if users want to
 use a different backend.  Therefore, you should avoid explicitly calling
@@ -655,7 +655,7 @@ default value is <code class="xref py py-obj docutils literal"><span class="pre"
 <code class="xref py py-obj docutils literal"><span class="pre">QT_API</span></code> environment variable to either <code class="xref py py-obj docutils literal"><span class="pre">pyqt</span></code> or <code class="xref py py-obj docutils literal"><span class="pre">pyside</span></code> to use <code class="xref py py-obj docutils literal"><span class="pre">PyQt4</span></code> or
 <code class="xref py py-obj docutils literal"><span class="pre">PySide</span></code>, respectively.</p>
 <p>Since the default value for the bindings to be used is <code class="xref py py-obj docutils literal"><span class="pre">PyQt4</span></code>,
-<a class="reference internal" href="../api/pyplot_api.html#module-matplotlib" title="matplotlib"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code></a> first tries to import it, if the import fails, it tries to
+<code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code> first tries to import it, if the import fails, it tries to
 import <code class="xref py py-obj docutils literal"><span class="pre">PySide</span></code>.</p>
 </div>
 <div class="section" id="what-is-interactive-mode">
@@ -678,14 +678,14 @@ plotting is done with interactive mode either on or off.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Major changes related to interactivity, and in particular the
-role and behavior of <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a>, were made in the
+role and behavior of <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a>, were made in the
 transition to matplotlib version 1.0, and bugs were fixed in
 1.0.1.  Here we describe the version 1.0.1 behavior for the
 primary interactive backends, with the partial exception of
 <em>macosx</em>.</p>
 </div>
-<p>Interactive mode may also be turned on via <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.ion" title="matplotlib.pyplot.ion"><code class="xref py py-func docutils literal"><span class="pre">matplotlib.pyplot.ion()</span></code></a>,
-and turned off via <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.ioff" title="matplotlib.pyplot.ioff"><code class="xref py py-func docutils literal"><span class="pre">matplotlib.pyplot.ioff()</span></code></a>.</p>
+<p>Interactive mode may also be turned on via <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.ion" title="matplotlib.pyplot.ion"><code class="xref py py-func docutils literal"><span class="pre">matplotlib.pyplot.ion()</span></code></a>,
+and turned off via <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.ioff" title="matplotlib.pyplot.ioff"><code class="xref py py-func docutils literal"><span class="pre">matplotlib.pyplot.ioff()</span></code></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Interactive mode works with suitable backends in ipython and in
@@ -720,10 +720,10 @@ call a method of that instance:</p>
 </pre></div>
 </div>
 <p>Nothing changed, because the Axes methods do not include an
-automatic call to <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.draw_if_interactive" title="matplotlib.pyplot.draw_if_interactive"><code class="xref py py-func docutils literal"><span class="pre">draw_if_interactive()</span></code></a>;
+automatic call to <code class="xref py py-func docutils literal"><span class="pre">draw_if_interactive()</span></code>;
 that call is added by the pyplot functions.  If you are using
 methods, then when you want to update the plot on the screen,
-you need to call <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.draw" title="matplotlib.pyplot.draw"><code class="xref py py-func docutils literal"><span class="pre">draw()</span></code></a>:</p>
+you need to call <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.draw" title="matplotlib.pyplot.draw"><code class="xref py py-func docutils literal"><span class="pre">draw()</span></code></a>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -777,12 +777,12 @@ restriction is lifted, so one can write a script like this:</p>
 to the screen.</p>
 <p>When plotting interactively, if using
 object method calls in addition to pyplot functions, then
-call <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.draw" title="matplotlib.pyplot.draw"><code class="xref py py-func docutils literal"><span class="pre">draw()</span></code></a> whenever you want to
+call <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.draw" title="matplotlib.pyplot.draw"><code class="xref py py-func docutils literal"><span class="pre">draw()</span></code></a> whenever you want to
 refresh the plot.</p>
 <p>Use non-interactive mode in scripts in which you want to
 generate one or more figures and display them before ending
 or generating a new set of figures.  In that case, use
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a> to display the figure(s) and
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a> to display the figure(s) and
 to block execution until you have manually destroyed them.</p>
 </div>
 </div>
@@ -797,7 +797,7 @@ to block execution until you have manually destroyed them.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 19, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

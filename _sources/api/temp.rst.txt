@@ -1,0 +1,14 @@
+====
+TEMP
+====
+
+.. automodule:: matplotlib.pyplot
+   :no-members:
+   :no-inherited-members:
+
+.. autosummary::
+   :toctree: _as_gen
+   :template: function.rst
+
+   scatter
+   hist

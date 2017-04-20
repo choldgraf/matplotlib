@@ -58,7 +58,7 @@ Line Collection2
     plt.sci(line_segments)  # This allows interactive changing of the colormap.
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.096 seconds)
+**Total running time of the script:** ( 0 minutes  0.072 seconds)
 
 
 

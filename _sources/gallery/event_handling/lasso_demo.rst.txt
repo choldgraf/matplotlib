@@ -103,7 +103,7 @@ usable as is).  There will be some refinement of the API.
 
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.049 seconds)
+**Total running time of the script:** ( 0 minutes  0.032 seconds)
 
 
 

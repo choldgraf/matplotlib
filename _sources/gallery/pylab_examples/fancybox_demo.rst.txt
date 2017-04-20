@@ -184,7 +184,7 @@ Fancybox Demo
 
     test_all()
 
-**Total running time of the script:** ( 0 minutes  0.261 seconds)
+**Total running time of the script:** ( 0 minutes  0.339 seconds)
 
 
 

@@ -55,7 +55,7 @@ Display the colors from the default prop_cycle.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.301 seconds)
+**Total running time of the script:** ( 0 minutes  0.304 seconds)
 
 
 

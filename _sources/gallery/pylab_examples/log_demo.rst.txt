@@ -59,7 +59,7 @@ Log Demo
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.217 seconds)
+**Total running time of the script:** ( 0 minutes  0.132 seconds)
 
 
 

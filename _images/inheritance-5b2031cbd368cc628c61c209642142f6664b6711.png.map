@@ -65,7 +65,7 @@
 <area shape="rect" id="node59" href="collections_api.html#matplotlib.collections.PatchCollection" target="_top" title="A generic collection of patches." alt="" coords="239,1100,316,1116"/>
 <area shape="rect" id="node64" href="collections_api.html#matplotlib.collections.QuadMesh" target="_top" title="Class for the efficient drawing of a quadrilateral mesh." alt="" coords="248,1132,307,1148"/>
 <area shape="rect" id="node74" href="collections_api.html#matplotlib.collections.TriMesh" target="_top" title="Class for the efficient drawing of a triangular mesh using" alt="" coords="253,971,302,987"/>
-<area shape="rect" id="node36" href="cm_api.html#matplotlib.cm.ScalarMappable" target="_top" title="This is a mixin class to support scalar data to RGBA mapping." alt="" coords="5,955,84,971"/>
+<area shape="rect" id="node36" href="cm_api.html#matplotlib.cm.ScalarMappable" target="_top" title="This is a mixin class to support scalar data to RGBA mapping." alt="" coords="5,971,84,987"/>
 <area shape="rect" id="node37" href="patches_api.html#matplotlib.patches.ConnectionPatch" target="_top" title="A :class:`~matplotlib.patches.ConnectionPatch` class is to make" alt="" coords="369,745,451,761"/>
 <area shape="rect" id="node42" href="collections_api.html#matplotlib.collections.EventCollection" target="_top" title="A collection of discrete events." alt="" coords="372,1100,448,1116"/>
 <area shape="rect" id="node44" href="patches_api.html#matplotlib.patches.FancyArrow" target="_top" title="Like Arrow, but lets you set head width and head height independently." alt="" coords="379,391,441,407"/>

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Pyplot tutorial &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation</title>
+    <title>Pyplot tutorial &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b14686d',
+        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation"
+          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../index.html" />
     <link rel="up" title="Tutorials" href="tutorials.html" />
     <link rel="next" title="Image tutorial" href="image_tutorial.html" />
     <link rel="prev" title="Tutorials" href="tutorials.html" /> 
@@ -152,12 +152,12 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
             
   <div class="section" id="pyplot-tutorial">
 <span id="id1"></span><h1>Pyplot tutorial<a class="headerlink" href="#pyplot-tutorial" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> is a collection of command style functions
+<p><a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> is a collection of command style functions
 that make matplotlib  work like MATLAB.
 Each <code class="docutils literal"><span class="pre">pyplot</span></code> function makes
 some change to a figure: e.g., creates a figure, creates a plotting area
 in a figure, plots some lines in a plotting area, decorates the plot
-with labels, etc.  In <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> various states are preserved
+with labels, etc.  In <a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> various states are preserved
 across function calls, so that it keeps track of things like
 the current figure and plotting area, and the plotting
 functions are directed to the current axes (please note that &#8220;axes&#8221; here
@@ -182,12 +182,12 @@ and not the strict mathematical term for more than one axis).</p>
 </div>
 <p>You may be wondering why the x-axis ranges from 0-3 and the y-axis
 from 1-4.  If you provide a single list or array to the
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-func docutils literal"><span class="pre">plot()</span></code></a> command, matplotlib assumes it is a
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-func docutils literal"><span class="pre">plot()</span></code></a> command, matplotlib assumes it is a
 sequence of y values, and automatically generates the x values for
 you.  Since python ranges start with 0, the default x vector has the
 same length as y but starts with 0.  Hence the x data are
 <code class="docutils literal"><span class="pre">[0,1,2,3]</span></code>.</p>
-<p><a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-func docutils literal"><span class="pre">plot()</span></code></a> is a versatile command, and will take
+<p><a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-func docutils literal"><span class="pre">plot()</span></code></a> is a versatile command, and will take
 an arbitrary number of arguments.  For example, to plot x versus y,
 you can issue the command:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">])</span>
@@ -215,9 +215,9 @@ example, to plot the above with red circles, you would issue</p>
 <div class="figure">
 <img alt="../_images/pyplot_formatstr.png" src="../_images/pyplot_formatstr.png" />
 </div>
-<p>See the <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-func docutils literal"><span class="pre">plot()</span></code></a> documentation for a complete
+<p>See the <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-func docutils literal"><span class="pre">plot()</span></code></a> documentation for a complete
 list of line styles and format strings.  The
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.axis" title="matplotlib.pyplot.axis"><code class="xref py py-func docutils literal"><span class="pre">axis()</span></code></a> command in the example above takes a
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.axis" title="matplotlib.pyplot.axis"><code class="xref py py-func docutils literal"><span class="pre">axis()</span></code></a> command in the example above takes a
 list of <code class="docutils literal"><span class="pre">[xmin,</span> <span class="pre">xmax,</span> <span class="pre">ymin,</span> <span class="pre">ymax]</span></code> and specifies the viewport of the
 axes.</p>
 <p>If matplotlib were limited to working with lists, it would be fairly
@@ -267,7 +267,7 @@ one line so that the list returned is of length 1.  We use tuple unpacking with
 </pre></div>
 </div>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.setp" title="matplotlib.pyplot.setp"><code class="xref py py-func docutils literal"><span class="pre">setp()</span></code></a> command.  The example below
+<li><p class="first">Use the <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.setp" title="matplotlib.pyplot.setp"><code class="xref py py-func docutils literal"><span class="pre">setp()</span></code></a> command.  The example below
 uses a MATLAB-style command to set multiple properties
 on a list of lines.  <code class="docutils literal"><span class="pre">setp</span></code> works transparently with a list of objects
 or a single object.  You can either use python keyword arguments or
@@ -392,7 +392,7 @@ MATLAB-style string/value pairs:</p>
 </tbody>
 </table>
 <p>To get a list of settable line properties, call the
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.setp" title="matplotlib.pyplot.setp"><code class="xref py py-func docutils literal"><span class="pre">setp()</span></code></a> function with a line or lines
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.setp" title="matplotlib.pyplot.setp"><code class="xref py py-func docutils literal"><span class="pre">setp()</span></code></a> function with a line or lines
 as argument</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span></span><span class="gp">In [69]: </span><span class="n">lines</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 
@@ -406,11 +406,11 @@ as argument</p>
 </div>
 <div class="section" id="working-with-multiple-figures-and-axes">
 <span id="multiple-figs-axes"></span><h2>Working with multiple figures and axes<a class="headerlink" href="#working-with-multiple-figures-and-axes" title="Permalink to this headline">¶</a></h2>
-<p>MATLAB, and <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">pyplot</span></code></a>, have the concept of the current
+<p>MATLAB, and <a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">pyplot</span></code></a>, have the concept of the current
 figure and the current axes.  All plotting commands apply to the
-current axes.  The function <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.gca" title="matplotlib.pyplot.gca"><code class="xref py py-func docutils literal"><span class="pre">gca()</span></code></a> returns the
+current axes.  The function <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.gca" title="matplotlib.pyplot.gca"><code class="xref py py-func docutils literal"><span class="pre">gca()</span></code></a> returns the
 current axes (a <a class="reference internal" href="../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.axes.Axes</span></code></a> instance), and
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.gcf" title="matplotlib.pyplot.gcf"><code class="xref py py-func docutils literal"><span class="pre">gcf()</span></code></a> returns the current figure
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.gcf" title="matplotlib.pyplot.gcf"><code class="xref py py-func docutils literal"><span class="pre">gcf()</span></code></a> returns the current figure
 (<a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a> instance). Normally, you don&#8217;t have
 to worry about this, because it is all taken care of behind the
 scenes.  Below is a script to create two subplots.</p>
@@ -442,23 +442,23 @@ scenes.  Below is a script to create two subplots.</p>
 <div class="figure">
 <img alt="../_images/pyplot_two_subplots.png" src="../_images/pyplot_two_subplots.png" />
 </div>
-<p>The <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-func docutils literal"><span class="pre">figure()</span></code></a> command here is optional because
+<p>The <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-func docutils literal"><span class="pre">figure()</span></code></a> command here is optional because
 <code class="docutils literal"><span class="pre">figure(1)</span></code> will be created by default, just as a <code class="docutils literal"><span class="pre">subplot(111)</span></code>
 will be created by default if you don&#8217;t manually specify any axes.  The
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.subplot" title="matplotlib.pyplot.subplot"><code class="xref py py-func docutils literal"><span class="pre">subplot()</span></code></a> command specifies <code class="docutils literal"><span class="pre">numrows,</span>
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.subplot" title="matplotlib.pyplot.subplot"><code class="xref py py-func docutils literal"><span class="pre">subplot()</span></code></a> command specifies <code class="docutils literal"><span class="pre">numrows,</span>
 <span class="pre">numcols,</span> <span class="pre">fignum</span></code> where <code class="docutils literal"><span class="pre">fignum</span></code> ranges from 1 to
 <code class="docutils literal"><span class="pre">numrows*numcols</span></code>.  The commas in the <code class="docutils literal"><span class="pre">subplot</span></code> command are
 optional if <code class="docutils literal"><span class="pre">numrows*numcols&lt;10</span></code>.  So <code class="docutils literal"><span class="pre">subplot(211)</span></code> is identical
 to <code class="docutils literal"><span class="pre">subplot(2,</span> <span class="pre">1,</span> <span class="pre">1)</span></code>.  You can create an arbitrary number of subplots
 and axes.  If you want to place an axes manually, i.e., not on a
-rectangular grid, use the <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.axes" title="matplotlib.pyplot.axes"><code class="xref py py-func docutils literal"><span class="pre">axes()</span></code></a> command,
+rectangular grid, use the <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.axes" title="matplotlib.pyplot.axes"><code class="xref py py-func docutils literal"><span class="pre">axes()</span></code></a> command,
 which allows you to specify the location as <code class="docutils literal"><span class="pre">axes([left,</span> <span class="pre">bottom,</span>
 <span class="pre">width,</span> <span class="pre">height])</span></code> where all values are in fractional (0 to 1)
 coordinates.  See <a class="reference internal" href="../examples/pylab_examples/axes_demo.html#pylab-examples-axes-demo"><span class="std std-ref">pylab_examples example code: axes_demo.py</span></a> for an example of
 placing axes manually and <a class="reference internal" href="../examples/pylab_examples/subplots_demo.html#pylab-examples-subplots-demo"><span class="std std-ref">pylab_examples example code: subplots_demo.py</span></a> for an
 example with lots of subplots.</p>
 <p>You can create multiple figures by using multiple
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-func docutils literal"><span class="pre">figure()</span></code></a> calls with an increasing figure
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-func docutils literal"><span class="pre">figure()</span></code></a> calls with an increasing figure
 number.  Of course, each figure can contain as many axes and subplots
 as your heart desires:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -477,8 +477,8 @@ as your heart desires:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Easy as 1, 2, 3&#39;</span><span class="p">)</span> <span class="c1"># subplot 211 title</span>
 </pre></div>
 </div>
-<p>You can clear the current figure with <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.clf" title="matplotlib.pyplot.clf"><code class="xref py py-func docutils literal"><span class="pre">clf()</span></code></a>
-and the current axes with <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.cla" title="matplotlib.pyplot.cla"><code class="xref py py-func docutils literal"><span class="pre">cla()</span></code></a>.  If you find
+<p>You can clear the current figure with <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.clf" title="matplotlib.pyplot.clf"><code class="xref py py-func docutils literal"><span class="pre">clf()</span></code></a>
+and the current axes with <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.cla" title="matplotlib.pyplot.cla"><code class="xref py py-func docutils literal"><span class="pre">cla()</span></code></a>.  If you find
 it annoying that states (specifically the current image, figure and axes)
 are being maintained for you behind the scenes, don&#8217;t despair: this is just a thin
 stateful wrapper around an object oriented API, which you can use
@@ -486,17 +486,17 @@ instead (see <a class="reference internal" href="artists.html#artist-tutorial"><
 <p>If you are making lots of figures, you need to be aware of one
 more thing: the memory required for a figure is not completely
 released until the figure is explicitly closed with
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.close" title="matplotlib.pyplot.close"><code class="xref py py-func docutils literal"><span class="pre">close()</span></code></a>.  Deleting all references to the
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.close" title="matplotlib.pyplot.close"><code class="xref py py-func docutils literal"><span class="pre">close()</span></code></a>.  Deleting all references to the
 figure, and/or using the window manager to kill the window in which
 the figure appears on the screen, is not enough, because pyplot
-maintains internal references until <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.close" title="matplotlib.pyplot.close"><code class="xref py py-func docutils literal"><span class="pre">close()</span></code></a>
+maintains internal references until <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.close" title="matplotlib.pyplot.close"><code class="xref py py-func docutils literal"><span class="pre">close()</span></code></a>
 is called.</p>
 </div>
 <div class="section" id="working-with-text">
 <span id="id3"></span><h2>Working with text<a class="headerlink" href="#working-with-text" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-func docutils literal"><span class="pre">text()</span></code></a> command can be used to add text in
-an arbitrary location, and the <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.xlabel" title="matplotlib.pyplot.xlabel"><code class="xref py py-func docutils literal"><span class="pre">xlabel()</span></code></a>,
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.ylabel" title="matplotlib.pyplot.ylabel"><code class="xref py py-func docutils literal"><span class="pre">ylabel()</span></code></a> and <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.title" title="matplotlib.pyplot.title"><code class="xref py py-func docutils literal"><span class="pre">title()</span></code></a>
+<p>The <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-func docutils literal"><span class="pre">text()</span></code></a> command can be used to add text in
+an arbitrary location, and the <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.xlabel" title="matplotlib.pyplot.xlabel"><code class="xref py py-func docutils literal"><span class="pre">xlabel()</span></code></a>,
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.ylabel" title="matplotlib.pyplot.ylabel"><code class="xref py py-func docutils literal"><span class="pre">ylabel()</span></code></a> and <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.title" title="matplotlib.pyplot.title"><code class="xref py py-func docutils literal"><span class="pre">title()</span></code></a>
 are used to add text in the indicated locations (see <a class="reference internal" href="text_intro.html#text-intro"><span class="std std-ref">Text introduction</span></a>
 for a more detailed example)</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -531,10 +531,10 @@ for a more detailed example)</p>
 <div class="figure">
 <img alt="../_images/pyplot_text.png" src="../_images/pyplot_text.png" />
 </div>
-<p>All of the <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-func docutils literal"><span class="pre">text()</span></code></a> commands return an
+<p>All of the <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-func docutils literal"><span class="pre">text()</span></code></a> commands return an
 <a class="reference internal" href="../api/text_api.html#matplotlib.text.Text" title="matplotlib.text.Text"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.text.Text</span></code></a> instance.  Just as with with lines
 above, you can customize the properties by passing keyword arguments
-into the text functions or using <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.setp" title="matplotlib.pyplot.setp"><code class="xref py py-func docutils literal"><span class="pre">setp()</span></code></a>:</p>
+into the text functions or using <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.setp" title="matplotlib.pyplot.setp"><code class="xref py py-func docutils literal"><span class="pre">setp()</span></code></a>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;my data&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -559,10 +559,10 @@ postscript &#8211; see <a class="reference internal" href="usetex.html#usetex-tu
 </div>
 <div class="section" id="annotating-text">
 <h3>Annotating text<a class="headerlink" href="#annotating-text" title="Permalink to this headline">¶</a></h3>
-<p>The uses of the basic <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-func docutils literal"><span class="pre">text()</span></code></a> command above
+<p>The uses of the basic <a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-func docutils literal"><span class="pre">text()</span></code></a> command above
 place text at an arbitrary position on the Axes.  A common use for
 text is to annotate some feature of the plot, and the
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.annotate" title="matplotlib.pyplot.annotate"><code class="xref py py-func docutils literal"><span class="pre">annotate()</span></code></a> method provides helper
+<a class="reference internal" href="../api/pyplot_api.html#matplotlib.pyplot.annotate" title="matplotlib.pyplot.annotate"><code class="xref py py-func docutils literal"><span class="pre">annotate()</span></code></a> method provides helper
 functionality to make annotations easy.  In an annotation, there are
 two points to consider: the location being annotated represented by
 the argument <code class="docutils literal"><span class="pre">xy</span></code> and the location of the text <code class="docutils literal"><span class="pre">xytext</span></code>.  Both of
@@ -604,7 +604,7 @@ details.  More examples can be found in
 </div>
 <div class="section" id="logarithmic-and-other-nonlinear-axes">
 <h2>Logarithmic and other nonlinear axes<a class="headerlink" href="#logarithmic-and-other-nonlinear-axes" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> supports not only linear axis scales, but also
+<p><a class="reference internal" href="../api/temp.html#module-matplotlib.pyplot" title="matplotlib.pyplot"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code></a> supports not only linear axis scales, but also
 logarithmic and logit scales. This is commonly used if data spans many orders
 of magnitude. Changing the scale of an axis is easy:</p>
 <blockquote>
@@ -692,7 +692,7 @@ details.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 19, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

@@ -62,7 +62,7 @@ A bar plot with errorbars and height labels on individual bars
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.080 seconds)
+**Total running time of the script:** ( 0 minutes  0.057 seconds)
 
 
 

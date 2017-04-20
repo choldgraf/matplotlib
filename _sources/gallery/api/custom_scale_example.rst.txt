@@ -202,7 +202,7 @@ scaling use for latitude data in a Mercator Projection.
 
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.070 seconds)
+**Total running time of the script:** ( 0 minutes  0.047 seconds)
 
 
 

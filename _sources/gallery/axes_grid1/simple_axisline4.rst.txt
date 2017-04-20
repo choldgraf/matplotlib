@@ -40,7 +40,7 @@ Simple Axisline4
     plt.draw()
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.203 seconds)
+**Total running time of the script:** ( 0 minutes  0.187 seconds)
 
 
 

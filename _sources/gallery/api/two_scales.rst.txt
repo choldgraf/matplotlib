@@ -95,7 +95,7 @@ have different top and bottom scales.
     color_y_axis(ax2, 'b')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.110 seconds)
+**Total running time of the script:** ( 0 minutes  0.116 seconds)
 
 
 

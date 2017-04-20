@@ -46,7 +46,7 @@ This example demonstrates the style used in the Bayesian Methods for Hackers
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.058 seconds)
+**Total running time of the script:** ( 0 minutes  0.044 seconds)
 
 
 

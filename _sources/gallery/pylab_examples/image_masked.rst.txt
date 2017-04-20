@@ -91,7 +91,7 @@ get a filled contour effect.
     fig.suptitle('imshow, with out-of-range and masked data')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.486 seconds)
+**Total running time of the script:** ( 0 minutes  0.255 seconds)
 
 
 

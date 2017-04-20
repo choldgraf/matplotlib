@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>New in matplotlib 1.5 &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation</title>
+    <title>New in matplotlib 1.5 &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b14686d',
+        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation"
+          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b14686d documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../../index.html" />
     <link rel="up" title="What’s new in matplotlib" href="../whats_new.html" />
     <link rel="next" title="List of changes to Matplotlib prior to 2015" href="changelog.html" />
     <link rel="prev" title="New in matplotlib 1.4" href="whats_new_1.4.html" /> 
@@ -477,8 +477,8 @@ titles.  This breaks at the <code class="docutils literal"><span class="pre">Fig
 <h3>Contour plot corner masking<a class="headerlink" href="#contour-plot-corner-masking" title="Permalink to this headline">¶</a></h3>
 <p>Ian Thomas rewrote the C++ code that calculates contours to add support for
 corner masking.  This is controlled by a new keyword argument
-<code class="docutils literal"><span class="pre">corner_mask</span></code> in the functions <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.contour" title="matplotlib.pyplot.contour"><code class="xref py py-func docutils literal"><span class="pre">contour()</span></code></a> and
-<a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.contourf" title="matplotlib.pyplot.contourf"><code class="xref py py-func docutils literal"><span class="pre">contourf()</span></code></a>.  The previous behaviour, which is now
+<code class="docutils literal"><span class="pre">corner_mask</span></code> in the functions <a class="reference internal" href="../../api/pyplot_api.html#matplotlib.pyplot.contour" title="matplotlib.pyplot.contour"><code class="xref py py-func docutils literal"><span class="pre">contour()</span></code></a> and
+<a class="reference internal" href="../../api/pyplot_api.html#matplotlib.pyplot.contourf" title="matplotlib.pyplot.contourf"><code class="xref py py-func docutils literal"><span class="pre">contourf()</span></code></a>.  The previous behaviour, which is now
 obtained using <code class="docutils literal"><span class="pre">corner_mask=False</span></code>, was for a single masked point to
 completely mask out all four quads touching that point.  The new behaviour,
 obtained using <code class="docutils literal"><span class="pre">corner_mask=True</span></code>, only masks the corners of those
@@ -487,7 +487,7 @@ points are contoured as usual.  If the <code class="docutils literal"><span clas
 specified, the default value is taken from rcParams.</p>
 <p>(<a class="reference external" href="../../mpl_examples/pylab_examples/contour_corner_mask.py">Source code</a>, <a class="reference external" href="../../mpl_examples/pylab_examples/contour_corner_mask.png">png</a>, <a class="reference external" href="../../mpl_examples/pylab_examples/contour_corner_mask.pdf">pdf</a>)</p>
 <div class="figure">
-<img alt="../../_images/contour_corner_mask2.png" src="../../_images/contour_corner_mask2.png" />
+<img alt="../../_images/contour_corner_mask3.png" src="../../_images/contour_corner_mask3.png" />
 </div>
 </div>
 <div class="section" id="mostly-unified-linestyles-for-line2d-patch-and-collection">
@@ -689,7 +689,7 @@ clipped to the bounds of the <code class="xref py py-obj docutils literal"><span
 </div>
 <div class="section" id="offsetboxes-now-considered-by-tight-layout">
 <h3>OffsetBoxes now considered by tight_layout<a class="headerlink" href="#offsetboxes-now-considered-by-tight-layout" title="Permalink to this headline">¶</a></h3>
-<p>When <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout"><code class="xref py py-obj docutils literal"><span class="pre">tight_layout()</span></code></a> or <code class="xref py py-obj docutils literal"><span class="pre">Figure.tight_layout()</span></code>
+<p>When <a class="reference internal" href="../../api/pyplot_api.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout"><code class="xref py py-obj docutils literal"><span class="pre">tight_layout()</span></code></a> or <code class="xref py py-obj docutils literal"><span class="pre">Figure.tight_layout()</span></code>
 or <code class="xref py py-obj docutils literal"><span class="pre">GridSpec.tight_layout()</span></code> is called, <code class="xref py py-obj docutils literal"><span class="pre">OffsetBoxes</span></code> that are
 anchored outside the axes will not get chopped out. The <code class="xref py py-obj docutils literal"><span class="pre">OffsetBoxes</span></code> will
 also not get overlapped by other axes in case of multiple subplots.</p>
@@ -812,7 +812,7 @@ when using <code class="docutils literal"><span class="pre">plot_directive</span
 </div>
 <div class="section" id="support-for-url-string-arguments-to-imread">
 <h2><a class="toc-backref" href="#id16">Support for URL string arguments to <code class="docutils literal"><span class="pre">imread</span></code></a><a class="headerlink" href="#support-for-url-string-arguments-to-imread" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.imread" title="matplotlib.pyplot.imread"><code class="xref py py-func docutils literal"><span class="pre">imread()</span></code></a> function now accepts URL strings that
+<p>The <a class="reference internal" href="../../api/pyplot_api.html#matplotlib.pyplot.imread" title="matplotlib.pyplot.imread"><code class="xref py py-func docutils literal"><span class="pre">imread()</span></code></a> function now accepts URL strings that
 point to remote PNG files. This circumvents the generation of a
 HTTPResponse object directly.</p>
 </div>
@@ -852,7 +852,7 @@ way as setting <code class="xref py py-obj docutils literal"><span class="pre">C
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 19, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

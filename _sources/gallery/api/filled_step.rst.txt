@@ -44,7 +44,7 @@ various histograms.
     {'facecolor': '#d62728', 'hatch': '|'}
     {'facecolor': '#d62728', 'hatch': '|'}
     v
-    {'edgecolor': 'w', 'orientation': 'h'}
+    {'orientation': 'h', 'edgecolor': 'w'}
     {'facecolor': '#1f77b4'}
     {'facecolor': '#1f77b4', 'edgecolor': 'w', 'orientation': 'h'}
     h
@@ -301,7 +301,7 @@ various histograms.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.380 seconds)
+**Total running time of the script:** ( 0 minutes  0.169 seconds)
 
 
 
