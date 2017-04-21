@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.pcolor
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: pcolor

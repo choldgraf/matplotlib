@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.ginput
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: ginput

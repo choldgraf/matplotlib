@@ -85,39 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axis-ytick-get-window-extent">
-<h1>matplotlib.axis.YTick.get_window_extent<a class="headerlink" href="#matplotlib-axis-ytick-get-window-extent" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axis.YTick.get_window_extent">
-<code class="descclassname">YTick.</code><code class="descname">get_window_extent</code><span class="sig-paren">(</span><em>renderer</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axis.YTick.get_window_extent" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the axes bounding box in display space.
-Subclasses should override for inclusion in the bounding box
-&#8220;tight&#8221; calculation. Default is to return an empty bounding
-box at 0, 0.</p>
-<p>Be careful when using this function, the results will not update
-if the artist window extent of the artist changes.  The extent
-can change due to any changes in the transform stack, such as
-changing the axes limits, the figure size, or the canvas used
-(as is done when saving a figure).  This can lead to unexpected
-behavior where interactive figures will look fine on the screen,
-but will save incorrectly.</p>
-</dd></dl>
-
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -161,9 +128,41 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axis-ytick-get-window-extent">
+<h1>matplotlib.axis.YTick.get_window_extent<a class="headerlink" href="#matplotlib-axis-ytick-get-window-extent" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axis.YTick.get_window_extent">
+<code class="descclassname">YTick.</code><code class="descname">get_window_extent</code><span class="sig-paren">(</span><em>renderer</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axis.YTick.get_window_extent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the axes bounding box in display space.
+Subclasses should override for inclusion in the bounding box
+&#8220;tight&#8221; calculation. Default is to return an empty bounding
+box at 0, 0.</p>
+<p>Be careful when using this function, the results will not update
+if the artist window extent of the artist changes.  The extent
+can change due to any changes in the transform stack, such as
+changing the axes limits, the figure size, or the canvas used
+(as is done when saving a figure).  This can lead to unexpected
+behavior where interactive figures will look fine on the screen,
+but will save incorrectly.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

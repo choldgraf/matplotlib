@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.add\_table
 ==================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.add_table

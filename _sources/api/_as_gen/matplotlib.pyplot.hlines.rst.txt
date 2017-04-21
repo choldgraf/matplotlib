@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.hlines
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: hlines

@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.get\_scale\_docs
 ====================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: get_scale_docs

@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.stackplot
 =================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.stackplot

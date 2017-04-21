@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.connect
 ===========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: connect

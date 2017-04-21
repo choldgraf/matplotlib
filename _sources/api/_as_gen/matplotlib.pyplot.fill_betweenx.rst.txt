@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.fill\_betweenx
 ==================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: fill_betweenx

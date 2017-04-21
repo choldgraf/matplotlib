@@ -1,5 +1,6 @@
-matplotlib.pyplot
-=================
+matplotlib\.pyplot
+==================
+
 
 .. automodule:: matplotlib.pyplot
 
@@ -367,101 +368,5 @@ Functions
    yscale
 
    yticks
-
-
-
-
-
-
-
-Classes
--------
-
-.. autosummary:: 
-   :template: autosummary.rst
-   :toctree:
-
-
-   Annotation
-
-   Arrow
-
-   Artist
-
-   AutoLocator
-
-   Axes
-
-   Button
-
-   Circle
-
-   Figure
-
-   FigureCanvasBase
-
-   FixedFormatter
-
-   FixedLocator
-
-   FormatStrFormatter
-
-   Formatter
-
-   FuncFormatter
-
-   GridSpec
-
-   IndexLocator
-
-   Line2D
-
-   LinearLocator
-
-   Locator
-
-   LogFormatter
-
-   LogFormatterExponent
-
-   LogFormatterMathtext
-
-   LogLocator
-
-   MaxNLocator
-
-   MultipleLocator
-
-   Normalize
-
-   NullFormatter
-
-   NullLocator
-
-   PolarAxes
-
-   Polygon
-
-   Rectangle
-
-   ScalarFormatter
-
-   Slider
-
-   Subplot
-
-   SubplotTool
-
-   Text
-
-   TickHelper
-
-   Widget
-
-   silent_list
-
-
-
-
 
 

@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.hold
 ============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.hold

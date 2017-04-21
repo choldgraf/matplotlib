@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.hist2d
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: hist2d

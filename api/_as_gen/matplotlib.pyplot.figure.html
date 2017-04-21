@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.Button &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
+    <title>matplotlib.pyplot.figure &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -35,7 +35,10 @@ type="text/css" />
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" />
+    <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
+    <link rel="next" title="matplotlib.pyplot.fill" href="matplotlib.pyplot.fill.html" />
+    <link rel="prev" title="matplotlib.pyplot.figtext" href="matplotlib.pyplot.figtext.html" /> 
 
 
   </head>
@@ -65,84 +68,23 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="matplotlib.pyplot.fill.html" title="matplotlib.pyplot.fill"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="matplotlib.pyplot.figtext.html" title="matplotlib.pyplot.figtext"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib API</a> &raquo;</li>
+          <li><a href="matplotlib.pyplot.html" accesskey="U">matplotlib.pyplot</a> &raquo;</li> 
       </ul>
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-pyplot-button">
-<h1>matplotlib.pyplot.Button<a class="headerlink" href="#matplotlib-pyplot-button" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="matplotlib.pyplot.Button">
-<em class="property">class </em><code class="descclassname">matplotlib.pyplot.</code><code class="descname">Button</code><span class="sig-paren">(</span><em>ax</em>, <em>label</em>, <em>image=None</em>, <em>color='0.85'</em>, <em>hovercolor='0.95'</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.Button" title="Permalink to this definition">¶</a></dt>
-<dd><p>A GUI neutral button.</p>
-<p>For the button to remain responsive you must keep a reference to it.</p>
-<p>The following attributes are accessible</p>
-<blockquote>
-<div><dl class="docutils">
-<dt><em>ax</em></dt>
-<dd>The <a class="reference internal" href="../axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.axes.Axes</span></code></a> the button renders into.</dd>
-<dt><em>label</em></dt>
-<dd>A <a class="reference internal" href="../text_api.html#matplotlib.text.Text" title="matplotlib.text.Text"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.text.Text</span></code></a> instance.</dd>
-<dt><em>color</em></dt>
-<dd>The color of the button when not hovering.</dd>
-<dt><em>hovercolor</em></dt>
-<dd>The color of the button when hovering.</dd>
-</dl>
-</div></blockquote>
-<p>Call <code class="xref py py-meth docutils literal"><span class="pre">on_clicked()</span></code> to connect to the button</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>ax</strong> : matplotlib.axes.Axes</p>
-<blockquote>
-<div><p>The <a class="reference internal" href="../axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.axes.Axes</span></code></a> instance the button
-will be placed into.</p>
-</div></blockquote>
-<p><strong>label</strong> : str</p>
-<blockquote>
-<div><p>The button text. Accepts string.</p>
-</div></blockquote>
-<p><strong>image</strong> : array, mpl image, Pillow Image</p>
-<blockquote>
-<div><p>The image to place in the button, if not <em>None</em>.
-Can be any legal arg to imshow (numpy array,
-matplotlib Image instance, or Pillow Image).</p>
-</div></blockquote>
-<p><strong>color</strong> : color</p>
-<blockquote>
-<div><p>The color of the button when not activated</p>
-</div></blockquote>
-<p><strong>hovercolor</strong> : color</p>
-<blockquote class="last">
-<div><p>The color of the button when the mouse is over it</p>
-</div></blockquote>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<div class="clearer"></div></div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -158,13 +100,19 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">The Matplotlib API</a><ul>
+  <li><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><ul>
+      <li>Previous: <a href="matplotlib.pyplot.figtext.html" title="previous chapter">matplotlib.pyplot.figtext</a></li>
+      <li>Next: <a href="matplotlib.pyplot.fill.html" title="next chapter">matplotlib.pyplot.fill</a></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/api/_as_gen/matplotlib.pyplot.Button.rst.txt"
+      <li><a href="../../_sources/api/_as_gen/matplotlib.pyplot.figure.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -180,9 +128,94 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-pyplot-figure">
+<h1>matplotlib.pyplot.figure<a class="headerlink" href="#matplotlib-pyplot-figure" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="matplotlib.pyplot.figure">
+<code class="descclassname">matplotlib.pyplot.</code><code class="descname">figure</code><span class="sig-paren">(</span><em>num=None</em>, <em>figsize=None</em>, <em>dpi=None</em>, <em>facecolor=None</em>, <em>edgecolor=None</em>, <em>frameon=True</em>, <em>FigureClass=&lt;class 'matplotlib.figure.Figure'&gt;</em>, <em>clear=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.figure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new figure.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>num</strong> : integer or string, optional, default: none</p>
+<blockquote>
+<div><p>If not provided, a new figure will be created, and the figure number
+will be incremented. The figure objects holds this number in a <code class="xref py py-obj docutils literal"><span class="pre">number</span></code>
+attribute.
+If num is provided, and a figure with this id already exists, make
+it active, and returns a reference to it. If this figure does not
+exists, create it and returns it.
+If num is a string, the window title will be set to this figure&#8217;s
+<code class="xref py py-obj docutils literal"><span class="pre">num</span></code>.</p>
+</div></blockquote>
+<p><strong>figsize</strong> : tuple of integers, optional, default: None</p>
+<blockquote>
+<div><p>width, height in inches. If not provided, defaults to rc
+figure.figsize.</p>
+</div></blockquote>
+<p><strong>dpi</strong> : integer, optional, default: None</p>
+<blockquote>
+<div><p>resolution of the figure. If not provided, defaults to rc figure.dpi.</p>
+</div></blockquote>
+<p><strong>facecolor :</strong></p>
+<blockquote>
+<div><p>the background color. If not provided, defaults to rc figure.facecolor.</p>
+</div></blockquote>
+<p><strong>edgecolor :</strong></p>
+<blockquote>
+<div><p>the border color. If not provided, defaults to rc figure.edgecolor.</p>
+</div></blockquote>
+<p><strong>frameon</strong> : bool, optional, default: True</p>
+<blockquote>
+<div><p>If False, suppress drawing the figure frame.</p>
+</div></blockquote>
+<p><strong>FigureClass</strong> : class derived from matplotlib.figure.Figure</p>
+<blockquote>
+<div><p>Optionally use a custom Figure instance.</p>
+</div></blockquote>
+<p><strong>clear</strong> : bool, optional, default: False</p>
+<blockquote>
+<div><p>If True and the figure already exists, then it is cleared.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>figure</strong> : Figure</p>
+<blockquote class="last">
+<div><p>The Figure instance returned will also be passed to new_figure_manager
+in the backends, which allows to hook custom Figure classes into the
+pylab interface. Additional kwargs will be passed to the figure init
+function.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>If you are creating many figures, make sure you explicitly call &#8220;close&#8221;
+on the figures you are not using, because this will enable pylab
+to properly clean up the memory.</p>
+<p>rcParams defines the default values, which can be modified in the
+matplotlibrc file</p>
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

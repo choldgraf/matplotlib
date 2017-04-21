@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.hold
 ========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: hold

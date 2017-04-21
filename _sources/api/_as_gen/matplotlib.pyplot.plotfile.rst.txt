@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.plotfile
 ============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: plotfile

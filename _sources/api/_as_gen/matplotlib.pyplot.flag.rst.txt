@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.flag
 ========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: flag

@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.get\_cursor\_props
 ==========================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.get_cursor_props

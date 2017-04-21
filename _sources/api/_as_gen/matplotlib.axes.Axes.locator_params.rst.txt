@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.locator\_params
 =======================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.locator_params

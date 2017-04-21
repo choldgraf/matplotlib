@@ -85,38 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axis-xtick-set-contains">
-<h1>matplotlib.axis.XTick.set_contains<a class="headerlink" href="#matplotlib-axis-xtick-set-contains" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axis.XTick.set_contains">
-<code class="descclassname">XTick.</code><code class="descname">set_contains</code><span class="sig-paren">(</span><em>picker</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axis.XTick.set_contains" title="Permalink to this definition">¶</a></dt>
-<dd><p>Replace the contains test used by this artist. The new picker
-should be a callable function which determines whether the
-artist is hit by the mouse event:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">hit</span><span class="p">,</span> <span class="n">props</span> <span class="o">=</span> <span class="n">picker</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">mouseevent</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>If the mouse event is over the artist, return <em>hit</em> = <em>True</em>
-and <em>props</em> is a dictionary of properties you want returned
-with the contains test.</p>
-<p>ACCEPTS: a callable function</p>
-</dd></dl>
-
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -160,9 +128,40 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axis-xtick-set-contains">
+<h1>matplotlib.axis.XTick.set_contains<a class="headerlink" href="#matplotlib-axis-xtick-set-contains" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axis.XTick.set_contains">
+<code class="descclassname">XTick.</code><code class="descname">set_contains</code><span class="sig-paren">(</span><em>picker</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axis.XTick.set_contains" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace the contains test used by this artist. The new picker
+should be a callable function which determines whether the
+artist is hit by the mouse event:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">hit</span><span class="p">,</span> <span class="n">props</span> <span class="o">=</span> <span class="n">picker</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">mouseevent</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If the mouse event is over the artist, return <em>hit</em> = <em>True</em>
+and <em>props</em> is a dictionary of properties you want returned
+with the contains test.</p>
+<p>ACCEPTS: a callable function</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.invert\_yaxis
 =====================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.invert_yaxis

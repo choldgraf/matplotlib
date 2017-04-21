@@ -85,43 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axes-axes-autoscale-view">
-<h1>matplotlib.axes.Axes.autoscale_view<a class="headerlink" href="#matplotlib-axes-axes-autoscale-view" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axes.Axes.autoscale_view">
-<code class="descclassname">Axes.</code><code class="descname">autoscale_view</code><span class="sig-paren">(</span><em>tight=None</em>, <em>scalex=True</em>, <em>scaley=True</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.autoscale_view" title="Permalink to this definition">¶</a></dt>
-<dd><p>Autoscale the view limits using the data limits. You can
-selectively autoscale only a single axis, e.g., the xaxis by
-setting <em>scaley</em> to <em>False</em>.  The autoscaling preserves any
-axis direction reversal that has already been done.</p>
-<p>If <em>tight</em> is <em>False</em>, the axis major locator will be used
-to expand the view limits if rcParams[&#8216;axes.autolimit_mode&#8217;]
-is &#8216;round_numbers&#8217;.  Note that any margins that are in effect
-will be applied first, regardless of whether <em>tight</em> is
-<em>True</em> or <em>False</em>.  Specifying <em>tight</em> as <em>True</em> or <em>False</em>
-saves the setting as a private attribute of the Axes; specifying
-it as <em>None</em> (the default) applies the previously saved value.</p>
-<p>The data limits are not updated automatically when artist data are
-changed after the artist has been added to an Axes instance.  In that
-case, use <a class="reference internal" href="matplotlib.axes.Axes.relim.html#matplotlib.axes.Axes.relim" title="matplotlib.axes.Axes.relim"><code class="xref py py-meth docutils literal"><span class="pre">matplotlib.axes.Axes.relim()</span></code></a> prior to calling
-autoscale_view.</p>
-</dd></dl>
-
-<div class="clearer"></div></div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -165,9 +128,45 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axes-axes-autoscale-view">
+<h1>matplotlib.axes.Axes.autoscale_view<a class="headerlink" href="#matplotlib-axes-axes-autoscale-view" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axes.Axes.autoscale_view">
+<code class="descclassname">Axes.</code><code class="descname">autoscale_view</code><span class="sig-paren">(</span><em>tight=None</em>, <em>scalex=True</em>, <em>scaley=True</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.autoscale_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Autoscale the view limits using the data limits. You can
+selectively autoscale only a single axis, e.g., the xaxis by
+setting <em>scaley</em> to <em>False</em>.  The autoscaling preserves any
+axis direction reversal that has already been done.</p>
+<p>If <em>tight</em> is <em>False</em>, the axis major locator will be used
+to expand the view limits if rcParams[&#8216;axes.autolimit_mode&#8217;]
+is &#8216;round_numbers&#8217;.  Note that any margins that are in effect
+will be applied first, regardless of whether <em>tight</em> is
+<em>True</em> or <em>False</em>.  Specifying <em>tight</em> as <em>True</em> or <em>False</em>
+saves the setting as a private attribute of the Axes; specifying
+it as <em>None</em> (the default) applies the previously saved value.</p>
+<p>The data limits are not updated automatically when artist data are
+changed after the artist has been added to an Axes instance.  In that
+case, use <a class="reference internal" href="matplotlib.axes.Axes.relim.html#matplotlib.axes.Axes.relim" title="matplotlib.axes.Axes.relim"><code class="xref py py-meth docutils literal"><span class="pre">matplotlib.axes.Axes.relim()</span></code></a> prior to calling
+autoscale_view.</p>
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

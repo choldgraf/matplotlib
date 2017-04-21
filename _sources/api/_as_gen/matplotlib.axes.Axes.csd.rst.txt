@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.csd
 ===========================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.csd

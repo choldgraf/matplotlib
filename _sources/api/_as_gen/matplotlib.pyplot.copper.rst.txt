@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.copper
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: copper

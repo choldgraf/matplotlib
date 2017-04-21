@@ -85,49 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axes-axes-twiny">
-<h1>matplotlib.axes.Axes.twiny<a class="headerlink" href="#matplotlib-axes-axes-twiny" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axes.Axes.twiny">
-<code class="descclassname">Axes.</code><code class="descname">twiny</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.twiny" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a twin Axes sharing the yaxis</p>
-<p>Create a new Axes instance with an invisible y-axis and an independent
-x-axis positioned opposite to the original one (i.e. at top). The
-y-axis autoscale setting will be inherited from the original Axes.
-To ensure that the tick marks of both x-axes align, see
-<a class="reference internal" href="../ticker_api.html#matplotlib.ticker.LinearLocator" title="matplotlib.ticker.LinearLocator"><code class="xref py py-obj docutils literal"><span class="pre">LinearLocator</span></code></a></p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>ax_twin</strong> : Axes</p>
-<blockquote class="last">
-<div><p>The newly created Axes instance</p>
-</div></blockquote>
-</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Notes</p>
-<p>For those who are &#8216;picking&#8217; artists while using twiny, pick
-events are only called for the artists in the top-most axes.</p>
-</dd></dl>
-
-<div class="clearer"></div></div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -171,9 +128,51 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axes-axes-twiny">
+<h1>matplotlib.axes.Axes.twiny<a class="headerlink" href="#matplotlib-axes-axes-twiny" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axes.Axes.twiny">
+<code class="descclassname">Axes.</code><code class="descname">twiny</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.twiny" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a twin Axes sharing the yaxis</p>
+<p>Create a new Axes instance with an invisible y-axis and an independent
+x-axis positioned opposite to the original one (i.e. at top). The
+y-axis autoscale setting will be inherited from the original Axes.
+To ensure that the tick marks of both x-axes align, see
+<a class="reference internal" href="../ticker_api.html#matplotlib.ticker.LinearLocator" title="matplotlib.ticker.LinearLocator"><code class="xref py py-obj docutils literal"><span class="pre">LinearLocator</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>ax_twin</strong> : Axes</p>
+<blockquote class="last">
+<div><p>The newly created Axes instance</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>For those who are &#8216;picking&#8217; artists while using twiny, pick
+events are only called for the artists in the top-most axes.</p>
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

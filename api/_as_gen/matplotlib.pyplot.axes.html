@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.MaxNLocator &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
+    <title>matplotlib.pyplot.axes &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -35,7 +35,10 @@ type="text/css" />
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" />
+    <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
+    <link rel="next" title="matplotlib.pyplot.axhline" href="matplotlib.pyplot.axhline.html" />
+    <link rel="prev" title="matplotlib.pyplot.autumn" href="matplotlib.pyplot.autumn.html" /> 
 
 
   </head>
@@ -65,68 +68,23 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="matplotlib.pyplot.axhline.html" title="matplotlib.pyplot.axhline"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="matplotlib.pyplot.autumn.html" title="matplotlib.pyplot.autumn"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib API</a> &raquo;</li>
+          <li><a href="matplotlib.pyplot.html" accesskey="U">matplotlib.pyplot</a> &raquo;</li> 
       </ul>
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-pyplot-maxnlocator">
-<h1>matplotlib.pyplot.MaxNLocator<a class="headerlink" href="#matplotlib-pyplot-maxnlocator" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="matplotlib.pyplot.MaxNLocator">
-<em class="property">class </em><code class="descclassname">matplotlib.pyplot.</code><code class="descname">MaxNLocator</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.MaxNLocator" title="Permalink to this definition">¶</a></dt>
-<dd><p>Select no more than N intervals at nice locations.</p>
-<p>Keyword args:</p>
-<dl class="docutils">
-<dt><em>nbins</em></dt>
-<dd>Maximum number of intervals; one less than max number of
-ticks.  If the string <code class="xref py py-obj docutils literal"><span class="pre">'auto'</span></code>, the number of bins will be
-automatically determined based on the length of the axis.</dd>
-<dt><em>steps</em></dt>
-<dd>Sequence of nice numbers starting with 1 and ending with 10;
-e.g., [1, 2, 4, 5, 10]</dd>
-<dt><em>integer</em></dt>
-<dd>If True, ticks will take only integer values, provided
-at least <code class="xref py py-obj docutils literal"><span class="pre">min_n_ticks</span></code> integers are found within the
-view limits.</dd>
-<dt><em>symmetric</em></dt>
-<dd>If True, autoscaling will result in a range symmetric
-about zero.</dd>
-<dt><em>prune</em></dt>
-<dd>[&#8216;lower&#8217; | &#8216;upper&#8217; | &#8216;both&#8217; | None]
-Remove edge ticks &#8211; useful for stacked or ganged plots
-where the upper tick of one axes overlaps with the lower
-tick of the axes above it, primarily when
-<code class="xref py py-obj docutils literal"><span class="pre">rcParams['axes.autolimit_mode']</span></code> is <code class="xref py py-obj docutils literal"><span class="pre">'round_numbers'</span></code>.
-If <code class="xref py py-obj docutils literal"><span class="pre">prune=='lower'</span></code>, the smallest tick will
-be removed.  If <code class="xref py py-obj docutils literal"><span class="pre">prune=='upper'</span></code>, the largest tick will be
-removed.  If <code class="xref py py-obj docutils literal"><span class="pre">prune=='both'</span></code>, the largest and smallest ticks
-will be removed.  If <code class="xref py py-obj docutils literal"><span class="pre">prune==None</span></code>, no ticks will be removed.</dd>
-<dt><em>min_n_ticks</em></dt>
-<dd>Relax <code class="xref py py-obj docutils literal"><span class="pre">nbins</span></code> and <code class="xref py py-obj docutils literal"><span class="pre">integer</span></code> constraints if necessary to
-obtain this minimum number of ticks.</dd>
-</dl>
-</dd></dl>
-
-<div class="clearer"></div></div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -142,13 +100,19 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">The Matplotlib API</a><ul>
+  <li><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><ul>
+      <li>Previous: <a href="matplotlib.pyplot.autumn.html" title="previous chapter">matplotlib.pyplot.autumn</a></li>
+      <li>Next: <a href="matplotlib.pyplot.axhline.html" title="next chapter">matplotlib.pyplot.axhline</a></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/api/_as_gen/matplotlib.pyplot.MaxNLocator.rst.txt"
+      <li><a href="../../_sources/api/_as_gen/matplotlib.pyplot.axes.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -164,9 +128,91 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-pyplot-axes">
+<h1>matplotlib.pyplot.axes<a class="headerlink" href="#matplotlib-pyplot-axes" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="matplotlib.pyplot.axes">
+<code class="descclassname">matplotlib.pyplot.</code><code class="descname">axes</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.axes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an axes to the figure.</p>
+<p>The axes is added at position <em>rect</em> specified by:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">axes()</span></code> by itself creates a default full <code class="docutils literal"><span class="pre">subplot(111)</span></code> window axis.</li>
+<li><code class="docutils literal"><span class="pre">axes(rect,</span> <span class="pre">facecolor='w')</span></code> where <em>rect</em> = [left, bottom, width,
+height] in normalized (0, 1) units.  <em>facecolor</em> is the background
+color for the axis, default white.</li>
+<li><code class="docutils literal"><span class="pre">axes(h)</span></code> where <em>h</em> is an axes instance makes <em>h</em> the current
+axis and the parent of <em>h</em> the current figure.
+An <a class="reference internal" href="../axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> instance is returned.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="20%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">kwarg</th>
+<th class="head">Accepts</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>facecolor</td>
+<td>color</td>
+<td>the axes background color</td>
+</tr>
+<tr class="row-odd"><td>frameon</td>
+<td>[True|False]</td>
+<td>display the frame?</td>
+</tr>
+<tr class="row-even"><td>sharex</td>
+<td>otherax</td>
+<td>current axes shares xaxis attribute
+with otherax</td>
+</tr>
+<tr class="row-odd"><td>sharey</td>
+<td>otherax</td>
+<td>current axes shares yaxis attribute
+with otherax</td>
+</tr>
+<tr class="row-even"><td>polar</td>
+<td>[True|False]</td>
+<td>use a polar axes?</td>
+</tr>
+<tr class="row-odd"><td>aspect</td>
+<td>[str | num]</td>
+<td>[&#8216;equal&#8217;, &#8216;auto&#8217;] or a number.  If a number
+the ratio of x-unit/y-unit in screen-space.
+Also see
+<a class="reference internal" href="matplotlib.axes.Axes.set_aspect.html#matplotlib.axes.Axes.set_aspect" title="matplotlib.axes.Axes.set_aspect"><code class="xref py py-meth docutils literal"><span class="pre">set_aspect()</span></code></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul class="simple">
+<li><code class="file docutils literal"><span class="pre">examples/pylab_examples/axes_demo.py</span></code> places custom axes.</li>
+<li><code class="file docutils literal"><span class="pre">examples/pylab_examples/shared_axis_demo.py</span></code> uses
+<em>sharex</em> and <em>sharey</em>.</li>
+</ul>
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

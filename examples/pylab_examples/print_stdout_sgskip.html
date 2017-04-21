@@ -85,50 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="pylab-examples-example-code-print-stdout-sgskip-py">
-<span id="pylab-examples-print-stdout-sgskip"></span><h1>pylab_examples example code: print_stdout_sgskip.py<a class="headerlink" href="#pylab-examples-example-code-print-stdout-sgskip-py" title="Permalink to this headline">¶</a></h1>
-<p>[<a class="reference external" href="print_stdout_sgskip.py">source code</a>]</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># -*- noplot -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">============</span>
-<span class="sd">Print Stdout</span>
-<span class="sd">============</span>
-
-<span class="sd">print png to standard out</span>
-
-<span class="sd">usage: python print_stdout.py &gt; somefile.png</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-
-<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">buffer</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Keywords: python, matplotlib, pylab, example, codex (see <a class="reference internal" href="../../faq/howto_faq.html#how-to-search-examples"><span class="std std-ref">Search examples</span></a>)</p>
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -172,9 +128,52 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="pylab-examples-example-code-print-stdout-sgskip-py">
+<span id="pylab-examples-print-stdout-sgskip"></span><h1>pylab_examples example code: print_stdout_sgskip.py<a class="headerlink" href="#pylab-examples-example-code-print-stdout-sgskip-py" title="Permalink to this headline">¶</a></h1>
+<p>[<a class="reference external" href="print_stdout_sgskip.py">source code</a>]</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># -*- noplot -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">============</span>
+<span class="sd">Print Stdout</span>
+<span class="sd">============</span>
+
+<span class="sd">print png to standard out</span>
+
+<span class="sd">usage: python print_stdout.py &gt; somefile.png</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">buffer</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Keywords: python, matplotlib, pylab, example, codex (see <a class="reference internal" href="../../faq/howto_faq.html#how-to-search-examples"><span class="std std-ref">Search examples</span></a>)</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

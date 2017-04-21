@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.axhspan
 ===============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.axhspan

@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.ion
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: ion

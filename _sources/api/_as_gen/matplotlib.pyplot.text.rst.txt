@@ -1,13 +1,14 @@
-matplotlib\.pyplot\.Axes
+matplotlib\.pyplot\.text
 ========================
+
 
 .. currentmodule:: matplotlib.pyplot
 
-.. autoclass:: Axes
+.. autofunction:: text
 
 
 
-.. include:: matplotlib.pyplot.Axes.examples
+.. include:: matplotlib.pyplot.text.examples
 
 .. raw:: html
 

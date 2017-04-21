@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.is\_numlike
 ===============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: is_numlike

@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.prism
 =========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: prism

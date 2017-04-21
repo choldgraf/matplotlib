@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.cla
 ===========================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.cla

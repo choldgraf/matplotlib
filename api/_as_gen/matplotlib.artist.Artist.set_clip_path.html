@@ -85,48 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-artist-artist-set-clip-path">
-<h1>matplotlib.artist.Artist.set_clip_path<a class="headerlink" href="#matplotlib-artist-artist-set-clip-path" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.artist.Artist.set_clip_path">
-<code class="descclassname">Artist.</code><code class="descname">set_clip_path</code><span class="sig-paren">(</span><em>path</em>, <em>transform=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.artist.Artist.set_clip_path" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the artist&#8217;s clip path, which may be:</p>
-<blockquote>
-<div><ul class="simple">
-<li>a <a class="reference internal" href="../patches_api.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-class docutils literal"><span class="pre">Patch</span></code></a> (or subclass) instance</li>
-<li><dl class="first docutils">
-<dt>a <a class="reference internal" href="../path_api.html#matplotlib.path.Path" title="matplotlib.path.Path"><code class="xref py py-class docutils literal"><span class="pre">Path</span></code></a> instance, in which case</dt>
-<dd>an optional <a class="reference internal" href="../transformations.html#matplotlib.transforms.Transform" title="matplotlib.transforms.Transform"><code class="xref py py-class docutils literal"><span class="pre">Transform</span></code></a>
-instance may be provided, which will be applied to the
-path before using it for clipping.</dd>
-</dl>
-</li>
-<li><em>None</em>, to remove the clipping path</li>
-</ul>
-</div></blockquote>
-<p>For efficiency, if the path happens to be an axis-aligned
-rectangle, this method will set the clipping box to the
-corresponding rectangle and set the clipping path to <em>None</em>.</p>
-<p>ACCEPTS: [ (<a class="reference internal" href="../path_api.html#matplotlib.path.Path" title="matplotlib.path.Path"><code class="xref py py-class docutils literal"><span class="pre">Path</span></code></a>,
-<a class="reference internal" href="../transformations.html#matplotlib.transforms.Transform" title="matplotlib.transforms.Transform"><code class="xref py py-class docutils literal"><span class="pre">Transform</span></code></a>) |
-<a class="reference internal" href="../patches_api.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-class docutils literal"><span class="pre">Patch</span></code></a> | None ]</p>
-</dd></dl>
-
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -170,9 +128,50 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-artist-artist-set-clip-path">
+<h1>matplotlib.artist.Artist.set_clip_path<a class="headerlink" href="#matplotlib-artist-artist-set-clip-path" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.artist.Artist.set_clip_path">
+<code class="descclassname">Artist.</code><code class="descname">set_clip_path</code><span class="sig-paren">(</span><em>path</em>, <em>transform=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.artist.Artist.set_clip_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the artist&#8217;s clip path, which may be:</p>
+<blockquote>
+<div><ul class="simple">
+<li>a <a class="reference internal" href="../patches_api.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-class docutils literal"><span class="pre">Patch</span></code></a> (or subclass) instance</li>
+<li><dl class="first docutils">
+<dt>a <a class="reference internal" href="../path_api.html#matplotlib.path.Path" title="matplotlib.path.Path"><code class="xref py py-class docutils literal"><span class="pre">Path</span></code></a> instance, in which case</dt>
+<dd>an optional <a class="reference internal" href="../transformations.html#matplotlib.transforms.Transform" title="matplotlib.transforms.Transform"><code class="xref py py-class docutils literal"><span class="pre">Transform</span></code></a>
+instance may be provided, which will be applied to the
+path before using it for clipping.</dd>
+</dl>
+</li>
+<li><em>None</em>, to remove the clipping path</li>
+</ul>
+</div></blockquote>
+<p>For efficiency, if the path happens to be an axis-aligned
+rectangle, this method will set the clipping box to the
+corresponding rectangle and set the clipping path to <em>None</em>.</p>
+<p>ACCEPTS: [ (<a class="reference internal" href="../path_api.html#matplotlib.path.Path" title="matplotlib.path.Path"><code class="xref py py-class docutils literal"><span class="pre">Path</span></code></a>,
+<a class="reference internal" href="../transformations.html#matplotlib.transforms.Transform" title="matplotlib.transforms.Transform"><code class="xref py py-class docutils literal"><span class="pre">Transform</span></code></a>) |
+<a class="reference internal" href="../patches_api.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-class docutils literal"><span class="pre">Patch</span></code></a> | None ]</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

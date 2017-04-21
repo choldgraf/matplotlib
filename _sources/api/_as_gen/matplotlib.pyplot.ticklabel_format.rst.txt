@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.ticklabel\_format
 =====================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: ticklabel_format

@@ -85,42 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-artist-artist-findobj">
-<h1>matplotlib.artist.Artist.findobj<a class="headerlink" href="#matplotlib-artist-artist-findobj" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.artist.Artist.findobj">
-<code class="descclassname">Artist.</code><code class="descname">findobj</code><span class="sig-paren">(</span><em>match=None</em>, <em>include_self=True</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.artist.Artist.findobj" title="Permalink to this definition">¶</a></dt>
-<dd><p>Find artist objects.</p>
-<p>Recursively find all <a class="reference internal" href="../artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-class docutils literal"><span class="pre">Artist</span></code></a> instances
-contained in self.</p>
-<p><em>match</em> can be</p>
-<blockquote>
-<div><ul class="simple">
-<li>None: return all objects contained in artist.</li>
-<li>function with signature <code class="docutils literal"><span class="pre">boolean</span> <span class="pre">=</span> <span class="pre">match(artist)</span></code>
-used to filter matches</li>
-<li>class instance: e.g., Line2D.  Only return artists of class type.</li>
-</ul>
-</div></blockquote>
-<p>If <em>include_self</em> is True (default), include self in the list to be
-checked for a match.</p>
-</dd></dl>
-
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -164,9 +128,44 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-artist-artist-findobj">
+<h1>matplotlib.artist.Artist.findobj<a class="headerlink" href="#matplotlib-artist-artist-findobj" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.artist.Artist.findobj">
+<code class="descclassname">Artist.</code><code class="descname">findobj</code><span class="sig-paren">(</span><em>match=None</em>, <em>include_self=True</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.artist.Artist.findobj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find artist objects.</p>
+<p>Recursively find all <a class="reference internal" href="../artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-class docutils literal"><span class="pre">Artist</span></code></a> instances
+contained in self.</p>
+<p><em>match</em> can be</p>
+<blockquote>
+<div><ul class="simple">
+<li>None: return all objects contained in artist.</li>
+<li>function with signature <code class="docutils literal"><span class="pre">boolean</span> <span class="pre">=</span> <span class="pre">match(artist)</span></code>
+used to filter matches</li>
+<li>class instance: e.g., Line2D.  Only return artists of class type.</li>
+</ul>
+</div></blockquote>
+<p>If <em>include_self</em> is True (default), include self in the list to be
+checked for a match.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

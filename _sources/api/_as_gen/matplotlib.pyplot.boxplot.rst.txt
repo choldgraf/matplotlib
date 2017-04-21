@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.boxplot
 ===========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: boxplot

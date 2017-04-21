@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.axhline
 ===============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.axhline

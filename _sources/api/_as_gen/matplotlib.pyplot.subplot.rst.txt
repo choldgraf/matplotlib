@@ -1,13 +1,14 @@
-matplotlib\.pyplot\.Polygon
+matplotlib\.pyplot\.subplot
 ===========================
+
 
 .. currentmodule:: matplotlib.pyplot
 
-.. autoclass:: Polygon
+.. autofunction:: subplot
 
 
 
-.. include:: matplotlib.pyplot.Polygon.examples
+.. include:: matplotlib.pyplot.subplot.examples
 
 .. raw:: html
 

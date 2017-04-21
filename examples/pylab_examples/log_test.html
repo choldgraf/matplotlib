@@ -85,46 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="pylab-examples-example-code-log-test-py">
-<span id="pylab-examples-log-test"></span><h1>pylab_examples example code: log_test.py<a class="headerlink" href="#pylab-examples-example-code-log-test-py" title="Permalink to this headline">¶</a></h1>
-<p>(<a class="reference external" href="../../mpl_examples/pylab_examples/log_test.py">Source code</a>, <a class="reference external" href="../../mpl_examples/pylab_examples/log_test.png">png</a>, <a class="reference external" href="../../mpl_examples/pylab_examples/log_test.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../_images/log_test.png" src="../../_images/log_test.png" />
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">========</span>
-<span class="sd">Log Test</span>
-<span class="sd">========</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">dt</span> <span class="o">=</span> <span class="mf">0.01</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">/</span><span class="mf">5.0</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Keywords: python, matplotlib, pylab, example, codex (see <a class="reference internal" href="../../faq/howto_faq.html#how-to-search-examples"><span class="std std-ref">Search examples</span></a>)</p>
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -168,9 +128,48 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="pylab-examples-example-code-log-test-py">
+<span id="pylab-examples-log-test"></span><h1>pylab_examples example code: log_test.py<a class="headerlink" href="#pylab-examples-example-code-log-test-py" title="Permalink to this headline">¶</a></h1>
+<p>(<a class="reference external" href="../../mpl_examples/pylab_examples/log_test.py">Source code</a>, <a class="reference external" href="../../mpl_examples/pylab_examples/log_test.png">png</a>, <a class="reference external" href="../../mpl_examples/pylab_examples/log_test.pdf">pdf</a>)</p>
+<div class="figure">
+<img alt="../../_images/log_test.png" src="../../_images/log_test.png" />
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">========</span>
+<span class="sd">Log Test</span>
+<span class="sd">========</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">/</span><span class="mf">5.0</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Keywords: python, matplotlib, pylab, example, codex (see <a class="reference internal" href="../../faq/howto_faq.html#how-to-search-examples"><span class="std std-ref">Search examples</span></a>)</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

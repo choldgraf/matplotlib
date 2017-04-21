@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.set\_label
 ==================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.set_label

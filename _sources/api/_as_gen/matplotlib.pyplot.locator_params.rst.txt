@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.locator\_params
 ===================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: locator_params

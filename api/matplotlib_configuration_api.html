@@ -84,14 +84,54 @@ type="text/css" />
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../contents.html">Documentation overview</a><ul>
+  <li><a href="index.html">The Matplotlib API</a><ul>
+      <li>Previous: <a href="api_changes.html" title="previous chapter">API Changes</a></li>
+      <li>Next: <a href="afm_api.html" title="next chapter">afm (Adobe Font Metrics interface)</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/matplotlib_configuration_api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body">
             
   <div class="section" id="the-top-level-matplotlib-module">
-<h1>The top level <a class="reference internal" href="pyplot_api.html#module-matplotlib" title="matplotlib"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code></a> module<a class="headerlink" href="#the-top-level-matplotlib-module" title="Permalink to this headline">¶</a></h1>
+<h1>The top level <code class="xref py py-mod docutils literal"><span class="pre">matplotlib</span></code> module<a class="headerlink" href="#the-top-level-matplotlib-module" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="matplotlib.use">
 <code class="descclassname">matplotlib.</code><code class="descname">use</code><span class="sig-paren">(</span><em>arg</em>, <em>warn=True</em>, <em>force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.use" title="Permalink to this definition">¶</a></dt>
@@ -108,7 +148,7 @@ the first time; or, if you are not using pyplot, it must be called
 before importing matplotlib.backends.  If warn is True, a warning
 is issued if you try and call this after pylab or pyplot have been
 loaded.  In certain black magic use cases, e.g.
-<code class="xref py py-func docutils literal"><span class="pre">pyplot.switch_backend()</span></code>, we are doing the reloading necessary to
+<a class="reference internal" href="_as_gen/matplotlib.pyplot.switch_backend.html#matplotlib.pyplot.switch_backend" title="matplotlib.pyplot.switch_backend"><code class="xref py py-func docutils literal"><span class="pre">pyplot.switch_backend()</span></code></a>, we are doing the reloading necessary to
 make the backend switch work (in some cases, e.g., pure image
 backends) so one can set warn=False to suppress the warnings.</p>
 </div>
@@ -195,7 +235,7 @@ font rc as follows:</p>
 </pre></div>
 </div>
 <p>This enables you to easily switch between several configurations.
-Use <code class="xref py py-func docutils literal"><span class="pre">rcdefaults()</span></code> to restore the default
+Use <a class="reference internal" href="_as_gen/matplotlib.pyplot.rcdefaults.html#matplotlib.pyplot.rcdefaults" title="matplotlib.pyplot.rcdefaults"><code class="xref py py-func docutils literal"><span class="pre">rcdefaults()</span></code></a> to restore the default
 rc params after changes.</p>
 </dd></dl>
 
@@ -320,50 +360,9 @@ common usage is:</p>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/><div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../contents.html">Documentation overview</a><ul>
-  <li><a href="index.html">The Matplotlib API</a><ul>
-      <li>Previous: <a href="api_changes.html" title="previous chapter">API Changes</a></li>
-      <li>Next: <a href="afm_api.html" title="next chapter">afm (Adobe Font Metrics interface)</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/api/matplotlib_configuration_api.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.csd
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: csd

@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.imsave
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: imsave

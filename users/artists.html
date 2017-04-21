@@ -85,7 +85,62 @@ type="text/css" />
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Artist tutorial</a><ul>
+<li><a class="reference internal" href="#customizing-your-objects">Customizing your objects</a></li>
+<li><a class="reference internal" href="#object-containers">Object containers</a></li>
+<li><a class="reference internal" href="#figure-container">Figure container</a></li>
+<li><a class="reference internal" href="#axes-container">Axes container</a></li>
+<li><a class="reference internal" href="#axis-containers">Axis containers</a></li>
+<li><a class="reference internal" href="#tick-containers">Tick containers</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../contents.html">Documentation overview</a><ul>
+  <li><a href="index.html">User&#8217;s Guide</a><ul>
+  <li><a href="tutorials.html">Tutorials</a><ul>
+      <li>Previous: <a href="tight_layout_guide.html" title="previous chapter">Tight Layout guide</a></li>
+      <li>Next: <a href="legend_guide.html" title="next chapter">Legend guide</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/users/artists.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -116,7 +171,7 @@ standard use is to create a <a class="reference internal" href="../api/figure_ap
 the <code class="docutils literal"><span class="pre">Figure</span></code> to create one or more <a class="reference internal" href="../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> or
 <code class="xref py py-class docutils literal"><span class="pre">Subplot</span></code> instances, and use the <code class="docutils literal"><span class="pre">Axes</span></code> instance
 helper methods to create the primitives.  In the example below, we create a
-<code class="docutils literal"><span class="pre">Figure</span></code> instance using <code class="xref py py-func docutils literal"><span class="pre">matplotlib.pyplot.figure()</span></code>, which is a
+<code class="docutils literal"><span class="pre">Figure</span></code> instance using <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-func docutils literal"><span class="pre">matplotlib.pyplot.figure()</span></code></a>, which is a
 convenience method for instantiating <code class="docutils literal"><span class="pre">Figure</span></code> instances and connecting them
 with your user interface or drawing toolkit <code class="docutils literal"><span class="pre">FigureCanvas</span></code>.  As we will
 discuss below, this is not necessary &#8211; you can work directly with PostScript,
@@ -912,65 +967,9 @@ dollar signs and colors them green on the right side of the yaxis</p>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Artist tutorial</a><ul>
-<li><a class="reference internal" href="#customizing-your-objects">Customizing your objects</a></li>
-<li><a class="reference internal" href="#object-containers">Object containers</a></li>
-<li><a class="reference internal" href="#figure-container">Figure container</a></li>
-<li><a class="reference internal" href="#axes-container">Axes container</a></li>
-<li><a class="reference internal" href="#axis-containers">Axis containers</a></li>
-<li><a class="reference internal" href="#tick-containers">Tick containers</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../contents.html">Documentation overview</a><ul>
-  <li><a href="index.html">User&#8217;s Guide</a><ul>
-  <li><a href="tutorials.html">Tutorials</a><ul>
-      <li>Previous: <a href="tight_layout_guide.html" title="previous chapter">Tight Layout guide</a></li>
-      <li>Next: <a href="legend_guide.html" title="next chapter">Legend guide</a></li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/users/artists.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

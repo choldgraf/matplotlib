@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.hsv
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: hsv

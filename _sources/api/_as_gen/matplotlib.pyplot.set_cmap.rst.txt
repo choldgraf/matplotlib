@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.set\_cmap
 =============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: set_cmap

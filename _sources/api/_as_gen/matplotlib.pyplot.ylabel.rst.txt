@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.ylabel
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: ylabel

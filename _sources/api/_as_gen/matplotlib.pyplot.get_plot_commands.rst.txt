@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.get\_plot\_commands
 =======================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: get_plot_commands

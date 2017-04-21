@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.get\_backend
 ================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: get_backend

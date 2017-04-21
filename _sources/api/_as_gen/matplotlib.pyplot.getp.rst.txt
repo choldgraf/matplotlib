@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.getp
 ========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: getp

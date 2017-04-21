@@ -85,48 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axes-axes-autoscale">
-<h1>matplotlib.axes.Axes.autoscale<a class="headerlink" href="#matplotlib-axes-axes-autoscale" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axes.Axes.autoscale">
-<code class="descclassname">Axes.</code><code class="descname">autoscale</code><span class="sig-paren">(</span><em>enable=True</em>, <em>axis='both'</em>, <em>tight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.autoscale" title="Permalink to this definition">¶</a></dt>
-<dd><p>Autoscale the axis view to the data (toggle).</p>
-<p>Convenience method for simple axis view autoscaling.
-It turns autoscaling on or off, and then,
-if autoscaling for either axis is on, it performs
-the autoscaling on the specified axis or axes.</p>
-<dl class="docutils">
-<dt><em>enable</em>: [True | False | None]</dt>
-<dd>True (default) turns autoscaling on, False turns it off.
-None leaves the autoscaling state unchanged.</dd>
-<dt><em>axis</em>: [&#8216;x&#8217; | &#8216;y&#8217; | &#8216;both&#8217;]</dt>
-<dd>which axis to operate on; default is &#8216;both&#8217;</dd>
-<dt><em>tight</em>: [True | False | None]</dt>
-<dd>If True, set view limits to data limits;
-if False, let the locator and margins expand the view limits;
-if None, use tight scaling if the only artist is an image,
-otherwise treat <em>tight</em> as False.
-The <em>tight</em> setting is retained for future autoscaling
-until it is explicitly changed.</dd>
-</dl>
-<p>Returns None.</p>
-</dd></dl>
-
-<div class="clearer"></div></div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -170,9 +128,50 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axes-axes-autoscale">
+<h1>matplotlib.axes.Axes.autoscale<a class="headerlink" href="#matplotlib-axes-axes-autoscale" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axes.Axes.autoscale">
+<code class="descclassname">Axes.</code><code class="descname">autoscale</code><span class="sig-paren">(</span><em>enable=True</em>, <em>axis='both'</em>, <em>tight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.autoscale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Autoscale the axis view to the data (toggle).</p>
+<p>Convenience method for simple axis view autoscaling.
+It turns autoscaling on or off, and then,
+if autoscaling for either axis is on, it performs
+the autoscaling on the specified axis or axes.</p>
+<dl class="docutils">
+<dt><em>enable</em>: [True | False | None]</dt>
+<dd>True (default) turns autoscaling on, False turns it off.
+None leaves the autoscaling state unchanged.</dd>
+<dt><em>axis</em>: [&#8216;x&#8217; | &#8216;y&#8217; | &#8216;both&#8217;]</dt>
+<dd>which axis to operate on; default is &#8216;both&#8217;</dd>
+<dt><em>tight</em>: [True | False | None]</dt>
+<dd>If True, set view limits to data limits;
+if False, let the locator and margins expand the view limits;
+if None, use tight scaling if the only artist is an image,
+otherwise treat <em>tight</em> as False.
+The <em>tight</em> setting is retained for future autoscaling
+until it is explicitly changed.</dd>
+</dl>
+<p>Returns None.</p>
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

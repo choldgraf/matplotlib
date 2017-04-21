@@ -85,7 +85,71 @@ type="text/css" />
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">New in matplotlib 1.2</a><ul>
+<li><a class="reference internal" href="#python-3-x-support">Python 3.x support</a></li>
+<li><a class="reference internal" href="#pgf-tikz-backend">PGF/TikZ backend</a></li>
+<li><a class="reference internal" href="#locator-interface">Locator interface</a></li>
+<li><a class="reference internal" href="#tri-surface-plots">Tri-Surface Plots</a></li>
+<li><a class="reference internal" href="#control-the-lengths-of-colorbar-extensions">Control the lengths of colorbar extensions</a></li>
+<li><a class="reference internal" href="#figures-are-picklable">Figures are picklable</a></li>
+<li><a class="reference internal" href="#set-default-bounding-box-in-matplotlibrc">Set default bounding box in matplotlibrc</a></li>
+<li><a class="reference internal" href="#new-boxplot-functionality">New Boxplot Functionality</a></li>
+<li><a class="reference internal" href="#new-rc-parameter-functionality">New RC parameter functionality</a></li>
+<li><a class="reference internal" href="#streamplot">Streamplot</a></li>
+<li><a class="reference internal" href="#new-hist-functionality">New hist functionality</a></li>
+<li><a class="reference internal" href="#updated-shipped-dependencies">Updated shipped dependencies</a></li>
+<li><a class="reference internal" href="#face-centred-colors-in-tripcolor-plots">Face-centred colors in tripcolor plots</a></li>
+<li><a class="reference internal" href="#hatching-patterns-in-filled-contour-plots-with-legends">Hatching patterns in filled contour plots, with legends</a></li>
+<li><a class="reference internal" href="#known-issues-in-the-matplotlib-1-2-release">Known issues in the matplotlib 1.2 release</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">User&#8217;s Guide</a><ul>
+  <li><a href="../whats_new.html">What&#8217;s new in matplotlib</a><ul>
+      <li>Previous: <a href="whats_new_1.1.html" title="previous chapter">New in matplotlib 1.1</a></li>
+      <li>Next: <a href="whats_new_1.2.2.html" title="next chapter">New in matplotlib 1.2.2</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/users/prev_whats_new/whats_new_1.2.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -171,7 +235,7 @@ span the values 10 and 19.5:</p>
 <div class="section" id="control-the-lengths-of-colorbar-extensions">
 <h2><a class="toc-backref" href="#id11">Control the lengths of colorbar extensions</a><a class="headerlink" href="#control-the-lengths-of-colorbar-extensions" title="Permalink to this headline">¶</a></h2>
 <p>Andrew Dawson added a new keyword argument <em>extendfrac</em> to
-<code class="xref py py-meth docutils literal"><span class="pre">colorbar()</span></code> to control the length of
+<a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.colorbar.html#matplotlib.pyplot.colorbar" title="matplotlib.pyplot.colorbar"><code class="xref py py-meth docutils literal"><span class="pre">colorbar()</span></code></a> to control the length of
 minimum and maximum colorbar extensions.</p>
 <p>(<a class="reference external" href="../../users/prev_whats_new/whats_new_1-2-1.py">Source code</a>, <a class="reference external" href="../../users/prev_whats_new/whats_new_1-2-1.png">png</a>, <a class="reference external" href="../../users/prev_whats_new/whats_new_1-2-1.pdf">pdf</a>)</p>
 <div class="figure">
@@ -221,11 +285,11 @@ To load RC parameters from a file:</p>
 <div class="section" id="streamplot">
 <h2><a class="toc-backref" href="#id16">Streamplot</a><a class="headerlink" href="#streamplot" title="Permalink to this headline">¶</a></h2>
 <p>Tom Flannaghan and Tony Yu have added a new
-<code class="xref py py-meth docutils literal"><span class="pre">streamplot()</span></code> function to plot the streamlines of
+<a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.streamplot.html#matplotlib.pyplot.streamplot" title="matplotlib.pyplot.streamplot"><code class="xref py py-meth docutils literal"><span class="pre">streamplot()</span></code></a> function to plot the streamlines of
 a vector field. This has been a long-requested feature and complements the
-existing <code class="xref py py-meth docutils literal"><span class="pre">quiver()</span></code> function for plotting vector fields.
+existing <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.quiver.html#matplotlib.pyplot.quiver" title="matplotlib.pyplot.quiver"><code class="xref py py-meth docutils literal"><span class="pre">quiver()</span></code></a> function for plotting vector fields.
 In addition to simply plotting the streamlines of the vector field,
-<code class="xref py py-meth docutils literal"><span class="pre">streamplot()</span></code> allows users to map the colors and/or
+<a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.streamplot.html#matplotlib.pyplot.streamplot" title="matplotlib.pyplot.streamplot"><code class="xref py py-meth docutils literal"><span class="pre">streamplot()</span></code></a> allows users to map the colors and/or
 line widths of the streamlines to a separate parameter, such as the speed or
 local intensity of the vector field.</p>
 <p>(<a class="reference external" href="../../mpl_examples/images_contours_and_fields/plot_streamplot.py">Source code</a>, <a class="reference external" href="../../mpl_examples/images_contours_and_fields/plot_streamplot.png">png</a>, <a class="reference external" href="../../mpl_examples/images_contours_and_fields/plot_streamplot.pdf">pdf</a>)</p>
@@ -235,7 +299,7 @@ local intensity of the vector field.</p>
 </div>
 <div class="section" id="new-hist-functionality">
 <h2><a class="toc-backref" href="#id17">New hist functionality</a><a class="headerlink" href="#new-hist-functionality" title="Permalink to this headline">¶</a></h2>
-<p>Nic Eggert added a new <code class="xref py py-obj docutils literal"><span class="pre">stacked</span></code> kwarg to <code class="xref py py-meth docutils literal"><span class="pre">hist()</span></code> that
+<p>Nic Eggert added a new <code class="xref py py-obj docutils literal"><span class="pre">stacked</span></code> kwarg to <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.hist.html#matplotlib.pyplot.hist" title="matplotlib.pyplot.hist"><code class="xref py py-meth docutils literal"><span class="pre">hist()</span></code></a> that
 allows creation of stacked histograms using any of the histogram types.
 Previously, this functionality was only available by using the <code class="xref py py-obj docutils literal"><span class="pre">barstacked</span></code>
 histogram type. Now, when <code class="xref py py-obj docutils literal"><span class="pre">stacked=True</span></code> is passed to the function, any of the
@@ -256,7 +320,7 @@ and 2.1 on Python 3.x</li>
 </div>
 <div class="section" id="face-centred-colors-in-tripcolor-plots">
 <h2><a class="toc-backref" href="#id19">Face-centred colors in tripcolor plots</a><a class="headerlink" href="#face-centred-colors-in-tripcolor-plots" title="Permalink to this headline">¶</a></h2>
-<p>Ian Thomas extended <code class="xref py py-meth docutils literal"><span class="pre">tripcolor()</span></code> to allow one color
+<p>Ian Thomas extended <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.tripcolor.html#matplotlib.pyplot.tripcolor" title="matplotlib.pyplot.tripcolor"><code class="xref py py-meth docutils literal"><span class="pre">tripcolor()</span></code></a> to allow one color
 value to be specified for each triangular face rather than for each point in
 a triangulation.</p>
 <p>(<a class="reference external" href="../../mpl_examples/pylab_examples/tripcolor_demo.py">Source code</a>)</p>
@@ -276,7 +340,7 @@ a triangulation.</p>
 <div class="section" id="hatching-patterns-in-filled-contour-plots-with-legends">
 <h2><a class="toc-backref" href="#id20">Hatching patterns in filled contour plots, with legends</a><a class="headerlink" href="#hatching-patterns-in-filled-contour-plots-with-legends" title="Permalink to this headline">¶</a></h2>
 <p>Phil Elson added support for hatching to
-<code class="xref py py-func docutils literal"><span class="pre">contourf()</span></code>, together with the ability
+<a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.contourf.html#matplotlib.pyplot.contourf" title="matplotlib.pyplot.contourf"><code class="xref py py-func docutils literal"><span class="pre">contourf()</span></code></a>, together with the ability
 to use a legend to identify contoured ranges.</p>
 <p>(<a class="reference external" href="../../mpl_examples/pylab_examples/contourf_hatching.py">Source code</a>)</p>
 <div class="figure" id="id4">
@@ -305,74 +369,9 @@ of IPython.</li>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">New in matplotlib 1.2</a><ul>
-<li><a class="reference internal" href="#python-3-x-support">Python 3.x support</a></li>
-<li><a class="reference internal" href="#pgf-tikz-backend">PGF/TikZ backend</a></li>
-<li><a class="reference internal" href="#locator-interface">Locator interface</a></li>
-<li><a class="reference internal" href="#tri-surface-plots">Tri-Surface Plots</a></li>
-<li><a class="reference internal" href="#control-the-lengths-of-colorbar-extensions">Control the lengths of colorbar extensions</a></li>
-<li><a class="reference internal" href="#figures-are-picklable">Figures are picklable</a></li>
-<li><a class="reference internal" href="#set-default-bounding-box-in-matplotlibrc">Set default bounding box in matplotlibrc</a></li>
-<li><a class="reference internal" href="#new-boxplot-functionality">New Boxplot Functionality</a></li>
-<li><a class="reference internal" href="#new-rc-parameter-functionality">New RC parameter functionality</a></li>
-<li><a class="reference internal" href="#streamplot">Streamplot</a></li>
-<li><a class="reference internal" href="#new-hist-functionality">New hist functionality</a></li>
-<li><a class="reference internal" href="#updated-shipped-dependencies">Updated shipped dependencies</a></li>
-<li><a class="reference internal" href="#face-centred-colors-in-tripcolor-plots">Face-centred colors in tripcolor plots</a></li>
-<li><a class="reference internal" href="#hatching-patterns-in-filled-contour-plots-with-legends">Hatching patterns in filled contour plots, with legends</a></li>
-<li><a class="reference internal" href="#known-issues-in-the-matplotlib-1-2-release">Known issues in the matplotlib 1.2 release</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../../contents.html">Documentation overview</a><ul>
-  <li><a href="../index.html">User&#8217;s Guide</a><ul>
-  <li><a href="../whats_new.html">What&#8217;s new in matplotlib</a><ul>
-      <li>Previous: <a href="whats_new_1.1.html" title="previous chapter">New in matplotlib 1.1</a></li>
-      <li>Next: <a href="whats_new_1.2.2.html" title="next chapter">New in matplotlib 1.2.2</a></li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/users/prev_whats_new/whats_new_1.2.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

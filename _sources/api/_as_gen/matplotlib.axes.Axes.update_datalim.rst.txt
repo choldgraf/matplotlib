@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.update\_datalim
 =======================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.update_datalim

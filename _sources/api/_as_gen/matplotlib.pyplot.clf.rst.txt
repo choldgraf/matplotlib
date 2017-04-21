@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.clf
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: clf

@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.sci
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: sci

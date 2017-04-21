@@ -85,7 +85,78 @@ type="text/css" />
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">MEP26: Artist styling</a><ul>
+<li><a class="reference internal" href="#status">Status</a></li>
+<li><a class="reference internal" href="#branches-and-pull-requests">Branches and Pull requests</a></li>
+<li><a class="reference internal" href="#abstract">Abstract</a></li>
+<li><a class="reference internal" href="#detailed-description">Detailed description</a></li>
+<li><a class="reference internal" href="#implementation">Implementation</a><ul>
+<li><a class="reference internal" href="#bnf-grammar">BNF Grammar</a></li>
+<li><a class="reference internal" href="#syntax">Syntax</a><ul>
+<li><a class="reference internal" href="#selectors">Selectors</a></li>
+<li><a class="reference internal" href="#gid-selector">GID selector</a></li>
+<li><a class="reference internal" href="#attributes-and-values">Attributes and values</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#parsing">Parsing</a></li>
+<li><a class="reference internal" href="#visitor-pattern-for-matplotlib-figure">Visitor pattern for matplotlib figure</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backward-compatibility">Backward compatibility</a></li>
+<li><a class="reference internal" href="#alternatives">Alternatives</a></li>
+<li><a class="reference internal" href="#appendix">Appendix</a><ul>
+<li><a class="reference internal" href="#matplotlib-primitives">Matplotlib primitives</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">The Matplotlib Developers&#8217; Guide</a><ul>
+  <li><a href="index.html">Matplotlib Enhancement Proposals</a><ul>
+      <li>Previous: <a href="MEP25.html" title="previous chapter">MEP25: Serialization</a></li>
+      <li>Next: <a href="MEP27.html" title="next chapter">MEP27: decouple pyplot from backends</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/devel/MEP/MEP26.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -326,81 +397,9 @@ MEP25, which may assist in this development</p>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">MEP26: Artist styling</a><ul>
-<li><a class="reference internal" href="#status">Status</a></li>
-<li><a class="reference internal" href="#branches-and-pull-requests">Branches and Pull requests</a></li>
-<li><a class="reference internal" href="#abstract">Abstract</a></li>
-<li><a class="reference internal" href="#detailed-description">Detailed description</a></li>
-<li><a class="reference internal" href="#implementation">Implementation</a><ul>
-<li><a class="reference internal" href="#bnf-grammar">BNF Grammar</a></li>
-<li><a class="reference internal" href="#syntax">Syntax</a><ul>
-<li><a class="reference internal" href="#selectors">Selectors</a></li>
-<li><a class="reference internal" href="#gid-selector">GID selector</a></li>
-<li><a class="reference internal" href="#attributes-and-values">Attributes and values</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#parsing">Parsing</a></li>
-<li><a class="reference internal" href="#visitor-pattern-for-matplotlib-figure">Visitor pattern for matplotlib figure</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#backward-compatibility">Backward compatibility</a></li>
-<li><a class="reference internal" href="#alternatives">Alternatives</a></li>
-<li><a class="reference internal" href="#appendix">Appendix</a><ul>
-<li><a class="reference internal" href="#matplotlib-primitives">Matplotlib primitives</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../../contents.html">Documentation overview</a><ul>
-  <li><a href="../index.html">The Matplotlib Developers&#8217; Guide</a><ul>
-  <li><a href="index.html">Matplotlib Enhancement Proposals</a><ul>
-      <li>Previous: <a href="MEP25.html" title="previous chapter">MEP25: Serialization</a></li>
-      <li>Next: <a href="MEP27.html" title="next chapter">MEP27: decouple pyplot from backends</a></li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/devel/MEP/MEP26.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

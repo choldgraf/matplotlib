@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.dedent
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: dedent

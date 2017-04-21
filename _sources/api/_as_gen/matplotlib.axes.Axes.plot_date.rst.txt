@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.plot\_date
 ==================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.plot_date

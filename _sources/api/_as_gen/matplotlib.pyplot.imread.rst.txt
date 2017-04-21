@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.imread
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: imread

@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.contourf
 ================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.contourf

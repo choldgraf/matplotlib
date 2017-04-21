@@ -35,7 +35,10 @@ type="text/css" />
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" />
+    <link rel="up" title="The Matplotlib API" href="../index.html" />
+    <link rel="next" title="matplotlib.pyplot.acorr" href="matplotlib.pyplot.acorr.html" />
+    <link rel="prev" title="widgets" href="../widgets_api.html" /> 
 
 
   </head>
@@ -65,16 +68,71 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="matplotlib.pyplot.acorr.html" title="matplotlib.pyplot.acorr"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../widgets_api.html" title="widgets"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">The Matplotlib API</a> &raquo;</li> 
       </ul>
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">matplotlib.pyplot</a><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">The Matplotlib API</a><ul>
+      <li>Previous: <a href="../widgets_api.html" title="previous chapter">widgets</a></li>
+      <li>Next: <a href="matplotlib.pyplot.acorr.html" title="next chapter">matplotlib.pyplot.acorr</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/api/_as_gen/matplotlib.pyplot.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -111,7 +169,7 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.annotate.html#matplotlib.pyplot.annotate" title="matplotlib.pyplot.annotate"><code class="xref py py-obj docutils literal"><span class="pre">annotate</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Annotate the point <code class="docutils literal"><span class="pre">xy</span></code> with text <code class="docutils literal"><span class="pre">s</span></code>.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">arrow</span></code>(x,&nbsp;y,&nbsp;dx,&nbsp;dy[,&nbsp;hold])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.arrow.html#matplotlib.pyplot.arrow" title="matplotlib.pyplot.arrow"><code class="xref py py-obj docutils literal"><span class="pre">arrow</span></code></a>(x,&nbsp;y,&nbsp;dx,&nbsp;dy[,&nbsp;hold])</td>
 <td>Add an arrow to the axes.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.autoscale.html#matplotlib.pyplot.autoscale" title="matplotlib.pyplot.autoscale"><code class="xref py py-obj docutils literal"><span class="pre">autoscale</span></code></a>([enable,&nbsp;axis,&nbsp;tight])</td>
@@ -120,7 +178,7 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.autumn.html#matplotlib.pyplot.autumn" title="matplotlib.pyplot.autumn"><code class="xref py py-obj docutils literal"><span class="pre">autumn</span></code></a>()</td>
 <td>set the default colormap to autumn and apply to current image if any.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">axes</span></code>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.axes.html#matplotlib.pyplot.axes" title="matplotlib.pyplot.axes"><code class="xref py py-obj docutils literal"><span class="pre">axes</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Add an axes to the figure.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.axhline.html#matplotlib.pyplot.axhline" title="matplotlib.pyplot.axhline"><code class="xref py py-obj docutils literal"><span class="pre">axhline</span></code></a>([y,&nbsp;xmin,&nbsp;xmax,&nbsp;hold])</td>
@@ -180,7 +238,7 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.colorbar.html#matplotlib.pyplot.colorbar" title="matplotlib.pyplot.colorbar"><code class="xref py py-obj docutils literal"><span class="pre">colorbar</span></code></a>([mappable,&nbsp;cax,&nbsp;ax])</td>
 <td>Add a colorbar to a plot.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.colormaps.html#matplotlib.pyplot.colormaps" title="matplotlib.pyplot.colormaps"><code class="xref py py-obj docutils literal"><span class="pre">colormaps</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="../pyplot_summary.html#matplotlib.pyplot.colormaps" title="matplotlib.pyplot.colormaps"><code class="xref py py-obj docutils literal"><span class="pre">colormaps</span></code></a>()</td>
 <td>Matplotlib provides a number of colormaps, and others can be added using <a class="reference internal" href="../cm_api.html#matplotlib.cm.register_cmap" title="matplotlib.cm.register_cmap"><code class="xref py py-func docutils literal"><span class="pre">register_cmap()</span></code></a>.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.colors.html#matplotlib.pyplot.colors" title="matplotlib.pyplot.colors"><code class="xref py py-obj docutils literal"><span class="pre">colors</span></code></a>()</td>
@@ -246,7 +304,7 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.figtext.html#matplotlib.pyplot.figtext" title="matplotlib.pyplot.figtext"><code class="xref py py-obj docutils literal"><span class="pre">figtext</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Add text to figure.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">figure</span></code>([num,&nbsp;figsize,&nbsp;dpi,&nbsp;facecolor,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-obj docutils literal"><span class="pre">figure</span></code></a>([num,&nbsp;figsize,&nbsp;dpi,&nbsp;facecolor,&nbsp;...])</td>
 <td>Creates a new figure.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.fill.html#matplotlib.pyplot.fill" title="matplotlib.pyplot.fill"><code class="xref py py-obj docutils literal"><span class="pre">fill</span></code></a>(*args,&nbsp;**kwargs)</td>
@@ -444,7 +502,7 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.plotfile.html#matplotlib.pyplot.plotfile" title="matplotlib.pyplot.plotfile"><code class="xref py py-obj docutils literal"><span class="pre">plotfile</span></code></a>(fname[,&nbsp;cols,&nbsp;plotfuncs,&nbsp;comments,&nbsp;...])</td>
 <td>Plot the data in in a file.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.plotting.html#matplotlib.pyplot.plotting" title="matplotlib.pyplot.plotting"><code class="xref py py-obj docutils literal"><span class="pre">plotting</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="../pyplot_summary.html#matplotlib.pyplot.plotting" title="matplotlib.pyplot.plotting"><code class="xref py py-obj docutils literal"><span class="pre">plotting</span></code></a>()</td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.polar.html#matplotlib.pyplot.polar" title="matplotlib.pyplot.polar"><code class="xref py py-obj docutils literal"><span class="pre">polar</span></code></a>(*args,&nbsp;**kwargs)</td>
@@ -531,7 +589,7 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.streamplot.html#matplotlib.pyplot.streamplot" title="matplotlib.pyplot.streamplot"><code class="xref py py-obj docutils literal"><span class="pre">streamplot</span></code></a>(x,&nbsp;y,&nbsp;u,&nbsp;v[,&nbsp;density,&nbsp;linewidth,&nbsp;...])</td>
 <td>Draws streamlines of a vector flow.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">subplot</span></code>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot" title="matplotlib.pyplot.subplot"><code class="xref py py-obj docutils literal"><span class="pre">subplot</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Return a subplot axes positioned by the given grid definition.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.subplot2grid.html#matplotlib.pyplot.subplot2grid" title="matplotlib.pyplot.subplot2grid"><code class="xref py py-obj docutils literal"><span class="pre">subplot2grid</span></code></a>(shape,&nbsp;loc[,&nbsp;rowspan,&nbsp;colspan,&nbsp;fig])</td>
@@ -558,7 +616,7 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.table.html#matplotlib.pyplot.table" title="matplotlib.pyplot.table"><code class="xref py py-obj docutils literal"><span class="pre">table</span></code></a>(**kwargs)</td>
 <td>Add a table to the current axes.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">text</span></code>(x,&nbsp;y,&nbsp;s[,&nbsp;fontdict,&nbsp;withdash])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.text.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-obj docutils literal"><span class="pre">text</span></code></a>(x,&nbsp;y,&nbsp;s[,&nbsp;fontdict,&nbsp;withdash])</td>
 <td>Add text to the axes.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.thetagrids.html#matplotlib.pyplot.thetagrids" title="matplotlib.pyplot.thetagrids"><code class="xref py py-obj docutils literal"><span class="pre">thetagrids</span></code></a>(*args,&nbsp;**kwargs)</td>
@@ -645,134 +703,6 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Annotation.html#matplotlib.pyplot.Annotation" title="matplotlib.pyplot.Annotation"><code class="xref py py-obj docutils literal"><span class="pre">Annotation</span></code></a>(s,&nbsp;xy[,&nbsp;xytext,&nbsp;xycoords,&nbsp;...])</td>
-<td>Annotate the point <code class="docutils literal"><span class="pre">xy</span></code> with text <code class="docutils literal"><span class="pre">s</span></code>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Arrow.html#matplotlib.pyplot.Arrow" title="matplotlib.pyplot.Arrow"><code class="xref py py-obj docutils literal"><span class="pre">Arrow</span></code></a>(x,&nbsp;y,&nbsp;dx,&nbsp;dy[,&nbsp;width])</td>
-<td>An arrow patch.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Artist.html#matplotlib.pyplot.Artist" title="matplotlib.pyplot.Artist"><code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code></a>()</td>
-<td>Abstract base class for someone who renders into a <code class="xref py py-class docutils literal"><span class="pre">FigureCanvas</span></code>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.AutoLocator.html#matplotlib.pyplot.AutoLocator" title="matplotlib.pyplot.AutoLocator"><code class="xref py py-obj docutils literal"><span class="pre">AutoLocator</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Axes.html#matplotlib.pyplot.Axes" title="matplotlib.pyplot.Axes"><code class="xref py py-obj docutils literal"><span class="pre">Axes</span></code></a>(fig,&nbsp;rect[,&nbsp;facecolor,&nbsp;frameon,&nbsp;...])</td>
-<td>The <a class="reference internal" href="matplotlib.pyplot.Axes.html#matplotlib.pyplot.Axes" title="matplotlib.pyplot.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> contains most of the figure elements: <a class="reference internal" href="../axis_api.html#matplotlib.axis.Axis" title="matplotlib.axis.Axis"><code class="xref py py-class docutils literal"><span class="pre">Axis</span></code></a>, <a class="reference internal" href="../axis_api.html#matplotlib.axis.Tick" title="matplotlib.axis.Tick"><code class="xref py py-class docutils literal"><span class="pre">Tick</span></code></a>, <a class="reference internal" href="../lines_api.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a>, <a class="reference internal" href="../text_api.html#matplotlib.text.Text" title="matplotlib.text.Text"><code class="xref py py-class docutils literal"><span class="pre">Text</span></code></a>, <a class="reference internal" href="../patches_api.html#matplotlib.patches.Polygon" title="matplotlib.patches.Polygon"><code class="xref py py-class docutils literal"><span class="pre">Polygon</span></code></a>, etc., and sets the coordinate system.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Button.html#matplotlib.pyplot.Button" title="matplotlib.pyplot.Button"><code class="xref py py-obj docutils literal"><span class="pre">Button</span></code></a>(ax,&nbsp;label[,&nbsp;image,&nbsp;color,&nbsp;hovercolor])</td>
-<td>A GUI neutral button.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Circle.html#matplotlib.pyplot.Circle" title="matplotlib.pyplot.Circle"><code class="xref py py-obj docutils literal"><span class="pre">Circle</span></code></a>(xy[,&nbsp;radius])</td>
-<td>A circle patch.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Figure.html#matplotlib.pyplot.Figure" title="matplotlib.pyplot.Figure"><code class="xref py py-obj docutils literal"><span class="pre">Figure</span></code></a>([figsize,&nbsp;dpi,&nbsp;facecolor,&nbsp;edgecolor,&nbsp;...])</td>
-<td>The Figure instance supports callbacks through a <em>callbacks</em> attribute which is a <a class="reference internal" href="../cbook_api.html#matplotlib.cbook.CallbackRegistry" title="matplotlib.cbook.CallbackRegistry"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.cbook.CallbackRegistry</span></code></a> instance.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.FigureCanvasBase.html#matplotlib.pyplot.FigureCanvasBase" title="matplotlib.pyplot.FigureCanvasBase"><code class="xref py py-obj docutils literal"><span class="pre">FigureCanvasBase</span></code></a>(figure)</td>
-<td>The canvas the figure renders into.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.FixedFormatter.html#matplotlib.pyplot.FixedFormatter" title="matplotlib.pyplot.FixedFormatter"><code class="xref py py-obj docutils literal"><span class="pre">FixedFormatter</span></code></a>(seq)</td>
-<td>Return fixed strings for tick labels based only on position, not value.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.FixedLocator.html#matplotlib.pyplot.FixedLocator" title="matplotlib.pyplot.FixedLocator"><code class="xref py py-obj docutils literal"><span class="pre">FixedLocator</span></code></a>(locs[,&nbsp;nbins])</td>
-<td>Tick locations are fixed.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.FormatStrFormatter.html#matplotlib.pyplot.FormatStrFormatter" title="matplotlib.pyplot.FormatStrFormatter"><code class="xref py py-obj docutils literal"><span class="pre">FormatStrFormatter</span></code></a>(fmt)</td>
-<td>Use an old-style (&#8216;%&#8217; operator) format string to format the tick.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Formatter.html#matplotlib.pyplot.Formatter" title="matplotlib.pyplot.Formatter"><code class="xref py py-obj docutils literal"><span class="pre">Formatter</span></code></a></td>
-<td>Create a string based on a tick value and location.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.FuncFormatter.html#matplotlib.pyplot.FuncFormatter" title="matplotlib.pyplot.FuncFormatter"><code class="xref py py-obj docutils literal"><span class="pre">FuncFormatter</span></code></a>(func)</td>
-<td>Use a user-defined function for formatting.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.GridSpec.html#matplotlib.pyplot.GridSpec" title="matplotlib.pyplot.GridSpec"><code class="xref py py-obj docutils literal"><span class="pre">GridSpec</span></code></a>(nrows,&nbsp;ncols[,&nbsp;left,&nbsp;bottom,&nbsp;...])</td>
-<td>A class that specifies the geometry of the grid that a subplot will be placed.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.IndexLocator.html#matplotlib.pyplot.IndexLocator" title="matplotlib.pyplot.IndexLocator"><code class="xref py py-obj docutils literal"><span class="pre">IndexLocator</span></code></a>(base,&nbsp;offset)</td>
-<td>Place a tick on every multiple of some base number of points plotted, e.g., on every 5th point.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Line2D.html#matplotlib.pyplot.Line2D" title="matplotlib.pyplot.Line2D"><code class="xref py py-obj docutils literal"><span class="pre">Line2D</span></code></a>(xdata,&nbsp;ydata[,&nbsp;linewidth,&nbsp;linestyle,&nbsp;...])</td>
-<td>A line - the line can have both a solid linestyle connecting all the vertices, and a marker at each vertex.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.LinearLocator.html#matplotlib.pyplot.LinearLocator" title="matplotlib.pyplot.LinearLocator"><code class="xref py py-obj docutils literal"><span class="pre">LinearLocator</span></code></a>([numticks,&nbsp;presets])</td>
-<td>Determine the tick locations</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Locator.html#matplotlib.pyplot.Locator" title="matplotlib.pyplot.Locator"><code class="xref py py-obj docutils literal"><span class="pre">Locator</span></code></a></td>
-<td>Determine the tick locations;</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.LogFormatter.html#matplotlib.pyplot.LogFormatter" title="matplotlib.pyplot.LogFormatter"><code class="xref py py-obj docutils literal"><span class="pre">LogFormatter</span></code></a>([base,&nbsp;labelOnlyBase,&nbsp;...])</td>
-<td>Base class for formatting ticks on a log or symlog scale.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.LogFormatterExponent.html#matplotlib.pyplot.LogFormatterExponent" title="matplotlib.pyplot.LogFormatterExponent"><code class="xref py py-obj docutils literal"><span class="pre">LogFormatterExponent</span></code></a>([base,&nbsp;labelOnlyBase,&nbsp;...])</td>
-<td>Format values for log axis using <code class="docutils literal"><span class="pre">exponent</span> <span class="pre">=</span> <span class="pre">log_base(value)</span></code>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.LogFormatterMathtext.html#matplotlib.pyplot.LogFormatterMathtext" title="matplotlib.pyplot.LogFormatterMathtext"><code class="xref py py-obj docutils literal"><span class="pre">LogFormatterMathtext</span></code></a>([base,&nbsp;labelOnlyBase,&nbsp;...])</td>
-<td>Format values for log axis using <code class="docutils literal"><span class="pre">exponent</span> <span class="pre">=</span> <span class="pre">log_base(value)</span></code>.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.LogLocator.html#matplotlib.pyplot.LogLocator" title="matplotlib.pyplot.LogLocator"><code class="xref py py-obj docutils literal"><span class="pre">LogLocator</span></code></a>([base,&nbsp;subs,&nbsp;numdecs,&nbsp;numticks])</td>
-<td>Determine the tick locations for log axes</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.MaxNLocator.html#matplotlib.pyplot.MaxNLocator" title="matplotlib.pyplot.MaxNLocator"><code class="xref py py-obj docutils literal"><span class="pre">MaxNLocator</span></code></a>(*args,&nbsp;**kwargs)</td>
-<td>Select no more than N intervals at nice locations.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.MultipleLocator.html#matplotlib.pyplot.MultipleLocator" title="matplotlib.pyplot.MultipleLocator"><code class="xref py py-obj docutils literal"><span class="pre">MultipleLocator</span></code></a>([base])</td>
-<td>Set a tick on every integer that is multiple of base in the</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Normalize.html#matplotlib.pyplot.Normalize" title="matplotlib.pyplot.Normalize"><code class="xref py py-obj docutils literal"><span class="pre">Normalize</span></code></a>([vmin,&nbsp;vmax,&nbsp;clip])</td>
-<td>A class which, when called, can normalize data into the <code class="docutils literal"><span class="pre">[0.0,</span> <span class="pre">1.0]</span></code> interval.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.NullFormatter.html#matplotlib.pyplot.NullFormatter" title="matplotlib.pyplot.NullFormatter"><code class="xref py py-obj docutils literal"><span class="pre">NullFormatter</span></code></a></td>
-<td>Always return the empty string.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.NullLocator.html#matplotlib.pyplot.NullLocator" title="matplotlib.pyplot.NullLocator"><code class="xref py py-obj docutils literal"><span class="pre">NullLocator</span></code></a></td>
-<td>No ticks</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.PolarAxes.html#matplotlib.pyplot.PolarAxes" title="matplotlib.pyplot.PolarAxes"><code class="xref py py-obj docutils literal"><span class="pre">PolarAxes</span></code></a>(*args,&nbsp;**kwargs)</td>
-<td>A polar graph projection, where the input dimensions are <em>theta</em>, <em>r</em>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Polygon.html#matplotlib.pyplot.Polygon" title="matplotlib.pyplot.Polygon"><code class="xref py py-obj docutils literal"><span class="pre">Polygon</span></code></a>(xy[,&nbsp;closed])</td>
-<td>A general polygon patch.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Rectangle.html#matplotlib.pyplot.Rectangle" title="matplotlib.pyplot.Rectangle"><code class="xref py py-obj docutils literal"><span class="pre">Rectangle</span></code></a>(xy,&nbsp;width,&nbsp;height[,&nbsp;angle])</td>
-<td>Draw a rectangle with lower left at <em>xy</em> = (<em>x</em>, <em>y</em>) with specified <em>width</em>, <em>height</em> and rotation <em>angle</em>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.ScalarFormatter.html#matplotlib.pyplot.ScalarFormatter" title="matplotlib.pyplot.ScalarFormatter"><code class="xref py py-obj docutils literal"><span class="pre">ScalarFormatter</span></code></a>([useOffset,&nbsp;useMathText,&nbsp;...])</td>
-<td>Format tick values as a number.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.Slider.html#matplotlib.pyplot.Slider" title="matplotlib.pyplot.Slider"><code class="xref py py-obj docutils literal"><span class="pre">Slider</span></code></a>(ax,&nbsp;label,&nbsp;valmin,&nbsp;valmax[,&nbsp;valinit,&nbsp;...])</td>
-<td>A slider representing a floating point range.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Subplot.html#matplotlib.pyplot.Subplot" title="matplotlib.pyplot.Subplot"><code class="xref py py-obj docutils literal"><span class="pre">Subplot</span></code></a></td>
-<td>alias of <code class="xref py py-class docutils literal"><span class="pre">AxesSubplot</span></code></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.SubplotTool.html#matplotlib.pyplot.SubplotTool" title="matplotlib.pyplot.SubplotTool"><code class="xref py py-obj docutils literal"><span class="pre">SubplotTool</span></code></a>(targetfig,&nbsp;toolfig)</td>
-<td>A tool to adjust the subplot params of a <a class="reference internal" href="../figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Text.html#matplotlib.pyplot.Text" title="matplotlib.pyplot.Text"><code class="xref py py-obj docutils literal"><span class="pre">Text</span></code></a>([x,&nbsp;y,&nbsp;text,&nbsp;color,&nbsp;verticalalignment,&nbsp;...])</td>
-<td>Handle storing and drawing of text in window or data coordinates.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.TickHelper.html#matplotlib.pyplot.TickHelper" title="matplotlib.pyplot.TickHelper"><code class="xref py py-obj docutils literal"><span class="pre">TickHelper</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.Widget.html#matplotlib.pyplot.Widget" title="matplotlib.pyplot.Widget"><code class="xref py py-obj docutils literal"><span class="pre">Widget</span></code></a></td>
-<td>Abstract base class for GUI neutral widgets</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.silent_list.html#matplotlib.pyplot.silent_list" title="matplotlib.pyplot.silent_list"><code class="xref py py-obj docutils literal"><span class="pre">silent_list</span></code></a>(type[,&nbsp;seq])</td>
-<td>override repr when returning a list of matplotlib artists to</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 
 
@@ -782,55 +712,9 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">matplotlib.pyplot</a><ul>
-<li><a class="reference internal" href="#functions">Functions</a></li>
-<li><a class="reference internal" href="#classes">Classes</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../../contents.html">Documentation overview</a><ul>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/api/_as_gen/matplotlib.pyplot.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

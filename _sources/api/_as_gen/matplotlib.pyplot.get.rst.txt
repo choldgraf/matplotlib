@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.get
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: get

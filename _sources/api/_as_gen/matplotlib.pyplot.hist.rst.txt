@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.hist
 ========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: hist

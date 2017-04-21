@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.update
 ==============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.update

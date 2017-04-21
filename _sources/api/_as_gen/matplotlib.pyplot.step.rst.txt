@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.step
 ========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: step

@@ -86,7 +86,75 @@ type="text/css" />
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../../../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../../../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">axisartist namespace</a><ul>
+<li><a class="reference internal" href="#axisartist">AxisArtist</a><ul>
+<li><a class="reference internal" href="#line">line</a></li>
+<li><a class="reference internal" href="#major-ticks-minor-ticks">major_ticks, minor_ticks</a></li>
+<li><a class="reference internal" href="#major-ticklabels-minor-ticklabels">major_ticklabels, minor_ticklabels</a></li>
+<li><a class="reference internal" href="#axislabel">axislabel</a></li>
+<li><a class="reference internal" href="#default-axisartists">Default AxisArtists</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#howto">HowTo</a></li>
+<li><a class="reference internal" href="#rotation-and-alignment-of-ticklabels">Rotation and Alignment of TickLabels</a><ul>
+<li><a class="reference internal" href="#adjusting-ticklabels-alignment">Adjusting ticklabels alignment</a></li>
+<li><a class="reference internal" href="#adjusting-pad">Adjusting  pad</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gridhelper">GridHelper</a></li>
+<li><a class="reference internal" href="#floatingaxis">FloatingAxis</a></li>
+<li><a class="reference internal" href="#current-limitations-and-todo-s">Current Limitations and TODO&#8217;s</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../contents.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Toolkits</a><ul>
+  <li><a href="../index.html">Matplotlib axisartist Toolkit</a><ul>
+  <li><a href="index.html">The Matplotlib axisartist Toolkit User&#8217;s Guide</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">The Matplotlib axisartist Toolkit User&#8217;s Guide</a></li>
+      <li>Next: <a href="../api/index.html" title="next chapter">The Matplotlib axisartist Toolkit API</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/mpl_toolkits/axisartist/users/axisartist.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -646,78 +714,9 @@ given as a coordinate value. ex, a floating axis of x=0 with label at y=1</li>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../../../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">axisartist namespace</a><ul>
-<li><a class="reference internal" href="#axisartist">AxisArtist</a><ul>
-<li><a class="reference internal" href="#line">line</a></li>
-<li><a class="reference internal" href="#major-ticks-minor-ticks">major_ticks, minor_ticks</a></li>
-<li><a class="reference internal" href="#major-ticklabels-minor-ticklabels">major_ticklabels, minor_ticklabels</a></li>
-<li><a class="reference internal" href="#axislabel">axislabel</a></li>
-<li><a class="reference internal" href="#default-axisartists">Default AxisArtists</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#howto">HowTo</a></li>
-<li><a class="reference internal" href="#rotation-and-alignment-of-ticklabels">Rotation and Alignment of TickLabels</a><ul>
-<li><a class="reference internal" href="#adjusting-ticklabels-alignment">Adjusting ticklabels alignment</a></li>
-<li><a class="reference internal" href="#adjusting-pad">Adjusting  pad</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#gridhelper">GridHelper</a></li>
-<li><a class="reference internal" href="#floatingaxis">FloatingAxis</a></li>
-<li><a class="reference internal" href="#current-limitations-and-todo-s">Current Limitations and TODO&#8217;s</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../../../contents.html">Documentation overview</a><ul>
-  <li><a href="../../index.html">Toolkits</a><ul>
-  <li><a href="../index.html">Matplotlib axisartist Toolkit</a><ul>
-  <li><a href="index.html">The Matplotlib axisartist Toolkit User&#8217;s Guide</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">The Matplotlib axisartist Toolkit User&#8217;s Guide</a></li>
-      <li>Next: <a href="../api/index.html" title="next chapter">The Matplotlib axisartist Toolkit API</a></li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../../_sources/mpl_toolkits/axisartist/users/axisartist.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

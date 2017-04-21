@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.colorbar
 ============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: colorbar

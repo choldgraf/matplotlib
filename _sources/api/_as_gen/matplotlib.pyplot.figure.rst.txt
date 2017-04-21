@@ -1,13 +1,14 @@
-matplotlib\.pyplot\.Artist
+matplotlib\.pyplot\.figure
 ==========================
+
 
 .. currentmodule:: matplotlib.pyplot
 
-.. autoclass:: Artist
+.. autofunction:: figure
 
 
 
-.. include:: matplotlib.pyplot.Artist.examples
+.. include:: matplotlib.pyplot.figure.examples
 
 .. raw:: html
 

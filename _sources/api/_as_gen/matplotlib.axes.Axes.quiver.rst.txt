@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.quiver
 ==============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.quiver

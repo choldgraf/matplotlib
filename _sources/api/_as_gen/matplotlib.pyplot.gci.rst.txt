@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.gci
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: gci

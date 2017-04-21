@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.tricontour
 ==============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: tricontour

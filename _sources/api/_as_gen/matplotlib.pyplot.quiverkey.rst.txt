@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.quiverkey
 =============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: quiverkey

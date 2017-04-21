@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.spy
 ===========================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.spy

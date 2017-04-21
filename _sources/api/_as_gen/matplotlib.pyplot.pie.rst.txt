@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.pie
 =======================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: pie

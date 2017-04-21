@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.semilogx
 ================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.semilogx

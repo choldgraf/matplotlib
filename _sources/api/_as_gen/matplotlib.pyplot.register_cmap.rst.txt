@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.register\_cmap
 ==================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: register_cmap

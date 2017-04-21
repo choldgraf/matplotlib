@@ -85,40 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axis-axis-set-ticklabels">
-<h1>matplotlib.axis.Axis.set_ticklabels<a class="headerlink" href="#matplotlib-axis-axis-set-ticklabels" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axis.Axis.set_ticklabels">
-<code class="descclassname">Axis.</code><code class="descname">set_ticklabels</code><span class="sig-paren">(</span><em>ticklabels</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axis.Axis.set_ticklabels" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the text values of the tick labels. Return a list of Text
-instances.  Use <em>kwarg</em> <em>minor=True</em> to select minor ticks.
-All other kwargs are used to update the text object properties.
-As for get_ticklabels, label1 (left or bottom) is
-affected for a given tick only if its label1On attribute
-is True, and similarly for label2.  The list of returned
-label text objects consists of all such label1 objects followed
-by all such label2 objects.</p>
-<p>The input <em>ticklabels</em> is assumed to match the set of
-tick locations, regardless of the state of label1On and
-label2On.</p>
-<p>ACCEPTS: sequence of strings or Text objects</p>
-</dd></dl>
-
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -162,9 +128,42 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axis-axis-set-ticklabels">
+<h1>matplotlib.axis.Axis.set_ticklabels<a class="headerlink" href="#matplotlib-axis-axis-set-ticklabels" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axis.Axis.set_ticklabels">
+<code class="descclassname">Axis.</code><code class="descname">set_ticklabels</code><span class="sig-paren">(</span><em>ticklabels</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axis.Axis.set_ticklabels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the text values of the tick labels. Return a list of Text
+instances.  Use <em>kwarg</em> <em>minor=True</em> to select minor ticks.
+All other kwargs are used to update the text object properties.
+As for get_ticklabels, label1 (left or bottom) is
+affected for a given tick only if its label1On attribute
+is True, and similarly for label2.  The list of returned
+label text objects consists of all such label1 objects followed
+by all such label2 objects.</p>
+<p>The input <em>ticklabels</em> is assumed to match the set of
+tick locations, regardless of the state of label1On and
+label2On.</p>
+<p>ACCEPTS: sequence of strings or Text objects</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.xscale
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: xscale

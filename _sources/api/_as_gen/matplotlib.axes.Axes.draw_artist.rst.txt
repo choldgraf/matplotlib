@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.draw\_artist
 ====================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.draw_artist

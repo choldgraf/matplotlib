@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.pylab\_setup
 ================================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: pylab_setup

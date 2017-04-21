@@ -84,7 +84,84 @@ type="text/css" />
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">What&#8217;s new in matplotlib</a><ul>
+<li><a class="reference internal" href="#new-in-matplotlib-2-0">New in matplotlib 2.0</a><ul>
+<li><a class="reference internal" href="#default-style-changes">Default style changes</a></li>
+<li><a class="reference internal" href="#improved-color-conversion-api-and-rgba-support">Improved color conversion API and RGBA support</a></li>
+<li><a class="reference internal" href="#new-configuration-rcparams">New Configuration (rcParams)</a><ul>
+<li><a class="reference internal" href="#added-svg-hashsalt-key-to-rcparams">Added <code class="docutils literal"><span class="pre">svg.hashsalt</span></code> key to rcParams</a></li>
+<li><a class="reference internal" href="#removed-the-svg-image-noscale-rcparam">Removed the <code class="docutils literal"><span class="pre">svg.image_noscale</span></code> rcParam</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#qualitative-colormaps">Qualitative colormaps</a></li>
+<li><a class="reference internal" href="#axis-offset-label-now-responds-to-labelcolor">Axis offset label now responds to <code class="docutils literal"><span class="pre">labelcolor</span></code></a></li>
+<li><a class="reference internal" href="#improved-offset-text-choice">Improved offset text choice</a></li>
+<li><a class="reference internal" href="#style-parameter-blacklist">Style parameter blacklist</a></li>
+<li><a class="reference internal" href="#change-in-default-font">Change in default font</a></li>
+<li><a class="reference internal" href="#faster-text-rendering">Faster text rendering</a></li>
+<li><a class="reference internal" href="#improvements-for-the-qt-figure-options-editor">Improvements for the Qt figure options editor</a></li>
+<li><a class="reference internal" href="#improved-image-support">Improved image support</a><ul>
+<li><a class="reference internal" href="#non-linear-scales-on-image-plots">Non-linear scales on image plots</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#support-for-hidpi-retina-displays-in-the-nbagg-and-webagg-backends">Support for HiDPI (Retina) displays in the NbAgg and WebAgg backends</a></li>
+<li><a class="reference internal" href="#change-in-the-default-animation-codec">Change in the default animation codec</a></li>
+<li><a class="reference internal" href="#deprecated-support-for-mencoder-in-animation">Deprecated support for mencoder in animation</a></li>
+<li><a class="reference internal" href="#boxplot-zorder-keyword-argument">Boxplot Zorder Keyword Argument</a></li>
+<li><a class="reference internal" href="#filled-and-x-markers">Filled <code class="docutils literal"><span class="pre">+</span></code> and <code class="docutils literal"><span class="pre">x</span></code> markers</a></li>
+<li><a class="reference internal" href="#rcount-and-ccount-for-plot-surface"><code class="docutils literal"><span class="pre">rcount</span></code> and <code class="docutils literal"><span class="pre">ccount</span></code> for <code class="docutils literal"><span class="pre">plot_surface()</span></code></a></li>
+<li><a class="reference internal" href="#streamplot-zorder-keyword-argument-changes">Streamplot Zorder Keyword Argument Changes</a></li>
+<li><a class="reference internal" href="#extension-to-matplotlib-backend-bases-graphicscontextbase">Extension to <code class="docutils literal"><span class="pre">matplotlib.backend_bases.GraphicsContextBase</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#previous-whats-new">Previous Whats New</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../contents.html">Documentation overview</a><ul>
+  <li><a href="index.html">User&#8217;s Guide</a><ul>
+      <li>Previous: <a href="recipes.html" title="previous chapter">Our Favorite Recipes</a></li>
+      <li>Next: <a href="dflt_style_changes.html" title="next chapter">Changes to the default style</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/users/whats_new.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -434,87 +511,9 @@ available to you and should be used to color hatch patterns.</p>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">What&#8217;s new in matplotlib</a><ul>
-<li><a class="reference internal" href="#new-in-matplotlib-2-0">New in matplotlib 2.0</a><ul>
-<li><a class="reference internal" href="#default-style-changes">Default style changes</a></li>
-<li><a class="reference internal" href="#improved-color-conversion-api-and-rgba-support">Improved color conversion API and RGBA support</a></li>
-<li><a class="reference internal" href="#new-configuration-rcparams">New Configuration (rcParams)</a><ul>
-<li><a class="reference internal" href="#added-svg-hashsalt-key-to-rcparams">Added <code class="docutils literal"><span class="pre">svg.hashsalt</span></code> key to rcParams</a></li>
-<li><a class="reference internal" href="#removed-the-svg-image-noscale-rcparam">Removed the <code class="docutils literal"><span class="pre">svg.image_noscale</span></code> rcParam</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#qualitative-colormaps">Qualitative colormaps</a></li>
-<li><a class="reference internal" href="#axis-offset-label-now-responds-to-labelcolor">Axis offset label now responds to <code class="docutils literal"><span class="pre">labelcolor</span></code></a></li>
-<li><a class="reference internal" href="#improved-offset-text-choice">Improved offset text choice</a></li>
-<li><a class="reference internal" href="#style-parameter-blacklist">Style parameter blacklist</a></li>
-<li><a class="reference internal" href="#change-in-default-font">Change in default font</a></li>
-<li><a class="reference internal" href="#faster-text-rendering">Faster text rendering</a></li>
-<li><a class="reference internal" href="#improvements-for-the-qt-figure-options-editor">Improvements for the Qt figure options editor</a></li>
-<li><a class="reference internal" href="#improved-image-support">Improved image support</a><ul>
-<li><a class="reference internal" href="#non-linear-scales-on-image-plots">Non-linear scales on image plots</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#support-for-hidpi-retina-displays-in-the-nbagg-and-webagg-backends">Support for HiDPI (Retina) displays in the NbAgg and WebAgg backends</a></li>
-<li><a class="reference internal" href="#change-in-the-default-animation-codec">Change in the default animation codec</a></li>
-<li><a class="reference internal" href="#deprecated-support-for-mencoder-in-animation">Deprecated support for mencoder in animation</a></li>
-<li><a class="reference internal" href="#boxplot-zorder-keyword-argument">Boxplot Zorder Keyword Argument</a></li>
-<li><a class="reference internal" href="#filled-and-x-markers">Filled <code class="docutils literal"><span class="pre">+</span></code> and <code class="docutils literal"><span class="pre">x</span></code> markers</a></li>
-<li><a class="reference internal" href="#rcount-and-ccount-for-plot-surface"><code class="docutils literal"><span class="pre">rcount</span></code> and <code class="docutils literal"><span class="pre">ccount</span></code> for <code class="docutils literal"><span class="pre">plot_surface()</span></code></a></li>
-<li><a class="reference internal" href="#streamplot-zorder-keyword-argument-changes">Streamplot Zorder Keyword Argument Changes</a></li>
-<li><a class="reference internal" href="#extension-to-matplotlib-backend-bases-graphicscontextbase">Extension to <code class="docutils literal"><span class="pre">matplotlib.backend_bases.GraphicsContextBase</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#previous-whats-new">Previous Whats New</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../contents.html">Documentation overview</a><ul>
-  <li><a href="index.html">User&#8217;s Guide</a><ul>
-      <li>Previous: <a href="recipes.html" title="previous chapter">Our Favorite Recipes</a></li>
-      <li>Next: <a href="dflt_style_changes.html" title="next chapter">Changes to the default style</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/users/whats_new.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

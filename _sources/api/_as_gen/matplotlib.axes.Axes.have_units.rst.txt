@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.have\_units
 ===================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.have_units

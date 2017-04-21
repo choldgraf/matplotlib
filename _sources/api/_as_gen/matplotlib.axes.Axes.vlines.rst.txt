@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.vlines
 ==============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.vlines

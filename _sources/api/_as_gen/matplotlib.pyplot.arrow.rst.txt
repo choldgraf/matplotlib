@@ -1,13 +1,14 @@
-matplotlib\.pyplot\.Arrow
+matplotlib\.pyplot\.arrow
 =========================
+
 
 .. currentmodule:: matplotlib.pyplot
 
-.. autoclass:: Arrow
+.. autofunction:: arrow
 
 
 
-.. include:: matplotlib.pyplot.Arrow.examples
+.. include:: matplotlib.pyplot.arrow.examples
 
 .. raw:: html
 

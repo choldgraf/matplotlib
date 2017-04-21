@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.get\_cmap
 =============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: get_cmap

@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.cohere
 ==============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.cohere

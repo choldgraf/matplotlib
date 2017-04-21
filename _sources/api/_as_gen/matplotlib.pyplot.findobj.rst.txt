@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.findobj
 ===========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: findobj

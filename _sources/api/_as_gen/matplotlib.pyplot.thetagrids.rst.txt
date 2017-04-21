@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.thetagrids
 ==============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: thetagrids

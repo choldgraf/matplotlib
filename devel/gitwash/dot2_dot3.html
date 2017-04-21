@@ -85,43 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="two-and-three-dots-in-difference-specs">
-<span id="dot2-dot3"></span><h1>Two and three dots in difference specs<a class="headerlink" href="#two-and-three-dots-in-difference-specs" title="Permalink to this headline">¶</a></h1>
-<p>Thanks to Yarik Halchenko for this explanation.</p>
-<p>Imagine a series of commits A, B, C, D...  Imagine that there are two
-branches, <em>topic</em> and <em>master</em>.  You branched <em>topic</em> off <em>master</em> when
-<em>master</em> was at commit &#8216;E&#8217;.  The graph of the commits looks like this:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>     <span class="n">A</span><span class="o">---</span><span class="n">B</span><span class="o">---</span><span class="n">C</span> <span class="n">topic</span>
-     <span class="o">/</span>
-<span class="n">D</span><span class="o">---</span><span class="n">E</span><span class="o">---</span><span class="n">F</span><span class="o">---</span><span class="n">G</span> <span class="n">master</span>
-</pre></div>
-</div>
-<p>Then:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">diff</span> <span class="n">master</span><span class="o">..</span><span class="n">topic</span>
-</pre></div>
-</div>
-<p>will output the difference from G to C (i.e. with effects of F and G),
-while:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">diff</span> <span class="n">master</span><span class="o">...</span><span class="n">topic</span>
-</pre></div>
-</div>
-<p>would output just differences in the topic branch (i.e. only A, B, and
-C).</p>
-</div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -165,9 +128,45 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="two-and-three-dots-in-difference-specs">
+<span id="dot2-dot3"></span><h1>Two and three dots in difference specs<a class="headerlink" href="#two-and-three-dots-in-difference-specs" title="Permalink to this headline">¶</a></h1>
+<p>Thanks to Yarik Halchenko for this explanation.</p>
+<p>Imagine a series of commits A, B, C, D...  Imagine that there are two
+branches, <em>topic</em> and <em>master</em>.  You branched <em>topic</em> off <em>master</em> when
+<em>master</em> was at commit &#8216;E&#8217;.  The graph of the commits looks like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>     <span class="n">A</span><span class="o">---</span><span class="n">B</span><span class="o">---</span><span class="n">C</span> <span class="n">topic</span>
+     <span class="o">/</span>
+<span class="n">D</span><span class="o">---</span><span class="n">E</span><span class="o">---</span><span class="n">F</span><span class="o">---</span><span class="n">G</span> <span class="n">master</span>
+</pre></div>
+</div>
+<p>Then:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">diff</span> <span class="n">master</span><span class="o">..</span><span class="n">topic</span>
+</pre></div>
+</div>
+<p>will output the difference from G to C (i.e. with effects of F and G),
+while:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">diff</span> <span class="n">master</span><span class="o">...</span><span class="n">topic</span>
+</pre></div>
+</div>
+<p>would output just differences in the topic branch (i.e. only A, B, and
+C).</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

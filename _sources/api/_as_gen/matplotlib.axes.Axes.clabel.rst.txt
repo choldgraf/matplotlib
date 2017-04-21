@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.clabel
 ==============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.clabel

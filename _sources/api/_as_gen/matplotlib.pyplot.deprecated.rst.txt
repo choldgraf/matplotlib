@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.deprecated
 ==============================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: deprecated

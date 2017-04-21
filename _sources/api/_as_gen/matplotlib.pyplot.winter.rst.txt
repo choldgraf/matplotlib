@@ -1,6 +1,7 @@
 matplotlib\.pyplot\.winter
 ==========================
 
+
 .. currentmodule:: matplotlib.pyplot
 
 .. autofunction:: winter

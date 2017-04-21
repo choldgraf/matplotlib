@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.twiny
 =============================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.twiny

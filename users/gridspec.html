@@ -85,7 +85,62 @@ type="text/css" />
     </div>
 
   
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../_static/depsy_badge.svg">
+</a>
 
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Customizing Location of Subplot Using GridSpec</a><ul>
+<li><a class="reference internal" href="#basic-example-of-using-subplot2grid">Basic Example of using subplot2grid</a></li>
+<li><a class="reference internal" href="#gridspec-and-subplotspec">GridSpec and SubplotSpec</a></li>
+<li><a class="reference internal" href="#adjust-gridspec-layout">Adjust GridSpec layout</a></li>
+<li><a class="reference internal" href="#gridspec-using-subplotspec">GridSpec using SubplotSpec</a></li>
+<li><a class="reference internal" href="#a-complex-nested-gridspec-using-subplotspec">A Complex Nested GridSpec using SubplotSpec</a></li>
+<li><a class="reference internal" href="#gridspec-with-varying-cell-sizes">GridSpec with Varying Cell Sizes</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../contents.html">Documentation overview</a><ul>
+  <li><a href="index.html">User&#8217;s Guide</a><ul>
+  <li><a href="tutorials.html">Tutorials</a><ul>
+      <li>Previous: <a href="image_tutorial.html" title="previous chapter">Image tutorial</a></li>
+      <li>Next: <a href="tight_layout_guide.html" title="next chapter">Tight Layout guide</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/users/gridspec.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -102,14 +157,14 @@ need to be set. Optionally, the subplot layout parameters
 (e.g., left, right, etc.) can be tuned.</dd>
 <dt><a class="reference internal" href="../api/gridspec_api.html#matplotlib.gridspec.SubplotSpec" title="matplotlib.gridspec.SubplotSpec"><code class="xref py py-class docutils literal"><span class="pre">SubplotSpec</span></code></a></dt>
 <dd>specifies the location of the subplot in the given <em>GridSpec</em>.</dd>
-<dt><code class="xref py py-func docutils literal"><span class="pre">subplot2grid()</span></code></dt>
-<dd>a helper function that is similar to <code class="xref py py-func docutils literal"><span class="pre">subplot()</span></code>
+<dt><a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.subplot2grid.html#matplotlib.pyplot.subplot2grid" title="matplotlib.pyplot.subplot2grid"><code class="xref py py-func docutils literal"><span class="pre">subplot2grid()</span></code></a></dt>
+<dd>a helper function that is similar to <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot" title="matplotlib.pyplot.subplot"><code class="xref py py-func docutils literal"><span class="pre">subplot()</span></code></a>
 but uses 0-based indexing and let subplot to occupy multiple cells.</dd>
 </dl>
 </div></blockquote>
 <div class="section" id="basic-example-of-using-subplot2grid">
 <h2>Basic Example of using subplot2grid<a class="headerlink" href="#basic-example-of-using-subplot2grid" title="Permalink to this headline">¶</a></h2>
-<p>To use <code class="xref py py-func docutils literal"><span class="pre">subplot2grid()</span></code>, you provide geometry of
+<p>To use <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.subplot2grid.html#matplotlib.pyplot.subplot2grid" title="matplotlib.pyplot.subplot2grid"><code class="xref py py-func docutils literal"><span class="pre">subplot2grid()</span></code></a>, you provide geometry of
 the grid and the location of the subplot in the grid. For a simple
 single-cell subplot:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
@@ -182,7 +237,7 @@ parameters of subplots that are created from the GridSpec.</p>
 <span class="n">gs1</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mf">0.48</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This is similar to <code class="xref py py-func docutils literal"><span class="pre">subplots_adjust()</span></code>, but it only
+<p>This is similar to <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.subplots_adjust.html#matplotlib.pyplot.subplots_adjust" title="matplotlib.pyplot.subplots_adjust"><code class="xref py py-func docutils literal"><span class="pre">subplots_adjust()</span></code></a>, but it only
 affects the subplots that are created from the given GridSpec.</p>
 <p>The code below</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">gs1</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -260,65 +315,9 @@ values are meaningless, only their relative ratios matter.</p>
 
       <div class="clearer"></div>
     </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Customizing Location of Subplot Using GridSpec</a><ul>
-<li><a class="reference internal" href="#basic-example-of-using-subplot2grid">Basic Example of using subplot2grid</a></li>
-<li><a class="reference internal" href="#gridspec-and-subplotspec">GridSpec and SubplotSpec</a></li>
-<li><a class="reference internal" href="#adjust-gridspec-layout">Adjust GridSpec layout</a></li>
-<li><a class="reference internal" href="#gridspec-using-subplotspec">GridSpec using SubplotSpec</a></li>
-<li><a class="reference internal" href="#a-complex-nested-gridspec-using-subplotspec">A Complex Nested GridSpec using SubplotSpec</a></li>
-<li><a class="reference internal" href="#gridspec-with-varying-cell-sizes">GridSpec with Varying Cell Sizes</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../contents.html">Documentation overview</a><ul>
-  <li><a href="index.html">User&#8217;s Guide</a><ul>
-  <li><a href="tutorials.html">Tutorials</a><ul>
-      <li>Previous: <a href="image_tutorial.html" title="previous chapter">Image tutorial</a></li>
-      <li>Next: <a href="tight_layout_guide.html" title="next chapter">Tight Layout guide</a></li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/users/gridspec.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

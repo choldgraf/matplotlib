@@ -85,45 +85,6 @@ type="text/css" />
     </div>
 
   
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axes-axes-get-yaxis-text2-transform">
-<h1>matplotlib.axes.Axes.get_yaxis_text2_transform<a class="headerlink" href="#matplotlib-axes-axes-get-yaxis-text2-transform" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axes.Axes.get_yaxis_text2_transform">
-<code class="descclassname">Axes.</code><code class="descname">get_yaxis_text2_transform</code><span class="sig-paren">(</span><em>pad_points</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.get_yaxis_text2_transform" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the transformation used for drawing the secondary y-axis
-labels, which will add the given amount of padding (in points)
-between the axes and the label.  The x-direction is in axis
-coordinates and the y-direction is in data coordinates.
-Returns a 3-tuple of the form:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">transform</span><span class="p">,</span> <span class="n">valign</span><span class="p">,</span> <span class="n">halign</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>where <em>valign</em> and <em>halign</em> are requested alignments for the
-text.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This transformation is primarily used by the
-<a class="reference internal" href="../axis_api.html#matplotlib.axis.Axis" title="matplotlib.axis.Axis"><code class="xref py py-class docutils literal"><span class="pre">Axis</span></code></a> class, and is meant to be
-overridden by new kinds of projections that may need to
-place axis elements in different locations.</p>
-</div>
-</dd></dl>
-
-<div class="clearer"></div></div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -167,9 +128,47 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axes-axes-get-yaxis-text2-transform">
+<h1>matplotlib.axes.Axes.get_yaxis_text2_transform<a class="headerlink" href="#matplotlib-axes-axes-get-yaxis-text2-transform" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axes.Axes.get_yaxis_text2_transform">
+<code class="descclassname">Axes.</code><code class="descname">get_yaxis_text2_transform</code><span class="sig-paren">(</span><em>pad_points</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.get_yaxis_text2_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the transformation used for drawing the secondary y-axis
+labels, which will add the given amount of padding (in points)
+between the axes and the label.  The x-direction is in axis
+coordinates and the y-direction is in data coordinates.
+Returns a 3-tuple of the form:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">transform</span><span class="p">,</span> <span class="n">valign</span><span class="p">,</span> <span class="n">halign</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where <em>valign</em> and <em>halign</em> are requested alignments for the
+text.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This transformation is primarily used by the
+<a class="reference internal" href="../axis_api.html#matplotlib.axis.Axis" title="matplotlib.axis.Axis"><code class="xref py py-class docutils literal"><span class="pre">Axis</span></code></a> class, and is meant to be
+overridden by new kinds of projections that may need to
+place axis elements in different locations.</p>
+</div>
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 20, 2017.
+      Last updated on Apr 21, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

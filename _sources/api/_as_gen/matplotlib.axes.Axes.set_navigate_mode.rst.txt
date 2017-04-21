@@ -1,6 +1,7 @@
 matplotlib\.axes\.Axes\.set\_navigate\_mode
 ===========================================
 
+
 .. currentmodule:: matplotlib.axes
 
 .. automethod:: Axes.set_navigate_mode
