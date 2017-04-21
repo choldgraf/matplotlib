@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
+    <title>matplotlib.pyplot &mdash; Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5121.dev0+g9672cecf6',
+        VERSION:     '2.0.0b1.post5121.dev0+g5241b2f3a',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation" href="../../index.html" />
     <link rel="up" title="The Matplotlib API" href="../index.html" />
     <link rel="next" title="matplotlib.pyplot.acorr" href="matplotlib.pyplot.acorr.html" />
     <link rel="prev" title="widgets" href="../widgets_api.html" /> 
@@ -138,20 +138,8 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="module-matplotlib.pyplot">
-<span id="matplotlib-pyplot"></span><h1>matplotlib.pyplot<a class="headerlink" href="#module-matplotlib.pyplot" title="Permalink to this headline">¶</a></h1>
-<p>Provides a MATLAB-like plotting framework.</p>
-<p><code class="xref py py-mod docutils literal"><span class="pre">pylab</span></code> combines pyplot with numpy into a single namespace.
-This is convenient for interactive work, but for programming it
-is recommended that the namespaces be kept separate, e.g.:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</pre></div>
-</div>
+  <div class="section" id="matplotlib-pyplot">
+<h1>matplotlib.pyplot<a class="headerlink" href="#matplotlib-pyplot" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
@@ -238,272 +226,266 @@ is recommended that the namespaces be kept separate, e.g.:</p>
 <tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.colorbar.html#matplotlib.pyplot.colorbar" title="matplotlib.pyplot.colorbar"><code class="xref py py-obj docutils literal"><span class="pre">colorbar</span></code></a>([mappable,&nbsp;cax,&nbsp;ax])</td>
 <td>Add a colorbar to a plot.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="../pyplot_summary.html#matplotlib.pyplot.colormaps" title="matplotlib.pyplot.colormaps"><code class="xref py py-obj docutils literal"><span class="pre">colormaps</span></code></a>()</td>
-<td>Matplotlib provides a number of colormaps, and others can be added using <a class="reference internal" href="../cm_api.html#matplotlib.cm.register_cmap" title="matplotlib.cm.register_cmap"><code class="xref py py-func docutils literal"><span class="pre">register_cmap()</span></code></a>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.colors.html#matplotlib.pyplot.colors" title="matplotlib.pyplot.colors"><code class="xref py py-obj docutils literal"><span class="pre">colors</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.colors.html#matplotlib.pyplot.colors" title="matplotlib.pyplot.colors"><code class="xref py py-obj docutils literal"><span class="pre">colors</span></code></a>()</td>
 <td>This is a do-nothing function to provide you with help on how matplotlib handles colors.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.connect.html#matplotlib.pyplot.connect" title="matplotlib.pyplot.connect"><code class="xref py py-obj docutils literal"><span class="pre">connect</span></code></a>(s,&nbsp;func)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.connect.html#matplotlib.pyplot.connect" title="matplotlib.pyplot.connect"><code class="xref py py-obj docutils literal"><span class="pre">connect</span></code></a>(s,&nbsp;func)</td>
 <td>Connect event with string <em>s</em> to <em>func</em>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.contour.html#matplotlib.pyplot.contour" title="matplotlib.pyplot.contour"><code class="xref py py-obj docutils literal"><span class="pre">contour</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.contour.html#matplotlib.pyplot.contour" title="matplotlib.pyplot.contour"><code class="xref py py-obj docutils literal"><span class="pre">contour</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Plot contours.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.contourf.html#matplotlib.pyplot.contourf" title="matplotlib.pyplot.contourf"><code class="xref py py-obj docutils literal"><span class="pre">contourf</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.contourf.html#matplotlib.pyplot.contourf" title="matplotlib.pyplot.contourf"><code class="xref py py-obj docutils literal"><span class="pre">contourf</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Plot contours.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.cool.html#matplotlib.pyplot.cool" title="matplotlib.pyplot.cool"><code class="xref py py-obj docutils literal"><span class="pre">cool</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.cool.html#matplotlib.pyplot.cool" title="matplotlib.pyplot.cool"><code class="xref py py-obj docutils literal"><span class="pre">cool</span></code></a>()</td>
 <td>set the default colormap to cool and apply to current image if any.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.copper.html#matplotlib.pyplot.copper" title="matplotlib.pyplot.copper"><code class="xref py py-obj docutils literal"><span class="pre">copper</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.copper.html#matplotlib.pyplot.copper" title="matplotlib.pyplot.copper"><code class="xref py py-obj docutils literal"><span class="pre">copper</span></code></a>()</td>
 <td>set the default colormap to copper and apply to current image if any.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.csd.html#matplotlib.pyplot.csd" title="matplotlib.pyplot.csd"><code class="xref py py-obj docutils literal"><span class="pre">csd</span></code></a>(x,&nbsp;y[,&nbsp;NFFT,&nbsp;Fs,&nbsp;Fc,&nbsp;detrend,&nbsp;window,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.csd.html#matplotlib.pyplot.csd" title="matplotlib.pyplot.csd"><code class="xref py py-obj docutils literal"><span class="pre">csd</span></code></a>(x,&nbsp;y[,&nbsp;NFFT,&nbsp;Fs,&nbsp;Fc,&nbsp;detrend,&nbsp;window,&nbsp;...])</td>
 <td>Plot the cross-spectral density.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.cycler.html#matplotlib.pyplot.cycler" title="matplotlib.pyplot.cycler"><code class="xref py py-obj docutils literal"><span class="pre">cycler</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.cycler.html#matplotlib.pyplot.cycler" title="matplotlib.pyplot.cycler"><code class="xref py py-obj docutils literal"><span class="pre">cycler</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Create a new <code class="xref py py-obj docutils literal"><span class="pre">Cycler</span></code> object from a single positional argument, a pair of positional arguments, or the combination of keyword arguments.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.dedent.html#matplotlib.pyplot.dedent" title="matplotlib.pyplot.dedent"><code class="xref py py-obj docutils literal"><span class="pre">dedent</span></code></a>(s)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.dedent.html#matplotlib.pyplot.dedent" title="matplotlib.pyplot.dedent"><code class="xref py py-obj docutils literal"><span class="pre">dedent</span></code></a>(s)</td>
 <td>Remove excess indentation from docstring <em>s</em>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.delaxes.html#matplotlib.pyplot.delaxes" title="matplotlib.pyplot.delaxes"><code class="xref py py-obj docutils literal"><span class="pre">delaxes</span></code></a>(*args)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.delaxes.html#matplotlib.pyplot.delaxes" title="matplotlib.pyplot.delaxes"><code class="xref py py-obj docutils literal"><span class="pre">delaxes</span></code></a>(*args)</td>
 <td>Remove an axes from the current figure.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.deprecated.html#matplotlib.pyplot.deprecated" title="matplotlib.pyplot.deprecated"><code class="xref py py-obj docutils literal"><span class="pre">deprecated</span></code></a>(since[,&nbsp;message,&nbsp;name,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.deprecated.html#matplotlib.pyplot.deprecated" title="matplotlib.pyplot.deprecated"><code class="xref py py-obj docutils literal"><span class="pre">deprecated</span></code></a>(since[,&nbsp;message,&nbsp;name,&nbsp;...])</td>
 <td>Decorator to mark a function or a class as deprecated.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.disconnect.html#matplotlib.pyplot.disconnect" title="matplotlib.pyplot.disconnect"><code class="xref py py-obj docutils literal"><span class="pre">disconnect</span></code></a>(cid)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.disconnect.html#matplotlib.pyplot.disconnect" title="matplotlib.pyplot.disconnect"><code class="xref py py-obj docutils literal"><span class="pre">disconnect</span></code></a>(cid)</td>
 <td>Disconnect callback id cid</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.draw.html#matplotlib.pyplot.draw" title="matplotlib.pyplot.draw"><code class="xref py py-obj docutils literal"><span class="pre">draw</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.draw.html#matplotlib.pyplot.draw" title="matplotlib.pyplot.draw"><code class="xref py py-obj docutils literal"><span class="pre">draw</span></code></a>()</td>
 <td>Redraw the current figure.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.draw_if_interactive.html#matplotlib.pyplot.draw_if_interactive" title="matplotlib.pyplot.draw_if_interactive"><code class="xref py py-obj docutils literal"><span class="pre">draw_if_interactive</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.draw_if_interactive.html#matplotlib.pyplot.draw_if_interactive" title="matplotlib.pyplot.draw_if_interactive"><code class="xref py py-obj docutils literal"><span class="pre">draw_if_interactive</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.errorbar.html#matplotlib.pyplot.errorbar" title="matplotlib.pyplot.errorbar"><code class="xref py py-obj docutils literal"><span class="pre">errorbar</span></code></a>(x,&nbsp;y[,&nbsp;yerr,&nbsp;xerr,&nbsp;fmt,&nbsp;ecolor,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.errorbar.html#matplotlib.pyplot.errorbar" title="matplotlib.pyplot.errorbar"><code class="xref py py-obj docutils literal"><span class="pre">errorbar</span></code></a>(x,&nbsp;y[,&nbsp;yerr,&nbsp;xerr,&nbsp;fmt,&nbsp;ecolor,&nbsp;...])</td>
 <td>Plot an errorbar graph.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.eventplot.html#matplotlib.pyplot.eventplot" title="matplotlib.pyplot.eventplot"><code class="xref py py-obj docutils literal"><span class="pre">eventplot</span></code></a>(positions[,&nbsp;orientation,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.eventplot.html#matplotlib.pyplot.eventplot" title="matplotlib.pyplot.eventplot"><code class="xref py py-obj docutils literal"><span class="pre">eventplot</span></code></a>(positions[,&nbsp;orientation,&nbsp;...])</td>
 <td>Plot identical parallel lines at specific positions.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.figaspect.html#matplotlib.pyplot.figaspect" title="matplotlib.pyplot.figaspect"><code class="xref py py-obj docutils literal"><span class="pre">figaspect</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.figaspect.html#matplotlib.pyplot.figaspect" title="matplotlib.pyplot.figaspect"><code class="xref py py-obj docutils literal"><span class="pre">figaspect</span></code></a>(arg)</td>
 <td>Create a figure with specified aspect ratio.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.figimage.html#matplotlib.pyplot.figimage" title="matplotlib.pyplot.figimage"><code class="xref py py-obj docutils literal"><span class="pre">figimage</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.figimage.html#matplotlib.pyplot.figimage" title="matplotlib.pyplot.figimage"><code class="xref py py-obj docutils literal"><span class="pre">figimage</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Adds a non-resampled image to the figure.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.figlegend.html#matplotlib.pyplot.figlegend" title="matplotlib.pyplot.figlegend"><code class="xref py py-obj docutils literal"><span class="pre">figlegend</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.figlegend.html#matplotlib.pyplot.figlegend" title="matplotlib.pyplot.figlegend"><code class="xref py py-obj docutils literal"><span class="pre">figlegend</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Place a legend in the figure.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.fignum_exists.html#matplotlib.pyplot.fignum_exists" title="matplotlib.pyplot.fignum_exists"><code class="xref py py-obj docutils literal"><span class="pre">fignum_exists</span></code></a>(num)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.fignum_exists.html#matplotlib.pyplot.fignum_exists" title="matplotlib.pyplot.fignum_exists"><code class="xref py py-obj docutils literal"><span class="pre">fignum_exists</span></code></a>(num)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.figtext.html#matplotlib.pyplot.figtext" title="matplotlib.pyplot.figtext"><code class="xref py py-obj docutils literal"><span class="pre">figtext</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.figtext.html#matplotlib.pyplot.figtext" title="matplotlib.pyplot.figtext"><code class="xref py py-obj docutils literal"><span class="pre">figtext</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Add text to figure.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-obj docutils literal"><span class="pre">figure</span></code></a>([num,&nbsp;figsize,&nbsp;dpi,&nbsp;facecolor,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-obj docutils literal"><span class="pre">figure</span></code></a>([num,&nbsp;figsize,&nbsp;dpi,&nbsp;facecolor,&nbsp;...])</td>
 <td>Creates a new figure.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.fill.html#matplotlib.pyplot.fill" title="matplotlib.pyplot.fill"><code class="xref py py-obj docutils literal"><span class="pre">fill</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.fill.html#matplotlib.pyplot.fill" title="matplotlib.pyplot.fill"><code class="xref py py-obj docutils literal"><span class="pre">fill</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Plot filled polygons.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.fill_between.html#matplotlib.pyplot.fill_between" title="matplotlib.pyplot.fill_between"><code class="xref py py-obj docutils literal"><span class="pre">fill_between</span></code></a>(x,&nbsp;y1[,&nbsp;y2,&nbsp;where,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.fill_between.html#matplotlib.pyplot.fill_between" title="matplotlib.pyplot.fill_between"><code class="xref py py-obj docutils literal"><span class="pre">fill_between</span></code></a>(x,&nbsp;y1[,&nbsp;y2,&nbsp;where,&nbsp;...])</td>
 <td>Make filled polygons between two curves.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.fill_betweenx.html#matplotlib.pyplot.fill_betweenx" title="matplotlib.pyplot.fill_betweenx"><code class="xref py py-obj docutils literal"><span class="pre">fill_betweenx</span></code></a>(y,&nbsp;x1[,&nbsp;x2,&nbsp;where,&nbsp;step,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.fill_betweenx.html#matplotlib.pyplot.fill_betweenx" title="matplotlib.pyplot.fill_betweenx"><code class="xref py py-obj docutils literal"><span class="pre">fill_betweenx</span></code></a>(y,&nbsp;x1[,&nbsp;x2,&nbsp;where,&nbsp;step,&nbsp;...])</td>
 <td>Make filled polygons between two horizontal curves.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.findobj.html#matplotlib.pyplot.findobj" title="matplotlib.pyplot.findobj"><code class="xref py py-obj docutils literal"><span class="pre">findobj</span></code></a>([o,&nbsp;match,&nbsp;include_self])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.findobj.html#matplotlib.pyplot.findobj" title="matplotlib.pyplot.findobj"><code class="xref py py-obj docutils literal"><span class="pre">findobj</span></code></a>([o,&nbsp;match,&nbsp;include_self])</td>
 <td>Find artist objects.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.flag.html#matplotlib.pyplot.flag" title="matplotlib.pyplot.flag"><code class="xref py py-obj docutils literal"><span class="pre">flag</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.flag.html#matplotlib.pyplot.flag" title="matplotlib.pyplot.flag"><code class="xref py py-obj docutils literal"><span class="pre">flag</span></code></a>()</td>
 <td>set the default colormap to flag and apply to current image if any.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.gca.html#matplotlib.pyplot.gca" title="matplotlib.pyplot.gca"><code class="xref py py-obj docutils literal"><span class="pre">gca</span></code></a>(**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.gca.html#matplotlib.pyplot.gca" title="matplotlib.pyplot.gca"><code class="xref py py-obj docutils literal"><span class="pre">gca</span></code></a>(**kwargs)</td>
 <td>Get the current <a class="reference internal" href="../axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> instance on the current figure matching the given keyword args, or create one.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.gcf.html#matplotlib.pyplot.gcf" title="matplotlib.pyplot.gcf"><code class="xref py py-obj docutils literal"><span class="pre">gcf</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.gcf.html#matplotlib.pyplot.gcf" title="matplotlib.pyplot.gcf"><code class="xref py py-obj docutils literal"><span class="pre">gcf</span></code></a>()</td>
 <td>Get a reference to the current figure.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.gci.html#matplotlib.pyplot.gci" title="matplotlib.pyplot.gci"><code class="xref py py-obj docutils literal"><span class="pre">gci</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.gci.html#matplotlib.pyplot.gci" title="matplotlib.pyplot.gci"><code class="xref py py-obj docutils literal"><span class="pre">gci</span></code></a>()</td>
 <td>Get the current colorable artist.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get.html#matplotlib.pyplot.get" title="matplotlib.pyplot.get"><code class="xref py py-obj docutils literal"><span class="pre">get</span></code></a>(obj[,&nbsp;property])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get.html#matplotlib.pyplot.get" title="matplotlib.pyplot.get"><code class="xref py py-obj docutils literal"><span class="pre">get</span></code></a>(obj[,&nbsp;property])</td>
 <td>Return the value of object&#8217;s property.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_backend.html#matplotlib.pyplot.get_backend" title="matplotlib.pyplot.get_backend"><code class="xref py py-obj docutils literal"><span class="pre">get_backend</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_backend.html#matplotlib.pyplot.get_backend" title="matplotlib.pyplot.get_backend"><code class="xref py py-obj docutils literal"><span class="pre">get_backend</span></code></a>()</td>
 <td>Return the name of the current backend.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_cmap.html#matplotlib.pyplot.get_cmap" title="matplotlib.pyplot.get_cmap"><code class="xref py py-obj docutils literal"><span class="pre">get_cmap</span></code></a>([name,&nbsp;lut])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_cmap.html#matplotlib.pyplot.get_cmap" title="matplotlib.pyplot.get_cmap"><code class="xref py py-obj docutils literal"><span class="pre">get_cmap</span></code></a>([name,&nbsp;lut])</td>
 <td>Get a colormap instance, defaulting to rc values if <em>name</em> is None.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_current_fig_manager.html#matplotlib.pyplot.get_current_fig_manager" title="matplotlib.pyplot.get_current_fig_manager"><code class="xref py py-obj docutils literal"><span class="pre">get_current_fig_manager</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_current_fig_manager.html#matplotlib.pyplot.get_current_fig_manager" title="matplotlib.pyplot.get_current_fig_manager"><code class="xref py py-obj docutils literal"><span class="pre">get_current_fig_manager</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_figlabels.html#matplotlib.pyplot.get_figlabels" title="matplotlib.pyplot.get_figlabels"><code class="xref py py-obj docutils literal"><span class="pre">get_figlabels</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_figlabels.html#matplotlib.pyplot.get_figlabels" title="matplotlib.pyplot.get_figlabels"><code class="xref py py-obj docutils literal"><span class="pre">get_figlabels</span></code></a>()</td>
 <td>Return a list of existing figure labels.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_fignums.html#matplotlib.pyplot.get_fignums" title="matplotlib.pyplot.get_fignums"><code class="xref py py-obj docutils literal"><span class="pre">get_fignums</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_fignums.html#matplotlib.pyplot.get_fignums" title="matplotlib.pyplot.get_fignums"><code class="xref py py-obj docutils literal"><span class="pre">get_fignums</span></code></a>()</td>
 <td>Return a list of existing figure numbers.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_plot_commands.html#matplotlib.pyplot.get_plot_commands" title="matplotlib.pyplot.get_plot_commands"><code class="xref py py-obj docutils literal"><span class="pre">get_plot_commands</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_plot_commands.html#matplotlib.pyplot.get_plot_commands" title="matplotlib.pyplot.get_plot_commands"><code class="xref py py-obj docutils literal"><span class="pre">get_plot_commands</span></code></a>()</td>
 <td>Get a sorted list of all of the plotting commands.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_scale_docs.html#matplotlib.pyplot.get_scale_docs" title="matplotlib.pyplot.get_scale_docs"><code class="xref py py-obj docutils literal"><span class="pre">get_scale_docs</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_scale_docs.html#matplotlib.pyplot.get_scale_docs" title="matplotlib.pyplot.get_scale_docs"><code class="xref py py-obj docutils literal"><span class="pre">get_scale_docs</span></code></a>()</td>
 <td>Helper function for generating docstrings related to scales.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.get_scale_names.html#matplotlib.pyplot.get_scale_names" title="matplotlib.pyplot.get_scale_names"><code class="xref py py-obj docutils literal"><span class="pre">get_scale_names</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.get_scale_names.html#matplotlib.pyplot.get_scale_names" title="matplotlib.pyplot.get_scale_names"><code class="xref py py-obj docutils literal"><span class="pre">get_scale_names</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.getp.html#matplotlib.pyplot.getp" title="matplotlib.pyplot.getp"><code class="xref py py-obj docutils literal"><span class="pre">getp</span></code></a>(obj[,&nbsp;property])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.getp.html#matplotlib.pyplot.getp" title="matplotlib.pyplot.getp"><code class="xref py py-obj docutils literal"><span class="pre">getp</span></code></a>(obj[,&nbsp;property])</td>
 <td>Return the value of object&#8217;s property.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.ginput.html#matplotlib.pyplot.ginput" title="matplotlib.pyplot.ginput"><code class="xref py py-obj docutils literal"><span class="pre">ginput</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.ginput.html#matplotlib.pyplot.ginput" title="matplotlib.pyplot.ginput"><code class="xref py py-obj docutils literal"><span class="pre">ginput</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Blocking call to interact with a figure.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.gray.html#matplotlib.pyplot.gray" title="matplotlib.pyplot.gray"><code class="xref py py-obj docutils literal"><span class="pre">gray</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.gray.html#matplotlib.pyplot.gray" title="matplotlib.pyplot.gray"><code class="xref py py-obj docutils literal"><span class="pre">gray</span></code></a>()</td>
 <td>set the default colormap to gray and apply to current image if any.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.grid.html#matplotlib.pyplot.grid" title="matplotlib.pyplot.grid"><code class="xref py py-obj docutils literal"><span class="pre">grid</span></code></a>([b,&nbsp;which,&nbsp;axis])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.grid.html#matplotlib.pyplot.grid" title="matplotlib.pyplot.grid"><code class="xref py py-obj docutils literal"><span class="pre">grid</span></code></a>([b,&nbsp;which,&nbsp;axis])</td>
 <td>Turn the axes grids on or off.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.hexbin.html#matplotlib.pyplot.hexbin" title="matplotlib.pyplot.hexbin"><code class="xref py py-obj docutils literal"><span class="pre">hexbin</span></code></a>(x,&nbsp;y[,&nbsp;C,&nbsp;gridsize,&nbsp;bins,&nbsp;xscale,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.hexbin.html#matplotlib.pyplot.hexbin" title="matplotlib.pyplot.hexbin"><code class="xref py py-obj docutils literal"><span class="pre">hexbin</span></code></a>(x,&nbsp;y[,&nbsp;C,&nbsp;gridsize,&nbsp;bins,&nbsp;xscale,&nbsp;...])</td>
 <td>Make a hexagonal binning plot.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.hist.html#matplotlib.pyplot.hist" title="matplotlib.pyplot.hist"><code class="xref py py-obj docutils literal"><span class="pre">hist</span></code></a>(x[,&nbsp;bins,&nbsp;range,&nbsp;normed,&nbsp;weights,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.hist.html#matplotlib.pyplot.hist" title="matplotlib.pyplot.hist"><code class="xref py py-obj docutils literal"><span class="pre">hist</span></code></a>(x[,&nbsp;bins,&nbsp;range,&nbsp;normed,&nbsp;weights,&nbsp;...])</td>
 <td>Plot a histogram.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.hist2d.html#matplotlib.pyplot.hist2d" title="matplotlib.pyplot.hist2d"><code class="xref py py-obj docutils literal"><span class="pre">hist2d</span></code></a>(x,&nbsp;y[,&nbsp;bins,&nbsp;range,&nbsp;normed,&nbsp;weights,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.hist2d.html#matplotlib.pyplot.hist2d" title="matplotlib.pyplot.hist2d"><code class="xref py py-obj docutils literal"><span class="pre">hist2d</span></code></a>(x,&nbsp;y[,&nbsp;bins,&nbsp;range,&nbsp;normed,&nbsp;weights,&nbsp;...])</td>
 <td>Make a 2D histogram plot.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.hlines.html#matplotlib.pyplot.hlines" title="matplotlib.pyplot.hlines"><code class="xref py py-obj docutils literal"><span class="pre">hlines</span></code></a>(y,&nbsp;xmin,&nbsp;xmax[,&nbsp;colors,&nbsp;linestyles,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.hlines.html#matplotlib.pyplot.hlines" title="matplotlib.pyplot.hlines"><code class="xref py py-obj docutils literal"><span class="pre">hlines</span></code></a>(y,&nbsp;xmin,&nbsp;xmax[,&nbsp;colors,&nbsp;linestyles,&nbsp;...])</td>
 <td>Plot horizontal lines at each <code class="xref py py-obj docutils literal"><span class="pre">y</span></code> from <code class="xref py py-obj docutils literal"><span class="pre">xmin</span></code> to <code class="xref py py-obj docutils literal"><span class="pre">xmax</span></code>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.hold.html#matplotlib.pyplot.hold" title="matplotlib.pyplot.hold"><code class="xref py py-obj docutils literal"><span class="pre">hold</span></code></a>([b])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.hold.html#matplotlib.pyplot.hold" title="matplotlib.pyplot.hold"><code class="xref py py-obj docutils literal"><span class="pre">hold</span></code></a>([b])</td>
 <td><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.0.</span></p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.hot.html#matplotlib.pyplot.hot" title="matplotlib.pyplot.hot"><code class="xref py py-obj docutils literal"><span class="pre">hot</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.hot.html#matplotlib.pyplot.hot" title="matplotlib.pyplot.hot"><code class="xref py py-obj docutils literal"><span class="pre">hot</span></code></a>()</td>
 <td>set the default colormap to hot and apply to current image if any.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.hsv.html#matplotlib.pyplot.hsv" title="matplotlib.pyplot.hsv"><code class="xref py py-obj docutils literal"><span class="pre">hsv</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.hsv.html#matplotlib.pyplot.hsv" title="matplotlib.pyplot.hsv"><code class="xref py py-obj docutils literal"><span class="pre">hsv</span></code></a>()</td>
 <td>set the default colormap to hsv and apply to current image if any.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.imread.html#matplotlib.pyplot.imread" title="matplotlib.pyplot.imread"><code class="xref py py-obj docutils literal"><span class="pre">imread</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.imread.html#matplotlib.pyplot.imread" title="matplotlib.pyplot.imread"><code class="xref py py-obj docutils literal"><span class="pre">imread</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Read an image from a file into an array.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.imsave.html#matplotlib.pyplot.imsave" title="matplotlib.pyplot.imsave"><code class="xref py py-obj docutils literal"><span class="pre">imsave</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.imsave.html#matplotlib.pyplot.imsave" title="matplotlib.pyplot.imsave"><code class="xref py py-obj docutils literal"><span class="pre">imsave</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Save an array as in image file.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.imshow.html#matplotlib.pyplot.imshow" title="matplotlib.pyplot.imshow"><code class="xref py py-obj docutils literal"><span class="pre">imshow</span></code></a>(X[,&nbsp;cmap,&nbsp;norm,&nbsp;aspect,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.imshow.html#matplotlib.pyplot.imshow" title="matplotlib.pyplot.imshow"><code class="xref py py-obj docutils literal"><span class="pre">imshow</span></code></a>(X[,&nbsp;cmap,&nbsp;norm,&nbsp;aspect,&nbsp;...])</td>
 <td>Display an image on the axes.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.inferno.html#matplotlib.pyplot.inferno" title="matplotlib.pyplot.inferno"><code class="xref py py-obj docutils literal"><span class="pre">inferno</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.inferno.html#matplotlib.pyplot.inferno" title="matplotlib.pyplot.inferno"><code class="xref py py-obj docutils literal"><span class="pre">inferno</span></code></a>()</td>
 <td>set the default colormap to inferno and apply to current image if any.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.install_repl_displayhook.html#matplotlib.pyplot.install_repl_displayhook" title="matplotlib.pyplot.install_repl_displayhook"><code class="xref py py-obj docutils literal"><span class="pre">install_repl_displayhook</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.install_repl_displayhook.html#matplotlib.pyplot.install_repl_displayhook" title="matplotlib.pyplot.install_repl_displayhook"><code class="xref py py-obj docutils literal"><span class="pre">install_repl_displayhook</span></code></a>()</td>
 <td>Install a repl display hook so that any stale figure are automatically redrawn when control is returned to the repl.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.interactive.html#matplotlib.pyplot.interactive" title="matplotlib.pyplot.interactive"><code class="xref py py-obj docutils literal"><span class="pre">interactive</span></code></a>(b)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.interactive.html#matplotlib.pyplot.interactive" title="matplotlib.pyplot.interactive"><code class="xref py py-obj docutils literal"><span class="pre">interactive</span></code></a>(b)</td>
 <td>Set interactive mode to boolean b.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.ioff.html#matplotlib.pyplot.ioff" title="matplotlib.pyplot.ioff"><code class="xref py py-obj docutils literal"><span class="pre">ioff</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.ioff.html#matplotlib.pyplot.ioff" title="matplotlib.pyplot.ioff"><code class="xref py py-obj docutils literal"><span class="pre">ioff</span></code></a>()</td>
 <td>Turn interactive mode off.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.ion.html#matplotlib.pyplot.ion" title="matplotlib.pyplot.ion"><code class="xref py py-obj docutils literal"><span class="pre">ion</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.ion.html#matplotlib.pyplot.ion" title="matplotlib.pyplot.ion"><code class="xref py py-obj docutils literal"><span class="pre">ion</span></code></a>()</td>
 <td>Turn interactive mode on.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.is_numlike.html#matplotlib.pyplot.is_numlike" title="matplotlib.pyplot.is_numlike"><code class="xref py py-obj docutils literal"><span class="pre">is_numlike</span></code></a>(obj)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.is_numlike.html#matplotlib.pyplot.is_numlike" title="matplotlib.pyplot.is_numlike"><code class="xref py py-obj docutils literal"><span class="pre">is_numlike</span></code></a>(obj)</td>
 <td>return true if <em>obj</em> looks like a number</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.ishold.html#matplotlib.pyplot.ishold" title="matplotlib.pyplot.ishold"><code class="xref py py-obj docutils literal"><span class="pre">ishold</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.ishold.html#matplotlib.pyplot.ishold" title="matplotlib.pyplot.ishold"><code class="xref py py-obj docutils literal"><span class="pre">ishold</span></code></a>()</td>
 <td><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.0.</span></p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.isinteractive.html#matplotlib.pyplot.isinteractive" title="matplotlib.pyplot.isinteractive"><code class="xref py py-obj docutils literal"><span class="pre">isinteractive</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.isinteractive.html#matplotlib.pyplot.isinteractive" title="matplotlib.pyplot.isinteractive"><code class="xref py py-obj docutils literal"><span class="pre">isinteractive</span></code></a>()</td>
 <td>Return status of interactive mode.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.jet.html#matplotlib.pyplot.jet" title="matplotlib.pyplot.jet"><code class="xref py py-obj docutils literal"><span class="pre">jet</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.jet.html#matplotlib.pyplot.jet" title="matplotlib.pyplot.jet"><code class="xref py py-obj docutils literal"><span class="pre">jet</span></code></a>()</td>
 <td>set the default colormap to jet and apply to current image if any.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.legend.html#matplotlib.pyplot.legend" title="matplotlib.pyplot.legend"><code class="xref py py-obj docutils literal"><span class="pre">legend</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.legend.html#matplotlib.pyplot.legend" title="matplotlib.pyplot.legend"><code class="xref py py-obj docutils literal"><span class="pre">legend</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Places a legend on the axes.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.locator_params.html#matplotlib.pyplot.locator_params" title="matplotlib.pyplot.locator_params"><code class="xref py py-obj docutils literal"><span class="pre">locator_params</span></code></a>([axis,&nbsp;tight])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.locator_params.html#matplotlib.pyplot.locator_params" title="matplotlib.pyplot.locator_params"><code class="xref py py-obj docutils literal"><span class="pre">locator_params</span></code></a>([axis,&nbsp;tight])</td>
 <td>Control behavior of tick locators.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.loglog.html#matplotlib.pyplot.loglog" title="matplotlib.pyplot.loglog"><code class="xref py py-obj docutils literal"><span class="pre">loglog</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.loglog.html#matplotlib.pyplot.loglog" title="matplotlib.pyplot.loglog"><code class="xref py py-obj docutils literal"><span class="pre">loglog</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Make a plot with log scaling on both the <em>x</em> and <em>y</em> axis.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.magma.html#matplotlib.pyplot.magma" title="matplotlib.pyplot.magma"><code class="xref py py-obj docutils literal"><span class="pre">magma</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.magma.html#matplotlib.pyplot.magma" title="matplotlib.pyplot.magma"><code class="xref py py-obj docutils literal"><span class="pre">magma</span></code></a>()</td>
 <td>set the default colormap to magma and apply to current image if any.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.magnitude_spectrum.html#matplotlib.pyplot.magnitude_spectrum" title="matplotlib.pyplot.magnitude_spectrum"><code class="xref py py-obj docutils literal"><span class="pre">magnitude_spectrum</span></code></a>(x[,&nbsp;Fs,&nbsp;Fc,&nbsp;window,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.magnitude_spectrum.html#matplotlib.pyplot.magnitude_spectrum" title="matplotlib.pyplot.magnitude_spectrum"><code class="xref py py-obj docutils literal"><span class="pre">magnitude_spectrum</span></code></a>(x[,&nbsp;Fs,&nbsp;Fc,&nbsp;window,&nbsp;...])</td>
 <td>Plot the magnitude spectrum.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.margins.html#matplotlib.pyplot.margins" title="matplotlib.pyplot.margins"><code class="xref py py-obj docutils literal"><span class="pre">margins</span></code></a>(*args,&nbsp;**kw)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.margins.html#matplotlib.pyplot.margins" title="matplotlib.pyplot.margins"><code class="xref py py-obj docutils literal"><span class="pre">margins</span></code></a>(*args,&nbsp;**kw)</td>
 <td>Set or retrieve autoscaling margins.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.matshow.html#matplotlib.pyplot.matshow" title="matplotlib.pyplot.matshow"><code class="xref py py-obj docutils literal"><span class="pre">matshow</span></code></a>(A[,&nbsp;fignum])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.matshow.html#matplotlib.pyplot.matshow" title="matplotlib.pyplot.matshow"><code class="xref py py-obj docutils literal"><span class="pre">matshow</span></code></a>(A[,&nbsp;fignum])</td>
 <td>Display an array as a matrix in a new figure window.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.minorticks_off.html#matplotlib.pyplot.minorticks_off" title="matplotlib.pyplot.minorticks_off"><code class="xref py py-obj docutils literal"><span class="pre">minorticks_off</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.minorticks_off.html#matplotlib.pyplot.minorticks_off" title="matplotlib.pyplot.minorticks_off"><code class="xref py py-obj docutils literal"><span class="pre">minorticks_off</span></code></a>()</td>
 <td>Remove minor ticks from the current plot.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.minorticks_on.html#matplotlib.pyplot.minorticks_on" title="matplotlib.pyplot.minorticks_on"><code class="xref py py-obj docutils literal"><span class="pre">minorticks_on</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.minorticks_on.html#matplotlib.pyplot.minorticks_on" title="matplotlib.pyplot.minorticks_on"><code class="xref py py-obj docutils literal"><span class="pre">minorticks_on</span></code></a>()</td>
 <td>Display minor ticks on the current plot.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.new_figure_manager.html#matplotlib.pyplot.new_figure_manager" title="matplotlib.pyplot.new_figure_manager"><code class="xref py py-obj docutils literal"><span class="pre">new_figure_manager</span></code></a>(num,&nbsp;*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.new_figure_manager.html#matplotlib.pyplot.new_figure_manager" title="matplotlib.pyplot.new_figure_manager"><code class="xref py py-obj docutils literal"><span class="pre">new_figure_manager</span></code></a>(num,&nbsp;*args,&nbsp;**kwargs)</td>
 <td>Create a new figure manager instance</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.nipy_spectral.html#matplotlib.pyplot.nipy_spectral" title="matplotlib.pyplot.nipy_spectral"><code class="xref py py-obj docutils literal"><span class="pre">nipy_spectral</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.nipy_spectral.html#matplotlib.pyplot.nipy_spectral" title="matplotlib.pyplot.nipy_spectral"><code class="xref py py-obj docutils literal"><span class="pre">nipy_spectral</span></code></a>()</td>
 <td>set the default colormap to nipy_spectral and apply to current image if any.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.over.html#matplotlib.pyplot.over" title="matplotlib.pyplot.over"><code class="xref py py-obj docutils literal"><span class="pre">over</span></code></a>(func,&nbsp;*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.over.html#matplotlib.pyplot.over" title="matplotlib.pyplot.over"><code class="xref py py-obj docutils literal"><span class="pre">over</span></code></a>(func,&nbsp;*args,&nbsp;**kwargs)</td>
 <td><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.0.</span></p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.pause.html#matplotlib.pyplot.pause" title="matplotlib.pyplot.pause"><code class="xref py py-obj docutils literal"><span class="pre">pause</span></code></a>(interval)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.pause.html#matplotlib.pyplot.pause" title="matplotlib.pyplot.pause"><code class="xref py py-obj docutils literal"><span class="pre">pause</span></code></a>(interval)</td>
 <td>Pause for <em>interval</em> seconds.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.pcolor.html#matplotlib.pyplot.pcolor" title="matplotlib.pyplot.pcolor"><code class="xref py py-obj docutils literal"><span class="pre">pcolor</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.pcolor.html#matplotlib.pyplot.pcolor" title="matplotlib.pyplot.pcolor"><code class="xref py py-obj docutils literal"><span class="pre">pcolor</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Create a pseudocolor plot of a 2-D array.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.pcolormesh.html#matplotlib.pyplot.pcolormesh" title="matplotlib.pyplot.pcolormesh"><code class="xref py py-obj docutils literal"><span class="pre">pcolormesh</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.pcolormesh.html#matplotlib.pyplot.pcolormesh" title="matplotlib.pyplot.pcolormesh"><code class="xref py py-obj docutils literal"><span class="pre">pcolormesh</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Plot a quadrilateral mesh.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.phase_spectrum.html#matplotlib.pyplot.phase_spectrum" title="matplotlib.pyplot.phase_spectrum"><code class="xref py py-obj docutils literal"><span class="pre">phase_spectrum</span></code></a>(x[,&nbsp;Fs,&nbsp;Fc,&nbsp;window,&nbsp;pad_to,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.phase_spectrum.html#matplotlib.pyplot.phase_spectrum" title="matplotlib.pyplot.phase_spectrum"><code class="xref py py-obj docutils literal"><span class="pre">phase_spectrum</span></code></a>(x[,&nbsp;Fs,&nbsp;Fc,&nbsp;window,&nbsp;pad_to,&nbsp;...])</td>
 <td>Plot the phase spectrum.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.pie.html#matplotlib.pyplot.pie" title="matplotlib.pyplot.pie"><code class="xref py py-obj docutils literal"><span class="pre">pie</span></code></a>(x[,&nbsp;explode,&nbsp;labels,&nbsp;colors,&nbsp;autopct,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.pie.html#matplotlib.pyplot.pie" title="matplotlib.pyplot.pie"><code class="xref py py-obj docutils literal"><span class="pre">pie</span></code></a>(x[,&nbsp;explode,&nbsp;labels,&nbsp;colors,&nbsp;autopct,&nbsp;...])</td>
 <td>Plot a pie chart.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.pink.html#matplotlib.pyplot.pink" title="matplotlib.pyplot.pink"><code class="xref py py-obj docutils literal"><span class="pre">pink</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.pink.html#matplotlib.pyplot.pink" title="matplotlib.pyplot.pink"><code class="xref py py-obj docutils literal"><span class="pre">pink</span></code></a>()</td>
 <td>set the default colormap to pink and apply to current image if any.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.plasma.html#matplotlib.pyplot.plasma" title="matplotlib.pyplot.plasma"><code class="xref py py-obj docutils literal"><span class="pre">plasma</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.plasma.html#matplotlib.pyplot.plasma" title="matplotlib.pyplot.plasma"><code class="xref py py-obj docutils literal"><span class="pre">plasma</span></code></a>()</td>
 <td>set the default colormap to plasma and apply to current image if any.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.plot.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-obj docutils literal"><span class="pre">plot</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.plot.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-obj docutils literal"><span class="pre">plot</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Plot lines and/or markers to the <a class="reference internal" href="../axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.plot_date.html#matplotlib.pyplot.plot_date" title="matplotlib.pyplot.plot_date"><code class="xref py py-obj docutils literal"><span class="pre">plot_date</span></code></a>(x,&nbsp;y[,&nbsp;fmt,&nbsp;tz,&nbsp;xdate,&nbsp;ydate,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.plot_date.html#matplotlib.pyplot.plot_date" title="matplotlib.pyplot.plot_date"><code class="xref py py-obj docutils literal"><span class="pre">plot_date</span></code></a>(x,&nbsp;y[,&nbsp;fmt,&nbsp;tz,&nbsp;xdate,&nbsp;ydate,&nbsp;...])</td>
 <td>A plot with data that contains dates.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.plotfile.html#matplotlib.pyplot.plotfile" title="matplotlib.pyplot.plotfile"><code class="xref py py-obj docutils literal"><span class="pre">plotfile</span></code></a>(fname[,&nbsp;cols,&nbsp;plotfuncs,&nbsp;comments,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="matplotlib.pyplot.plotfile.html#matplotlib.pyplot.plotfile" title="matplotlib.pyplot.plotfile"><code class="xref py py-obj docutils literal"><span class="pre">plotfile</span></code></a>(fname[,&nbsp;cols,&nbsp;plotfuncs,&nbsp;comments,&nbsp;...])</td>
 <td>Plot the data in in a file.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="../pyplot_summary.html#matplotlib.pyplot.plotting" title="matplotlib.pyplot.plotting"><code class="xref py py-obj docutils literal"><span class="pre">plotting</span></code></a>()</td>
-<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="matplotlib.pyplot.polar.html#matplotlib.pyplot.polar" title="matplotlib.pyplot.polar"><code class="xref py py-obj docutils literal"><span class="pre">polar</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Make a polar plot.</td>
