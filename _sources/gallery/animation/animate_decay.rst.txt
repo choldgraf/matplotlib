@@ -68,7 +68,7 @@ This example showcases a sinusoidal decay animation.
                                   repeat=False, init_func=init)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.045 seconds)
+**Total running time of the script:** ( 0 minutes  0.078 seconds)
 
 
 

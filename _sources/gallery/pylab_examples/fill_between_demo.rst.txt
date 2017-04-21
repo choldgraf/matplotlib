@@ -93,7 +93,7 @@ Fill Between Demo
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.221 seconds)
+**Total running time of the script:** ( 0 minutes  0.307 seconds)
 
 
 

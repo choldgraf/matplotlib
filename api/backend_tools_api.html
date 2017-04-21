@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.backend_tools &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
+    <title>matplotlib.backend_tools &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
+        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../index.html" />
     <link rel="up" title="backends" href="index_backend_api.html" />
     <link rel="next" title="matplotlib.backends.backend_gtkagg" href="backend_gtkagg_api.html" />
     <link rel="prev" title="matplotlib.backends.backend_mixed" href="backend_mixed_api.html" /> 
@@ -76,8 +76,7 @@ type="text/css" />
              accesskey="P">previous</a> |</li>
 
         <li><a href="../index.html">home</a>|&nbsp;</li>
-        <li><a href="../examples/index.html">examples</a>|&nbsp;</li>
-        <li><a href="../gallery/index.html">gallery</a>|&nbsp;</li>
+        <li><a href="../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../contents.html">docs</a> &raquo;</li>
           <li><a href="index.html" >The Matplotlib API</a> &raquo;</li>
@@ -972,7 +971,7 @@ See <code class="xref py py-obj docutils literal"><span class="pre">add_tool</sp
 
 <dl class="function">
 <dt id="matplotlib.backend_tools.add_tools_to_manager">
-<code class="descclassname">matplotlib.backend_tools.</code><code class="descname">add_tools_to_manager</code><span class="sig-paren">(</span><em>toolmanager</em>, <em>tools={'back': &lt;class 'matplotlib.backend_tools.ToolBack'&gt;</em>, <em>'grid': &lt;class 'matplotlib.backend_tools.ToolGrid'&gt;</em>, <em>'allnav': &lt;class 'matplotlib.backend_tools.ToolEnableAllNavigation'&gt;</em>, <em>'zoom': &lt;class 'matplotlib.backend_tools.ToolZoom'&gt;</em>, <em>'quit': &lt;class 'matplotlib.backend_tools.ToolQuit'&gt;</em>, <em>'grid_minor': &lt;class 'matplotlib.backend_tools.ToolMinorGrid'&gt;</em>, <em>'subplots': 'ToolConfigureSubplots'</em>, <em>'pan': &lt;class 'matplotlib.backend_tools.ToolPan'&gt;</em>, <em>'save': 'ToolSaveFigure'</em>, <em>'viewpos': &lt;class 'matplotlib.backend_tools.ToolViewsPositions'&gt;</em>, <em>'forward': &lt;class 'matplotlib.backend_tools.ToolForward'&gt;</em>, <em>'rubberband': 'ToolRubberband'</em>, <em>'cursor': 'ToolSetCursor'</em>, <em>'home': &lt;class 'matplotlib.backend_tools.ToolHome'&gt;</em>, <em>'position': &lt;class 'matplotlib.backend_tools.ToolCursorPosition'&gt;</em>, <em>'yscale': &lt;class 'matplotlib.backend_tools.ToolYScale'&gt;</em>, <em>'quit_all': &lt;class 'matplotlib.backend_tools.ToolQuitAll'&gt;</em>, <em>'nav': &lt;class 'matplotlib.backend_tools.ToolEnableNavigation'&gt;</em>, <em>'xscale': &lt;class 'matplotlib.backend_tools.ToolXScale'&gt;</em>, <em>'fullscreen': &lt;class 'matplotlib.backend_tools.ToolFullScreen'&gt;}</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_tools.add_tools_to_manager" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">matplotlib.backend_tools.</code><code class="descname">add_tools_to_manager</code><span class="sig-paren">(</span><em>toolmanager</em>, <em>tools={'home': &lt;class 'matplotlib.backend_tools.ToolHome'&gt;</em>, <em>'back': &lt;class 'matplotlib.backend_tools.ToolBack'&gt;</em>, <em>'forward': &lt;class 'matplotlib.backend_tools.ToolForward'&gt;</em>, <em>'zoom': &lt;class 'matplotlib.backend_tools.ToolZoom'&gt;</em>, <em>'pan': &lt;class 'matplotlib.backend_tools.ToolPan'&gt;</em>, <em>'subplots': 'ToolConfigureSubplots'</em>, <em>'save': 'ToolSaveFigure'</em>, <em>'grid': &lt;class 'matplotlib.backend_tools.ToolGrid'&gt;</em>, <em>'grid_minor': &lt;class 'matplotlib.backend_tools.ToolMinorGrid'&gt;</em>, <em>'fullscreen': &lt;class 'matplotlib.backend_tools.ToolFullScreen'&gt;</em>, <em>'quit': &lt;class 'matplotlib.backend_tools.ToolQuit'&gt;</em>, <em>'quit_all': &lt;class 'matplotlib.backend_tools.ToolQuitAll'&gt;</em>, <em>'allnav': &lt;class 'matplotlib.backend_tools.ToolEnableAllNavigation'&gt;</em>, <em>'nav': &lt;class 'matplotlib.backend_tools.ToolEnableNavigation'&gt;</em>, <em>'xscale': &lt;class 'matplotlib.backend_tools.ToolXScale'&gt;</em>, <em>'yscale': &lt;class 'matplotlib.backend_tools.ToolYScale'&gt;</em>, <em>'position': &lt;class 'matplotlib.backend_tools.ToolCursorPosition'&gt;</em>, <em>'viewpos': &lt;class 'matplotlib.backend_tools.ToolViewsPositions'&gt;</em>, <em>'cursor': 'ToolSetCursor'</em>, <em>'rubberband': 'ToolRubberband'}</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_tools.add_tools_to_manager" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add multiple tools to <code class="xref py py-obj docutils literal"><span class="pre">ToolManager</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1001,7 +1000,7 @@ info.</p>
 
 <dl class="data">
 <dt id="matplotlib.backend_tools.default_tools">
-<code class="descclassname">matplotlib.backend_tools.</code><code class="descname">default_tools</code><em class="property"> = {'back': &lt;class 'matplotlib.backend_tools.ToolBack'&gt;, 'grid': &lt;class 'matplotlib.backend_tools.ToolGrid'&gt;, 'allnav': &lt;class 'matplotlib.backend_tools.ToolEnableAllNavigation'&gt;, 'zoom': &lt;class 'matplotlib.backend_tools.ToolZoom'&gt;, 'quit': &lt;class 'matplotlib.backend_tools.ToolQuit'&gt;, 'grid_minor': &lt;class 'matplotlib.backend_tools.ToolMinorGrid'&gt;, 'subplots': 'ToolConfigureSubplots', 'pan': &lt;class 'matplotlib.backend_tools.ToolPan'&gt;, 'save': 'ToolSaveFigure', 'viewpos': &lt;class 'matplotlib.backend_tools.ToolViewsPositions'&gt;, 'forward': &lt;class 'matplotlib.backend_tools.ToolForward'&gt;, 'rubberband': 'ToolRubberband', 'cursor': 'ToolSetCursor', 'home': &lt;class 'matplotlib.backend_tools.ToolHome'&gt;, 'position': &lt;class 'matplotlib.backend_tools.ToolCursorPosition'&gt;, 'yscale': &lt;class 'matplotlib.backend_tools.ToolYScale'&gt;, 'quit_all': &lt;class 'matplotlib.backend_tools.ToolQuitAll'&gt;, 'nav': &lt;class 'matplotlib.backend_tools.ToolEnableNavigation'&gt;, 'xscale': &lt;class 'matplotlib.backend_tools.ToolXScale'&gt;, 'fullscreen': &lt;class 'matplotlib.backend_tools.ToolFullScreen'&gt;}</em><a class="headerlink" href="#matplotlib.backend_tools.default_tools" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">matplotlib.backend_tools.</code><code class="descname">default_tools</code><em class="property"> = {'home': &lt;class 'matplotlib.backend_tools.ToolHome'&gt;, 'back': &lt;class 'matplotlib.backend_tools.ToolBack'&gt;, 'forward': &lt;class 'matplotlib.backend_tools.ToolForward'&gt;, 'zoom': &lt;class 'matplotlib.backend_tools.ToolZoom'&gt;, 'pan': &lt;class 'matplotlib.backend_tools.ToolPan'&gt;, 'subplots': 'ToolConfigureSubplots', 'save': 'ToolSaveFigure', 'grid': &lt;class 'matplotlib.backend_tools.ToolGrid'&gt;, 'grid_minor': &lt;class 'matplotlib.backend_tools.ToolMinorGrid'&gt;, 'fullscreen': &lt;class 'matplotlib.backend_tools.ToolFullScreen'&gt;, 'quit': &lt;class 'matplotlib.backend_tools.ToolQuit'&gt;, 'quit_all': &lt;class 'matplotlib.backend_tools.ToolQuitAll'&gt;, 'allnav': &lt;class 'matplotlib.backend_tools.ToolEnableAllNavigation'&gt;, 'nav': &lt;class 'matplotlib.backend_tools.ToolEnableNavigation'&gt;, 'xscale': &lt;class 'matplotlib.backend_tools.ToolXScale'&gt;, 'yscale': &lt;class 'matplotlib.backend_tools.ToolYScale'&gt;, 'position': &lt;class 'matplotlib.backend_tools.ToolCursorPosition'&gt;, 'viewpos': &lt;class 'matplotlib.backend_tools.ToolViewsPositions'&gt;, 'cursor': 'ToolSetCursor', 'rubberband': 'ToolRubberband'}</em><a class="headerlink" href="#matplotlib.backend_tools.default_tools" title="Permalink to this definition">¶</a></dt>
 <dd><p>Default tools</p>
 </dd></dl>
 
@@ -1016,7 +1015,7 @@ info.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 19, 2017.
+      Last updated on Apr 20, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

@@ -91,7 +91,7 @@ will extend from the data towards decreasing y-values.
     ax.set_title('Errorbar upper and lower limits')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.076 seconds)
+**Total running time of the script:** ( 0 minutes  0.115 seconds)
 
 
 

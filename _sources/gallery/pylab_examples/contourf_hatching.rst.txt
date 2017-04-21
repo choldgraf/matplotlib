@@ -75,7 +75,7 @@ Contourf Hatching
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.159 seconds)
+**Total running time of the script:** ( 0 minutes  0.210 seconds)
 
 
 

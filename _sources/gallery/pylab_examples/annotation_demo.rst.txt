@@ -165,7 +165,7 @@ For physical coordinate systems (points or pixels) the origin is the
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.095 seconds)
+**Total running time of the script:** ( 0 minutes  0.142 seconds)
 
 
 

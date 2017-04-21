@@ -63,7 +63,7 @@ is colored based on its derivative.
     axs[0].set_ylim(-1.1, 1.1)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.153 seconds)
+**Total running time of the script:** ( 0 minutes  0.210 seconds)
 
 
 

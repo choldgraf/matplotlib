@@ -38,7 +38,7 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
 
  Out::
 
-    ['label', 'q1', 'q3', 'cilo', 'iqr', 'whishi', 'whislo', 'med', 'cihi', 'fliers', 'mean']
+    ['label', 'mean', 'iqr', 'cilo', 'cihi', 'whishi', 'whislo', 'fliers', 'q1', 'med', 'q3']
 
 
 
@@ -131,7 +131,7 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
     fig.subplots_adjust(hspace=0.4)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.892 seconds)
+**Total running time of the script:** ( 0 minutes  1.383 seconds)
 
 
 

@@ -57,7 +57,7 @@ Compute the cross spectral density of two signals
     ax2.set_ylabel('CSD (db)')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.071 seconds)
+**Total running time of the script:** ( 0 minutes  0.102 seconds)
 
 
 

@@ -20,7 +20,7 @@ A very simple 'animation' of a 3D plot.  See also rotate_axes3d_demo.
 
  Out::
 
-    Average FPS: 214.262602
+    Average FPS: 120.011857
 
 
 
@@ -73,7 +73,7 @@ A very simple 'animation' of a 3D plot.  See also rotate_axes3d_demo.
 
     print('Average FPS: %f' % (100 / (time.time() - tstart)))
 
-**Total running time of the script:** ( 0 minutes  0.487 seconds)
+**Total running time of the script:** ( 0 minutes  0.861 seconds)
 
 
 

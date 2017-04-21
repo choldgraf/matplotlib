@@ -77,7 +77,7 @@ frame colors on enter and leave
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.107 seconds)
+**Total running time of the script:** ( 0 minutes  0.142 seconds)
 
 
 

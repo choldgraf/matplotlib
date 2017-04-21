@@ -97,7 +97,7 @@ It also illustrates colorbar tick labelling with a multiplier.
 
     show()
 
-**Total running time of the script:** ( 0 minutes  0.215 seconds)
+**Total running time of the script:** ( 0 minutes  0.292 seconds)
 
 
 

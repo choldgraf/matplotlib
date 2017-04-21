@@ -64,7 +64,7 @@ Matplotlib's and MATLAB's scaling of the PSD.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.081 seconds)
+**Total running time of the script:** ( 0 minutes  0.113 seconds)
 
 
 

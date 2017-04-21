@@ -48,7 +48,7 @@ See help(colors) for more info.
     plt.title('About as silly as it gets, folks', color='#afeeee')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.030 seconds)
+**Total running time of the script:** ( 0 minutes  0.080 seconds)
 
 
 

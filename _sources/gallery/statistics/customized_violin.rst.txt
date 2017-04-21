@@ -91,7 +91,7 @@ section: http://scikit-learn.org/stable/modules/density.html
     plt.subplots_adjust(bottom=0.15, wspace=0.05)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.109 seconds)
+**Total running time of the script:** ( 0 minutes  0.171 seconds)
 
 
 

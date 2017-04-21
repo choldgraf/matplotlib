@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>SVG Tooltip &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
+    <title>SVG Tooltip &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
+        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -67,8 +67,7 @@ type="text/css" />
              >modules</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
-        <li><a href="../../examples/index.html">examples</a>|&nbsp;</li>
-        <li><a href="../index.html">gallery</a>|&nbsp;</li>
+        <li><a href="../index.html">examples</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li> 
       </ul>
@@ -146,11 +145,11 @@ the appearance by the CSS.</p>
 
 <span class="n">ET</span><span class="o">.</span><span class="n">register_namespace</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;http://www.w3.org/2000/svg&quot;</span><span class="p">)</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.subplots" title="View documentation for matplotlib.pyplot.subplots"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">()</span>
 
 <span class="c1"># Create patches to which tooltips will be assigned.</span>
-<span class="n">rect1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">),</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
-<span class="n">rect2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">rect1</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.Rectangle" title="View documentation for matplotlib.pyplot.Rectangle"><span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span></a><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">),</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">rect2</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.Rectangle" title="View documentation for matplotlib.pyplot.Rectangle"><span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span></a><span class="p">((</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
 
 <span class="n">shapes</span> <span class="o">=</span> <span class="p">[</span><span class="n">rect1</span><span class="p">,</span> <span class="n">rect2</span><span class="p">]</span>
 <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;This is a blue rectangle.&#39;</span><span class="p">,</span> <span class="s1">&#39;This is a green rectangle&#39;</span><span class="p">]</span>
@@ -172,7 +171,7 @@ the appearance by the CSS.</p>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s2">&quot;svg&quot;</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.savefig" title="View documentation for matplotlib.pyplot.savefig"><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span></a><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s2">&quot;svg&quot;</span><span class="p">)</span>
 
 <span class="c1"># --- Add interactivity ---</span>
 
@@ -242,7 +241,7 @@ the appearance by the CSS.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 19, 2017.
+      Last updated on Apr 20, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

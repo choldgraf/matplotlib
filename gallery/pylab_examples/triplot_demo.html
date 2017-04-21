@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Triplot Demo &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
+    <title>Triplot Demo &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
+        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -67,8 +67,7 @@ type="text/css" />
              >modules</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
-        <li><a href="../../examples/index.html">examples</a>|&nbsp;</li>
-        <li><a href="../index.html">gallery</a>|&nbsp;</li>
+        <li><a href="../index.html">examples</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li> 
       </ul>
@@ -149,7 +148,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">radii</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angles</span><span class="p">))</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
 
 <span class="c1"># Create the Triangulation; no triangles so Delaunay triangulation created.</span>
-<span class="n">triang</span> <span class="o">=</span> <span class="n">tri</span><span class="o">.</span><span class="n">Triangulation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">triang</span> <span class="o">=</span> <a href="../../api/tri_api.html#matplotlib.tri.Triangulation" title="View documentation for matplotlib.tri.Triangulation"><span class="n">tri</span><span class="o">.</span><span class="n">Triangulation</span></a><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
 <span class="c1"># Mask off unwanted triangles.</span>
 <span class="n">xmid</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">triang</span><span class="o">.</span><span class="n">triangles</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -158,10 +157,10 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <span class="n">triang</span><span class="o">.</span><span class="n">set_mask</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
 
 <span class="c1"># Plot the triangulation.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">triplot</span><span class="p">(</span><span class="n">triang</span><span class="p">,</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;triplot of Delaunay triangulation&#39;</span><span class="p">)</span>
+<a href="../../api/figure_api.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.gca" title="View documentation for matplotlib.pyplot.gca"><span class="n">plt</span><span class="o">.</span><span class="n">gca</span></a><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.triplot" title="View documentation for matplotlib.pyplot.triplot"><span class="n">plt</span><span class="o">.</span><span class="n">triplot</span></a><span class="p">(</span><span class="n">triang</span><span class="p">,</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.title" title="View documentation for matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s1">&#39;triplot of Delaunay triangulation&#39;</span><span class="p">)</span>
 
 
 <span class="c1"># You can specify your own triangulation rather than perform a Delaunay</span>
@@ -214,17 +213,17 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <span class="c1"># arrays to triplot directly.  It would be better to use a Triangulation object</span>
 <span class="c1"># if the same triangulation was to be used more than once to save duplicated</span>
 <span class="c1"># calculations.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">triplot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">triangles</span><span class="p">,</span> <span class="s1">&#39;go-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;triplot of user-specified triangulation&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Longitude (degrees)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Latitude (degrees)&#39;</span><span class="p">)</span>
+<a href="../../api/figure_api.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.gca" title="View documentation for matplotlib.pyplot.gca"><span class="n">plt</span><span class="o">.</span><span class="n">gca</span></a><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.triplot" title="View documentation for matplotlib.pyplot.triplot"><span class="n">plt</span><span class="o">.</span><span class="n">triplot</span></a><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">triangles</span><span class="p">,</span> <span class="s1">&#39;go-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.title" title="View documentation for matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s1">&#39;triplot of user-specified triangulation&#39;</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.xlabel" title="View documentation for matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s1">&#39;Longitude (degrees)&#39;</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.ylabel" title="View documentation for matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s1">&#39;Latitude (degrees)&#39;</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="View documentation for matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.077 seconds)</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.120 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/triplot_demo.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">triplot_demo.py</span></code></a></div>
@@ -243,7 +242,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 19, 2017.
+      Last updated on Apr 20, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

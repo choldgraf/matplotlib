@@ -161,7 +161,7 @@ See also contour_image.py.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.444 seconds)
+**Total running time of the script:** ( 0 minutes  0.633 seconds)
 
 
 

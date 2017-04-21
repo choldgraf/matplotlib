@@ -19,7 +19,7 @@ System Monitor
 
  Out::
 
-    86.9 frames per second
+    68.7 frames per second
 
 
 
@@ -95,7 +95,7 @@ System Monitor
     stop = time.time()
     print("{fps:.1f} frames per second".format(fps=200 / (stop - start)))
 
-**Total running time of the script:** ( 0 minutes  2.346 seconds)
+**Total running time of the script:** ( 0 minutes  2.986 seconds)
 
 
 

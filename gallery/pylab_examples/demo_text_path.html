@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Demo Text Path &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
+    <title>Demo Text Path &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
+        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -67,8 +67,7 @@ type="text/css" />
              >modules</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
-        <li><a href="../../examples/index.html">examples</a>|&nbsp;</li>
-        <li><a href="../index.html">gallery</a>|&nbsp;</li>
+        <li><a href="../index.html">examples</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li> 
       </ul>
@@ -124,21 +123,21 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.image</span> <span class="kn">import</span> <span class="n">BboxImage</span>
+<span class="kn">from</span> <span class="nn">matplotlib.image</span> <span class="kn">import</span> <a href="../../api/image_api.html#matplotlib.image.BboxImage" title="View documentation for matplotlib.image.BboxImage"><span class="n">BboxImage</span></a>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">matplotlib.transforms</span> <span class="kn">import</span> <span class="n">IdentityTransform</span>
+<span class="kn">from</span> <span class="nn">matplotlib.transforms</span> <span class="kn">import</span> <a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a>
 
 <span class="kn">import</span> <span class="nn">matplotlib.patches</span> <span class="kn">as</span> <span class="nn">mpatches</span>
 
-<span class="kn">from</span> <span class="nn">matplotlib.offsetbox</span> <span class="kn">import</span> <span class="n">AnnotationBbox</span><span class="p">,</span>\
-    <span class="n">AnchoredOffsetbox</span><span class="p">,</span> <span class="n">AuxTransformBox</span>
+<span class="kn">from</span> <span class="nn">matplotlib.offsetbox</span> <span class="kn">import</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AnnotationBbox" title="View documentation for matplotlib.offsetbox.AnnotationBbox"><span class="n">AnnotationBbox</span></a><span class="p">,</span>\
+    <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AnchoredOffsetbox" title="View documentation for matplotlib.offsetbox.AnchoredOffsetbox"><span class="n">AnchoredOffsetbox</span></a><span class="p">,</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AuxTransformBox" title="View documentation for matplotlib.offsetbox.AuxTransformBox"><span class="n">AuxTransformBox</span></a>
 
-<span class="kn">from</span> <span class="nn">matplotlib.cbook</span> <span class="kn">import</span> <span class="n">get_sample_data</span>
+<span class="kn">from</span> <span class="nn">matplotlib.cbook</span> <span class="kn">import</span> <a href="../../api/cbook_api.html#matplotlib.cbook.get_sample_data" title="View documentation for matplotlib.cbook.get_sample_data"><span class="n">get_sample_data</span></a>
 
 <span class="kn">from</span> <span class="nn">matplotlib.text</span> <span class="kn">import</span> <span class="n">TextPath</span>
 
 
-<span class="k">class</span> <span class="nc">PathClippedImagePatch</span><span class="p">(</span><span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">PathClippedImagePatch</span><span class="p">(</span><a href="../../api/patches_api.html#matplotlib.patches.PathPatch" title="View documentation for matplotlib.patches.PathPatch"><span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span></a><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    The given image is used to draw the face of the patch. Internally,</span>
 <span class="sd">    it uses BboxImage whose clippath set to the path of the patch.</span>
@@ -147,20 +146,20 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">bbox_image</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <a href="../../api/patches_api.html#matplotlib.patches.PathPatch" title="View documentation for matplotlib.patches.PathPatch"><span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span></a><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_init_bbox_image</span><span class="p">(</span><span class="n">bbox_image</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">set_facecolor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;simply ignore facecolor&quot;&quot;&quot;</span>
-        <span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;none&quot;</span><span class="p">)</span>
+        <a href="../../api/patches_api.html#matplotlib.patches.PathPatch" title="View documentation for matplotlib.patches.PathPatch"><span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span></a><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;none&quot;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_init_bbox_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im</span><span class="p">):</span>
 
-        <span class="n">bbox_image</span> <span class="o">=</span> <span class="n">BboxImage</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">,</span>
+        <span class="n">bbox_image</span> <span class="o">=</span> <a href="../../api/image_api.html#matplotlib.image.BboxImage" title="View documentation for matplotlib.image.BboxImage"><span class="n">BboxImage</span></a><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">,</span>
                                <span class="n">norm</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                                <span class="n">origin</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                                <span class="p">)</span>
-        <span class="n">bbox_image</span><span class="o">.</span><span class="n">set_transform</span><span class="p">(</span><span class="n">IdentityTransform</span><span class="p">())</span>
+        <span class="n">bbox_image</span><span class="o">.</span><span class="n">set_transform</span><span class="p">(</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
 
         <span class="n">bbox_image</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">im</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">bbox_image</span> <span class="o">=</span> <span class="n">bbox_image</span>
@@ -171,39 +170,39 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="bp">self</span><span class="o">.</span><span class="n">bbox_image</span><span class="o">.</span><span class="n">set_clip_path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_transform</span><span class="p">())</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">bbox_image</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
 
-        <span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
+        <a href="../../api/patches_api.html#matplotlib.patches.PathPatch" title="View documentation for matplotlib.patches.PathPatch"><span class="n">mpatches</span><span class="o">.</span><span class="n">PathPatch</span></a><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
 
 
 <span class="k">if</span> <span class="mi">1</span><span class="p">:</span>
 
-    <span class="n">usetex</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;text.usetex&quot;</span><span class="p">]</span>
+    <span class="n">usetex</span> <span class="o">=</span> <a href="../../api/matplotlib_configuration_api.html#matplotlib.rcParams" title="View documentation for matplotlib.pyplot.rcParams"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span></a><span class="p">[</span><span class="s2">&quot;text.usetex&quot;</span><span class="p">]</span>
 
-    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">fig</span> <span class="o">=</span> <a href="../../api/figure_api.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="c1"># EXAMPLE 1</span>
 
-    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
+    <span class="n">ax</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.subplot" title="View documentation for matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
 
     <span class="kn">from</span> <span class="nn">matplotlib._png</span> <span class="kn">import</span> <span class="n">read_png</span>
-    <span class="n">fn</span> <span class="o">=</span> <span class="n">get_sample_data</span><span class="p">(</span><span class="s2">&quot;grace_hopper.png&quot;</span><span class="p">,</span> <span class="n">asfileobj</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">fn</span> <span class="o">=</span> <a href="../../api/cbook_api.html#matplotlib.cbook.get_sample_data" title="View documentation for matplotlib.cbook.get_sample_data"><span class="n">get_sample_data</span></a><span class="p">(</span><span class="s2">&quot;grace_hopper.png&quot;</span><span class="p">,</span> <span class="n">asfileobj</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="n">read_png</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
 
     <span class="n">text_path</span> <span class="o">=</span> <span class="n">TextPath</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;!?&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
     <span class="n">p</span> <span class="o">=</span> <span class="n">PathClippedImagePatch</span><span class="p">(</span><span class="n">text_path</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
-                              <span class="n">transform</span><span class="o">=</span><span class="n">IdentityTransform</span><span class="p">())</span>
+                              <span class="n">transform</span><span class="o">=</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
 
     <span class="c1">#p.set_clip_on(False)</span>
 
     <span class="c1"># make offset box</span>
-    <span class="n">offsetbox</span> <span class="o">=</span> <span class="n">AuxTransformBox</span><span class="p">(</span><span class="n">IdentityTransform</span><span class="p">())</span>
+    <span class="n">offsetbox</span> <span class="o">=</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AuxTransformBox" title="View documentation for matplotlib.offsetbox.AuxTransformBox"><span class="n">AuxTransformBox</span></a><span class="p">(</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
     <span class="n">offsetbox</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 
     <span class="c1"># make anchored offset box</span>
-    <span class="n">ao</span> <span class="o">=</span> <span class="n">AnchoredOffsetbox</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">child</span><span class="o">=</span><span class="n">offsetbox</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">ao</span> <span class="o">=</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AnchoredOffsetbox" title="View documentation for matplotlib.offsetbox.AnchoredOffsetbox"><span class="n">AnchoredOffsetbox</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">child</span><span class="o">=</span><span class="n">offsetbox</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">ao</span><span class="p">)</span>
 
     <span class="c1"># another text</span>
-    <span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">PathPatch</span>
+    <span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <a href="../../api/patches_api.html#matplotlib.patches.PathPatch" title="View documentation for matplotlib.patches.PathPatch"><span class="n">PathPatch</span></a>
     <span class="k">if</span> <span class="n">usetex</span><span class="p">:</span>
         <span class="n">r</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;\mbox{textpath supports mathtext \&amp; \TeX}&quot;</span>
     <span class="k">else</span><span class="p">:</span>
@@ -212,16 +211,16 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     <span class="n">text_path</span> <span class="o">=</span> <span class="n">TextPath</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">r</span><span class="p">,</span>
                          <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">usetex</span><span class="o">=</span><span class="n">usetex</span><span class="p">)</span>
 
-    <span class="n">p1</span> <span class="o">=</span> <span class="n">PathPatch</span><span class="p">(</span><span class="n">text_path</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
-                   <span class="n">transform</span><span class="o">=</span><span class="n">IdentityTransform</span><span class="p">())</span>
-    <span class="n">p2</span> <span class="o">=</span> <span class="n">PathPatch</span><span class="p">(</span><span class="n">text_path</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
-                   <span class="n">transform</span><span class="o">=</span><span class="n">IdentityTransform</span><span class="p">())</span>
+    <span class="n">p1</span> <span class="o">=</span> <a href="../../api/patches_api.html#matplotlib.patches.PathPatch" title="View documentation for matplotlib.patches.PathPatch"><span class="n">PathPatch</span></a><span class="p">(</span><span class="n">text_path</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+                   <span class="n">transform</span><span class="o">=</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
+    <span class="n">p2</span> <span class="o">=</span> <a href="../../api/patches_api.html#matplotlib.patches.PathPatch" title="View documentation for matplotlib.patches.PathPatch"><span class="n">PathPatch</span></a><span class="p">(</span><span class="n">text_path</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
+                   <span class="n">transform</span><span class="o">=</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
 
-    <span class="n">offsetbox2</span> <span class="o">=</span> <span class="n">AuxTransformBox</span><span class="p">(</span><span class="n">IdentityTransform</span><span class="p">())</span>
+    <span class="n">offsetbox2</span> <span class="o">=</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AuxTransformBox" title="View documentation for matplotlib.offsetbox.AuxTransformBox"><span class="n">AuxTransformBox</span></a><span class="p">(</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
     <span class="n">offsetbox2</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span>
     <span class="n">offsetbox2</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">p2</span><span class="p">)</span>
 
-    <span class="n">ab</span> <span class="o">=</span> <span class="n">AnnotationBbox</span><span class="p">(</span><span class="n">offsetbox2</span><span class="p">,</span> <span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">),</span>
+    <span class="n">ab</span> <span class="o">=</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AnnotationBbox" title="View documentation for matplotlib.offsetbox.AnnotationBbox"><span class="n">AnnotationBbox</span></a><span class="p">(</span><span class="n">offsetbox2</span><span class="p">,</span> <span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">),</span>
                         <span class="n">xycoords</span><span class="o">=</span><span class="s1">&#39;axes fraction&#39;</span><span class="p">,</span>
                         <span class="n">boxcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span>
                         <span class="n">box_alignment</span><span class="o">=</span><span class="p">(</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">),</span>
@@ -235,7 +234,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 
     <span class="c1"># EXAMPLE 2</span>
 
-    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
+    <span class="n">ax</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.subplot" title="View documentation for matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
 
     <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">256</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">256</span><span class="p">)</span><span class="o">/</span><span class="mf">256.</span>
 
@@ -245,19 +244,19 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="n">s</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;$\left[\sum_{n=1}^\infty\frac{-e^{i\pi}}{2^n}\right]$!&quot;</span>
     <span class="n">text_path</span> <span class="o">=</span> <span class="n">TextPath</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">s</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">usetex</span><span class="o">=</span><span class="n">usetex</span><span class="p">)</span>
     <span class="n">text_patch</span> <span class="o">=</span> <span class="n">PathClippedImagePatch</span><span class="p">(</span><span class="n">text_path</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span>
-                                       <span class="n">transform</span><span class="o">=</span><span class="n">IdentityTransform</span><span class="p">())</span>
+                                       <span class="n">transform</span><span class="o">=</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
 
-    <span class="n">shadow1</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">Shadow</span><span class="p">(</span><span class="n">text_patch</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">props</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fc</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;0.6&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>
-    <span class="n">shadow2</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">Shadow</span><span class="p">(</span><span class="n">text_patch</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">props</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fc</span><span class="o">=</span><span class="s2">&quot;0.3&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">))</span>
+    <span class="n">shadow1</span> <span class="o">=</span> <a href="../../api/patches_api.html#matplotlib.patches.Shadow" title="View documentation for matplotlib.patches.Shadow"><span class="n">mpatches</span><span class="o">.</span><span class="n">Shadow</span></a><span class="p">(</span><span class="n">text_patch</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">props</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fc</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;0.6&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>
+    <span class="n">shadow2</span> <span class="o">=</span> <a href="../../api/patches_api.html#matplotlib.patches.Shadow" title="View documentation for matplotlib.patches.Shadow"><span class="n">mpatches</span><span class="o">.</span><span class="n">Shadow</span></a><span class="p">(</span><span class="n">text_patch</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">props</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fc</span><span class="o">=</span><span class="s2">&quot;0.3&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">))</span>
 
     <span class="c1"># make offset box</span>
-    <span class="n">offsetbox</span> <span class="o">=</span> <span class="n">AuxTransformBox</span><span class="p">(</span><span class="n">IdentityTransform</span><span class="p">())</span>
+    <span class="n">offsetbox</span> <span class="o">=</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AuxTransformBox" title="View documentation for matplotlib.offsetbox.AuxTransformBox"><span class="n">AuxTransformBox</span></a><span class="p">(</span><a href="../../api/transformations.html#matplotlib.transforms.IdentityTransform" title="View documentation for matplotlib.transforms.IdentityTransform"><span class="n">IdentityTransform</span></a><span class="p">())</span>
     <span class="n">offsetbox</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">shadow1</span><span class="p">)</span>
     <span class="n">offsetbox</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">shadow2</span><span class="p">)</span>
     <span class="n">offsetbox</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">text_patch</span><span class="p">)</span>
 
     <span class="c1"># place the anchored offset box using AnnotationBbox</span>
-    <span class="n">ab</span> <span class="o">=</span> <span class="n">AnnotationBbox</span><span class="p">(</span><span class="n">offsetbox</span><span class="p">,</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="n">ab</span> <span class="o">=</span> <a href="../../api/offsetbox_api.html#matplotlib.offsetbox.AnnotationBbox" title="View documentation for matplotlib.offsetbox.AnnotationBbox"><span class="n">AnnotationBbox</span></a><span class="p">(</span><span class="n">offsetbox</span><span class="p">,</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
                         <span class="n">xycoords</span><span class="o">=</span><span class="s1">&#39;data&#39;</span><span class="p">,</span>
                         <span class="n">boxcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span>
                         <span class="n">box_alignment</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
@@ -269,11 +268,11 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-    <span class="n">plt</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.draw" title="View documentation for matplotlib.pyplot.draw"><span class="n">plt</span><span class="o">.</span><span class="n">draw</span></a><span class="p">()</span>
+    <a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="View documentation for matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.169 seconds)</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.274 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/demo_text_path.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">demo_text_path.py</span></code></a></div>
@@ -292,7 +291,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 19, 2017.
+      Last updated on Apr 20, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

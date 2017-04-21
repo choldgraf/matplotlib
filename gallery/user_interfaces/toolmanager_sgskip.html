@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tool Manager &mdash; Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation</title>
+    <title>Tool Manager &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5105.dev0+gd9b1468',
+        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5105.dev0+gd9b1468 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -67,8 +67,7 @@ type="text/css" />
              >modules</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
-        <li><a href="../../examples/index.html">examples</a>|&nbsp;</li>
-        <li><a href="../index.html">gallery</a>|&nbsp;</li>
+        <li><a href="../index.html">examples</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li> 
       </ul>
@@ -130,14 +129,14 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <p>Using <a class="reference internal" href="../../api/backend_managers_api.html#matplotlib.backend_managers.ToolManager" title="matplotlib.backend_managers.ToolManager"><code class="xref py py-obj docutils literal"><span class="pre">matplotlib.backend_managers.ToolManager</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;GTK3Cairo&#39;</span><span class="p">)</span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;toolbar&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;toolmanager&#39;</span>
+<a href="../../api/matplotlib_configuration_api.html#matplotlib.use" title="View documentation for matplotlib.use"><span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span></a><span class="p">(</span><span class="s1">&#39;GTK3Cairo&#39;</span><span class="p">)</span>
+<a href="../../api/matplotlib_configuration_api.html#matplotlib.rcParams" title="View documentation for matplotlib.rcParams"><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span></a><span class="p">[</span><span class="s1">&#39;toolbar&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;toolmanager&#39;</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.backend_tools</span> <span class="kn">import</span> <span class="n">ToolBase</span><span class="p">,</span> <span class="n">ToolToggleBase</span>
+<span class="kn">from</span> <span class="nn">matplotlib.backend_tools</span> <span class="kn">import</span> <a href="../../api/backend_tools_api.html#matplotlib.backend_tools.ToolBase" title="View documentation for matplotlib.backend_tools.ToolBase"><span class="n">ToolBase</span></a><span class="p">,</span> <a href="../../api/backend_tools_api.html#matplotlib.backend_tools.ToolToggleBase" title="View documentation for matplotlib.backend_tools.ToolToggleBase"><span class="n">ToolToggleBase</span></a>
 <span class="kn">from</span> <span class="nn">gi.repository</span> <span class="kn">import</span> <span class="n">Gtk</span><span class="p">,</span> <span class="n">Gdk</span>
 
 
-<span class="k">class</span> <span class="nc">ListTools</span><span class="p">(</span><span class="n">ToolBase</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">ListTools</span><span class="p">(</span><a href="../../api/backend_tools_api.html#matplotlib.backend_tools.ToolBase" title="View documentation for matplotlib.backend_tools.ToolBase"><span class="n">ToolBase</span></a><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;List all the tools controlled by the `ToolManager`&#39;&#39;&#39;</span>
     <span class="c1"># keyboard shortcut</span>
     <span class="n">default_keymap</span> <span class="o">=</span> <span class="s1">&#39;m&#39;</span>
@@ -163,7 +162,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
             <span class="k">print</span><span class="p">(</span><span class="s2">&quot;{0:12} {1:45}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">group</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">active</span><span class="p">)))</span>
 
 
-<span class="k">class</span> <span class="nc">GroupHideTool</span><span class="p">(</span><span class="n">ToolToggleBase</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">GroupHideTool</span><span class="p">(</span><a href="../../api/backend_tools_api.html#matplotlib.backend_tools.ToolToggleBase" title="View documentation for matplotlib.backend_tools.ToolToggleBase"><span class="n">ToolToggleBase</span></a><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Show lines with a given gid&#39;&#39;&#39;</span>
     <span class="n">default_keymap</span> <span class="o">=</span> <span class="s1">&#39;G&#39;</span>
     <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Show by gid&#39;</span>
@@ -171,7 +170,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gid</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;gid&#39;</span><span class="p">)</span>
-        <span class="n">ToolToggleBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <a href="../../api/backend_tools_api.html#matplotlib.backend_tools.ToolToggleBase" title="View documentation for matplotlib.backend_tools.ToolToggleBase"><span class="n">ToolToggleBase</span></a><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">enable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_lines_visibility</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
@@ -188,10 +187,10 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 
 
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">gid</span><span class="o">=</span><span class="s1">&#39;mygroup&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="n">gid</span><span class="o">=</span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">gid</span><span class="o">=</span><span class="s1">&#39;mygroup&#39;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <a href="../../api/figure_api.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="View documentation for matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">gid</span><span class="o">=</span><span class="s1">&#39;mygroup&#39;</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="View documentation for matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="n">gid</span><span class="o">=</span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="View documentation for matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">gid</span><span class="o">=</span><span class="s1">&#39;mygroup&#39;</span><span class="p">)</span>
 
 <span class="c1"># Add the custom tools that we created</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">manager</span><span class="o">.</span><span class="n">toolmanager</span><span class="o">.</span><span class="n">add_tool</span><span class="p">(</span><span class="s1">&#39;List&#39;</span><span class="p">,</span> <span class="n">ListTools</span><span class="p">)</span>
@@ -209,7 +208,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <span class="c1"># the navigation group</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">manager</span><span class="o">.</span><span class="n">toolbar</span><span class="o">.</span><span class="n">add_tool</span><span class="p">(</span><span class="s1">&#39;Show&#39;</span><span class="p">,</span> <span class="s1">&#39;navigation&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a href="../../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="View documentation for matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
 <p><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
@@ -231,7 +230,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 19, 2017.
+      Last updated on Apr 20, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

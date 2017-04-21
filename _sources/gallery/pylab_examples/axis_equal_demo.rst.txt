@@ -57,7 +57,7 @@ This example is only interesting when run in interactive mode.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.183 seconds)
+**Total running time of the script:** ( 0 minutes  0.305 seconds)
 
 
 

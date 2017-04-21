@@ -1,0 +1,1522 @@
+matplotlib.pyplot
+=================
+
+.. automodule:: matplotlib.pyplot
+
+   
+   
+
+   Functions
+   ---------
+
+   
+
+   .. autofunction:: acorr
+
+   .. include:: matplotlib.pyplot.acorr.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: angle_spectrum
+
+   .. include:: matplotlib.pyplot.angle_spectrum.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: annotate
+
+   .. include:: matplotlib.pyplot.annotate.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: arrow
+
+   .. include:: matplotlib.pyplot.arrow.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: autoscale
+
+   .. include:: matplotlib.pyplot.autoscale.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: autumn
+
+   .. include:: matplotlib.pyplot.autumn.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: axes
+
+   .. include:: matplotlib.pyplot.axes.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: axhline
+
+   .. include:: matplotlib.pyplot.axhline.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: axhspan
+
+   .. include:: matplotlib.pyplot.axhspan.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: axis
+
+   .. include:: matplotlib.pyplot.axis.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: axvline
+
+   .. include:: matplotlib.pyplot.axvline.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: axvspan
+
+   .. include:: matplotlib.pyplot.axvspan.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: bar
+
+   .. include:: matplotlib.pyplot.bar.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: barbs
+
+   .. include:: matplotlib.pyplot.barbs.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: barh
+
+   .. include:: matplotlib.pyplot.barh.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: bone
+
+   .. include:: matplotlib.pyplot.bone.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: box
+
+   .. include:: matplotlib.pyplot.box.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: boxplot
+
+   .. include:: matplotlib.pyplot.boxplot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: broken_barh
+
+   .. include:: matplotlib.pyplot.broken_barh.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: cla
+
+   .. include:: matplotlib.pyplot.cla.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: clabel
+
+   .. include:: matplotlib.pyplot.clabel.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: clf
+
+   .. include:: matplotlib.pyplot.clf.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: clim
+
+   .. include:: matplotlib.pyplot.clim.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: close
+
+   .. include:: matplotlib.pyplot.close.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: cohere
+
+   .. include:: matplotlib.pyplot.cohere.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: colorbar
+
+   .. include:: matplotlib.pyplot.colorbar.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: colormaps
+
+   .. include:: matplotlib.pyplot.colormaps.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: colors
+
+   .. include:: matplotlib.pyplot.colors.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: connect
+
+   .. include:: matplotlib.pyplot.connect.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: contour
+
+   .. include:: matplotlib.pyplot.contour.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: contourf
+
+   .. include:: matplotlib.pyplot.contourf.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: cool
+
+   .. include:: matplotlib.pyplot.cool.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: copper
+
+   .. include:: matplotlib.pyplot.copper.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: csd
+
+   .. include:: matplotlib.pyplot.csd.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: cycler
+
+   .. include:: matplotlib.pyplot.cycler.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: dedent
+
+   .. include:: matplotlib.pyplot.dedent.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: delaxes
+
+   .. include:: matplotlib.pyplot.delaxes.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: deprecated
+
+   .. include:: matplotlib.pyplot.deprecated.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: disconnect
+
+   .. include:: matplotlib.pyplot.disconnect.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: draw
+
+   .. include:: matplotlib.pyplot.draw.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: draw_if_interactive
+
+   .. include:: matplotlib.pyplot.draw_if_interactive.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: errorbar
+
+   .. include:: matplotlib.pyplot.errorbar.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: eventplot
+
+   .. include:: matplotlib.pyplot.eventplot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: figaspect
+
+   .. include:: matplotlib.pyplot.figaspect.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: figimage
+
+   .. include:: matplotlib.pyplot.figimage.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: figlegend
+
+   .. include:: matplotlib.pyplot.figlegend.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: fignum_exists
+
+   .. include:: matplotlib.pyplot.fignum_exists.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: figtext
+
+   .. include:: matplotlib.pyplot.figtext.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: figure
+
+   .. include:: matplotlib.pyplot.figure.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: fill
+
+   .. include:: matplotlib.pyplot.fill.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: fill_between
+
+   .. include:: matplotlib.pyplot.fill_between.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: fill_betweenx
+
+   .. include:: matplotlib.pyplot.fill_betweenx.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: findobj
+
+   .. include:: matplotlib.pyplot.findobj.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: flag
+
+   .. include:: matplotlib.pyplot.flag.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: gca
+
+   .. include:: matplotlib.pyplot.gca.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: gcf
+
+   .. include:: matplotlib.pyplot.gcf.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: gci
+
+   .. include:: matplotlib.pyplot.gci.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get
+
+   .. include:: matplotlib.pyplot.get.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_backend
+
+   .. include:: matplotlib.pyplot.get_backend.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_cmap
+
+   .. include:: matplotlib.pyplot.get_cmap.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_current_fig_manager
+
+   .. include:: matplotlib.pyplot.get_current_fig_manager.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_figlabels
+
+   .. include:: matplotlib.pyplot.get_figlabels.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_fignums
+
+   .. include:: matplotlib.pyplot.get_fignums.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_plot_commands
+
+   .. include:: matplotlib.pyplot.get_plot_commands.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_scale_docs
+
+   .. include:: matplotlib.pyplot.get_scale_docs.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: get_scale_names
+
+   .. include:: matplotlib.pyplot.get_scale_names.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: getp
+
+   .. include:: matplotlib.pyplot.getp.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: ginput
+
+   .. include:: matplotlib.pyplot.ginput.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: gray
+
+   .. include:: matplotlib.pyplot.gray.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: grid
+
+   .. include:: matplotlib.pyplot.grid.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: hexbin
+
+   .. include:: matplotlib.pyplot.hexbin.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: hist
+
+   .. include:: matplotlib.pyplot.hist.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: hist2d
+
+   .. include:: matplotlib.pyplot.hist2d.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: hlines
+
+   .. include:: matplotlib.pyplot.hlines.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: hold
+
+   .. include:: matplotlib.pyplot.hold.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: hot
+
+   .. include:: matplotlib.pyplot.hot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: hsv
+
+   .. include:: matplotlib.pyplot.hsv.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: imread
+
+   .. include:: matplotlib.pyplot.imread.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: imsave
+
+   .. include:: matplotlib.pyplot.imsave.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: imshow
+
+   .. include:: matplotlib.pyplot.imshow.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: inferno
+
+   .. include:: matplotlib.pyplot.inferno.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: install_repl_displayhook
+
+   .. include:: matplotlib.pyplot.install_repl_displayhook.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: interactive
+
+   .. include:: matplotlib.pyplot.interactive.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: ioff
+
+   .. include:: matplotlib.pyplot.ioff.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: ion
+
+   .. include:: matplotlib.pyplot.ion.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: is_numlike
+
+   .. include:: matplotlib.pyplot.is_numlike.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: ishold
+
+   .. include:: matplotlib.pyplot.ishold.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: isinteractive
+
+   .. include:: matplotlib.pyplot.isinteractive.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: jet
+
+   .. include:: matplotlib.pyplot.jet.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: legend
+
+   .. include:: matplotlib.pyplot.legend.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: locator_params
+
+   .. include:: matplotlib.pyplot.locator_params.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: loglog
+
+   .. include:: matplotlib.pyplot.loglog.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: magma
+
+   .. include:: matplotlib.pyplot.magma.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: magnitude_spectrum
+
+   .. include:: matplotlib.pyplot.magnitude_spectrum.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: margins
+
+   .. include:: matplotlib.pyplot.margins.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: matshow
+
+   .. include:: matplotlib.pyplot.matshow.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: minorticks_off
+
+   .. include:: matplotlib.pyplot.minorticks_off.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: minorticks_on
+
+   .. include:: matplotlib.pyplot.minorticks_on.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: new_figure_manager
+
+   .. include:: matplotlib.pyplot.new_figure_manager.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: nipy_spectral
+
+   .. include:: matplotlib.pyplot.nipy_spectral.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: over
+
+   .. include:: matplotlib.pyplot.over.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: pause
+
+   .. include:: matplotlib.pyplot.pause.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: pcolor
+
+   .. include:: matplotlib.pyplot.pcolor.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: pcolormesh
+
+   .. include:: matplotlib.pyplot.pcolormesh.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: phase_spectrum
+
+   .. include:: matplotlib.pyplot.phase_spectrum.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: pie
+
+   .. include:: matplotlib.pyplot.pie.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: pink
+
+   .. include:: matplotlib.pyplot.pink.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: plasma
+
+   .. include:: matplotlib.pyplot.plasma.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: plot
+
+   .. include:: matplotlib.pyplot.plot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: plot_date
+
+   .. include:: matplotlib.pyplot.plot_date.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: plotfile
+
+   .. include:: matplotlib.pyplot.plotfile.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: plotting
+
+   .. include:: matplotlib.pyplot.plotting.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: polar
+
+   .. include:: matplotlib.pyplot.polar.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: prism
+
+   .. include:: matplotlib.pyplot.prism.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: psd
+
+   .. include:: matplotlib.pyplot.psd.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: pylab_setup
+
+   .. include:: matplotlib.pyplot.pylab_setup.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: quiver
+
+   .. include:: matplotlib.pyplot.quiver.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: quiverkey
+
+   .. include:: matplotlib.pyplot.quiverkey.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: rc
+
+   .. include:: matplotlib.pyplot.rc.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: rc_context
+
+   .. include:: matplotlib.pyplot.rc_context.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: rcdefaults
+
+   .. include:: matplotlib.pyplot.rcdefaults.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: register_cmap
+
+   .. include:: matplotlib.pyplot.register_cmap.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: rgrids
+
+   .. include:: matplotlib.pyplot.rgrids.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: savefig
+
+   .. include:: matplotlib.pyplot.savefig.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: sca
+
+   .. include:: matplotlib.pyplot.sca.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: scatter
+
+   .. include:: matplotlib.pyplot.scatter.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: sci
+
+   .. include:: matplotlib.pyplot.sci.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: semilogx
+
+   .. include:: matplotlib.pyplot.semilogx.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: semilogy
+
+   .. include:: matplotlib.pyplot.semilogy.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: set_cmap
+
+   .. include:: matplotlib.pyplot.set_cmap.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: setp
+
+   .. include:: matplotlib.pyplot.setp.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: show
+
+   .. include:: matplotlib.pyplot.show.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: specgram
+
+   .. include:: matplotlib.pyplot.specgram.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: spectral
+
+   .. include:: matplotlib.pyplot.spectral.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: spring
+
+   .. include:: matplotlib.pyplot.spring.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: spy
+
+   .. include:: matplotlib.pyplot.spy.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: stackplot
+
+   .. include:: matplotlib.pyplot.stackplot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: stem
+
+   .. include:: matplotlib.pyplot.stem.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: step
+
+   .. include:: matplotlib.pyplot.step.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: streamplot
+
+   .. include:: matplotlib.pyplot.streamplot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: subplot
+
+   .. include:: matplotlib.pyplot.subplot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: subplot2grid
+
+   .. include:: matplotlib.pyplot.subplot2grid.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: subplot_tool
+
+   .. include:: matplotlib.pyplot.subplot_tool.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: subplots
+
+   .. include:: matplotlib.pyplot.subplots.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: subplots_adjust
+
+   .. include:: matplotlib.pyplot.subplots_adjust.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: summer
+
+   .. include:: matplotlib.pyplot.summer.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: suptitle
+
+   .. include:: matplotlib.pyplot.suptitle.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: switch_backend
+
+   .. include:: matplotlib.pyplot.switch_backend.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: table
+
+   .. include:: matplotlib.pyplot.table.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: text
+
+   .. include:: matplotlib.pyplot.text.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: thetagrids
+
+   .. include:: matplotlib.pyplot.thetagrids.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: tick_params
+
+   .. include:: matplotlib.pyplot.tick_params.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: ticklabel_format
+
+   .. include:: matplotlib.pyplot.ticklabel_format.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: tight_layout
+
+   .. include:: matplotlib.pyplot.tight_layout.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: title
+
+   .. include:: matplotlib.pyplot.title.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: tricontour
+
+   .. include:: matplotlib.pyplot.tricontour.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: tricontourf
+
+   .. include:: matplotlib.pyplot.tricontourf.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: tripcolor
+
+   .. include:: matplotlib.pyplot.tripcolor.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: triplot
+
+   .. include:: matplotlib.pyplot.triplot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: twinx
+
+   .. include:: matplotlib.pyplot.twinx.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: twiny
+
+   .. include:: matplotlib.pyplot.twiny.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: uninstall_repl_displayhook
+
+   .. include:: matplotlib.pyplot.uninstall_repl_displayhook.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: violinplot
+
+   .. include:: matplotlib.pyplot.violinplot.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: viridis
+
+   .. include:: matplotlib.pyplot.viridis.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: vlines
+
+   .. include:: matplotlib.pyplot.vlines.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: waitforbuttonpress
+
+   .. include:: matplotlib.pyplot.waitforbuttonpress.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: winter
+
+   .. include:: matplotlib.pyplot.winter.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: xcorr
+
+   .. include:: matplotlib.pyplot.xcorr.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: xkcd
+
+   .. include:: matplotlib.pyplot.xkcd.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: xlabel
+
+   .. include:: matplotlib.pyplot.xlabel.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: xlim
+
+   .. include:: matplotlib.pyplot.xlim.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: xscale
+
+   .. include:: matplotlib.pyplot.xscale.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: xticks
+
+   .. include:: matplotlib.pyplot.xticks.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: ylabel
+
+   .. include:: matplotlib.pyplot.ylabel.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: ylim
+
+   .. include:: matplotlib.pyplot.ylim.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: yscale
+
+   .. include:: matplotlib.pyplot.yscale.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+
+   .. autofunction:: yticks
+
+   .. include:: matplotlib.pyplot.yticks.examples
+
+   .. raw:: html
+
+          <div style='clear:both'></div>
+   
+   
+
+   
+   
+
+   Classes
+   -------
+
+   
+   .. autoclass:: Annotation
+      :members:
+   .. autoclass:: Arrow
+      :members:
+   .. autoclass:: Artist
+      :members:
+   .. autoclass:: AutoLocator
+      :members:
+   .. autoclass:: Axes
+      :members:
+   .. autoclass:: Button
+      :members:
+   .. autoclass:: Circle
+      :members:
+   .. autoclass:: Figure
+      :members:
+   .. autoclass:: FigureCanvasBase
+      :members:
+   .. autoclass:: FixedFormatter
+      :members:
+   .. autoclass:: FixedLocator
+      :members:
+   .. autoclass:: FormatStrFormatter
+      :members:
+   .. autoclass:: Formatter
+      :members:
+   .. autoclass:: FuncFormatter
+      :members:
+   .. autoclass:: GridSpec
+      :members:
+   .. autoclass:: IndexLocator
+      :members:
+   .. autoclass:: Line2D
+      :members:
+   .. autoclass:: LinearLocator
+      :members:
+   .. autoclass:: Locator
+      :members:
+   .. autoclass:: LogFormatter
+      :members:
+   .. autoclass:: LogFormatterExponent
+      :members:
+   .. autoclass:: LogFormatterMathtext
+      :members:
+   .. autoclass:: LogLocator
+      :members:
+   .. autoclass:: MaxNLocator
+      :members:
+   .. autoclass:: MultipleLocator
+      :members:
+   .. autoclass:: Normalize
+      :members:
+   .. autoclass:: NullFormatter
+      :members:
+   .. autoclass:: NullLocator
+      :members:
+   .. autoclass:: PolarAxes
+      :members:
+   .. autoclass:: Polygon
+      :members:
+   .. autoclass:: Rectangle
+      :members:
+   .. autoclass:: ScalarFormatter
+      :members:
+   .. autoclass:: Slider
+      :members:
+   .. autoclass:: Subplot
+      :members:
+   .. autoclass:: SubplotTool
+      :members:
+   .. autoclass:: Text
+      :members:
+   .. autoclass:: TickHelper
+      :members:
+   .. autoclass:: Widget
+      :members:
+   .. autoclass:: silent_list
+      :members:
+   
+   
+
+   
+   
+   

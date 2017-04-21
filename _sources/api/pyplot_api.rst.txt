@@ -6,8 +6,12 @@ pyplot
 :mod:`matplotlib.pyplot`
 ========================
 
-.. automodule:: matplotlib.pyplot
-   :members:
-   :undoc-members:
-   :show-inheritance:
-   :exclude-members: plotting, colormaps, scatter, hist
+.. automodule:: matplotlib
+   :no-members:
+   :no-inherited-members:
+
+.. autosummary::
+   :toctree: _as_gen
+   :template: automodule.rst
+
+   pyplot

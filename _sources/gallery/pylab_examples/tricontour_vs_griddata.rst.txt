@@ -20,8 +20,8 @@ Comparison of griddata and tricontour for an unstructured triangular grid.
 
  Out::
 
-    griddata and contour seconds: 0.125979
-    tricontour seconds: 0.092145
+    griddata and contour seconds: 0.184421
+    tricontour seconds: 0.120154
 
 
 
@@ -82,7 +82,7 @@ Comparison of griddata and tricontour for an unstructured triangular grid.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.221 seconds)
+**Total running time of the script:** ( 0 minutes  0.318 seconds)
 
 
 
