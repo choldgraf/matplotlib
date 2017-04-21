@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.is\_numlike
+===============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: is_numlike
+
+
+
+.. include:: matplotlib.pyplot.is_numlike.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

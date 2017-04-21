@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.Text
+========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: Text
+
+
+
+.. include:: matplotlib.pyplot.Text.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

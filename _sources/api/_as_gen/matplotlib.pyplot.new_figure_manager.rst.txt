@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.new\_figure\_manager
+========================================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: new_figure_manager
+
+
+
+.. include:: matplotlib.pyplot.new_figure_manager.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

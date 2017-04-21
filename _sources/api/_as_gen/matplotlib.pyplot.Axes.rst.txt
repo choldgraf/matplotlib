@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.Axes
+========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: Axes
+
+
+
+.. include:: matplotlib.pyplot.Axes.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

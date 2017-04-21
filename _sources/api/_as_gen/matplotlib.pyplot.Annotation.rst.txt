@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.Annotation
+==============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: Annotation
+
+
+
+.. include:: matplotlib.pyplot.Annotation.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

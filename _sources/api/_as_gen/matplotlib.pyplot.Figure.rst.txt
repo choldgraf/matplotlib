@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.Figure
+==========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: Figure
+
+
+
+.. include:: matplotlib.pyplot.Figure.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.deprecated
+==============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: deprecated
+
+
+
+.. include:: matplotlib.pyplot.deprecated.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

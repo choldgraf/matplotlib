@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.LogLocator
+==============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: LogLocator
+
+
+
+.. include:: matplotlib.pyplot.LogLocator.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.hsv
+=======================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: hsv
+
+
+
+.. include:: matplotlib.pyplot.hsv.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

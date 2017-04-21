@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.FixedFormatter
+==================================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: FixedFormatter
+
+
+
+.. include:: matplotlib.pyplot.FixedFormatter.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

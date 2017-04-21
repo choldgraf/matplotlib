@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.colormaps
+=============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: colormaps
+
+
+
+.. include:: matplotlib.pyplot.colormaps.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.LogFormatterMathtext
+========================================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: LogFormatterMathtext
+
+
+
+.. include:: matplotlib.pyplot.LogFormatterMathtext.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

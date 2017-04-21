@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.FigureCanvasBase
+====================================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: FigureCanvasBase
+
+
+
+.. include:: matplotlib.pyplot.FigureCanvasBase.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

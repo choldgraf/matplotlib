@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.prism
+=========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: prism
+
+
+
+.. include:: matplotlib.pyplot.prism.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

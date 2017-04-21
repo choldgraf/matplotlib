@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.FuncFormatter
+=================================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: FuncFormatter
+
+
+
+.. include:: matplotlib.pyplot.FuncFormatter.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

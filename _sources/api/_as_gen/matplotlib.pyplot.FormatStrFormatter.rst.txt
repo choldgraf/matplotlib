@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.FormatStrFormatter
+======================================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: FormatStrFormatter
+
+
+
+.. include:: matplotlib.pyplot.FormatStrFormatter.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.dedent
+==========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: dedent
+
+
+
+.. include:: matplotlib.pyplot.dedent.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

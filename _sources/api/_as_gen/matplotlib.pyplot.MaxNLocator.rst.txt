@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.MaxNLocator
+===============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: MaxNLocator
+
+
+
+.. include:: matplotlib.pyplot.MaxNLocator.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

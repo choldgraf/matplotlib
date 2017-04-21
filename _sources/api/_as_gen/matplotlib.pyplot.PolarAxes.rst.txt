@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.PolarAxes
+=============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: PolarAxes
+
+
+
+.. include:: matplotlib.pyplot.PolarAxes.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

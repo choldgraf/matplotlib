@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.AutoLocator
+===============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: AutoLocator
+
+
+
+.. include:: matplotlib.pyplot.AutoLocator.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

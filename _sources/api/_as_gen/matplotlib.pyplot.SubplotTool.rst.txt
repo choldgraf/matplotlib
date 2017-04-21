@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.SubplotTool
+===============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: SubplotTool
+
+
+
+.. include:: matplotlib.pyplot.SubplotTool.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

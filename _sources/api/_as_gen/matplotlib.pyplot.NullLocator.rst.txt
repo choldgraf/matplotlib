@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.NullLocator
+===============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: NullLocator
+
+
+
+.. include:: matplotlib.pyplot.NullLocator.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

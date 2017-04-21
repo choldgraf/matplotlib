@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.axes.Axes.get_ylim &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
+    <title>matplotlib.axes.Axes.get_ylim &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
+        VERSION:     '2.0.0b1.post5121.dev0+g9672cecf6',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../../index.html" />
     <link rel="up" title="Axes class" href="../axes_api.html" />
     <link rel="next" title="matplotlib.axes.Axes.get_xlim" href="matplotlib.axes.Axes.get_xlim.html" />
     <link rel="prev" title="matplotlib.axes.Axes.set_ylim" href="matplotlib.axes.Axes.set_ylim.html" /> 
@@ -85,6 +85,45 @@ type="text/css" />
     </div>
 
   
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="matplotlib-axes-axes-get-ylim">
+<h1>matplotlib.axes.Axes.get_ylim<a class="headerlink" href="#matplotlib-axes-axes-get-ylim" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="matplotlib.axes.Axes.get_ylim">
+<code class="descclassname">Axes.</code><code class="descname">get_ylim</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.get_ylim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the y-axis range</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>ylimits</strong> : tuple</p>
+<blockquote class="last">
+<div><p>Returns the current y-axis limits as the tuple
+(<code class="xref py py-obj docutils literal"><span class="pre">bottom</span></code>, <code class="xref py py-obj docutils literal"><span class="pre">top</span></code>).</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The y-axis may be inverted, in which case the <code class="xref py py-obj docutils literal"><span class="pre">bottom</span></code> value
+will be greater than the <code class="xref py py-obj docutils literal"><span class="pre">top</span></code> value.</p>
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
 <a href="http://depsy.org/package/python/matplotlib">
@@ -128,45 +167,6 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="matplotlib-axes-axes-get-ylim">
-<h1>matplotlib.axes.Axes.get_ylim<a class="headerlink" href="#matplotlib-axes-axes-get-ylim" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="matplotlib.axes.Axes.get_ylim">
-<code class="descclassname">Axes.</code><code class="descname">get_ylim</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.get_ylim" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the y-axis range</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>ylimits</strong> : tuple</p>
-<blockquote class="last">
-<div><p>Returns the current y-axis limits as the tuple
-(<code class="xref py py-obj docutils literal"><span class="pre">bottom</span></code>, <code class="xref py py-obj docutils literal"><span class="pre">top</span></code>).</p>
-</div></blockquote>
-</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Notes</p>
-<p>The y-axis may be inverted, in which case the <code class="xref py py-obj docutils literal"><span class="pre">bottom</span></code> value
-will be greater than the <code class="xref py py-obj docutils literal"><span class="pre">top</span></code> value.</p>
-</dd></dl>
-
-<div class="clearer"></div></div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="clearer"></div>
-    </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
       Last updated on Apr 20, 2017.

@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.Arrow
+=========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: Arrow
+
+
+
+.. include:: matplotlib.pyplot.Arrow.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

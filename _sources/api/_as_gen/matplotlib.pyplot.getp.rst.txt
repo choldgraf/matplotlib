@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.getp
+========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: getp
+
+
+
+.. include:: matplotlib.pyplot.getp.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

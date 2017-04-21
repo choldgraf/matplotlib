@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.tripcolor
+=============================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: tripcolor
+
+
+
+.. include:: matplotlib.pyplot.tripcolor.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

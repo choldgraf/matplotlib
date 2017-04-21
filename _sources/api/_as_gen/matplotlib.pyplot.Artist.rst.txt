@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.Artist
+==========================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autoclass:: Artist
+
+
+
+.. include:: matplotlib.pyplot.Artist.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

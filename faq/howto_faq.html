@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How-To &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
+    <title>How-To &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
+        VERSION:     '2.0.0b1.post5121.dev0+g9672cecf6',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting_faq.html" />
     <link rel="prev" title="Usage" href="usage_faq.html" /> 
@@ -84,88 +84,6 @@ type="text/css" />
     </div>
 
   
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">How-To</a><ul>
-<li><a class="reference internal" href="#plotting-howto">Plotting: howto</a><ul>
-<li><a class="reference internal" href="#plot-numpy-datetime64-values">Plot <code class="docutils literal"><span class="pre">numpy.datetime64</span></code> values</a></li>
-<li><a class="reference internal" href="#find-all-objects-in-a-figure-of-a-certain-type">Find all objects in a figure of a certain type</a></li>
-<li><a class="reference internal" href="#how-to-prevent-ticklabels-from-having-an-offset">How to prevent ticklabels from having an offset</a></li>
-<li><a class="reference internal" href="#save-transparent-figures">Save transparent figures</a></li>
-<li><a class="reference internal" href="#save-multiple-plots-to-one-pdf-file">Save multiple plots to one pdf file</a></li>
-<li><a class="reference internal" href="#move-the-edge-of-an-axes-to-make-room-for-tick-labels">Move the edge of an axes to make room for tick labels</a></li>
-<li><a class="reference internal" href="#automatically-make-room-for-tick-labels">Automatically make room for tick labels</a></li>
-<li><a class="reference internal" href="#configure-the-tick-linewidths">Configure the tick linewidths</a></li>
-<li><a class="reference internal" href="#align-my-ylabels-across-multiple-subplots">Align my ylabels across multiple subplots</a></li>
-<li><a class="reference internal" href="#skip-dates-where-there-is-no-data">Skip dates where there is no data</a></li>
-<li><a class="reference internal" href="#control-the-depth-of-plot-elements">Control the depth of plot elements</a></li>
-<li><a class="reference internal" href="#make-the-aspect-ratio-for-plots-equal">Make the aspect ratio for plots equal</a></li>
-<li><a class="reference internal" href="#multiple-y-axis-scales">Multiple y-axis scales</a></li>
-<li><a class="reference internal" href="#generate-images-without-having-a-window-appear">Generate images without having a window appear</a></li>
-<li><a class="reference internal" href="#use-show">Use <code class="docutils literal"><span class="pre">show()</span></code></a></li>
-<li><a class="reference internal" href="#interpreting-box-plots-and-violin-plots">Interpreting box plots and violin plots</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#contributing-howto">Contributing: howto</a><ul>
-<li><a class="reference internal" href="#request-a-new-feature">Request a new feature</a></li>
-<li><a class="reference internal" href="#reporting-a-bug-or-submitting-a-patch">Reporting a bug or submitting a patch</a></li>
-<li><a class="reference internal" href="#contribute-to-matplotlib-documentation">Contribute to Matplotlib documentation</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#matplotlib-in-a-web-application-server">Matplotlib in a web application server</a><ul>
-<li><a class="reference internal" href="#matplotlib-with-apache">Matplotlib with apache</a></li>
-<li><a class="reference internal" href="#matplotlib-with-django">Matplotlib with django</a></li>
-<li><a class="reference internal" href="#matplotlib-with-zope">Matplotlib with zope</a></li>
-<li><a class="reference internal" href="#clickable-images-for-html">Clickable images for HTML</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#search-examples">Search examples</a></li>
-<li><a class="reference internal" href="#cite-matplotlib">Cite Matplotlib</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../contents.html">Documentation overview</a><ul>
-  <li><a href="index.html">The Matplotlib FAQ</a><ul>
-      <li>Previous: <a href="usage_faq.html" title="previous chapter">Usage</a></li>
-      <li>Next: <a href="troubleshooting_faq.html" title="next chapter">Troubleshooting</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/faq/howto_faq.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
 
     <div class="document">
       <div class="documentwrapper">
@@ -193,7 +111,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <li><a class="reference internal" href="#make-the-aspect-ratio-for-plots-equal" id="id15">Make the aspect ratio for plots equal</a></li>
 <li><a class="reference internal" href="#multiple-y-axis-scales" id="id16">Multiple y-axis scales</a></li>
 <li><a class="reference internal" href="#generate-images-without-having-a-window-appear" id="id17">Generate images without having a window appear</a></li>
-<li><a class="reference internal" href="#use-show" id="id18">Use <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a></a></li>
+<li><a class="reference internal" href="#use-show" id="id18">Use <code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a></li>
 <li><a class="reference internal" href="#interpreting-box-plots-and-violin-plots" id="id19">Interpreting box plots and violin plots</a></li>
 </ul>
 </li>
@@ -279,7 +197,7 @@ formatter.  See <a class="reference internal" href="../api/ticker_api.html#modul
 </div>
 <div class="section" id="save-transparent-figures">
 <span id="howto-transparent"></span><h3>Save transparent figures<a class="headerlink" href="#save-transparent-figures" title="Permalink to this headline">¶</a></h3>
-<p>The <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.savefig" title="matplotlib.pyplot.savefig"><code class="xref py py-meth docutils literal"><span class="pre">savefig()</span></code></a> command has a keyword argument
+<p>The <code class="xref py py-meth docutils literal"><span class="pre">savefig()</span></code> command has a keyword argument
 <em>transparent</em> which, if &#8216;True&#8217;, will make the figure and axes
 backgrounds transparent when saving, but will not affect the displayed
 image on the screen.</p>
@@ -315,7 +233,7 @@ file:</p>
 </pre></div>
 </div>
 <p>You can give the <a class="reference internal" href="../api/backend_pdf_api.html#matplotlib.backends.backend_pdf.PdfPages" title="matplotlib.backends.backend_pdf.PdfPages"><code class="xref py py-class docutils literal"><span class="pre">PdfPages</span></code></a>
-object to <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.savefig" title="matplotlib.pyplot.savefig"><code class="xref py py-func docutils literal"><span class="pre">savefig()</span></code></a>, but you have to specify
+object to <code class="xref py py-func docutils literal"><span class="pre">savefig()</span></code>, but you have to specify
 the format:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">pp</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;pdf&#39;</span><span class="p">)</span>
 </pre></div>
@@ -336,7 +254,7 @@ the format:</p>
 bottom, and top as well as the horizontal and vertical spacing between
 multiple rows and columns using the
 <a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure.subplots_adjust" title="matplotlib.figure.Figure.subplots_adjust"><code class="xref py py-meth docutils literal"><span class="pre">matplotlib.figure.Figure.subplots_adjust()</span></code></a> method (in pyplot it
-is <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.subplots_adjust" title="matplotlib.pyplot.subplots_adjust"><code class="xref py py-func docutils literal"><span class="pre">subplots_adjust()</span></code></a>).  For example, to move
+is <code class="xref py py-func docutils literal"><span class="pre">subplots_adjust()</span></code>).  For example, to move
 the bottom of the subplots up to make room for some rotated x tick
 labels:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -369,7 +287,7 @@ expressed as a fraction of the average axis height</dd>
 </dl>
 <p>If you want additional control, you can create an
 <a class="reference internal" href="../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> using the
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.axes" title="matplotlib.pyplot.axes"><code class="xref py py-func docutils literal"><span class="pre">axes()</span></code></a> command (or equivalently the figure
+<code class="xref py py-func docutils literal"><span class="pre">axes()</span></code> command (or equivalently the figure
 <a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure.add_axes" title="matplotlib.figure.Figure.add_axes"><code class="xref py py-meth docutils literal"><span class="pre">add_axes()</span></code></a> method), which allows you to
 specify the location explicitly:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="n">left</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">])</span>
@@ -383,7 +301,7 @@ specify the location explicitly:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>This is now easier to handle than ever before.
-Calling <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout"><code class="xref py py-func docutils literal"><span class="pre">tight_layout()</span></code></a> can fix many common
+Calling <code class="xref py py-func docutils literal"><span class="pre">tight_layout()</span></code> can fix many common
 layout issues. See the <a class="reference internal" href="../users/tight_layout_guide.html#plotting-guide-tight-layout"><span class="std std-ref">Tight Layout guide</span></a>.</p>
 <p class="last">The information below is kept here in case it is useful for other
 purposes.</p>
@@ -598,13 +516,13 @@ example.</div>
 <div class="section" id="multiple-y-axis-scales">
 <span id="howto-twoscale"></span><h3>Multiple y-axis scales<a class="headerlink" href="#multiple-y-axis-scales" title="Permalink to this headline">¶</a></h3>
 <p>A frequent request is to have two scales for the left and right
-y-axis, which is possible using <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.twinx" title="matplotlib.pyplot.twinx"><code class="xref py py-func docutils literal"><span class="pre">twinx()</span></code></a> (more
+y-axis, which is possible using <code class="xref py py-func docutils literal"><span class="pre">twinx()</span></code> (more
 than two scales are not currently supported, though it is on the wish
 list).  This works pretty well, though there are some quirks when you
 are trying to interactively pan and zoom, because both scales do not get
 the signals.</p>
-<p>The approach uses <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.twinx" title="matplotlib.pyplot.twinx"><code class="xref py py-func docutils literal"><span class="pre">twinx()</span></code></a> (and its sister
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.twiny" title="matplotlib.pyplot.twiny"><code class="xref py py-func docutils literal"><span class="pre">twiny()</span></code></a>) to use <em>2 different axes</em>,
+<p>The approach uses <code class="xref py py-func docutils literal"><span class="pre">twinx()</span></code> (and its sister
+<code class="xref py py-func docutils literal"><span class="pre">twiny()</span></code>) to use <em>2 different axes</em>,
 turning the axes rectangular frame off on the 2nd axes to keep it from
 obscuring the first, and manually setting the tick locs and labels as
 desired.  You can use separate <code class="docutils literal"><span class="pre">matplotlib.ticker</span></code> formatters and
@@ -635,10 +553,10 @@ of a web application.</p>
 </div>
 </div>
 <div class="section" id="use-show">
-<span id="howto-show"></span><h3>Use <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a><a class="headerlink" href="#use-show" title="Permalink to this headline">¶</a></h3>
+<span id="howto-show"></span><h3>Use <code class="xref py py-func docutils literal"><span class="pre">show()</span></code><a class="headerlink" href="#use-show" title="Permalink to this headline">¶</a></h3>
 <p>When you want to view your plots on your display,
 the user interface backend will need to start the GUI mainloop.
-This is what <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a> does.  It tells
+This is what <code class="xref py py-func docutils literal"><span class="pre">show()</span></code> does.  It tells
 Matplotlib to raise all of the figure windows created so far and start
 the mainloop. Because this mainloop is blocking by default (i.e., script
 execution is paused), you should only call this once per script, at the end.
@@ -649,7 +567,7 @@ and <a class="reference internal" href="usage_faq.html#what-is-a-backend"><span 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Because closing a figure window invokes the destruction of its plotting
-elements, you should call <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.savefig" title="matplotlib.pyplot.savefig"><code class="xref py py-func docutils literal"><span class="pre">savefig()</span></code></a> <em>before</em>
+elements, you should call <code class="xref py py-func docutils literal"><span class="pre">savefig()</span></code> <em>before</em>
 calling <code class="docutils literal"><span class="pre">show</span></code> if you wish to save the figure as well as view it.</p>
 </div>
 <div class="versionadded">
@@ -684,15 +602,15 @@ which might be what you want when working interactively at the
 python console (see <a class="reference internal" href="../users/shell.html#mpl-shell"><span class="std std-ref">Using matplotlib in a python shell</span></a>), but in a script you want to
 defer all drawing until the call to <code class="docutils literal"><span class="pre">show</span></code>.  This is especially
 important for complex figures that take some time to draw.
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a> is designed to tell Matplotlib that
+<code class="xref py py-func docutils literal"><span class="pre">show()</span></code> is designed to tell Matplotlib that
 you&#8217;re all done issuing commands and you want to draw the figure now.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a> should typically only be called at
+<p class="last"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code> should typically only be called at
 most once per script and it should be the last line of your
 script.  At that point, the GUI takes control of the interpreter.
 If you want to force a figure draw, use
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.draw" title="matplotlib.pyplot.draw"><code class="xref py py-func docutils literal"><span class="pre">draw()</span></code></a> instead.</p>
+<code class="xref py py-func docutils literal"><span class="pre">draw()</span></code> instead.</p>
 </div>
 <p>Many users are frustrated by <code class="docutils literal"><span class="pre">show</span></code> because they want it to be a
 blocking call that raises the figure, pauses the script until they
@@ -767,8 +685,8 @@ who wrote most of the documentation.  Just pulled your hair out
 compiling Matplotlib for windows?  Write a FAQ or a section for the
 <a class="reference internal" href="installing_faq.html#installing-faq"><span class="std std-ref">Installation</span></a> page.  Are you a digital signal processing wizard?
 Write a tutorial on the signal analysis plotting functions like
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.xcorr" title="matplotlib.pyplot.xcorr"><code class="xref py py-func docutils literal"><span class="pre">xcorr()</span></code></a>, <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.psd" title="matplotlib.pyplot.psd"><code class="xref py py-func docutils literal"><span class="pre">psd()</span></code></a> and
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.specgram" title="matplotlib.pyplot.specgram"><code class="xref py py-func docutils literal"><span class="pre">specgram()</span></code></a>.  Do you use Matplotlib with
+<code class="xref py py-func docutils literal"><span class="pre">xcorr()</span></code>, <code class="xref py py-func docutils literal"><span class="pre">psd()</span></code> and
+<code class="xref py py-func docutils literal"><span class="pre">specgram()</span></code>.  Do you use Matplotlib with
 <a class="reference external" href="https://www.djangoproject.com/">django</a> or other popular web
 application servers?  Write a FAQ or tutorial and we&#8217;ll find a place
 for it in the <a class="reference internal" href="../users/index.html#users-guide-index"><span class="std std-ref">User&#8217;s Guide</span></a>.  Bundle Matplotlib in a
@@ -918,6 +836,88 @@ reference page</a>):</p>
 
       <div class="clearer"></div>
     </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../_static/depsy_badge.svg">
+</a>
+
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">How-To</a><ul>
+<li><a class="reference internal" href="#plotting-howto">Plotting: howto</a><ul>
+<li><a class="reference internal" href="#plot-numpy-datetime64-values">Plot <code class="docutils literal"><span class="pre">numpy.datetime64</span></code> values</a></li>
+<li><a class="reference internal" href="#find-all-objects-in-a-figure-of-a-certain-type">Find all objects in a figure of a certain type</a></li>
+<li><a class="reference internal" href="#how-to-prevent-ticklabels-from-having-an-offset">How to prevent ticklabels from having an offset</a></li>
+<li><a class="reference internal" href="#save-transparent-figures">Save transparent figures</a></li>
+<li><a class="reference internal" href="#save-multiple-plots-to-one-pdf-file">Save multiple plots to one pdf file</a></li>
+<li><a class="reference internal" href="#move-the-edge-of-an-axes-to-make-room-for-tick-labels">Move the edge of an axes to make room for tick labels</a></li>
+<li><a class="reference internal" href="#automatically-make-room-for-tick-labels">Automatically make room for tick labels</a></li>
+<li><a class="reference internal" href="#configure-the-tick-linewidths">Configure the tick linewidths</a></li>
+<li><a class="reference internal" href="#align-my-ylabels-across-multiple-subplots">Align my ylabels across multiple subplots</a></li>
+<li><a class="reference internal" href="#skip-dates-where-there-is-no-data">Skip dates where there is no data</a></li>
+<li><a class="reference internal" href="#control-the-depth-of-plot-elements">Control the depth of plot elements</a></li>
+<li><a class="reference internal" href="#make-the-aspect-ratio-for-plots-equal">Make the aspect ratio for plots equal</a></li>
+<li><a class="reference internal" href="#multiple-y-axis-scales">Multiple y-axis scales</a></li>
+<li><a class="reference internal" href="#generate-images-without-having-a-window-appear">Generate images without having a window appear</a></li>
+<li><a class="reference internal" href="#use-show">Use <code class="docutils literal"><span class="pre">show()</span></code></a></li>
+<li><a class="reference internal" href="#interpreting-box-plots-and-violin-plots">Interpreting box plots and violin plots</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#contributing-howto">Contributing: howto</a><ul>
+<li><a class="reference internal" href="#request-a-new-feature">Request a new feature</a></li>
+<li><a class="reference internal" href="#reporting-a-bug-or-submitting-a-patch">Reporting a bug or submitting a patch</a></li>
+<li><a class="reference internal" href="#contribute-to-matplotlib-documentation">Contribute to Matplotlib documentation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#matplotlib-in-a-web-application-server">Matplotlib in a web application server</a><ul>
+<li><a class="reference internal" href="#matplotlib-with-apache">Matplotlib with apache</a></li>
+<li><a class="reference internal" href="#matplotlib-with-django">Matplotlib with django</a></li>
+<li><a class="reference internal" href="#matplotlib-with-zope">Matplotlib with zope</a></li>
+<li><a class="reference internal" href="#clickable-images-for-html">Clickable images for HTML</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#search-examples">Search examples</a></li>
+<li><a class="reference internal" href="#cite-matplotlib">Cite Matplotlib</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../contents.html">Documentation overview</a><ul>
+  <li><a href="index.html">The Matplotlib FAQ</a><ul>
+      <li>Previous: <a href="usage_faq.html" title="previous chapter">Usage</a></li>
+      <li>Next: <a href="troubleshooting_faq.html" title="next chapter">Troubleshooting</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/faq/howto_faq.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
       Last updated on Apr 20, 2017.

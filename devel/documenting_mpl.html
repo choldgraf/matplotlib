@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Developer’s tips for documenting matplotlib &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation</title>
+    <title>Developer’s tips for documenting matplotlib &mdash; Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5121.dev0+g9e15ecbc1',
+        VERSION:     '2.0.0b1.post5121.dev0+g9672cecf6',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9e15ecbc1 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g9672cecf6 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib Developers’ Guide" href="index.html" />
     <link rel="next" title="Developer’s guide for creating scales and transformations" href="add_new_projection.html" />
     <link rel="prev" title="Developer’s tips for testing" href="testing.html" /> 
@@ -84,79 +84,6 @@ type="text/css" />
     </div>
 
   
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
-  <h3><a href="../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Developer&#8217;s tips for documenting matplotlib</a><ul>
-<li><a class="reference internal" href="#getting-started">Getting started</a></li>
-<li><a class="reference internal" href="#organization-of-matplotlib-s-documentation">Organization of matplotlib&#8217;s documentation</a><ul>
-<li><a class="reference internal" href="#docstrings">docstrings</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#formatting">Formatting</a></li>
-<li><a class="reference internal" href="#figures">Figures</a><ul>
-<li><a class="reference internal" href="#dynamically-generated-figures">Dynamically generated figures</a><ul>
-<li><a class="reference internal" href="#module-matplotlib.sphinxext.plot_directive">Plot directive documentation</a><ul>
-<li><a class="reference internal" href="#options">Options</a></li>
-<li><a class="reference internal" href="#configuration-options">Configuration options</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#static-figures">Static figures</a></li>
-<li><a class="reference internal" href="#examples">Examples</a></li>
-<li><a class="reference internal" href="#animations">Animations</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#referring-to-mpl-documents">Referring to mpl documents</a></li>
-<li><a class="reference internal" href="#internal-section-references">Internal section references</a></li>
-<li><a class="reference internal" href="#section-names-etc">Section names, etc</a></li>
-<li><a class="reference internal" href="#inheritance-diagrams">Inheritance diagrams</a></li>
-<li><a class="reference internal" href="#emacs-helpers">Emacs helpers</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../contents.html">Documentation overview</a><ul>
-  <li><a href="index.html">The Matplotlib Developers&#8217; Guide</a><ul>
-      <li>Previous: <a href="testing.html" title="previous chapter">Developer&#8217;s tips for testing</a></li>
-      <li>Next: <a href="add_new_projection.html" title="next chapter">Developer&#8217;s guide for creating scales and transformations</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/devel/documenting_mpl.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
 
     <div class="document">
       <div class="documentwrapper">
@@ -235,9 +162,9 @@ e.g., in <a class="reference internal" href="../api/lines_api.html#matplotlib.li
 </pre></div>
 </div>
 <p>Since matplotlib uses a lot of pass-through <code class="docutils literal"><span class="pre">kwargs</span></code>, e.g., in every
-function that creates a line (<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-func docutils literal"><span class="pre">plot()</span></code></a>,
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.semilogx" title="matplotlib.pyplot.semilogx"><code class="xref py py-func docutils literal"><span class="pre">semilogx()</span></code></a>,
-<a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.semilogy" title="matplotlib.pyplot.semilogy"><code class="xref py py-func docutils literal"><span class="pre">semilogy()</span></code></a>, etc...), it can be difficult for
+function that creates a line (<code class="xref py py-func docutils literal"><span class="pre">plot()</span></code>,
+<code class="xref py py-func docutils literal"><span class="pre">semilogx()</span></code>,
+<code class="xref py py-func docutils literal"><span class="pre">semilogy()</span></code>, etc...), it can be difficult for
 the new user to know which <code class="docutils literal"><span class="pre">kwargs</span></code> are supported.  Matplotlib uses
 a docstring interpolation scheme to support documentation of every
 function that takes a <code class="docutils literal"><span class="pre">**kwargs</span></code>.  The requirements are:</p>
@@ -658,7 +585,7 @@ directory, I use the symlink directory.  For example, from
 paths are extremely confusing in the sphinx plot extensions, so
 without getting into the dirty details, it is easier to simply include
 a symlink to the files at the top doc level directory.  This way, API
-documents like <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.html#matplotlib.pyplot.plot" title="matplotlib.pyplot.plot"><code class="xref py py-meth docutils literal"><span class="pre">matplotlib.pyplot.plot()</span></code></a> can refer to the
+documents like <code class="xref py py-meth docutils literal"><span class="pre">matplotlib.pyplot.plot()</span></code> can refer to the
 examples in a known location.</p>
 <p>In the top level doc directory we have symlinks pointing to
 the mpl <code class="xref py py-obj docutils literal"><span class="pre">examples</span></code>:</p>
@@ -795,6 +722,79 @@ is the basic <code class="docutils literal"><span class="pre">.emacs</span></cod
 
       <div class="clearer"></div>
     </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../_static/depsy_badge.svg">
+</a>
+
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Developer&#8217;s tips for documenting matplotlib</a><ul>
+<li><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li><a class="reference internal" href="#organization-of-matplotlib-s-documentation">Organization of matplotlib&#8217;s documentation</a><ul>
+<li><a class="reference internal" href="#docstrings">docstrings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#formatting">Formatting</a></li>
+<li><a class="reference internal" href="#figures">Figures</a><ul>
+<li><a class="reference internal" href="#dynamically-generated-figures">Dynamically generated figures</a><ul>
+<li><a class="reference internal" href="#module-matplotlib.sphinxext.plot_directive">Plot directive documentation</a><ul>
+<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#configuration-options">Configuration options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#static-figures">Static figures</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#animations">Animations</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#referring-to-mpl-documents">Referring to mpl documents</a></li>
+<li><a class="reference internal" href="#internal-section-references">Internal section references</a></li>
+<li><a class="reference internal" href="#section-names-etc">Section names, etc</a></li>
+<li><a class="reference internal" href="#inheritance-diagrams">Inheritance diagrams</a></li>
+<li><a class="reference internal" href="#emacs-helpers">Emacs helpers</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../contents.html">Documentation overview</a><ul>
+  <li><a href="index.html">The Matplotlib Developers&#8217; Guide</a><ul>
+      <li>Previous: <a href="testing.html" title="previous chapter">Developer&#8217;s tips for testing</a></li>
+      <li>Next: <a href="add_new_projection.html" title="next chapter">Developer&#8217;s guide for creating scales and transformations</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/devel/documenting_mpl.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
       Last updated on Apr 20, 2017.

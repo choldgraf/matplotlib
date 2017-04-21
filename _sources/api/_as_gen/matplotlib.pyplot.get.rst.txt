@@ -1,0 +1,15 @@
+matplotlib\.pyplot\.get
+=======================
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: get
+
+
+
+.. include:: matplotlib.pyplot.get.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+
