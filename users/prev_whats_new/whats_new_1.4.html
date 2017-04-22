@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>New in matplotlib 1.4 &mdash; Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation</title>
+    <title>New in matplotlib 1.4 &mdash; Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5121.dev0+g5241b2f3a',
+        VERSION:     '2.0.0b1.post5124.dev0+g974b6129a',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation"
+          title="Search within Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation" href="../../index.html" />
     <link rel="up" title="What’s new in matplotlib" href="../whats_new.html" />
     <link rel="next" title="New in matplotlib 1.5" href="whats_new_1.5.html" />
     <link rel="prev" title="New in matplotlib 1.3" href="whats_new_1.3.html" /> 
@@ -199,24 +199,24 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
           <div class="body">
             
   <div class="section" id="new-in-matplotlib-1-4">
-<span id="whats-new-1-4"></span><h1><a class="toc-backref" href="#id1">New in matplotlib 1.4</a><a class="headerlink" href="#new-in-matplotlib-1-4" title="Permalink to this headline">¶</a></h1>
+<span id="whats-new-1-4"></span><h1><a class="toc-backref" href="#id3">New in matplotlib 1.4</a><a class="headerlink" href="#new-in-matplotlib-1-4" title="Permalink to this headline">¶</a></h1>
 <p>Thomas A. Caswell served as the release manager for the 1.4 release.</p>
 <div class="contents topic" id="table-of-contents">
 <p class="topic-title first">Table of Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#new-in-matplotlib-1-4" id="id1">New in matplotlib 1.4</a><ul>
-<li><a class="reference internal" href="#new-colormap" id="id2">New colormap</a></li>
-<li><a class="reference internal" href="#the-nbagg-backend" id="id3">The nbagg backend</a></li>
-<li><a class="reference internal" href="#new-plotting-features" id="id4">New plotting features</a></li>
-<li><a class="reference internal" href="#date-handling" id="id5">Date handling</a></li>
-<li><a class="reference internal" href="#configuration-rcparams" id="id6">Configuration (rcParams)</a></li>
-<li><a class="reference internal" href="#style-package-added" id="id7"><code class="docutils literal"><span class="pre">style</span></code> package added</a></li>
-<li><a class="reference internal" href="#backends" id="id8">Backends</a></li>
-<li><a class="reference internal" href="#text" id="id9">Text</a></li>
-<li><a class="reference internal" href="#sphinx-extensions" id="id10">Sphinx extensions</a></li>
-<li><a class="reference internal" href="#legend-and-patheffects-documentation" id="id11">Legend and PathEffects documentation</a></li>
-<li><a class="reference internal" href="#widgets" id="id12">Widgets</a></li>
-<li><a class="reference internal" href="#gae-integration" id="id13">GAE integration</a></li>
+<li><a class="reference internal" href="#new-in-matplotlib-1-4" id="id3">New in matplotlib 1.4</a><ul>
+<li><a class="reference internal" href="#new-colormap" id="id4">New colormap</a></li>
+<li><a class="reference internal" href="#the-nbagg-backend" id="id5">The nbagg backend</a></li>
+<li><a class="reference internal" href="#new-plotting-features" id="id6">New plotting features</a></li>
+<li><a class="reference internal" href="#date-handling" id="id7">Date handling</a></li>
+<li><a class="reference internal" href="#configuration-rcparams" id="id8">Configuration (rcParams)</a></li>
+<li><a class="reference internal" href="#style-package-added" id="id9"><code class="docutils literal"><span class="pre">style</span></code> package added</a></li>
+<li><a class="reference internal" href="#backends" id="id10">Backends</a></li>
+<li><a class="reference internal" href="#text" id="id11">Text</a></li>
+<li><a class="reference internal" href="#sphinx-extensions" id="id12">Sphinx extensions</a></li>
+<li><a class="reference internal" href="#legend-and-patheffects-documentation" id="id13">Legend and PathEffects documentation</a></li>
+<li><a class="reference internal" href="#widgets" id="id14">Widgets</a></li>
+<li><a class="reference internal" href="#gae-integration" id="id15">GAE integration</a></li>
 </ul>
 </li>
 </ul>
@@ -226,7 +226,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <p class="last">matplotlib 1.4 supports Python 2.6, 2.7, 3.3, and 3.4</p>
 </div>
 <div class="section" id="new-colormap">
-<h2><a class="toc-backref" href="#id2">New colormap</a><a class="headerlink" href="#new-colormap" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">New colormap</a><a class="headerlink" href="#new-colormap" title="Permalink to this headline">¶</a></h2>
 <p>In heatmaps, a green-to-red spectrum is often used to indicate intensity of
 activity, but this can be problematic for the red/green colorblind. A new,
 colorblind-friendly colormap is now available at <code class="xref py py-class docutils literal"><span class="pre">matplotlib.cm.Wistia</span></code>.
@@ -236,7 +236,7 @@ legibility through brightness variations. See
 for more information.</p>
 </div>
 <div class="section" id="the-nbagg-backend">
-<h2><a class="toc-backref" href="#id3">The nbagg backend</a><a class="headerlink" href="#the-nbagg-backend" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">The nbagg backend</a><a class="headerlink" href="#the-nbagg-backend" title="Permalink to this headline">¶</a></h2>
 <p>Phil Elson added a new backend, named &#8220;nbagg&#8221;, which enables interactive
 figures in a live IPython notebook session. The backend makes use of the
 infrastructure developed for the webagg backend, which itself gives
@@ -257,7 +257,7 @@ non-interactive viewing of figures on services such as
 <a class="reference external" href="http://nbviewer.ipython.org/">nbviewer</a>.</p>
 </div>
 <div class="section" id="new-plotting-features">
-<h2><a class="toc-backref" href="#id4">New plotting features</a><a class="headerlink" href="#new-plotting-features" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">New plotting features</a><a class="headerlink" href="#new-plotting-features" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="power-law-normalization">
 <h3>Power-law normalization<a class="headerlink" href="#power-law-normalization" title="Permalink to this headline">¶</a></h3>
 <p>Ben Gamari added a power-law normalization method,
@@ -359,9 +359,9 @@ every subplot and you need to make some space for legend&#8217;s labels.</p>
 matplotlib internals were cleaned up to support using such transforms in
 <code class="xref py py-class docutils literal"><span class="pre">Axes</span></code>. This transform is important for some plot types,
 specifically the Skew-T used in meteorology.</p>
-<p>(<a class="reference external" href="../../gallery/api/skewt.py">Source code</a>, <a class="reference external" href="../../gallery/api/skewt.png">png</a>, <a class="reference external" href="../../gallery/api/skewt.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../_images/skewt1.png" src="../../_images/skewt1.png" />
+<div class="figure align-center" id="id1">
+<a class="reference external image-reference" href="../../gallery/api/skewt.html"><img alt="../../_images/sphx_glr_skewt_0011.png" src="../../_images/sphx_glr_skewt_0011.png" style="width: 329.0px; height: 310.5px;" /></a>
+<p class="caption"><span class="caption-text">Skewt</span></p>
 </div>
 </div>
 <div class="section" id="support-for-specifying-properties-of-wedge-and-text-in-pie-charts">
@@ -440,9 +440,9 @@ version of a quiver plot in 3D space for the mplot3d toolkit as one of their
 term project. This feature is documented in <a class="reference internal" href="../../mpl_toolkits/mplot3d/tutorial.html#mpl_toolkits.mplot3d.Axes3D.quiver" title="mpl_toolkits.mplot3d.Axes3D.quiver"><code class="xref py py-func docutils literal"><span class="pre">quiver()</span></code></a>.
 The team members are: Ryan Steve D&#8217;Souza, Victor B, xbtsw, Yang Wang, David,
 Caradec Bisesar and Vlad Vassilovski.</p>
-<p>(<a class="reference external" href="../../gallery/mplot3d/quiver3d.py">Source code</a>, <a class="reference external" href="../../gallery/mplot3d/quiver3d.png">png</a>, <a class="reference external" href="../../gallery/mplot3d/quiver3d.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../_images/quiver3d2.png" src="../../_images/quiver3d2.png" />
+<div class="figure align-center" id="id2">
+<a class="reference external image-reference" href="../../gallery/mplot3d/quiver3d.html"><img alt="../../_images/sphx_glr_quiver3d_0012.png" src="../../_images/sphx_glr_quiver3d_0012.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Quiver3d</span></p>
 </div>
 </div>
 <div class="section" id="polar-plot-r-tick-locations">
@@ -452,7 +452,7 @@ on a polar plot via <code class="xref py py-func docutils literal"><span class="
 </div>
 </div>
 <div class="section" id="date-handling">
-<h2><a class="toc-backref" href="#id5">Date handling</a><a class="headerlink" href="#date-handling" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Date handling</a><a class="headerlink" href="#date-handling" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="n-d-array-support-for-date-conversion">
 <h3>n-d array support for date conversion<a class="headerlink" href="#n-d-array-support-for-date-conversion" title="Permalink to this headline">¶</a></h3>
 <p>Andrew Dawson added support for n-d array handling to
@@ -463,7 +463,7 @@ conversion interfaces <code class="xref py py-class docutils literal"><span clas
 </div>
 </div>
 <div class="section" id="configuration-rcparams">
-<h2><a class="toc-backref" href="#id6">Configuration (rcParams)</a><a class="headerlink" href="#configuration-rcparams" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Configuration (rcParams)</a><a class="headerlink" href="#configuration-rcparams" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="savefig-transparent-added">
 <h3><code class="docutils literal"><span class="pre">savefig.transparent</span></code> added<a class="headerlink" href="#savefig-transparent-added" title="Permalink to this headline">¶</a></h3>
 <p>Controls whether figures are saved with a transparent
@@ -494,7 +494,7 @@ compliant locations.</p>
 </div>
 </div>
 <div class="section" id="style-package-added">
-<h2><a class="toc-backref" href="#id7"><code class="docutils literal"><span class="pre">style</span></code> package added</a><a class="headerlink" href="#style-package-added" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9"><code class="docutils literal"><span class="pre">style</span></code> package added</a><a class="headerlink" href="#style-package-added" title="Permalink to this headline">¶</a></h2>
 <p>You can now easily switch between different styles using the new <code class="docutils literal"><span class="pre">style</span></code>
 package:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">style</span>
@@ -513,7 +513,7 @@ styles, use:</p>
 users test out this new feature.</p>
 </div>
 <div class="section" id="backends">
-<h2><a class="toc-backref" href="#id8">Backends</a><a class="headerlink" href="#backends" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Backends</a><a class="headerlink" href="#backends" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="qt5-backend">
 <h3>Qt5 backend<a class="headerlink" href="#qt5-backend" title="Permalink to this headline">¶</a></h3>
 <p>Martin Fitzpatrick and Tom Badran implemented a Qt5 backend.  The differences
@@ -561,7 +561,7 @@ bindings</a> are installed.</p>
 </div>
 </div>
 <div class="section" id="text">
-<h2><a class="toc-backref" href="#id9">Text</a><a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Text</a><a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="text-urls-supported-by-svg-backend">
 <h3>Text URLs supported by SVG backend<a class="headerlink" href="#text-urls-supported-by-svg-backend" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="xref py py-obj docutils literal"><span class="pre">svg</span></code> backend will now render <a class="reference internal" href="../../api/text_api.html#matplotlib.text.Text" title="matplotlib.text.Text"><code class="xref py py-class docutils literal"><span class="pre">Text</span></code></a> objects&#8217;
@@ -577,7 +577,7 @@ control the font properties.</p>
 </div>
 </div>
 <div class="section" id="sphinx-extensions">
-<h2><a class="toc-backref" href="#id10">Sphinx extensions</a><a class="headerlink" href="#sphinx-extensions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Sphinx extensions</a><a class="headerlink" href="#sphinx-extensions" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal"><span class="pre">:context:</span></code> directive in the <a class="reference internal" href="../../devel/documenting_mpl.html#module-matplotlib.sphinxext.plot_directive" title="matplotlib.sphinxext.plot_directive"><code class="xref py py-obj docutils literal"><span class="pre">plot_directive</span></code></a>
 Sphinx extension can now accept an optional <code class="docutils literal"><span class="pre">reset</span></code> setting, which will
 cause the context to be reset. This allows more than one distinct context to
@@ -585,13 +585,13 @@ be present in documentation. To enable this option, use <code class="docutils li
 instead of <code class="docutils literal"><span class="pre">:context:</span></code> any time you want to reset the context.</p>
 </div>
 <div class="section" id="legend-and-patheffects-documentation">
-<h2><a class="toc-backref" href="#id11">Legend and PathEffects documentation</a><a class="headerlink" href="#legend-and-patheffects-documentation" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Legend and PathEffects documentation</a><a class="headerlink" href="#legend-and-patheffects-documentation" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="../legend_guide.html#plotting-guide-legend"><span class="std std-ref">Legend guide</span></a> and <a class="reference internal" href="../patheffects_guide.html#patheffects-guide"><span class="std std-ref">Path effects guide</span></a> have both been
 updated to better reflect the full potential of each of these powerful
 features.</p>
 </div>
 <div class="section" id="widgets">
-<h2><a class="toc-backref" href="#id12">Widgets</a><a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">Widgets</a><a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="span-selector">
 <h3>Span Selector<a class="headerlink" href="#span-selector" title="Permalink to this headline">¶</a></h3>
 <p>Added an option <code class="docutils literal"><span class="pre">span_stays</span></code> to the
@@ -600,7 +600,7 @@ rectangle stay on the axes after you release the mouse.</p>
 </div>
 </div>
 <div class="section" id="gae-integration">
-<h2><a class="toc-backref" href="#id13">GAE integration</a><a class="headerlink" href="#gae-integration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id15">GAE integration</a><a class="headerlink" href="#gae-integration" title="Permalink to this headline">¶</a></h2>
 <p>Matplotlib will now run on google app engine.</p>
 </div>
 </div>

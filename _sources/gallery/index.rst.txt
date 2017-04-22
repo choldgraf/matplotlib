@@ -7315,6 +7315,596 @@ Pylab Examples
 
     <div style='clear:both'></div>
 
+.. _pyplots_examples:
+
+Pyplot Examples
+===============
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_simple_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_simple.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_simple
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_formatstr_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_formatstr.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_formatstr
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_three_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_three.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_three
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_fig_x_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_fig_x.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/fig_x
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_whats_new_98_4_legend_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_whats_new_98_4_legend.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/whats_new_98_4_legend
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_two_subplots_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_two_subplots.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_two_subplots
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_annotate_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_annotate.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_annotate
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_annotation_basic_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_annotation_basic.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/annotation_basic
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_whats_new_99_mplot3d_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_whats_new_99_mplot3d.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/whats_new_99_mplot3d
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_mathtext_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_mathtext.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_mathtext
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_whats_new_98_4_fill_between_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_whats_new_98_4_fill_between.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/whats_new_98_4_fill_between
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_text_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_text.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_text
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_dollar_ticks_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_dollar_ticks.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/dollar_ticks
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_fig_axes_labels_simple_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_fig_axes_labels_simple.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/fig_axes_labels_simple
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demo of TeX rendering.">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_tex_demo_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_tex_demo.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/tex_demo
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_fig_axes_customize_simple_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_fig_axes_customize_simple.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/fig_axes_customize_simple
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_annotation_polar_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_annotation_polar.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/annotation_polar
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Plotting text of many different kinds. ">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_text_commands_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_text_commands.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/text_commands
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_align_ylabels_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_align_ylabels.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/align_ylabels
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_whats_new_1_subplot3d_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_whats_new_1_subplot3d.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/whats_new_1_subplot3d
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_whats_new_99_axes_grid_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_whats_new_99_axes_grid.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/whats_new_99_axes_grid
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_auto_subplots_adjust_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_auto_subplots_adjust.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/auto_subplots_adjust
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_annotate_transform_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_annotate_transform.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/annotate_transform
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_whats_new_99_spines_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_whats_new_99_spines.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/whats_new_99_spines
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_compound_path_demo_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_compound_path_demo.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/compound_path_demo
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_pyplot_scales_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_pyplot_scales.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/pyplot_scales
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Example boxplot code ">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_boxplot_demo_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_boxplot_demo.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/boxplot_demo
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_whats_new_98_4_fancy_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_whats_new_98_4_fancy.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/whats_new_98_4_fancy
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/pyplots/images/thumb/sphx_glr_text_layout_thumb.png
+
+        :ref:`sphx_glr_gallery_pyplots_text_layout.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/pyplots/text_layout
+.. raw:: html
+
+    <div style='clear:both'></div>
+
 .. _shapes_and_collections_examples:
 
 

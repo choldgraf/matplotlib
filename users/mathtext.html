@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Writing mathematical expressions &mdash; Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation</title>
+    <title>Writing mathematical expressions &mdash; Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5121.dev0+g5241b2f3a',
+        VERSION:     '2.0.0b1.post5124.dev0+g974b6129a',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation"
+          title="Search within Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation" href="../index.html" />
     <link rel="up" title="Working with text" href="index_text.html" />
     <link rel="next" title="Text rendering With LaTeX" href="usetex.html" />
     <link rel="prev" title="Annotation" href="annotations.html" /> 
@@ -1291,30 +1291,9 @@ also be used:</p>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>Here is an example illustrating many of these features in context.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">===============</span>
-<span class="sd">Pyplot Mathtext</span>
-<span class="sd">===============</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha_i &gt; \beta_i$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\sum_{i=0}^\infty x_i$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\mathcal{A}\mathrm{sin}(2 \omega t)$&#39;</span><span class="p">,</span>
-         <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time (s)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;volts (mV)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>(<a class="reference external" href="../mpl_examples/pyplots/pyplot_mathtext.py">Source code</a>, <a class="reference external" href="../mpl_examples/pyplots/pyplot_mathtext.png">png</a>, <a class="reference external" href="../mpl_examples/pyplots/pyplot_mathtext.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../_images/pyplot_mathtext.png" src="../_images/pyplot_mathtext.png" />
+<div class="figure align-center" id="id2">
+<a class="reference external image-reference" href="../gallery/pyplots/pyplot_mathtext.html"><img alt="../_images/sphx_glr_pyplot_mathtext_0011.png" src="../_images/sphx_glr_pyplot_mathtext_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Pyplot Mathtext</span></p>
 </div>
 </div>
 </div>

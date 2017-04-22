@@ -11,7 +11,7 @@ Ellipse Demo
 
 
 
-.. image:: /gallery/pylab_examples/images/sphx_glr_ellipse_demo_000.png
+.. image:: /gallery/pylab_examples/images/sphx_glr_ellipse_demo_001.png
     :align: center
 
 
@@ -29,8 +29,7 @@ Ellipse Demo
     ells = [Ellipse(xy=rnd.rand(2)*10, width=rnd.rand(), height=rnd.rand(), angle=rnd.rand()*360)
             for i in range(NUM)]
 
-    fig = plt.figure(0)
-    ax = fig.add_subplot(111, aspect='equal')
+    fig, ax = plt.subplots(subplot_kw={'aspect': 'equal'})
     for e in ells:
         ax.add_artist(e)
         e.set_clip_box(ax.bbox)
@@ -42,7 +41,7 @@ Ellipse Demo
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.168 seconds)
+**Total running time of the script:** ( 0 minutes  0.162 seconds)
 
 
 

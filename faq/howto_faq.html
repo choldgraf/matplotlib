@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How-To &mdash; Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation</title>
+    <title>How-To &mdash; Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5121.dev0+g5241b2f3a',
+        VERSION:     '2.0.0b1.post5124.dev0+g974b6129a',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation"
+          title="Search within Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting_faq.html" />
     <link rel="prev" title="Usage" href="usage_faq.html" /> 
@@ -176,41 +176,41 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#how-to" id="id2">How-To</a><ul>
-<li><a class="reference internal" href="#plotting-howto" id="id3">Plotting: howto</a><ul>
-<li><a class="reference internal" href="#plot-numpy-datetime64-values" id="id4">Plot <code class="xref py py-obj docutils literal"><span class="pre">numpy.datetime64</span></code> values</a></li>
-<li><a class="reference internal" href="#find-all-objects-in-a-figure-of-a-certain-type" id="id5">Find all objects in a figure of a certain type</a></li>
-<li><a class="reference internal" href="#how-to-prevent-ticklabels-from-having-an-offset" id="id6">How to prevent ticklabels from having an offset</a></li>
-<li><a class="reference internal" href="#save-transparent-figures" id="id7">Save transparent figures</a></li>
-<li><a class="reference internal" href="#save-multiple-plots-to-one-pdf-file" id="id8">Save multiple plots to one pdf file</a></li>
-<li><a class="reference internal" href="#move-the-edge-of-an-axes-to-make-room-for-tick-labels" id="id9">Move the edge of an axes to make room for tick labels</a></li>
-<li><a class="reference internal" href="#automatically-make-room-for-tick-labels" id="id10">Automatically make room for tick labels</a></li>
-<li><a class="reference internal" href="#configure-the-tick-linewidths" id="id11">Configure the tick linewidths</a></li>
-<li><a class="reference internal" href="#align-my-ylabels-across-multiple-subplots" id="id12">Align my ylabels across multiple subplots</a></li>
-<li><a class="reference internal" href="#skip-dates-where-there-is-no-data" id="id13">Skip dates where there is no data</a></li>
-<li><a class="reference internal" href="#control-the-depth-of-plot-elements" id="id14">Control the depth of plot elements</a></li>
-<li><a class="reference internal" href="#make-the-aspect-ratio-for-plots-equal" id="id15">Make the aspect ratio for plots equal</a></li>
-<li><a class="reference internal" href="#multiple-y-axis-scales" id="id16">Multiple y-axis scales</a></li>
-<li><a class="reference internal" href="#generate-images-without-having-a-window-appear" id="id17">Generate images without having a window appear</a></li>
-<li><a class="reference internal" href="#use-show" id="id18">Use <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a></a></li>
-<li><a class="reference internal" href="#interpreting-box-plots-and-violin-plots" id="id19">Interpreting box plots and violin plots</a></li>
+<li><a class="reference internal" href="#how-to" id="id4">How-To</a><ul>
+<li><a class="reference internal" href="#plotting-howto" id="id5">Plotting: howto</a><ul>
+<li><a class="reference internal" href="#plot-numpy-datetime64-values" id="id6">Plot <code class="xref py py-obj docutils literal"><span class="pre">numpy.datetime64</span></code> values</a></li>
+<li><a class="reference internal" href="#find-all-objects-in-a-figure-of-a-certain-type" id="id7">Find all objects in a figure of a certain type</a></li>
+<li><a class="reference internal" href="#how-to-prevent-ticklabels-from-having-an-offset" id="id8">How to prevent ticklabels from having an offset</a></li>
+<li><a class="reference internal" href="#save-transparent-figures" id="id9">Save transparent figures</a></li>
+<li><a class="reference internal" href="#save-multiple-plots-to-one-pdf-file" id="id10">Save multiple plots to one pdf file</a></li>
+<li><a class="reference internal" href="#move-the-edge-of-an-axes-to-make-room-for-tick-labels" id="id11">Move the edge of an axes to make room for tick labels</a></li>
+<li><a class="reference internal" href="#automatically-make-room-for-tick-labels" id="id12">Automatically make room for tick labels</a></li>
+<li><a class="reference internal" href="#configure-the-tick-linewidths" id="id13">Configure the tick linewidths</a></li>
+<li><a class="reference internal" href="#align-my-ylabels-across-multiple-subplots" id="id14">Align my ylabels across multiple subplots</a></li>
+<li><a class="reference internal" href="#skip-dates-where-there-is-no-data" id="id15">Skip dates where there is no data</a></li>
+<li><a class="reference internal" href="#control-the-depth-of-plot-elements" id="id16">Control the depth of plot elements</a></li>
+<li><a class="reference internal" href="#make-the-aspect-ratio-for-plots-equal" id="id17">Make the aspect ratio for plots equal</a></li>
+<li><a class="reference internal" href="#multiple-y-axis-scales" id="id18">Multiple y-axis scales</a></li>
+<li><a class="reference internal" href="#generate-images-without-having-a-window-appear" id="id19">Generate images without having a window appear</a></li>
+<li><a class="reference internal" href="#use-show" id="id20">Use <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a></a></li>
+<li><a class="reference internal" href="#interpreting-box-plots-and-violin-plots" id="id21">Interpreting box plots and violin plots</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#contributing-howto" id="id20">Contributing: howto</a><ul>
-<li><a class="reference internal" href="#request-a-new-feature" id="id21">Request a new feature</a></li>
-<li><a class="reference internal" href="#reporting-a-bug-or-submitting-a-patch" id="id22">Reporting a bug or submitting a patch</a></li>
-<li><a class="reference internal" href="#contribute-to-matplotlib-documentation" id="id23">Contribute to Matplotlib documentation</a></li>
+<li><a class="reference internal" href="#contributing-howto" id="id22">Contributing: howto</a><ul>
+<li><a class="reference internal" href="#request-a-new-feature" id="id23">Request a new feature</a></li>
+<li><a class="reference internal" href="#reporting-a-bug-or-submitting-a-patch" id="id24">Reporting a bug or submitting a patch</a></li>
+<li><a class="reference internal" href="#contribute-to-matplotlib-documentation" id="id25">Contribute to Matplotlib documentation</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#matplotlib-in-a-web-application-server" id="id24">Matplotlib in a web application server</a><ul>
-<li><a class="reference internal" href="#matplotlib-with-apache" id="id25">Matplotlib with apache</a></li>
-<li><a class="reference internal" href="#matplotlib-with-django" id="id26">Matplotlib with django</a></li>
-<li><a class="reference internal" href="#matplotlib-with-zope" id="id27">Matplotlib with zope</a></li>
-<li><a class="reference internal" href="#clickable-images-for-html" id="id28">Clickable images for HTML</a></li>
+<li><a class="reference internal" href="#matplotlib-in-a-web-application-server" id="id26">Matplotlib in a web application server</a><ul>
+<li><a class="reference internal" href="#matplotlib-with-apache" id="id27">Matplotlib with apache</a></li>
+<li><a class="reference internal" href="#matplotlib-with-django" id="id28">Matplotlib with django</a></li>
+<li><a class="reference internal" href="#matplotlib-with-zope" id="id29">Matplotlib with zope</a></li>
+<li><a class="reference internal" href="#clickable-images-for-html" id="id30">Clickable images for HTML</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#search-examples" id="id29">Search examples</a></li>
-<li><a class="reference internal" href="#cite-matplotlib" id="id30">Cite Matplotlib</a></li>
+<li><a class="reference internal" href="#search-examples" id="id31">Search examples</a></li>
+<li><a class="reference internal" href="#cite-matplotlib" id="id32">Cite Matplotlib</a></li>
 </ul>
 </li>
 </ul>
@@ -409,47 +409,10 @@ get the window extent there, and then do something with it, e.g., move
 the left of the canvas over; see <a class="reference internal" href="../users/event_handling.html#event-handling-tutorial"><span class="std std-ref">Event handling and picking</span></a>.</p>
 <p>Here is an example that gets a bounding box in relative figure coordinates
 (0..1) of each of the labels and uses it to move the left of the subplots
-over so that the tick labels fit in the figure</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">====================</span>
-<span class="sd">Auto Subplots Adjust</span>
-<span class="sd">====================</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.transforms</span> <span class="kn">as</span> <span class="nn">mtransforms</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
-<span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">((</span><span class="s1">&#39;really, really, really&#39;</span><span class="p">,</span> <span class="s1">&#39;long&#39;</span><span class="p">,</span> <span class="s1">&#39;labels&#39;</span><span class="p">))</span>
-
-<span class="k">def</span> <span class="nf">on_draw</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
-   <span class="n">bboxes</span> <span class="o">=</span> <span class="p">[]</span>
-   <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">:</span>
-       <span class="n">bbox</span> <span class="o">=</span> <span class="n">label</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">()</span>
-       <span class="c1"># the figure transform goes from relative coords-&gt;pixels and we</span>
-       <span class="c1"># want the inverse of that</span>
-       <span class="n">bboxi</span> <span class="o">=</span> <span class="n">bbox</span><span class="o">.</span><span class="n">inverse_transformed</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">transFigure</span><span class="p">)</span>
-       <span class="n">bboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bboxi</span><span class="p">)</span>
-
-   <span class="c1"># this is the bbox that bounds all the bboxes, again in relative</span>
-   <span class="c1"># figure coords</span>
-   <span class="n">bbox</span> <span class="o">=</span> <span class="n">mtransforms</span><span class="o">.</span><span class="n">Bbox</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">bboxes</span><span class="p">)</span>
-   <span class="k">if</span> <span class="n">fig</span><span class="o">.</span><span class="n">subplotpars</span><span class="o">.</span><span class="n">left</span> <span class="o">&lt;</span> <span class="n">bbox</span><span class="o">.</span><span class="n">width</span><span class="p">:</span>
-       <span class="c1"># we need to move it over</span>
-       <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">1.1</span><span class="o">*</span><span class="n">bbox</span><span class="o">.</span><span class="n">width</span><span class="p">)</span> <span class="c1"># pad a little</span>
-       <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
-   <span class="k">return</span> <span class="bp">False</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">mpl_connect</span><span class="p">(</span><span class="s1">&#39;draw_event&#39;</span><span class="p">,</span> <span class="n">on_draw</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>(<a class="reference external" href="../mpl_examples/pyplots/auto_subplots_adjust.py">Source code</a>, <a class="reference external" href="../mpl_examples/pyplots/auto_subplots_adjust.png">png</a>, <a class="reference external" href="../mpl_examples/pyplots/auto_subplots_adjust.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../_images/auto_subplots_adjust.png" src="../_images/auto_subplots_adjust.png" />
+over so that the tick labels fit in the figure:</p>
+<div class="figure align-center" id="id2">
+<a class="reference external image-reference" href="../gallery/pyplots/auto_subplots_adjust.html"><img alt="../_images/sphx_glr_auto_subplots_adjust_0011.png" src="../_images/sphx_glr_auto_subplots_adjust_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Auto Subplots Adjust</span></p>
 </div>
 </div>
 <div class="section" id="configure-the-tick-linewidths">
@@ -484,54 +447,9 @@ it does not overlap any of the y ticks.  You can override this default
 behavior by specifying the coordinates of the label.  The example
 below shows the default behavior in the left subplots, and the manual
 setting in the right subplots.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">=============</span>
-<span class="sd">Align Ylabels</span>
-<span class="sd">=============</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-
-<span class="n">box</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
-
-<span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">221</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">2000</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;ylabels not aligned&#39;</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;misaligned 1&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">box</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
-<span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">223</span><span class="p">)</span>
-<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;misaligned 2&#39;</span><span class="p">,</span><span class="n">bbox</span><span class="o">=</span><span class="n">box</span><span class="p">)</span>
-<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-
-
-<span class="n">labelx</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.3</span>  <span class="c1"># axes coords</span>
-
-<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">222</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;ylabels aligned&#39;</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">2000</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;aligned 1&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">box</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">labelx</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
-
-<span class="n">ax4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">224</span><span class="p">)</span>
-<span class="n">ax4</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">ax4</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;aligned 2&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">box</span><span class="p">)</span>
-<span class="n">ax4</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">labelx</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>(<a class="reference external" href="../mpl_examples/pyplots/align_ylabels.py">Source code</a>, <a class="reference external" href="../mpl_examples/pyplots/align_ylabels.png">png</a>, <a class="reference external" href="../mpl_examples/pyplots/align_ylabels.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../_images/align_ylabels.png" src="../_images/align_ylabels.png" />
+<div class="figure align-center" id="id3">
+<a class="reference external image-reference" href="../gallery/pyplots/align_ylabels.html"><img alt="../_images/sphx_glr_align_ylabels_0011.png" src="../_images/sphx_glr_align_ylabels_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Align Ylabels</span></p>
 </div>
 </div>
 <div class="section" id="skip-dates-where-there-is-no-data">

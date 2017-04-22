@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Artist tutorial &mdash; Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation</title>
+    <title>Artist tutorial &mdash; Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5121.dev0+g5241b2f3a',
+        VERSION:     '2.0.0b1.post5124.dev0+g974b6129a',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation"
+          title="Search within Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation" href="../index.html" />
     <link rel="up" title="Tutorials" href="tutorials.html" />
     <link rel="next" title="Legend guide" href="legend_guide.html" />
     <link rel="prev" title="Tight Layout guide" href="tight_layout_guide.html" /> 
@@ -251,9 +251,9 @@ instance contains an <a class="reference internal" href="../api/axis_api.html#ma
 <a class="reference internal" href="../api/axis_api.html#matplotlib.axis.YAxis" title="matplotlib.axis.YAxis"><code class="xref py py-class docutils literal"><span class="pre">YAxis</span></code></a> instance, which handle the layout and
 drawing of the ticks, tick labels and axis labels.</p>
 <p>Try creating the figure below.</p>
-<p>(<a class="reference external" href="../mpl_examples/pyplots/fig_axes_labels_simple.py">Source code</a>, <a class="reference external" href="../mpl_examples/pyplots/fig_axes_labels_simple.png">png</a>, <a class="reference external" href="../mpl_examples/pyplots/fig_axes_labels_simple.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../_images/fig_axes_labels_simple.png" src="../_images/fig_axes_labels_simple.png" />
+<div class="figure align-center" id="id5">
+<a class="reference external image-reference" href="../gallery/pyplots/fig_axes_labels_simple.html"><img alt="../_images/sphx_glr_fig_axes_labels_simple_0011.png" src="../_images/sphx_glr_fig_axes_labels_simple_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Fig Axes Labels Simple</span></p>
 </div>
 <div class="section" id="customizing-your-objects">
 <span id="customizing-artists"></span><h2>Customizing your objects<a class="headerlink" href="#customizing-your-objects" title="Permalink to this headline">¶</a></h2>
@@ -452,9 +452,9 @@ obtain by setting the <code class="docutils literal"><span class="pre">Artist</s
 <span class="gp">In [195]: </span><span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>(<a class="reference external" href="../mpl_examples/pyplots/fig_x.py">Source code</a>, <a class="reference external" href="../mpl_examples/pyplots/fig_x.png">png</a>, <a class="reference external" href="../mpl_examples/pyplots/fig_x.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../_images/fig_x.png" src="../_images/fig_x.png" />
+<div class="figure align-center" id="id6">
+<a class="reference external image-reference" href="../gallery/pyplots/fig_x.html"><img alt="../_images/sphx_glr_fig_x_0011.png" src="../_images/sphx_glr_fig_x_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Fig X</span></p>
 </div>
 <p>Here is a summary of the Artists the figure contains</p>
 <table border="1" class="docutils">
@@ -830,43 +830,9 @@ set_major_formatter)</p>
 </table>
 <p>Here is an example, not recommended for its beauty, which customizes
 the axes and tick properties</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">=========================</span>
-<span class="sd">Fig Axes Customize Simple</span>
-<span class="sd">=========================</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-
-<span class="c1"># plt.figure creates a matplotlib.figure.Figure instance</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">rect</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">patch</span> <span class="c1"># a rectangle instance</span>
-<span class="n">rect</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">&#39;lightgoldenrodyellow&#39;</span><span class="p">)</span>
-
-<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">])</span>
-<span class="n">rect</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">patch</span>
-<span class="n">rect</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">&#39;lightslategray&#39;</span><span class="p">)</span>
-
-
-<span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">ax1</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">get_ticklabels</span><span class="p">():</span>
-    <span class="c1"># label is a Text instance</span>
-    <span class="n">label</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
-    <span class="n">label</span><span class="o">.</span><span class="n">set_rotation</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
-    <span class="n">label</span><span class="o">.</span><span class="n">set_fontsize</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">ax1</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">get_ticklines</span><span class="p">():</span>
-    <span class="c1"># line is a Line2D instance</span>
-    <span class="n">line</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
-    <span class="n">line</span><span class="o">.</span><span class="n">set_markersize</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
-    <span class="n">line</span><span class="o">.</span><span class="n">set_markeredgewidth</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>(<a class="reference external" href="../mpl_examples/pyplots/fig_axes_customize_simple.py">Source code</a>, <a class="reference external" href="../mpl_examples/pyplots/fig_axes_customize_simple.png">png</a>, <a class="reference external" href="../mpl_examples/pyplots/fig_axes_customize_simple.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../_images/fig_axes_customize_simple.png" src="../_images/fig_axes_customize_simple.png" />
+<div class="figure align-center" id="id7">
+<a class="reference external image-reference" href="../gallery/pyplots/fig_axes_customize_simple.html"><img alt="../_images/sphx_glr_fig_axes_customize_simple_0011.png" src="../_images/sphx_glr_fig_axes_customize_simple_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Fig Axes Customize Simple</span></p>
 </div>
 </div>
 <div class="section" id="tick-containers">
@@ -925,37 +891,9 @@ the right labels and ticks are on for the y-axis.</p>
 </table>
 <p>Here is an example which sets the formatter for the right side ticks with
 dollar signs and colors them green on the right side of the yaxis</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">============</span>
-<span class="sd">Dollar Ticks</span>
-<span class="sd">============</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.ticker</span> <span class="kn">as</span> <span class="nn">ticker</span>
-
-<span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
-
-<span class="n">formatter</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">FormatStrFormatter</span><span class="p">(</span><span class="s1">&#39;$</span><span class="si">%1.2f</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">tick</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">get_major_ticks</span><span class="p">():</span>
-    <span class="n">tick</span><span class="o">.</span><span class="n">label1On</span> <span class="o">=</span> <span class="bp">False</span>
-    <span class="n">tick</span><span class="o">.</span><span class="n">label2On</span> <span class="o">=</span> <span class="bp">True</span>
-    <span class="n">tick</span><span class="o">.</span><span class="n">label2</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>(<a class="reference external" href="../mpl_examples/pyplots/dollar_ticks.py">Source code</a>, <a class="reference external" href="../mpl_examples/pyplots/dollar_ticks.png">png</a>, <a class="reference external" href="../mpl_examples/pyplots/dollar_ticks.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../_images/dollar_ticks.png" src="../_images/dollar_ticks.png" />
+<div class="figure align-center" id="id8">
+<a class="reference external image-reference" href="../gallery/pyplots/dollar_ticks.html"><img alt="../_images/sphx_glr_dollar_ticks_0011.png" src="../_images/sphx_glr_dollar_ticks_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Dollar Ticks</span></p>
 </div>
 </div>
 </div>

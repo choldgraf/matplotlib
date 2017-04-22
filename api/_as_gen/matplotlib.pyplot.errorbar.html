@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.errorbar &mdash; Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation</title>
+    <title>matplotlib.pyplot.errorbar &mdash; Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5121.dev0+g5241b2f3a',
+        VERSION:     '2.0.0b1.post5124.dev0+g974b6129a',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation"
+          title="Search within Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5121.dev0+g5241b2f3a documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation" href="../../index.html" />
     <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
     <link rel="next" title="matplotlib.pyplot.eventplot" href="matplotlib.pyplot.eventplot.html" />
     <link rel="prev" title="matplotlib.pyplot.draw_if_interactive" href="matplotlib.pyplot.draw_if_interactive.html" /> 
@@ -236,7 +236,7 @@ shows all data points.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
 <tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first"><strong>kwargs</strong> : All other keyword arguments are passed on to the plot</p>
-<blockquote class="last">
+<blockquote>
 <div><blockquote>
 <div><p>command for the markers. For example, this code makes big red
 squares with thick green edges:</p>
@@ -387,24 +387,19 @@ and markeredgewidth.</p>
 </tbody>
 </table>
 </div></blockquote>
+<p><strong>.. note::</strong></p>
+<blockquote class="last">
+<div><p>In addition to the above described arguments, this function can take a
+<strong>data</strong> keyword argument. If such a <strong>data</strong> argument is given, the
+following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>
+<ul class="simple">
+<li>All arguments with the following names: &#8216;x&#8217;, &#8216;xerr&#8217;, &#8216;y&#8217;, &#8216;yerr&#8217;.</li>
+</ul>
+</div></blockquote>
 </td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
-<p>(<a class="reference external" href="../../gallery/statistics/errorbar.py">Source code</a>, <a class="reference external" href="../../gallery/statistics/errorbar.png">png</a>, <a class="reference external" href="../../gallery/statistics/errorbar.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../_images/errorbar.png" src="../../_images/errorbar.png" />
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>In addition to the above described arguments, this function can take a
-<strong>data</strong> keyword argument. If such a <strong>data</strong> argument is given, the
-following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>
-<ul class="last simple">
-<li>All arguments with the following names: &#8216;x&#8217;, &#8216;xerr&#8217;, &#8216;y&#8217;, &#8216;yerr&#8217;.</li>
-</ul>
-</div>
 </dd></dl>
 
 <div class="section" id="examples-using-matplotlib-pyplot-errorbar">
