@@ -1,8 +1,8 @@
 :orphan:
 
-.. _gallery:
-
 .. _examples-index:
+
+.. _gallery:
 
 Gallery
 =======
@@ -7350,9 +7350,9 @@ Pylab Examples
 
 .. only:: html
 
-    .. figure:: /gallery/pylab_examples/images/thumb/sphx_glr_demo_text_path_thumb.png
+    .. figure:: /gallery/pylab_examples/images/thumb/sphx_glr_demo_text_path_sgskip_thumb.png
 
-        :ref:`sphx_glr_gallery_pylab_examples_demo_text_path.py`
+        :ref:`sphx_glr_gallery_pylab_examples_demo_text_path_sgskip.py`
 
 .. raw:: html
 
@@ -7362,7 +7362,7 @@ Pylab Examples
 .. toctree::
    :hidden:
 
-   /gallery/pylab_examples/demo_text_path
+   /gallery/pylab_examples/demo_text_path_sgskip
 
 .. raw:: html
 
@@ -10515,9 +10515,9 @@ Userdemo
 
 .. only:: html
 
-    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_pgf_texsystem_thumb.png
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_pgf_texsystem_sgskip_thumb.png
 
-        :ref:`sphx_glr_gallery_userdemo_pgf_texsystem.py`
+        :ref:`sphx_glr_gallery_userdemo_pgf_texsystem_sgskip.py`
 
 .. raw:: html
 
@@ -10527,7 +10527,7 @@ Userdemo
 .. toctree::
    :hidden:
 
-   /gallery/userdemo/pgf_texsystem
+   /gallery/userdemo/pgf_texsystem_sgskip
 
 .. raw:: html
 
@@ -10535,9 +10535,9 @@ Userdemo
 
 .. only:: html
 
-    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_pgf_fonts_thumb.png
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_pgf_fonts_sgskip_thumb.png
 
-        :ref:`sphx_glr_gallery_userdemo_pgf_fonts.py`
+        :ref:`sphx_glr_gallery_userdemo_pgf_fonts_sgskip.py`
 
 .. raw:: html
 
@@ -10547,7 +10547,7 @@ Userdemo
 .. toctree::
    :hidden:
 
-   /gallery/userdemo/pgf_fonts
+   /gallery/userdemo/pgf_fonts_sgskip
 
 .. raw:: html
 
