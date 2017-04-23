@@ -145,7 +145,7 @@ units.  This behavior is available only for the LineCollection.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.167 seconds)
+**Total running time of the script:** ( 0 minutes  0.215 seconds)
 
 
 

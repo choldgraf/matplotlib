@@ -38,7 +38,7 @@ Multicursor
     multi = MultiCursor(fig.canvas, (ax1, ax2), color='r', lw=1)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.094 seconds)
+**Total running time of the script:** ( 0 minutes  0.165 seconds)
 
 
 

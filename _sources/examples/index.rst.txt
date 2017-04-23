@@ -64,5 +64,7 @@ Matplotlib Examples
 
     user_interfaces/index.rst
 
+    userdemo/index.rst
+
     widgets/index.rst
 

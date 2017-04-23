@@ -50,7 +50,7 @@ See :meth:`matplotlib.collections.BrokenBarHCollection.span_where`
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.070 seconds)
+**Total running time of the script:** ( 0 minutes  0.095 seconds)
 
 
 

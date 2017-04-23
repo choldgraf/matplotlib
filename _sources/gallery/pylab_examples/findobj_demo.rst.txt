@@ -55,7 +55,7 @@ Recursively find all objects that match some criteria
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.076 seconds)
+**Total running time of the script:** ( 0 minutes  0.100 seconds)
 
 
 

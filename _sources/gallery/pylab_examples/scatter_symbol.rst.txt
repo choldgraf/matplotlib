@@ -39,7 +39,7 @@ Scatter Symbol
     plt.legend(loc=2)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.053 seconds)
+**Total running time of the script:** ( 0 minutes  0.075 seconds)
 
 
 

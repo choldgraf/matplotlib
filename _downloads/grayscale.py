@@ -1,41 +1,58 @@
-"""
-=====================
-Grayscale style sheet
-=====================
+'''
+==================================
+Grayscale version of the colormaps
+==================================
 
-This example demonstrates the "grayscale" style sheet, which changes all colors
-that are defined as rc parameters to grayscale. Note, however, that not all
-plot elements default to colors defined by an rc parameter.
+Show what Matplotlib colormaps look like in grayscale.
+Uses lightness L* as a proxy for grayscale value.
+'''
 
-"""
 import numpy as np
+import matplotlib as mpl
 import matplotlib.pyplot as plt
+from matplotlib import cm
+from colorspacious import cspace_converter
+from colormaps import cmaps  # the colormaps, grouped by category
 
-# Fixing random state for reproducibility
-np.random.seed(19680801)
+mpl.rcParams.update({'font.size': 14})
 
+# Indices to step through colormap.
+x = np.linspace(0.0, 1.0, 100)
 
-def color_cycle_example(ax):
-    L = 6
-    x = np.linspace(0, L)
-    ncolors = len(plt.rcParams['axes.prop_cycle'])
-    shift = np.linspace(0, L, ncolors, endpoint=False)
-    for s in shift:
-        ax.plot(x, np.sin(x + s), 'o-')
-
-
-def image_and_patch_example(ax):
-    ax.imshow(np.random.random(size=(20, 20)), interpolation='none')
-    c = plt.Circle((5, 5), radius=5, label='patch')
-    ax.add_patch(c)
+gradient = np.linspace(0, 1, 256)
+gradient = np.vstack((gradient, gradient))
 
 
-plt.style.use('grayscale')
+def plot_color_gradients(cmap_category, cmap_list):
+    fig, axes = plt.subplots(nrows=len(cmap_list), ncols=2)
+    fig.subplots_adjust(top=0.95, bottom=0.01, left=0.2, right=0.99,
+                        wspace=0.05)
+    fig.suptitle(cmap_category + ' colormaps', fontsize=14, y=1.0, x=0.6)
 
-fig, (ax1, ax2) = plt.subplots(ncols=2)
-fig.suptitle("'grayscale' style sheet")
+    for ax, name in zip(axes, cmap_list):
 
-color_cycle_example(ax1)
-image_and_patch_example(ax2)
+        # Get RGB values for colormap.
+        rgb = cm.get_cmap(plt.get_cmap(name))(x)[np.newaxis,:,:3]
 
-plt.show()
+        # Get colormap in CAM02-UCS colorspace. We want the lightness.
+        lab = cspace_converter("sRGB1", "CAM02-UCS")(rgb)
+        L = lab[0,:,0]
+        L = np.float32(np.vstack((L, L, L)))
+
+        ax[0].imshow(gradient, aspect='auto', cmap=plt.get_cmap(name))
+        ax[1].imshow(L, aspect='auto', cmap='binary_r', vmin=0., vmax=100.)
+        pos = list(ax[0].get_position().bounds)
+        x_text = pos[0] - 0.01
+        y_text = pos[1] + pos[3]/2.
+        fig.text(x_text, y_text, name, va='center', ha='right', fontsize=10)
+
+    # Turn off *all* ticks & spines, not just the ones with colormaps.
+    for ax in axes.flat:
+        ax.set_axis_off()
+
+    plt.show()
+
+
+for cmap_category, cmap_list in cmaps:
+
+    plot_color_gradients(cmap_category, cmap_list)

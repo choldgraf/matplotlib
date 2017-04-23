@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>New in matplotlib 1.0 &mdash; Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation</title>
+    <title>New in matplotlib 1.0 &mdash; Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5124.dev0+g974b6129a',
+        VERSION:     '2.0.0b1.post5130.dev0+g618ca992d',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation"
+          title="Search within Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation" href="../../index.html" />
     <link rel="up" title="What’s new in matplotlib" href="../whats_new.html" />
     <link rel="next" title="New in matplotlib 1.1" href="whats_new_1.1.html" />
     <link rel="prev" title="New in matplotlib 0.99" href="whats_new_0.99.html" /> 
@@ -151,27 +151,27 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
           <div class="body">
             
   <div class="section" id="new-in-matplotlib-1-0">
-<span id="whats-new-1-0"></span><h1><a class="toc-backref" href="#id3">New in matplotlib 1.0</a><a class="headerlink" href="#new-in-matplotlib-1-0" title="Permalink to this headline">¶</a></h1>
+<span id="whats-new-1-0"></span><h1><a class="toc-backref" href="#id4">New in matplotlib 1.0</a><a class="headerlink" href="#new-in-matplotlib-1-0" title="Permalink to this headline">¶</a></h1>
 <div class="contents topic" id="table-of-contents">
 <p class="topic-title first">Table of Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#new-in-matplotlib-1-0" id="id3">New in matplotlib 1.0</a><ul>
-<li><a class="reference internal" href="#html5-canvas-backend" id="id4">HTML5/Canvas backend</a></li>
-<li><a class="reference internal" href="#sophisticated-subplot-grid-layout" id="id5">Sophisticated subplot grid layout</a></li>
-<li><a class="reference internal" href="#easy-pythonic-subplots" id="id6">Easy pythonic subplots</a></li>
-<li><a class="reference internal" href="#contour-fixes-and-and-triplot" id="id7">Contour fixes and and triplot</a></li>
-<li><a class="reference internal" href="#multiple-calls-to-show-supported" id="id8">multiple calls to show supported</a></li>
-<li><a class="reference internal" href="#mplot3d-graphs-can-be-embedded-in-arbitrary-axes" id="id9">mplot3d graphs can be embedded in arbitrary axes</a></li>
-<li><a class="reference internal" href="#tick-params" id="id10">tick_params</a></li>
-<li><a class="reference internal" href="#lots-of-performance-and-feature-enhancements" id="id11">Lots of performance and feature enhancements</a></li>
-<li><a class="reference internal" href="#much-improved-software-carpentry" id="id12">Much improved software carpentry</a></li>
-<li><a class="reference internal" href="#bugfix-marathon" id="id13">Bugfix marathon</a></li>
+<li><a class="reference internal" href="#new-in-matplotlib-1-0" id="id4">New in matplotlib 1.0</a><ul>
+<li><a class="reference internal" href="#html5-canvas-backend" id="id5">HTML5/Canvas backend</a></li>
+<li><a class="reference internal" href="#sophisticated-subplot-grid-layout" id="id6">Sophisticated subplot grid layout</a></li>
+<li><a class="reference internal" href="#easy-pythonic-subplots" id="id7">Easy pythonic subplots</a></li>
+<li><a class="reference internal" href="#contour-fixes-and-and-triplot" id="id8">Contour fixes and and triplot</a></li>
+<li><a class="reference internal" href="#multiple-calls-to-show-supported" id="id9">multiple calls to show supported</a></li>
+<li><a class="reference internal" href="#mplot3d-graphs-can-be-embedded-in-arbitrary-axes" id="id10">mplot3d graphs can be embedded in arbitrary axes</a></li>
+<li><a class="reference internal" href="#tick-params" id="id11">tick_params</a></li>
+<li><a class="reference internal" href="#lots-of-performance-and-feature-enhancements" id="id12">Lots of performance and feature enhancements</a></li>
+<li><a class="reference internal" href="#much-improved-software-carpentry" id="id13">Much improved software carpentry</a></li>
+<li><a class="reference internal" href="#bugfix-marathon" id="id14">Bugfix marathon</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="html5-canvas-backend">
-<span id="whats-new-html5"></span><h2><a class="toc-backref" href="#id4">HTML5/Canvas backend</a><a class="headerlink" href="#html5-canvas-backend" title="Permalink to this headline">¶</a></h2>
+<span id="whats-new-html5"></span><h2><a class="toc-backref" href="#id5">HTML5/Canvas backend</a><a class="headerlink" href="#html5-canvas-backend" title="Permalink to this headline">¶</a></h2>
 <p>Simon Ratcliffe and Ludwig Schwardt have released an <a class="reference external" href="http://code.google.com/p/mplh5canvas/">HTML5/Canvas</a> backend for matplotlib.  The
 backend is almost feature complete, and they have done a lot of work
 comparing their html5 rendered images with our core renderer Agg.  The
@@ -179,17 +179,17 @@ backend features client/server interactive navigation of matplotlib
 figures in an html5 compliant browser.</p>
 </div>
 <div class="section" id="sophisticated-subplot-grid-layout">
-<h2><a class="toc-backref" href="#id5">Sophisticated subplot grid layout</a><a class="headerlink" href="#sophisticated-subplot-grid-layout" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Sophisticated subplot grid layout</a><a class="headerlink" href="#sophisticated-subplot-grid-layout" title="Permalink to this headline">¶</a></h2>
 <p>Jae-Joon Lee has written <a class="reference internal" href="../../api/gridspec_api.html#module-matplotlib.gridspec" title="matplotlib.gridspec"><code class="xref py py-mod docutils literal"><span class="pre">gridspec</span></code></a>, a new module for
 doing complex subplot layouts, featuring row and column spans and
 more.  See <a class="reference internal" href="../gridspec.html#gridspec-guide"><span class="std std-ref">Customizing Location of Subplot Using GridSpec</span></a> for a tutorial overview.</p>
-<p>(<a class="reference external" href="../../users/plotting/examples/demo_gridspec01.py">Source code</a>, <a class="reference external" href="../../users/plotting/examples/demo_gridspec01.png">png</a>, <a class="reference external" href="../../users/plotting/examples/demo_gridspec01.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../_images/demo_gridspec011.png" src="../../_images/demo_gridspec011.png" />
+<div class="figure align-center" id="id1">
+<a class="reference external image-reference" href="../../gallery/userdemo/demo_gridspec01.html"><img alt="../../_images/sphx_glr_demo_gridspec01_0002.png" src="../../_images/sphx_glr_demo_gridspec01_0002.png" style="width: 320.0px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Demo Gridspec01</span></p>
 </div>
 </div>
 <div class="section" id="easy-pythonic-subplots">
-<h2><a class="toc-backref" href="#id6">Easy pythonic subplots</a><a class="headerlink" href="#easy-pythonic-subplots" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Easy pythonic subplots</a><a class="headerlink" href="#easy-pythonic-subplots" title="Permalink to this headline">¶</a></h2>
 <p>Fernando Perez got tired of all the boilerplate code needed to create a
 figure and multiple subplots when using the matplotlib API, and wrote
 a <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="matplotlib.pyplot.subplots"><code class="xref py py-func docutils literal"><span class="pre">subplots()</span></code></a> helper function.  Basic usage
@@ -202,7 +202,7 @@ indexing (starts with 0).  e.g.:</p>
 <p>See <a class="reference internal" href="../../examples/pylab_examples/subplots_demo.html#pylab-examples-subplots-demo"><span class="std std-ref">pylab_examples example code: subplots_demo.py</span></a> for several code examples.</p>
 </div>
 <div class="section" id="contour-fixes-and-and-triplot">
-<h2><a class="toc-backref" href="#id7">Contour fixes and and triplot</a><a class="headerlink" href="#contour-fixes-and-and-triplot" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Contour fixes and and triplot</a><a class="headerlink" href="#contour-fixes-and-and-triplot" title="Permalink to this headline">¶</a></h2>
 <p>Ian Thomas has fixed a long-standing bug that has vexed our most
 talented developers for years.  <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.contourf.html#matplotlib.pyplot.contourf" title="matplotlib.pyplot.contourf"><code class="xref py py-func docutils literal"><span class="pre">contourf()</span></code></a>
 now handles interior masked regions, and the boundaries of line and
@@ -210,13 +210,13 @@ filled contours coincide.</p>
 <p>Additionally, he has contributed a new module <a class="reference internal" href="../../api/tri_api.html#module-matplotlib.tri" title="matplotlib.tri"><code class="xref py py-mod docutils literal"><span class="pre">tri</span></code></a> and
 helper function <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.triplot.html#matplotlib.pyplot.triplot" title="matplotlib.pyplot.triplot"><code class="xref py py-func docutils literal"><span class="pre">triplot()</span></code></a> for creating and
 plotting unstructured triangular grids.</p>
-<div class="figure align-center" id="id1">
+<div class="figure align-center" id="id2">
 <a class="reference external image-reference" href="../../gallery/pylab_examples/triplot_demo.html"><img alt="../../_images/sphx_glr_triplot_demo_0011.png" src="../../_images/sphx_glr_triplot_demo_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
 <p class="caption"><span class="caption-text">Triplot Demo</span></p>
 </div>
 </div>
 <div class="section" id="multiple-calls-to-show-supported">
-<h2><a class="toc-backref" href="#id8">multiple calls to show supported</a><a class="headerlink" href="#multiple-calls-to-show-supported" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">multiple calls to show supported</a><a class="headerlink" href="#multiple-calls-to-show-supported" title="Permalink to this headline">¶</a></h2>
 <p>A long standing request is to support multiple calls to
 <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><code class="xref py py-func docutils literal"><span class="pre">show()</span></code></a>.  This has been difficult because it
 is hard to get consistent behavior across operating systems, user
@@ -231,25 +231,25 @@ the <a class="reference external" href="https://mail.python.org/mailman/listinfo
 and <a class="reference external" href="https://github.com/matplotlib/matplotlib/issues">bug tracker</a>.</p>
 </div>
 <div class="section" id="mplot3d-graphs-can-be-embedded-in-arbitrary-axes">
-<h2><a class="toc-backref" href="#id9">mplot3d graphs can be embedded in arbitrary axes</a><a class="headerlink" href="#mplot3d-graphs-can-be-embedded-in-arbitrary-axes" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">mplot3d graphs can be embedded in arbitrary axes</a><a class="headerlink" href="#mplot3d-graphs-can-be-embedded-in-arbitrary-axes" title="Permalink to this headline">¶</a></h2>
 <p>You can now place an mplot3d graph into an arbitrary axes location,
 supporting mixing of 2D and 3D graphs in the same figure, and/or
 multiple 3D graphs in a single figure, using the &#8220;projection&#8221; keyword
 argument to add_axes or add_subplot.  Thanks Ben Root.</p>
-<div class="figure align-center" id="id2">
+<div class="figure align-center" id="id3">
 <a class="reference external image-reference" href="../../gallery/pyplots/whats_new_1_subplot3d.html"><img alt="../../_images/sphx_glr_whats_new_1_subplot3d_0011.png" src="../../_images/sphx_glr_whats_new_1_subplot3d_0011.png" style="width: 320.0px; height: 240.0px;" /></a>
 <p class="caption"><span class="caption-text">Whats New 1 Subplot3d</span></p>
 </div>
 </div>
 <div class="section" id="tick-params">
-<h2><a class="toc-backref" href="#id10">tick_params</a><a class="headerlink" href="#tick-params" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">tick_params</a><a class="headerlink" href="#tick-params" title="Permalink to this headline">¶</a></h2>
 <p>Eric Firing wrote tick_params, a convenience method for changing the
 appearance of ticks and tick labels. See pyplot function
 <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.tick_params.html#matplotlib.pyplot.tick_params" title="matplotlib.pyplot.tick_params"><code class="xref py py-func docutils literal"><span class="pre">tick_params()</span></code></a> and associated Axes method
 <a class="reference internal" href="../../api/_as_gen/matplotlib.axes.Axes.tick_params.html#matplotlib.axes.Axes.tick_params" title="matplotlib.axes.Axes.tick_params"><code class="xref py py-meth docutils literal"><span class="pre">tick_params()</span></code></a>.</p>
 </div>
 <div class="section" id="lots-of-performance-and-feature-enhancements">
-<h2><a class="toc-backref" href="#id11">Lots of performance and feature enhancements</a><a class="headerlink" href="#lots-of-performance-and-feature-enhancements" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Lots of performance and feature enhancements</a><a class="headerlink" href="#lots-of-performance-and-feature-enhancements" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Faster magnification of large images, and the ability to zoom in to
 a single pixel</li>
@@ -261,7 +261,7 @@ throughout the API</li>
 </ul>
 </div>
 <div class="section" id="much-improved-software-carpentry">
-<h2><a class="toc-backref" href="#id12">Much improved software carpentry</a><a class="headerlink" href="#much-improved-software-carpentry" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Much improved software carpentry</a><a class="headerlink" href="#much-improved-software-carpentry" title="Permalink to this headline">¶</a></h2>
 <p>The matplotlib trunk is probably in as good a shape as it has ever
 been, thanks to improved <a class="reference external" href="http://software-carpentry.org/">software carpentry</a>.  We now have a <a class="reference external" href="http://buildbot.net/trac">buildbot</a> which runs a suite of <a class="reference external" href="http://code.google.com/p/python-nose/">nose</a> regression tests on every
 svn commit, auto-generating a set of images and comparing them against
@@ -273,7 +273,7 @@ Thanks to Andrew Straw, Michael Droettboom and other matplotlib
 developers for the heavy lifting.</p>
 </div>
 <div class="section" id="bugfix-marathon">
-<h2><a class="toc-backref" href="#id13">Bugfix marathon</a><a class="headerlink" href="#bugfix-marathon" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">Bugfix marathon</a><a class="headerlink" href="#bugfix-marathon" title="Permalink to this headline">¶</a></h2>
 <p>Eric Firing went on a bug fixing and closing marathon, closing over
 100 bugs on the <a class="reference external" href="http://sourceforge.net/tracker/?group_id=80706&amp;atid=560720">bug tracker</a> with
 help from Jae-Joon Lee, Michael Droettboom, Christoph Gohlke and
@@ -290,7 +290,7 @@ Michiel de Hoon.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 21, 2017.
+      Last updated on Apr 23, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

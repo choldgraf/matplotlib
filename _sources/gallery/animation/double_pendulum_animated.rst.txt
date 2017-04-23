@@ -113,7 +113,7 @@ This animation illustrates the double pendulum problem.
     # ani.save('double_pendulum.mp4', fps=15)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.351 seconds)
+**Total running time of the script:** ( 0 minutes  0.367 seconds)
 
 
 

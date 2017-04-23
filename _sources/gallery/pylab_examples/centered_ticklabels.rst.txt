@@ -65,7 +65,7 @@ centered between the ticks
     ax.set_xlabel(str(date[imid].year))
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.103 seconds)
+**Total running time of the script:** ( 0 minutes  0.099 seconds)
 
 
 

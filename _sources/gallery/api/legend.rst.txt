@@ -44,7 +44,7 @@ Notice how the legend labels are defined with the plots!
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.112 seconds)
+**Total running time of the script:** ( 0 minutes  0.076 seconds)
 
 
 

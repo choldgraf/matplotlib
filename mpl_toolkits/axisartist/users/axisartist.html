@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>axisartist namespace &mdash; Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation</title>
+    <title>axisartist namespace &mdash; Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation</title>
     
     <link rel="stylesheet" href="../../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '2.0.0b1.post5124.dev0+g974b6129a',
+        VERSION:     '2.0.0b1.post5130.dev0+g618ca992d',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation"
+          title="Search within Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation"
           href="../../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html"
 />
     <link rel="search" title="Search" href="../../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5124.dev0+g974b6129a documentation" href="../../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation" href="../../../index.html" />
     <link rel="up" title="The Matplotlib axisartist Toolkit User’s Guide" href="index.html" />
     <link rel="next" title="The Matplotlib axisartist Toolkit API" href="../api/index.html" />
     <link rel="prev" title="The Matplotlib axisartist Toolkit User’s Guide" href="index.html" /> 
@@ -185,9 +185,9 @@ gridlines are tied to ticks.</li>
 <li>a curvilinear grid.</li>
 <li>a floating axis</li>
 </ul>
-<p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/examples/demo_floating_axis.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/examples/demo_floating_axis.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/examples/demo_floating_axis.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/demo_floating_axis1.png" src="../../../_images/demo_floating_axis1.png" />
+<div class="figure align-center" id="id1">
+<a class="reference external image-reference" href="../../../gallery/axisartist/demo_floating_axis.html"><img alt="../../../_images/sphx_glr_demo_floating_axis_0012.png" src="../../../_images/sphx_glr_demo_floating_axis_0012.png" style="width: 250.0px; height: 250.0px;" /></a>
+<p class="caption"><span class="caption-text">Demo Floating Axis</span></p>
 </div>
 <p><em>mpl_toolkits.axisartist.Axes</em> class defines a <em>axis</em> attribute, which
 is a dictionary of AxisArtist instances. By default, the dictionary
@@ -346,58 +346,52 @@ using &#8220;set_axis_direction&#8221; method.</p>
 <span class="n">ax1</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;right&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">set_axis_direction</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_direction01.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_direction01.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_direction01.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/simple_axis_direction01.png" src="../../../_images/simple_axis_direction01.png" />
+<div class="figure align-center" id="id2">
+<a class="reference external image-reference" href="../../../gallery/userdemo/simple_axis_direction01.html"><img alt="../../../_images/sphx_glr_simple_axis_direction01_0011.png" src="../../../_images/sphx_glr_simple_axis_direction01_0011.png" style="width: 200.0px; height: 125.0px;" /></a>
+<p class="caption"><span class="caption-text">Simple Axis Direction01</span></p>
 </div>
 <p>The parameter for set_axis_direction is one of [&#8220;left&#8221;, &#8220;right&#8221;,
 &#8220;bottom&#8221;, &#8220;top&#8221;].</p>
 <p>You must understand some underlying concept of directions.</p>
 <blockquote>
-<div><ol class="arabic simple">
-<li>There is a reference direction which is defined as the direction
+<div><ol class="arabic">
+<li><p class="first">There is a reference direction which is defined as the direction
 of the axis line with increasing coordinate.  For example, the
-reference direction of the left x-axis is from bottom to top.</li>
+reference direction of the left x-axis is from bottom to top.</p>
+<div class="figure align-center" id="id3">
+<a class="reference external image-reference" href="../../../gallery/userdemo/axis_direction_demo_step01.html"><img alt="../../../_images/sphx_glr_axis_direction_demo_step01_0011.png" src="../../../_images/sphx_glr_axis_direction_demo_step01_0011.png" style="width: 150.0px; height: 125.0px;" /></a>
+<p class="caption"><span class="caption-text">Axis Direction Demo - Step 01</span></p>
+</div>
+</li>
 </ol>
 <blockquote>
-<div><p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step01.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step01.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step01.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/axis_direction_demo_step01.png" src="../../../_images/axis_direction_demo_step01.png" />
+<div>The direction, text angle, and alignments of the ticks, ticklabels and
+axis-label is determined with respect to the reference direction</div></blockquote>
+<ol class="arabic" start="2">
+<li><p class="first"><em>ticklabel_direction</em> is either the right-hand side (+) of the
+reference direction or the left-hand side (-).</p>
+<div class="figure align-center" id="id4">
+<a class="reference external image-reference" href="../../../gallery/userdemo/axis_direction_demo_step02.html"><img alt="../../../_images/sphx_glr_axis_direction_demo_step02_0011.png" src="../../../_images/sphx_glr_axis_direction_demo_step02_0011.png" style="width: 300.0px; height: 125.0px;" /></a>
+<p class="caption"><span class="caption-text">Axis Direction Demo - Step 02</span></p>
 </div>
-<p>The direction, text angle, and alignments of the ticks, ticklabels and
-axis-label is determined with respect to the reference direction</p>
-</div></blockquote>
-<ol class="arabic simple" start="2">
-<li><em>ticklabel_direction</em> is either the right-hand side (+) of the
-reference direction or the left-hand side (-).</li>
-</ol>
-<blockquote>
-<div><p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step02.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step02.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step02.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/axis_direction_demo_step02.png" src="../../../_images/axis_direction_demo_step02.png" />
+</li>
+<li><p class="first">same for the <em>label_direction</em></p>
+<div class="figure align-center" id="id5">
+<a class="reference external image-reference" href="../../../gallery/userdemo/axis_direction_demo_step03.html"><img alt="../../../_images/sphx_glr_axis_direction_demo_step03_0011.png" src="../../../_images/sphx_glr_axis_direction_demo_step03_0011.png" style="width: 300.0px; height: 125.0px;" /></a>
+<p class="caption"><span class="caption-text">Axis Direction Demo - Step 03</span></p>
 </div>
-</div></blockquote>
-<ol class="arabic simple" start="3">
-<li>same for the <em>label_direction</em></li>
-</ol>
-<blockquote>
-<div><p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step03.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step03.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step03.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/axis_direction_demo_step03.png" src="../../../_images/axis_direction_demo_step03.png" />
-</div>
-</div></blockquote>
-<ol class="arabic simple" start="4">
-<li>ticks are by default drawn toward the opposite direction of the ticklabels.</li>
-<li>text rotation of ticklabels and label is determined in reference
+</li>
+<li><p class="first">ticks are by default drawn toward the opposite direction of the ticklabels.</p>
+</li>
+<li><p class="first">text rotation of ticklabels and label is determined in reference
 to the <em>ticklabel_direction</em> or <em>label_direction</em>,
-respectively. The rotation of ticklabels and label is anchored.</li>
-</ol>
-<blockquote>
-<div><p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step04.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step04.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/axis_direction_demo_step04.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/axis_direction_demo_step04.png" src="../../../_images/axis_direction_demo_step04.png" />
+respectively. The rotation of ticklabels and label is anchored.</p>
+<div class="figure align-center" id="id6">
+<a class="reference external image-reference" href="../../../gallery/userdemo/axis_direction_demo_step04.html"><img alt="../../../_images/sphx_glr_axis_direction_demo_step04_0011.png" src="../../../_images/sphx_glr_axis_direction_demo_step04_0011.png" style="width: 300.0px; height: 125.0px;" /></a>
+<p class="caption"><span class="caption-text">Axis Direction Demo - Step 04</span></p>
 </div>
-</div></blockquote>
+</li>
+</ol>
 </div></blockquote>
 <p>On the other hand, there is a concept of &#8220;axis_direction&#8221;. This is a
 default setting of above properties for each, &#8220;bottom&#8221;, &#8220;left&#8221;, &#8220;top&#8221;,
@@ -482,9 +476,9 @@ and &#8220;right&#8221; axis.</p>
 <p>And, &#8216;set_axis_direction(&#8220;top&#8221;)&#8217; means to adjust the text rotation
 etc, for settings suitable for &#8220;top&#8221; axis. The concept of axis
 direction can be more clear with curved axis.</p>
-<p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/demo_axis_direction.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/demo_axis_direction.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/demo_axis_direction.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/demo_axis_direction.png" src="../../../_images/demo_axis_direction.png" />
+<div class="figure align-center" id="id7">
+<a class="reference external image-reference" href="../../../gallery/userdemo/demo_axis_direction.html"><img alt="../../../_images/sphx_glr_demo_axis_direction_0011.png" src="../../../_images/sphx_glr_demo_axis_direction_0011.png" style="width: 400.0px; height: 200.0px;" /></a>
+<p class="caption"><span class="caption-text">Demo Axis Direction</span></p>
 </div>
 <p>The axis_direction can be adjusted in the AxisArtist level, or in the
 level of its child arists, i.e., ticks, ticklabels, and axis-label.</p>
@@ -512,9 +506,9 @@ default direction).</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">[:]</span><span class="o">.</span><span class="n">major_ticks</span><span class="o">.</span><span class="n">set_tick_out</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_direction03.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_direction03.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_direction03.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/simple_axis_direction03.png" src="../../../_images/simple_axis_direction03.png" />
+<div class="figure align-center" id="id8">
+<a class="reference external image-reference" href="../../../gallery/userdemo/simple_axis_direction03.html"><img alt="../../../_images/sphx_glr_simple_axis_direction03_0011.png" src="../../../_images/sphx_glr_simple_axis_direction03_0011.png" style="width: 250.0px; height: 100.0px;" /></a>
+<p class="caption"><span class="caption-text">Simple Axis Direction03</span></p>
 </div>
 <p>So, in summary,</p>
 <blockquote>
@@ -564,9 +558,9 @@ default direction).</p>
 <div class="section" id="adjusting-ticklabels-alignment">
 <h3>Adjusting ticklabels alignment<a class="headerlink" href="#adjusting-ticklabels-alignment" title="Permalink to this headline">¶</a></h3>
 <p>Alignment of TickLabels are treated specially. See below</p>
-<p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/demo_ticklabel_alignment.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/demo_ticklabel_alignment.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/demo_ticklabel_alignment.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/demo_ticklabel_alignment.png" src="../../../_images/demo_ticklabel_alignment.png" />
+<div class="figure align-center" id="id9">
+<a class="reference external image-reference" href="../../../gallery/userdemo/demo_ticklabel_alignment.html"><img alt="../../../_images/sphx_glr_demo_ticklabel_alignment_0011.png" src="../../../_images/sphx_glr_demo_ticklabel_alignment_0011.png" style="width: 150.0px; height: 250.0px;" /></a>
+<p class="caption"><span class="caption-text">Demo Ticklabel Alignment</span></p>
 </div>
 </div>
 <div class="section" id="adjusting-pad">
@@ -579,9 +573,9 @@ default direction).</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">set_pad</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_pad.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_pad.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/figures/simple_axis_pad.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/simple_axis_pad.png" src="../../../_images/simple_axis_pad.png" />
+<div class="figure align-center" id="id10">
+<a class="reference external image-reference" href="../../../gallery/userdemo/simple_axis_pad.html"><img alt="../../../_images/sphx_glr_simple_axis_pad_0011.png" src="../../../_images/sphx_glr_simple_axis_pad_0011.png" style="width: 450.0px; height: 150.0px;" /></a>
+<p class="caption"><span class="caption-text">Simple Axis Pad</span></p>
 </div>
 </div>
 </div>
@@ -670,9 +664,9 @@ coordinates, or you may use Parasite Axes for convenience.:</p>
 <span class="n">ax1</span><span class="o">.</span><span class="n">parasites</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ax2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>(<a class="reference external" href="../../../mpl_toolkits/axisartist/examples/demo_curvelinear_grid.py">Source code</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/examples/demo_curvelinear_grid.png">png</a>, <a class="reference external" href="../../../mpl_toolkits/axisartist/examples/demo_curvelinear_grid.pdf">pdf</a>)</p>
-<div class="figure">
-<img alt="../../../_images/demo_curvelinear_grid1.png" src="../../../_images/demo_curvelinear_grid1.png" />
+<div class="figure align-center" id="id11">
+<a class="reference external image-reference" href="../../../gallery/axisartist/demo_curvelinear_grid.html"><img alt="../../../_images/sphx_glr_demo_curvelinear_grid_0012.png" src="../../../_images/sphx_glr_demo_curvelinear_grid_0012.png" style="width: 350.0px; height: 200.0px;" /></a>
+<p class="caption"><span class="caption-text">Demo Curvelinear Grid</span></p>
 </div>
 </div>
 <div class="section" id="floatingaxis">
@@ -716,7 +710,7 @@ given as a coordinate value. ex, a floating axis of x=0 with label at y=1</li>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 21, 2017.
+      Last updated on Apr 23, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

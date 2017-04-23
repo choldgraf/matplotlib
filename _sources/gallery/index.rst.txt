@@ -1160,6 +1160,26 @@ Axes Grid
 
 .. only:: html
 
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_simple_colorbar_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_simple_colorbar.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/simple_colorbar
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
     .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_simple_axesgrid_thumb.png
 
         :ref:`sphx_glr_gallery_axes_grid1_simple_axesgrid.py`
@@ -1173,6 +1193,46 @@ Axes Grid
    :hidden:
 
    /gallery/axes_grid1/simple_axesgrid
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_demo_new_colorbar_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_demo_new_colorbar.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/demo_new_colorbar
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_parasite_simple_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_parasite_simple.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/parasite_simple
 
 .. raw:: html
 
@@ -1200,6 +1260,46 @@ Axes Grid
 
 .. only:: html
 
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_demo_colorbar_with_axes_divider_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_demo_colorbar_with_axes_divider.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/demo_colorbar_with_axes_divider
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_simple_rgb_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_simple_rgb.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/simple_rgb
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
     .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_simple_axesgrid2_thumb.png
 
         :ref:`sphx_glr_gallery_axes_grid1_simple_axesgrid2.py`
@@ -1213,6 +1313,66 @@ Axes Grid
    :hidden:
 
    /gallery/axes_grid1/simple_axesgrid2
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_simple_axes_divider1_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_simple_axes_divider1.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/simple_axes_divider1
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_simple_axes_divider2_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_simple_axes_divider2.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/simple_axes_divider2
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_simple_axes_divider3_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_simple_axes_divider3.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/simple_axes_divider3
 
 .. raw:: html
 
@@ -1260,6 +1420,26 @@ Axes Grid
 
 .. only:: html
 
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_demo_colorbar_of_inset_axes_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_demo_colorbar_of_inset_axes.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/demo_colorbar_of_inset_axes
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
     .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_parasite_simple2_thumb.png
 
         :ref:`sphx_glr_gallery_axes_grid1_parasite_simple2.py`
@@ -1273,6 +1453,26 @@ Axes Grid
    :hidden:
 
    /gallery/axes_grid1/parasite_simple2
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/axes_grid1/images/thumb/sphx_glr_demo_fixed_size_axes_thumb.png
+
+        :ref:`sphx_glr_gallery_axes_grid1_demo_fixed_size_axes.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/axes_grid1/demo_fixed_size_axes
 
 .. raw:: html
 
@@ -1676,6 +1876,46 @@ Color
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/color/images/thumb/sphx_glr_colormaps_thumb.png
+
+        :ref:`sphx_glr_gallery_color_colormaps.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/color/colormaps
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Show what Matplotlib colormaps look like in grayscale. Uses lightness L* as a proxy for graysca...">
+
+.. only:: html
+
+    .. figure:: /gallery/color/images/thumb/sphx_glr_grayscale_thumb.png
+
+        :ref:`sphx_glr_gallery_color_grayscale.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/color/grayscale
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Reference for colormaps included with Matplotlib.">
 
 .. only:: html
@@ -1693,6 +1933,26 @@ Color
    :hidden:
 
    /gallery/color/colormaps_reference
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="For each colormap, plot the lightness parameter L* from CIELAB colorspace along the y axis vs i...">
+
+.. only:: html
+
+    .. figure:: /gallery/color/images/thumb/sphx_glr_lightness_thumb.png
+
+        :ref:`sphx_glr_gallery_color_lightness.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/color/lightness
 .. raw:: html
 
     <div style='clear:both'></div>
@@ -7905,6 +8165,38 @@ Pyplot Examples
 
     <div style='clear:both'></div>
 
+.. _scales_examples:
+
+Scales in Matplotlib
+====================
+
+These examples cover how different scales are handled in Matplotlib.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Illustrate the scale transformations applied to axes, e.g. log, symlog, logit. ">
+
+.. only:: html
+
+    .. figure:: /gallery/scales/images/thumb/sphx_glr_scales_thumb.png
+
+        :ref:`sphx_glr_gallery_scales_scales.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/scales/scales
+.. raw:: html
+
+    <div style='clear:both'></div>
+
 .. _shapes_and_collections_examples:
 
 
@@ -9026,6 +9318,219 @@ Ticks and spines
 
     <div style='clear:both'></div>
 
+.. _units_examples:
+
+Units in Matplotlib
+===================
+
+These examples cover the many representations of units
+in Matplotlib.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot with radians from the basic_units mockup example package.">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_radian_demo_thumb.png
+
+        :ref:`sphx_glr_gallery_units_radian_demo.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/radian_demo
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The example illustrates the ability to override default x and y units (ax1) to inches and centi...">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_units_sample_thumb.png
+
+        :ref:`sphx_glr_gallery_units_units_sample.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/units_sample
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="basic_units is a mockup of a true units package used for testing purposed, which illustrates th...">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_units_scatter_thumb.png
+
+        :ref:`sphx_glr_gallery_units_units_scatter.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/units_scatter
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="A plot using a variety of centimetre and inch conversions. This example shows how default unit ...">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_bar_demo2_thumb.png
+
+        :ref:`sphx_glr_gallery_units_bar_demo2.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/bar_demo2
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The example illustrates how to create text and arrow annotations using a centimeter-scale plot.">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_annotate_with_units_thumb.png
+
+        :ref:`sphx_glr_gallery_units_annotate_with_units.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/annotate_with_units
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This is the same example as <a href='http://matplotlib.org/examples/api/barchart_demo.html'> th...">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_bar_unit_demo_thumb.png
+
+        :ref:`sphx_glr_gallery_units_bar_unit_demo.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/bar_unit_demo
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Test unit support with each of the Matplotlib primitive artist types.">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_artist_tests_thumb.png
+
+        :ref:`sphx_glr_gallery_units_artist_tests.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/artist_tests
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Compare the ellipse generated with arcs versus a polygonal approximation ">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_ellipse_with_units_thumb.png
+
+        :ref:`sphx_glr_gallery_units_ellipse_with_units.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/ellipse_with_units
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="A mockup "Foo" units class which supports conversion and different tick formatting depending on...">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_evans_test_thumb.png
+
+        :ref:`sphx_glr_gallery_units_evans_test.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/evans_test
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/units/images/thumb/sphx_glr_basic_units_thumb.png
+
+        :ref:`sphx_glr_gallery_units_basic_units.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/units/basic_units
+.. raw:: html
+
+    <div style='clear:both'></div>
+
 .. _user_interfaces:
 
 Embedding matplotlib in graphical user interfaces
@@ -9601,6 +10106,1016 @@ the API.
    :hidden:
 
    /gallery/user_interfaces/interactive_sgskip
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+.. _userdemo:
+
+Userdemo
+========
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_axisline3_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_axisline3.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_axisline3
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_simple01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_simple01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_simple01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_anchored_box01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_anchored_box01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/anchored_box01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_simple02_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_simple02.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_simple02
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_anchored_box03_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_anchored_box03.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/anchored_box03
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_legend02_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_legend02.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_legend02
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_axis_direction01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_axis_direction01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_axis_direction01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_anchored_box02_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_anchored_box02.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/anchored_box02
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_simple_coord01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_simple_coord01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_simple_coord01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_axis_direction_demo_step01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_axis_direction_demo_step01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/axis_direction_demo_step01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_simple03_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_simple03.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_simple03
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_legend01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_legend01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_legend01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_simple_coord02_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_simple_coord02.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_simple_coord02
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_axisartist1_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_axisartist1.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_axisartist1
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_gridspec01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_gridspec01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_gridspec01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_axis_direction03_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_axis_direction03.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_axis_direction03
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_gridspec05_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_gridspec05.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_gridspec05
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_axisline2_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_axisline2.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_axisline2
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_gridspec02_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_gridspec02.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_gridspec02
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_pgf_texsystem_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_pgf_texsystem.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/pgf_texsystem
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_pgf_fonts_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_pgf_fonts.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/pgf_fonts
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_simple_coord03_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_simple_coord03.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_simple_coord03
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstration of using norm to map colormaps onto data in non-linear ways. ">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_colormap_normalizations_power_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_colormap_normalizations_power.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/colormap_normalizations_power
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_connect_simple01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_connect_simple01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/connect_simple01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_gridspec03_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_gridspec03.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_gridspec03
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_ticklabel_alignment_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_ticklabel_alignment.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_ticklabel_alignment
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstration of using norm to map colormaps onto data in non-linear ways. ">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_colormap_normalizations_lognorm_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_colormap_normalizations_lognorm.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/colormap_normalizations_lognorm
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_text_arrow_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_text_arrow.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_text_arrow
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_gridspec04_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_gridspec04.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_gridspec04
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_axis_direction_demo_step02_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_axis_direction_demo_step02.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/axis_direction_demo_step02
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstration of using norm to map colormaps onto data in non-linear ways. ">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_colormap_normalizations_symlognorm_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_colormap_normalizations_symlognorm.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/colormap_normalizations_symlognorm
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_simple04_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_simple04.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_simple04
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_pgf_preamble_sgskip_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_pgf_preamble_sgskip.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/pgf_preamble_sgskip
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_axisline_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_axisline.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_axisline
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_anchored_box04_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_anchored_box04.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/anchored_box04
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_axis_direction_demo_step03_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_axis_direction_demo_step03.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/axis_direction_demo_step03
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_gridspec06_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_gridspec06.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_gridspec06
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_custom_boxstyle01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_custom_boxstyle01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/custom_boxstyle01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_ticklabel_direction_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_ticklabel_direction.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_ticklabel_direction
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstration of using norm to map colormaps onto data in non-linear ways. ">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_colormap_normalizations_bounds_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_colormap_normalizations_bounds.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/colormap_normalizations_bounds
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstration of using norm to map colormaps onto data in non-linear ways. ">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_colormap_normalizations_custom_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_colormap_normalizations_custom.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/colormap_normalizations_custom
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_axis_direction_demo_step04_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_axis_direction_demo_step04.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/axis_direction_demo_step04
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_parasite_axes_sgskip_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_parasite_axes_sgskip.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_parasite_axes_sgskip
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_custom_boxstyle02_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_custom_boxstyle02.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/custom_boxstyle02
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_demo_axis_direction_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_demo_axis_direction.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/demo_axis_direction
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_annotate_explain_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_annotate_explain.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/annotate_explain
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_axis_pad_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_axis_pad.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_axis_pad
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_connectionstyle_demo_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_connectionstyle_demo.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/connectionstyle_demo
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_simple_annotate01_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_simple_annotate01.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/simple_annotate01
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstration of using norm to map colormaps onto data in non-linear ways. ">
+
+.. only:: html
+
+    .. figure:: /gallery/userdemo/images/thumb/sphx_glr_colormap_normalizations_thumb.png
+
+        :ref:`sphx_glr_gallery_userdemo_colormap_normalizations.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/userdemo/colormap_normalizations
 .. raw:: html
 
     <div style='clear:both'></div>

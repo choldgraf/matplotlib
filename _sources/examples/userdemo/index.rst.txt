@@ -1,0 +1,64 @@
+.. _userdemo-examples-index:
+
+##############################################
+userdemo Examples
+##############################################
+
+.. htmlonly::
+
+    :Release: |version|
+    :Date: |today|
+
+.. toctree::
+    :maxdepth: 1
+
+    anchored_box01 <anchored_box01.rst>
+    anchored_box02 <anchored_box02.rst>
+    anchored_box03 <anchored_box03.rst>
+    anchored_box04 <anchored_box04.rst>
+    annotate_explain <annotate_explain.rst>
+    annotate_simple01 <annotate_simple01.rst>
+    annotate_simple02 <annotate_simple02.rst>
+    annotate_simple03 <annotate_simple03.rst>
+    annotate_simple04 <annotate_simple04.rst>
+    annotate_simple_coord01 <annotate_simple_coord01.rst>
+    annotate_simple_coord02 <annotate_simple_coord02.rst>
+    annotate_simple_coord03 <annotate_simple_coord03.rst>
+    annotate_text_arrow <annotate_text_arrow.rst>
+    axis_direction_demo_step01 <axis_direction_demo_step01.rst>
+    axis_direction_demo_step02 <axis_direction_demo_step02.rst>
+    axis_direction_demo_step03 <axis_direction_demo_step03.rst>
+    axis_direction_demo_step04 <axis_direction_demo_step04.rst>
+    colormap_normalizations <colormap_normalizations.rst>
+    colormap_normalizations_bounds <colormap_normalizations_bounds.rst>
+    colormap_normalizations_custom <colormap_normalizations_custom.rst>
+    colormap_normalizations_lognorm <colormap_normalizations_lognorm.rst>
+    colormap_normalizations_power <colormap_normalizations_power.rst>
+    colormap_normalizations_symlognorm <colormap_normalizations_symlognorm.rst>
+    connect_simple01 <connect_simple01.rst>
+    connectionstyle_demo <connectionstyle_demo.rst>
+    custom_boxstyle01 <custom_boxstyle01.rst>
+    custom_boxstyle02 <custom_boxstyle02.rst>
+    demo_axis_direction <demo_axis_direction.rst>
+    demo_gridspec01 <demo_gridspec01.rst>
+    demo_gridspec02 <demo_gridspec02.rst>
+    demo_gridspec03 <demo_gridspec03.rst>
+    demo_gridspec04 <demo_gridspec04.rst>
+    demo_gridspec05 <demo_gridspec05.rst>
+    demo_gridspec06 <demo_gridspec06.rst>
+    demo_parasite_axes_sgskip <demo_parasite_axes_sgskip.rst>
+    demo_ticklabel_alignment <demo_ticklabel_alignment.rst>
+    demo_ticklabel_direction <demo_ticklabel_direction.rst>
+    pgf_fonts <pgf_fonts.rst>
+    pgf_preamble_sgskip <pgf_preamble_sgskip.rst>
+    pgf_texsystem <pgf_texsystem.rst>
+    simple_annotate01 <simple_annotate01.rst>
+    simple_axis_direction01 <simple_axis_direction01.rst>
+    simple_axis_direction03 <simple_axis_direction03.rst>
+    simple_axis_pad <simple_axis_pad.rst>
+    simple_axisartist1 <simple_axisartist1.rst>
+    simple_axisline <simple_axisline.rst>
+    simple_axisline2 <simple_axisline2.rst>
+    simple_axisline3 <simple_axisline3.rst>
+    simple_legend01 <simple_legend01.rst>
+    simple_legend02 <simple_legend02.rst>
