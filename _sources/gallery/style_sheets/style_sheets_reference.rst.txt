@@ -281,7 +281,7 @@ line plot and histogram,
 
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  8.314 seconds)
+**Total running time of the script:** ( 0 minutes  13.321 seconds)
 
 
 

@@ -210,9 +210,9 @@ Animation Examples
 
 .. only:: html
 
-    .. figure:: /gallery/animation/images/thumb/sphx_glr_bayes_update_thumb.png
+    .. figure:: /gallery/animation/images/thumb/sphx_glr_bayes_update_sgskip_thumb.png
 
-        :ref:`sphx_glr_gallery_animation_bayes_update.py`
+        :ref:`sphx_glr_gallery_animation_bayes_update_sgskip.py`
 
 .. raw:: html
 
@@ -222,7 +222,7 @@ Animation Examples
 .. toctree::
    :hidden:
 
-   /gallery/animation/bayes_update
+   /gallery/animation/bayes_update_sgskip
 
 .. raw:: html
 
@@ -290,9 +290,9 @@ Animation Examples
 
 .. only:: html
 
-    .. figure:: /gallery/animation/images/thumb/sphx_glr_double_pendulum_animated_thumb.png
+    .. figure:: /gallery/animation/images/thumb/sphx_glr_double_pendulum_animated_sgskip_thumb.png
 
-        :ref:`sphx_glr_gallery_animation_double_pendulum_animated.py`
+        :ref:`sphx_glr_gallery_animation_double_pendulum_animated_sgskip.py`
 
 .. raw:: html
 
@@ -302,7 +302,7 @@ Animation Examples
 .. toctree::
    :hidden:
 
-   /gallery/animation/double_pendulum_animated
+   /gallery/animation/double_pendulum_animated_sgskip
 
 .. raw:: html
 

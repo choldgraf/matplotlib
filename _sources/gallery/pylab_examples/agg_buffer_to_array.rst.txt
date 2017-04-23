@@ -48,7 +48,7 @@ Agg Buffer To Array
     ax2.imshow(X)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.187 seconds)
+**Total running time of the script:** ( 0 minutes  0.202 seconds)
 
 
 

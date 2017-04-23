@@ -1,6 +1,6 @@
 
 
-.. _sphx_glr_gallery_animation_double_pendulum_animated.py:
+.. _sphx_glr_gallery_animation_double_pendulum_animated_sgskip.py:
 
 
 .. _animation-double_pendulum_animated:
@@ -13,14 +13,6 @@ This animation illustrates the double pendulum problem.
 
 Double pendulum formula translated from the C code at
 http://www.physics.usyd.edu.au/~wheat/dpend_html/solve_dpend.c
-
-
-
-
-.. image:: /gallery/animation/images/sphx_glr_double_pendulum_animated_001.png
-    :align: center
-
-
 
 
 
@@ -115,7 +107,7 @@ http://www.physics.usyd.edu.au/~wheat/dpend_html/solve_dpend.c
     # ani.save('double_pendulum.mp4', fps=15)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.404 seconds)
+**Total running time of the script:** ( 0 minutes  0.000 seconds)
 
 
 
@@ -124,13 +116,13 @@ http://www.physics.usyd.edu.au/~wheat/dpend_html/solve_dpend.c
 
   .. container:: sphx-glr-download
 
-     :download:`Download Python source code: double_pendulum_animated.py <double_pendulum_animated.py>`
+     :download:`Download Python source code: double_pendulum_animated_sgskip.py <double_pendulum_animated_sgskip.py>`
 
 
 
   .. container:: sphx-glr-download
 
-     :download:`Download Jupyter notebook: double_pendulum_animated.ipynb <double_pendulum_animated.ipynb>`
+     :download:`Download Jupyter notebook: double_pendulum_animated_sgskip.ipynb <double_pendulum_animated_sgskip.ipynb>`
 
 .. rst-class:: sphx-glr-signature
 

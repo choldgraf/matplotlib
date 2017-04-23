@@ -36,7 +36,7 @@ Pyplot Annotate
     plt.ylim(-2,2)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.050 seconds)
+**Total running time of the script:** ( 0 minutes  0.073 seconds)
 
 
 

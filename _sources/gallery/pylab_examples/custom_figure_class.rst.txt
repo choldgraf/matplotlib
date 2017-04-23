@@ -40,7 +40,7 @@ You can pass a custom Figure constructor to figure if you want to derive from th
 
     show()
 
-**Total running time of the script:** ( 0 minutes  0.084 seconds)
+**Total running time of the script:** ( 0 minutes  0.064 seconds)
 
 
 

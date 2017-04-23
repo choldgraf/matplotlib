@@ -195,7 +195,7 @@ matplotlib event handling to interact with objects on the canvas
         ax.set_ylim((-2, 2))
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.044 seconds)
+**Total running time of the script:** ( 0 minutes  0.083 seconds)
 
 
 

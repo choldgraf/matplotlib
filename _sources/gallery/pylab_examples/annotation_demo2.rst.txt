@@ -181,7 +181,7 @@ Annotation Demo2
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.141 seconds)
+**Total running time of the script:** ( 0 minutes  0.111 seconds)
 
 
 

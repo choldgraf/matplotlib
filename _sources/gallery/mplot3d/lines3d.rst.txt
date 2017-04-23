@@ -44,7 +44,7 @@ Demonstrating plotting a parametric curve in 3D.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.045 seconds)
+**Total running time of the script:** ( 0 minutes  0.067 seconds)
 
 
 

@@ -41,7 +41,7 @@ Make a legend for specific lines.
     plt.title('Damped oscillation')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.059 seconds)
+**Total running time of the script:** ( 0 minutes  0.093 seconds)
 
 
 

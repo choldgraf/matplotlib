@@ -48,7 +48,7 @@ Example: simple line plots with NaNs inserted.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.126 seconds)
+**Total running time of the script:** ( 0 minutes  0.105 seconds)
 
 
 

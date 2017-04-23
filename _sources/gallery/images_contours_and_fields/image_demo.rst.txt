@@ -32,7 +32,7 @@ Simple demo of the imshow function.
     ax.axis('off')  # clear x- and y-axes
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.089 seconds)
+**Total running time of the script:** ( 0 minutes  0.114 seconds)
 
 
 

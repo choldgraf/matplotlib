@@ -59,7 +59,7 @@ Demo Ticklabel Alignment
     ax.set_ylabel("ha=left")
     ax.set_xlabel("va=bottom")
 
-**Total running time of the script:** ( 0 minutes  0.164 seconds)
+**Total running time of the script:** ( 0 minutes  0.203 seconds)
 
 
 

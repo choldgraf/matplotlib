@@ -66,7 +66,7 @@ Demonstrate use of a log color scale in contourf
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.111 seconds)
+**Total running time of the script:** ( 0 minutes  0.147 seconds)
 
 
 

@@ -52,7 +52,7 @@ per major interval, depending on the major interval.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.073 seconds)
+**Total running time of the script:** ( 0 minutes  0.075 seconds)
 
 
 

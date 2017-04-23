@@ -140,8 +140,8 @@ Examples
    :maxdepth: 1
 
    ../gallery/animation/animate_decay
-   ../gallery/animation/bayes_update
-   ../gallery/animation/double_pendulum_animated
+   ../gallery/animation/bayes_update_sgskip
+   ../gallery/animation/double_pendulum_animated_sgskip
    ../gallery/animation/dynamic_image
    ../gallery/animation/histogram
    ../gallery/animation/rain

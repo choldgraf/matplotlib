@@ -1,6 +1,6 @@
 
 
-.. _sphx_glr_gallery_animation_bayes_update.py:
+.. _sphx_glr_gallery_animation_bayes_update_sgskip.py:
 
 
 ================
@@ -11,14 +11,6 @@ This animation displays the posterior estimate updates as it is refitted when
 new data arrives.
 The vertical line represents the theoretical value to which the plotted
 distribution should converge.
-
-
-
-
-.. image:: /gallery/animation/images/sphx_glr_bayes_update_001.png
-    :align: center
-
-
 
 
 
@@ -77,7 +69,7 @@ distribution should converge.
                          interval=100, blit=True)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.543 seconds)
+**Total running time of the script:** ( 0 minutes  0.000 seconds)
 
 
 
@@ -86,13 +78,13 @@ distribution should converge.
 
   .. container:: sphx-glr-download
 
-     :download:`Download Python source code: bayes_update.py <bayes_update.py>`
+     :download:`Download Python source code: bayes_update_sgskip.py <bayes_update_sgskip.py>`
 
 
 
   .. container:: sphx-glr-download
 
-     :download:`Download Jupyter notebook: bayes_update.ipynb <bayes_update.ipynb>`
+     :download:`Download Jupyter notebook: bayes_update_sgskip.ipynb <bayes_update_sgskip.ipynb>`
 
 .. rst-class:: sphx-glr-signature
 

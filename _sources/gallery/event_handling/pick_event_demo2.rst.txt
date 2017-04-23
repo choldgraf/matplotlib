@@ -59,7 +59,7 @@ data from the dataset that generated the mean and stddev.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.076 seconds)
+**Total running time of the script:** ( 0 minutes  0.112 seconds)
 
 
 
