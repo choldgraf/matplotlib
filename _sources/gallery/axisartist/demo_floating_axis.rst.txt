@@ -89,7 +89,7 @@ demo_curvelinear_grid.py.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.098 seconds)
+**Total running time of the script:** ( 0 minutes  0.108 seconds)
 
 
 

@@ -50,7 +50,7 @@ Symlog Demo
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.206 seconds)
+**Total running time of the script:** ( 0 minutes  0.204 seconds)
 
 
 

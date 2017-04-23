@@ -45,7 +45,7 @@ Demo Colorbar with Axes Divider
     cax2.xaxis.set_ticks_position("top")
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.240 seconds)
+**Total running time of the script:** ( 0 minutes  0.179 seconds)
 
 
 

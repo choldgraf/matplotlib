@@ -29,7 +29,7 @@ Stem Plot
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.187 seconds)
+**Total running time of the script:** ( 0 minutes  0.061 seconds)
 
 
 

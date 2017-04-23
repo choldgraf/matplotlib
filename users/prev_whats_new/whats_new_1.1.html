@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>New in matplotlib 1.1 &mdash; Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation</title>
+    <title>New in matplotlib 1.1 &mdash; Matplotlib 2.0.0b1.post5130.dev0+g682e8905b documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5130.dev0+g618ca992d',
+        VERSION:     '2.0.0b1.post5130.dev0+g682e8905b',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation"
+          title="Search within Matplotlib 2.0.0b1.post5130.dev0+g682e8905b documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5130.dev0+g682e8905b documentation" href="../../index.html" />
     <link rel="up" title="What’s new in matplotlib" href="../whats_new.html" />
     <link rel="next" title="New in matplotlib 1.2" href="whats_new_1.2.html" />
     <link rel="prev" title="New in matplotlib 1.0" href="whats_new_1.0.html" /> 
@@ -176,8 +176,8 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h2><a class="toc-backref" href="#id6">Sankey Diagrams</a><a class="headerlink" href="#sankey-diagrams" title="Permalink to this headline">¶</a></h2>
 <p>Kevin Davies has extended Yannick Copin&#8217;s original Sankey example into a module
 (<a class="reference internal" href="../../api/sankey_api.html#module-matplotlib.sankey" title="matplotlib.sankey"><code class="xref py py-mod docutils literal"><span class="pre">sankey</span></code></a>) and provided new examples
-(<a class="reference internal" href="../../examples/api/sankey_basics.html#api-sankey-basics"><span class="std std-ref">api example code: sankey_basics.py</span></a>, <a class="reference internal" href="../../examples/api/sankey_links.html#api-sankey-links"><span class="std std-ref">api example code: sankey_links.py</span></a>,
-<a class="reference internal" href="../../examples/api/sankey_rankine.html#api-sankey-rankine"><span class="std std-ref">api example code: sankey_rankine.py</span></a>).</p>
+(<a class="reference internal" href="../../gallery/api/sankey_basics.html#api-sankey-basics"><span class="std std-ref">The Sankey class</span></a>, <a class="reference internal" href="../../gallery/api/sankey_links.html#api-sankey-links"><span class="std std-ref">Long chain of connections using Sankey</span></a>,
+<a class="reference internal" href="../../gallery/api/sankey_rankine.html#api-sankey-rankine"><span class="std std-ref">Rankine power cycle</span></a>).</p>
 <div class="figure align-center" id="id1">
 <a class="reference external image-reference" href="../../gallery/api/sankey_rankine.html"><img alt="../../_images/sphx_glr_sankey_rankine_0011.png" src="../../_images/sphx_glr_sankey_rankine_0011.png" style="width: 400.0px; height: 450.0px;" /></a>
 <p class="caption"><span class="caption-text">Sankey Rankine</span></p>
@@ -188,8 +188,8 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <p>Ryan May has written a backend-independent framework for creating
 animated figures. The <a class="reference internal" href="../../api/animation_api.html#module-matplotlib.animation" title="matplotlib.animation"><code class="xref py py-mod docutils literal"><span class="pre">animation</span></code></a> module is intended
 to replace the backend-specific examples formerly in the
-<a class="reference internal" href="../../examples/index.html#examples-index"><span class="std std-ref">Matplotlib Examples</span></a> listings.  Examples using the new framework are
-in <a class="reference internal" href="../../examples/animation/index.html#animation-examples-index"><span class="std std-ref">animation Examples</span></a>; see the entrancing <a class="reference internal" href="../../examples/animation/double_pendulum_animated.html#animation-double-pendulum-animated"><span class="std std-ref">double
+<a class="reference internal" href="../../gallery/index.html#examples-index"><span class="std std-ref">Gallery</span></a> listings.  Examples using the new framework are
+in <a class="reference internal" href="../../gallery/index.html#animation-examples-index"><span class="std std-ref">Animation Examples</span></a>; see the entrancing <a class="reference internal" href="../../gallery/animation/double_pendulum_animated.html#animation-double-pendulum-animated"><span class="std std-ref">double
 pendulum</span></a> which uses
 <a class="reference internal" href="../../api/_as_gen/matplotlib.animation.Animation.save.html#matplotlib.animation.Animation.save" title="matplotlib.animation.Animation.save"><code class="xref py py-meth docutils literal"><span class="pre">matplotlib.animation.Animation.save()</span></code></a> to create the movie below.</p>
 <iframe width="420" height="315" src="http://www.youtube.com/embed/32cjc6V0OZY" frameborder="0" allowfullscreen></iframe><p>This should be considered as a beta release of the framework;
@@ -323,7 +323,7 @@ ssyr.</li>
 its interactive behavior consistent with the other backends.</li>
 <li>Pim Schellart added a new colormap called &#8220;cubehelix&#8221;.
 Sameer Grover also added a colormap called &#8220;coolwarm&#8221;. See it and all
-other colormaps <a class="reference internal" href="../../examples/color/colormaps_reference.html#color-colormaps-reference"><span class="std std-ref">here</span></a>.</li>
+other colormaps <a class="reference internal" href="../../gallery/color/colormaps_reference.html#color-colormaps-reference"><span class="std std-ref">here</span></a>.</li>
 <li>Many bug fixes and documentation improvements.</li>
 </ul>
 </div>

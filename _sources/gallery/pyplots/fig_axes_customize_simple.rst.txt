@@ -47,7 +47,7 @@ Fig Axes Customize Simple
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.220 seconds)
+**Total running time of the script:** ( 0 minutes  0.067 seconds)
 
 
 

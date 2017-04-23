@@ -52,7 +52,7 @@ the imshow returned object) and the axes to attach the colorbar to.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.259 seconds)
+**Total running time of the script:** ( 0 minutes  0.233 seconds)
 
 
 

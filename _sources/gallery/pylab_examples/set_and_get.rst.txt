@@ -319,7 +319,7 @@ these properties will be listed as 'fullname or aliasname'.
         path_effects = []
         picker = None
         position = (0.5, 1.0)
-        prop_tup = (0.5, 1.0, 'Hi mom', 'k', 'baseline', 'center', -4...
+        prop_tup = (0.5, 1.0, 'Hi mom', 'k', 'baseline', 'center', 65...
         rasterized = None
         rotation = 0.0
         rotation_mode = None
@@ -384,7 +384,7 @@ these properties will be listed as 'fullname or aliasname'.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.126 seconds)
+**Total running time of the script:** ( 0 minutes  0.129 seconds)
 
 
 

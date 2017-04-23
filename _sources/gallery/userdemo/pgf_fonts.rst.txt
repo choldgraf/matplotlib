@@ -44,7 +44,7 @@ Pgf Fonts
     plt.savefig("pgf_fonts.pdf")
     plt.savefig("pgf_fonts.png")
 
-**Total running time of the script:** ( 0 minutes  2.900 seconds)
+**Total running time of the script:** ( 0 minutes  2.426 seconds)
 
 
 

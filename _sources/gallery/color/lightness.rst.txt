@@ -145,7 +145,7 @@ categories as in the original matplotlib gallery of colormaps.
         fig.tight_layout(h_pad=0.0, pad=1.5)
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  1.441 seconds)
+**Total running time of the script:** ( 0 minutes  1.252 seconds)
 
 
 

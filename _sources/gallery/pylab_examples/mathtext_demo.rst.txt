@@ -45,7 +45,7 @@ latex rendering, see the text.usetex option
 
     show()
 
-**Total running time of the script:** ( 0 minutes  0.100 seconds)
+**Total running time of the script:** ( 0 minutes  0.073 seconds)
 
 
 

@@ -59,7 +59,7 @@ Simple RGB
     plt.draw()
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.289 seconds)
+**Total running time of the script:** ( 0 minutes  0.272 seconds)
 
 
 

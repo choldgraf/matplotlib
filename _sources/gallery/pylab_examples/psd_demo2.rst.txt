@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_pylab_examples_psd_demo2.py:
 
 
+.. _pylab_examples-psd_demo2:
+
 =========
 Psd Demo2
 =========
@@ -67,7 +69,7 @@ This example shows the effects of some of the different PSD parameters
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.222 seconds)
+**Total running time of the script:** ( 0 minutes  0.213 seconds)
 
 
 

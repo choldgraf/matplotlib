@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_pylab_examples_zorder_demo.py:
 
 
+.. _pylab_examples-zorder_demo:
+
 ===========
 Zorder Demo
 ===========
@@ -87,7 +89,7 @@ The second figure shows how to control the zorder of individual lines.
     l.set_zorder(20)  # put the legend on top
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.309 seconds)
+**Total running time of the script:** ( 0 minutes  0.176 seconds)
 
 
 

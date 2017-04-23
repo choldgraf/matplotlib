@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_pylab_examples_psd_demo3.py:
 
 
+.. _pylab_examples-psd_demo3:
+
 =========
 Psd Demo3
 =========
@@ -64,7 +66,7 @@ Matplotlib's and MATLAB's scaling of the PSD.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.164 seconds)
+**Total running time of the script:** ( 0 minutes  0.160 seconds)
 
 
 

@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_pylab_examples_spine_placement_demo.py:
 
 
+.. _pylab_examples-spine_placement_demo:
+
 ====================
 Spine Placement Demo
 ====================
@@ -132,7 +134,7 @@ Spine Placement Demo
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.708 seconds)
+**Total running time of the script:** ( 0 minutes  0.313 seconds)
 
 
 

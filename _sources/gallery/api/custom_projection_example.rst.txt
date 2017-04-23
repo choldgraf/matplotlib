@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_api_custom_projection_example.py:
 
 
+.. _api-custom_projection_example:
+
 =================
 Custom projection
 =================

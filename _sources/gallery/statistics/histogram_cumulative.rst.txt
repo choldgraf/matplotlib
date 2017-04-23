@@ -87,7 +87,7 @@ http://docs.astropy.org/en/stable/visualization/histogram.html
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.071 seconds)
+**Total running time of the script:** ( 0 minutes  0.067 seconds)
 
 
 

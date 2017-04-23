@@ -54,7 +54,7 @@ time, the run may be silent, as a lot of the information is cached in
     plt.savefig('tex_demo')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.374 seconds)
+**Total running time of the script:** ( 0 minutes  0.279 seconds)
 
 
 

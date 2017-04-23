@@ -110,7 +110,7 @@ Rec Groupby Demo
     rv = mlab.rec_groupby(rsum, ('volcode',), stats)
     print(mlab.rec2txt(rv))
 
-**Total running time of the script:** ( 0 minutes  0.050 seconds)
+**Total running time of the script:** ( 0 minutes  0.063 seconds)
 
 
 

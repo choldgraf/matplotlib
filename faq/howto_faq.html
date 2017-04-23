@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How-To &mdash; Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation</title>
+    <title>How-To &mdash; Matplotlib 2.0.0b1.post5130.dev0+g682e8905b documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5130.dev0+g618ca992d',
+        VERSION:     '2.0.0b1.post5130.dev0+g682e8905b',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation"
+          title="Search within Matplotlib 2.0.0b1.post5130.dev0+g682e8905b documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5130.dev0+g618ca992d documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5130.dev0+g682e8905b documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting_faq.html" />
     <link rel="prev" title="Usage" href="usage_faq.html" /> 
@@ -375,7 +375,7 @@ specify the location explicitly:</p>
 </pre></div>
 </div>
 <p>where all values are in fractional (0 to 1) coordinates.  See
-<a class="reference internal" href="../examples/pylab_examples/axes_demo.html#pylab-examples-axes-demo"><span class="std std-ref">pylab_examples example code: axes_demo.py</span></a> for an example of placing axes manually.</p>
+<a class="reference internal" href="../gallery/pylab_examples/axes_demo.html#pylab-examples-axes-demo"><span class="std std-ref">Axes Demo</span></a> for an example of placing axes manually.</p>
 </div>
 <div class="section" id="automatically-make-room-for-tick-labels">
 <span id="howto-auto-adjust"></span><h3>Automatically make room for tick labels<a class="headerlink" href="#automatically-make-room-for-tick-labels" title="Permalink to this headline">¶</a></h3>
@@ -498,7 +498,7 @@ and patches, respectively:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">line</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
-See <a class="reference internal" href="../examples/pylab_examples/zorder_demo.html#pylab-examples-zorder-demo"><span class="std std-ref">pylab_examples example code: zorder_demo.py</span></a> for a complete example.<p>You can also use the Axes property
+See <a class="reference internal" href="../gallery/pylab_examples/zorder_demo.html#pylab-examples-zorder-demo"><span class="std std-ref">Zorder Demo</span></a> for a complete example.<p>You can also use the Axes property
 <a class="reference internal" href="../api/_as_gen/matplotlib.axes.Axes.set_axisbelow.html#matplotlib.axes.Axes.set_axisbelow" title="matplotlib.axes.Axes.set_axisbelow"><code class="xref py py-meth docutils literal"><span class="pre">set_axisbelow()</span></code></a> to control whether the grid
 lines are placed above or below your other plot elements.</p>
 </div>
@@ -510,7 +510,7 @@ some ratio which controls the ratio:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-See <a class="reference internal" href="../examples/subplots_axes_and_figures/equal_aspect_ratio.html#subplots-axes-and-figures-equal-aspect-ratio"><span class="std std-ref">subplots_axes_and_figures example code: equal_aspect_ratio.py</span></a> for a complete
+See <a class="reference internal" href="../gallery/subplots_axes_and_figures/equal_aspect_ratio.html#subplots-axes-and-figures-equal-aspect-ratio"><span class="std std-ref">Equal aspect axes</span></a> for a complete
 example.</div>
 <div class="section" id="multiple-y-axis-scales">
 <span id="howto-twoscale"></span><h3>Multiple y-axis scales<a class="headerlink" href="#multiple-y-axis-scales" title="Permalink to this headline">¶</a></h3>
@@ -530,7 +530,7 @@ locators as desired because the two axes are independent.</p>
 <div class="figure">
 <img alt="../_images/howto_faq-1.png" src="../_images/howto_faq-1.png" />
 </div>
-See <a class="reference internal" href="../examples/api/two_scales.html#api-two-scales"><span class="std std-ref">api example code: two_scales.py</span></a> for a complete example</div>
+See <a class="reference internal" href="../gallery/api/two_scales.html#api-two-scales"><span class="std std-ref">Plots with different scales</span></a> for a complete example</div>
 <div class="section" id="generate-images-without-having-a-window-appear">
 <span id="howto-batch"></span><h3>Generate images without having a window appear<a class="headerlink" href="#generate-images-without-having-a-window-appear" title="Permalink to this headline">¶</a></h3>
 <p>The easiest way to do this is use a non-interactive backend (see
@@ -785,7 +785,7 @@ contributing to these efforts that would be great.</p>
 </div>
 <div class="section" id="search-examples">
 <span id="how-to-search-examples"></span><h2>Search examples<a class="headerlink" href="#search-examples" title="Permalink to this headline">¶</a></h2>
-<p>The nearly 300 code <a class="reference internal" href="../examples/index.html#examples-index"><span class="std std-ref">Matplotlib Examples</span></a> included with the Matplotlib
+<p>The nearly 300 code <a class="reference internal" href="../gallery/index.html#examples-index"><span class="std std-ref">Gallery</span></a> included with the Matplotlib
 source distribution are full-text searchable from the <a class="reference internal" href="../search.html"><span class="std std-ref">Search Page</span></a>
 page, but sometimes when you search, you get a lot of results from the
 <a class="reference internal" href="../api/index.html#api-index"><span class="std std-ref">The Matplotlib API</span></a> or other documentation that you may not be interested

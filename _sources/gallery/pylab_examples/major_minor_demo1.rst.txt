@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_pylab_examples_major_minor_demo1.py:
 
 
+.. _pylab_examples-major_minor_demo1:
+
 =================
 Major Minor Demo1
 =================
@@ -72,7 +74,7 @@ because the locator stores references to the Axis data and view limits
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.105 seconds)
+**Total running time of the script:** ( 0 minutes  0.033 seconds)
 
 
 

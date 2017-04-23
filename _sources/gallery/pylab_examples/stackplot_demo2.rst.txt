@@ -50,7 +50,7 @@ Stackplot Demo2
     plt.stackplot(range(100), d.T, baseline='wiggle')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.106 seconds)
+**Total running time of the script:** ( 0 minutes  0.089 seconds)
 
 
 

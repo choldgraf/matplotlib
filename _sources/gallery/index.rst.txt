@@ -2,6 +2,8 @@
 
 .. _gallery:
 
+.. _examples-index:
+
 Gallery
 =======
 
@@ -14,6 +16,8 @@ Matplotlib. Click on any image to see the full image and source code.
     <div style='clear:both'></div>
 
 .. _animation_examples:
+
+.. _animation-examples-index:
 
 Animation Examples
 ==================
@@ -282,6 +286,26 @@ Animation Examples
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="=========================== The double pendulum problem ===========================">
+
+.. only:: html
+
+    .. figure:: /gallery/animation/images/thumb/sphx_glr_double_pendulum_animated_thumb.png
+
+        :ref:`sphx_glr_gallery_animation_double_pendulum_animated.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/animation/double_pendulum_animated
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Simulates rain drops on a surface by animating the scale and opacity of 50 scatter points.">
 
 .. only:: html
@@ -302,27 +326,7 @@ Animation Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This animation illustrates the double pendulum problem. ">
-
-.. only:: html
-
-    .. figure:: /gallery/animation/images/thumb/sphx_glr_double_pendulum_animated_thumb.png
-
-        :ref:`sphx_glr_gallery_animation_double_pendulum_animated.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /gallery/animation/double_pendulum_animated
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="This example uses subclassing, but there is no reason that the proper function couldn't be set ...">
+    <div class="sphx-glr-thumbcontainer" tooltip="================= Animated subplots =================">
 
 .. only:: html
 
@@ -486,7 +490,7 @@ fledged GUI applications, see the user_interfaces examples.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Notice how the legend labels are defined with the plots! ">
+    <div class="sphx-glr-thumbcontainer" tooltip="=============================== Legend using pre-defined labels ===============================">
 
 .. only:: html
 
@@ -746,7 +750,7 @@ fledged GUI applications, see the user_interfaces examples.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate how to do two plots on the same axes with different left and right scales.">
+    <div class="sphx-glr-thumbcontainer" tooltip="=========================== Plots with different scales ===========================">
 
 .. only:: html
 
@@ -886,7 +890,7 @@ fledged GUI applications, see the user_interfaces examples.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate/test the Sankey class by producing a long chain of connections. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="====================================== Long chain of connections using Sankey =================...">
 
 .. only:: html
 
@@ -966,7 +970,7 @@ fledged GUI applications, see the user_interfaces examples.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate the Sankey class by producing three basic diagrams. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="================ The Sankey class ================">
 
 .. only:: html
 
@@ -1006,7 +1010,7 @@ fledged GUI applications, see the user_interfaces examples.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate the Sankey class with a practical example of a Rankine power cycle.">
+    <div class="sphx-glr-thumbcontainer" tooltip="=================== Rankine power cycle ===================">
 
 .. only:: html
 
@@ -1106,7 +1110,7 @@ fledged GUI applications, see the user_interfaces examples.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example showcases the Hammer projection by alleviating many features of matplotlib. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="================= Custom projection =================">
 
 .. only:: html
 
@@ -1128,6 +1132,8 @@ fledged GUI applications, see the user_interfaces examples.
     <div style='clear:both'></div>
 
 .. _axes_grid_examples:
+
+.. _axes_grid1-examples-index:
 
 Axes Grid
 =========
@@ -1679,6 +1685,8 @@ Axes Grid
 
 .. _axis_artist_examples:
 
+.. _axisartist-examples-index:
+
 Axis Artist
 ===========
 
@@ -1916,7 +1924,7 @@ Color
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Reference for colormaps included with Matplotlib.">
+    <div class="sphx-glr-thumbcontainer" tooltip="================== Colormap reference ==================">
 
 .. only:: html
 
@@ -2556,7 +2564,7 @@ Lines, bars and markers
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Also demonstrates how transparency of the markers can be adjusted by giving ``alpha`` a value b...">
+    <div class="sphx-glr-thumbcontainer" tooltip="=========================== Scatter plots with a legend ===========================">
 
 .. only:: html
 
@@ -2736,7 +2744,7 @@ Lines, bars and markers
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Reference for filled- and unfilled-marker types included with Matplotlib. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="================================ Filled and unfilled-marker types =============================...">
 
 .. only:: html
 
@@ -2756,6 +2764,8 @@ Lines, bars and markers
 .. raw:: html
 
     <div style='clear:both'></div>
+
+.. _misc-examples-index:
 
 Miscellaneous Examples
 ======================
@@ -2986,6 +2996,8 @@ Miscellaneous Examples
     <div style='clear:both'></div>
 
 .. _mplot3d_example:
+
+.. _mplot3d-examples-index:
 
 mplot3d toolkit
 ===============
@@ -4154,7 +4166,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Pyplot animation example.">
+    <div class="sphx-glr-thumbcontainer" tooltip="============== Animation Demo ==============">
 
 .. only:: html
 
@@ -4254,7 +4266,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Simple demo with multiple subplots. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="============ Subplot Demo ============">
 
 .. only:: html
 
@@ -4374,7 +4386,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="">
+    <div class="sphx-glr-thumbcontainer" tooltip="============== Scatter Symbol ==============">
 
 .. only:: html
 
@@ -4434,7 +4446,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Instead of plotting a legend on each axis, a legend for all the artists on all the sub-axes of ...">
+    <div class="sphx-glr-thumbcontainer" tooltip="================== Figure legend demo ==================">
 
 .. only:: html
 
@@ -4834,7 +4846,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate how to use major and minor tickers.">
+    <div class="sphx-glr-thumbcontainer" tooltip="================= Major Minor Demo1 =================">
 
 .. only:: html
 
@@ -5534,7 +5546,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="">
+    <div class="sphx-glr-thumbcontainer" tooltip="============ Axhspan Demo ============">
 
 .. only:: html
 
@@ -5754,7 +5766,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="">
+    <div class="sphx-glr-thumbcontainer" tooltip="========= Axes Demo =========">
 
 .. only:: html
 
@@ -5834,7 +5846,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The default drawing order for axes is patches, lines, text.  This order is determined by the zo...">
+    <div class="sphx-glr-thumbcontainer" tooltip="=========== Zorder Demo ===========">
 
 .. only:: html
 
@@ -5914,7 +5926,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This is a ported version of a MATLAB example from the signal processing toolbox that showed som...">
+    <div class="sphx-glr-thumbcontainer" tooltip="========= Psd Demo3 =========">
 
 .. only:: html
 
@@ -6274,7 +6286,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="">
+    <div class="sphx-glr-thumbcontainer" tooltip="================= Contourf Hatching =================">
 
 .. only:: html
 
@@ -6414,7 +6426,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows the effects of some of the different PSD parameters ">
+    <div class="sphx-glr-thumbcontainer" tooltip="========= Psd Demo2 =========">
 
 .. only:: html
 
@@ -7054,7 +7066,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="">
+    <div class="sphx-glr-thumbcontainer" tooltip="==================== Spine Placement Demo ====================">
 
 .. only:: html
 
@@ -7134,7 +7146,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="">
+    <div class="sphx-glr-thumbcontainer" tooltip="================ Annotation Demo3 ================">
 
 .. only:: html
 
@@ -7214,7 +7226,7 @@ Pylab Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Some examples of how to annotate points in figures.  You specify an annotation point xy=(x,y) a...">
+    <div class="sphx-glr-thumbcontainer" tooltip="=============== Annotation Demo ===============">
 
 .. only:: html
 
@@ -8757,7 +8769,7 @@ Statistics
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to use the various kwargs to fully customize box plots. The first...">
+    <div class="sphx-glr-thumbcontainer" tooltip="========================================= Demo of artist customization in box plots ===========...">
 
 .. only:: html
 
@@ -8777,7 +8789,7 @@ Statistics
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to pass pre-computed box plot statistics to the box plot drawer. ...">
+    <div class="sphx-glr-thumbcontainer" tooltip="=================================== Demo of the boxplot drawer function =======================...">
 
 .. only:: html
 
@@ -8937,7 +8949,7 @@ Subplots, axes and figures
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to make a plot whose x and y axes have a 1:1 aspect ratio. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="================= Equal aspect axes =================">
 
 .. only:: html
 
@@ -11230,7 +11242,7 @@ matplotlib
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The SpanSelector is a mouse widget to select a xmin/xmax range and plot the detail view of the ...">
+    <div class="sphx-glr-thumbcontainer" tooltip="============= Span Selector =============">
 
 .. only:: html
 
@@ -11330,7 +11342,7 @@ matplotlib
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Shows how one can select indices of a polygon interactively.">
+    <div class="sphx-glr-thumbcontainer" tooltip="===================== Polygon Selector Demo =====================">
 
 .. only:: html
 

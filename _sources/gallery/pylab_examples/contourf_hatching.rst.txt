@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_pylab_examples_contourf_hatching.py:
 
 
+.. _pylab_examples-contourf_hatching:
+
 =================
 Contourf Hatching
 =================
@@ -75,7 +77,7 @@ Contourf Hatching
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.434 seconds)
+**Total running time of the script:** ( 0 minutes  0.221 seconds)
 
 
 

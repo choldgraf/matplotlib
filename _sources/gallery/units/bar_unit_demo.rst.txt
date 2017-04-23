@@ -55,7 +55,7 @@ the barchart demo</a> in centimeters.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.151 seconds)
+**Total running time of the script:** ( 0 minutes  0.073 seconds)
 
 
 

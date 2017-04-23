@@ -99,7 +99,7 @@ Compare the ellipse generated with arcs versus a polygonal approximation
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.697 seconds)
+**Total running time of the script:** ( 0 minutes  0.398 seconds)
 
 
 

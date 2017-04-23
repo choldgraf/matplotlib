@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_api_sankey_rankine.py:
 
 
+.. _api-sankey_rankine:
+
 ===================
 Rankine power cycle
 ===================

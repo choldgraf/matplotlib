@@ -3,6 +3,8 @@
 .. _sphx_glr_gallery_pylab_examples_axhspan_demo.py:
 
 
+.. _pylab_examples-axhspan_demo:
+
 ============
 Axhspan Demo
 ============
@@ -53,7 +55,7 @@ Axhspan Demo
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.093 seconds)
+**Total running time of the script:** ( 0 minutes  0.095 seconds)
 
 
 
