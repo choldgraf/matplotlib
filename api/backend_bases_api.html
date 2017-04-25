@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.backend_bases &mdash; Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation</title>
+    <title>matplotlib.backend_bases &mdash; Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5131+g4284fdfc5',
+        VERSION:     '2.0.0b1.post5132+g17ef1d20f',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation" href="../index.html" />
     <link rel="up" title="backends" href="index_backend_api.html" />
     <link rel="next" title="matplotlib.backend_managers" href="backend_managers_api.html" />
     <link rel="prev" title="backends" href="index_backend_api.html" /> 
@@ -142,7 +142,7 @@ graphics contexts must implement to serve as a matplotlib backend</p>
 <dd>An abstract base class to handle drawing/rendering operations.</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase" title="matplotlib.backend_bases.FigureCanvasBase"><code class="xref py py-class docutils literal"><span class="pre">FigureCanvasBase</span></code></a></dt>
 <dd>The abstraction layer that separates the
-<a class="reference internal" href="figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a> from the backend specific
+<a class="reference internal" href="_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a> from the backend specific
 details like a user interface drawing area</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.GraphicsContextBase" title="matplotlib.backend_bases.GraphicsContextBase"><code class="xref py py-class docutils literal"><span class="pre">GraphicsContextBase</span></code></a></dt>
 <dd>An abstract base class that provides color, line styles, etc...</dd>
@@ -230,7 +230,7 @@ are defined and shown with their default values</p>
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>figure</td>
-<td>(<a class="reference internal" href="figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-obj docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a>) A high-level figure instance</td>
+<td>(<a class="reference internal" href="_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-obj docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a>) A high-level figure instance</td>
 </tr>
 </tbody>
 </table>
@@ -288,7 +288,7 @@ button release.</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.draw">
 <code class="descname">draw</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.draw" title="Permalink to this definition">¶</a></dt>
-<dd><p>Render the <a class="reference internal" href="figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a>.</p>
+<dd><p>Render the <a class="reference internal" href="_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -812,7 +812,7 @@ figure size or line props), will be reflected in the other</p>
 <code class="descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureManagerBase.show" title="Permalink to this definition">¶</a></dt>
 <dd><p>For GUI backends, show the figure window and redraw.
 For non-GUI backends, raise an exception to be caught
-by <a class="reference internal" href="figure_api.html#matplotlib.figure.Figure.show" title="matplotlib.figure.Figure.show"><code class="xref py py-meth docutils literal"><span class="pre">show()</span></code></a>, for an
+by <code class="xref py py-meth docutils literal"><span class="pre">show()</span></code>, for an
 optional warning.</p>
 </dd></dl>
 
@@ -1573,7 +1573,7 @@ sufficiently close to an artist.</p>
 <td>(<a class="reference internal" href="artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-obj docutils literal"><span class="pre">matplotlib.artist.Artist</span></code></a>) the picked artist</td>
 </tr>
 <tr class="row-odd"><td>other</td>
-<td>extra class dependent attrs &#8211; e.g., a <a class="reference internal" href="lines_api.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a> pick may define different extra attributes than a <a class="reference internal" href="collections_api.html#matplotlib.collections.PatchCollection" title="matplotlib.collections.PatchCollection"><code class="xref py py-class docutils literal"><span class="pre">PatchCollection</span></code></a> pick event</td>
+<td>extra class dependent attrs &#8211; e.g., a <a class="reference internal" href="_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a> pick may define different extra attributes than a <a class="reference internal" href="collections_api.html#matplotlib.collections.PatchCollection" title="matplotlib.collections.PatchCollection"><code class="xref py py-class docutils literal"><span class="pre">PatchCollection</span></code></a> pick event</td>
 </tr>
 </tbody>
 </table>
@@ -2335,7 +2335,7 @@ described at <a class="reference internal" href="../users/navigation_toolbar.htm
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 23, 2017.
+      Last updated on Apr 24, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

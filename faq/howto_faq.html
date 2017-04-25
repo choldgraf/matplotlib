@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How-To &mdash; Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation</title>
+    <title>How-To &mdash; Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5131+g4284fdfc5',
+        VERSION:     '2.0.0b1.post5132+g17ef1d20f',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting_faq.html" />
     <link rel="prev" title="Usage" href="usage_faq.html" /> 
@@ -247,7 +247,7 @@ you can explicitly install the <code class="xref py py-obj docutils literal"><sp
 <p>Every Matplotlib artist (see <a class="reference internal" href="../users/artists.html#artist-tutorial"><span class="std std-ref">Artist tutorial</span></a>) has a method
 called <a class="reference internal" href="../api/_as_gen/matplotlib.artist.Artist.findobj.html#matplotlib.artist.Artist.findobj" title="matplotlib.artist.Artist.findobj"><code class="xref py py-meth docutils literal"><span class="pre">findobj()</span></code></a> that can be used to
 recursively search the artist for any artists it may contain that meet
-some criteria (e.g., match all <a class="reference internal" href="../api/lines_api.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a>
+some criteria (e.g., match all <a class="reference internal" href="../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a>
 instances or match some arbitrary filter function).  For example, the
 following snippet finds every object in the figure which has a
 <code class="xref py py-obj docutils literal"><span class="pre">set_color</span></code> property and makes the object blue:</p>
@@ -285,7 +285,7 @@ image on the screen.</p>
 <p>If you need finer grained control, e.g., you do not want full transparency
 or you want to affect the screen displayed version as well, you can set
 the alpha properties directly.  The figure has a
-<a class="reference internal" href="../api/patches_api.html#matplotlib.patches.Rectangle" title="matplotlib.patches.Rectangle"><code class="xref py py-class docutils literal"><span class="pre">Rectangle</span></code></a> instance called <em>patch</em>
+<a class="reference internal" href="../api/_as_gen/matplotlib.patches.Rectangle.html#matplotlib.patches.Rectangle" title="matplotlib.patches.Rectangle"><code class="xref py py-class docutils literal"><span class="pre">Rectangle</span></code></a> instance called <em>patch</em>
 and the axes has a Rectangle instance called <em>patch</em>.  You can set
 any property on them directly (<em>facecolor</em>, <em>edgecolor</em>, <em>linewidth</em>,
 <em>linestyle</em>, <em>alpha</em>).  e.g.:</p>
@@ -334,7 +334,7 @@ the format:</p>
 <p>For subplots, you can control the default spacing on the left, right,
 bottom, and top as well as the horizontal and vertical spacing between
 multiple rows and columns using the
-<a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure.subplots_adjust" title="matplotlib.figure.Figure.subplots_adjust"><code class="xref py py-meth docutils literal"><span class="pre">matplotlib.figure.Figure.subplots_adjust()</span></code></a> method (in pyplot it
+<code class="xref py py-meth docutils literal"><span class="pre">matplotlib.figure.Figure.subplots_adjust()</span></code> method (in pyplot it
 is <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.subplots_adjust.html#matplotlib.pyplot.subplots_adjust" title="matplotlib.pyplot.subplots_adjust"><code class="xref py py-func docutils literal"><span class="pre">subplots_adjust()</span></code></a>).  For example, to move
 the bottom of the subplots up to make room for some rotated x tick
 labels:</p>
@@ -369,7 +369,7 @@ expressed as a fraction of the average axis height</dd>
 <p>If you want additional control, you can create an
 <a class="reference internal" href="../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> using the
 <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.axes.html#matplotlib.pyplot.axes" title="matplotlib.pyplot.axes"><code class="xref py py-func docutils literal"><span class="pre">axes()</span></code></a> command (or equivalently the figure
-<a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure.add_axes" title="matplotlib.figure.Figure.add_axes"><code class="xref py py-meth docutils literal"><span class="pre">add_axes()</span></code></a> method), which allows you to
+<code class="xref py py-meth docutils literal"><span class="pre">add_axes()</span></code> method), which allows you to
 specify the location explicitly:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="n">left</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">])</span>
 </pre></div>
@@ -398,7 +398,7 @@ its extent in window coordinates (a negative x coordinate is outside
 the window), but there is a rub.</p>
 <p>The <a class="reference internal" href="../api/backend_bases_api.html#matplotlib.backend_bases.RendererBase" title="matplotlib.backend_bases.RendererBase"><code class="xref py py-class docutils literal"><span class="pre">RendererBase</span></code></a> instance, which is
 used to calculate the text size, is not known until the figure is
-drawn (<a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure.draw" title="matplotlib.figure.Figure.draw"><code class="xref py py-meth docutils literal"><span class="pre">draw()</span></code></a>).  After the window is
+drawn (<code class="xref py py-meth docutils literal"><span class="pre">draw()</span></code>).  After the window is
 drawn and the text instance knows its renderer, you can call
 <a class="reference internal" href="../api/text_api.html#matplotlib.text.Text.get_window_extent" title="matplotlib.text.Text.get_window_extent"><code class="xref py py-meth docutils literal"><span class="pre">get_window_extent()</span></code></a>.  One way to solve
 this chicken and egg problem is to wait until the figure is draw by
@@ -418,7 +418,7 @@ over so that the tick labels fit in the figure:</p>
 <div class="section" id="configure-the-tick-linewidths">
 <span id="howto-ticks"></span><h3>Configure the tick linewidths<a class="headerlink" href="#configure-the-tick-linewidths" title="Permalink to this headline">¶</a></h3>
 <p>In Matplotlib, the ticks are <em>markers</em>.  All
-<a class="reference internal" href="../api/lines_api.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a> objects support a line (solid,
+<a class="reference internal" href="../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a> objects support a line (solid,
 dashed, etc) and a marker (circle, square, tick).  The tick linewidth
 is controlled by the &#8220;markeredgewidth&#8221; property:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -837,7 +837,7 @@ reference page</a>):</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 23, 2017.
+      Last updated on Apr 24, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

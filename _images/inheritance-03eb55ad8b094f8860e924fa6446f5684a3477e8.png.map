@@ -1,0 +1,76 @@
+<map id="inheritancee232c6fab0" name="inheritancee232c6fab0">
+<area shape="rect" id="node2" title="An abstract base class for geographic projections" alt="" coords="385,810,436,826"/>
+<area shape="rect" id="node3" href="offsetbox_api.html#matplotlib.offsetbox.AnchoredOffsetbox" target="_top" title="An offset box placed according to the legend location" alt="" coords="232,229,323,245"/>
+<area shape="rect" id="node5" href="offsetbox_api.html#matplotlib.offsetbox.AnchoredText" target="_top" title="AnchoredOffsetbox with Text." alt="" coords="376,229,445,245"/>
+<area shape="rect" id="node4" href="offsetbox_api.html#matplotlib.offsetbox.OffsetBox" target="_top" title="The OffsetBox is a simple container artist. The child artist are meant" alt="" coords="130,181,184,197"/>
+<area shape="rect" id="node17" href="offsetbox_api.html#matplotlib.offsetbox.AuxTransformBox" target="_top" title="Offset Box with the aux_transform . Its children will be" alt="" coords="235,262,320,278"/>
+<area shape="rect" id="node40" href="offsetbox_api.html#matplotlib.offsetbox.DrawingArea" target="_top" title="The DrawingArea can contain any Artist as a child. The DrawingArea" alt="" coords="244,68,311,84"/>
+<area shape="rect" id="node50" href="offsetbox_api.html#matplotlib.offsetbox.PackerBase" target="_top" title="PackerBase" alt="" coords="246,100,309,116"/>
+<area shape="rect" id="node57" href="offsetbox_api.html#matplotlib.offsetbox.OffsetImage" target="_top" title="OffsetImage" alt="" coords="246,133,309,149"/>
+<area shape="rect" id="node58" href="offsetbox_api.html#matplotlib.offsetbox.PaddedBox" target="_top" title="PaddedBox" alt="" coords="247,165,308,181"/>
+<area shape="rect" id="node71" href="offsetbox_api.html#matplotlib.offsetbox.TextArea" target="_top" title="The TextArea is contains a single Text instance. The text is" alt="" coords="253,197,302,213"/>
+<area shape="rect" id="node6" href="text_api.html#matplotlib.text.Annotation" target="_top" title="Annotation" alt="" coords="249,358,306,374"/>
+<area shape="rect" id="node7" href="text_api.html#matplotlib.text.Text" target="_top" title="Handle storing and drawing of text in window or data coordinates." alt="" coords="133,338,181,354"/>
+<area shape="rect" id="node34" title="Unlike the ordinary text, the get_rotation returns an updated" alt="" coords="249,326,306,342"/>
+<area shape="rect" id="node72" href="text_api.html#matplotlib.text.TextWithDash" target="_top" title="This is basically a :class:`~matplotlib.text.Text` with a dash" alt="" coords="243,294,312,310"/>
+<area shape="rect" id="node9" href="offsetbox_api.html#matplotlib.offsetbox.AnnotationBbox" target="_top" title="Annotation&#45;like class, but with offsetbox instead of Text." alt="" coords="118,496,196,512"/>
+<area shape="rect" id="node10" href="#matplotlib.artist.Artist" target="_top" title="Abstract base class for someone who renders into a" alt="" coords="21,649,69,665"/>
+<area shape="rect" id="node14" href="_as_gen/matplotlib.patches.Patch.html#matplotlib.patches.Patch" target="_top" title="A patch is a 2D artist with a face color and an edge color." alt="" coords="133,568,181,584"/>
+<area shape="rect" id="node22" href="axis_api.html#matplotlib.axis.Axis" target="_top" title="Public attributes" alt="" coords="133,810,181,826"/>
+<area shape="rect" id="node35" href="collections_api.html#matplotlib.collections.Collection" target="_top" title="Base class for Collections. &#160;Must be subclassed to be usable." alt="" coords="130,1019,184,1036"/>
+<area shape="rect" id="node47" href="_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" target="_top" title="The Figure instance supports callbacks through a *callbacks*" alt="" coords="133,600,181,616"/>
+<area shape="rect" id="node53" href="legend_api.html#matplotlib.legend.Legend" target="_top" title="Place a legend on the axes at location loc. &#160;Labels are a" alt="" coords="133,632,181,649"/>
+<area shape="rect" id="node54" href="_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" target="_top" title="A line &#45; the line can have both a solid linestyle connecting all" alt="" coords="133,697,181,713"/>
+<area shape="rect" id="node66" title="Labelled arrow for use as a quiver plot scale key." alt="" coords="129,729,185,745"/>
+<area shape="rect" id="node70" title="Create a table of cells." alt="" coords="133,761,181,778"/>
+<area shape="rect" id="node73" href="axis_api.html#matplotlib.axis.Tick" target="_top" title="Abstract base class for the axis ticks, grid lines and labels" alt="" coords="133,36,181,52"/>
+<area shape="rect" id="node11" href="_as_gen/matplotlib.patches.Arc.html#matplotlib.patches.Arc" target="_top" title="An elliptical arc. &#160;Because it performs various optimizations, it" alt="" coords="386,600,434,616"/>
+<area shape="rect" id="node12" href="_as_gen/matplotlib.patches.Ellipse.html#matplotlib.patches.Ellipse" target="_top" title="A scale&#45;free ellipse." alt="" coords="253,616,302,632"/>
+<area shape="rect" id="node29" href="_as_gen/matplotlib.patches.Circle.html#matplotlib.patches.Circle" target="_top" title="A circle patch." alt="" coords="386,632,434,649"/>
+<area shape="rect" id="node13" href="_as_gen/matplotlib.patches.Arrow.html#matplotlib.patches.Arrow" target="_top" title="An arrow patch." alt="" coords="253,649,302,665"/>
+<area shape="rect" id="node28" href="_as_gen/matplotlib.patches.Rectangle.html#matplotlib.patches.Rectangle" target="_top" title="Draw a rectangle with lower left at *xy* = (*x*, *y*) with" alt="" coords="250,681,305,697"/>
+<area shape="rect" id="node33" href="_as_gen/matplotlib.patches.RegularPolygon.html#matplotlib.patches.RegularPolygon" target="_top" title="A regular polygon patch." alt="" coords="238,713,317,729"/>
+<area shape="rect" id="node38" href="_as_gen/matplotlib.patches.FancyArrowPatch.html#matplotlib.patches.FancyArrowPatch" target="_top" title="A fancy arrow patch. It draws an arrow using the :class:`ArrowStyle`." alt="" coords="235,745,320,761"/>
+<area shape="rect" id="node45" href="_as_gen/matplotlib.patches.Polygon.html#matplotlib.patches.Polygon" target="_top" title="A general polygon patch." alt="" coords="253,391,302,407"/>
+<area shape="rect" id="node46" href="_as_gen/matplotlib.patches.FancyBboxPatch.html#matplotlib.patches.FancyBboxPatch" target="_top" title="Draw a fancy box around a rectangle with lower left at *xy*=(*x*," alt="" coords="236,423,318,439"/>
+<area shape="rect" id="node61" href="_as_gen/matplotlib.patches.PathPatch.html#matplotlib.patches.PathPatch" target="_top" title="A general polycurve path patch." alt="" coords="250,455,305,471"/>
+<area shape="rect" id="node67" href="_as_gen/matplotlib.patches.Shadow.html#matplotlib.patches.Shadow" target="_top" title="Shadow" alt="" coords="253,487,302,503"/>
+<area shape="rect" id="node68" href="spines_api.html#matplotlib.spines.Spine" target="_top" title="an axis spine &#45;&#45; the line noting the data area boundaries" alt="" coords="253,520,302,536"/>
+<area shape="rect" id="node76" href="_as_gen/matplotlib.patches.Wedge.html#matplotlib.patches.Wedge" target="_top" title="Wedge shaped patch." alt="" coords="253,552,302,568"/>
+<area shape="rect" id="node79" href="_as_gen/matplotlib.patches.YAArrow.html#matplotlib.patches.YAArrow" target="_top" title="Yet another arrow class." alt="" coords="253,584,302,600"/>
+<area shape="rect" id="node15" href="collections_api.html#matplotlib.collections.AsteriskPolygonCollection" target="_top" title="Draw a collection of regular asterisks with *numsides* points." alt="" coords="494,1084,612,1100"/>
+<area shape="rect" id="node16" href="collections_api.html#matplotlib.collections.RegularPolyCollection" target="_top" title="Draw a collection of regular polygons with *numsides*." alt="" coords="359,1068,461,1084"/>
+<area shape="rect" id="node69" href="collections_api.html#matplotlib.collections.StarPolygonCollection" target="_top" title="Draw a collection of regular stars with *numsides* points." alt="" coords="501,1052,604,1068"/>
+<area shape="rect" id="node18" title="The :class:`Axes` contains most of the figure elements:" alt="" coords="253,778,302,794"/>
+<area shape="rect" id="node63" href="projections_api.html#matplotlib.projections.polar.PolarAxes" target="_top" title="A polar graph projection, where the input dimensions are *theta*, *r*." alt="" coords="383,778,438,794"/>
+<area shape="rect" id="node20" href="image_api.html#matplotlib.image.AxesImage" target="_top" title="AxesImage" alt="" coords="248,939,307,955"/>
+<area shape="rect" id="node56" href="image_api.html#matplotlib.image.NonUniformImage" target="_top" title="NonUniformImage" alt="" coords="367,939,454,955"/>
+<area shape="rect" id="node62" href="image_api.html#matplotlib.image.PcolorImage" target="_top" title="Make a pcolor&#45;style plot with an irregular rectangular grid." alt="" coords="378,907,442,923"/>
+<area shape="rect" id="node25" href="image_api.html#matplotlib.image.BboxImage" target="_top" title="The Image class whose size is determined by the given bbox." alt="" coords="248,874,307,890"/>
+<area shape="rect" id="node48" href="image_api.html#matplotlib.image.FigureImage" target="_top" title="FigureImage" alt="" coords="245,907,310,923"/>
+<area shape="rect" id="node77" href="axis_api.html#matplotlib.axis.XAxis" target="_top" title="XAxis" alt="" coords="253,842,302,858"/>
+<area shape="rect" id="node80" href="axis_api.html#matplotlib.axis.YAxis" target="_top" title="YAxis" alt="" coords="253,810,302,826"/>
+<area shape="rect" id="node23" title="Specialized PolyCollection for barbs." alt="" coords="528,939,577,955"/>
+<area shape="rect" id="node24" href="collections_api.html#matplotlib.collections.PolyCollection" target="_top" title="PolyCollection" alt="" coords="375,971,446,987"/>
+<area shape="rect" id="node26" href="collections_api.html#matplotlib.collections.BrokenBarHCollection" target="_top" title="A collection of horizontal bars spanning *yrange* with a sequence of" alt="" coords="501,971,604,987"/>
+<area shape="rect" id="node65" title="Specialized PolyCollection for arrows." alt="" coords="528,1003,577,1019"/>
+<area shape="rect" id="node27" title="A cell is a Rectangle with some associated text." alt="" coords="386,681,434,697"/>
+<area shape="rect" id="node39" title="A subclass of Cell where the sides may be visibly toggled." alt="" coords="522,681,583,697"/>
+<area shape="rect" id="node30" href="collections_api.html#matplotlib.collections.CircleCollection" target="_top" title="A collection of circles, drawn using splines." alt="" coords="372,1003,448,1019"/>
+<area shape="rect" id="node31" title="Base class for collections that have an array of sizes." alt="" coords="228,1003,327,1019"/>
+<area shape="rect" id="node60" href="collections_api.html#matplotlib.collections.PathCollection" target="_top" title="This is the most basic :class:`Collection` subclass." alt="" coords="374,1036,446,1052"/>
+<area shape="rect" id="node32" href="_as_gen/matplotlib.patches.CirclePolygon.html#matplotlib.patches.CirclePolygon" target="_top" title="A polygon&#45;approximation of a circle patch." alt="" coords="375,713,445,729"/>
+<area shape="rect" id="node41" href="collections_api.html#matplotlib.collections.EllipseCollection" target="_top" title="A collection of ellipses, drawn using splines." alt="" coords="237,1036,317,1052"/>
+<area shape="rect" id="node43" href="collections_api.html#matplotlib.collections.LineCollection" target="_top" title="All parameters must be sequences or scalars; if scalars, they will" alt="" coords="242,1068,313,1084"/>
+<area shape="rect" id="node59" href="collections_api.html#matplotlib.collections.PatchCollection" target="_top" title="A generic collection of patches." alt="" coords="239,1100,316,1116"/>
+<area shape="rect" id="node64" href="collections_api.html#matplotlib.collections.QuadMesh" target="_top" title="Class for the efficient drawing of a quadrilateral mesh." alt="" coords="248,1132,307,1148"/>
+<area shape="rect" id="node74" href="collections_api.html#matplotlib.collections.TriMesh" target="_top" title="Class for the efficient drawing of a triangular mesh using" alt="" coords="253,971,302,987"/>
+<area shape="rect" id="node36" href="cm_api.html#matplotlib.cm.ScalarMappable" target="_top" title="This is a mixin class to support scalar data to RGBA mapping." alt="" coords="5,955,84,971"/>
+<area shape="rect" id="node37" href="_as_gen/matplotlib.patches.ConnectionPatch.html#matplotlib.patches.ConnectionPatch" target="_top" title="A :class:`~matplotlib.patches.ConnectionPatch` class is to make" alt="" coords="369,745,451,761"/>
+<area shape="rect" id="node42" href="collections_api.html#matplotlib.collections.EventCollection" target="_top" title="A collection of discrete events." alt="" coords="372,1100,448,1116"/>
+<area shape="rect" id="node44" href="_as_gen/matplotlib.patches.FancyArrow.html#matplotlib.patches.FancyArrow" target="_top" title="Like Arrow, but lets you set head width and head height independently." alt="" coords="379,391,441,407"/>
+<area shape="rect" id="node49" href="offsetbox_api.html#matplotlib.offsetbox.HPacker" target="_top" title="The HPacker has its children packed horizontally. It automatically" alt="" coords="386,84,435,100"/>
+<area shape="rect" id="node75" href="offsetbox_api.html#matplotlib.offsetbox.VPacker" target="_top" title="The VPacker has its children packed vertically. It automatically" alt="" coords="386,116,434,133"/>
+<area shape="rect" id="node78" href="axis_api.html#matplotlib.axis.XTick" target="_top" title="Contains all the Artists needed to make an x tick &#45; the tick line," alt="" coords="253,36,302,52"/>
+<area shape="rect" id="node81" href="axis_api.html#matplotlib.axis.YTick" target="_top" title="Contains all the Artists needed to make a Y tick &#45; the tick line," alt="" coords="253,4,302,20"/>
+</map>

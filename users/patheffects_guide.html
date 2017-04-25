@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Path effects guide &mdash; Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation</title>
+    <title>Path effects guide &mdash; Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5131+g4284fdfc5',
+        VERSION:     '2.0.0b1.post5132+g17ef1d20f',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation" href="../index.html" />
     <link rel="up" title="Tutorials" href="tutorials.html" />
     <link rel="next" title="Working with text" href="index_text.html" />
     <link rel="prev" title="Path Tutorial" href="path_tutorial.html" /> 
@@ -148,8 +148,8 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <p>Matplotlib&#8217;s <a class="reference internal" href="#module-matplotlib.patheffects" title="matplotlib.patheffects"><code class="xref py py-mod docutils literal"><span class="pre">patheffects</span></code></a> module provides functionality to
 apply a multiple draw stage to any Artist which can be rendered via a
 <a class="reference internal" href="../api/path_api.html#matplotlib.path.Path" title="matplotlib.path.Path"><code class="xref py py-class docutils literal"><span class="pre">Path</span></code></a>.</p>
-<p>Artists which can have a path effect applied to them include <a class="reference internal" href="../api/patches_api.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-class docutils literal"><span class="pre">Patch</span></code></a>,
-<a class="reference internal" href="../api/lines_api.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a>, <a class="reference internal" href="../api/collections_api.html#matplotlib.collections.Collection" title="matplotlib.collections.Collection"><code class="xref py py-class docutils literal"><span class="pre">Collection</span></code></a> and even
+<p>Artists which can have a path effect applied to them include <a class="reference internal" href="../api/_as_gen/matplotlib.patches.Patch.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-class docutils literal"><span class="pre">Patch</span></code></a>,
+<a class="reference internal" href="../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a>, <a class="reference internal" href="../api/collections_api.html#matplotlib.collections.Collection" title="matplotlib.collections.Collection"><code class="xref py py-class docutils literal"><span class="pre">Collection</span></code></a> and even
 <a class="reference internal" href="../api/text_api.html#matplotlib.text.Text" title="matplotlib.text.Text"><code class="xref py py-class docutils literal"><span class="pre">Text</span></code></a>. Each artist&#8217;s path effects can be controlled via the
 <code class="docutils literal"><span class="pre">set_path_effects</span></code> method (<a class="reference internal" href="../api/_as_gen/matplotlib.artist.Artist.set_path_effects.html#matplotlib.artist.Artist.set_path_effects" title="matplotlib.artist.Artist.set_path_effects"><code class="xref py py-class docutils literal"><span class="pre">set_path_effects</span></code></a>), which takes
 an iterable of <a class="reference internal" href="../api/patheffects_api.html#matplotlib.patheffects.AbstractPathEffect" title="matplotlib.patheffects.AbstractPathEffect"><code class="xref py py-class docutils literal"><span class="pre">AbstractPathEffect</span></code></a> instances.</p>
@@ -238,8 +238,8 @@ for its user interface.</p>
 <p>As already mentioned, some of the path effects operate at a lower level than most users
 will be used to, meaning that setting keywords such as <code class="docutils literal"><span class="pre">facecolor</span></code> and <code class="docutils literal"><span class="pre">edgecolor</span></code>
 raise an AttributeError. Luckily there is a generic <a class="reference internal" href="../api/patheffects_api.html#matplotlib.patheffects.PathPatchEffect" title="matplotlib.patheffects.PathPatchEffect"><code class="xref py py-class docutils literal"><span class="pre">PathPatchEffect</span></code></a> path effect
-which creates a <a class="reference internal" href="../api/patches_api.html#matplotlib.patches.PathPatch" title="matplotlib.patches.PathPatch"><code class="xref py py-class docutils literal"><span class="pre">PathPatch</span></code></a> class with the original path.
-The keywords to this effect are identical to those of <a class="reference internal" href="../api/patches_api.html#matplotlib.patches.PathPatch" title="matplotlib.patches.PathPatch"><code class="xref py py-class docutils literal"><span class="pre">PathPatch</span></code></a>:</p>
+which creates a <a class="reference internal" href="../api/_as_gen/matplotlib.patches.PathPatch.html#matplotlib.patches.PathPatch" title="matplotlib.patches.PathPatch"><code class="xref py py-class docutils literal"><span class="pre">PathPatch</span></code></a> class with the original path.
+The keywords to this effect are identical to those of <a class="reference internal" href="../api/_as_gen/matplotlib.patches.PathPatch.html#matplotlib.patches.PathPatch" title="matplotlib.patches.PathPatch"><code class="xref py py-class docutils literal"><span class="pre">PathPatch</span></code></a>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">matplotlib.patheffects</span> <span class="kn">as</span> <span class="nn">path_effects</span>
 
@@ -268,7 +268,7 @@ The keywords to this effect are identical to those of <a class="reference intern
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 23, 2017.
+      Last updated on Apr 24, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

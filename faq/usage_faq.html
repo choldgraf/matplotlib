@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Usage &mdash; Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation</title>
+    <title>Usage &mdash; Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5131+g4284fdfc5',
+        VERSION:     '2.0.0b1.post5132+g17ef1d20f',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5131+g4284fdfc5 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="How-To" href="howto_faq.html" />
     <link rel="prev" title="Installation" href="installing_faq.html" /> 
@@ -166,7 +166,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <li><a class="reference internal" href="#usage" id="id4">Usage</a><ul>
 <li><a class="reference internal" href="#general-concepts" id="id5">General Concepts</a></li>
 <li><a class="reference internal" href="#parts-of-a-figure" id="id6">Parts of a Figure</a><ul>
-<li><a class="reference internal" href="#figure" id="id7"><a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a></a></li>
+<li><a class="reference internal" href="#figure" id="id7"><a class="reference internal" href="../api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a></a></li>
 <li><a class="reference internal" href="#axes" id="id8"><a class="reference internal" href="../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a></a></li>
 <li><a class="reference internal" href="#axis" id="id9"><a class="reference internal" href="../api/axis_api.html#matplotlib.axis.Axis" title="matplotlib.axis.Axis"><code class="xref py py-class docutils literal"><span class="pre">Axis</span></code></a></a></li>
 <li><a class="reference internal" href="#artist" id="id10"><a class="reference internal" href="../api/artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-class docutils literal"><span class="pre">Artist</span></code></a></a></li>
@@ -225,7 +225,7 @@ completely, leaving a purely object-oriented approach.</p>
 <span id="figure-parts"></span><h2>Parts of a Figure<a class="headerlink" href="#parts-of-a-figure" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/anatomy.png" src="../_images/anatomy.png" />
 <div class="section" id="figure">
-<h3><a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a><a class="headerlink" href="#figure" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="../api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a><a class="headerlink" href="#figure" title="Permalink to this headline">¶</a></h3>
 <p>The <strong>whole</strong> figure.  The figure keeps
 track of all the child <a class="reference internal" href="../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a>, a smattering of
 &#8216;special&#8217; artists (titles, figure legends, etc), and the <strong>canvas</strong>.
@@ -245,7 +245,7 @@ at least one.</p>
 <p>This is what you think of as &#8216;a plot&#8217;, it is the region of the image
 with the data space (marked as the inner blue box).  A given figure
 can contain many Axes, but a given <a class="reference internal" href="../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a>
-object can only be in one <a class="reference internal" href="../api/figure_api.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a>.  The
+object can only be in one <a class="reference internal" href="../api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a>.  The
 Axes contains two (or three in the case of 3D)
 <a class="reference internal" href="../api/axis_api.html#matplotlib.axis.Axis" title="matplotlib.axis.Axis"><code class="xref py py-class docutils literal"><span class="pre">Axis</span></code></a> objects (be aware of the difference
 between <strong>Axes</strong> and <strong>Axis</strong>) which take care of the data limits (the
@@ -795,7 +795,7 @@ to block execution until you have manually destroyed them.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 23, 2017.
+      Last updated on Apr 24, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>
