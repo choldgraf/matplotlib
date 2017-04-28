@@ -257,7 +257,6 @@ users and developers.
 
     <div style='clear:both'></div>
 
-"""
 .. _tutorials-colors:
 
 Colors
@@ -269,7 +268,7 @@ these colormaps look, how you can create your own, and how you can
 customize colormaps for your use case.
 
 For even more information see the :ref:`examples page <color_examples>`.
-"""
+
 
 
 .. raw:: html
