@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How-To &mdash; Matplotlib 2.0.0b1.post5148.dev0+ge4e1e1859 documentation</title>
+    <title>How-To &mdash; Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5148.dev0+ge4e1e1859',
+        VERSION:     '2.0.0b1.post5149.dev0+g964ef5ea3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,17 +28,17 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5148.dev0+ge4e1e1859 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5148.dev0+ge4e1e1859 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting_faq.html" />
-    <link rel="prev" title="Usage" href="usage_faq.html" /> 
+    <link rel="prev" title="Installation" href="installing_faq.html" /> 
 
 
   </head>
@@ -72,7 +72,7 @@ type="text/css" />
           <a href="troubleshooting_faq.html" title="Troubleshooting"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="usage_faq.html" title="Usage"
+          <a href="installing_faq.html" title="Installation"
              accesskey="P">previous</a> |</li>
 
         <li><a href="../index.html">home</a>|&nbsp;</li>
@@ -142,7 +142,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <ul>
   <li><a href="../contents.html">Documentation overview</a><ul>
   <li><a href="index.html">The Matplotlib FAQ</a><ul>
-      <li>Previous: <a href="usage_faq.html" title="previous chapter">Usage</a></li>
+      <li>Previous: <a href="installing_faq.html" title="previous chapter">Installation</a></li>
       <li>Next: <a href="troubleshooting_faq.html" title="next chapter">Troubleshooting</a></li>
   </ul></li>
   </ul></li>
@@ -384,7 +384,7 @@ specify the location explicitly:</p>
 <p class="first admonition-title">Note</p>
 <p>This is now easier to handle than ever before.
 Calling <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout"><code class="xref py py-func docutils literal"><span class="pre">tight_layout()</span></code></a> can fix many common
-layout issues. See the <a class="reference internal" href="../tutorials/01_introductory/tight_layout_guide.html#plotting-guide-tight-layout"><span class="std std-ref">Tight Layout guide</span></a>.</p>
+layout issues. See the <a class="reference internal" href="../tutorials/02_intermediate/tight_layout_guide.html#plotting-guide-tight-layout"><span class="std std-ref">Tight Layout guide</span></a>.</p>
 <p class="last">The information below is kept here in case it is useful for other
 purposes.</p>
 </div>
@@ -535,7 +535,7 @@ See <a class="reference internal" href="../gallery/api/two_scales.html#api-two-s
 <div class="section" id="generate-images-without-having-a-window-appear">
 <span id="howto-batch"></span><h3>Generate images without having a window appear<a class="headerlink" href="#generate-images-without-having-a-window-appear" title="Permalink to this headline">¶</a></h3>
 <p>The easiest way to do this is use a non-interactive backend (see
-<a class="reference internal" href="usage_faq.html#what-is-a-backend"><span class="std std-ref">What is a backend?</span></a>) such as Agg (for PNGs), PDF, SVG or PS.  In
+<a class="reference internal" href="../tutorials/01_introductory/usage.html#what-is-a-backend"><span class="std std-ref">What is a backend?</span></a>) such as Agg (for PNGs), PDF, SVG or PS.  In
 your figure-generating script, just call the
 <a class="reference internal" href="../api/matplotlib_configuration_api.html#matplotlib.use" title="matplotlib.use"><code class="xref py py-func docutils literal"><span class="pre">matplotlib.use()</span></code></a> directive before importing pylab or
 pyplot:</p>
@@ -563,7 +563,7 @@ execution is paused), you should only call this once per script, at the end.
 Script execution is resumed after the last window is closed. Therefore, if
 you are using Matplotlib to generate only images and do not want a user
 interface window, you do not need to call <code class="docutils literal"><span class="pre">show</span></code>  (see <a class="reference internal" href="#howto-batch"><span class="std std-ref">Generate images without having a window appear</span></a>
-and <a class="reference internal" href="usage_faq.html#what-is-a-backend"><span class="std std-ref">What is a backend?</span></a>).</p>
+and <a class="reference internal" href="../tutorials/01_introductory/usage.html#what-is-a-backend"><span class="std std-ref">What is a backend?</span></a>).</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Because closing a figure window invokes the destruction of its plotting
@@ -732,7 +732,7 @@ Agg is to call:</p>
 </pre></div>
 </div>
 <p>For more on configuring your backend, see
-<a class="reference internal" href="usage_faq.html#what-is-a-backend"><span class="std std-ref">What is a backend?</span></a>.</p>
+<a class="reference internal" href="../tutorials/01_introductory/usage.html#what-is-a-backend"><span class="std std-ref">What is a backend?</span></a>.</p>
 <p>Alternatively, you can avoid pylab/pyplot altogether, which will give
 you a little more control, by calling the API directly as shown in
 <a class="reference internal" href="../gallery/api/agg_oo_sgskip.html#api-agg-oo"><span class="std std-ref">The object-oriented interface</span></a>.</p>

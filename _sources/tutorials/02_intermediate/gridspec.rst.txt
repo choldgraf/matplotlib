@@ -1,6 +1,6 @@
 
 
-.. _sphx_glr_tutorials_01_introductory_gridspec.py:
+.. _sphx_glr_tutorials_02_intermediate_gridspec.py:
 
 
 .. _gridspec-guide:
@@ -65,12 +65,12 @@ Basic Example of using subplot2grid
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_001.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_001.png
             :scale: 47
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_002.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_002.png
             :scale: 47
 
 
@@ -92,7 +92,7 @@ To create a subplot that spans multiple cells:
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_003.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_003.png
     :align: center
 
 
@@ -114,7 +114,7 @@ For example, see the output of the following commands:
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_004.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_004.png
     :align: center
 
 
@@ -157,12 +157,12 @@ For example:
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_005.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_005.png
             :scale: 47
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_006.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_006.png
             :scale: 47
 
 
@@ -186,7 +186,7 @@ The above example becomes ::
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_007.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_007.png
     :align: center
 
 
@@ -210,7 +210,7 @@ parameters of subplots that are created from the GridSpec. ::
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_008.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_008.png
     :align: center
 
 
@@ -248,12 +248,12 @@ For example, see this code and the resulting figure:
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_009.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_009.png
             :scale: 47
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_010.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_010.png
             :scale: 47
 
 
@@ -280,7 +280,7 @@ the given SubplotSpec.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_011.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_011.png
     :align: center
 
 
@@ -363,18 +363,18 @@ spines in each of the inner 3x3 grids.
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_012.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_012.png
             :scale: 47
 
     *
 
-      .. image:: /tutorials/01_introductory/images/sphx_glr_gridspec_013.png
+      .. image:: /tutorials/02_intermediate/images/sphx_glr_gridspec_013.png
             :scale: 47
 
 
 
 
-**Total running time of the script:** ( 0 minutes  12.311 seconds)
+**Total running time of the script:** ( 0 minutes  12.118 seconds)
 
 
 

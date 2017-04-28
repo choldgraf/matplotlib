@@ -1,9 +1,9 @@
 """
 .. _colormaps:
 
-******************
-Choosing Colormaps
-******************
+***********************
+Colormaps in Matplotlib
+***********************
 
 How (and why) to choose a particular colormap.
 
@@ -61,79 +61,148 @@ Colormaps are often split into several categories based on their function (see,
 3. Qualitative: often are miscellaneous colors; should be used to
    represent information which does not have ordering or
    relationships.
-
-
-Lightness of matplotlib colormaps
-=================================
-
-Here we examine the lightness values of the matplotlib colormaps. Note that some
-documentation on the colormaps is available ([list-colormaps]_).
-
-Sequential
-----------
-
-For the Sequential plots, the lightness value increases monotonically through
-the colormaps. This is good. Some of the :math:`L^*` values in the colormaps
-span from 0 to 100 (binary and the other grayscale), and others start around
-:math:`L^*=20`. Those that have a smaller range of :math:`L^*` will accordingly
-have a smaller perceptual range. Note also that the :math:`L^*` function varies
-amongst the colormaps: some are approximately linear in :math:`L^*` and others
-are more curved.
-
-Sequential2
------------
-
-Many of the :math:`L^*` values from the Sequential2 plots are monotonically
-increasing, but some (autumn, cool, spring, and winter) plateau or even go both
-up and down in :math:`L^*` space. Others (afmhot, copper, gist_heat, and hot)
-have kinks in the :math:`L^*` functions. Data that is being represented in a
-region of the colormap that is at a plateau or kink will lead to a perception of
-banding of the data in those values in the colormap (see [mycarta-banding]_ for
-an excellent example of this).
-
-Diverging
----------
-
-For the Diverging maps, we want to have monotonically increasing :math:`L^*`
-values up to a maximum, which should be close to :math:`L^*=100`, followed by
-monotonically decreasing :math:`L^*` values. We are looking for approximately
-equal minimum :math:`L^*` values at opposite ends of the colormap. By these
-measures, BrBG and RdBu are good options. coolwarm is a good option, but it
-doesn't span a wide range of :math:`L^*` values (see grayscale section below).
-
-Qualitative
------------
-
-Qualitative colormaps are not aimed at being perceptual maps, but looking at the
-lightness parameter can verify that for us. The :math:`L^*` values move all over
-the place throughout the colormap, and are clearly not monotonically increasing.
-These would not be good options for use as perceptual colormaps.
-
-Miscellaneous
--------------
-
-Some of the miscellaneous colormaps have particular uses for which
-they have been created. For example, gist_earth, ocean, and terrain
-all seem to be created for plotting topography (green/brown) and water
-depths (blue) together. We would expect to see a divergence in these
-colormaps, then, but multiple kinks may not be ideal, such as in
-gist_earth and terrain. CMRmap was created to convert well to
-grayscale, though it does appear to have some small kinks in
-:math:`L^*`.  cubehelix was created to vary smoothly in both lightness
-and hue, but appears to have a small hump in the green hue area.
-
-The often-used jet colormap is included in this set of colormaps. We can see
-that the :math:`L^*` values vary widely throughout the colormap, making it a
-poor choice for representing data for viewers to see perceptually. See an
-extension on this idea at [mycarta-jet]_.
 """
+
+# sphinx_gallery_thumbnail_number = 2
 
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from colorspacious import cspace_converter
-from colormaps import cmaps  # the colormaps, grouped by category
+from collections import OrderedDict
+
+cmaps = OrderedDict()
+
+###############################################################################
+# Sequential
+# ----------
+#
+# For the Sequential plots, the lightness value increases monotonically through
+# the colormaps. This is good. Some of the :math:`L^*` values in the colormaps
+# span from 0 to 100 (binary and the other grayscale), and others start around
+# :math:`L^*=20`. Those that have a smaller range of :math:`L^*` will accordingly
+# have a smaller perceptual range. Note also that the :math:`L^*` function varies
+# amongst the colormaps: some are approximately linear in :math:`L^*` and others
+# are more curved.
+
+cmaps['Perceptually Uniform Sequential'] = ['viridis', 'plasma',
+                                            'inferno', 'magma']
+
+cmaps['Sequential'] = [
+            'Greys', 'Purples', 'Blues', 'Greens', 'Oranges', 'Reds',
+            'YlOrBr', 'YlOrRd', 'OrRd', 'PuRd', 'RdPu', 'BuPu',
+            'GnBu', 'PuBu', 'YlGnBu', 'PuBuGn', 'BuGn', 'YlGn']
+
+###############################################################################
+# Sequential2
+# -----------
+#
+# Many of the :math:`L^*` values from the Sequential2 plots are monotonically
+# increasing, but some (autumn, cool, spring, and winter) plateau or even go both
+# up and down in :math:`L^*` space. Others (afmhot, copper, gist_heat, and hot)
+# have kinks in the :math:`L^*` functions. Data that is being represented in a
+# region of the colormap that is at a plateau or kink will lead to a perception of
+# banding of the data in those values in the colormap (see [mycarta-banding]_ for
+# an excellent example of this).
+
+cmaps['Sequential (2)'] = [
+            'binary', 'gist_yarg', 'gist_gray', 'gray', 'bone', 'pink',
+            'spring', 'summer', 'autumn', 'winter', 'cool', 'Wistia',
+            'hot', 'afmhot', 'gist_heat', 'copper']
+
+###############################################################################
+# Diverging
+# ---------
+#
+# For the Diverging maps, we want to have monotonically increasing :math:`L^*`
+# values up to a maximum, which should be close to :math:`L^*=100`, followed by
+# monotonically decreasing :math:`L^*` values. We are looking for approximately
+# equal minimum :math:`L^*` values at opposite ends of the colormap. By these
+# measures, BrBG and RdBu are good options. coolwarm is a good option, but it
+# doesn't span a wide range of :math:`L^*` values (see grayscale section below).
+
+cmaps['Diverging'] = [
+            'PiYG', 'PRGn', 'BrBG', 'PuOr', 'RdGy', 'RdBu',
+            'RdYlBu', 'RdYlGn', 'Spectral', 'coolwarm', 'bwr', 'seismic']
+
+###############################################################################
+# Qualitative
+# -----------
+#
+# Qualitative colormaps are not aimed at being perceptual maps, but looking at the
+# lightness parameter can verify that for us. The :math:`L^*` values move all over
+# the place throughout the colormap, and are clearly not monotonically increasing.
+# These would not be good options for use as perceptual colormaps.
+
+cmaps['Qualitative'] = ['Pastel1', 'Pastel2', 'Paired', 'Accent',
+                        'Dark2', 'Set1', 'Set2', 'Set3',
+                        'tab10', 'tab20', 'tab20b', 'tab20c']
+
+###############################################################################
+# Miscellaneous
+# -------------
+#
+# Some of the miscellaneous colormaps have particular uses for which
+# they have been created. For example, gist_earth, ocean, and terrain
+# all seem to be created for plotting topography (green/brown) and water
+# depths (blue) together. We would expect to see a divergence in these
+# colormaps, then, but multiple kinks may not be ideal, such as in
+# gist_earth and terrain. CMRmap was created to convert well to
+# grayscale, though it does appear to have some small kinks in
+# :math:`L^*`.  cubehelix was created to vary smoothly in both lightness
+# and hue, but appears to have a small hump in the green hue area.
+#
+# The often-used jet colormap is included in this set of colormaps. We can see
+# that the :math:`L^*` values vary widely throughout the colormap, making it a
+# poor choice for representing data for viewers to see perceptually. See an
+# extension on this idea at [mycarta-jet]_.
+
+cmaps['Miscellaneous'] = [
+            'flag', 'prism', 'ocean', 'gist_earth', 'terrain', 'gist_stern',
+            'gnuplot', 'gnuplot2', 'CMRmap', 'cubehelix', 'brg', 'hsv',
+            'gist_rainbow', 'rainbow', 'jet', 'nipy_spectral', 'gist_ncar']
+
+###############################################################################
+# .. _color-colormaps_reference:
+#
+# First, we'll show the range of each colormap. Note that some seem
+# to change more "quickly" than others.
+
+nrows = max(len(cmap_list) for cmap_category, cmap_list in cmaps.items())
+gradient = np.linspace(0, 1, 256)
+gradient = np.vstack((gradient, gradient))
+
+
+def plot_color_gradients(cmap_category, cmap_list, nrows):
+    fig, axes = plt.subplots(nrows=nrows)
+    fig.subplots_adjust(top=0.95, bottom=0.01, left=0.2, right=0.99)
+    axes[0].set_title(cmap_category + ' colormaps', fontsize=14)
+
+    for ax, name in zip(axes, cmap_list):
+        ax.imshow(gradient, aspect='auto', cmap=plt.get_cmap(name))
+        pos = list(ax.get_position().bounds)
+        x_text = pos[0] - 0.01
+        y_text = pos[1] + pos[3]/2.
+        fig.text(x_text, y_text, name, va='center', ha='right', fontsize=10)
+
+    # Turn off *all* ticks & spines, not just the ones with colormaps.
+    for ax in axes:
+        ax.set_axis_off()
+
+
+for cmap_category, cmap_list in cmaps.items():
+    plot_color_gradients(cmap_category, cmap_list, nrows)
+
+plt.show()
+
+###############################################################################
+# Lightness of matplotlib colormaps
+# =================================
+#
+# Here we examine the lightness values of the matplotlib colormaps.
+# Note that some documentation on the colormaps is available
+# ([list-colormaps]_).
 
 mpl.rcParams.update({'font.size': 12})
 
@@ -151,7 +220,7 @@ _DC = {'Perceptually Uniform Sequential': 1.4, 'Sequential': 0.7,
 x = np.linspace(0.0, 1.0, 100)
 
 # Do plot
-for cmap_category, cmap_list in cmaps:
+for cmap_category, cmap_list in cmaps.items():
 
     # Do subplots so that colormaps have enough space.
     # Default is 6 colormaps per subplot.
@@ -294,7 +363,7 @@ def plot_color_gradients(cmap_category, cmap_list):
     plt.show()
 
 
-for cmap_category, cmap_list in cmaps:
+for cmap_category, cmap_list in cmaps.items():
 
     plot_color_gradients(cmap_category, cmap_list)
 
@@ -327,4 +396,3 @@ for cmap_category, cmap_list in cmaps:
 # .. [colorblindness] http://www.color-blindness.com/
 # .. [vischeck] http://www.vischeck.com/vischeck/
 # .. [IBM] http://www.research.ibm.com/people/l/lloydt/color/color.HTM
-# """

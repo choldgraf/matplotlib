@@ -69,6 +69,26 @@ effectively.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="*********** Usage Guide ***********">
+
+.. only:: html
+
+    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_usage_thumb.png
+
+        :ref:`sphx_glr_tutorials_01_introductory_usage.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/01_introductory/usage
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="=============== Pyplot tutorial ===============">
 
 .. only:: html
@@ -86,46 +106,6 @@ effectively.
    :hidden:
 
    /tutorials/01_introductory/pyplot
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="============================================== Customizing Location of Subplot Using GridSpec =...">
-
-.. only:: html
-
-    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_gridspec_thumb.png
-
-        :ref:`sphx_glr_tutorials_01_introductory_gridspec.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/01_introductory/gridspec
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="================== Tight Layout guide ==================">
-
-.. only:: html
-
-    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_tight_layout_guide_thumb.png
-
-        :ref:`sphx_glr_tutorials_01_introductory_tight_layout_guide.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/01_introductory/tight_layout_guide
 .. raw:: html
 
     <div style='clear:both'></div>
@@ -180,6 +160,46 @@ visualizations.
    :hidden:
 
    /tutorials/02_intermediate/artists
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============================================== Customizing Location of Subplot Using GridSpec =...">
+
+.. only:: html
+
+    .. figure:: /tutorials/02_intermediate/images/thumb/sphx_glr_gridspec_thumb.png
+
+        :ref:`sphx_glr_tutorials_02_intermediate_gridspec.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/02_intermediate/gridspec
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="================== Tight Layout guide ==================">
+
+.. only:: html
+
+    .. figure:: /tutorials/02_intermediate/images/thumb/sphx_glr_tight_layout_guide_thumb.png
+
+        :ref:`sphx_glr_tutorials_02_intermediate_tight_layout_guide.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/02_intermediate/tight_layout_guide
 .. raw:: html
 
     <div style='clear:both'></div>

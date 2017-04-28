@@ -1,6 +1,6 @@
 
 
-.. _sphx_glr_tutorials_01_introductory_tight_layout_guide.py:
+.. _sphx_glr_tutorials_02_intermediate_tight_layout_guide.py:
 
 
 .. _plotting-guide-tight-layout:
@@ -52,7 +52,7 @@ clipped.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_001.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_001.png
     :align: center
 
 
@@ -76,7 +76,7 @@ automatically for you.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_002.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_002.png
     :align: center
 
 
@@ -101,7 +101,7 @@ axes overlapping each other.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_003.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_003.png
     :align: center
 
 
@@ -125,7 +125,7 @@ subplots to minimize the overlaps.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_004.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_004.png
     :align: center
 
 
@@ -151,7 +151,7 @@ of fontsize.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_005.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_005.png
     :align: center
 
 
@@ -183,7 +183,7 @@ grid, while *ax3* is of a 1x2 grid.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_006.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_006.png
     :align: center
 
 
@@ -216,7 +216,7 @@ from the gridspec (:ref:`gridspec-guide`) will work.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_007.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_007.png
     :align: center
 
 
@@ -243,7 +243,7 @@ aspect != "auto" (e.g., axes with images).
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_008.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_008.png
     :align: center
 
 
@@ -293,7 +293,7 @@ GridSpec has its own :func:`~matplotlib.gridspec.GridSpec.tight_layout` method
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_009.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_009.png
     :align: center
 
 
@@ -322,7 +322,7 @@ figure coordinates and the default is (0, 0, 1, 1).
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_010.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_010.png
     :align: center
 
 
@@ -369,7 +369,7 @@ For example, this can be used for a figure with multiple gridspecs.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_011.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_011.png
     :align: center
 
 
@@ -429,7 +429,7 @@ gridspec. Same thing for the top.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_012.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_012.png
     :align: center
 
 
@@ -462,7 +462,7 @@ While limited, the axes_grid1 toolkit is also supported.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_013.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_013.png
     :align: center
 
 
@@ -493,7 +493,7 @@ colorbar as a subplot using the gridspec.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_014.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_014.png
     :align: center
 
 
@@ -522,13 +522,13 @@ explicitly create an axes for colorbar.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_tight_layout_guide_015.png
+.. image:: /tutorials/02_intermediate/images/sphx_glr_tight_layout_guide_015.png
     :align: center
 
 
 
 
-**Total running time of the script:** ( 0 minutes  5.766 seconds)
+**Total running time of the script:** ( 0 minutes  3.841 seconds)
 
 
 

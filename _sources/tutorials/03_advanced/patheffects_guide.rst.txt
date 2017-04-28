@@ -176,7 +176,7 @@ The keywords to this effect are identical to those of :class:`~matplotlib.patche
     --------------------------------
 
 
-**Total running time of the script:** ( 0 minutes  0.096 seconds)
+**Total running time of the script:** ( 0 minutes  0.083 seconds)
 
 
 

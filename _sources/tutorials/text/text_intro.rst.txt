@@ -109,7 +109,7 @@ these commands in action.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.179 seconds)
+**Total running time of the script:** ( 0 minutes  0.082 seconds)
 
 
 
