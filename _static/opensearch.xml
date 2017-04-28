@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>Matplotlib</ShortName>
-  <Description>Search Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation</Description>
+  <Description>Search Matplotlib 2.0.0b1.post5147.dev0+g0985bca87 documentation</Description>
   <InputEncoding>utf-8</InputEncoding>
   <Url type="text/html" method="get"
        template="False/search.html?q={searchTerms}&amp;check_keywords=yes&amp;area=default"/>
-  <LongName>Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation</LongName>
+  <LongName>Matplotlib 2.0.0b1.post5147.dev0+g0985bca87 documentation</LongName>
   
 </OpenSearchDescription>

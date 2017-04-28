@@ -121,7 +121,13 @@ too small::
     (\frac{5 - \frac{1}{x}}{4})
 
 The solution is to precede the bracket with ``\left`` and ``\right``
-to inform the parser that those brackets encompass the entire object.
+to inform the parser that those brackets encompass the entire object.::
+
+    r'$\left(\frac{5 - \frac{1}{x}}{4}\right)$'
+
+.. math ::
+
+    \left(\frac{5 - \frac{1}{x}}{4}\right)
 
 Radicals
 --------

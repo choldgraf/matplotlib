@@ -125,7 +125,13 @@ too small::
     (rac{5 - rac{1}{x}}{4})
 
 The solution is to precede the bracket with ``\left`` and ``ight``
-to inform the parser that those brackets encompass the entire object.
+to inform the parser that those brackets encompass the entire object.::
+
+    r'$\left(rac{5 - rac{1}{x}}{4}ight)$'
+
+.. math ::
+
+    \left(rac{5 - rac{1}{x}}{4}ight)
 
 Radicals
 --------
