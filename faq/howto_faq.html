@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How-To &mdash; Matplotlib 2.0.0b1.post5147.dev0+g0985bca87 documentation</title>
+    <title>How-To &mdash; Matplotlib 2.0.0b1.post5148.dev0+ge4e1e1859 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5147.dev0+g0985bca87',
+        VERSION:     '2.0.0b1.post5148.dev0+ge4e1e1859',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5147.dev0+g0985bca87 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5148.dev0+ge4e1e1859 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5147.dev0+g0985bca87 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5148.dev0+ge4e1e1859 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib FAQ" href="index.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting_faq.html" />
     <link rel="prev" title="Usage" href="usage_faq.html" /> 
@@ -245,7 +245,7 @@ you can explicitly install the <code class="xref py py-obj docutils literal"><sp
 </div>
 <div class="section" id="find-all-objects-in-a-figure-of-a-certain-type">
 <span id="howto-findobj"></span><h3>Find all objects in a figure of a certain type<a class="headerlink" href="#find-all-objects-in-a-figure-of-a-certain-type" title="Permalink to this headline">¶</a></h3>
-<p>Every Matplotlib artist (see <a class="reference internal" href="../tutorials/intermediate/artists.html#artist-tutorial"><span class="std std-ref">Artist tutorial</span></a>) has a method
+<p>Every Matplotlib artist (see <a class="reference internal" href="../tutorials/02_intermediate/artists.html#artist-tutorial"><span class="std std-ref">Artist tutorial</span></a>) has a method
 called <a class="reference internal" href="../api/_as_gen/matplotlib.artist.Artist.findobj.html#matplotlib.artist.Artist.findobj" title="matplotlib.artist.Artist.findobj"><code class="xref py py-meth docutils literal"><span class="pre">findobj()</span></code></a> that can be used to
 recursively search the artist for any artists it may contain that meet
 some criteria (e.g., match all <a class="reference internal" href="../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a>
@@ -345,7 +345,7 @@ labels:</p>
 </pre></div>
 </div>
 <p>You can control the defaults for these parameters in your
-<code class="file docutils literal"><span class="pre">matplotlibrc</span></code> file; see <a class="reference internal" href="../tutorials/introductory/customizing.html#customizing-matplotlib"><span class="std std-ref">Customizing matplotlib</span></a>.  For
+<code class="file docutils literal"><span class="pre">matplotlibrc</span></code> file; see <a class="reference internal" href="../tutorials/01_introductory/customizing.html#customizing-matplotlib"><span class="std std-ref">Customizing matplotlib</span></a>.  For
 example, to make the above setting permanent, you would set:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">figure</span><span class="o">.</span><span class="n">subplot</span><span class="o">.</span><span class="n">bottom</span> <span class="p">:</span> <span class="mf">0.2</span>   <span class="c1"># the bottom of the subplots of the figure</span>
 </pre></div>
@@ -384,7 +384,7 @@ specify the location explicitly:</p>
 <p class="first admonition-title">Note</p>
 <p>This is now easier to handle than ever before.
 Calling <a class="reference internal" href="../api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout"><code class="xref py py-func docutils literal"><span class="pre">tight_layout()</span></code></a> can fix many common
-layout issues. See the <a class="reference internal" href="../tutorials/introductory/tight_layout_guide.html#plotting-guide-tight-layout"><span class="std std-ref">Tight Layout guide</span></a>.</p>
+layout issues. See the <a class="reference internal" href="../tutorials/01_introductory/tight_layout_guide.html#plotting-guide-tight-layout"><span class="std std-ref">Tight Layout guide</span></a>.</p>
 <p class="last">The information below is kept here in case it is useful for other
 purposes.</p>
 </div>
@@ -436,7 +436,7 @@ is controlled by the &#8220;markeredgewidth&#8221; property:</p>
 <p>The other properties that control the tick marker, and all markers,
 are <code class="docutils literal"><span class="pre">markerfacecolor</span></code>, <code class="docutils literal"><span class="pre">markeredgecolor</span></code>, <code class="docutils literal"><span class="pre">markeredgewidth</span></code>,
 <code class="docutils literal"><span class="pre">markersize</span></code>.  For more information on configuring ticks, see
-<a class="reference internal" href="../tutorials/intermediate/artists.html#axis-container"><span class="std std-ref">Axis containers</span></a> and <a class="reference internal" href="../tutorials/intermediate/artists.html#tick-container"><span class="std std-ref">Tick containers</span></a>.</p>
+<a class="reference internal" href="../tutorials/02_intermediate/artists.html#axis-container"><span class="std std-ref">Axis containers</span></a> and <a class="reference internal" href="../tutorials/02_intermediate/artists.html#tick-container"><span class="std std-ref">Tick containers</span></a>.</p>
 </div>
 <div class="section" id="align-my-ylabels-across-multiple-subplots">
 <span id="howto-align-label"></span><h3>Align my ylabels across multiple subplots<a class="headerlink" href="#align-my-ylabels-across-multiple-subplots" title="Permalink to this headline">¶</a></h3>
@@ -838,7 +838,7 @@ reference page</a>):</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 27, 2017.
+      Last updated on Apr 28, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

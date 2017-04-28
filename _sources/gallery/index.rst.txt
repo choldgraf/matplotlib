@@ -10,6 +10,8 @@ Gallery
 This gallery contains examples of the many things you can do with
 Matplotlib. Click on any image to see the full image and source code.
 
+See the sidebar to the right for a list of topics covered.
+
 
 .. raw:: html
 
@@ -1820,6 +1822,10 @@ Axis Artist
 Color
 =====
 
+For more in-depth information about the colormaps available in matplotlib
+as well as a description of their properties,
+see the :ref:`colormaps tutorial <tutorials-colors>`.
+
 
 
 .. raw:: html
@@ -1881,86 +1887,6 @@ Color
    :hidden:
 
    /gallery/color/named_colors
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="">
-
-.. only:: html
-
-    .. figure:: /gallery/color/images/thumb/sphx_glr_colormaps_thumb.png
-
-        :ref:`sphx_glr_gallery_color_colormaps.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /gallery/color/colormaps
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="Show what Matplotlib colormaps look like in grayscale. Uses lightness L* as a proxy for graysca...">
-
-.. only:: html
-
-    .. figure:: /gallery/color/images/thumb/sphx_glr_grayscale_thumb.png
-
-        :ref:`sphx_glr_gallery_color_grayscale.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /gallery/color/grayscale
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="================== Colormap reference ==================">
-
-.. only:: html
-
-    .. figure:: /gallery/color/images/thumb/sphx_glr_colormaps_reference_thumb.png
-
-        :ref:`sphx_glr_gallery_color_colormaps_reference.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /gallery/color/colormaps_reference
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="For each colormap, plot the lightness parameter L* from CIELAB colorspace along the y axis vs i...">
-
-.. only:: html
-
-    .. figure:: /gallery/color/images/thumb/sphx_glr_lightness_thumb.png
-
-        :ref:`sphx_glr_gallery_color_lightness.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /gallery/color/lightness
 .. raw:: html
 
     <div style='clear:both'></div>

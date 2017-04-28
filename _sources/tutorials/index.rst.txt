@@ -5,137 +5,13 @@
 Tutorials
 =========
 
-This page contains more in-depth guides for using Matplotlib. It is broken up into
-beginner, intermediate, and advanced sections.
+This page contains more in-depth guides for using Matplotlib.
+It is broken up into beginner, intermediate, and advanced sections,
+as well as sections covering specific topics.
 
+See the sidebar to the right for a list of each topic.
 
-.. raw:: html
 
-    <div style='clear:both'></div>
-
-.. _tutorials-advanced:
-
-Advanced
-========
-
-These tutorials cover advanced topics for experience Matplotlib
-users and developers.
-
-
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="================== Path effects guide ==================">
-
-.. only:: html
-
-    .. figure:: /tutorials/advanced/images/thumb/sphx_glr_patheffects_guide_thumb.png
-
-        :ref:`sphx_glr_tutorials_advanced_patheffects_guide.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/advanced/patheffects_guide
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="============= Path Tutorial =============">
-
-.. only:: html
-
-    .. figure:: /tutorials/advanced/images/thumb/sphx_glr_path_tutorial_thumb.png
-
-        :ref:`sphx_glr_tutorials_advanced_path_tutorial.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/advanced/path_tutorial
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="======================== Transformations Tutorial ========================">
-
-.. only:: html
-
-    .. figure:: /tutorials/advanced/images/thumb/sphx_glr_transforms_tutorial_thumb.png
-
-        :ref:`sphx_glr_tutorials_advanced_transforms_tutorial.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/advanced/transforms_tutorial
-.. raw:: html
-
-    <div style='clear:both'></div>
-
-.. _tutorials-intermediate:
-
-Intermediate
-============
-
-These tutorials cover some of the more complicated classes and functions
-in Matplotlib. They can be useful for particular custom and complex
-visualizations.
-
-
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="============ Legend guide ============">
-
-.. only:: html
-
-    .. figure:: /tutorials/intermediate/images/thumb/sphx_glr_legend_guide_thumb.png
-
-        :ref:`sphx_glr_tutorials_intermediate_legend_guide.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/intermediate/legend_guide
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="=============== Artist tutorial ===============">
-
-.. only:: html
-
-    .. figure:: /tutorials/intermediate/images/thumb/sphx_glr_artists_thumb.png
-
-        :ref:`sphx_glr_tutorials_intermediate_artists.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/intermediate/artists
 .. raw:: html
 
     <div style='clear:both'></div>
@@ -157,9 +33,9 @@ effectively.
 
 .. only:: html
 
-    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_customizing_thumb.png
+    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_customizing_thumb.png
 
-        :ref:`sphx_glr_tutorials_introductory_customizing.py`
+        :ref:`sphx_glr_tutorials_01_introductory_customizing.py`
 
 .. raw:: html
 
@@ -169,7 +45,7 @@ effectively.
 .. toctree::
    :hidden:
 
-   /tutorials/introductory/customizing
+   /tutorials/01_introductory/customizing
 
 .. raw:: html
 
@@ -177,9 +53,9 @@ effectively.
 
 .. only:: html
 
-    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_images_thumb.png
+    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_images_thumb.png
 
-        :ref:`sphx_glr_tutorials_introductory_images.py`
+        :ref:`sphx_glr_tutorials_01_introductory_images.py`
 
 .. raw:: html
 
@@ -189,7 +65,7 @@ effectively.
 .. toctree::
    :hidden:
 
-   /tutorials/introductory/images
+   /tutorials/01_introductory/images
 
 .. raw:: html
 
@@ -197,9 +73,9 @@ effectively.
 
 .. only:: html
 
-    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_pyplot_thumb.png
+    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_pyplot_thumb.png
 
-        :ref:`sphx_glr_tutorials_introductory_pyplot.py`
+        :ref:`sphx_glr_tutorials_01_introductory_pyplot.py`
 
 .. raw:: html
 
@@ -209,7 +85,7 @@ effectively.
 .. toctree::
    :hidden:
 
-   /tutorials/introductory/pyplot
+   /tutorials/01_introductory/pyplot
 
 .. raw:: html
 
@@ -217,9 +93,9 @@ effectively.
 
 .. only:: html
 
-    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_gridspec_thumb.png
+    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_gridspec_thumb.png
 
-        :ref:`sphx_glr_tutorials_introductory_gridspec.py`
+        :ref:`sphx_glr_tutorials_01_introductory_gridspec.py`
 
 .. raw:: html
 
@@ -229,7 +105,7 @@ effectively.
 .. toctree::
    :hidden:
 
-   /tutorials/introductory/gridspec
+   /tutorials/01_introductory/gridspec
 
 .. raw:: html
 
@@ -237,9 +113,9 @@ effectively.
 
 .. only:: html
 
-    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_tight_layout_guide_thumb.png
+    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_tight_layout_guide_thumb.png
 
-        :ref:`sphx_glr_tutorials_introductory_tight_layout_guide.py`
+        :ref:`sphx_glr_tutorials_01_introductory_tight_layout_guide.py`
 
 .. raw:: html
 
@@ -249,7 +125,212 @@ effectively.
 .. toctree::
    :hidden:
 
-   /tutorials/introductory/tight_layout_guide
+   /tutorials/01_introductory/tight_layout_guide
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+.. _tutorials-intermediate:
+
+Intermediate
+============
+
+These tutorials cover some of the more complicated classes and functions
+in Matplotlib. They can be useful for particular custom and complex
+visualizations.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============ Legend guide ============">
+
+.. only:: html
+
+    .. figure:: /tutorials/02_intermediate/images/thumb/sphx_glr_legend_guide_thumb.png
+
+        :ref:`sphx_glr_tutorials_02_intermediate_legend_guide.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/02_intermediate/legend_guide
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="=============== Artist tutorial ===============">
+
+.. only:: html
+
+    .. figure:: /tutorials/02_intermediate/images/thumb/sphx_glr_artists_thumb.png
+
+        :ref:`sphx_glr_tutorials_02_intermediate_artists.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/02_intermediate/artists
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+.. _tutorials-advanced:
+
+Advanced
+========
+
+These tutorials cover advanced topics for experience Matplotlib
+users and developers.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="================== Path effects guide ==================">
+
+.. only:: html
+
+    .. figure:: /tutorials/03_advanced/images/thumb/sphx_glr_patheffects_guide_thumb.png
+
+        :ref:`sphx_glr_tutorials_03_advanced_patheffects_guide.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/03_advanced/patheffects_guide
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============= Path Tutorial =============">
+
+.. only:: html
+
+    .. figure:: /tutorials/03_advanced/images/thumb/sphx_glr_path_tutorial_thumb.png
+
+        :ref:`sphx_glr_tutorials_03_advanced_path_tutorial.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/03_advanced/path_tutorial
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="======================== Transformations Tutorial ========================">
+
+.. only:: html
+
+    .. figure:: /tutorials/03_advanced/images/thumb/sphx_glr_transforms_tutorial_thumb.png
+
+        :ref:`sphx_glr_tutorials_03_advanced_transforms_tutorial.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/03_advanced/transforms_tutorial
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+"""
+.. _tutorials-colors:
+
+Colors
+======
+
+Matplotlib has support for visualizing information with a wide array
+of colors and colormaps. These tutorials cover the basics of how
+these colormaps look, how you can create your own, and how you can
+customize colormaps for your use case.
+
+For even more information see the :ref:`examples page <color_examples>`.
+"""
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="***************** Specifying Colors *****************">
+
+.. only:: html
+
+    .. figure:: /tutorials/colors/images/thumb/sphx_glr_colors_thumb.png
+
+        :ref:`sphx_glr_tutorials_colors_colors.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/colors/colors
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Colormap Normalization ======================">
+
+.. only:: html
+
+    .. figure:: /tutorials/colors/images/thumb/sphx_glr_colormapnorms_thumb.png
+
+        :ref:`sphx_glr_tutorials_colors_colormapnorms.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/colors/colormapnorms
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="*********************** Colormaps in Matplotlib ***********************">
+
+.. only:: html
+
+    .. figure:: /tutorials/colors/images/thumb/sphx_glr_colormaps_thumb.png
+
+        :ref:`sphx_glr_tutorials_colors_colormaps.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/colors/colormaps
 .. raw:: html
 
     <div style='clear:both'></div>
@@ -257,8 +338,8 @@ effectively.
 """
 .. _tutorials-text:
 
-Text introduction
-=================
+Text
+====
 
 matplotlib has extensive text support, including support for
 mathematical expressions, truetype support for raster and
@@ -330,26 +411,6 @@ the basics of working with text in Matplotlib.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Writing mathematical expressions ================================">
-
-.. only:: html
-
-    .. figure:: /tutorials/text/images/thumb/sphx_glr_mathtext_thumb.png
-
-        :ref:`sphx_glr_tutorials_text_mathtext.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/text/mathtext
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="Text introduction =================">
 
 .. only:: html
@@ -387,6 +448,26 @@ the basics of working with text in Matplotlib.
    :hidden:
 
    /tutorials/text/text_props
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Writing mathematical expressions ================================">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_mathtext_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_mathtext.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/mathtext
 .. raw:: html
 
     <div style='clear:both'></div>
