@@ -73,7 +73,7 @@ Looking Glass
     handler = EventHandler()
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.093 seconds)
+**Total running time of the script:** ( 0 minutes  0.066 seconds)
 
 
 

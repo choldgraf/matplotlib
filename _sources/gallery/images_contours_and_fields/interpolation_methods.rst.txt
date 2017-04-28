@@ -54,7 +54,7 @@ image is scaled up.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  1.003 seconds)
+**Total running time of the script:** ( 0 minutes  0.692 seconds)
 
 
 

@@ -68,7 +68,7 @@ Custom Boxstyle01
     ax.text(0.5, 0.5, "Test", size=30, va="center", ha="center",
             bbox=dict(boxstyle=custom_box_style, alpha=0.2))
 
-**Total running time of the script:** ( 0 minutes  0.046 seconds)
+**Total running time of the script:** ( 0 minutes  0.057 seconds)
 
 
 

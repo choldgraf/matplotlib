@@ -50,7 +50,7 @@ Simple Axes Divider 2
     plt.draw()
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.528 seconds)
+**Total running time of the script:** ( 0 minutes  0.222 seconds)
 
 
 

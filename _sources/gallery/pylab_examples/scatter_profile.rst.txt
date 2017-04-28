@@ -32,11 +32,11 @@ N       Classic   Base renderer   Ext renderer
 
  Out::
 
-    20 symbols in 0.21 s
-    100 symbols in 0.01 s
+    20 symbols in 0.07 s
+    100 symbols in 0.02 s
     1000 symbols in 0.02 s
-    10000 symbols in 0.12 s
-    50000 symbols in 0.31 s
+    10000 symbols in 0.07 s
+    50000 symbols in 0.36 s
 
 
 
@@ -64,7 +64,7 @@ N       Classic   Base renderer   Ext renderer
         plt.scatter(x, y, s)
         print('%d symbols in %1.2f s' % (N, time.time() - tstart))
 
-**Total running time of the script:** ( 0 minutes  0.672 seconds)
+**Total running time of the script:** ( 0 minutes  0.546 seconds)
 
 
 

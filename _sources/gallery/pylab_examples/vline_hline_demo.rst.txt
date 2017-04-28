@@ -54,7 +54,7 @@ This example showcases the functions hlines and vlines.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.214 seconds)
+**Total running time of the script:** ( 0 minutes  0.129 seconds)
 
 
 

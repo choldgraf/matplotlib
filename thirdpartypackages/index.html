@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Third party packages &mdash; Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation</title>
+    <title>Third party packages &mdash; Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5132+g17ef1d20f',
+        VERSION:     '2.0.0b1.post5146.dev0+g6eb20da09',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation"
+          title="Search within Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation" href="../index.html" />
     <link rel="next" title="The Matplotlib Developers’ Guide" href="../devel/index.html" />
     <link rel="prev" title="External Resources" href="../resources/index.html" /> 
 
@@ -76,6 +76,7 @@ type="text/css" />
 
         <li><a href="../index.html">home</a>|&nbsp;</li>
         <li><a href="../gallery/index.html">examples</a>|&nbsp;</li>
+        <li><a href="../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../contents.html">docs</a> &raquo;</li> 
       </ul>
@@ -97,28 +98,34 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Third party packages</a><ul>
-<li><a class="reference internal" href="#high-level-plotting">High-Level Plotting</a><ul>
-<li><a class="reference internal" href="#seaborn">seaborn</a></li>
-<li><a class="reference internal" href="#ggplot">ggplot</a></li>
-<li><a class="reference internal" href="#holoviews">holoviews</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#mapping-toolkits">Mapping Toolkits</a><ul>
+<li><a class="reference internal" href="#mapping-toolkits">Mapping toolkits</a><ul>
 <li><a class="reference internal" href="#basemap">Basemap</a></li>
 <li><a class="reference internal" href="#cartopy">Cartopy</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#miscellaneous-toolkits">Miscellaneous Toolkits</a><ul>
-<li><a class="reference internal" href="#mpl-probscale">mpl-probscale</a></li>
-<li><a class="reference internal" href="#iterm2-terminal-backend">iTerm2 terminal backend</a></li>
-<li><a class="reference internal" href="#mpldatacursor">MplDataCursor</a></li>
-<li><a class="reference internal" href="#mplcursors">mplcursors</a></li>
-<li><a class="reference internal" href="#natgrid">Natgrid</a></li>
+<li><a class="reference internal" href="#declarative-libraries">Declarative libraries</a><ul>
+<li><a class="reference internal" href="#ggplot">ggplot</a></li>
+<li><a class="reference internal" href="#holoviews">holoviews</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#specialty-plots">Specialty plots</a><ul>
 <li><a class="reference internal" href="#matplotlib-venn">Matplotlib-Venn</a></li>
+<li><a class="reference internal" href="#mpl-probscale">mpl-probscale</a></li>
 <li><a class="reference internal" href="#mplstereonet">mplstereonet</a></li>
-<li><a class="reference internal" href="#pyupset">pyupset</a></li>
+<li><a class="reference internal" href="#natgrid">Natgrid</a></li>
+<li><a class="reference internal" href="#pyupset">pyUpSet</a></li>
+<li><a class="reference internal" href="#seaborn">seaborn</a></li>
 <li><a class="reference internal" href="#windrose">Windrose</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#interactivity">Interactivity</a><ul>
+<li><a class="reference internal" href="#mplcursors">mplcursors</a></li>
+<li><a class="reference internal" href="#mpldatacursor">MplDataCursor</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miscellaneous">Miscellaneous</a><ul>
 <li><a class="reference internal" href="#adjusttext">adjustText</a></li>
+<li><a class="reference internal" href="#iterm2-terminal-backend">iTerm2 terminal backend</a></li>
 </ul>
 </li>
 </ul>
@@ -159,117 +166,123 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
             
   <div class="section" id="third-party-packages">
 <span id="thirdparty-index"></span><h1>Third party packages<a class="headerlink" href="#third-party-packages" title="Permalink to this headline">¶</a></h1>
-<p>Several external packages that extend or build on Matplotlib functionality
-exist. Below we list a number of these. Note that they are each
-maintained and distributed separately from Matplotlib, and will need
-to be installed individually.</p>
-<p>Please submit an issue or pull request
-on Github if you have created a package that you would like to have included.
-We are also happy to host third party packages within the <a class="reference external" href="https://github.com/matplotlib">Matplotlib Github
-Organization</a>.</p>
-<div class="section" id="high-level-plotting">
-<span id="hl-plotting"></span><h2>High-Level Plotting<a class="headerlink" href="#high-level-plotting" title="Permalink to this headline">¶</a></h2>
-<p>Several projects provide higher-level interfaces for creating
-matplotlib plots.</p>
-<div class="section" id="seaborn">
-<span id="toolkit-seaborn"></span><h3>seaborn<a class="headerlink" href="#seaborn" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://seaborn.pydata.org/">seaborn</a> is a high level interface for drawing
-statistical graphics with matplotlib. It aims to make visualization a central
-part of exploring and understanding complex datasets.</p>
-<a class="reference internal image-reference" href="../_images/seaborn.png"><img alt="../_images/seaborn.png" src="../_images/seaborn.png" style="height: 157px;" /></a>
-</div>
-<div class="section" id="ggplot">
-<span id="toolkit-ggplot"></span><h3>ggplot<a class="headerlink" href="#ggplot" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://github.com/yhat/ggplot">ggplot</a> is a port of the R ggplot2 package
-to python based on matplotlib.</p>
-<a class="reference internal image-reference" href="../_images/ggplot.png"><img alt="../_images/ggplot.png" src="../_images/ggplot.png" style="height: 195px;" /></a>
-</div>
-<div class="section" id="holoviews">
-<span id="toolkit-holoviews"></span><h3>holoviews<a class="headerlink" href="#holoviews" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://holoviews.org">holoviews</a> makes it easier to visualize data
-interactively, especially in a <a class="reference external" href="http://jupyter.org">Jupyter notebook</a>, by providing a set of declarative
-plotting objects that store your data and associated metadata.  Your
-data is then immediately visualizable alongside or overlaid with other
-data, either statically or with automatically provided widgets for
-parameter exploration.</p>
-<a class="reference internal image-reference" href="../_images/holoviews.png"><img alt="../_images/holoviews.png" src="../_images/holoviews.png" style="height: 354px;" /></a>
-</div>
-</div>
+<p>Several external packages that extend or build on Matplotlib functionality are
+listed below.  They are maintained and distributed separately from Matplotlib
+and thus need to be installed individually.</p>
+<p>Please submit an issue or pull request on Github if you have created
+a package that you would like to have included.  We are also happy to
+host third party packages within the <a class="reference external" href="https://github.com/matplotlib">Matplotlib Github Organization</a>.</p>
 <div class="section" id="mapping-toolkits">
-<span id="toolkits-mapping"></span><h2>Mapping Toolkits<a class="headerlink" href="#mapping-toolkits" title="Permalink to this headline">¶</a></h2>
-<p>Two independent mapping toolkits are available.</p>
+<h2>Mapping toolkits<a class="headerlink" href="#mapping-toolkits" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="basemap">
-<span id="toolkit-basemap"></span><h3>Basemap<a class="headerlink" href="#basemap" title="Permalink to this headline">¶</a></h3>
-<p>Plots data on map projections, with continental and political
-boundaries. See <a class="reference external" href="http://matplotlib.org/basemap">basemap</a>
-docs.</p>
+<h3>Basemap<a class="headerlink" href="#basemap" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://matplotlib.org/basemap">Basemap</a> plots data on map projections, with
+continental and political boundaries.</p>
 <a class="reference internal image-reference" href="../_images/basemap_contour1.png"><img alt="../_images/basemap_contour1.png" src="../_images/basemap_contour1.png" style="height: 400px;" /></a>
 </div>
 <div class="section" id="cartopy">
 <h3>Cartopy<a class="headerlink" href="#cartopy" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://scitools.org.uk/cartopy/docs/latest">Cartopy</a> builds on top of
-matplotlib to provide object oriented map projection definitions and close
-integration with Shapely for powerful yet easy-to-use vector data processing
-tools. An example plot from the
-<a class="reference external" href="http://scitools.org.uk/cartopy/docs/latest/gallery.html">Cartopy gallery</a>:</p>
+<p><a class="reference external" href="http://scitools.org.uk/cartopy/docs/latest">Cartopy</a> builds on top
+of Matplotlib to provide object oriented map projection definitions
+and close integration with Shapely for powerful yet easy-to-use vector
+data processing tools. An example plot from the <a class="reference external" href="http://scitools.org.uk/cartopy/docs/latest/gallery.html">Cartopy gallery</a>:</p>
 <a class="reference internal image-reference" href="../_images/cartopy_hurricane_katrina_01_00.png"><img alt="../_images/cartopy_hurricane_katrina_01_00.png" src="../_images/cartopy_hurricane_katrina_01_00.png" style="height: 400px;" /></a>
 </div>
 </div>
-<div class="section" id="miscellaneous-toolkits">
-<span id="toolkits-general"></span><span id="toolkits-misc"></span><h2>Miscellaneous Toolkits<a class="headerlink" href="#miscellaneous-toolkits" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="declarative-libraries">
+<h2>Declarative libraries<a class="headerlink" href="#declarative-libraries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ggplot">
+<h3>ggplot<a class="headerlink" href="#ggplot" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/yhat/ggplot">ggplot</a> is a port of the R ggplot2 package
+to python based on Matplotlib.</p>
+<a class="reference internal image-reference" href="../_images/ggplot.png"><img alt="../_images/ggplot.png" src="../_images/ggplot.png" style="height: 195px;" /></a>
+</div>
+<div class="section" id="holoviews">
+<h3>holoviews<a class="headerlink" href="#holoviews" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://holoviews.org">holoviews</a> makes it easier to visualize data
+interactively, especially in a <a class="reference external" href="http://jupyter.org">Jupyter notebook</a>, by
+providing a set of declarative plotting objects that store your data and
+associated metadata.  Your data is then immediately visualizable alongside or
+overlaid with other data, either statically or with automatically provided
+widgets for parameter exploration.</p>
+<a class="reference internal image-reference" href="../_images/holoviews.png"><img alt="../_images/holoviews.png" src="../_images/holoviews.png" style="height: 354px;" /></a>
+</div>
+</div>
+<div class="section" id="specialty-plots">
+<h2>Specialty plots<a class="headerlink" href="#specialty-plots" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="matplotlib-venn">
+<h3>Matplotlib-Venn<a class="headerlink" href="#matplotlib-venn" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/konstantint/matplotlib-venn">Matplotlib-Venn</a> provides a
+set of functions for plotting 2- and 3-set area-weighted (or unweighted) Venn
+diagrams.</p>
+</div>
 <div class="section" id="mpl-probscale">
-<span id="toolkit-probscale"></span><h3>mpl-probscale<a class="headerlink" href="#mpl-probscale" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://matplotlib.org/mpl-probscale/">mpl-probscale</a>
-is a small extension that allows matplotlib users to specify probabilty
-scales. Simply importing the <code class="docutils literal"><span class="pre">probscale</span></code> module registers the scale
-with matplotlib, making it accessible via e.g.,
-<code class="docutils literal"><span class="pre">ax.set_xscale('prob')</span></code> or <code class="docutils literal"><span class="pre">plt.yscale('prob')</span></code>.</p>
+<h3>mpl-probscale<a class="headerlink" href="#mpl-probscale" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://matplotlib.org/mpl-probscale/">mpl-probscale</a> is a small extension
+that allows Matplotlib users to specify probabilty scales. Simply importing the
+<code class="docutils literal"><span class="pre">probscale</span></code> module registers the scale with Matplotlib, making it accessible
+via e.g., <code class="docutils literal"><span class="pre">ax.set_xscale('prob')</span></code> or <code class="docutils literal"><span class="pre">plt.yscale('prob')</span></code>.</p>
 <img alt="../_images/probscale_demo.png" src="../_images/probscale_demo.png" />
+</div>
+<div class="section" id="mplstereonet">
+<h3>mplstereonet<a class="headerlink" href="#mplstereonet" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/joferkington/mplstereonet">mplstereonet</a> provides
+stereonets for plotting and analyzing orientation data in Matplotlib.</p>
+</div>
+<div class="section" id="natgrid">
+<h3>Natgrid<a class="headerlink" href="#natgrid" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/matplotlib/natgrid">mpl_toolkits.natgrid</a> is an interface
+to the natgrid C library for gridding irregularly spaced data.</p>
+</div>
+<div class="section" id="pyupset">
+<h3>pyUpSet<a class="headerlink" href="#pyupset" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/ImSoErgodic/py-upset">pyUpSet</a> is a
+static Python implementation of the <a class="reference external" href="http://www.caleydo.org/tools/upset/">UpSet suite by Lex et al.</a> to explore complex intersections of
+sets and data frames.</p>
+</div>
+<div class="section" id="seaborn">
+<h3>seaborn<a class="headerlink" href="#seaborn" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://seaborn.pydata.org/">seaborn</a> is a high level interface for drawing
+statistical graphics with Matplotlib. It aims to make visualization a central
+part of exploring and understanding complex datasets.</p>
+<a class="reference internal image-reference" href="../_images/seaborn.png"><img alt="../_images/seaborn.png" src="../_images/seaborn.png" style="height: 157px;" /></a>
+</div>
+<div class="section" id="windrose">
+<h3>Windrose<a class="headerlink" href="#windrose" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/scls19fr/windrose">Windrose</a> is a Python Matplotlib,
+Numpy library to manage wind data, draw windroses (also known as polar rose
+plots), draw probability density functions and fit Weibull distributions.</p>
+</div>
+</div>
+<div class="section" id="interactivity">
+<h2>Interactivity<a class="headerlink" href="#interactivity" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mplcursors">
+<h3>mplcursors<a class="headerlink" href="#mplcursors" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://mplcursors.readthedocs.io">mplcursors</a> provides interactive data
+cursors for Matplotlib.</p>
+</div>
+<div class="section" id="mpldatacursor">
+<h3>MplDataCursor<a class="headerlink" href="#mpldatacursor" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/joferkington/mpldatacursor">MplDataCursor</a> is a toolkit
+written by Joe Kington to provide interactive &#8220;data cursors&#8221; (clickable
+annotation boxes) for Matplotlib.</p>
+</div>
+</div>
+<div class="section" id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adjusttext">
+<h3>adjustText<a class="headerlink" href="#adjusttext" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/Phlya/adjustText">adjustText</a> is a small library for
+automatically adjusting text position in Matplotlib plots to minimize overlaps
+between them, specified points and other objects.</p>
+<img alt="../_images/adjustText.png" src="../_images/adjustText.png" />
 </div>
 <div class="section" id="iterm2-terminal-backend">
 <h3>iTerm2 terminal backend<a class="headerlink" href="#iterm2-terminal-backend" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://github.com/oselivanov/matplotlib_iterm2">matplotlib_iterm2</a> is an
-external matplotlib backend using iTerm2 nightly build inline image display
+external Matplotlib backend using the iTerm2 nightly build inline image display
 feature.</p>
 <img alt="../_images/matplotlib_iterm2_demo.png" src="../_images/matplotlib_iterm2_demo.png" />
-</div>
-<div class="section" id="mpldatacursor">
-<span id="toolkit-mpldatacursor"></span><h3>MplDataCursor<a class="headerlink" href="#mpldatacursor" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://github.com/joferkington/mpldatacursor">MplDataCursor</a> is a
-toolkit written by Joe Kington to provide interactive &#8220;data cursors&#8221;
-(clickable annotation boxes) for matplotlib.</p>
-</div>
-<div class="section" id="mplcursors">
-<span id="toolkit-mplcursors"></span><h3>mplcursors<a class="headerlink" href="#mplcursors" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://mplcursors.readthedocs.io">mplcursors</a> provides interactive
-data cursors for matplotlib.</p>
-</div>
-<div class="section" id="natgrid">
-<span id="toolkit-natgrid"></span><h3>Natgrid<a class="headerlink" href="#natgrid" title="Permalink to this headline">¶</a></h3>
-<p>mpl_toolkits.natgrid is an interface to natgrid C library for gridding
-irregularly spaced data.  This requires a separate installation of the
-<a class="reference external" href="https://github.com/matplotlib/natgrid">natgrid toolkit</a>.</p>
-</div>
-<div class="section" id="matplotlib-venn">
-<span id="toolkit-matplotlibvenn"></span><h3>Matplotlib-Venn<a class="headerlink" href="#matplotlib-venn" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://github.com/konstantint/matplotlib-venn">Matplotlib-Venn</a> provides a set of functions for plotting 2- and 3-set area-weighted (or unweighted) Venn diagrams.</p>
-</div>
-<div class="section" id="mplstereonet">
-<h3>mplstereonet<a class="headerlink" href="#mplstereonet" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://github.com/joferkington/mplstereonet">mplstereonet</a> provides stereonets for plotting and analyzing orientation data in Matplotlib.</p>
-</div>
-<div class="section" id="pyupset">
-<h3>pyupset<a class="headerlink" href="#pyupset" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://github.com/ImSoErgodic/py-upset">pyUpSet</a> is a static Python implementation of the <a class="reference external" href="http://www.caleydo.org/tools/upset/">UpSet suite by Lex et al.</a> to explore complex intersections of sets and data frames.</p>
-</div>
-<div class="section" id="windrose">
-<h3>Windrose<a class="headerlink" href="#windrose" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://github.com/scls19fr/windrose">Windrose</a> is a Python Matplotlib, Numpy library to manage wind data, draw windrose (also known as a polar rose plot), draw probability density function and fit Weibull distribution</p>
-</div>
-<div class="section" id="adjusttext">
-<h3>adjustText<a class="headerlink" href="#adjusttext" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://github.com/Phlya/adjustText">adjustText</a> is a small library for automatically adjusting text position in matplotlib plots to minimize overlaps between them, specified points and other objects.</p>
-<img alt="../_images/adjustText.png" src="../_images/adjustText.png" />
 </div>
 </div>
 </div>
@@ -283,7 +296,7 @@ irregularly spaced data.  This requires a separate installation of the
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 24, 2017.
+      Last updated on Apr 27, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

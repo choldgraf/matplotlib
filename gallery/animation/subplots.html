@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Animated subplots &mdash; Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation</title>
+    <title>Animated subplots &mdash; Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5132+g17ef1d20f',
+        VERSION:     '2.0.0b1.post5146.dev0+g6eb20da09',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation"
+          title="Search within Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5132+g17ef1d20f documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5146.dev0+g6eb20da09 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -68,6 +68,7 @@ type="text/css" />
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../index.html">examples</a>|&nbsp;</li>
+        <li><a href="../../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li> 
       </ul>
@@ -126,13 +127,13 @@ need initial set up.</p>
 <img alt="../../_images/sphx_glr_subplots_001.png" class="align-center" src="../../_images/sphx_glr_subplots_001.png" />
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a>
+<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a>
 <span class="kn">import</span> <span class="nn">matplotlib.animation</span> <span class="kn">as</span> <span class="nn">animation</span>
 
 
 <span class="k">class</span> <span class="nc">SubplotAnimation</span><span class="p">(</span><a href="../../api/_as_gen/matplotlib.animation.TimedAnimation.html#matplotlib.animation.TimedAnimation" title="View documentation for matplotlib.animation.TimedAnimation"><span class="n">animation</span><span class="o">.</span><span class="n">TimedAnimation</span></a><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">fig</span> <span class="o">=</span> <a href="../../api/figure_api.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
+        <span class="n">fig</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.figure.AxesStack.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
         <span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
         <span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
         <span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
@@ -144,9 +145,9 @@ need initial set up.</p>
 
         <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line1</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line1a</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line1e</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">(</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line1</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line1a</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line1e</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">(</span>
             <span class="p">[],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markeredgecolor</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">add_line</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">line1</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">add_line</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">line1a</span><span class="p">)</span>
@@ -157,9 +158,9 @@ need initial set up.</p>
 
         <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line2</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line2a</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line2e</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">(</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line2</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line2a</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line2e</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">(</span>
             <span class="p">[],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markeredgecolor</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">add_line</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">line2</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">add_line</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">line2a</span><span class="p">)</span>
@@ -169,9 +170,9 @@ need initial set up.</p>
 
         <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
         <span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line3</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line3a</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">line3e</span> <span class="o">=</span> <a href="../../api/lines_api.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">(</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line3</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line3a</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">([],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line3e</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="View documentation for matplotlib.lines.Line2D"><span class="n">Line2D</span></a><span class="p">(</span>
             <span class="p">[],</span> <span class="p">[],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markeredgecolor</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
         <span class="n">ax3</span><span class="o">.</span><span class="n">add_line</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">line3</span><span class="p">)</span>
         <span class="n">ax3</span><span class="o">.</span><span class="n">add_line</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">line3a</span><span class="p">)</span>
@@ -217,7 +218,7 @@ need initial set up.</p>
 <a href="../../api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="View documentation for matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.246 seconds)</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.494 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/subplots.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">subplots.py</span></code></a></div>
@@ -236,7 +237,7 @@ need initial set up.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 24, 2017.
+      Last updated on Apr 27, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

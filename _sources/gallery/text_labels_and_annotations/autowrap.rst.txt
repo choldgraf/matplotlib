@@ -40,7 +40,7 @@ displayed slightly outside of the boundaries of the axis anyways.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.102 seconds)
+**Total running time of the script:** ( 0 minutes  0.054 seconds)
 
 
 

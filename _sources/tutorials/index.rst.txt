@@ -1,0 +1,411 @@
+:orphan:
+
+.. _tutorials:
+
+Tutorials
+=========
+
+This page contains more in-depth guides for using Matplotlib. It is broken up into
+beginner, intermediate, and advanced sections.
+
+
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+.. _tutorials-advanced:
+
+Advanced
+========
+
+These tutorials cover advanced topics for experience Matplotlib
+users and developers.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="================== Path effects guide ==================">
+
+.. only:: html
+
+    .. figure:: /tutorials/advanced/images/thumb/sphx_glr_patheffects_guide_thumb.png
+
+        :ref:`sphx_glr_tutorials_advanced_patheffects_guide.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/advanced/patheffects_guide
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============= Path Tutorial =============">
+
+.. only:: html
+
+    .. figure:: /tutorials/advanced/images/thumb/sphx_glr_path_tutorial_thumb.png
+
+        :ref:`sphx_glr_tutorials_advanced_path_tutorial.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/advanced/path_tutorial
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="======================== Transformations Tutorial ========================">
+
+.. only:: html
+
+    .. figure:: /tutorials/advanced/images/thumb/sphx_glr_transforms_tutorial_thumb.png
+
+        :ref:`sphx_glr_tutorials_advanced_transforms_tutorial.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/advanced/transforms_tutorial
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+.. _tutorials-intermediate:
+
+Intermediate
+============
+
+These tutorials cover some of the more complicated classes and functions
+in Matplotlib. They can be useful for particular custom and complex
+visualizations.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============ Legend guide ============">
+
+.. only:: html
+
+    .. figure:: /tutorials/intermediate/images/thumb/sphx_glr_legend_guide_thumb.png
+
+        :ref:`sphx_glr_tutorials_intermediate_legend_guide.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/intermediate/legend_guide
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="=============== Artist tutorial ===============">
+
+.. only:: html
+
+    .. figure:: /tutorials/intermediate/images/thumb/sphx_glr_artists_thumb.png
+
+        :ref:`sphx_glr_tutorials_intermediate_artists.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/intermediate/artists
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+.. _tutorials-introductory:
+
+Introductory
+============
+
+These tutorials cover the basics of creating visualizations with
+Matplotlib, as well as some best-practices in using the package
+effectively.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Customizing matplotlib ======================">
+
+.. only:: html
+
+    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_customizing_thumb.png
+
+        :ref:`sphx_glr_tutorials_introductory_customizing.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/introductory/customizing
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============== Image tutorial ==============">
+
+.. only:: html
+
+    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_images_thumb.png
+
+        :ref:`sphx_glr_tutorials_introductory_images.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/introductory/images
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="=============== Pyplot tutorial ===============">
+
+.. only:: html
+
+    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_pyplot_thumb.png
+
+        :ref:`sphx_glr_tutorials_introductory_pyplot.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/introductory/pyplot
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============================================== Customizing Location of Subplot Using GridSpec =...">
+
+.. only:: html
+
+    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_gridspec_thumb.png
+
+        :ref:`sphx_glr_tutorials_introductory_gridspec.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/introductory/gridspec
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="================== Tight Layout guide ==================">
+
+.. only:: html
+
+    .. figure:: /tutorials/introductory/images/thumb/sphx_glr_tight_layout_guide_thumb.png
+
+        :ref:`sphx_glr_tutorials_introductory_tight_layout_guide.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/introductory/tight_layout_guide
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+"""
+.. _tutorials-text:
+
+Text introduction
+=================
+
+matplotlib has extensive text support, including support for
+mathematical expressions, truetype support for raster and
+vector outputs, newline separated text with arbitrary
+rotations, and unicode support. These tutorials cover
+the basics of working with text in Matplotlib.
+"""
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="************************* Text rendering With LaTeX *************************">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_usetex_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_usetex.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/usetex
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="********************************* Typesetting With XeLaTeX/LuaLaTeX ***************************...">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_pgf_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_pgf.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/pgf
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip=".. contents:: Table of Contents    :depth: 3">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_annotations_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_annotations.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/annotations
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Writing mathematical expressions ================================">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_mathtext_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_mathtext.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/mathtext
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Text introduction =================">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_text_intro_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_text_intro.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/text_intro
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="============================  Text properties and layout ============================">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_text_props_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_text_props.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/text_props
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+
+
+.. container:: sphx-glr-footer
+
+
+  .. container:: sphx-glr-download
+
+    :download:`Download all examples in Python source code: tutorials_python.zip <//Users/choldgraf/Dropbox/github/forks/python/matplotlib/doc/tutorials/tutorials_python.zip>`
+
+
+
+  .. container:: sphx-glr-download
+
+    :download:`Download all examples in Jupyter notebooks: tutorials_jupyter.zip <//Users/choldgraf/Dropbox/github/forks/python/matplotlib/doc/tutorials/tutorials_jupyter.zip>`
+
+.. rst-class:: sphx-glr-signature
+
+    `Generated by Sphinx-Gallery <http://sphinx-gallery.readthedocs.io>`_

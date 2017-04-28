@@ -67,7 +67,7 @@ Whats New 0.99 Spines
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.265 seconds)
+**Total running time of the script:** ( 0 minutes  0.284 seconds)
 
 
 

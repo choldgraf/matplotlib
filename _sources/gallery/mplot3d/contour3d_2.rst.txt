@@ -37,7 +37,7 @@ extend the curves vertically into 'ribbons'.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.241 seconds)
+**Total running time of the script:** ( 0 minutes  0.228 seconds)
 
 
 

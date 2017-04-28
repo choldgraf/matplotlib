@@ -8177,6 +8177,140 @@ Pyplot Examples
 
     <div style='clear:both'></div>
 
+.. _recipes:
+
+Our Favorite Recipes
+====================
+
+Here is a collection of short tutorials, examples and code snippets
+that illustrate some of the useful idioms and tricks to make snazzier
+figures and overcome some matplotlib warts.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="It's common to make two or more plots which share an axis, e.g., two subplots with time as a co...">
+
+.. only:: html
+
+    .. figure:: /gallery/recipes/images/thumb/sphx_glr_share_axis_lims_views_thumb.png
+
+        :ref:`sphx_glr_gallery_recipes_share_axis_lims_views.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/recipes/share_axis_lims_views
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Sometimes you know what your data looks like before you plot it, and may know for instance that...">
+
+.. only:: html
+
+    .. figure:: /gallery/recipes/images/thumb/sphx_glr_transparent_legends_thumb.png
+
+        :ref:`sphx_glr_gallery_recipes_transparent_legends.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/recipes/transparent_legends
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In early versions of matplotlib, if you wanted to use the pythonic API and create a figure inst...">
+
+.. only:: html
+
+    .. figure:: /gallery/recipes/images/thumb/sphx_glr_create_subplots_thumb.png
+
+        :ref:`sphx_glr_gallery_recipes_create_subplots.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/recipes/create_subplots
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="When decorating axes with text boxes, two useful tricks are to place the text in axes coordinat...">
+
+.. only:: html
+
+    .. figure:: /gallery/recipes/images/thumb/sphx_glr_placing_text_boxes_thumb.png
+
+        :ref:`sphx_glr_gallery_recipes_placing_text_boxes.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/recipes/placing_text_boxes
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Matplotlib allows you to natively plots python datetime instances, and for the most part does a...">
+
+.. only:: html
+
+    .. figure:: /gallery/recipes/images/thumb/sphx_glr_common_date_problems_thumb.png
+
+        :ref:`sphx_glr_gallery_recipes_common_date_problems.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/recipes/common_date_problems
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The :meth:`~matplotlib.axes.Axes.fill_between` function generates a shaded region between a min...">
+
+.. only:: html
+
+    .. figure:: /gallery/recipes/images/thumb/sphx_glr_fill_between_alpha_thumb.png
+
+        :ref:`sphx_glr_gallery_recipes_fill_between_alpha.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/recipes/fill_between_alpha
+.. raw:: html
+
+    <div style='clear:both'></div>
+
 .. _scales_examples:
 
 Scales in Matplotlib

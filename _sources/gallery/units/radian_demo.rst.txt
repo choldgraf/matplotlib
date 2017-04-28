@@ -41,7 +41,7 @@ formatting and axis labeling.
 
     show()
 
-**Total running time of the script:** ( 0 minutes  1.336 seconds)
+**Total running time of the script:** ( 0 minutes  0.604 seconds)
 
 
 

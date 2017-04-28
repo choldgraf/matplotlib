@@ -225,7 +225,7 @@ ventricle recommended by the American Heart Association (AHA).
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.690 seconds)
+**Total running time of the script:** ( 0 minutes  0.488 seconds)
 
 
 

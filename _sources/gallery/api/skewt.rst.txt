@@ -308,7 +308,7 @@ a bunch of custom classes for ticks,spines, and the axis to handle this.
 
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.252 seconds)
+**Total running time of the script:** ( 0 minutes  0.187 seconds)
 
 
 

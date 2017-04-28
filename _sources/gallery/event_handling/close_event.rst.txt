@@ -33,7 +33,7 @@ Close Event
     plt.text(0.35, 0.5, 'Close Me!', dict(size=30))
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.100 seconds)
+**Total running time of the script:** ( 0 minutes  0.059 seconds)
 
 
 
