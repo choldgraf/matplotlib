@@ -1,7 +1,8 @@
 """
-
 Annotations
 ===========
+
+Annotating text with Matplotlib.
 
 .. contents:: Table of Contents
    :depth: 3

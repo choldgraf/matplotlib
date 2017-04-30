@@ -7,6 +7,8 @@
 Text rendering With LaTeX
 *************************
 
+Rendering text with LaTeX in Matplotlib.
+
 Matplotlib has the option to use LaTeX to manage all text layout.  This
 option is available with the following backends:
 

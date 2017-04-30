@@ -3,6 +3,8 @@
  Text properties and layout
 ============================
 
+Controlling properties of text and its layout with Matplotlib.
+
 The :class:`matplotlib.text.Text` instances have a variety of
 properties which can be configured via keyword arguments to the text
 commands (e.g., :func:`~matplotlib.pyplot.title`,

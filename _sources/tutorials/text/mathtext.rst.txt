@@ -6,6 +6,8 @@
 Writing mathematical expressions
 ================================
 
+An introduction to writing mathematical expressions in Matplotlib.
+
 You can use a subset TeX markup in any matplotlib text string by
 placing it inside a pair of dollar signs ($).
 
