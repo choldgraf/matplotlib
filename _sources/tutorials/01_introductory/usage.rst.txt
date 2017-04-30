@@ -3,8 +3,6 @@
 .. _sphx_glr_tutorials_01_introductory_usage.py:
 
 
-.. _tutorials-usage:
-
 ***********
 Usage Guide
 ***********
@@ -68,26 +66,25 @@ completely, leaving a purely object-oriented approach.
 
 .. _figure_parts:
 
- Parts of a Figure
- =================
+Parts of a Figure
+=================
 
- .. image:: ../../_static/anatomy.png
+.. image:: ../../_static/anatomy.png
 
 
-##############################################################################
- :class:`~matplotlib.figure.Figure`
- ----------------------------------
+:class:`~matplotlib.figure.Figure`
+----------------------------------
 
- The **whole** figure.  The figure keeps
- track of all the child :class:`~matplotlib.axes.Axes`, a smattering of
- 'special' artists (titles, figure legends, etc), and the **canvas**.
- (Don't worry too much about the canvas, it is crucial as it is the
- object that actually does the drawing to get you your plot, but as the
- user it is more-or-less invisible to you).  A figure can have any
- number of :class:`~matplotlib.axes.Axes`, but to be useful should have
- at least one.
+The **whole** figure.  The figure keeps
+track of all the child :class:`~matplotlib.axes.Axes`, a smattering of
+'special' artists (titles, figure legends, etc), and the **canvas**.
+(Don't worry too much about the canvas, it is crucial as it is the
+object that actually does the drawing to get you your plot, but as the
+user it is more-or-less invisible to you).  A figure can have any
+number of :class:`~matplotlib.axes.Axes`, but to be useful should have
+at least one.
 
- The easiest way to create a new figure is with pyplot:
+The easiest way to create a new figure is with pyplot:
 
 
 
@@ -95,7 +92,7 @@ completely, leaving a purely object-oriented approach.
 
 
     fig = plt.figure()  # an empty figure with no axes
-    fig.suptitle('No axes on this figure')  # Add a title so know which it is
+    fig.suptitle('No axes on this figure')  # Add a title so we know which it is
 
     fig, ax_lst = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
 
@@ -405,7 +402,7 @@ the method mentioned last in the following list will be used, e.g. calling
 
 
 #. The ``backend`` parameter in your ``matplotlibrc`` file (see
-   :ref:`customizing-matplotlib`)::
+   :ref:`sphx_glr_tutorials_01_introductory_customizing.py`)::
 
        backend : WXAgg   # use wxpython with antigrain (agg) rendering
 
@@ -589,7 +586,7 @@ is drawn on the screen, depends on the functions and methods
 that are called, and on a state variable that determines whether
 matplotlib is in "interactive mode".  The default Boolean value is set
 by the :file:`matplotlibrc` file, and may be customized like any other
-configuration parameter (see :ref:`customizing-matplotlib`).  It
+configuration parameter (see :ref:`sphx_glr_tutorials_01_introductory_customizing.py`).  It
 may also be set via :func:`matplotlib.interactive`, and its
 value may be queried via :func:`matplotlib.is_interactive`.  Turning
 interactive mode on and off in the middle of a stream of plotting
@@ -731,7 +728,7 @@ or generating a new set of figures.  In that case, use
 to block execution until you have manually destroyed them.
 
 
-**Total running time of the script:** ( 0 minutes  0.788 seconds)
+**Total running time of the script:** ( 0 minutes  0.336 seconds)
 
 
 

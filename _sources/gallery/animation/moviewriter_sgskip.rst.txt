@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_animation_moviewriter_sgskip.py:
 
 
-.. _animation-moviewriter:
-
 ===========
 MovieWriter
 ===========

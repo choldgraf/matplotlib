@@ -61,7 +61,7 @@ Image Slices Viewer
     fig.canvas.mpl_connect('scroll_event', tracker.onscroll)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.105 seconds)
+**Total running time of the script:** ( 0 minutes  0.143 seconds)
 
 
 

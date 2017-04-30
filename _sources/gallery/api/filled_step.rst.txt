@@ -301,7 +301,7 @@ various histograms.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.502 seconds)
+**Total running time of the script:** ( 0 minutes  0.266 seconds)
 
 
 

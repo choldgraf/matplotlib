@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_api_sankey_basics.py:
 
 
-.. _api-sankey_basics:
-
 ================
 The Sankey class
 ================
@@ -113,7 +111,7 @@ Demonstrate the Sankey class by producing three basic diagrams.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.198 seconds)
+**Total running time of the script:** ( 0 minutes  0.158 seconds)
 
 
 

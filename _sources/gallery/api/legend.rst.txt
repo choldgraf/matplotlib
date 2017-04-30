@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_api_legend.py:
 
 
-.. _api-legend:
-
 ===============================
 Legend using pre-defined labels
 ===============================
@@ -46,7 +44,7 @@ Notice how the legend labels are defined with the plots!
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.155 seconds)
+**Total running time of the script:** ( 0 minutes  0.058 seconds)
 
 
 

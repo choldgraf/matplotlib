@@ -3,8 +3,6 @@
 .. _sphx_glr_tutorials_02_intermediate_gridspec.py:
 
 
-.. _gridspec-guide:
-
 ==============================================
 Customizing Location of Subplot Using GridSpec
 ==============================================
@@ -374,7 +372,7 @@ spines in each of the inner 3x3 grids.
 
 
 
-**Total running time of the script:** ( 0 minutes  12.118 seconds)
+**Total running time of the script:** ( 0 minutes  6.321 seconds)
 
 
 

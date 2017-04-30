@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_pylab_examples_annotation_demo3.py:
 
 
-.. _pylab_examples-annotation_demo3:
-
 ================
 Annotation Demo3
 ================
@@ -111,7 +109,7 @@ Annotation Demo3
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.099 seconds)
+**Total running time of the script:** ( 0 minutes  0.090 seconds)
 
 
 

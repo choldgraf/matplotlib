@@ -3,8 +3,6 @@
 .. _sphx_glr_tutorials_03_advanced_transforms_tutorial.py:
 
 
-.. _transforms_tutorial:
-
 ========================
 Transformations Tutorial
 ========================
@@ -541,10 +539,10 @@ best way to learn more is to open the source for those packages and
 see how to make your own, since matplotlib supports extensible axes
 and projections.  Michael Droettboom has provided a nice tutorial
 example of creating a hammer projection axes; see
-:ref:`api-custom_projection_example`.
+:ref:`sphx_glr_gallery_api_custom_projection_example.py`.
 
 
-**Total running time of the script:** ( 0 minutes  0.585 seconds)
+**Total running time of the script:** ( 0 minutes  0.416 seconds)
 
 
 

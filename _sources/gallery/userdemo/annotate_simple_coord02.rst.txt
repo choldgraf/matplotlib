@@ -37,7 +37,7 @@ Annotate Simple Coord02
     plt.show()
 
 
-**Total running time of the script:** ( 0 minutes  0.048 seconds)
+**Total running time of the script:** ( 0 minutes  0.043 seconds)
 
 
 

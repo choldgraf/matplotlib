@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_pylab_examples_subplot_demo.py:
 
 
-.. _pylab_examples-subplots_demo:
-
 ============
 Subplot Demo
 ============
@@ -45,7 +43,7 @@ Simple demo with multiple subplots.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.135 seconds)
+**Total running time of the script:** ( 0 minutes  0.100 seconds)
 
 
 

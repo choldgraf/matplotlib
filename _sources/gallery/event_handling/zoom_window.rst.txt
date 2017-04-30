@@ -68,7 +68,7 @@ points**2, so their size is independent of the zoom
     figsrc.canvas.mpl_connect('button_press_event', onpress)
     show()
 
-**Total running time of the script:** ( 0 minutes  0.118 seconds)
+**Total running time of the script:** ( 0 minutes  0.090 seconds)
 
 
 

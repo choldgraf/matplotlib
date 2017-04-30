@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_api_agg_oo_sgskip.py:
 
 
-.. _api-agg_oo:
-
 =============================
 The object-oriented interface
 =============================

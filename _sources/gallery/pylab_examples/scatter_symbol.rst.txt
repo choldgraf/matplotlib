@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_pylab_examples_scatter_symbol.py:
 
 
-.. _pylab_examples-scatter_symbol:
-
 ==============
 Scatter Symbol
 ==============
@@ -41,7 +39,7 @@ Scatter Symbol
     plt.legend(loc=2)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.108 seconds)
+**Total running time of the script:** ( 0 minutes  0.066 seconds)
 
 
 

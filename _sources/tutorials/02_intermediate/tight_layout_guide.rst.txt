@@ -3,8 +3,6 @@
 .. _sphx_glr_tutorials_02_intermediate_tight_layout_guide.py:
 
 
-.. _plotting-guide-tight-layout:
-
 ==================
 Tight Layout guide
 ==================
@@ -191,7 +189,7 @@ grid, while *ax3* is of a 1x2 grid.
 
 It works with subplots created with
 :func:`~matplotlib.pyplot.subplot2grid`. In general, subplots created
-from the gridspec (:ref:`gridspec-guide`) will work.
+from the gridspec (:ref:`sphx_glr_tutorials_02_intermediate_gridspec.py`) will work.
 
 
 
@@ -528,7 +526,7 @@ explicitly create an axes for colorbar.
 
 
 
-**Total running time of the script:** ( 0 minutes  3.841 seconds)
+**Total running time of the script:** ( 0 minutes  2.056 seconds)
 
 
 

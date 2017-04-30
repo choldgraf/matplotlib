@@ -37,7 +37,7 @@ Demo of custom tick-labels with user-defined rotation.
     plt.subplots_adjust(bottom=0.15)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.067 seconds)
+**Total running time of the script:** ( 0 minutes  0.050 seconds)
 
 
 

@@ -3,8 +3,6 @@
 .. _sphx_glr_tutorials_colors_colormaps.py:
 
 
-.. _colormaps:
-
 ***********************
 Colormaps in Matplotlib
 ***********************
@@ -590,7 +588,7 @@ References
 .. [IBM] http://www.research.ibm.com/people/l/lloydt/color/color.HTM
 
 
-**Total running time of the script:** ( 0 minutes  18.012 seconds)
+**Total running time of the script:** ( 0 minutes  11.038 seconds)
 
 
 

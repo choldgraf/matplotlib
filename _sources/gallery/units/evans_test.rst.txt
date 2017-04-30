@@ -113,7 +113,7 @@ is entirely agnostic to what kind of units client packages use.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.097 seconds)
+**Total running time of the script:** ( 0 minutes  0.090 seconds)
 
 
 

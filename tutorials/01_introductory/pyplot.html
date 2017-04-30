@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Pyplot tutorial &mdash; Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation</title>
+    <title>Pyplot tutorial &mdash; Matplotlib 2.0.0b1.post5152.dev0+g0b2619c35 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5149.dev0+g964ef5ea3',
+        VERSION:     '2.0.0b1.post5152.dev0+g0b2619c35',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5152.dev0+g0b2619c35 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5152.dev0+g0b2619c35 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -137,7 +137,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
           <div class="body">
             
   <div class="section" id="pyplot-tutorial">
-<span id="sphx-glr-tutorials-01-introductory-pyplot-py"></span><span id="id1"></span><h1>Pyplot tutorial<a class="headerlink" href="#pyplot-tutorial" title="Permalink to this headline">¶</a></h1>
+<span id="sphx-glr-tutorials-01-introductory-pyplot-py"></span><h1>Pyplot tutorial<a class="headerlink" href="#pyplot-tutorial" title="Permalink to this headline">¶</a></h1>
 <p>Simple demo of the imshow function.</p>
 <div class="section" id="intro-to-pyplot">
 <h2>Intro to pyplot<a class="headerlink" href="#intro-to-pyplot" title="Permalink to this headline">¶</a></h2>
@@ -223,7 +223,7 @@ using arrays.</p>
 </div>
 </div>
 <div class="section" id="controlling-line-properties">
-<span id="id2"></span><h2>Controlling line properties<a class="headerlink" href="#controlling-line-properties" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Controlling line properties<a class="headerlink" href="#controlling-line-properties" title="Permalink to this headline">¶</a></h2>
 <p>Lines have many attributes that you can set: linewidth, dash style,
 antialiased, etc; see <a class="reference internal" href="../../api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.lines.Line2D</span></code></a>.  There are
 several ways to set line properties</p>
@@ -419,8 +419,8 @@ and axes.  If you want to place an axes manually, i.e., not on a
 rectangular grid, use the <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.axes.html#matplotlib.pyplot.axes" title="matplotlib.pyplot.axes"><code class="xref py py-func docutils literal"><span class="pre">axes()</span></code></a> command,
 which allows you to specify the location as <code class="docutils literal"><span class="pre">axes([left,</span> <span class="pre">bottom,</span>
 <span class="pre">width,</span> <span class="pre">height])</span></code> where all values are in fractional (0 to 1)
-coordinates.  See <a class="reference internal" href="../../gallery/pylab_examples/axes_demo.html#pylab-examples-axes-demo"><span class="std std-ref">Axes Demo</span></a> for an example of
-placing axes manually and <a class="reference internal" href="../../gallery/pylab_examples/subplot_demo.html#pylab-examples-subplots-demo"><span class="std std-ref">Subplot Demo</span></a> for an
+coordinates.  See <a class="reference internal" href="../../gallery/pylab_examples/axes_demo.html#sphx-glr-gallery-pylab-examples-axes-demo-py"><span class="std std-ref">Axes Demo</span></a> for an example of
+placing axes manually and <a class="reference internal" href="../../gallery/pylab_examples/subplot_demo.html#sphx-glr-gallery-pylab-examples-subplot-demo-py"><span class="std std-ref">Subplot Demo</span></a> for an
 example with lots of subplots.</p>
 <p>You can create multiple figures by using multiple
 <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-func docutils literal"><span class="pre">figure()</span></code></a> calls with an increasing figure
@@ -447,7 +447,7 @@ and the current axes with <a class="reference internal" href="../../api/_as_gen/
 it annoying that states (specifically the current image, figure and axes)
 are being maintained for you behind the scenes, don&#8217;t despair: this is just a thin
 stateful wrapper around an object oriented API, which you can use
-instead (see <a class="reference internal" href="../02_intermediate/artists.html#artist-tutorial"><span class="std std-ref">Artist tutorial</span></a>)</p>
+instead (see <a class="reference internal" href="../02_intermediate/artists.html#sphx-glr-tutorials-02-intermediate-artists-py"><span class="std std-ref">Artist tutorial</span></a>)</p>
 <p>If you are making lots of figures, you need to be aware of one
 more thing: the memory required for a figure is not completely
 released until the figure is explicitly closed with
@@ -458,11 +458,11 @@ maintains internal references until <a class="reference internal" href="../../ap
 is called.</p>
 </div>
 <div class="section" id="working-with-text">
-<span id="id3"></span><h2>Working with text<a class="headerlink" href="#working-with-text" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Working with text<a class="headerlink" href="#working-with-text" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.text.html#matplotlib.pyplot.text" title="matplotlib.pyplot.text"><code class="xref py py-func docutils literal"><span class="pre">text()</span></code></a> command can be used to add text in
 an arbitrary location, and the <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.xlabel.html#matplotlib.pyplot.xlabel" title="matplotlib.pyplot.xlabel"><code class="xref py py-func docutils literal"><span class="pre">xlabel()</span></code></a>,
 <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.ylabel.html#matplotlib.pyplot.ylabel" title="matplotlib.pyplot.ylabel"><code class="xref py py-func docutils literal"><span class="pre">ylabel()</span></code></a> and <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.title.html#matplotlib.pyplot.title" title="matplotlib.pyplot.title"><code class="xref py py-func docutils literal"><span class="pre">title()</span></code></a>
-are used to add text in the indicated locations (see <a class="reference internal" href="../text/text_intro.html#text-intro"><span class="std std-ref">Text introduction</span></a>
+are used to add text in the indicated locations (see <a class="reference internal" href="../text/text_intro.html#sphx-glr-tutorials-text-text-intro-py"><span class="std std-ref">Text introduction</span></a>
 for a more detailed example)</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">15</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">mu</span> <span class="o">+</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
@@ -488,7 +488,7 @@ into the text functions or using <a class="reference internal" href="../../api/_
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.xlabel.html#matplotlib.pyplot.xlabel" title="View documentation for matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s1">&#39;my data&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>These properties are covered in more detail in <a class="reference internal" href="../text/text_props.html#text-properties"><span class="std std-ref">Text properties and layout</span></a>.</p>
+<p>These properties are covered in more detail in <a class="reference internal" href="../text/text_props.html#sphx-glr-tutorials-text-text-props-py"><span class="std std-ref">Text properties and layout</span></a>.</p>
 <div class="section" id="using-mathematical-expressions-in-text">
 <h3>Using mathematical expressions in text<a class="headerlink" href="#using-mathematical-expressions-in-text" title="Permalink to this headline">¶</a></h3>
 <p>matplotlib accepts TeX equation expressions in any text expression.
@@ -501,11 +501,11 @@ you can write a TeX expression surrounded by dollar signs:</p>
 that the string is a <em>raw</em> string and not to treat backslashes as
 python escapes.  matplotlib has a built-in TeX expression parser and
 layout engine, and ships its own math fonts &#8211; for details see
-<a class="reference internal" href="../text/mathtext.html#mathtext-tutorial"><span class="std std-ref">Writing mathematical expressions</span></a>.  Thus you can use mathematical text across platforms
+<a class="reference internal" href="../text/mathtext.html#sphx-glr-tutorials-text-mathtext-py"><span class="std std-ref">Writing mathematical expressions</span></a>.  Thus you can use mathematical text across platforms
 without requiring a TeX installation.  For those who have LaTeX and
 dvipng installed, you can also use LaTeX to format your text and
 incorporate the output directly into your display figures or saved
-postscript &#8211; see <a class="reference internal" href="../text/usetex.html#usetex-tutorial"><span class="std std-ref">Text rendering With LaTeX</span></a>.</p>
+postscript &#8211; see <a class="reference internal" href="../text/usetex.html#sphx-glr-tutorials-text-usetex-py"><span class="std std-ref">Text rendering With LaTeX</span></a>.</p>
 </div>
 <div class="section" id="annotating-text">
 <h3>Annotating text<a class="headerlink" href="#annotating-text" title="Permalink to this headline">¶</a></h3>
@@ -537,7 +537,7 @@ locations (text location) are in data coordinates.  There are a
 variety of other coordinate systems one can choose &#8211; see
 <a class="reference internal" href="../text/annotations.html#annotations-tutorial"><span class="std std-ref">Basic annotation</span></a> and <a class="reference internal" href="../text/annotations.html#plotting-guide-annotation"><span class="std std-ref">Advanced Annotation</span></a> for
 details.  More examples can be found in
-<a class="reference internal" href="../../gallery/pylab_examples/annotation_demo.html#pylab-examples-annotation-demo"><span class="std std-ref">Annotation Demo</span></a>.</p>
+<a class="reference internal" href="../../gallery/pylab_examples/annotation_demo.html#sphx-glr-gallery-pylab-examples-annotation-demo-py"><span class="std std-ref">Annotation Demo</span></a>.</p>
 </div>
 </div>
 <div class="section" id="logarithmic-and-other-nonlinear-axes">
@@ -606,7 +606,7 @@ is shown below.</p>
 <img alt="../../_images/sphx_glr_pyplot_008.png" class="align-center" src="../../_images/sphx_glr_pyplot_008.png" />
 <p>It is also possible to add your own scale, see <a class="reference internal" href="../../devel/add_new_projection.html#adding-new-scales"><span class="std std-ref">Developer&#8217;s guide for creating scales and transformations</span></a> for
 details.</p>
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.859 seconds)</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.474 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/pyplot.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">pyplot.py</span></code></a></div>
@@ -626,7 +626,7 @@ details.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 28, 2017.
+      Last updated on Apr 29, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

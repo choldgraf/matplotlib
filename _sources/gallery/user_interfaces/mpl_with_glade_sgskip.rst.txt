@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_user_interfaces_mpl_with_glade_sgskip.py:
 
 
-.. _user_interfaces-mpl_with_glade:
-
 =====================
 Matplotlib With Glade
 =====================

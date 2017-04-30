@@ -47,7 +47,7 @@ This example demonstrates how to animate an image.
     ani = animation.FuncAnimation(fig, updatefig, interval=50, blit=True)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.240 seconds)
+**Total running time of the script:** ( 0 minutes  0.105 seconds)
 
 
 

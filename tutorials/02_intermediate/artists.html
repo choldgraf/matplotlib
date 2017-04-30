@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Artist tutorial &mdash; Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation</title>
+    <title>Artist tutorial &mdash; Matplotlib 2.0.0b1.post5152.dev0+g0b2619c35 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5149.dev0+g964ef5ea3',
+        VERSION:     '2.0.0b1.post5152.dev0+g0b2619c35',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5152.dev0+g0b2619c35 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5149.dev0+g964ef5ea3 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5152.dev0+g0b2619c35 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -131,7 +131,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
           <div class="body">
             
   <div class="section" id="artist-tutorial">
-<span id="sphx-glr-tutorials-02-intermediate-artists-py"></span><span id="id1"></span><h1>Artist tutorial<a class="headerlink" href="#artist-tutorial" title="Permalink to this headline">¶</a></h1>
+<span id="sphx-glr-tutorials-02-intermediate-artists-py"></span><h1>Artist tutorial<a class="headerlink" href="#artist-tutorial" title="Permalink to this headline">¶</a></h1>
 <p>Using Artist objects to render on the canvas.</p>
 <p>There are three layers to the matplotlib API.</p>
 <ul class="simple">
@@ -387,7 +387,7 @@ properties, so you can consult the interactive &#8220;help&#8221; or the
 <a class="reference internal" href="../../api/artist_api.html#artist-api"><span class="std std-ref">artist Module</span></a> for a listing of properties for a given object.</p>
 </div>
 <div class="section" id="object-containers">
-<span id="id2"></span><h2>Object containers<a class="headerlink" href="#object-containers" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Object containers<a class="headerlink" href="#object-containers" title="Permalink to this headline">¶</a></h2>
 <p>Now that we know how to inspect and set the properties of a given
 object we want to configure, we need to know how to get at that object.
 As mentioned in the introduction, there are two kinds of objects:
@@ -402,7 +402,7 @@ is &#8216;linear&#8217; or &#8216;log&#8217;.  In this section we&#8217;ll revie
 container objects store the <code class="docutils literal"><span class="pre">Artists</span></code> that you want to get at.</p>
 </div>
 <div class="section" id="figure-container">
-<span id="id3"></span><h2>Figure container<a class="headerlink" href="#figure-container" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Figure container<a class="headerlink" href="#figure-container" title="Permalink to this headline">¶</a></h2>
 <p>The top level container <code class="docutils literal"><span class="pre">Artist</span></code> is the
 <a class="reference internal" href="../../api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a>, and it contains everything in the
 figure.  The background of the figure is a
@@ -497,7 +497,7 @@ obtain by setting the <code class="docutils literal"><span class="pre">Artist</s
 </table>
 </div>
 <div class="section" id="axes-container">
-<span id="id4"></span><h2>Axes container<a class="headerlink" href="#axes-container" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>Axes container<a class="headerlink" href="#axes-container" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="../../api/axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.axes.Axes</span></code></a> is the center of the matplotlib
 universe &#8211; it contains the vast majority of all the <code class="docutils literal"><span class="pre">Artists</span></code> used
 in a figure with many helper methods to create and add these
@@ -903,7 +903,7 @@ dollar signs and colors them green on the right side of the yaxis</p>
 </pre></div>
 </div>
 <img alt="../../_images/sphx_glr_artists_005.png" class="align-center" src="../../_images/sphx_glr_artists_005.png" />
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.509 seconds)</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.232 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/artists.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">artists.py</span></code></a></div>
@@ -923,7 +923,7 @@ dollar signs and colors them green on the right side of the yaxis</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 28, 2017.
+      Last updated on Apr 29, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

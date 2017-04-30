@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_pylab_examples_major_minor_demo1.py:
 
 
-.. _pylab_examples-major_minor_demo1:
-
 =================
 Major Minor Demo1
 =================

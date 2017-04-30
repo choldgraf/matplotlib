@@ -63,7 +63,7 @@ below shows how to use an 'index formatter' to achieve the desired plot
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.152 seconds)
+**Total running time of the script:** ( 0 minutes  0.118 seconds)
 
 
 

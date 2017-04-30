@@ -40,7 +40,7 @@ indicating what axes you want to share with
 
     ax2.plot(t, np.sin(4*np.pi*t))
 
-**Total running time of the script:** ( 0 minutes  0.085 seconds)
+**Total running time of the script:** ( 0 minutes  0.075 seconds)
 
 
 

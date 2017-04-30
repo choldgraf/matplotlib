@@ -1,6 +1,4 @@
 """
-.. _pgf-tutorial:
-
 *********************************
 Typesetting With XeLaTeX/LuaLaTeX
 *********************************

@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_widgets_span_selector.py:
 
 
-.. _widgets-span_selector:
-
 =============
 Span Selector
 =============
@@ -63,7 +61,7 @@ detail view of the selected region in the lower axes
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.118 seconds)
+**Total running time of the script:** ( 0 minutes  0.114 seconds)
 
 
 

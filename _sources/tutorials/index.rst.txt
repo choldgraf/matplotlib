@@ -9,7 +9,9 @@ This page contains more in-depth guides for using Matplotlib.
 It is broken up into beginner, intermediate, and advanced sections,
 as well as sections covering specific topics.
 
-See the sidebar to the right for a list of each topic.
+For shorter examples, see our `examples page <../gallery/index.html>`_.
+You can also find `external resources <../resources/index.html>`_ and
+a `FAQ <../faq/index.html>`_ in our `user guide <../contents.html>`_.
 
 
 .. raw:: html
@@ -29,7 +31,7 @@ effectively.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Customizing matplotlib ======================">
+    <div class="sphx-glr-thumbcontainer" tooltip="Using style sheets ------------------">
 
 .. only:: html
 
@@ -49,7 +51,7 @@ effectively.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="============== Image tutorial ==============">
+    <div class="sphx-glr-thumbcontainer" tooltip="A short tutorial on plotting images with Matplotlib.">
 
 .. only:: html
 
@@ -69,7 +71,7 @@ effectively.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="*********** Usage Guide ***********">
+    <div class="sphx-glr-thumbcontainer" tooltip="This tutorial covers some basic usage patterns and best-practices to help you get started with ...">
 
 .. only:: html
 
@@ -89,7 +91,7 @@ effectively.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="=============== Pyplot tutorial ===============">
+    <div class="sphx-glr-thumbcontainer" tooltip="Simple demo of the imshow function. ">
 
 .. only:: html
 
@@ -123,7 +125,7 @@ visualizations.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="============ Legend guide ============">
+    <div class="sphx-glr-thumbcontainer" tooltip="Generating legends flexibly in Matplotlib.">
 
 .. only:: html
 
@@ -143,7 +145,7 @@ visualizations.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="=============== Artist tutorial ===============">
+    <div class="sphx-glr-thumbcontainer" tooltip="Using Artist objects to render on the canvas.">
 
 .. only:: html
 
@@ -163,7 +165,7 @@ visualizations.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="============================================== Customizing Location of Subplot Using GridSpec =...">
+    <div class="sphx-glr-thumbcontainer" tooltip="How to create grid-shaped combinations of axes.">
 
 .. only:: html
 
@@ -183,7 +185,7 @@ visualizations.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="================== Tight Layout guide ==================">
+    <div class="sphx-glr-thumbcontainer" tooltip="How to use tight-layout to fit plots within your figure cleanly.">
 
 .. only:: html
 
@@ -209,14 +211,14 @@ visualizations.
 Advanced
 ========
 
-These tutorials cover advanced topics for experience Matplotlib
+These tutorials cover advanced topics for experienced Matplotlib
 users and developers.
 
 
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="================== Path effects guide ==================">
+    <div class="sphx-glr-thumbcontainer" tooltip="Defining paths that objects follow on a canvas.">
 
 .. only:: html
 
@@ -236,7 +238,7 @@ users and developers.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="============= Path Tutorial =============">
+    <div class="sphx-glr-thumbcontainer" tooltip="Defining paths in your Matplotlib visualization.">
 
 .. only:: html
 
@@ -256,7 +258,7 @@ users and developers.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="======================== Transformations Tutorial ========================">
+    <div class="sphx-glr-thumbcontainer" tooltip="Transforming visuals in Matplotlib.">
 
 .. only:: html
 
@@ -293,7 +295,7 @@ For even more information see the :ref:`examples page <color_examples>`.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="***************** Specifying Colors *****************">
+    <div class="sphx-glr-thumbcontainer" tooltip="In almost all places in matplotlib where a color can be specified by the user it can be provide...">
 
 .. only:: html
 
@@ -313,7 +315,7 @@ For even more information see the :ref:`examples page <color_examples>`.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Colormap Normalization ======================">
+    <div class="sphx-glr-thumbcontainer" tooltip="Objects that use colormaps by default linearly map the colors in the colormap from data values ...">
 
 .. only:: html
 
@@ -333,7 +335,7 @@ For even more information see the :ref:`examples page <color_examples>`.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="*********************** Colormaps in Matplotlib ***********************">
+    <div class="sphx-glr-thumbcontainer" tooltip="How (and why) to choose a particular colormap.">
 
 .. only:: html
 
@@ -354,7 +356,6 @@ For even more information see the :ref:`examples page <color_examples>`.
 
     <div style='clear:both'></div>
 
-"""
 .. _tutorials-text:
 
 Text
@@ -365,48 +366,8 @@ mathematical expressions, truetype support for raster and
 vector outputs, newline separated text with arbitrary
 rotations, and unicode support. These tutorials cover
 the basics of working with text in Matplotlib.
-"""
 
 
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="************************* Text rendering With LaTeX *************************">
-
-.. only:: html
-
-    .. figure:: /tutorials/text/images/thumb/sphx_glr_usetex_thumb.png
-
-        :ref:`sphx_glr_tutorials_text_usetex.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/text/usetex
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="********************************* Typesetting With XeLaTeX/LuaLaTeX ***************************...">
-
-.. only:: html
-
-    .. figure:: /tutorials/text/images/thumb/sphx_glr_pgf_thumb.png
-
-        :ref:`sphx_glr_tutorials_text_pgf.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/text/pgf
 
 .. raw:: html
 
@@ -430,7 +391,47 @@ the basics of working with text in Matplotlib.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Text introduction =================">
+    <div class="sphx-glr-thumbcontainer" tooltip="Matplotlib has the option to use LaTeX to manage all text layout.  This option is available wit...">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_usetex_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_usetex.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/usetex
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Using the ``pgf`` backend, matplotlib can export figures as pgf drawing commands that can be pr...">
+
+.. only:: html
+
+    .. figure:: /tutorials/text/images/thumb/sphx_glr_pgf_thumb.png
+
+        :ref:`sphx_glr_tutorials_text_pgf.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/text/pgf
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="matplotlib has extensive text support, including support for mathematical expressions, truetype...">
 
 .. only:: html
 
@@ -450,7 +451,7 @@ the basics of working with text in Matplotlib.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="============================  Text properties and layout ============================">
+    <div class="sphx-glr-thumbcontainer" tooltip="The :class:`matplotlib.text.Text` instances have a variety of properties which can be configure...">
 
 .. only:: html
 
@@ -470,7 +471,7 @@ the basics of working with text in Matplotlib.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Writing mathematical expressions ================================">
+    <div class="sphx-glr-thumbcontainer" tooltip="You can use a subset TeX markup in any matplotlib text string by placing it inside a pair of do...">
 
 .. only:: html
 

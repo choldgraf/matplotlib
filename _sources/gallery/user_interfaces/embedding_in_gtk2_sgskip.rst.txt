@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_user_interfaces_embedding_in_gtk2_sgskip.py:
 
 
-.. _user_interfaces-embedding_in_gtk2:
-
 =================
 Embedding In GTK2
 =================

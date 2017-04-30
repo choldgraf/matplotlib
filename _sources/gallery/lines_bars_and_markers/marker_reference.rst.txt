@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_lines_bars_and_markers_marker_reference.py:
 
 
-.. _lines_bars_and_markers-marker_reference:
-
 ================================
 Filled and unfilled-marker types
 ================================
@@ -94,7 +92,7 @@ Reference for filled- and unfilled-marker types included with Matplotlib.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.296 seconds)
+**Total running time of the script:** ( 0 minutes  0.302 seconds)
 
 
 

@@ -3,8 +3,6 @@
 .. _sphx_glr_tutorials_01_introductory_customizing.py:
 
 
-.. _customizing-matplotlib:
-
 Customizing matplotlib
 ======================
 
@@ -259,7 +257,7 @@ A sample matplotlibrc file
 .. _R: https://www.r-project.org/
 
 
-**Total running time of the script:** ( 0 minutes  0.135 seconds)
+**Total running time of the script:** ( 0 minutes  0.107 seconds)
 
 
 

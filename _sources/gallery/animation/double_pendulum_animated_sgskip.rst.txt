@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_animation_double_pendulum_animated_sgskip.py:
 
 
-.. _animation-double_pendulum_animated:
-
 ===========================
 The double pendulum problem
 ===========================

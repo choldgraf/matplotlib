@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_misc_image_thumbnail_sgskip.py:
 
 
-.. _misc-image_thumbnail:
-
 ===============
 Image Thumbnail
 ===============

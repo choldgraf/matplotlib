@@ -1,6 +1,4 @@
 """
-.. _customizing-matplotlib:
-
 Customizing matplotlib
 ======================
 

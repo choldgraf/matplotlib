@@ -128,7 +128,7 @@ as an alternative to a conventional legend.
     # plt.savefig('percent-bachelors-degrees-women-usa.png', bbox_inches='tight')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.213 seconds)
+**Total running time of the script:** ( 0 minutes  0.094 seconds)
 
 
 

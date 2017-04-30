@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_statistics_boxplot.py:
 
 
-.. _statistics-boxplot:
-
 =========================================
 Demo of artist customization in box plots
 =========================================
@@ -120,7 +118,7 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
     fig.subplots_adjust(hspace=0.4)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  2.417 seconds)
+**Total running time of the script:** ( 0 minutes  1.418 seconds)
 
 
 

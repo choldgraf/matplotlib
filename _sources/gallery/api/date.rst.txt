@@ -76,7 +76,7 @@ and num2date
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.157 seconds)
+**Total running time of the script:** ( 0 minutes  0.063 seconds)
 
 
 

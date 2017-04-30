@@ -3,8 +3,6 @@
 .. _sphx_glr_gallery_user_interfaces_embedding_in_qt4_sgskip.py:
 
 
-.. _user_interfaces-embedding_in_qt4:
-
 ================
 Embedding In QT4
 ================
