@@ -3,7 +3,8 @@
 Pyplot tutorial
 ===============
 
-Simple demo of the imshow function.
+An introduction to the pyplot interface.
+
 """
 
 ###############################################################################

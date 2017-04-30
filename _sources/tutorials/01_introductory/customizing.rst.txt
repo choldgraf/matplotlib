@@ -6,6 +6,8 @@
 Customizing matplotlib
 ======================
 
+Tips for customizing the properties and default styles of matplotlib.
+
 Using style sheets
 ------------------
 
@@ -257,7 +259,7 @@ A sample matplotlibrc file
 .. _R: https://www.r-project.org/
 
 
-**Total running time of the script:** ( 0 minutes  0.107 seconds)
+**Total running time of the script:** ( 0 minutes  0.118 seconds)
 
 
 

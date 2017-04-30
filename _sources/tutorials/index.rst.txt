@@ -31,7 +31,7 @@ effectively.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Using style sheets ------------------">
+    <div class="sphx-glr-thumbcontainer" tooltip="Tips for customizing the properties and default styles of matplotlib.">
 
 .. only:: html
 
@@ -91,7 +91,7 @@ effectively.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Simple demo of the imshow function. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="An introduction to the pyplot interface.">
 
 .. only:: html
 
