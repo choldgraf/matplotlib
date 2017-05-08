@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.animation.Animation.save &mdash; Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation</title>
+    <title>matplotlib.animation.Animation.save &mdash; Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5153.dev0+g7d14e7b75',
+        VERSION:     '2.0.0b1.post5204.dev0+g1ff581151',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation" href="../../index.html" />
     <link rel="up" title="animation module" href="../animation_api.html" />
     <link rel="next" title="matplotlib.animation.Animation.to_html5_video" href="matplotlib.animation.Animation.to_html5_video.html" />
     <link rel="prev" title="matplotlib.animation.ArtistAnimation" href="matplotlib.animation.ArtistAnimation.html" /> 
@@ -151,7 +151,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <p><strong>writer</strong> : <a class="reference internal" href="matplotlib.animation.MovieWriter.html#matplotlib.animation.MovieWriter" title="matplotlib.animation.MovieWriter"><code class="xref py py-class docutils literal"><span class="pre">MovieWriter</span></code></a> or str, optional</p>
 <blockquote>
 <div><p>A <a class="reference internal" href="matplotlib.animation.MovieWriter.html#matplotlib.animation.MovieWriter" title="matplotlib.animation.MovieWriter"><code class="xref py py-obj docutils literal"><span class="pre">MovieWriter</span></code></a> instance to use or a key that identifies a
-class to use, such as &#8216;ffmpeg&#8217; or &#8216;mencoder&#8217;. If <code class="xref py py-obj docutils literal"><span class="pre">None</span></code>,
+class to use, such as &#8216;ffmpeg&#8217; or &#8216;mencoder&#8217;. If <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>,
 defaults to <code class="docutils literal"><span class="pre">rcParams['animation.writer']</span></code></p>
 </div></blockquote>
 <p><strong>fps</strong> : number, optional</p>
@@ -169,7 +169,7 @@ the movie.  If None, defaults to <code class="docutils literal"><span class="pre
 <p><strong>codec</strong> : str, optional</p>
 <blockquote>
 <div><p>The video codec to be used. Not all codecs are supported by
-a given <a class="reference internal" href="matplotlib.animation.MovieWriter.html#matplotlib.animation.MovieWriter" title="matplotlib.animation.MovieWriter"><code class="xref py py-class docutils literal"><span class="pre">MovieWriter</span></code></a>. If <code class="xref py py-obj docutils literal"><span class="pre">None</span></code>,
+a given <a class="reference internal" href="matplotlib.animation.MovieWriter.html#matplotlib.animation.MovieWriter" title="matplotlib.animation.MovieWriter"><code class="xref py py-class docutils literal"><span class="pre">MovieWriter</span></code></a>. If <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>,
 default to <code class="docutils literal"><span class="pre">rcParams['animation.codec']</span></code></p>
 </div></blockquote>
 <p><strong>bitrate</strong> : number, optional</p>
@@ -177,13 +177,13 @@ default to <code class="docutils literal"><span class="pre">rcParams['animation.
 <div><p>Specifies the number of bits used per second in the
 compressed movie, in kilobits per second. A higher number
 means a higher quality movie, but at the cost of increased
-file size. If <code class="xref py py-obj docutils literal"><span class="pre">None</span></code>, defaults to
+file size. If <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, defaults to
 <code class="docutils literal"><span class="pre">rcParam['animation.bitrate']</span></code></p>
 </div></blockquote>
 <p><strong>extra_args</strong> : list, optional</p>
 <blockquote>
 <div><p>List of extra string arguments to be passed to the
-underlying movie utility. If <code class="xref py py-obj docutils literal"><span class="pre">None</span></code>, defaults to
+underlying movie utility. If <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, defaults to
 <code class="docutils literal"><span class="pre">rcParams['animation.extra_args']</span></code></p>
 </div></blockquote>
 <p><strong>metadata</strong> : dict, optional</p>
@@ -215,7 +215,7 @@ save the individual frames.</p>
 <p>fps, codec, bitrate, extra_args, metadata are used to
 construct a <a class="reference internal" href="matplotlib.animation.MovieWriter.html#matplotlib.animation.MovieWriter" title="matplotlib.animation.MovieWriter"><code class="xref py py-class docutils literal"><span class="pre">MovieWriter</span></code></a> instance and can only be
 passed if <code class="xref py py-obj docutils literal"><span class="pre">writer</span></code> is a string.  If they are passed as
-non-<code class="xref py py-obj docutils literal"><span class="pre">None</span></code> and <code class="docutils literal"><span class="pre">writer</span></code> is a <a class="reference internal" href="matplotlib.animation.MovieWriter.html#matplotlib.animation.MovieWriter" title="matplotlib.animation.MovieWriter"><code class="xref py py-class docutils literal"><span class="pre">MovieWriter</span></code></a>, a
+non-<a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a> and <code class="docutils literal"><span class="pre">writer</span></code> is a <a class="reference internal" href="matplotlib.animation.MovieWriter.html#matplotlib.animation.MovieWriter" title="matplotlib.animation.MovieWriter"><code class="xref py py-class docutils literal"><span class="pre">MovieWriter</span></code></a>, a
 <code class="xref py py-obj docutils literal"><span class="pre">RuntimeError</span></code> will be raised.</p>
 </dd></dl>
 
@@ -229,8 +229,8 @@ non-<code class="xref py py-obj docutils literal"><span class="pre">None</span><
       <div class="clearer"></div>
     </div>
     <div class="footer">
-        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 29, 2017.
+        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
+      Last updated on May 07, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

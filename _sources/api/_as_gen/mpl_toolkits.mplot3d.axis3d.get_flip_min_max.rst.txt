@@ -1,0 +1,16 @@
+mpl\_toolkits\.mplot3d\.axis3d\.get\_flip\_min\_max
+===================================================
+
+
+.. currentmodule:: mpl_toolkits.mplot3d.axis3d
+
+.. autofunction:: get_flip_min_max
+
+
+
+.. include:: mpl_toolkits.mplot3d.axis3d.get_flip_min_max.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

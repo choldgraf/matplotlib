@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>dviread &mdash; Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation</title>
+    <title>dviread &mdash; Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5153.dev0+g7d14e7b75',
+        VERSION:     '2.0.0b1.post5204.dev0+g1ff581151',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib API" href="index.html" />
     <link rel="next" title="figure" href="figure_api.html" />
     <link rel="prev" title="dates" href="dates_api.html" /> 
@@ -193,7 +193,7 @@ it is currently used by the pdf backend for processing usetex text.</p>
 <dl class="class">
 <dt id="matplotlib.dviread.DviFont">
 <em class="property">class </em><code class="descclassname">matplotlib.dviread.</code><code class="descname">DviFont</code><span class="sig-paren">(</span><em>scale</em>, <em>tfm</em>, <em>texname</em>, <em>vf</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.dviread.DviFont" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Encapsulation of a font that a DVI file can refer to.</p>
 <p>This class holds a font&#8217;s texname and size, supports comparison,
 and knows the widths of glyphs in the same units as the AFM file.
@@ -265,7 +265,7 @@ the external name of the font.</p>
 <dl class="class">
 <dt id="matplotlib.dviread.Encoding">
 <em class="property">class </em><code class="descclassname">matplotlib.dviread.</code><code class="descname">Encoding</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.dviread.Encoding" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Parses a *.enc file referenced from a psfonts.map style file.
 The format this class understands is a very limited subset of
 PostScript.</p>
@@ -347,7 +347,7 @@ PostScript.</p>
 <dl class="class">
 <dt id="matplotlib.dviread.PsfontsMap">
 <em class="property">class </em><code class="descclassname">matplotlib.dviread.</code><code class="descname">PsfontsMap</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.dviread.PsfontsMap" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>A psfonts.map formatted file, mapping TeX fonts to PS fonts.</p>
 <p>Usage:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">PsfontsMap</span><span class="p">(</span><span class="n">find_tex_file</span><span class="p">(</span><span class="s1">&#39;pdftex.map&#39;</span><span class="p">))</span>
@@ -432,7 +432,7 @@ configured these files differently.</p>
 <dl class="class">
 <dt id="matplotlib.dviread.Tfm">
 <em class="property">class </em><code class="descclassname">matplotlib.dviread.</code><code class="descname">Tfm</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.dviread.Tfm" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>A TeX Font Metric file.</p>
 <p>This implementation covers only the bare minimum needed by the Dvi class.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -554,7 +554,7 @@ The library that <strong class="program">kpsewhich</strong> is part of.</td></tr
 <dl class="class">
 <dt id="matplotlib.dviread.Dvi">
 <em class="property">class </em><code class="descclassname">matplotlib.dviread.</code><code class="descname">Dvi</code><span class="sig-paren">(</span><em>filename</em>, <em>dpi</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.dviread.Dvi" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>A reader for a dvi (&#8220;device-independent&#8221;) file, as produced by TeX.
 The current implementation can only iterate through pages in order,
 and does not even attempt to verify the postamble.</p>
@@ -614,8 +614,8 @@ integers.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 29, 2017.
+        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
+      Last updated on May 07, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

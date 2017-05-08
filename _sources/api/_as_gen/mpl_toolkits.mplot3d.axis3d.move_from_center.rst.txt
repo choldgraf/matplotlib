@@ -1,0 +1,16 @@
+mpl\_toolkits\.mplot3d\.axis3d\.move\_from\_center
+==================================================
+
+
+.. currentmodule:: mpl_toolkits.mplot3d.axis3d
+
+.. autofunction:: move_from_center
+
+
+
+.. include:: mpl_toolkits.mplot3d.axis3d.move_from_center.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

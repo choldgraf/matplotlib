@@ -1,0 +1,16 @@
+mpl\_toolkits\.mplot3d\.axis3d\.XAxis
+=====================================
+
+
+.. currentmodule:: mpl_toolkits.mplot3d.axis3d
+
+.. autoclass:: XAxis
+
+
+
+.. include:: mpl_toolkits.mplot3d.axis3d.XAxis.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

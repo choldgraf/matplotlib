@@ -1,0 +1,42 @@
+mpl\_toolkits\.axes\_grid1
+==========================
+
+
+.. automodule:: mpl_toolkits.axes_grid1
+   :no-members:
+   :no-inherited-members:
+
+
+
+
+Classes
+-------
+
+.. autosummary:: 
+   :template: autosummary.rst
+   :toctree:
+
+   AxesGrid
+   Divider
+   Grid
+   ImageGrid
+   LocatableAxes
+   SubplotDivider
+
+
+
+
+
+
+Functions
+---------
+
+.. autosummary:: 
+   :template: autosummary.rst
+   :toctree:
+
+
+   host_axes
+   host_subplot
+   make_axes_locatable
+

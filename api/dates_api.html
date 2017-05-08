@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>dates &mdash; Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation</title>
+    <title>dates &mdash; Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5153.dev0+g7d14e7b75',
+        VERSION:     '2.0.0b1.post5204.dev0+g1ff581151',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib API" href="index.html" />
     <link rel="next" title="dviread" href="dviread.html" />
     <link rel="prev" title="container" href="container_api.html" /> 
@@ -172,12 +172,12 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <div class="section" id="module-matplotlib.dates">
 <span id="matplotlib-dates"></span><h2><a class="reference internal" href="#module-matplotlib.dates" title="matplotlib.dates"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.dates</span></code></a><a class="headerlink" href="#module-matplotlib.dates" title="Permalink to this headline">¶</a></h2>
 <p>Matplotlib provides sophisticated date plotting capabilities, standing on the
-shoulders of python <code class="xref py py-mod docutils literal"><span class="pre">datetime</span></code>, the add-on modules <code class="xref py py-mod docutils literal"><span class="pre">pytz</span></code> and
+shoulders of python <a class="reference external" href="https://docs.python.org/2/library/datetime.html#module-datetime" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">datetime</span></code></a>, the add-on modules <code class="xref py py-mod docutils literal"><span class="pre">pytz</span></code> and
 <code class="xref py py-mod docutils literal"><span class="pre">dateutil</span></code>.  <code class="xref py py-class docutils literal"><span class="pre">datetime</span></code> objects are converted to floating point
 numbers which represent time in days since 0001-01-01 UTC, plus 1.  For
 example, 0001-01-01, 06:00 is 1.25, not 0.25.  The helper functions
 <a class="reference internal" href="#matplotlib.dates.date2num" title="matplotlib.dates.date2num"><code class="xref py py-func docutils literal"><span class="pre">date2num()</span></code></a>, <a class="reference internal" href="#matplotlib.dates.num2date" title="matplotlib.dates.num2date"><code class="xref py py-func docutils literal"><span class="pre">num2date()</span></code></a> and <a class="reference internal" href="#matplotlib.dates.drange" title="matplotlib.dates.drange"><code class="xref py py-func docutils literal"><span class="pre">drange()</span></code></a> are used to facilitate
-easy conversion to and from <code class="xref py py-mod docutils literal"><span class="pre">datetime</span></code> and numeric ranges.</p>
+easy conversion to and from <a class="reference external" href="https://docs.python.org/2/library/datetime.html#module-datetime" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">datetime</span></code></a> and numeric ranges.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>Like Python&#8217;s datetime, mpl uses the Gregorian calendar for all
@@ -300,7 +300,7 @@ be returned.</p>
 <code class="descclassname">matplotlib.dates.</code><code class="descname">drange</code><span class="sig-paren">(</span><em>dstart</em>, <em>dend</em>, <em>delta</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.dates.drange" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a date range as float Gregorian ordinals.  <em>dstart</em> and
 <em>dend</em> are <code class="xref py py-class docutils literal"><span class="pre">datetime</span></code> instances.  <em>delta</em> is a
-<code class="xref py py-class docutils literal"><span class="pre">datetime.timedelta</span></code> instance.</p>
+<a class="reference external" href="https://docs.python.org/2/library/datetime.html#datetime.timedelta" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">datetime.timedelta</span></code></a> instance.</p>
 </dd></dl>
 
 <dl class="function">
@@ -329,7 +329,7 @@ instances) to the new date format.</p>
 <dd><p>Bases: <a class="reference internal" href="ticker_api.html#matplotlib.ticker.Formatter" title="matplotlib.ticker.Formatter"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.ticker.Formatter</span></code></a></p>
 <p>Tick location is seconds since the epoch.  Use a <a class="reference internal" href="#matplotlib.dates.DateFormatter.strftime" title="matplotlib.dates.DateFormatter.strftime"><code class="xref py py-func docutils literal"><span class="pre">strftime()</span></code></a>
 format string.</p>
-<p>Python only supports <code class="xref py py-mod docutils literal"><span class="pre">datetime</span></code> <a class="reference internal" href="#matplotlib.dates.DateFormatter.strftime" title="matplotlib.dates.DateFormatter.strftime"><code class="xref py py-func docutils literal"><span class="pre">strftime()</span></code></a> formatting
+<p>Python only supports <a class="reference external" href="https://docs.python.org/2/library/datetime.html#module-datetime" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">datetime</span></code></a> <a class="reference internal" href="#matplotlib.dates.DateFormatter.strftime" title="matplotlib.dates.DateFormatter.strftime"><code class="xref py py-func docutils literal"><span class="pre">strftime()</span></code></a> formatting
 for years greater than 1900.  Thanks to Andrew Dalke, Dalke
 Scientific Software who contributed the <a class="reference internal" href="#matplotlib.dates.DateFormatter.strftime" title="matplotlib.dates.DateFormatter.strftime"><code class="xref py py-func docutils literal"><span class="pre">strftime()</span></code></a> code
 below to include dates earlier than this year.</p>
@@ -829,7 +829,7 @@ values by whichever keyword arguments are specified.</p>
 <dl class="class">
 <dt id="matplotlib.dates.relativedelta">
 <em class="property">class </em><code class="descclassname">matplotlib.dates.</code><code class="descname">relativedelta</code><span class="sig-paren">(</span><em>dt1=None</em>, <em>dt2=None</em>, <em>years=0</em>, <em>months=0</em>, <em>days=0</em>, <em>leapdays=0</em>, <em>weeks=0</em>, <em>hours=0</em>, <em>minutes=0</em>, <em>seconds=0</em>, <em>microseconds=0</em>, <em>year=None</em>, <em>month=None</em>, <em>day=None</em>, <em>weekday=None</em>, <em>yearday=None</em>, <em>nlyearday=None</em>, <em>hour=None</em>, <em>minute=None</em>, <em>second=None</em>, <em>microsecond=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.dates.relativedelta" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>The relativedelta type is based on the specification of the excellent
 work done by M.-A. Lemburg in his
 <a class="reference external" href="http://www.egenix.com/files/python/mxDateTime.html">mx.DateTime</a> extension.
@@ -955,8 +955,8 @@ values for the relative attributes.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 29, 2017.
+        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
+      Last updated on May 07, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

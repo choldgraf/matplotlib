@@ -1,0 +1,16 @@
+mpl\_toolkits\.axes\_grid\.Grid
+===============================
+
+
+.. currentmodule:: mpl_toolkits.axes_grid
+
+.. autoclass:: Grid
+
+
+
+.. include:: mpl_toolkits.axes_grid.Grid.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Developer’s tips for documenting matplotlib &mdash; Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation</title>
+    <title>Developer’s tips for documenting matplotlib &mdash; Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5153.dev0+g7d14e7b75',
+        VERSION:     '2.0.0b1.post5204.dev0+g1ff581151',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5153.dev0+g7d14e7b75 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib Developers’ Guide" href="index.html" />
     <link rel="next" title="Developer’s guide for creating scales and transformations" href="add_new_projection.html" />
     <link rel="prev" title="Developer’s tips for testing" href="testing.html" /> 
@@ -100,7 +100,12 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Developer&#8217;s tips for documenting matplotlib</a><ul>
-<li><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li><a class="reference internal" href="#getting-started">Getting started</a><ul>
+<li><a class="reference internal" href="#installing-dependencies">Installing dependencies</a></li>
+<li><a class="reference internal" href="#general-structure">General structure</a></li>
+<li><a class="reference internal" href="#building-the-docs">Building the docs</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#organization-of-matplotlib-s-documentation">Organization of matplotlib&#8217;s documentation</a><ul>
 <li><a class="reference internal" href="#docstrings">docstrings</a></li>
 </ul>
@@ -167,9 +172,13 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <span id="documenting-matplotlib"></span><h1>Developer&#8217;s tips for documenting matplotlib<a class="headerlink" href="#developer-s-tips-for-documenting-matplotlib" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="getting-started">
 <h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>The documentation for matplotlib is generated from ReStructured Text using the
-<a class="reference external" href="http://www.sphinx-doc.org">Sphinx</a> documentation generation tool.
-The requirements are as follows (<a class="reference external" href="https://github.com/matplotlib/matplotlib/blob/master/doc-requirements.txt">https://github.com/matplotlib/matplotlib/blob/master/doc-requirements.txt</a>)</p>
+<div class="section" id="installing-dependencies">
+<h3>Installing dependencies<a class="headerlink" href="#installing-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>The documentation for matplotlib is generated from reStructuredText using the
+<a class="reference external" href="http://www.sphinx-doc.org">Sphinx</a> documentation generation tool. There are several extra requirements that
+are needed to build the documentation. They are listed in the file
+<a class="reference external" href="https://github.com/matplotlib/matplotlib/blob/master/doc-requirements.txt">doc-requirements.txt</a>
+as well as listed below:</p>
 <ol class="arabic simple">
 <li>Sphinx-1.3 or later(Version 1.5.0 is not supported)</li>
 <li>numpydoc 0.4 or later</li>
@@ -179,6 +188,32 @@ The requirements are as follows (<a class="reference external" href="https://git
 <li>pillow</li>
 <li>graphviz</li>
 </ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>You&#8217;ll need a minimal working LaTeX distribution for many examples to run.</li>
+<li><a class="reference external" href="http://www.graphviz.org/Download.php">Graphviz</a> is not a python package, and needs
+to be installed separately.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="general-structure">
+<h3>General structure<a class="headerlink" href="#general-structure" title="Permalink to this headline">¶</a></h3>
+<p>All documentation is built from the <code class="file docutils literal"><span class="pre">doc/</span></code> directory. This directory contains both
+<code class="docutils literal"><span class="pre">.rst</span></code> files that contain pages in the documentation, directories that contain more
+<code class="docutils literal"><span class="pre">.rst</span></code> files, and configuration files for <a class="reference external" href="http://www.sphinx-doc.org">Sphinx</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">An exception to this are the directories <code class="file docutils literal"><span class="pre">gallery</span></code> and <code class="file docutils literal"><span class="pre">tutorials</span></code>, which
+exist in the root directory. These contain Python files that are built by <a class="reference external" href="https://sphinx-gallery.readthedocs.io/en/latest/">Sphinx Gallery</a>.
+When the docs are built, directories of the same name will be generated inside of <code class="file docutils literal"><span class="pre">docs/</span></code>.
+The generated directories <code class="file docutils literal"><span class="pre">docs/gallery</span></code> and <code class="file docutils literal"><span class="pre">docs/tutorials</span></code> can be safely deleted.</p>
+</div>
+<p>The configuration file for Sphinx is <code class="file docutils literal"><span class="pre">doc/conf.py</span></code>. It controls which directories
+Sphinx parses, how the docs are built, and how the extensions are used.</p>
+</div>
+<div class="section" id="building-the-docs">
+<h3>Building the docs<a class="headerlink" href="#building-the-docs" title="Permalink to this headline">¶</a></h3>
 <p>The documentation sources are found in the <code class="file docutils literal"><span class="pre">doc/</span></code> directory in
 the trunk.  To build the users guide in html format, cd into
 <code class="file docutils literal"><span class="pre">doc/</span></code> and do:</p>
@@ -189,10 +224,21 @@ the trunk.  To build the users guide in html format, cd into
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">make</span><span class="o">.</span><span class="n">py</span> <span class="n">html</span>
 </pre></div>
 </div>
-<p>you can also pass a <code class="docutils literal"><span class="pre">latex</span></code> flag to make.py to build a pdf, or pass no
-arguments to build everything.</p>
-<p>The output produced by Sphinx can be configured by editing the <code class="file docutils literal"><span class="pre">conf.py</span></code>
-file located in the <code class="file docutils literal"><span class="pre">doc/</span></code>.</p>
+<p>There are many other flags you can pass to <code class="docutils literal"><span class="pre">make.py</span></code>, and you can see the
+full list inside that file. Here are two useful ones:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">clean</span></code> will delete the built Sphinx files. Use this command if you&#8217;re getting strange
+errors about missing paths or broken links, particularly if you move files around.</li>
+<li><code class="docutils literal"><span class="pre">latex</span></code> builds a PDF of the documentation.</li>
+</ul>
+<p>In addition, these are useful flags:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">--help</span></code> will (among other things) display the allowed commands for <code class="docutils literal"><span class="pre">make.py</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">--allowsphinxwarnings</span></code> will allow the docs to continue building even if Sphinx
+throws a warning. This is useful for debugging and spot-checking many warnings
+at once.</li>
+</ul>
+</div>
 </div>
 <div class="section" id="organization-of-matplotlib-s-documentation">
 <h2>Organization of matplotlib&#8217;s documentation<a class="headerlink" href="#organization-of-matplotlib-s-documentation" title="Permalink to this headline">¶</a></h2>
@@ -419,8 +465,6 @@ create a references to a term in the glossary with the <code class="docutils lit
 <li><p class="first">The autodoc extension will handle index entries for the API, but additional
 entries in the <a class="reference external" href="http://www.sphinx-doc.org/markup/para.html#index-generating-markup">index</a> need to be explicitly added.</p>
 </li>
-</ul>
-<ul>
 <li><p class="first">Please limit the text width of docstrings to 70 characters.</p>
 </li>
 <li><p class="first">Keyword arguments should be described using a definition list.</p>
@@ -572,9 +616,9 @@ and applies rcParams before each plot.</dd>
 <dt>plot_working_directory</dt>
 <dd>By default, the working directory will be changed to the directory of
 the example, so the code can get at its data files, if any.  Also its
-path will be added to <code class="xref py py-obj docutils literal"><span class="pre">sys.path</span></code> so it can import any helper modules
+path will be added to <a class="reference external" href="https://docs.python.org/2/library/sys.html#sys.path" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">sys.path</span></code></a> so it can import any helper modules
 sitting beside it.  This configuration option can be used to specify
-a central directory (also added to <code class="xref py py-obj docutils literal"><span class="pre">sys.path</span></code>) where data files and
+a central directory (also added to <a class="reference external" href="https://docs.python.org/2/library/sys.html#sys.path" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">sys.path</span></code></a>) where data files and
 helper modules for all code are located.</dd>
 <dt>plot_template</dt>
 <dd>Provide a customized template for preparing restructured text.</dd>
@@ -796,8 +840,8 @@ is the basic <code class="docutils literal"><span class="pre">.emacs</span></cod
       <div class="clearer"></div>
     </div>
     <div class="footer">
-        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
-      Last updated on Apr 29, 2017.
+        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
+      Last updated on May 07, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>
