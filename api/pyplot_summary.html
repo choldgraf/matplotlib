@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>The Pyplot API &mdash; Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation</title>
+    <title>Plotting commands summary &mdash; Matplotlib 2.0.0b1.post5203+g45f383d83 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5204.dev0+g1ff581151',
+        VERSION:     '2.0.0b1.post5203+g45f383d83',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5203+g45f383d83 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5204.dev0+g1ff581151 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5203+g45f383d83 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib API" href="index.html" />
     <link rel="next" title="API Changes" href="api_changes.html" />
     <link rel="prev" title="The Matplotlib API" href="index.html" /> 
@@ -96,14 +96,7 @@ type="text/css" />
 Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
   <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
 </a>
-<br/>
-  <h3><a href="../contents.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">The Pyplot API</a></li>
-<li><a class="reference internal" href="#the-object-oriented-api">The Object-Oriented API</a></li>
-<li><a class="reference internal" href="#colors-in-matplotlib">Colors in Matplotlib</a></li>
-</ul>
-<div class="relations">
+<br/><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../contents.html">Documentation overview</a><ul>
@@ -138,23 +131,8 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <div class="bodywrapper">
           <div class="body">
             
-  <p>Below we describe several common approaches to plotting with Matplotlib.</p>
-<div class="contents topic" id="contents">
-<p class="topic-title first">Contents</p>
-<ul class="simple">
-<li><a class="reference internal" href="#the-pyplot-api" id="id11">The Pyplot API</a></li>
-<li><a class="reference internal" href="#the-object-oriented-api" id="id12">The Object-Oriented API</a></li>
-<li><a class="reference internal" href="#colors-in-matplotlib" id="id13">Colors in Matplotlib</a></li>
-</ul>
-</div>
-<div class="section" id="the-pyplot-api">
-<h1><a class="toc-backref" href="#id11">The Pyplot API</a><a class="headerlink" href="#the-pyplot-api" title="Permalink to this headline">¶</a></h1>
-<p>The <code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code> module contains functions that allow you to generate
-many kinds of plots quickly. For examples that showcase the use
-of the <code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code> module, see the
-<a class="reference internal" href="../tutorials/01_introductory/pyplot.html#sphx-glr-tutorials-01-introductory-pyplot-py"><span class="std std-ref">Pyplot tutorial</span></a>
-or the <a class="reference internal" href="../gallery/index.html#pyplots-examples"><span class="std std-ref">Pyplot Examples</span></a>. We also recommend that you look into
-the object-oriented approach to plotting, described below.</p>
+  <div class="section" id="plotting-commands-summary">
+<h1>Plotting commands summary<a class="headerlink" href="#plotting-commands-summary" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="matplotlib.pyplot.plotting">
 <code class="descclassname">matplotlib.pyplot.</code><code class="descname">plotting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.plotting" title="Permalink to this definition">¶</a></dt>
@@ -569,22 +547,6 @@ the object-oriented approach to plotting, described below.</p>
 </table>
 </dd></dl>
 
-</div>
-<div class="section" id="the-object-oriented-api">
-<h1><a class="toc-backref" href="#id12">The Object-Oriented API</a><a class="headerlink" href="#the-object-oriented-api" title="Permalink to this headline">¶</a></h1>
-<p>Most of these functions also exist as methods in the
-<a class="reference internal" href="axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.axes.Axes</span></code></a> class. You can use them with the
-so-called &#8220;Object Oriented&#8221; approach to Matplotlib.</p>
-<p>While it is easy to quickly generate plots with the
-<code class="xref py py-mod docutils literal"><span class="pre">matplotlib.pyplot</span></code> module,
-we recommend using the object-oriented approach for more control
-and customization of your plots. For some examples of the OO approach
-to Matplotlib, see the <a class="reference internal" href="../gallery/index.html#api-examples"><span class="std std-ref">Matplotlib API</span></a> examples.</p>
-</div>
-<div class="section" id="colors-in-matplotlib">
-<h1><a class="toc-backref" href="#id13">Colors in Matplotlib</a><a class="headerlink" href="#colors-in-matplotlib" title="Permalink to this headline">¶</a></h1>
-<p>There are many colormaps you can use to map data onto color values.
-Below we list several ways in which color can be utilized in Matplotlib.</p>
 <dl class="function">
 <dt id="matplotlib.pyplot.colormaps">
 <code class="descclassname">matplotlib.pyplot.</code><code class="descname">colormaps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.colormaps" title="Permalink to this definition">¶</a></dt>
@@ -1029,7 +991,7 @@ by Carey Rappaport</td></tr>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 07, 2017.
+      Last updated on May 08, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>
