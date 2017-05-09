@@ -3,8 +3,6 @@
 The Lifecycle of a Plot
 =======================
 
-Going from start to finish of one plot in Matplotlib.
-
 This tutorial aims to show the beginning, middle, and end of a single
 visualization using Matplotlib. We'll begin with some raw data and
 end by saving a figure of a customized visualization. Along the way we'll try
@@ -18,23 +16,24 @@ to highlight some neat features and best-practices using Matplotlib.
     `this excellent blog post <http://pbpython.com/effective-matplotlib.html>`_
     by Chris Moffitt. It was transformed into this tutorial by Chris Holdgraf.
 
-A note on Object-Oriented vs Pyplot
-===================================
+A note on the Object-Oriented API vs Pyplot
+===========================================
 
-Matplotlib has two interfaces. The first is based on MATLAB and uses
+Matplotlib has two interfaces. The first is an an object-oriented (OO)
+interface. In this case, we utilize an instance of :class:`axes.Axes`
+in order to render visualizations on an instance of :class:`figure.Figure`.
+
+The second is based on MATLAB and uses
 a state-based interface. This is encapsulated in the :mod:`pyplot`
 module. See the :ref:`pyplot tutorials <sphx_glr_tutorials_01_introductory_lifecycle.py>`
 for a more in-depth look at the pyplot interface.
 
-The second interface is an an object-oriented (OO) interface.
-In this case, we utilize an instance of :class:`axes.Axes` in order to
-render visualizations on an instance of :class:`figure.Figure`.
-
 Most of the terms are straightforward but the main thing to remember
 is that:
 
-* the Figure is the final image that may contain 1 or more axes.
-* The Axes represent an individual plot.
+* The Figure is the final image that may contain 1 or more Axes.
+* The Axes represent an individual plot (don't confuse this with the word
+  "axis", which refers to the x/y axis of a plot).
 
 We call methods that do the plotting directly from the Axes, which gives
 us much more flexibility and power in customizing our plot. See the
@@ -57,18 +56,17 @@ It contains sales information for a number of companies.
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
-from string import ascii_lowercase
 
-data = {'Barton LLC': 109438.5,
+data = {'Barton LLC': 109438.50,
         'Frami, Hills and Schmidt': 103569.59,
-        'Fritsch, Russel and Anderson': 112214.71000000001,
-        'Jerde-Hilpert': 112591.42999999999,
-        'Keeling LLC': 100934.29999999999,
-        'Koepp Ltd': 103660.54000000001,
-        'Kulas Inc': 137351.95999999996,
-        'Trantow-Barrows': 123381.38000000003,
-        'White-Trantow': 135841.99000000002,
-        'Will LLC': 104437.60000000002}
+        'Fritsch, Russel and Anderson': 112214.71,
+        'Jerde-Hilpert': 112591.43,
+        'Keeling LLC': 100934.30,
+        'Koepp Ltd': 103660.54,
+        'Kulas Inc': 137351.96,
+        'Trantow-Barrows': 123381.38,
+        'White-Trantow': 135841.99,
+        'Will LLC': 104437.60}
 group_data = list(data.values())
 group_names = list(data.keys())
 group_mean = np.mean(group_data)
@@ -136,7 +134,7 @@ labels = ax.get_xticklabels()
 ###############################################################################
 # If we'd like to set the property of many items at once, it's useful to use
 # the :func:`pyplot.setp` function. This will take a list (or many lists) of
-# matplotlib objects, and attempt to set some style element of each one.
+# Matplotlib objects, and attempt to set some style element of each one.
 
 fig, ax = plt.subplots()
 ax.barh(group_names, group_data)
@@ -145,7 +143,7 @@ plt.setp(labels, rotation=45, horizontalalignment='right')
 
 ###############################################################################
 # It looks like this cut off some of the labels on the bottom. We can
-# tell matplotlib to automatically make room for elements in the figures
+# tell Matplotlib to automatically make room for elements in the figures
 # that we create. To do this we'll set the ``autolayout`` value of our
 # rcParams. For more information on controlling the style, layout, and
 # other features of plots with rcParams, see
@@ -159,9 +157,9 @@ labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
 
 ###############################################################################
-# Next, we'll add labels to the plot. To
-# do this with the OO interface, we can use the :meth:`axes.Axes.set` method
-# to set properties of this axis object.
+# Next, we'll add labels to the plot. To do this with the OO interface,
+# we can use the :meth:`axes.Axes.set` method to set properties of this
+# Axes object.
 
 fig, ax = plt.subplots()
 ax.barh(group_names, group_data)
@@ -176,7 +174,7 @@ ax.set(xlim=[-10000, 140000], xlabel='Total Revenue', ylabel='Company',
 #
 # .. note::
 #
-#    While indexing in python follows the form (row, column), the figsize
+#    While indexing in NumPy follows the form (row, column), the figsize
 #    kwarg follows the form (width, height). This follows conventions in
 #    visualization, which unfortunately are different from those of linear
 #    algebra.
@@ -246,10 +244,10 @@ ax.title.set(y=1.05)
 ax.set(xlim=[-10000, 140000], xlabel='Total Revenue', ylabel='Company',
        title='Company Revenue')
 ax.xaxis.set_major_formatter(formatter)
-ax.set_xticks([25e3, 50e3, 75e3, 100e3, 125e3])
+ax.set_xticks([0, 25e3, 50e3, 75e3, 100e3, 125e3])
 fig.subplots_adjust(right=.1)
-plt.show()
 
+plt.show()
 
 ###############################################################################
 # Saving our plot
@@ -265,24 +263,10 @@ print(fig.canvas.get_supported_filetypes())
 # We can then use the :meth:`figure.Figure.savefig` in order to save the figure
 # to disk. Note that there are several useful flags we'll show below:
 #
-# * ``transparent=True`` makes the background of the saved figure transparent.
-# * ``dpi=80`` controls the resolution (dots per square inch) of the ouput.
+# * ``transparent=True`` makes the background of the saved figure transparent
+#   if the format supports it.
+# * ``dpi=80`` controls the resolution (dots per square inch) of the output.
 # * ``bbox_inches="tight"`` fits the bounds of the figure to our plot.
 
 # Uncomment this line to save the figure.
 # fig.savefig('sales.png', transparent=False, dpi=80, bbox_inches="tight")
-
-###############################################################################
-# Below we've included a small diagram showing the basic components of the
-# plot elements that were included in the original blog post. It has most of
-# the same elements, with a few extra components as well. Click the image to
-# see the blog post (along with code used to generate the figure).
-#
-# .. image:: ../../_static/axis_layout.png
-#    :width: 80 %
-#    :align: center
-#    :target: http://pbpython.com/effective-matplotlib.html
-#
-# There are many other things you can do with Matplotlib, and this is just
-# a taste. For more information, check out our :ref:`tutorials` and
-# :ref:`examples-index` pages.

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Path effects guide &mdash; Matplotlib 2.0.0b1.post5205.dev0+g81ae1c3 documentation</title>
+    <title>Path effects guide &mdash; Matplotlib 2.0.0b1.post5205.dev0+g65e9497e1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5205.dev0+g81ae1c3',
+        VERSION:     '2.0.0b1.post5205.dev0+g65e9497e1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5205.dev0+g81ae1c3 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5205.dev0+g65e9497e1 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5205.dev0+g81ae1c3 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post5205.dev0+g65e9497e1 documentation" href="../../index.html" /> 
 
 
   </head>
@@ -143,7 +143,7 @@ draws the artist without any effect:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">matplotlib.patheffects</span> <span class="kn">as</span> <span class="nn">path_effects</span>
 
-<span class="n">fig</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">))</span>
+<span class="n">fig</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.figure.AxesStack.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">))</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;Hello path effects world!</span><span class="se">\n</span><span class="s1">This is the normal &#39;</span>
                           <span class="s1">&#39;path effect.</span><span class="se">\n</span><span class="s1">Pretty dull, huh?&#39;</span><span class="p">,</span>
                 <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -184,7 +184,7 @@ effects to draw.</p>
 <p>One nice way of making artists visually stand out is to draw an outline in a bold
 color below the actual artist. The <a class="reference internal" href="../../api/patheffects_api.html#matplotlib.patheffects.Stroke" title="matplotlib.patheffects.Stroke"><code class="xref py py-class docutils literal"><span class="pre">Stroke</span></code></a> path effect
 makes this a relatively simple task:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.figure.AxesStack.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;This text stands out because of</span><span class="se">\n</span><span class="s1">&#39;</span>
                           <span class="s1">&#39;its black border.&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span>
                           <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
@@ -212,7 +212,7 @@ will be used to, meaning that setting keywords such as <code class="docutils lit
 raise an AttributeError. Luckily there is a generic <a class="reference internal" href="../../api/patheffects_api.html#matplotlib.patheffects.PathPatchEffect" title="matplotlib.patheffects.PathPatchEffect"><code class="xref py py-class docutils literal"><span class="pre">PathPatchEffect</span></code></a> path effect
 which creates a <a class="reference internal" href="../../api/_as_gen/matplotlib.patches.PathPatch.html#matplotlib.patches.PathPatch" title="matplotlib.patches.PathPatch"><code class="xref py py-class docutils literal"><span class="pre">PathPatch</span></code></a> class with the original path.
 The keywords to this effect are identical to those of <a class="reference internal" href="../../api/_as_gen/matplotlib.patches.PathPatch.html#matplotlib.patches.PathPatch" title="matplotlib.patches.PathPatch"><code class="xref py py-class docutils literal"><span class="pre">PathPatch</span></code></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.figure.AxesStack.html#matplotlib.figure" title="View documentation for matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;Hatch shadow&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
 <span class="n">t</span><span class="o">.</span><span class="n">set_path_effects</span><span class="p">([</span><a href="../../api/patheffects_api.html#matplotlib.patheffects.PathPatchEffect" title="View documentation for matplotlib.patheffects.PathPatchEffect"><span class="n">path_effects</span><span class="o">.</span><span class="n">PathPatchEffect</span></a><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">),</span> <span class="n">hatch</span><span class="o">=</span><span class="s1">&#39;xxxx&#39;</span><span class="p">,</span>
                                                  <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">),</span>
