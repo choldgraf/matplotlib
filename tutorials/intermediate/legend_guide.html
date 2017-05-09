@@ -1,0 +1,600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Legend guide &mdash; Matplotlib 2.0.0b1.post5145+g83129fa documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/mpl.css"
+type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css"
+type="text/css" />
+    <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0.0b1.post5145+g83129fa',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Matplotlib 2.0.0b1.post5145+g83129fa documentation"
+          href="../../_static/opensearch.xml"/>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html"
+/>
+    <link rel="search" title="Search" href="../../search.html"
+/>
+    <link rel="top" title="Matplotlib 2.0.0b1.post5145+g83129fa documentation" href="../../index.html" /> 
+
+
+  </head>
+  <body>
+
+
+
+<!-- The "Fork me on github" ribbon -->
+<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
+<map name="ribbonmap">
+    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
+</map>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+</div>
+
+
+
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+
+        <li><a href="../../index.html">home</a>|&nbsp;</li>
+        <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
+        <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
+        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+      </ul>
+    </div>
+
+  
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../../_static/depsy_badge.svg">
+</a>
+
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Legend guide</a><ul>
+<li><a class="reference internal" href="#controlling-the-legend-entries">Controlling the legend entries</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../contents.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/tutorials/intermediate/legend_guide.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="legend-guide">
+<span id="plotting-guide-legend"></span><span id="sphx-glr-tutorials-intermediate-legend-guide-py"></span><h1>Legend guide<a class="headerlink" href="#legend-guide" title="Permalink to this headline">¶</a></h1>
+<p>This legend guide is an extension of the documentation available at
+<a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.legend.html#matplotlib.pyplot.legend" title="matplotlib.pyplot.legend"><code class="xref py py-func docutils literal"><span class="pre">legend()</span></code></a> - please ensure you are familiar with
+contents of that documentation before proceeding with this guide.</p>
+<p>This guide makes use of some common terms, which are documented here for clarity:</p>
+<dl class="glossary docutils">
+<dt id="term-legend-entry">legend entry</dt>
+<dd>A legend is made up of one or more legend entries. An entry is made up of
+exactly one key and one label.</dd>
+<dt id="term-legend-key">legend key</dt>
+<dd>The colored/patterned marker to the left of each legend label.</dd>
+<dt id="term-legend-label">legend label</dt>
+<dd>The text which describes the handle represented by the key.</dd>
+<dt id="term-legend-handle">legend handle</dt>
+<dd>The original object which is used to generate an appropriate entry in
+the legend.</dd>
+</dl>
+<div class="section" id="controlling-the-legend-entries">
+<h2>Controlling the legend entries<a class="headerlink" href="#controlling-the-legend-entries" title="Permalink to this headline">¶</a></h2>
+<p>Calling <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.legend.html#matplotlib.pyplot.legend" title="matplotlib.pyplot.legend"><code class="xref py py-func docutils literal"><span class="pre">legend()</span></code></a> with no arguments automatically fetches the legend
+handles and their associated labels. This functionality is equivalent to:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="../../api/_as_gen/matplotlib.axes.Axes.get_legend_handles_labels.html#matplotlib.axes.Axes.get_legend_handles_labels" title="matplotlib.axes.Axes.get_legend_handles_labels"><code class="xref py py-meth docutils literal"><span class="pre">get_legend_handles_labels()</span></code></a> function returns
+a list of handles/artists which exist on the Axes which can be used to
+generate entries for the resulting legend - it is worth noting however that
+not all artists can be added to a legend, at which point a &#8220;proxy&#8221; will have
+to be created (see <a class="reference internal" href="../../users/legend_guide.html#proxy-legend-handles"><span class="std std-ref">Creating artists specifically for adding to the legend (aka. Proxy artists)</span></a> for further details).</p>
+<p># For full control of what is being added to the legend, it is common to pass
+# the appropriate handles directly to <a class="reference internal" href="../../api/_as_gen/matplotlib.pyplot.legend.html#matplotlib.pyplot.legend" title="matplotlib.pyplot.legend"><code class="xref py py-func docutils literal"><span class="pre">legend()</span></code></a></p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1">#     line_up, = plt.plot([1,2,3], label=&#39;Line 2&#39;)</span>
+<span class="c1">#     line_down, = plt.plot([3,2,1], label=&#39;Line 1&#39;)</span>
+<span class="c1">#     plt.legend(handles=[line_up, line_down])</span>
+
+<span class="c1"># In some cases, it is not possible to set the label of the handle, so it is</span>
+<span class="c1"># possible to pass through the list of labels to :func:`legend`::</span>
+
+<span class="c1">#     line_up, = plt.plot([1,2,3], label=&#39;Line 2&#39;)</span>
+<span class="c1">#     line_down, = plt.plot([3,2,1], label=&#39;Line 1&#39;)</span>
+<span class="c1">#     plt.legend([line_up, line_down], [&#39;Line Up&#39;, &#39;Line Down&#39;])</span>
+
+
+<span class="c1"># .. _proxy_legend_handles:</span>
+
+<span class="c1"># Creating artists specifically for adding to the legend (aka. Proxy artists)</span>
+<span class="c1"># ===========================================================================</span>
+
+<span class="c1"># Not all handles can be turned into legend entries automatically,</span>
+<span class="c1"># so it is often necessary to create an artist which *can*. Legend handles</span>
+<span class="c1"># don&#39;t have to exists on the Figure or Axes in order to be used.</span>
+
+<span class="c1"># Suppose we wanted to create a legend which has an entry for some data which</span>
+<span class="c1"># is represented by a red color:</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#     :include-source:</span>
+
+<span class="c1">#     import matplotlib.patches as mpatches</span>
+<span class="c1">#     import matplotlib.pyplot as plt</span>
+
+<span class="c1">#     red_patch = mpatches.Patch(color=&#39;red&#39;, label=&#39;The red data&#39;)</span>
+<span class="c1">#     plt.legend(handles=[red_patch])</span>
+
+<span class="c1">#     plt.show()</span>
+
+<span class="c1"># There are many supported legend handles, instead of creating a patch of color</span>
+<span class="c1"># we could have created a line with a marker:</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#     :include-source:</span>
+
+<span class="c1">#     import matplotlib.lines as mlines</span>
+<span class="c1">#     import matplotlib.pyplot as plt</span>
+
+<span class="c1">#     blue_line = mlines.Line2D([], [], color=&#39;blue&#39;, marker=&#39;*&#39;,</span>
+<span class="c1">#                               markersize=15, label=&#39;Blue stars&#39;)</span>
+<span class="c1">#     plt.legend(handles=[blue_line])</span>
+
+<span class="c1">#     plt.show()</span>
+
+
+<span class="c1"># Legend location</span>
+<span class="c1"># ===============</span>
+
+<span class="c1"># The location of the legend can be specified by the keyword argument</span>
+<span class="c1"># *loc*. Please see the documentation at :func:`legend` for more details.</span>
+
+<span class="c1"># The ``bbox_to_anchor`` keyword gives a great degree of control for manual</span>
+<span class="c1"># legend placement. For example, if you want your axes legend located at the</span>
+<span class="c1"># figure&#39;s top right-hand corner instead of the axes&#39; corner, simply specify</span>
+<span class="c1"># the corner&#39;s location, and the coordinate system of that location::</span>
+
+<span class="c1">#     plt.legend(bbox_to_anchor=(1, 1),</span>
+<span class="c1">#                bbox_transform=plt.gcf().transFigure)</span>
+
+<span class="c1"># More examples of custom legend placement:</span>
+
+<span class="c1"># .. figure:: ../gallery/userdemo/images/sphx_glr_simple_legend01_001.png</span>
+<span class="c1">#    :target: ../gallery/userdemo/simple_legend01.html</span>
+<span class="c1">#    :align: center</span>
+<span class="c1">#    :scale: 50</span>
+
+<span class="c1">#    Simple Legend01</span>
+
+
+<span class="c1"># Multiple legends on the same Axes</span>
+<span class="c1"># =================================</span>
+
+<span class="c1"># Sometimes it is more clear to split legend entries across multiple</span>
+<span class="c1"># legends. Whilst the instinctive approach to doing this might be to call</span>
+<span class="c1"># the :func:`legend` function multiple times, you will find that only one</span>
+<span class="c1"># legend ever exists on the Axes. This has been done so that it is possible</span>
+<span class="c1"># to call :func:`legend` repeatedly to update the legend to the latest</span>
+<span class="c1"># handles on the Axes, so to persist old legend instances, we must add them</span>
+<span class="c1"># manually to the Axes:</span>
+
+<span class="c1"># .. figure:: ../gallery/userdemo/images/sphx_glr_simple_legend02_001.png</span>
+<span class="c1">#    :target: ../gallery/userdemo/simple_legend02.html</span>
+<span class="c1">#    :align: center</span>
+<span class="c1">#    :scale: 50</span>
+
+<span class="c1">#    Simple Legend02</span>
+
+<span class="c1"># Legend Handlers</span>
+<span class="c1"># ===============</span>
+
+<span class="c1"># In order to create legend entries, handles are given as an argument to an</span>
+<span class="c1"># appropriate :class:`~matplotlib.legend_handler.HandlerBase` subclass.</span>
+<span class="c1"># The choice of handler subclass is determined by the following rules:</span>
+
+<span class="c1">#     1. Update :func:`~matplotlib.legend.Legend.get_legend_handler_map`</span>
+<span class="c1">#        with the value in the ``handler_map`` keyword.</span>
+<span class="c1">#     2. Check if the ``handle`` is in the newly created ``handler_map``.</span>
+<span class="c1">#     3. Check if the type of ``handle`` is in the newly created</span>
+<span class="c1">#        ``handler_map``.</span>
+<span class="c1">#     4. Check if any of the types in the ``handle``&#39;s mro is in the newly</span>
+<span class="c1">#        created ``handler_map``.</span>
+
+<span class="c1"># For completeness, this logic is mostly implemented in</span>
+<span class="c1"># :func:`~matplotlib.legend.Legend.get_legend_handler`.</span>
+
+<span class="c1"># All of this flexibility means that we have the necessary hooks to implement</span>
+<span class="c1"># custom handlers for our own type of legend key.</span>
+
+<span class="c1"># The simplest example of using custom handlers is to instantiate one of the</span>
+<span class="c1"># existing :class:`~matplotlib.legend_handler.HandlerBase` subclasses. For the</span>
+<span class="c1"># sake of simplicity, let&#39;s choose :class:`matplotlib.legend_handler.HandlerLine2D`</span>
+<span class="c1"># which accepts a ``numpoints`` argument (note numpoints is a keyword</span>
+<span class="c1"># on the :func:`legend` function for convenience). We can then pass the mapping</span>
+<span class="c1"># of instance to Handler as a keyword to legend.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#     :include-source:</span>
+
+<span class="c1">#     import matplotlib.pyplot as plt</span>
+<span class="c1">#     from matplotlib.legend_handler import HandlerLine2D</span>
+
+<span class="c1">#     line1, = plt.plot([3,2,1], marker=&#39;o&#39;, label=&#39;Line 1&#39;)</span>
+<span class="c1">#     line2, = plt.plot([1,2,3], marker=&#39;o&#39;, label=&#39;Line 2&#39;)</span>
+
+<span class="c1">#     plt.legend(handler_map={line1: HandlerLine2D(numpoints=4)})</span>
+
+<span class="c1"># As you can see, &quot;Line 1&quot; now has 4 marker points, where &quot;Line 2&quot; has 2 (the</span>
+<span class="c1"># default). Try the above code, only change the map&#39;s key from ``line1`` to</span>
+<span class="c1"># ``type(line1)``. Notice how now both :class:`~matplotlib.lines.Line2D` instances</span>
+<span class="c1"># get 4 markers.</span>
+
+<span class="c1"># Along with handlers for complex plot types such as errorbars, stem plots</span>
+<span class="c1"># and histograms, the default ``handler_map`` has a special ``tuple`` handler</span>
+<span class="c1"># (:class:`~matplotlib.legend_handler.HandlerTuple`) which simply plots</span>
+<span class="c1"># the handles on top of one another for each item in the given tuple. The</span>
+<span class="c1"># following example demonstrates combining two legend keys on top of one another:</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#     :include-source:</span>
+
+<span class="c1">#     import matplotlib.pyplot as plt</span>
+<span class="c1">#     from numpy.random import randn</span>
+
+<span class="c1">#     z = randn(10)</span>
+
+<span class="c1">#     red_dot, = plt.plot(z, &quot;ro&quot;, markersize=15)</span>
+<span class="c1">#     # Put a white cross over some of the data.</span>
+<span class="c1">#     white_cross, = plt.plot(z[:5], &quot;w+&quot;, markeredgewidth=3, markersize=15)</span>
+
+<span class="c1">#     plt.legend([red_dot, (red_dot, white_cross)], [&quot;Attr A&quot;, &quot;Attr A+B&quot;])</span>
+
+<span class="c1"># The :class:`~matplotlib.legend_handler.HandlerTuple` class can also be used to</span>
+<span class="c1"># assign several legend keys to the same entry:</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#     :include-source:</span>
+
+<span class="c1">#     import matplotlib.pyplot as plt</span>
+<span class="c1">#     from matplotlib.legend_handler import HandlerLine2D, HandlerTuple</span>
+
+<span class="c1">#     p1, = plt.plot([1, 2.5, 3], &#39;r-d&#39;)</span>
+<span class="c1">#     p2, = plt.plot([3, 2, 1], &#39;k-o&#39;)</span>
+
+<span class="c1">#     l = plt.legend([(p1, p2)], [&#39;Two keys&#39;], numpoints=1,</span>
+<span class="c1">#                    handler_map={tuple: HandlerTuple(ndivide=None)})</span>
+
+
+<span class="c1"># Implementing a custom legend handler</span>
+<span class="c1"># ------------------------------------</span>
+
+<span class="c1"># A custom handler can be implemented to turn any handle into a legend key (handles</span>
+<span class="c1"># don&#39;t necessarily need to be matplotlib artists).</span>
+<span class="c1"># The handler must implement a &quot;legend_artist&quot; method which returns a</span>
+<span class="c1"># single artist for the legend to use. Signature details about the &quot;legend_artist&quot;</span>
+<span class="c1"># are documented at :meth:`~matplotlib.legend_handler.HandlerBase.legend_artist`.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#     :include-source:</span>
+
+<span class="c1">#     import matplotlib.pyplot as plt</span>
+<span class="c1">#     import matplotlib.patches as mpatches</span>
+
+<span class="c1">#     class AnyObject(object):</span>
+<span class="c1">#         pass</span>
+
+<span class="c1">#     class AnyObjectHandler(object):</span>
+<span class="c1">#         def legend_artist(self, legend, orig_handle, fontsize, handlebox):</span>
+<span class="c1">#             x0, y0 = handlebox.xdescent, handlebox.ydescent</span>
+<span class="c1">#             width, height = handlebox.width, handlebox.height</span>
+<span class="c1">#             patch = mpatches.Rectangle([x0, y0], width, height, facecolor=&#39;red&#39;,</span>
+<span class="c1">#                                        edgecolor=&#39;black&#39;, hatch=&#39;xx&#39;, lw=3,</span>
+<span class="c1">#                                        transform=handlebox.get_transform())</span>
+<span class="c1">#             handlebox.add_artist(patch)</span>
+<span class="c1">#             return patch</span>
+
+<span class="c1">#     plt.legend([AnyObject()], [&#39;My first handler&#39;],</span>
+<span class="c1">#                handler_map={AnyObject: AnyObjectHandler()})</span>
+
+<span class="c1"># Alternatively, had we wanted to globally accept ``AnyObject`` instances without</span>
+<span class="c1"># needing to manually set the ``handler_map`` keyword all the time, we could have</span>
+<span class="c1"># registered the new handler with::</span>
+
+<span class="c1">#     from matplotlib.legend import Legend</span>
+<span class="c1">#     Legend.update_default_handler_map({AnyObject: AnyObjectHandler()})</span>
+
+<span class="c1"># Whilst the power here is clear, remember that there are already many handlers</span>
+<span class="c1"># implemented and what you want to achieve may already be easily possible with</span>
+<span class="c1"># existing classes. For example, to produce elliptical legend keys, rather than</span>
+<span class="c1"># rectangular ones:</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#     :include-source:</span>
+
+<span class="c1">#     from matplotlib.legend_handler import HandlerPatch</span>
+<span class="c1">#     import matplotlib.pyplot as plt</span>
+<span class="c1">#     import matplotlib.patches as mpatches</span>
+
+
+<span class="c1">#     class HandlerEllipse(HandlerPatch):</span>
+<span class="c1">#         def create_artists(self, legend, orig_handle,</span>
+<span class="c1">#                            xdescent, ydescent, width, height, fontsize, trans):</span>
+<span class="c1">#             center = 0.5 * width - 0.5 * xdescent, 0.5 * height - 0.5 * ydescent</span>
+<span class="c1">#             p = mpatches.Ellipse(xy=center, width=width + xdescent,</span>
+<span class="c1">#                                  height=height + ydescent)</span>
+<span class="c1">#             self.update_prop(p, orig_handle, legend)</span>
+<span class="c1">#             p.set_transform(trans)</span>
+<span class="c1">#             return [p]</span>
+
+
+<span class="c1">#     c = mpatches.Circle((0.5, 0.5), 0.25, facecolor=&quot;green&quot;,</span>
+<span class="c1">#                         edgecolor=&quot;red&quot;, linewidth=3)</span>
+<span class="c1">#     plt.gca().add_patch(c)</span>
+
+<span class="c1">#     plt.legend([c], [&quot;An ellipse, not a rectangle&quot;],</span>
+<span class="c1">#                handler_map={mpatches.Circle: HandlerEllipse()})</span>
+
+<span class="c1"># Known examples of using legend</span>
+<span class="c1"># ==============================</span>
+
+<span class="c1"># Here is a non-exhaustive list of the examples available involving legend</span>
+<span class="c1"># being used in various ways:</span>
+
+<span class="c1"># * :ref:`api-legend`</span>
+<span class="c1"># * :ref:`lines_bars_and_markers-scatter_with_legend`</span>
+<span class="c1"># * :ref:`pylab_examples-contourf_hatching`</span>
+<span class="c1"># * :ref:`pylab_examples-figlegend_demo`</span>
+<span class="c1"># * :ref:`pylab_examples-scatter_symbol`</span>
+</pre></div>
+</div>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<div class="sphx-glr-footer docutils container">
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/legend_guide.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">legend_guide.py</span></code></a></div>
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/legend_guide.ipynb" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">legend_guide.ipynb</span></code></a></div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="http://sphinx-gallery.readthedocs.io">Generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
+      Last updated on Apr 27, 2017.
+      Created using <a
+href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55954603-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+<footer>
+  <!--Flipcause Integration v3.0// Flipcause Integration Instructions:
+Install the following code block once in the website Header (after <head> tag) -->
+
+<style>
+
+.fc-black_overlay{
+display:none; position: fixed; z-index:1000001; top: 0%;left: 0%;width: 100%;height: 100%;
+background-color: black; filter: alpha(opacity=50); cursor:pointer; opacity:0.5;
+}
+
+.fc-white_content {
+opacity:1; display:none; margin-top: -320px; margin-left: -485px; width:970px; height:640px;
+position:fixed; top:50%; left:50%; border: none;z-index:1000002;overflow: auto;
+}
+
+.fc-main-box{
+opacity:1; display:none; margin:15px auto 0 auto; width:930px; position:relative; z-index:1000003;
+}
+
+.fc-widget_close{
+opacity:1; content:url(http://i1338.photobucket.com/albums/o691/WeCause/X_zpse4a7e538.png);
+position:absolute; z-index=1000004; right:-16px; top:-16px; display:block; cursor:pointer;
+}
+
+.floating_button{
+display: block; margin-top: 0px; margin-left: 0px; width:auto ; height: auto;
+position:fixed; z-index:999999; overflow: auto;
+}
+
+@keyframes backfadesin {
+   from { opacity:0; }
+   to {opacity:.5;}
+}
+
+@-moz-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+@-webkit-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+@-o-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+
+@-ms-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+@keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; transform: translateY(20px);}
+   100% {opacity: 1; transform: translateY(0);}
+}
+
+@-moz-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -moz-transform: translateY(20px);}
+   100% {opacity: 1; -moz-transform: translateY(0);}
+}
+
+@-webkit-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -webkit-transform: translateY(20px);}
+   100% {opacity: 1; -webkit-transform: translateY(0);}
+}
+
+@-o-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -o-transform: translateY(20px);}
+   100% {opacity: 1; -o-transform: translateY(0);}
+}
+
+@-ms-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -ms-transform: translateY(20px);}
+   100% {opacity: 1; -ms-transform: translateY(0);}
+}
+
+</style>
+
+<script>
+
+function open_window(cause_id) {
+var  protocol=String(document.location.protocol);
+var new_url;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+new_url="https://www.flipcause.com/widget/"+cause_id
+window.open(new_url);
+}
+
+else {
+document.getElementById("fc-fade").style.display = "block";
+document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
+document.getElementById("fc-fade").style.animation = "backfadesin 1s";
+document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
+document.getElementById("fc-light").style.display = "block";
+document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-light").style.animation = "fadesin 1.5s";
+document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-main").style.display = "block";
+document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-main").style.animation = "fadesin 1.5s";
+document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-close").style.display = "block";
+document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-close").style.animation = "fadesin 1.5s";
+document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").style.display = "block";
+document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
+}
+}
+
+
+function close_window() {
+document.getElementById("fc-fade").style.display="none";
+document.getElementById("fc-light").style.display="none";
+document.getElementById("fc-main").style.display="none";
+document.getElementById("fc-close").style.display="none";
+document.getElementById("fc-myFrame").style.display="none";
+}
+
+</script>
+
+<div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
+<div id="fc-light" class="fc-white_content">
+<div id="fc-main" class="fc-main-box">
+<div id="fc-close" class="fc-widget_close" onclick="close_window()">
+</div><iframe id="fc-myFrame" iframe height="580" width="925" style="border: 0;
+border-radius:5px 5px 5px 5px; box-shadow:0 0 8px rgba(0, 0, 0, 0.5);" scrolling="no" src=""></iframe></div>
+</div>
+
+<!--END Flipcause Main Integration Code-->
+</footer>
+</html>

@@ -6,7 +6,7 @@ The Lifecycle of a Plot
 Going from start to finish of one plot in Matplotlib.
 
 This tutorial aims to show the beginning, middle, and end of a single
-visualization using Matplotlib. We'll begin with some raw data, and
+visualization using Matplotlib. We'll begin with some raw data and
 end by saving a figure of a customized visualization. Along the way we'll try
 to highlight some neat features and best-practices using Matplotlib.
 
@@ -16,9 +16,9 @@ to highlight some neat features and best-practices using Matplotlib.
 
     This tutorial is based off of
     `this excellent blog post <http://pbpython.com/effective-matplotlib.html>`_
-    by Chris Moffitt. It was modified and put here by Chris Holdgraf.
+    by Chris Moffitt. It was transformed into this tutorial by Chris Holdgraf.
 
-A note on Object-oriented vs Pyplot
+A note on Object-Oriented vs Pyplot
 ===================================
 
 Matplotlib has two interfaces. The first is based on MATLAB and uses
@@ -26,27 +26,31 @@ a state-based interface. This is encapsulated in the :mod:`pyplot`
 module. See the :ref:`pyplot tutorials <sphx_glr_tutorials_01_introductory_lifecycle.py>`
 for a more in-depth look at the pyplot interface.
 
-The second option is an an object-oriented (OO) interface.
+The second interface is an an object-oriented (OO) interface.
 In this case, we utilize an instance of :class:`axes.Axes` in order to
 render visualizations on an instance of :class:`figure.Figure`.
-We call methods that do the plotting directly from the
-Axes object, which gives us much more flexibility and
-power over customizing our plot. See the
+
+Most of the terms are straightforward but the main thing to remember
+is that:
+
+* the Figure is the final image that may contain 1 or more axes.
+* The Axes represent an individual plot.
+
+We call methods that do the plotting directly from the Axes, which gives
+us much more flexibility and power in customizing our plot. See the
 :ref:`object-oriented examples <api_examples>` for many examples of how
 this approach is used.
 
 .. note::
 
-    In general, try to use the object-oriented interface over the pyplot
-    interface.
+   In general, try to use the object-oriented interface over the pyplot
+   interface.
 
 Our data
 ========
 
-We'll generate some fake data that is broken down according to groups.
-These data contain one number per group, perhaps representing the mean value
-of each group.
-
+We'll use the data from the post from which this tutorial was derived.
+It contains sales information for a number of companies.
 """
 
 # sphinx_gallery_thumbnail_number = 10
@@ -55,9 +59,19 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from string import ascii_lowercase
 
-n_groups = 10
-group_data = np.random.randint(0, 100, n_groups)
-group_names = ['group_%s' % ii for ii in ascii_lowercase[:n_groups]]
+data = {'Barton LLC': 109438.5,
+        'Frami, Hills and Schmidt': 103569.59,
+        'Fritsch, Russel and Anderson': 112214.71000000001,
+        'Jerde-Hilpert': 112591.42999999999,
+        'Keeling LLC': 100934.29999999999,
+        'Koepp Ltd': 103660.54000000001,
+        'Kulas Inc': 137351.95999999996,
+        'Trantow-Barrows': 123381.38000000003,
+        'White-Trantow': 135841.99000000002,
+        'Will LLC': 104437.60000000002}
+group_data = list(data.values())
+group_names = list(data.keys())
+group_mean = np.mean(group_data)
 
 ###############################################################################
 # Getting started
@@ -80,7 +94,7 @@ fig, ax = plt.subplots()
 # Now that we have an Axes instance, we can plot on top of it.
 
 fig, ax = plt.subplots()
-ax.bar(group_names, group_data)
+ax.barh(group_names, group_data)
 
 ###############################################################################
 # Controlling the style
@@ -101,7 +115,7 @@ plt.style.use('fivethirtyeight')
 # Now let's remake the above plot to see how it looks:
 
 fig, ax = plt.subplots()
-ax.bar(group_names, group_data)
+ax.barh(group_names, group_data)
 
 ###############################################################################
 # The style controls many things, such as color, linewidths, backgrounds,
@@ -116,7 +130,7 @@ ax.bar(group_names, group_data)
 # with the :meth:`axes.Axes.get_xticklabels` method:
 
 fig, ax = plt.subplots()
-ax.bar(group_names, group_data)
+ax.barh(group_names, group_data)
 labels = ax.get_xticklabels()
 
 ###############################################################################
@@ -125,7 +139,7 @@ labels = ax.get_xticklabels()
 # matplotlib objects, and attempt to set some style element of each one.
 
 fig, ax = plt.subplots()
-ax.bar(group_names, group_data)
+ax.barh(group_names, group_data)
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
 
@@ -140,7 +154,7 @@ plt.setp(labels, rotation=45, horizontalalignment='right')
 plt.rcParams.update({'figure.autolayout': True})
 
 fig, ax = plt.subplots()
-ax.bar(group_names, group_data)
+ax.barh(group_names, group_data)
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
 
@@ -150,11 +164,11 @@ plt.setp(labels, rotation=45, horizontalalignment='right')
 # to set properties of this axis object.
 
 fig, ax = plt.subplots()
-ax.bar(group_names, group_data)
+ax.barh(group_names, group_data)
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
-ax.set(ylim=[0, 105], xlabel='Group ID', ylabel='Count',
-       title='Group ID and Count.')
+ax.set(xlim=[-10000, 140000], xlabel='Total Revenue', ylabel='Company',
+       title='Company Revenue')
 
 ###############################################################################
 # We can also adjust the size of this plot using the :func:`pyplot.subplots`
@@ -168,11 +182,11 @@ ax.set(ylim=[0, 105], xlabel='Group ID', ylabel='Count',
 #    algebra.
 
 fig, ax = plt.subplots(figsize=(8, 4))
-ax.bar(group_names, group_data)
+ax.barh(group_names, group_data)
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
-ax.set(ylim=[0, 105], xlabel='Group ID', ylabel='Count',
-       title='Group ID and Count.')
+ax.set(xlim=[-10000, 140000], xlabel='Total Revenue', ylabel='Company',
+       title='Company Revenue')
 
 ###############################################################################
 # For labels, we can specify custom formatting guidelines in the form of
@@ -181,61 +195,59 @@ ax.set(ylim=[0, 105], xlabel='Group ID', ylabel='Count',
 # as an output.
 
 
-def make_labels(num, pos):
-    """The two args are the value and tick position."""
-    if num < 25:
-        s = 'super tiny'
-    elif num >= 25 and num < 50:
-        s = 'medium-ish'
-    elif num >= 50 and num < 75:
-        s = 'pretty big'
-    elif num > 75:
-        s = 'super big!'
+def currency(x, pos):
+    """The two args are the value and tick position"""
+    if x >= 1e6:
+        s = '${:1.1f}M'.format(x*1e-6)
     else:
-        s = 'I dunno!'
+        s = '${:1.0f}K'.format(x*1e-3)
     return s
 
-formatter = FuncFormatter(make_labels)
+formatter = FuncFormatter(currency)
 
 ###############################################################################
 # We can then apply this formatter to the labels on our plot. To do this,
 # we'll use the ``xaxis`` attribute of our axis. This lets you perform
 # actions on a specific axis on our plot.
 
-fig, ax = plt.subplots(figsize=(8, 4))
-ax.bar(group_names, group_data)
+fig, ax = plt.subplots(figsize=(6, 8))
+ax.barh(group_names, group_data)
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
 
-ax.set(ylim=[0, 105], xlabel='Group ID', ylabel='Count',
-       title='Group ID and Count.')
-ax.yaxis.set_major_formatter(formatter)
+ax.set(xlim=[-10000, 140000], xlabel='Total Revenue', ylabel='Company',
+       title='Company Revenue')
+ax.xaxis.set_major_formatter(formatter)
 
 ###############################################################################
 # Combining multiple visualizations
 # =================================
 #
-# It is possible to draw multiple visualizations on the same instance of
+# It is possible to draw multiple plot elements on the same instance of
 # :class:`axes.Axes`. To do this we simply need to call another one of
 # the plot methods on that axes object.
 
-fig, ax = plt.subplots(figsize=(8, 6))
-ax.bar(group_names, group_data)
+fig, ax = plt.subplots(figsize=(8, 8))
+ax.barh(group_names, group_data)
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
 
 # Add a vertical line, here we set the style in the function call
-ax.axhline(80, ls='--', color='r')
-# Annotate the best groups
-for group in ['group_a', 'group_d', 'group_f']:
-    ax.text(group, 110, "Awesome\nGroup", fontsize=10,
-            horizontalalignment='center')
-# Now we'll move our title up since it's getting a little cramped
-ax.title.set(y=1.2)
+ax.axvline(group_mean, ls='--', color='r')
 
-ax.set(ylim=[0, 105], xlabel='Group ID', ylabel='Count',
-       title='Group ID and Count.')
-ax.yaxis.set_major_formatter(formatter)
+# Annotate new companies
+for group in [3, 5, 8]:
+    ax.text(145000, group, "New Company", fontsize=10,
+            verticalalignment="center")
+
+# Now we'll move our title up since it's getting a little cramped
+ax.title.set(y=1.05)
+
+ax.set(xlim=[-10000, 140000], xlabel='Total Revenue', ylabel='Company',
+       title='Company Revenue')
+ax.xaxis.set_major_formatter(formatter)
+ax.set_xticks([25e3, 50e3, 75e3, 100e3, 125e3])
+fig.subplots_adjust(right=.1)
 plt.show()
 
 
@@ -261,6 +273,16 @@ print(fig.canvas.get_supported_filetypes())
 # fig.savefig('sales.png', transparent=False, dpi=80, bbox_inches="tight")
 
 ###############################################################################
+# Below we've included a small diagram showing the basic components of the
+# plot elements that were included in the original blog post. It has most of
+# the same elements, with a few extra components as well. Click the image to
+# see the blog post (along with code used to generate the figure).
+#
+# .. image:: ../../_static/axis_layout.png
+#    :width: 80 %
+#    :align: center
+#    :target: http://pbpython.com/effective-matplotlib.html
+#
 # There are many other things you can do with Matplotlib, and this is just
 # a taste. For more information, check out our :ref:`tutorials` and
 # :ref:`examples-index` pages.

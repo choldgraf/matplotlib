@@ -1,0 +1,628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tight Layout guide &mdash; Matplotlib 2.0.0b1.post5145+g83129fa documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/mpl.css"
+type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css"
+type="text/css" />
+    <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0.0b1.post5145+g83129fa',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Matplotlib 2.0.0b1.post5145+g83129fa documentation"
+          href="../../_static/opensearch.xml"/>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html"
+/>
+    <link rel="search" title="Search" href="../../search.html"
+/>
+    <link rel="top" title="Matplotlib 2.0.0b1.post5145+g83129fa documentation" href="../../index.html" /> 
+
+
+  </head>
+  <body>
+
+
+
+<!-- The "Fork me on github" ribbon -->
+<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
+<map name="ribbonmap">
+    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
+</map>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+</div>
+
+
+
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+
+        <li><a href="../../index.html">home</a>|&nbsp;</li>
+        <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
+        <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
+        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+      </ul>
+    </div>
+
+  
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<a href="http://depsy.org/package/python/matplotlib">
+  <img src="../../_static/depsy_badge.svg">
+</a>
+
+<br/>
+
+Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
+  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
+</a>
+<br/>
+  <h3><a href="../../contents.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Tight Layout guide</a><ul>
+<li><a class="reference internal" href="#simple-example">Simple Example</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../contents.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/tutorials/introductory/tight_layout_guide.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="tight-layout-guide">
+<span id="plotting-guide-tight-layout"></span><span id="sphx-glr-tutorials-introductory-tight-layout-guide-py"></span><h1>Tight Layout guide<a class="headerlink" href="#tight-layout-guide" title="Permalink to this headline">¶</a></h1>
+<p><em>tight_layout</em> automatically adjusts subplot params so that the
+subplot(s) fits in to the figure area. This is an experimental
+feature and may not work for some cases. It only checks the extents
+of ticklabels, axis labels, and titles.</p>
+<div class="section" id="simple-example">
+<h2>Simple Example<a class="headerlink" href="#simple-example" title="Permalink to this headline">¶</a></h2>
+<p>In matplotlib, the location of axes (including subplots) are specified in
+normalized figure coordinates. It can happen that your axis labels or
+titles (or sometimes even ticklabels) go outside the figure area, and are thus
+clipped.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    plt.rcParams[&#39;savefig.facecolor&#39;] = &quot;0.8&quot;</span>
+
+<span class="c1">#    def example_plot(ax, fontsize=12):</span>
+<span class="c1">#         ax.plot([1, 2])</span>
+<span class="c1">#   ax.locator_params(nbins=3)</span>
+<span class="c1">#   ax.set_xlabel(&#39;x-label&#39;, fontsize=fontsize)</span>
+<span class="c1">#   ax.set_ylabel(&#39;y-label&#39;, fontsize=fontsize)</span>
+<span class="c1">#   ax.set_title(&#39;Title&#39;, fontsize=fontsize)</span>
+
+<span class="c1">#    plt.close(&#39;all&#39;)</span>
+<span class="c1">#    fig, ax = plt.subplots()</span>
+<span class="c1">#    example_plot(ax, fontsize=24)</span>
+
+<span class="c1"># To prevent this, the location of axes needs to be adjusted. For</span>
+<span class="c1"># subplots, this can be done by adjusting the subplot params</span>
+<span class="c1"># (:ref:`howto-subplots-adjust`). Matplotlib v1.1 introduces a new</span>
+<span class="c1"># command :func:`~matplotlib.pyplot.tight_layout` that does this</span>
+<span class="c1"># automatically for you.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    plt.tight_layout()</span>
+
+<span class="c1"># When you have multiple subplots, often you see labels of different</span>
+<span class="c1"># axes overlapping each other.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    plt.close(&#39;all&#39;)</span>
+<span class="c1">#    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(nrows=2, ncols=2)</span>
+<span class="c1">#    example_plot(ax1)</span>
+<span class="c1">#    example_plot(ax2)</span>
+<span class="c1">#    example_plot(ax3)</span>
+<span class="c1">#    example_plot(ax4)</span>
+
+
+<span class="c1"># :func:`~matplotlib.pyplot.tight_layout` will also adjust spacing between</span>
+<span class="c1"># subplots to minimize the overlaps.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    plt.tight_layout()</span>
+
+<span class="c1"># :func:`~matplotlib.pyplot.tight_layout` can take keyword arguments of</span>
+<span class="c1"># *pad*, *w_pad* and *h_pad*. These control the extra padding around the</span>
+<span class="c1"># figure border and between subplots. The pads are specified in fraction</span>
+<span class="c1"># of fontsize.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)</span>
+
+<span class="c1"># :func:`~matplotlib.pyplot.tight_layout` will work even if the sizes of</span>
+<span class="c1"># subplots are different as far as their grid specification is</span>
+<span class="c1"># compatible. In the example below, *ax1* and *ax2* are subplots of a 2x2</span>
+<span class="c1"># grid, while *ax3* is of a 1x2 grid.</span>
+
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#     plt.close(&#39;all&#39;)</span>
+<span class="c1">#     fig = plt.figure()</span>
+
+<span class="c1">#     ax1 = plt.subplot(221)</span>
+<span class="c1">#     ax2 = plt.subplot(223)</span>
+<span class="c1">#     ax3 = plt.subplot(122)</span>
+
+<span class="c1">#     example_plot(ax1)</span>
+<span class="c1">#     example_plot(ax2)</span>
+<span class="c1">#     example_plot(ax3)</span>
+
+<span class="c1">#     plt.tight_layout()</span>
+
+
+<span class="c1"># It works with subplots created with</span>
+<span class="c1"># :func:`~matplotlib.pyplot.subplot2grid`. In general, subplots created</span>
+<span class="c1"># from the gridspec (:ref:`gridspec-guide`) will work.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#     plt.close(&#39;all&#39;)</span>
+<span class="c1">#     fig = plt.figure()</span>
+
+<span class="c1">#     ax1 = plt.subplot2grid((3, 3), (0, 0))</span>
+<span class="c1">#     ax2 = plt.subplot2grid((3, 3), (0, 1), colspan=2)</span>
+<span class="c1">#     ax3 = plt.subplot2grid((3, 3), (1, 0), colspan=2, rowspan=2)</span>
+<span class="c1">#     ax4 = plt.subplot2grid((3, 3), (1, 2), rowspan=2)</span>
+
+<span class="c1">#     example_plot(ax1)</span>
+<span class="c1">#     example_plot(ax2)</span>
+<span class="c1">#     example_plot(ax3)</span>
+<span class="c1">#     example_plot(ax4)</span>
+
+<span class="c1">#     plt.tight_layout()</span>
+
+
+<span class="c1"># Although not thoroughly tested, it seems to work for subplots with</span>
+<span class="c1"># aspect != &quot;auto&quot; (e.g., axes with images).</span>
+
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#     arr = np.arange(100).reshape((10,10))</span>
+
+<span class="c1">#     plt.close(&#39;all&#39;)</span>
+<span class="c1">#     fig = plt.figure(figsize=(5,4))</span>
+
+<span class="c1">#     ax = plt.subplot(111)</span>
+<span class="c1">#     im = ax.imshow(arr, interpolation=&quot;none&quot;)</span>
+
+<span class="c1">#     plt.tight_layout()</span>
+
+
+<span class="c1"># Caveats</span>
+<span class="c1"># -------</span>
+
+<span class="c1">#  * :func:`~matplotlib.pyplot.tight_layout` only considers ticklabels, axis</span>
+<span class="c1">#    labels, and titles. Thus, other artists may be clipped and also may</span>
+<span class="c1">#    overlap.</span>
+
+<span class="c1">#  * It assumes that the extra space needed for ticklabels, axis labels,</span>
+<span class="c1">#    and titles is independent of original location of axes. This is</span>
+<span class="c1">#    often true, but there are rare cases where it is not.</span>
+
+<span class="c1">#  * pad=0 clips some of the texts by a few pixels. This may be a bug or</span>
+<span class="c1">#    a limitation of the current algorithm and it is not clear why it</span>
+<span class="c1">#    happens. Meanwhile, use of pad at least larger than 0.3 is</span>
+<span class="c1">#    recommended.</span>
+
+
+
+
+<span class="c1"># Use with GridSpec</span>
+<span class="c1"># -----------------</span>
+
+<span class="c1"># GridSpec has its own :func:`~matplotlib.gridspec.GridSpec.tight_layout` method</span>
+<span class="c1"># (the pyplot api :func:`~matplotlib.pyplot.tight_layout` also works).</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#     plt.close(&#39;all&#39;)</span>
+<span class="c1">#     fig = plt.figure()</span>
+
+<span class="c1">#     import matplotlib.gridspec as gridspec</span>
+
+<span class="c1">#     gs1 = gridspec.GridSpec(2, 1)</span>
+<span class="c1">#     ax1 = fig.add_subplot(gs1[0])</span>
+<span class="c1">#     ax2 = fig.add_subplot(gs1[1])</span>
+
+<span class="c1">#     example_plot(ax1)</span>
+<span class="c1">#     example_plot(ax2)</span>
+
+<span class="c1">#     gs1.tight_layout(fig)</span>
+
+
+<span class="c1"># You may provide an optional *rect* parameter, which specifies the bounding box</span>
+<span class="c1"># that the subplots will be fit inside. The coordinates must be in normalized</span>
+<span class="c1"># figure coordinates and the default is (0, 0, 1, 1).</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    gs1.tight_layout(fig, rect=[0, 0, 0.5, 1])</span>
+
+
+<span class="c1"># For example, this can be used for a figure with multiple gridspecs.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#     gs2 = gridspec.GridSpec(3, 1)</span>
+
+<span class="c1">#     for ss in gs2:</span>
+<span class="c1">#         ax = fig.add_subplot(ss)</span>
+<span class="c1">#         example_plot(ax)</span>
+<span class="c1">#         ax.set_title(&quot;&quot;)</span>
+<span class="c1">#         ax.set_xlabel(&quot;&quot;)</span>
+
+<span class="c1">#     ax.set_xlabel(&quot;x-label&quot;, fontsize=12)</span>
+
+<span class="c1">#     gs2.tight_layout(fig, rect=[0.5, 0, 1, 1], h_pad=0.5)</span>
+
+
+<span class="c1"># We may try to match the top and bottom of two grids ::</span>
+
+<span class="c1">#     top = min(gs1.top, gs2.top)</span>
+<span class="c1">#     bottom = max(gs1.bottom, gs2.bottom)</span>
+
+<span class="c1">#     gs1.update(top=top, bottom=bottom)</span>
+<span class="c1">#     gs2.update(top=top, bottom=bottom)</span>
+
+
+<span class="c1"># While this should be mostly good enough, adjusting top and bottom</span>
+<span class="c1"># may require adjustment of hspace also.  To update hspace &amp; vspace, we</span>
+<span class="c1"># call :func:`~matplotlib.gridspec.GridSpec.tight_layout` again with updated</span>
+<span class="c1"># rect argument. Note that the rect argument specifies the area including the</span>
+<span class="c1"># ticklabels, etc.  Thus, we will increase the bottom (which is 0 for the normal</span>
+<span class="c1"># case) by the difference between the *bottom* from above and the bottom of each</span>
+<span class="c1"># gridspec. Same thing for the top.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    top = min(gs1.top, gs2.top)</span>
+<span class="c1">#    bottom = max(gs1.bottom, gs2.bottom)</span>
+
+<span class="c1">#    gs1.tight_layout(fig, rect=[None, 0 + (bottom-gs1.bottom),</span>
+<span class="c1">#                                0.5, 1 - (gs1.top-top)])</span>
+<span class="c1">#    gs2.tight_layout(fig, rect=[0.5, 0 + (bottom-gs2.bottom),</span>
+<span class="c1">#                                  None, 1 - (gs2.top-top)],</span>
+<span class="c1">#               h_pad=0.5)</span>
+
+
+
+<span class="c1"># Use with AxesGrid1</span>
+<span class="c1"># ------------------</span>
+
+<span class="c1"># While limited, the axes_grid1 toolkit is also supported.</span>
+
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#     plt.close(&#39;all&#39;)</span>
+<span class="c1">#     fig = plt.figure()</span>
+
+<span class="c1">#     from mpl_toolkits.axes_grid1 import Grid</span>
+<span class="c1">#     grid = Grid(fig, rect=111, nrows_ncols=(2,2),</span>
+<span class="c1">#                 axes_pad=0.25, label_mode=&#39;L&#39;,</span>
+<span class="c1">#                 )</span>
+
+<span class="c1">#     for ax in grid:</span>
+<span class="c1">#           example_plot(ax)</span>
+<span class="c1">#   ax.title.set_visible(False)</span>
+
+<span class="c1">#     plt.tight_layout()</span>
+
+
+
+<span class="c1"># Colorbar</span>
+<span class="c1"># --------</span>
+
+<span class="c1"># If you create a colorbar with the :func:`~matplotlib.pyplot.colorbar`</span>
+<span class="c1"># command, the created colorbar is an instance of Axes, *not* Subplot, so</span>
+<span class="c1"># tight_layout does not work. With Matplotlib v1.1, you may create a</span>
+<span class="c1"># colorbar as a subplot using the gridspec.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    plt.close(&#39;all&#39;)</span>
+<span class="c1">#    arr = np.arange(100).reshape((10,10))</span>
+<span class="c1">#    fig = plt.figure(figsize=(4, 4))</span>
+<span class="c1">#    im = plt.imshow(arr, interpolation=&quot;none&quot;)</span>
+
+<span class="c1">#    plt.colorbar(im, use_gridspec=True)</span>
+
+<span class="c1">#    plt.tight_layout()</span>
+
+<span class="c1"># Another option is to use AxesGrid1 toolkit to</span>
+<span class="c1"># explicitly create an axes for colorbar.</span>
+
+<span class="c1"># .. plot::</span>
+<span class="c1">#    :include-source:</span>
+<span class="c1">#    :context:</span>
+
+<span class="c1">#    plt.close(&#39;all&#39;)</span>
+<span class="c1">#    arr = np.arange(100).reshape((10,10))</span>
+<span class="c1">#    fig = plt.figure(figsize=(4, 4))</span>
+<span class="c1">#    im = plt.imshow(arr, interpolation=&quot;none&quot;)</span>
+
+<span class="c1">#    from mpl_toolkits.axes_grid1 import make_axes_locatable</span>
+<span class="c1">#    divider = make_axes_locatable(plt.gca())</span>
+<span class="c1">#    cax = divider.append_axes(&quot;right&quot;, &quot;5%&quot;, pad=&quot;3%&quot;)</span>
+<span class="c1">#    plt.colorbar(im, cax=cax)</span>
+
+<span class="c1">#    plt.tight_layout()</span>
+</pre></div>
+</div>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<div class="sphx-glr-footer docutils container">
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/tight_layout_guide.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">tight_layout_guide.py</span></code></a></div>
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/tight_layout_guide.ipynb" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">tight_layout_guide.ipynb</span></code></a></div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="http://sphinx-gallery.readthedocs.io">Generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2016 The Matplotlib development team.
+      Last updated on Apr 27, 2017.
+      Created using <a
+href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55954603-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+<footer>
+  <!--Flipcause Integration v3.0// Flipcause Integration Instructions:
+Install the following code block once in the website Header (after <head> tag) -->
+
+<style>
+
+.fc-black_overlay{
+display:none; position: fixed; z-index:1000001; top: 0%;left: 0%;width: 100%;height: 100%;
+background-color: black; filter: alpha(opacity=50); cursor:pointer; opacity:0.5;
+}
+
+.fc-white_content {
+opacity:1; display:none; margin-top: -320px; margin-left: -485px; width:970px; height:640px;
+position:fixed; top:50%; left:50%; border: none;z-index:1000002;overflow: auto;
+}
+
+.fc-main-box{
+opacity:1; display:none; margin:15px auto 0 auto; width:930px; position:relative; z-index:1000003;
+}
+
+.fc-widget_close{
+opacity:1; content:url(http://i1338.photobucket.com/albums/o691/WeCause/X_zpse4a7e538.png);
+position:absolute; z-index=1000004; right:-16px; top:-16px; display:block; cursor:pointer;
+}
+
+.floating_button{
+display: block; margin-top: 0px; margin-left: 0px; width:auto ; height: auto;
+position:fixed; z-index:999999; overflow: auto;
+}
+
+@keyframes backfadesin {
+   from { opacity:0; }
+   to {opacity:.5;}
+}
+
+@-moz-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+@-webkit-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+@-o-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+
+@-ms-keyframes backfadesin {
+    from { opacity:0; }
+    to {opacity:.5;}
+}
+
+@keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; transform: translateY(20px);}
+   100% {opacity: 1; transform: translateY(0);}
+}
+
+@-moz-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -moz-transform: translateY(20px);}
+   100% {opacity: 1; -moz-transform: translateY(0);}
+}
+
+@-webkit-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -webkit-transform: translateY(20px);}
+   100% {opacity: 1; -webkit-transform: translateY(0);}
+}
+
+@-o-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -o-transform: translateY(20px);}
+   100% {opacity: 1; -o-transform: translateY(0);}
+}
+
+@-ms-keyframes fadesin {
+   0%{ opacity:0; }
+   50%{ opacity:0; }
+   75% {opacity: 0; -ms-transform: translateY(20px);}
+   100% {opacity: 1; -ms-transform: translateY(0);}
+}
+
+</style>
+
+<script>
+
+function open_window(cause_id) {
+var  protocol=String(document.location.protocol);
+var new_url;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+new_url="https://www.flipcause.com/widget/"+cause_id
+window.open(new_url);
+}
+
+else {
+document.getElementById("fc-fade").style.display = "block";
+document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
+document.getElementById("fc-fade").style.animation = "backfadesin 1s";
+document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
+document.getElementById("fc-light").style.display = "block";
+document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-light").style.animation = "fadesin 1.5s";
+document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-main").style.display = "block";
+document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-main").style.animation = "fadesin 1.5s";
+document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-close").style.display = "block";
+document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-close").style.animation = "fadesin 1.5s";
+document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").style.display = "block";
+document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
+document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
+}
+}
+
+
+function close_window() {
+document.getElementById("fc-fade").style.display="none";
+document.getElementById("fc-light").style.display="none";
+document.getElementById("fc-main").style.display="none";
+document.getElementById("fc-close").style.display="none";
+document.getElementById("fc-myFrame").style.display="none";
+}
+
+</script>
+
+<div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
+<div id="fc-light" class="fc-white_content">
+<div id="fc-main" class="fc-main-box">
+<div id="fc-close" class="fc-widget_close" onclick="close_window()">
+</div><iframe id="fc-myFrame" iframe height="580" width="925" style="border: 0;
+border-radius:5px 5px 5px 5px; box-shadow:0 0 8px rgba(0, 0, 0, 0.5);" scrolling="no" src=""></iframe></div>
+</div>
+
+<!--END Flipcause Main Integration Code-->
+</footer>
+</html>
