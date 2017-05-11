@@ -31,6 +31,26 @@ effectively.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Here you'll find a host of example plots with the code that generated them.">
+
+.. only:: html
+
+    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_sample_plots_thumb.png
+
+        :ref:`sphx_glr_tutorials_01_introductory_sample_plots.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/01_introductory/sample_plots
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Tips for customizing the properties and default styles of matplotlib.">
 
 .. only:: html
@@ -108,26 +128,6 @@ effectively.
    :hidden:
 
    /tutorials/01_introductory/pyplot
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="This tutorial aims to show the beginning, middle, and end of a single visualization using Matpl...">
-
-.. only:: html
-
-    .. figure:: /tutorials/01_introductory/images/thumb/sphx_glr_lifecycle_thumb.png
-
-        :ref:`sphx_glr_tutorials_01_introductory_lifecycle.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /tutorials/01_introductory/lifecycle
 .. raw:: html
 
     <div style='clear:both'></div>

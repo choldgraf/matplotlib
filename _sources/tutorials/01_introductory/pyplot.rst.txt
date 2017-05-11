@@ -187,6 +187,43 @@ the strings corresponding to these variables.
 
 
 
+.. _plotting-with-categorical-vars:
+
+Plotting with categorical variables
+===================================
+
+It is also possible to create a plot using categorical variables.
+Matplotlib allows you to pass categorical variables directly to
+many plotting functions. For example:
+
+
+
+.. code-block:: python
+
+
+    names = ['group_a', 'group_b', 'group_c']
+    values = [1, 10, 100]
+
+    plt.figure(1, figsize=(9, 3))
+
+    plt.subplot(131)
+    plt.bar(names, values)
+    plt.subplot(132)
+    plt.scatter(names, values)
+    plt.subplot(133)
+    plt.plot(names, values)
+    plt.suptitle('Categorical Plotting')
+    plt.show()
+
+
+
+
+.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_006.png
+    :align: center
+
+
+
+
 .. _controlling-line-properties:
 
 Controlling line properties
@@ -314,7 +351,7 @@ scenes.  Below is a script to create two subplots.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_006.png
+.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_007.png
     :align: center
 
 
@@ -409,7 +446,7 @@ for a more detailed example)
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_007.png
+.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_008.png
     :align: center
 
 
@@ -478,7 +515,7 @@ these arguments are ``(x,y)`` tuples.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_008.png
+.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_009.png
     :align: center
 
 
@@ -565,7 +602,7 @@ is shown below.
 
 
 
-.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_009.png
+.. image:: /tutorials/01_introductory/images/sphx_glr_pyplot_010.png
     :align: center
 
 
@@ -575,7 +612,7 @@ It is also possible to add your own scale, see :ref:`adding-new-scales` for
 details.
 
 
-**Total running time of the script:** ( 0 minutes  1.027 seconds)
+**Total running time of the script:** ( 0 minutes  1.039 seconds)
 
 
 

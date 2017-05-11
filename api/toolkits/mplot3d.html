@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>mplot3d API &mdash; Matplotlib 2.0.0b1.post5194.dev0+g1a5deb715 documentation</title>
+    <title>mplot3d API &mdash; Matplotlib 2.0.0b1.post5245.dev0+g46a83498a documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5194.dev0+g1a5deb715',
+        VERSION:     '2.0.0b1.post5245.dev0+g46a83498a',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,16 +28,16 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5194.dev0+g1a5deb715 documentation"
+          title="Search within Matplotlib 2.0.0b1.post5245.dev0+g46a83498a documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5194.dev0+g1a5deb715 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post5245.dev0+g46a83498a documentation" href="../../index.html" />
     <link rel="up" title="The Matplotlib API" href="../index.html" />
-    <link rel="next" title="mpl_toolkits.mplot3d.axes3d.Axes" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes.html" />
+    <link rel="next" title="mpl_toolkits.mplot3d.axes3d.Axes3D" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes3D.html" />
     <link rel="prev" title="mpl_toolkits.axisartist.subplot_class_factory" href="../_as_gen/mpl_toolkits.axisartist.subplot_class_factory.html" /> 
 
 
@@ -69,7 +69,7 @@ type="text/css" />
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes.html" title="mpl_toolkits.mplot3d.axes3d.Axes"
+          <a href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes3D.html" title="mpl_toolkits.mplot3d.axes3d.Axes3D"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="../_as_gen/mpl_toolkits.axisartist.subplot_class_factory.html" title="mpl_toolkits.axisartist.subplot_class_factory"
@@ -103,6 +103,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <li><a class="reference internal" href="#axes3d"><code class="docutils literal"><span class="pre">axes3d</span></code></a></li>
 <li><a class="reference internal" href="#axis3d"><code class="docutils literal"><span class="pre">axis3d</span></code></a></li>
 <li><a class="reference internal" href="#art3d"><code class="docutils literal"><span class="pre">art3d</span></code></a></li>
+<li><a class="reference internal" href="#art3d-utility-functions">Art3D Utility Functions</a></li>
 <li><a class="reference internal" href="#proj3d"><code class="docutils literal"><span class="pre">proj3d</span></code></a></li>
 </ul>
 </li>
@@ -113,7 +114,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
   <li><a href="../../contents.html">Documentation overview</a><ul>
   <li><a href="../index.html">The Matplotlib API</a><ul>
       <li>Previous: <a href="../_as_gen/mpl_toolkits.axisartist.subplot_class_factory.html" title="previous chapter">mpl_toolkits.axisartist.subplot_class_factory</a></li>
-      <li>Next: <a href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes.html" title="next chapter">mpl_toolkits.mplot3d.axes3d.Axes</a></li>
+      <li>Next: <a href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes3D.html" title="next chapter">mpl_toolkits.mplot3d.axes3d.Axes3D</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -151,7 +152,8 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <li><a class="reference internal" href="#axes3d" id="id2"><code class="xref py py-mod docutils literal"><span class="pre">axes3d</span></code></a></li>
 <li><a class="reference internal" href="#axis3d" id="id3"><code class="xref py py-mod docutils literal"><span class="pre">axis3d</span></code></a></li>
 <li><a class="reference internal" href="#art3d" id="id4"><code class="xref py py-mod docutils literal"><span class="pre">art3d</span></code></a></li>
-<li><a class="reference internal" href="#proj3d" id="id5"><code class="xref py py-mod docutils literal"><span class="pre">proj3d</span></code></a></li>
+<li><a class="reference internal" href="#art3d-utility-functions" id="id5">Art3D Utility Functions</a></li>
+<li><a class="reference internal" href="#proj3d" id="id6"><code class="xref py py-mod docutils literal"><span class="pre">proj3d</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -171,23 +173,8 @@ In addition, help and patches would be greatly appreciated!</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes.html#mpl_toolkits.mplot3d.axes3d.Axes" title="mpl_toolkits.mplot3d.axes3d.Axes"><code class="xref py py-obj docutils literal"><span class="pre">axes3d.Axes</span></code></a>(fig,&nbsp;rect[,&nbsp;facecolor,&nbsp;frameon,&nbsp;...])</td>
-<td>The <code class="xref py py-class docutils literal"><span class="pre">Axes</span></code> contains most of the figure elements: <a class="reference internal" href="../axis_api.html#matplotlib.axis.Axis" title="matplotlib.axis.Axis"><code class="xref py py-class docutils literal"><span class="pre">Axis</span></code></a>, <a class="reference internal" href="../axis_api.html#matplotlib.axis.Tick" title="matplotlib.axis.Tick"><code class="xref py py-class docutils literal"><span class="pre">Tick</span></code></a>, <a class="reference internal" href="../_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a>, <a class="reference internal" href="../text_api.html#matplotlib.text.Text" title="matplotlib.text.Text"><code class="xref py py-class docutils literal"><span class="pre">Text</span></code></a>, <a class="reference internal" href="../_as_gen/matplotlib.patches.Polygon.html#matplotlib.patches.Polygon" title="matplotlib.patches.Polygon"><code class="xref py py-class docutils literal"><span class="pre">Polygon</span></code></a>, etc., and sets the coordinate system.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes3D.html#mpl_toolkits.mplot3d.axes3d.Axes3D" title="mpl_toolkits.mplot3d.axes3d.Axes3D"><code class="xref py py-obj docutils literal"><span class="pre">axes3d.Axes3D</span></code></a>(fig[,&nbsp;rect])</td>
+<tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Axes3D.html#mpl_toolkits.mplot3d.axes3d.Axes3D" title="mpl_toolkits.mplot3d.axes3d.Axes3D"><code class="xref py py-obj docutils literal"><span class="pre">axes3d.Axes3D</span></code></a>(fig[,&nbsp;rect])</td>
 <td>3D axes object.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Bbox.html#mpl_toolkits.mplot3d.axes3d.Bbox" title="mpl_toolkits.mplot3d.axes3d.Bbox"><code class="xref py py-obj docutils literal"><span class="pre">axes3d.Bbox</span></code></a>(points,&nbsp;**kwargs)</td>
-<td>A mutable bounding box.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.LightSource.html#mpl_toolkits.mplot3d.axes3d.LightSource" title="mpl_toolkits.mplot3d.axes3d.LightSource"><code class="xref py py-obj docutils literal"><span class="pre">axes3d.LightSource</span></code></a>([azdeg,&nbsp;altdeg,&nbsp;...])</td>
-<td>Create a light source coming from the specified azimuth and elevation.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Normalize.html#mpl_toolkits.mplot3d.axes3d.Normalize" title="mpl_toolkits.mplot3d.axes3d.Normalize"><code class="xref py py-obj docutils literal"><span class="pre">axes3d.Normalize</span></code></a>([vmin,&nbsp;vmax,&nbsp;clip])</td>
-<td>A class which, when called, can normalize data into the <code class="docutils literal"><span class="pre">[0.0,</span> <span class="pre">1.0]</span></code> interval.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axes3d.Triangulation.html#mpl_toolkits.mplot3d.axes3d.Triangulation" title="mpl_toolkits.mplot3d.axes3d.Triangulation"><code class="xref py py-obj docutils literal"><span class="pre">axes3d.Triangulation</span></code></a>(x,&nbsp;y[,&nbsp;triangles,&nbsp;mask])</td>
-<td>An unstructured triangular grid consisting of npoints points and ntri triangles.</td>
 </tr>
 </tbody>
 </table>
@@ -212,24 +199,6 @@ but it is not intended to be permanent.</p>
 <tbody valign="top">
 <tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axis3d.Axis.html#mpl_toolkits.mplot3d.axis3d.Axis" title="mpl_toolkits.mplot3d.axis3d.Axis"><code class="xref py py-obj docutils literal"><span class="pre">axis3d.Axis</span></code></a>(adir,&nbsp;v_intervalx,&nbsp;d_intervalx,&nbsp;...)</td>
 <td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axis3d.XAxis.html#mpl_toolkits.mplot3d.axis3d.XAxis" title="mpl_toolkits.mplot3d.axis3d.XAxis"><code class="xref py py-obj docutils literal"><span class="pre">axis3d.XAxis</span></code></a>(adir,&nbsp;v_intervalx,&nbsp;d_intervalx,&nbsp;...)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axis3d.YAxis.html#mpl_toolkits.mplot3d.axis3d.YAxis" title="mpl_toolkits.mplot3d.axis3d.YAxis"><code class="xref py py-obj docutils literal"><span class="pre">axis3d.YAxis</span></code></a>(adir,&nbsp;v_intervalx,&nbsp;d_intervalx,&nbsp;...)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axis3d.ZAxis.html#mpl_toolkits.mplot3d.axis3d.ZAxis" title="mpl_toolkits.mplot3d.axis3d.ZAxis"><code class="xref py py-obj docutils literal"><span class="pre">axis3d.ZAxis</span></code></a>(adir,&nbsp;v_intervalx,&nbsp;d_intervalx,&nbsp;...)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axis3d.get_flip_min_max.html#mpl_toolkits.mplot3d.axis3d.get_flip_min_max" title="mpl_toolkits.mplot3d.axis3d.get_flip_min_max"><code class="xref py py-obj docutils literal"><span class="pre">axis3d.get_flip_min_max</span></code></a>(coord,&nbsp;index,&nbsp;mins,&nbsp;maxs)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axis3d.move_from_center.html#mpl_toolkits.mplot3d.axis3d.move_from_center" title="mpl_toolkits.mplot3d.axis3d.move_from_center"><code class="xref py py-obj docutils literal"><span class="pre">axis3d.move_from_center</span></code></a>(coord,&nbsp;centers,&nbsp;deltas)</td>
-<td>Return a coordinate that is moved by &#8220;deltas&#8221; away from the center.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.axis3d.tick_update_position.html#mpl_toolkits.mplot3d.axis3d.tick_update_position" title="mpl_toolkits.mplot3d.axis3d.tick_update_position"><code class="xref py py-obj docutils literal"><span class="pre">axis3d.tick_update_position</span></code></a>(tick,&nbsp;tickxs,&nbsp;...)</td>
-<td>Update tick line and label position and style.</td>
 </tr>
 </tbody>
 </table>
@@ -266,6 +235,17 @@ but it is not intended to be permanent.</p>
 <tr class="row-even"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.art3d.Text3D.html#mpl_toolkits.mplot3d.art3d.Text3D" title="mpl_toolkits.mplot3d.art3d.Text3D"><code class="xref py py-obj docutils literal"><span class="pre">art3d.Text3D</span></code></a>([x,&nbsp;y,&nbsp;z,&nbsp;text,&nbsp;zdir])</td>
 <td>Text object with 3D position and (in the future) direction.</td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="art3d-utility-functions">
+<h2>Art3D Utility Functions<a class="headerlink" href="#art3d-utility-functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
 <tr class="row-odd"><td><a class="reference internal" href="../_as_gen/mpl_toolkits.mplot3d.art3d.get_colors.html#mpl_toolkits.mplot3d.art3d.get_colors" title="mpl_toolkits.mplot3d.art3d.get_colors"><code class="xref py py-obj docutils literal"><span class="pre">art3d.get_colors</span></code></a>(c,&nbsp;num)</td>
 <td>Stretch the color argument to provide the required number num</td>
 </tr>
@@ -408,7 +388,7 @@ but it is not intended to be permanent.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 04, 2017.
+      Last updated on May 09, 2017.
       Created using <a
 href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
     </div>

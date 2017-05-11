@@ -2572,6 +2572,26 @@ Lines, bars and markers
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="How to use categorical variables in matplotlib.">
+
+.. only:: html
+
+    .. figure:: /gallery/lines_bars_and_markers/images/thumb/sphx_glr_categorical_variables_thumb.png
+
+        :ref:`sphx_glr_gallery_lines_bars_and_markers_categorical_variables.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/lines_bars_and_markers/categorical_variables
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="An example showing how to plot the coherence of two signals. ">
 
 .. only:: html
