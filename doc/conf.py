@@ -135,10 +135,10 @@ sphinx_gallery_conf = {
     'subsection_order': ExplicitOrder(explicit_order_folders),
     'min_reported_time': 1,
     'binder': {
-        'org': 'matplotlib',
+        'org': 'choldgraf',
         'repo': 'matplotlib',
         'url': 'https://mybinder.org',
-        'branch': 'v2.1.2',
+        'branch': 'a2b84c4',
         'dependencies': ['../binder/environment.yml']
      }
 }
