@@ -29,7 +29,7 @@ Simple Axes Divider 3
 
     # the rect parameter will be ignore as we will set axes_locator
     rect = (0.1, 0.1, 0.8, 0.8)
-    ax = [fig1.add_axes(rect, label="%d"%i) for i in range(4)]
+    ax = [fig1.add_axes(rect, label="%d" % i) for i in range(4)]
 
 
     horiz = [Size.AxesX(ax[0]), Size.Fixed(.5), Size.AxesX(ax[1])]
@@ -53,13 +53,11 @@ Simple Axes Divider 3
     divider.set_aspect(1.)
 
     for ax1 in ax:
-        plt.setp(ax1.get_xticklabels()+ax1.get_yticklabels(),
-                 visible=False)
+        ax1.tick_params(labelbottom=False, labelleft=False)
 
-    plt.draw()
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.266 seconds)
+**Total running time of the script:** ( 0 minutes  0.314 seconds)
 
 
 

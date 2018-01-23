@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Developer’s guide for creating scales and transformations &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>Developer’s guide for creating scales and transformations &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,32 +28,36 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib Developers’ Guide" href="index.html" />
     <link rel="next" title="Developer’s tips for writing code for Python 2 and 3" href="portable_code.html" />
-    <link rel="prev" title="Developer’s tips for documenting matplotlib" href="documenting_mpl.html" /> 
+    <link rel="prev" title="Plot directive documentation" href="plot_directive.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=Developer%E2%80%99s%20guide%20for%20creating%20scales%20and%20transformations&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../index.html"><img src="../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -72,7 +76,7 @@ type="text/css" />
           <a href="portable_code.html" title="Developer’s tips for writing code for Python 2 and 3"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="documenting_mpl.html" title="Developer’s tips for documenting matplotlib"
+          <a href="plot_directive.html" title="Plot directive documentation"
              accesskey="P">previous</a> |</li>
 
         <li><a href="../index.html">home</a>|&nbsp;</li>
@@ -80,26 +84,16 @@ type="text/css" />
         <li><a href="../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../contents.html">docs</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">The Matplotlib Developers&#8217; Guide</a> &raquo;</li> 
+          <li><a href="index.html" accesskey="U">The Matplotlib Developers’ Guide</a> &raquo;</li> 
       </ul>
     </div>
 
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Developer&#8217;s guide for creating scales and transformations</a><ul>
+<li><a class="reference internal" href="#">Developer’s guide for creating scales and transformations</a><ul>
 <li><a class="reference internal" href="#creating-a-new-scale">Creating a new scale</a></li>
 <li><a class="reference internal" href="#creating-a-new-projection">Creating a new projection</a></li>
 <li><a class="reference internal" href="#api-documentation">API documentation</a></li>
@@ -110,9 +104,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../contents.html">Documentation overview</a><ul>
-  <li><a href="index.html">The Matplotlib Developers&#8217; Guide</a><ul>
-      <li>Previous: <a href="documenting_mpl.html" title="previous chapter">Developer&#8217;s tips for documenting matplotlib</a></li>
-      <li>Next: <a href="portable_code.html" title="next chapter">Developer&#8217;s tips for writing code for Python 2 and 3</a></li>
+  <li><a href="index.html">The Matplotlib Developers’ Guide</a><ul>
+      <li>Previous: <a href="plot_directive.html" title="previous chapter">Plot directive documentation</a></li>
+      <li>Next: <a href="portable_code.html" title="next chapter">Developer’s tips for writing code for Python 2 and 3</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -142,15 +136,15 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
           <div class="body">
             
   <div class="section" id="developer-s-guide-for-creating-scales-and-transformations">
-<span id="adding-new-scales"></span><h1>Developer&#8217;s guide for creating scales and transformations<a class="headerlink" href="#developer-s-guide-for-creating-scales-and-transformations" title="Permalink to this headline">¶</a></h1>
+<span id="adding-new-scales"></span><h1>Developer’s guide for creating scales and transformations<a class="headerlink" href="#developer-s-guide-for-creating-scales-and-transformations" title="Permalink to this headline">¶</a></h1>
 <p>Matplotlib supports the addition of custom procedures that transform
 the data before it is displayed.</p>
 <p>There is an important distinction between two kinds of
 transformations.  Separable transformations, working on a single
-dimension, are called &#8220;scales&#8221;, and non-separable transformations,
+dimension, are called “scales”, and non-separable transformations,
 that handle data in two or more dimensions at a time, are called
-&#8220;projections&#8221;.</p>
-<p>From the user&#8217;s perspective, the scale of a plot can be set with
+“projections”.</p>
+<p>From the user’s perspective, the scale of a plot can be set with
 <a class="reference internal" href="../api/_as_gen/matplotlib.axes.Axes.set_xscale.html#matplotlib.axes.Axes.set_xscale" title="matplotlib.axes.Axes.set_xscale"><code class="xref py py-meth docutils literal"><span class="pre">set_xscale()</span></code></a> and
 <a class="reference internal" href="../api/_as_gen/matplotlib.axes.Axes.set_yscale.html#matplotlib.axes.Axes.set_yscale" title="matplotlib.axes.Axes.set_yscale"><code class="xref py py-meth docutils literal"><span class="pre">set_yscale()</span></code></a>.  Projections can be chosen
 using the <code class="docutils literal"><span class="pre">projection</span></code> keyword argument to the
@@ -180,7 +174,7 @@ prevent the range from including values less than or equal to
 zero.</li>
 <li>Locators (major and minor) that determine where to place ticks in
 the plot, and optionally, how to adjust the limits of the plot to
-some &#8220;good&#8221; values.  Unlike <code class="docutils literal"><span class="pre">limit_range_for_scale()</span></code>, which is
+some “good” values.  Unlike <code class="docutils literal"><span class="pre">limit_range_for_scale()</span></code>, which is
 always enforced, the range setting here is only used when
 automatically setting the range of the plot.</li>
 <li>Formatters (major and minor) that specify how the tick labels
@@ -216,7 +210,7 @@ clipping any data elements.</li>
 example, in a geographic projection, it may be more convenient to
 display the grid in degrees, even if the data is in radians.</li>
 <li>Set up interactive panning and zooming.  This is left as an
-&#8220;advanced&#8221; feature left to the reader, but there is an example of
+“advanced” feature left to the reader, but there is an example of
 this for polar plots in <a class="reference internal" href="../api/projections_api.html#module-matplotlib.projections.polar" title="matplotlib.projections.polar"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.projections.polar</span></code></a>.</li>
 <li>Any additional methods for additional convenience or features.</li>
 </ul>
@@ -225,17 +219,17 @@ this for polar plots in <a class="reference internal" href="../api/projections_a
 <blockquote>
 <div><ul>
 <li><p class="first">By defining the class attribute <code class="docutils literal"><span class="pre">name</span></code>, the projection axes can be
-registered with <code class="xref py py-func docutils literal"><span class="pre">matplotlib.projections.register_projection()</span></code>
+registered with <a class="reference internal" href="../api/projections_api.html#matplotlib.projections.register_projection" title="matplotlib.projections.register_projection"><code class="xref py py-func docutils literal"><span class="pre">matplotlib.projections.register_projection()</span></code></a>
 and subsequently simply invoked by name:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;my_proj_name&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">For more complex, parameterisable projections, a generic &#8220;projection&#8221;
+<li><p class="first">For more complex, parameterisable projections, a generic “projection”
 object may be defined which includes the method <code class="docutils literal"><span class="pre">_as_mpl_axes</span></code>.
-<code class="docutils literal"><span class="pre">_as_mpl_axes</span></code> should take no arguments and return the projection&#8217;s
+<code class="docutils literal"><span class="pre">_as_mpl_axes</span></code> should take no arguments and return the projection’s
 axes subclass and a dictionary of additional arguments to pass to the
-subclass&#8217; <code class="docutils literal"><span class="pre">__init__</span></code> method.  Subsequently a parameterised projection
+subclass’ <code class="docutils literal"><span class="pre">__init__</span></code> method.  Subsequently a parameterised projection
 can be initialised with:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">MyProjection</span><span class="p">(</span><span class="n">param1</span><span class="o">=</span><span class="n">param1_value</span><span class="p">))</span>
 </pre></div>
@@ -268,9 +262,9 @@ interest.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -376,52 +370,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

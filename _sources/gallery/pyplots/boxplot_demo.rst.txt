@@ -11,49 +11,6 @@ Example boxplot code
 
 
 
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_002.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_003.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_004.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_005.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_006.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_007.png
-            :scale: 47
-
-
-
-
-
 .. code-block:: python
 
 
@@ -70,33 +27,123 @@ Example boxplot code
     flier_low = np.random.rand(10) * -100
     data = np.concatenate((spread, center, flier_high, flier_low), 0)
 
+
+
+
+
+
+
+
+.. code-block:: python
+
+
     fig1, ax1 = plt.subplots()
     ax1.set_title('Basic Plot')
     ax1.boxplot(data)
 
+
+
+
+.. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_001.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
+
     fig2, ax2 = plt.subplots()
     ax2.set_title('Notched boxes')
     ax2.boxplot(data, notch=True)
+
+
+
+
+.. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_002.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
 
     green_diamond = dict(markerfacecolor='g', marker='D')
     fig3, ax3 = plt.subplots()
     ax3.set_title('Changed Outlier Symbols')
     ax3.boxplot(data, flierprops=green_diamond)
 
+
+
+
+.. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_003.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
+
     fig4, ax4 = plt.subplots()
     ax4.set_title('Hide Outlier Points')
     ax4.boxplot(data, showfliers=False)
+
+
+
+
+.. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_004.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
 
     red_square = dict(markerfacecolor='r', marker='s')
     fig5, ax5 = plt.subplots()
     ax5.set_title('Horizontal Boxes')
     ax5.boxplot(data, vert=False, flierprops=red_square)
 
+
+
+
+.. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_005.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
+
     fig6, ax6 = plt.subplots()
     ax6.set_title('Shorter Whisker Length')
     ax6.boxplot(data, flierprops=red_square, vert=False, whis=0.75)
 
-    # fake up some more data
+
+
+
+.. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_006.png
+    :align: center
+
+
+
+
+Fake up some more data
+
+
+
+.. code-block:: python
+
+
     spread = np.random.rand(50) * 100
     center = np.ones(25) * 40
     flier_high = np.random.rand(10) * 100 + 100
@@ -105,10 +152,22 @@ Example boxplot code
     data.shape = (-1, 1)
     d2.shape = (-1, 1)
 
-    # Making a 2-D array only works if all the columns are the
-    # same length.  If they are not, then use a list instead.
-    # This is actually more efficient because boxplot converts
-    # a 2-D array into a list of vectors internally anyway.
+
+
+
+
+
+
+Making a 2-D array only works if all the columns are the
+same length.  If they are not, then use a list instead.
+This is actually more efficient because boxplot converts
+a 2-D array into a list of vectors internally anyway.
+
+
+
+.. code-block:: python
+
+
     data = [data, d2, d2[::2,0]]
     fig7, ax7 = plt.subplots()
     ax7.set_title('Multiple Samples with Different sizes')
@@ -116,7 +175,15 @@ Example boxplot code
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  1.184 seconds)
+
+
+.. image:: /gallery/pyplots/images/sphx_glr_boxplot_demo_007.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  0.572 seconds)
 
 
 

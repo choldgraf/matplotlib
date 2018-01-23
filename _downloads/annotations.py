@@ -94,7 +94,7 @@ keyword args like ``horizontalalignment``, ``verticalalignment`` and
 
 For more on all the wild and wonderful things you can do with
 annotations, including fancy arrows, see :ref:`plotting-guide-annotation`
-and :ref:`sphx_glr_gallery_pylab_examples_annotation_demo.py`.
+and :ref:`sphx_glr_gallery_text_labels_and_annotations_annotation_demo.py`.
 
 
 Do not proceed unless you have already read :ref:`annotations-tutorial`,
@@ -158,12 +158,12 @@ keyword arguments. Currently, following box styles are implemented.
   Square       ``square``       pad=0.3
   ==========   ==============   ==========================
 
-.. figure:: ../../gallery/pylab_examples/images/sphx_glr_fancybox_demo2_001.png
-   :target: ../../gallery/pylab_examples/fancybox_demo2.html
+.. figure:: ../../gallery/shapes_and_collections/images/sphx_glr_fancybox_demo_001.png
+   :target: ../../gallery/shapes_and_collections/fancybox_demo.html
    :align: center
    :scale: 50
 
-   Fancybox Demo2
+   Fancybox Demo
 
 
 Note that the attribute arguments can be specified within the style
@@ -284,8 +284,8 @@ an arrow patch, according to the given ``arrowstyle``.
     ``wedge``    tail_width=0.3,shrink_factor=0.5
     ==========   =============================================
 
-.. figure:: ../../gallery/pylab_examples/images/sphx_glr_fancyarrow_demo_001.png
-   :target: ../../gallery/pylab_examples/fancyarrow_demo.html
+.. figure:: ../../gallery/text_labels_and_annotations/images/sphx_glr_fancyarrow_demo_001.png
+   :target: ../../gallery/text_labels_and_annotations/fancyarrow_demo.html
    :align: center
    :scale: 50
 
@@ -513,7 +513,8 @@ more control, it supports a few other options.
 
        Annotation with Simple Coordinates 3
 
-    You may take a look at this example :ref:`sphx_glr_gallery_pylab_examples_annotation_demo3.py`.
+    You may take a look at this example
+    :ref:`sphx_glr_gallery_text_labels_and_annotations_annotation_demo.py`.
 
 Using ConnectorPatch
 --------------------
@@ -556,8 +557,8 @@ knowledge of how mpl's transform works. But, utilizing it will be
 straight forward.
 
 
-.. figure:: ../../gallery/pylab_examples/images/sphx_glr_axes_zoom_effect_001.png
-   :target: ../../gallery/pylab_examples/axes_zoom_effect.html
+.. figure:: ../../gallery/subplots_axes_and_figures/images/sphx_glr_axes_zoom_effect_001.png
+   :target: ../../gallery/subplots_axes_and_figures/axes_zoom_effect.html
    :align: center
    :scale: 50
 

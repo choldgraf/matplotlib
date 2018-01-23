@@ -15,18 +15,16 @@ if 1:
     txt = ax1.annotate("test", (1., 1.), (0., 0),
                        arrowprops=dict(arrowstyle="->",
                                        connectionstyle="angle3", lw=2),
-                       size=20, ha="center", path_effects=[PathEffects.withStroke(linewidth=3,
-                                                                                  foreground="w")])
+                       size=20, ha="center",
+                       path_effects=[PathEffects.withStroke(linewidth=3,
+                                                            foreground="w")])
     txt.arrow_patch.set_path_effects([
         PathEffects.Stroke(linewidth=5, foreground="w"),
         PathEffects.Normal()])
 
-    ax1.grid(True, linestyle="-")
-
     pe = [PathEffects.withStroke(linewidth=3,
                                  foreground="w")]
-    for l in ax1.get_xgridlines() + ax1.get_ygridlines():
-        l.set_path_effects(pe)
+    ax1.grid(True, linestyle="-", path_effects=pe)
 
     ax2 = plt.subplot(132)
     arr = np.arange(25).reshape((5, 5))

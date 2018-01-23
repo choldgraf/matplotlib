@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>ticker &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>ticker &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib API" href="index.html" />
     <link rel="next" title="tight_layout" href="tight_layout_api.html" />
     <link rel="prev" title="text" href="text_api.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=ticker&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../index.html"><img src="../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -87,16 +91,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">ticker</a><ul>
@@ -184,78 +178,74 @@ choosing of tick locations. A useful semi-automatic tick locator is
 axis limits and ticks that are multiples of that base.</p>
 <p>The Locator subclasses defined here are</p>
 <dl class="docutils">
-<dt><a class="reference internal" href="#matplotlib.ticker.NullLocator" title="matplotlib.ticker.NullLocator"><code class="xref py py-class docutils literal"><span class="pre">NullLocator</span></code></a></dt>
-<dd>No ticks</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.FixedLocator" title="matplotlib.ticker.FixedLocator"><code class="xref py py-class docutils literal"><span class="pre">FixedLocator</span></code></a></dt>
-<dd>Tick locations are fixed</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.IndexLocator" title="matplotlib.ticker.IndexLocator"><code class="xref py py-class docutils literal"><span class="pre">IndexLocator</span></code></a></dt>
-<dd>locator for index plots (e.g., where x = range(len(y)))</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.LinearLocator" title="matplotlib.ticker.LinearLocator"><code class="xref py py-class docutils literal"><span class="pre">LinearLocator</span></code></a></dt>
-<dd>evenly spaced ticks from min to max</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.LogLocator" title="matplotlib.ticker.LogLocator"><code class="xref py py-class docutils literal"><span class="pre">LogLocator</span></code></a></dt>
-<dd>logarithmically ticks from min to max</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.SymmetricalLogLocator" title="matplotlib.ticker.SymmetricalLogLocator"><code class="xref py py-class docutils literal"><span class="pre">SymmetricalLogLocator</span></code></a></dt>
-<dd>locator for use with with the symlog norm, works like the
-<a class="reference internal" href="#matplotlib.ticker.LogLocator" title="matplotlib.ticker.LogLocator"><code class="xref py py-obj docutils literal"><span class="pre">LogLocator</span></code></a> for the part outside of the threshold and add 0 if
-inside the limits</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.MultipleLocator" title="matplotlib.ticker.MultipleLocator"><code class="xref py py-class docutils literal"><span class="pre">MultipleLocator</span></code></a></dt>
-<dd>ticks and range are a multiple of base; either integer or float</dd>
-<dt><code class="xref py py-class docutils literal"><span class="pre">OldAutoLocator</span></code></dt>
-<dd>choose a MultipleLocator and dyamically reassign it for
-intelligent ticking during navigation</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.MaxNLocator" title="matplotlib.ticker.MaxNLocator"><code class="xref py py-class docutils literal"><span class="pre">MaxNLocator</span></code></a></dt>
-<dd>finds up to a max number of ticks at nice locations</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.AutoLocator" title="matplotlib.ticker.AutoLocator"><code class="xref py py-class docutils literal"><span class="pre">AutoLocator</span></code></a></dt>
-<dd><a class="reference internal" href="#matplotlib.ticker.MaxNLocator" title="matplotlib.ticker.MaxNLocator"><code class="xref py py-class docutils literal"><span class="pre">MaxNLocator</span></code></a> with simple defaults. This is the default
-tick locator for most plotting.</dd>
-<dt><a class="reference internal" href="#matplotlib.ticker.AutoMinorLocator" title="matplotlib.ticker.AutoMinorLocator"><code class="xref py py-class docutils literal"><span class="pre">AutoMinorLocator</span></code></a></dt>
-<dd>locator for minor ticks when the axis is linear and the
-major ticks are uniformly spaced. It subdivides the major
-tick interval into a specified number of minor intervals,
-defaulting to 4 or 5 depending on the major interval.</dd>
+<dd><a class="reference internal" href="#matplotlib.ticker.MaxNLocator" title="matplotlib.ticker.MaxNLocator"><code class="xref py py-obj docutils literal"><span class="pre">MaxNLocator</span></code></a> with simple defaults.  This is the default tick locator for
+most plotting.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.MaxNLocator" title="matplotlib.ticker.MaxNLocator"><code class="xref py py-class docutils literal"><span class="pre">MaxNLocator</span></code></a></dt>
+<dd>Finds up to a max number of intervals with ticks at nice locations.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.LinearLocator" title="matplotlib.ticker.LinearLocator"><code class="xref py py-class docutils literal"><span class="pre">LinearLocator</span></code></a></dt>
+<dd>Space ticks evenly from min to max.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.LogLocator" title="matplotlib.ticker.LogLocator"><code class="xref py py-class docutils literal"><span class="pre">LogLocator</span></code></a></dt>
+<dd>Space ticks logarithmically from min to max.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.MultipleLocator" title="matplotlib.ticker.MultipleLocator"><code class="xref py py-class docutils literal"><span class="pre">MultipleLocator</span></code></a></dt>
+<dd>Ticks and range are a multiple of base; either integer or float.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.FixedLocator" title="matplotlib.ticker.FixedLocator"><code class="xref py py-class docutils literal"><span class="pre">FixedLocator</span></code></a></dt>
+<dd>Tick locations are fixed.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.IndexLocator" title="matplotlib.ticker.IndexLocator"><code class="xref py py-class docutils literal"><span class="pre">IndexLocator</span></code></a></dt>
+<dd>Locator for index plots (e.g., where <code class="docutils literal"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">range(len(y))</span></code>).</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.NullLocator" title="matplotlib.ticker.NullLocator"><code class="xref py py-class docutils literal"><span class="pre">NullLocator</span></code></a></dt>
+<dd>No ticks.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.SymmetricalLogLocator" title="matplotlib.ticker.SymmetricalLogLocator"><code class="xref py py-class docutils literal"><span class="pre">SymmetricalLogLocator</span></code></a></dt>
+<dd>Locator for use with with the symlog norm; works like <a class="reference internal" href="#matplotlib.ticker.LogLocator" title="matplotlib.ticker.LogLocator"><code class="xref py py-obj docutils literal"><span class="pre">LogLocator</span></code></a> for the
+part outside of the threshold and adds 0 if inside the limits.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.LogitLocator" title="matplotlib.ticker.LogitLocator"><code class="xref py py-class docutils literal"><span class="pre">LogitLocator</span></code></a></dt>
 <dd>Locator for logit scaling.</dd>
+<dt><code class="xref py py-class docutils literal"><span class="pre">OldAutoLocator</span></code></dt>
+<dd>Choose a <a class="reference internal" href="#matplotlib.ticker.MultipleLocator" title="matplotlib.ticker.MultipleLocator"><code class="xref py py-obj docutils literal"><span class="pre">MultipleLocator</span></code></a> and dynamically reassign it for intelligent
+ticking during navigation.</dd>
+<dt><a class="reference internal" href="#matplotlib.ticker.AutoMinorLocator" title="matplotlib.ticker.AutoMinorLocator"><code class="xref py py-class docutils literal"><span class="pre">AutoMinorLocator</span></code></a></dt>
+<dd>Locator for minor ticks when the axis is linear and the
+major ticks are uniformly spaced.  Subdivides the major
+tick interval into a specified number of minor intervals,
+defaulting to 4 or 5 depending on the major interval.</dd>
 </dl>
 <p>There are a number of locators specialized for date locations - see
-the dates module</p>
+the <code class="xref py py-obj docutils literal"><span class="pre">dates</span></code> module.</p>
 <p>You can define your own locator by deriving from Locator. You must
 override the <code class="docutils literal"><span class="pre">__call__</span></code> method, which returns a sequence of locations,
 and you will probably want to override the autoscale method to set the
 view limits from the data limits.</p>
-<p>If you want to override the default locator, use one of the above or a
-custom locator and pass it to the x or y axis instance. The relevant
-methods are:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span> <span class="n">xmajorLocator</span> <span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_minor_locator</span><span class="p">(</span> <span class="n">xminorLocator</span> <span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span> <span class="n">ymajorLocator</span> <span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_minor_locator</span><span class="p">(</span> <span class="n">yminorLocator</span> <span class="p">)</span>
+<p>If you want to override the default locator, use one of the above or a custom
+locator and pass it to the x or y axis instance. The relevant methods are:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">xmajor_locator</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_minor_locator</span><span class="p">(</span><span class="n">xminor_locator</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">ymajor_locator</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_minor_locator</span><span class="p">(</span><span class="n">yminor_locator</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The default minor locator is the NullLocator, e.g., no minor ticks on by
-default.</p>
+<p>The default minor locator is <a class="reference internal" href="#matplotlib.ticker.NullLocator" title="matplotlib.ticker.NullLocator"><code class="xref py py-obj docutils literal"><span class="pre">NullLocator</span></code></a>, i.e., no minor ticks on by default.</p>
 </div>
 <div class="section" id="tick-formatting">
 <h4>Tick formatting<a class="headerlink" href="#tick-formatting" title="Permalink to this headline">¶</a></h4>
-<p>Tick formatting is controlled by classes derived from Formatter. The
-formatter operates on a single tick value and returns a string to the
-axis.</p>
+<p>Tick formatting is controlled by classes derived from Formatter. The formatter
+operates on a single tick value and returns a string to the axis.</p>
 <dl class="docutils">
 <dt><a class="reference internal" href="#matplotlib.ticker.NullFormatter" title="matplotlib.ticker.NullFormatter"><code class="xref py py-class docutils literal"><span class="pre">NullFormatter</span></code></a></dt>
-<dd>No labels on the ticks</dd>
+<dd>No labels on the ticks.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.IndexFormatter" title="matplotlib.ticker.IndexFormatter"><code class="xref py py-class docutils literal"><span class="pre">IndexFormatter</span></code></a></dt>
-<dd>Set the strings from a list of labels</dd>
+<dd>Set the strings from a list of labels.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.FixedFormatter" title="matplotlib.ticker.FixedFormatter"><code class="xref py py-class docutils literal"><span class="pre">FixedFormatter</span></code></a></dt>
-<dd>Set the strings manually for the labels</dd>
+<dd>Set the strings manually for the labels.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.FuncFormatter" title="matplotlib.ticker.FuncFormatter"><code class="xref py py-class docutils literal"><span class="pre">FuncFormatter</span></code></a></dt>
-<dd>User defined function sets the labels</dd>
+<dd>User defined function sets the labels.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.StrMethodFormatter" title="matplotlib.ticker.StrMethodFormatter"><code class="xref py py-class docutils literal"><span class="pre">StrMethodFormatter</span></code></a></dt>
-<dd>Use string <a class="reference external" href="https://docs.python.org/2/library/functions.html#format" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a> method</dd>
+<dd>Use string <a class="reference external" href="https://docs.python.org/3/library/functions.html#format" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a> method.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.FormatStrFormatter" title="matplotlib.ticker.FormatStrFormatter"><code class="xref py py-class docutils literal"><span class="pre">FormatStrFormatter</span></code></a></dt>
-<dd>Use an old-style sprintf format string</dd>
+<dd>Use an old-style sprintf format string.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.ScalarFormatter" title="matplotlib.ticker.ScalarFormatter"><code class="xref py py-class docutils literal"><span class="pre">ScalarFormatter</span></code></a></dt>
-<dd>Default formatter for scalars: autopick the format string</dd>
+<dd>Default formatter for scalars: autopick the format string.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.LogFormatter" title="matplotlib.ticker.LogFormatter"><code class="xref py py-class docutils literal"><span class="pre">LogFormatter</span></code></a></dt>
-<dd>Formatter for log axes</dd>
+<dd>Formatter for log axes.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.LogFormatterExponent" title="matplotlib.ticker.LogFormatterExponent"><code class="xref py py-class docutils literal"><span class="pre">LogFormatterExponent</span></code></a></dt>
 <dd>Format values for log axis using <code class="docutils literal"><span class="pre">exponent</span> <span class="pre">=</span> <span class="pre">log_base(value)</span></code>.</dd>
 <dt><a class="reference internal" href="#matplotlib.ticker.LogFormatterMathtext" title="matplotlib.ticker.LogFormatterMathtext"><code class="xref py py-class docutils literal"><span class="pre">LogFormatterMathtext</span></code></a></dt>
@@ -275,19 +265,19 @@ simply overriding the <code class="docutils literal"><span class="pre">__call__<
 access to the axis view and data limits.</p>
 <p>To control the major and minor tick label formats, use one of the
 following methods:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span> <span class="n">xmajorFormatter</span> <span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_minor_formatter</span><span class="p">(</span> <span class="n">xminorFormatter</span> <span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span> <span class="n">ymajorFormatter</span> <span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_minor_formatter</span><span class="p">(</span> <span class="n">yminorFormatter</span> <span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">xmajor_formatter</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_minor_formatter</span><span class="p">(</span><span class="n">xminor_formatter</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ymajor_formatter</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_minor_formatter</span><span class="p">(</span><span class="n">yminor_formatter</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>See <a class="reference internal" href="../gallery/pylab_examples/major_minor_demo1.html#sphx-glr-gallery-pylab-examples-major-minor-demo1-py"><span class="std std-ref">Major Minor Demo1</span></a> for an example of setting
-major and minor ticks. See the <a class="reference internal" href="dates_api.html#module-matplotlib.dates" title="matplotlib.dates"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.dates</span></code></a> module for
-more information and examples of using date locators and formatters.</p>
+<p>See <a class="reference internal" href="../gallery/ticks_and_spines/major_minor_demo.html#sphx-glr-gallery-ticks-and-spines-major-minor-demo-py"><span class="std std-ref">Major Minor Demo</span></a> for an
+example of setting major and minor ticks. See the <a class="reference internal" href="dates_api.html#module-matplotlib.dates" title="matplotlib.dates"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.dates</span></code></a>
+module for more information and examples of using date locators and formatters.</p>
 <dl class="class">
 <dt id="matplotlib.ticker.TickHelper">
 <em class="property">class </em><code class="descclassname">matplotlib.ticker.</code><code class="descname">TickHelper</code><a class="headerlink" href="#matplotlib.ticker.TickHelper" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <dl class="attribute">
 <dt id="matplotlib.ticker.TickHelper.axis">
 <code class="descname">axis</code><em class="property"> = None</em><a class="headerlink" href="#matplotlib.ticker.TickHelper.axis" title="Permalink to this definition">¶</a></dt>
@@ -332,7 +322,7 @@ more information and examples of using date locators and formatters.</p>
 proper unicode symbol (U+2212) for typographical correctness.
 The default is to not replace it.</p>
 <p>Note, if you use this method, e.g., in <a class="reference internal" href="#matplotlib.ticker.Formatter.format_data" title="matplotlib.ticker.Formatter.format_data"><code class="xref py py-meth docutils literal"><span class="pre">format_data()</span></code></a> or
-call, you probably don&#8217;t want to use it for
+call, you probably don’t want to use it for
 <a class="reference internal" href="#matplotlib.ticker.Formatter.format_data_short" title="matplotlib.ticker.Formatter.format_data_short"><code class="xref py py-meth docutils literal"><span class="pre">format_data_short()</span></code></a> since the toolbar uses this for
 interactive coord reporting and I doubt we can expect GUIs
 across platforms will handle the unicode correctly.  So for
@@ -411,7 +401,7 @@ tick label.</p>
 <dt id="matplotlib.ticker.FormatStrFormatter">
 <em class="property">class </em><code class="descclassname">matplotlib.ticker.</code><code class="descname">FormatStrFormatter</code><span class="sig-paren">(</span><em>fmt</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.ticker.FormatStrFormatter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#matplotlib.ticker.Formatter" title="matplotlib.ticker.Formatter"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.ticker.Formatter</span></code></a></p>
-<p>Use an old-style (&#8216;%&#8217; operator) format string to format the tick.</p>
+<p>Use an old-style (‘%’ operator) format string to format the tick.</p>
 <p>The format string should have a single variable format (%) in it.
 It will be applied to the value (not the position) of the tick.</p>
 </dd></dl>
@@ -574,7 +564,7 @@ the labeling of ticks that are not at integer powers of
 base; normally these are the minor ticks. The controlling
 parameter is the log of the axis data range.  In the typical
 case where base is 10 it is the number of decades spanned
-by the axis, so we can call it &#8216;numdec&#8217;. If <code class="docutils literal"><span class="pre">numdec</span> <span class="pre">&lt;=</span> <span class="pre">all</span></code>,
+by the axis, so we can call it ‘numdec’. If <code class="docutils literal"><span class="pre">numdec</span> <span class="pre">&lt;=</span> <span class="pre">all</span></code>,
 all minor ticks will be labeled.  If <code class="docutils literal"><span class="pre">all</span> <span class="pre">&lt;</span> <span class="pre">numdec</span> <span class="pre">&lt;=</span> <span class="pre">subset</span></code>,
 then only a subset of minor ticks will be labeled, so as to
 avoid crowding. If <code class="docutils literal"><span class="pre">numdec</span> <span class="pre">&gt;</span> <span class="pre">subset</span></code> then no minor ticks will
@@ -598,9 +588,9 @@ or by a locator that puts ticks at integer powers of base and
 at intermediate locations.  For this situation, disable the
 minor_thresholds logic by using <code class="docutils literal"><span class="pre">minor_thresholds=(np.inf,</span> <span class="pre">np.inf)</span></code>,
 so that all ticks will be labeled.</p>
-<p>To disable labeling of minor ticks when &#8216;labelOnlyBase&#8217; is False,
+<p>To disable labeling of minor ticks when ‘labelOnlyBase’ is False,
 use <code class="docutils literal"><span class="pre">minor_thresholds=(0,</span> <span class="pre">0)</span></code>.  This is the default for the
-&#8220;classic&#8221; style.</p>
+“classic” style.</p>
 <p class="rubric">Examples</p>
 <p>To label a subset of minor ticks when the view limits span up
 to 2 decades, and all of the ticks when zoomed in to 0.5 decades
@@ -703,16 +693,45 @@ decades, use <code class="docutils literal"><span class="pre">minor_thresholds=(
 
 <dl class="class">
 <dt id="matplotlib.ticker.EngFormatter">
-<em class="property">class </em><code class="descclassname">matplotlib.ticker.</code><code class="descname">EngFormatter</code><span class="sig-paren">(</span><em>unit=''</em>, <em>places=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.ticker.EngFormatter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">matplotlib.ticker.</code><code class="descname">EngFormatter</code><span class="sig-paren">(</span><em>unit=''</em>, <em>places=None</em>, <em>sep=' '</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.ticker.EngFormatter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#matplotlib.ticker.Formatter" title="matplotlib.ticker.Formatter"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.ticker.Formatter</span></code></a></p>
 <p>Formats axis values using engineering prefixes to represent powers
 of 1000, plus a specified unit, e.g., 10 MHz instead of 1e7.</p>
-<p><code class="xref py py-obj docutils literal"><span class="pre">unit</span></code> is a string containing the abbreviated name of the unit,
-suitable for use with single-letter representations of powers of
-1000. For example, &#8216;Hz&#8217; or &#8216;m&#8217;.</p>
-<p><code class="xref py py-obj docutils literal"><span class="pre">places</span></code> is the precision with which to display the number,
-specified in digits after the decimal point (there will be between
-one and three digits before the decimal point).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>unit</strong> : str (default: “”)</p>
+<blockquote>
+<div><p>Unit symbol to use, suitable for use with single-letter
+representations of powers of 1000. For example, ‘Hz’ or ‘m’.</p>
+</div></blockquote>
+<p><strong>places</strong> : int (default: None)</p>
+<blockquote>
+<div><p>Precision with which to display the number, specified in
+digits after the decimal point (there will be between one
+and three digits before the decimal point). If it is None,
+the formatting falls back to the floating point format ‘%g’,
+which displays up to 6 <em>significant</em> digits, i.e. the equivalent
+value for <em>places</em> varies between 0 and 5 (inclusive).</p>
+</div></blockquote>
+<p><strong>sep</strong> : str (default: ” “)</p>
+<blockquote class="last">
+<div><p>Separator used between the value and the prefix/unit. For
+example, one get ‘3.14 mV’ if <code class="docutils literal"><span class="pre">sep</span></code> is ” ” (default) and
+‘3.14mV’ if <code class="docutils literal"><span class="pre">sep</span></code> is “”. Besides the default behavior, some
+other useful options may be:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">sep=&quot;&quot;</span></code> to append directly the prefix/unit to the value;</li>
+<li><code class="docutils literal"><span class="pre">sep=&quot;\N{THIN</span> <span class="pre">SPACE}&quot;</span></code> (<code class="docutils literal"><span class="pre">U+2009</span></code>);</li>
+<li><code class="docutils literal"><span class="pre">sep=&quot;\N{NARROW</span> <span class="pre">NO-BREAK</span> <span class="pre">SPACE}&quot;</span></code> (<code class="docutils literal"><span class="pre">U+202F</span></code>);</li>
+<li><code class="docutils literal"><span class="pre">sep=&quot;\N{NO-BREAK</span> <span class="pre">SPACE}&quot;</span></code> (<code class="docutils literal"><span class="pre">U+00A0</span></code>).</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 <dl class="attribute">
 <dt id="matplotlib.ticker.EngFormatter.ENG_PREFIXES">
 <code class="descname">ENG_PREFIXES</code><em class="property"> = {-24: 'y', -21: 'z', -18: 'a', -15: 'f', -12: 'p', -9: 'n', -6: 'μ', -3: 'm', 0: '', 3: 'k', 6: 'M', 9: 'G', 12: 'T', 15: 'P', 18: 'E', 21: 'Z', 24: 'Y'}</em><a class="headerlink" href="#matplotlib.ticker.EngFormatter.ENG_PREFIXES" title="Permalink to this definition">¶</a></dt>
@@ -737,7 +756,7 @@ Some examples:</p>
 </pre></div>
 </div>
 <p><code class="xref py py-obj docutils literal"><span class="pre">num</span></code> may be a numeric value or a string that can be converted
-to a numeric value with the <a class="reference external" href="https://docs.python.org/2/library/decimal.html#decimal.Decimal" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">decimal.Decimal</span></code></a> constructor.</p>
+to a numeric value with <code class="docutils literal"><span class="pre">float(num)</span></code>.</p>
 </dd></dl>
 
 </dd></dl>
@@ -753,11 +772,11 @@ Percentages are computed as <code class="docutils literal"><span class="pre">x</
 already scaled to be percentages, <code class="xref py py-obj docutils literal"><span class="pre">xmax</span></code> will be 100. Another common
 situation is where <code class="xref py py-obj docutils literal"><span class="pre">xmax</span></code> is 1.0.</p>
 <p><a class="reference internal" href="#matplotlib.ticker.PercentFormatter.symbol" title="matplotlib.ticker.PercentFormatter.symbol"><code class="xref py py-obj docutils literal"><span class="pre">symbol</span></code></a> is a string which will be appended to the label. It may be
-<a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a> or empty to indicate that no symbol should be used. LaTeX
+<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a> or empty to indicate that no symbol should be used. LaTeX
 special characters are escaped in <a class="reference internal" href="#matplotlib.ticker.PercentFormatter.symbol" title="matplotlib.ticker.PercentFormatter.symbol"><code class="xref py py-obj docutils literal"><span class="pre">symbol</span></code></a> whenever latex mode is
-enabled, unless <code class="xref py py-obj docutils literal"><span class="pre">is_latex</span></code> is <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>.</p>
+enabled, unless <code class="xref py py-obj docutils literal"><span class="pre">is_latex</span></code> is <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>.</p>
 <p><code class="xref py py-obj docutils literal"><span class="pre">decimals</span></code> is the number of decimal places to place after the point.
-If it is set to <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a> (the default), the number will be computed
+If it is set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a> (the default), the number will be computed
 automatically.</p>
 <dl class="method">
 <dt id="matplotlib.ticker.PercentFormatter.convert_to_pct">
@@ -769,7 +788,7 @@ automatically.</p>
 <code class="descname">format_pct</code><span class="sig-paren">(</span><em>x</em>, <em>display_range</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.ticker.PercentFormatter.format_pct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Formats the number as a percentage number with the correct
 number of decimals and adds the percent symbol, if any.</p>
-<p>If <code class="xref py py-obj docutils literal"><span class="pre">self.decimals</span></code> is <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, the number of digits after the
+<p>If <code class="xref py py-obj docutils literal"><span class="pre">self.decimals</span></code> is <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, the number of digits after the
 decimal point is set based on the <code class="xref py py-obj docutils literal"><span class="pre">display_range</span></code> of the axis
 as follows:</p>
 <table border="1" class="docutils">
@@ -795,9 +814,9 @@ as follows:</p>
 <td>2</td>
 <td><code class="docutils literal"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">34.5</span></code> =&gt; 34.50%</td>
 </tr>
-<tr class="row-odd"><td>...</td>
-<td>...</td>
-<td>...</td>
+<tr class="row-odd"><td>…</td>
+<td>…</td>
+<td>…</td>
 </tr>
 </tbody>
 </table>
@@ -938,7 +957,7 @@ the chosen ticks.</p>
 <dl class="method">
 <dt id="matplotlib.ticker.FixedLocator.tick_values">
 <code class="descname">tick_values</code><span class="sig-paren">(</span><em>vmin</em>, <em>vmax</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.ticker.FixedLocator.tick_values" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8221;
+<dd><p>”
 Return the locations of the ticks.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -957,7 +976,7 @@ method.</p>
 <dl class="method">
 <dt id="matplotlib.ticker.NullLocator.tick_values">
 <code class="descname">tick_values</code><span class="sig-paren">(</span><em>vmin</em>, <em>vmax</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.ticker.NullLocator.tick_values" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8221;
+<dd><p>”
 Return the locations of the ticks.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -1064,6 +1083,11 @@ equivalent to <code class="docutils literal"><span class="pre">'auto'</span></co
 <dt id="matplotlib.ticker.AutoLocator">
 <em class="property">class </em><code class="descclassname">matplotlib.ticker.</code><code class="descname">AutoLocator</code><a class="headerlink" href="#matplotlib.ticker.AutoLocator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#matplotlib.ticker.MaxNLocator" title="matplotlib.ticker.MaxNLocator"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.ticker.MaxNLocator</span></code></a></p>
+<p>Dynamically find major tick positions. This is actually a subclass
+of <a class="reference internal" href="#matplotlib.ticker.MaxNLocator" title="matplotlib.ticker.MaxNLocator"><code class="xref py py-obj docutils literal"><span class="pre">MaxNLocator</span></code></a>, with parameters <em>nbins = ‘auto’</em>
+and <em>steps = [1, 2, 2.5, 5, 10]</em>.</p>
+<p>To know the values of the non-public parameters, please have a
+look to the defaults of <a class="reference internal" href="#matplotlib.ticker.MaxNLocator" title="matplotlib.ticker.MaxNLocator"><code class="xref py py-obj docutils literal"><span class="pre">MaxNLocator</span></code></a>.</p>
 </dd></dl>
 
 <dl class="class">
@@ -1105,7 +1129,11 @@ ticks.  If the string <code class="xref py py-obj docutils literal"><span class=
 automatically determined based on the length of the axis.</dd>
 <dt><em>steps</em></dt>
 <dd>Sequence of nice numbers starting with 1 and ending with 10;
-e.g., [1, 2, 4, 5, 10]</dd>
+e.g., [1, 2, 4, 5, 10], where the values are acceptable
+tick multiples.  i.e. for the example, 20, 40, 60 would be
+an acceptable set of ticks, as would 0.4, 0.6, 0.8, because
+they are multiples of 2.  However, 30, 60, 90 would not
+be allowed because 3 does not appear in the list of steps.</dd>
 <dt><em>integer</em></dt>
 <dd>If True, ticks will take only integer values, provided
 at least <code class="xref py py-obj docutils literal"><span class="pre">min_n_ticks</span></code> integers are found within the
@@ -1114,8 +1142,8 @@ view limits.</dd>
 <dd>If True, autoscaling will result in a range symmetric
 about zero.</dd>
 <dt><em>prune</em></dt>
-<dd>[&#8216;lower&#8217; | &#8216;upper&#8217; | &#8216;both&#8217; | None]
-Remove edge ticks &#8211; useful for stacked or ganged plots
+<dd>[‘lower’ | ‘upper’ | ‘both’ | None]
+Remove edge ticks – useful for stacked or ganged plots
 where the upper tick of one axes overlaps with the lower
 tick of the axes above it, primarily when
 <code class="xref py py-obj docutils literal"><span class="pre">rcParams['axes.autolimit_mode']</span></code> is <code class="xref py py-obj docutils literal"><span class="pre">'round_numbers'</span></code>.
@@ -1127,15 +1155,6 @@ will be removed.  If <code class="xref py py-obj docutils literal"><span class="
 <dd>Relax <code class="xref py py-obj docutils literal"><span class="pre">nbins</span></code> and <code class="xref py py-obj docutils literal"><span class="pre">integer</span></code> constraints if necessary to
 obtain this minimum number of ticks.</dd>
 </dl>
-<dl class="method">
-<dt id="matplotlib.ticker.MaxNLocator.bin_boundaries">
-<code class="descname">bin_boundaries</code><span class="sig-paren">(</span><em>vmin</em>, <em>vmax</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.ticker.MaxNLocator.bin_boundaries" title="Permalink to this definition">¶</a></dt>
-<dd><div class="deprecated">
-<p><span class="versionmodified">Deprecated since version 2.0: </span>The bin_boundaries function was deprecated in version 2.0.</p>
-</div>
-<p></p>
-</dd></dl>
-
 <dl class="attribute">
 <dt id="matplotlib.ticker.MaxNLocator.default_params">
 <code class="descname">default_params</code><em class="property"> = {'nbins': 10, 'steps': None, 'integer': False, 'symmetric': False, 'prune': None, 'min_n_ticks': 2}</em><a class="headerlink" href="#matplotlib.ticker.MaxNLocator.default_params" title="Permalink to this definition">¶</a></dt>
@@ -1239,9 +1258,9 @@ between major ticks.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -1347,52 +1366,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

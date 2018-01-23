@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Third party packages &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>Third party packages &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../index.html" />
     <link rel="next" title="The Matplotlib API" href="../api/index.html" />
     <link rel="prev" title="External Resources" href="../resources/index.html" /> 
 
@@ -44,15 +44,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=Third%20party%20packages&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../index.html"><img src="../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -85,16 +89,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Third party packages</a><ul>
@@ -104,17 +98,21 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 </ul>
 </li>
 <li><a class="reference internal" href="#declarative-libraries">Declarative libraries</a><ul>
+<li><a class="reference internal" href="#plotnine">plotnine</a></li>
 <li><a class="reference internal" href="#ggplot">ggplot</a></li>
 <li><a class="reference internal" href="#holoviews">holoviews</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#specialty-plots">Specialty plots</a><ul>
+<li><a class="reference internal" href="#decida">DeCiDa</a></li>
 <li><a class="reference internal" href="#matplotlib-venn">Matplotlib-Venn</a></li>
 <li><a class="reference internal" href="#mpl-probscale">mpl-probscale</a></li>
+<li><a class="reference internal" href="#mpl-scatter-density">mpl-scatter-density</a></li>
 <li><a class="reference internal" href="#mplstereonet">mplstereonet</a></li>
 <li><a class="reference internal" href="#natgrid">Natgrid</a></li>
 <li><a class="reference internal" href="#pyupset">pyUpSet</a></li>
 <li><a class="reference internal" href="#seaborn">seaborn</a></li>
+<li><a class="reference internal" href="#wcsaxes">WCSAxes</a></li>
 <li><a class="reference internal" href="#windrose">Windrose</a></li>
 </ul>
 </li>
@@ -124,6 +122,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 </ul>
 </li>
 <li><a class="reference internal" href="#miscellaneous">Miscellaneous</a><ul>
+<li><a class="reference internal" href="#mpl-template">mpl-template</a></li>
 <li><a class="reference internal" href="#adjusttext">adjustText</a></li>
 <li><a class="reference internal" href="#iterm2-terminal-backend">iTerm2 terminal backend</a></li>
 </ul>
@@ -191,6 +190,14 @@ data processing tools. An example plot from the <a class="reference external" hr
 </div>
 <div class="section" id="declarative-libraries">
 <h2>Declarative libraries<a class="headerlink" href="#declarative-libraries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="plotnine">
+<h3>plotnine<a class="headerlink" href="#plotnine" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://plotnine.readthedocs.io/en/stable/">plotnine</a> implements a grammar
+of graphics, similar to R’s <a class="reference external" href="http://ggplot2.org/">ggplot2</a>. The grammar allows
+users to compose plots by explicitly mapping data to the visual objects that
+make up the plot.</p>
+<img alt="../_images/plotnine.png" src="../_images/plotnine.png" />
+</div>
 <div class="section" id="ggplot">
 <h3>ggplot<a class="headerlink" href="#ggplot" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://github.com/yhat/ggplot">ggplot</a> is a port of the R ggplot2 package
@@ -210,6 +217,12 @@ widgets for parameter exploration.</p>
 </div>
 <div class="section" id="specialty-plots">
 <h2>Specialty plots<a class="headerlink" href="#specialty-plots" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="decida">
+<h3>DeCiDa<a class="headerlink" href="#decida" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://pypi.python.org/pypi/DeCiDa">DeCiDa</a> is a library of functions
+and classes for electron device characterization, electronic circuit design and
+general data visualization and analysis.</p>
+</div>
 <div class="section" id="matplotlib-venn">
 <h3>Matplotlib-Venn<a class="headerlink" href="#matplotlib-venn" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://github.com/konstantint/matplotlib-venn">Matplotlib-Venn</a> provides a
@@ -223,6 +236,17 @@ that allows Matplotlib users to specify probabilty scales. Simply importing the
 <code class="docutils literal"><span class="pre">probscale</span></code> module registers the scale with Matplotlib, making it accessible
 via e.g., <code class="docutils literal"><span class="pre">ax.set_xscale('prob')</span></code> or <code class="docutils literal"><span class="pre">plt.yscale('prob')</span></code>.</p>
 <img alt="../_images/probscale_demo.png" src="../_images/probscale_demo.png" />
+</div>
+<div class="section" id="mpl-scatter-density">
+<h3>mpl-scatter-density<a class="headerlink" href="#mpl-scatter-density" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/astrofrog/mpl-scatter-density">mpl-scatter-density</a> is a
+small package that makes it easy to make scatter plots of large numbers
+of points using a density map. The following example contains around 13 million
+points and the plotting (excluding reading in the data) took less than a
+second on an average laptop:</p>
+<a class="reference internal image-reference" href="../_images/mpl-scatter-density.png"><img alt="../_images/mpl-scatter-density.png" src="../_images/mpl-scatter-density.png" style="height: 400px;" /></a>
+<p>When used in interactive mode, the density map is downsampled on-the-fly while
+panning/zooming in order to provide a smooth interactive experience.</p>
 </div>
 <div class="section" id="mplstereonet">
 <h3>mplstereonet<a class="headerlink" href="#mplstereonet" title="Permalink to this headline">¶</a></h3>
@@ -247,6 +271,15 @@ statistical graphics with Matplotlib. It aims to make visualization a central
 part of exploring and understanding complex datasets.</p>
 <a class="reference internal image-reference" href="../_images/seaborn.png"><img alt="../_images/seaborn.png" src="../_images/seaborn.png" style="height: 157px;" /></a>
 </div>
+<div class="section" id="wcsaxes">
+<h3>WCSAxes<a class="headerlink" href="#wcsaxes" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference external" href="http://www.astropy.org">Astropy</a> core package includes a submodule
+called WCSAxes (available at <a class="reference external" href="http://docs.astropy.org/en/stable/visualization/wcsaxes/index.html">astropy.visualization.wcsaxes</a>) which
+adds Matplotlib projections for Astronomical image data. The following is an
+example of a plot made with WCSAxes which includes the original coordinate
+system of the image and an overlay of a different coordinate system:</p>
+<a class="reference internal image-reference" href="../_images/wcsaxes.jpg"><img alt="../_images/wcsaxes.jpg" src="../_images/wcsaxes.jpg" style="height: 400px;" /></a>
+</div>
 <div class="section" id="windrose">
 <h3>Windrose<a class="headerlink" href="#windrose" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://github.com/scls19fr/windrose">Windrose</a> is a Python Matplotlib,
@@ -264,12 +297,19 @@ cursors for Matplotlib.</p>
 <div class="section" id="mpldatacursor">
 <h3>MplDataCursor<a class="headerlink" href="#mpldatacursor" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://github.com/joferkington/mpldatacursor">MplDataCursor</a> is a toolkit
-written by Joe Kington to provide interactive &#8220;data cursors&#8221; (clickable
+written by Joe Kington to provide interactive “data cursors” (clickable
 annotation boxes) for Matplotlib.</p>
 </div>
 </div>
 <div class="section" id="miscellaneous">
 <h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mpl-template">
+<h3>mpl-template<a class="headerlink" href="#mpl-template" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://austinorr.github.io/mpl-template/index.html">mpl-template</a> provides
+a customizable way to add engineering figure elements such as a title block,
+border, and logo.</p>
+<a class="reference internal image-reference" href="../_images/mpl_template_example.png"><img alt="../_images/mpl_template_example.png" src="../_images/mpl_template_example.png" style="height: 330px;" /></a>
+</div>
 <div class="section" id="adjusttext">
 <h3>adjustText<a class="headerlink" href="#adjusttext" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://github.com/Phlya/adjustText">adjustText</a> is a small library for
@@ -296,9 +336,9 @@ feature.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -404,52 +444,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

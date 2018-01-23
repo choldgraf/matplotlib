@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.imshow &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.pyplot.imshow &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
     <link rel="next" title="matplotlib.pyplot.inferno" href="matplotlib.pyplot.inferno.html" />
     <link rel="prev" title="matplotlib.pyplot.imsave" href="matplotlib.pyplot.imsave.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.pyplot.imshow&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -88,16 +92,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">matplotlib.pyplot.imshow</a><ul>
@@ -158,9 +152,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 array or a PIL image. If <code class="xref py py-obj docutils literal"><span class="pre">X</span></code> is an array, it
 can have the following shapes and types:</p>
 <ul class="simple">
-<li>MxN &#8211; values to be mapped (float or int)</li>
-<li>MxNx3 &#8211; RGB (float or uint8)</li>
-<li>MxNx4 &#8211; RGBA (float or uint8)</li>
+<li>MxN – values to be mapped (float or int)</li>
+<li>MxNx3 – RGB (float or uint8)</li>
+<li>MxNx4 – RGBA (float or uint8)</li>
 </ul>
 <p>The value for each component of MxNx3 and MxNx4 float arrays
 should be in the range 0.0 to 1.0. MxN arrays are mapped
@@ -172,26 +166,26 @@ and the <code class="xref py py-obj docutils literal"><span class="pre">cmap</sp
 <div><p>If None, default to rc <code class="xref py py-obj docutils literal"><span class="pre">image.cmap</span></code> value. <code class="xref py py-obj docutils literal"><span class="pre">cmap</span></code> is ignored
 if <code class="xref py py-obj docutils literal"><span class="pre">X</span></code> is 3-D, directly specifying RGB(A) values.</p>
 </div></blockquote>
-<p><strong>aspect</strong> : [&#8216;auto&#8217; | &#8216;equal&#8217; | scalar], optional, default: None</p>
+<p><strong>aspect</strong> : [‘auto’ | ‘equal’ | scalar], optional, default: None</p>
 <blockquote>
-<div><p>If &#8216;auto&#8217;, changes the image aspect ratio to match that of the
+<div><p>If ‘auto’, changes the image aspect ratio to match that of the
 axes.</p>
-<p>If &#8216;equal&#8217;, and <code class="xref py py-obj docutils literal"><span class="pre">extent</span></code> is None, changes the axes aspect ratio to
-match that of the image. If <code class="xref py py-obj docutils literal"><span class="pre">extent</span></code> is not <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, the axes
+<p>If ‘equal’, and <code class="xref py py-obj docutils literal"><span class="pre">extent</span></code> is None, changes the axes aspect ratio to
+match that of the image. If <code class="xref py py-obj docutils literal"><span class="pre">extent</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, the axes
 aspect ratio is changed to match that of the extent.</p>
 <p>If None, default to rc <code class="docutils literal"><span class="pre">image.aspect</span></code> value.</p>
 </div></blockquote>
 <p><strong>interpolation</strong> : string, optional, default: None</p>
 <blockquote>
-<div><p>Acceptable values are &#8216;none&#8217;, &#8216;nearest&#8217;, &#8216;bilinear&#8217;, &#8216;bicubic&#8217;,
-&#8216;spline16&#8217;, &#8216;spline36&#8217;, &#8216;hanning&#8217;, &#8216;hamming&#8217;, &#8216;hermite&#8217;, &#8216;kaiser&#8217;,
-&#8216;quadric&#8217;, &#8216;catrom&#8217;, &#8216;gaussian&#8217;, &#8216;bessel&#8217;, &#8216;mitchell&#8217;, &#8216;sinc&#8217;,
-&#8216;lanczos&#8217;</p>
+<div><p>Acceptable values are ‘none’, ‘nearest’, ‘bilinear’, ‘bicubic’,
+‘spline16’, ‘spline36’, ‘hanning’, ‘hamming’, ‘hermite’, ‘kaiser’,
+‘quadric’, ‘catrom’, ‘gaussian’, ‘bessel’, ‘mitchell’, ‘sinc’,
+‘lanczos’</p>
 <p>If <code class="xref py py-obj docutils literal"><span class="pre">interpolation</span></code> is None, default to rc <code class="xref py py-obj docutils literal"><span class="pre">image.interpolation</span></code>.
 See also the <code class="xref py py-obj docutils literal"><span class="pre">filternorm</span></code> and <code class="xref py py-obj docutils literal"><span class="pre">filterrad</span></code> parameters.
-If <code class="xref py py-obj docutils literal"><span class="pre">interpolation</span></code> is &#8216;none&#8217;, then no interpolation is performed
+If <code class="xref py py-obj docutils literal"><span class="pre">interpolation</span></code> is ‘none’, then no interpolation is performed
 on the Agg, ps and pdf backends. Other backends will fall back to
-&#8216;nearest&#8217;.</p>
+‘nearest’.</p>
 </div></blockquote>
 <p><strong>norm</strong> : <a class="reference internal" href="matplotlib.colors.Normalize.html#matplotlib.colors.Normalize" title="matplotlib.colors.Normalize"><code class="xref py py-obj docutils literal"><span class="pre">Normalize</span></code></a>, optional, default: None</p>
 <blockquote>
@@ -212,7 +206,7 @@ settings for <code class="xref py py-obj docutils literal"><span class="pre">vmi
 <blockquote>
 <div><p>The alpha blending value, between 0 (transparent) and 1 (opaque)</p>
 </div></blockquote>
-<p><strong>origin</strong> : [&#8216;upper&#8217; | &#8216;lower&#8217;], optional, default: None</p>
+<p><strong>origin</strong> : [‘upper’ | ‘lower’], optional, default: None</p>
 <blockquote>
 <div><p>Place the [0,0] index of the array in the upper left or lower left
 corner of the axes. If None, default to rc <code class="xref py py-obj docutils literal"><span class="pre">image.origin</span></code>.</p>
@@ -220,7 +214,7 @@ corner of the axes. If None, default to rc <code class="xref py py-obj docutils 
 <p><strong>extent</strong> : scalars (left, right, bottom, top), optional, default: None</p>
 <blockquote>
 <div><p>The location, in data-coordinates, of the lower-left and
-upper-right corners. If <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, the image is positioned such that
+upper-right corners. If <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, the image is positioned such that
 the pixel centers fall on zero-based (row, column) indices.</p>
 </div></blockquote>
 <p><strong>shape</strong> : scalars (columns, rows), optional, default: None</p>
@@ -232,7 +226,7 @@ the pixel centers fall on zero-based (row, column) indices.</p>
 <div><p>A parameter for the antigrain image resize filter.  From the
 antigrain documentation, if <code class="xref py py-obj docutils literal"><span class="pre">filternorm</span></code> = 1, the filter
 normalizes integer values and corrects the rounding errors. It
-doesn&#8217;t do anything with the source floating point values, it
+doesn’t do anything with the source floating point values, it
 corrects only integers according to the rule of 1.0 which means
 that any sum of pixel weights must be equal to 1.0.  So, the
 filter function must produce a graph of the proper shape.</p>
@@ -240,7 +234,7 @@ filter function must produce a graph of the proper shape.</p>
 <p><strong>filterrad</strong> : scalar, optional, default: 4.0</p>
 <blockquote>
 <div><p>The filter radius for filters that have a radius parameter, i.e.
-when interpolation is one of: &#8216;sinc&#8217;, &#8216;lanczos&#8217; or &#8216;blackman&#8217;</p>
+when interpolation is one of: ‘sinc’, ‘lanczos’ or ‘blackman’</p>
 </div></blockquote>
 </td>
 </tr>
@@ -248,7 +242,7 @@ when interpolation is one of: &#8216;sinc&#8217;, &#8216;lanczos&#8217; or &#821
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
-<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>kwargs</strong> : <a class="reference internal" href="../artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code></a> properties.</p>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>**kwargs</strong> : <a class="reference internal" href="../artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code></a> properties.</p>
 </td>
 </tr>
 </tbody>
@@ -264,6 +258,16 @@ when interpolation is one of: &#8216;sinc&#8217;, &#8216;lanczos&#8217; or &#821
 <p>Unless <em>extent</em> is used, pixel centers will be located at integer
 coordinates. In other words: the origin will coincide with the center
 of pixel (0, 0).</p>
+<p>Two typical representations are used for RGB images with an alpha
+channel:</p>
+<ul class="simple">
+<li>Straight (unassociated) alpha: R, G, and B channels represent the
+color of the pixel, disregarding its opacity.</li>
+<li>Premultiplied (associated) alpha: R, G, and B channels represent
+the color of the pixel, adjusted for its opacity by multiplication.</li>
+</ul>
+<p><a class="reference internal" href="#matplotlib.pyplot.imshow" title="matplotlib.pyplot.imshow"><code class="xref py py-obj docutils literal"><span class="pre">imshow</span></code></a> expects RGB images adopting the straight
+(unassociated) alpha representation.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>In addition to the above described arguments, this function can take a
@@ -277,81 +281,49 @@ following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>
 
 <div class="section" id="examples-using-matplotlib-pyplot-imshow">
 <h2>Examples using <code class="docutils literal"><span class="pre">matplotlib.pyplot.imshow</span></code><a class="headerlink" href="#examples-using-matplotlib-pyplot-imshow" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to animate an image. "><div class="figure" id="id1">
-<img alt="../../_images/sphx_glr_dynamic_image_thumb.png" src="../../_images/sphx_glr_dynamic_image_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/animation/dynamic_image.html#sphx-glr-gallery-animation-dynamic-image-py"><span class="std std-ref">An animated image</span></a></span></p>
+<div class="sphx-glr-thumbcontainer" tooltip="Adjusting the spacing of margins and subplots using :func:`~matplotlib.pyplot.subplots_adjust`...."><div class="figure" id="id1">
+<img alt="../../_images/sphx_glr_subplots_adjust_thumb.png" src="../../_images/sphx_glr_subplots_adjust_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/subplots_axes_and_figures/subplots_adjust.html#sphx-glr-gallery-subplots-axes-and-figures-subplots-adjust-py"><span class="std std-ref">Subplots Adjust</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This examples demonstrates how to animate an image from a list of images (or Artists). "><div class="figure" id="id2">
-<img alt="../../_images/sphx_glr_dynamic_image2_thumb.png" src="../../_images/sphx_glr_dynamic_image2_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/animation/dynamic_image2.html#sphx-glr-gallery-animation-dynamic-image2-py"><span class="std std-ref">An animated image using a list of images</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Layer images above one another using alpha blending "><div class="figure" id="id2">
+<img alt="../../_images/sphx_glr_layer_images_thumb.png" src="../../_images/sphx_glr_layer_images_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/layer_images.html#sphx-glr-gallery-images-contours-and-fields-layer-images-py"><span class="std std-ref">Layer Images</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Pyplot animation example."><div class="figure" id="id3">
-<img alt="../../_images/sphx_glr_animation_demo_thumb.png" src="../../_images/sphx_glr_animation_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/animation_demo.html#sphx-glr-gallery-pylab-examples-animation-demo-py"><span class="std std-ref">Animation Demo</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Many ways to plot images in Matplotlib."><div class="figure" id="id3">
+<img alt="../../_images/sphx_glr_image_demo_thumb.png" src="../../_images/sphx_glr_image_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/image_demo.html#sphx-glr-gallery-images-contours-and-fields-image-demo-py"><span class="std std-ref">Image Demo</span></a></span></p>
 </div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Illustrate simple contour plotting, contours on an image with a colorbar for the contours, and ..."><div class="figure" id="id4">
 <img alt="../../_images/sphx_glr_contour_demo_thumb.png" src="../../_images/sphx_glr_contour_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/contour_demo.html#sphx-glr-gallery-pylab-examples-contour-demo-py"><span class="std std-ref">Contour Demo</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/contour_demo.html#sphx-glr-gallery-images-contours-and-fields-contour-demo-py"><span class="std std-ref">Contour Demo</span></a></span></p>
 </div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Test combinations of contouring, filled contouring, and image plotting. For contour labelling, ..."><div class="figure" id="id5">
 <img alt="../../_images/sphx_glr_contour_image_thumb.png" src="../../_images/sphx_glr_contour_image_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/contour_image.html#sphx-glr-gallery-pylab-examples-contour-image-py"><span class="std std-ref">Contour Image</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/contour_image.html#sphx-glr-gallery-images-contours-and-fields-contour-image-py"><span class="std std-ref">Contour Image</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id6">
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to draw, and manipulate shapes given vertices and nodes using the `Patch..."><div class="figure" id="id6">
 <img alt="../../_images/sphx_glr_dolphin_thumb.png" src="../../_images/sphx_glr_dolphin_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/dolphin.html#sphx-glr-gallery-pylab-examples-dolphin-py"><span class="std std-ref">Dolphin</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/shapes_and_collections/dolphin.html#sphx-glr-gallery-shapes-and-collections-dolphin-py"><span class="std std-ref">Dolphins</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to set a hyperlinks on various kinds of elements."><div class="figure" id="id7">
-<img alt="../../_images/sphx_glr_hyperlinks_sgskip_thumb.png" src="../../_images/sphx_glr_hyperlinks_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/hyperlinks_sgskip.html#sphx-glr-gallery-pylab-examples-hyperlinks-sgskip-py"><span class="std std-ref">Hyperlinks</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id8">
-<img alt="../../_images/sphx_glr_image_clip_path_thumb1.png" src="../../_images/sphx_glr_image_clip_path_thumb1.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/image_clip_path.html#sphx-glr-gallery-pylab-examples-image-clip-path-py"><span class="std std-ref">Image Clip Path</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id9">
-<img alt="../../_images/sphx_glr_image_demo_thumb1.png" src="../../_images/sphx_glr_image_demo_thumb1.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/image_demo.html#sphx-glr-gallery-pylab-examples-image-demo-py"><span class="std std-ref">Image Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id10">
-<img alt="../../_images/sphx_glr_image_demo2_thumb.png" src="../../_images/sphx_glr_image_demo2_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/image_demo2.html#sphx-glr-gallery-pylab-examples-image-demo2-py"><span class="std std-ref">Image Demo2</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="The same (small) array, interpolated with three different interpolation methods."><div class="figure" id="id11">
-<img alt="../../_images/sphx_glr_image_interp_thumb.png" src="../../_images/sphx_glr_image_interp_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/image_interp.html#sphx-glr-gallery-pylab-examples-image-interp-py"><span class="std std-ref">Image Interp</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Layer images above one another using alpha blending "><div class="figure" id="id12">
-<img alt="../../_images/sphx_glr_layer_images_thumb.png" src="../../_images/sphx_glr_layer_images_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/layer_images.html#sphx-glr-gallery-pylab-examples-layer-images-py"><span class="std std-ref">Layer Images</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id13">
-<img alt="../../_images/sphx_glr_movie_demo_sgskip_thumb.png" src="../../_images/sphx_glr_movie_demo_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/movie_demo_sgskip.html#sphx-glr-gallery-pylab-examples-movie-demo-sgskip-py"><span class="std std-ref">Movie Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrates similarities between pcolor, pcolormesh, imshow and pcolorfast for drawing quadril..."><div class="figure" id="id14">
-<img alt="../../_images/sphx_glr_pcolor_demo_thumb.png" src="../../_images/sphx_glr_pcolor_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/pcolor_demo.html#sphx-glr-gallery-pylab-examples-pcolor-demo-py"><span class="std std-ref">Pcolor Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id15">
-<img alt="../../_images/sphx_glr_subplot_toolbar_thumb.png" src="../../_images/sphx_glr_subplot_toolbar_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/subplot_toolbar.html#sphx-glr-gallery-pylab-examples-subplot-toolbar-py"><span class="std std-ref">Subplot Toolbar</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id16">
-<img alt="../../_images/sphx_glr_subplots_adjust_thumb.png" src="../../_images/sphx_glr_subplots_adjust_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/subplots_adjust.html#sphx-glr-gallery-pylab-examples-subplots-adjust-py"><span class="std std-ref">Subplots Adjust</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="The Mandelbrot set rendering can be improved by using a normalized recount associated with a po..."><div class="figure" id="id17">
+</div><div class="sphx-glr-thumbcontainer" tooltip="The Mandelbrot set rendering can be improved by using a normalized recount associated with a po..."><div class="figure" id="id7">
 <img alt="../../_images/sphx_glr_mandelbrot_thumb.png" src="../../_images/sphx_glr_mandelbrot_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/showcase/mandelbrot.html#sphx-glr-gallery-showcase-mandelbrot-py"><span class="std std-ref">Shaded &amp; power normalized rendering</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="A short tutorial on plotting images with Matplotlib."><div class="figure" id="id18">
-<img alt="../../_images/sphx_glr_images_thumb.png" src="../../_images/sphx_glr_images_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/01_introductory/images.html#sphx-glr-tutorials-01-introductory-images-py"><span class="std std-ref">Image tutorial</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id8">
+<img alt="../../_images/sphx_glr_dynamic_image_thumb.png" src="../../_images/sphx_glr_dynamic_image_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/animation/dynamic_image.html#sphx-glr-gallery-animation-dynamic-image-py"><span class="std std-ref">Animated image using a precomputed list of images</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="How to use tight-layout to fit plots within your figure cleanly."><div class="figure" id="id19">
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to set a hyperlinks on various kinds of elements."><div class="figure" id="id9">
+<img alt="../../_images/sphx_glr_hyperlinks_sgskip_thumb.png" src="../../_images/sphx_glr_hyperlinks_sgskip_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/hyperlinks_sgskip.html#sphx-glr-gallery-misc-hyperlinks-sgskip-py"><span class="std std-ref">Hyperlinks</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="A short tutorial on plotting images with Matplotlib."><div class="figure" id="id10">
+<img alt="../../_images/sphx_glr_images_thumb.png" src="../../_images/sphx_glr_images_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/introductory/images.html#sphx-glr-tutorials-introductory-images-py"><span class="std std-ref">Image tutorial</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="How to use tight-layout to fit plots within your figure cleanly."><div class="figure" id="id11">
 <img alt="../../_images/sphx_glr_tight_layout_guide_thumb.png" src="../../_images/sphx_glr_tight_layout_guide_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/02_intermediate/tight_layout_guide.html#sphx-glr-tutorials-02-intermediate-tight-layout-guide-py"><span class="std std-ref">Tight Layout guide</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/intermediate/tight_layout_guide.html#sphx-glr-tutorials-intermediate-tight-layout-guide-py"><span class="std std-ref">Tight Layout guide</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -365,9 +337,9 @@ following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -473,52 +445,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

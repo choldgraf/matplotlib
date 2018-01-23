@@ -3,9 +3,9 @@
 .. _sphx_glr_gallery_statistics_violinplot.py:
 
 
-==================================
-Demo of the basics of violin plots
-==================================
+==================
+Violin plot basics
+==================
 
 Violin plots are similar to histograms and box plots in that they show
 an abstract representation of the probability distribution of the
@@ -81,7 +81,7 @@ have a great section: http://scikit-learn.org/stable/modules/density.html
     fig.subplots_adjust(hspace=0.4)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.997 seconds)
+**Total running time of the script:** ( 0 minutes  0.914 seconds)
 
 
 

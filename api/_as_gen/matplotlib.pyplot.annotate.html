@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.annotate &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.pyplot.annotate &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
     <link rel="next" title="matplotlib.pyplot.arrow" href="matplotlib.pyplot.arrow.html" />
     <link rel="prev" title="matplotlib.pyplot.angle_spectrum" href="matplotlib.pyplot.angle_spectrum.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.pyplot.annotate&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -88,16 +92,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">matplotlib.pyplot.annotate</a><ul>
@@ -169,7 +163,7 @@ at.  If None, defaults to <code class="docutils literal"><span class="pre">xy</s
 <p><strong>xycoords</strong> : str, Artist, Transform, callable or tuple, optional</p>
 <blockquote>
 <div><p>The coordinate system that <code class="docutils literal"><span class="pre">xy</span></code> is given in.</p>
-<p>For a <a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">str</span></code></a> the allowed values are:</p>
+<p>For a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">str</span></code></a> the allowed values are:</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="27%" />
@@ -181,42 +175,42 @@ at.  If None, defaults to <code class="docutils literal"><span class="pre">xy</s
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>&#8216;figure points&#8217;</td>
+<tr class="row-even"><td>‘figure points’</td>
 <td>points from the lower left of the figure</td>
 </tr>
-<tr class="row-odd"><td>&#8216;figure pixels&#8217;</td>
+<tr class="row-odd"><td>‘figure pixels’</td>
 <td>pixels from the lower left of the figure</td>
 </tr>
-<tr class="row-even"><td>&#8216;figure fraction&#8217;</td>
+<tr class="row-even"><td>‘figure fraction’</td>
 <td>fraction of figure from lower left</td>
 </tr>
-<tr class="row-odd"><td>&#8216;axes points&#8217;</td>
+<tr class="row-odd"><td>‘axes points’</td>
 <td>points from lower left corner of axes</td>
 </tr>
-<tr class="row-even"><td>&#8216;axes pixels&#8217;</td>
+<tr class="row-even"><td>‘axes pixels’</td>
 <td>pixels from lower left corner of axes</td>
 </tr>
-<tr class="row-odd"><td>&#8216;axes fraction&#8217;</td>
+<tr class="row-odd"><td>‘axes fraction’</td>
 <td>fraction of axes from lower left</td>
 </tr>
-<tr class="row-even"><td>&#8216;data&#8217;</td>
+<tr class="row-even"><td>‘data’</td>
 <td>use the coordinate system of the object being
 annotated (default)</td>
 </tr>
-<tr class="row-odd"><td>&#8216;polar&#8217;</td>
-<td><em>(theta,r)</em> if not native &#8216;data&#8217; coordinates</td>
+<tr class="row-odd"><td>‘polar’</td>
+<td><em>(theta,r)</em> if not native ‘data’ coordinates</td>
 </tr>
 </tbody>
 </table>
 <p>If a <a class="reference internal" href="../artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code></a> object is passed in the units are
-fraction if it&#8217;s bounding box.</p>
+fraction if it’s bounding box.</p>
 <p>If a <a class="reference internal" href="../transformations.html#matplotlib.transforms.Transform" title="matplotlib.transforms.Transform"><code class="xref py py-obj docutils literal"><span class="pre">Transform</span></code></a> object is passed
 in use that to transform <code class="docutils literal"><span class="pre">xy</span></code> to screen coordinates</p>
 <p>If a callable it must take a
 <a class="reference internal" href="../backend_bases_api.html#matplotlib.backend_bases.RendererBase" title="matplotlib.backend_bases.RendererBase"><code class="xref py py-obj docutils literal"><span class="pre">RendererBase</span></code></a> object as input
 and return a <a class="reference internal" href="../transformations.html#matplotlib.transforms.Transform" title="matplotlib.transforms.Transform"><code class="xref py py-obj docutils literal"><span class="pre">Transform</span></code></a> or
 <a class="reference internal" href="../transformations.html#matplotlib.transforms.Bbox" title="matplotlib.transforms.Bbox"><code class="xref py py-obj docutils literal"><span class="pre">Bbox</span></code></a> object</p>
-<p>If a <a class="reference external" href="https://docs.python.org/2/library/functions.html#tuple" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code></a> must be length 2 tuple of str, <code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code>,
+<p>If a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code></a> must be length 2 tuple of str, <code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code>,
 <code class="xref py py-obj docutils literal"><span class="pre">Transform</span></code> or callable objects.  The first transform is
 used for the <em>x</em> coordinate and the second for <em>y</em>.</p>
 <p>See <a class="reference internal" href="../../tutorials/text/annotations.html#plotting-guide-annotation"><span class="std std-ref">Advanced Annotation</span></a> for more details.</p>
@@ -240,10 +234,10 @@ strings:</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>&#8216;offset points&#8217;</td>
+<tr class="row-even"><td>‘offset points’</td>
 <td>offset (in points) from the <em>xy</em> value</td>
 </tr>
-<tr class="row-odd"><td>&#8216;offset pixels&#8217;</td>
+<tr class="row-odd"><td>‘offset pixels’</td>
 <td>offset (in pixels) from the <em>xy</em> value</td>
 </tr>
 </tbody>
@@ -278,7 +272,7 @@ allowed keys are:</p>
 <td>the length of the arrow head in points</td>
 </tr>
 <tr class="row-odd"><td>shrink</td>
-<td>fraction of total length to &#8216;shrink&#8217; from both ends</td>
+<td>fraction of total length to ‘shrink’ from both ends</td>
 </tr>
 <tr class="row-even"><td>?</td>
 <td>any key to <a class="reference internal" href="matplotlib.patches.FancyArrowPatch.html#matplotlib.patches.FancyArrowPatch" title="matplotlib.patches.FancyArrowPatch"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.patches.FancyArrowPatch</span></code></a></td>
@@ -387,11 +381,11 @@ above keys are forbidden.  The allowed values of
 <blockquote>
 <div><p>Controls the visibility of the annotation when it goes
 outside the axes area.</p>
-<p>If <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, the annotation will only be drawn when the
-<code class="docutils literal"><span class="pre">xy</span></code> is inside the axes. If <a class="reference external" href="https://docs.python.org/2/library/constants.html#False" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">False</span></code></a>, the annotation will
+<p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, the annotation will only be drawn when the
+<code class="docutils literal"><span class="pre">xy</span></code> is inside the axes. If <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">False</span></code></a>, the annotation will
 always be drawn regardless of its position.</p>
-<p>The default is <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, which behave as <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> only if
-<em>xycoords</em> is &#8220;data&#8221;.</p>
+<p>The default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, which behave as <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> only if
+<em>xycoords</em> is “data”.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -404,21 +398,17 @@ always be drawn regardless of its position.</p>
 
 <div class="section" id="examples-using-matplotlib-pyplot-annotate">
 <h2>Examples using <code class="docutils literal"><span class="pre">matplotlib.pyplot.annotate</span></code><a class="headerlink" href="#examples-using-matplotlib-pyplot-annotate" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip="Selected features of Matplotlib's math rendering engine. "><div class="figure" id="id1">
+<div class="sphx-glr-thumbcontainer" tooltip="Selected features of Matplotlib&#x27;s math rendering engine. "><div class="figure" id="id1">
 <img alt="../../_images/sphx_glr_mathtext_examples_thumb.png" src="../../_images/sphx_glr_mathtext_examples_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/mathtext_examples.html#sphx-glr-gallery-pylab-examples-mathtext-examples-py"><span class="std std-ref">Mathtext Examples</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/text_labels_and_annotations/mathtext_examples.html#sphx-glr-gallery-text-labels-and-annotations-mathtext-examples-py"><span class="std std-ref">Mathtext Examples</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id2">
-<img alt="../../_images/sphx_glr_pyplot_annotate_thumb.png" src="../../_images/sphx_glr_pyplot_annotate_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pyplots/pyplot_annotate.html#sphx-glr-gallery-pyplots-pyplot-annotate-py"><span class="std std-ref">Pyplot Annotate</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Shows how to create an xkcd-like plot. "><div class="figure" id="id3">
+</div><div class="sphx-glr-thumbcontainer" tooltip="Shows how to create an xkcd-like plot. "><div class="figure" id="id2">
 <img alt="../../_images/sphx_glr_xkcd_thumb.png" src="../../_images/sphx_glr_xkcd_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/showcase/xkcd.html#sphx-glr-gallery-showcase-xkcd-py"><span class="std std-ref">XKCD</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="An introduction to the pyplot interface."><div class="figure" id="id4">
+</div><div class="sphx-glr-thumbcontainer" tooltip="An introduction to the pyplot interface."><div class="figure" id="id3">
 <img alt="../../_images/sphx_glr_pyplot_thumb.png" src="../../_images/sphx_glr_pyplot_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/01_introductory/pyplot.html#sphx-glr-tutorials-01-introductory-pyplot-py"><span class="std std-ref">Pyplot tutorial</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py"><span class="std std-ref">Pyplot tutorial</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -432,9 +422,9 @@ always be drawn regardless of its position.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -540,52 +530,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

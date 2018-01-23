@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Making a patch &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>Making a patch &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="Working with Matplotlib source code" href="index.html" />
     <link rel="next" title="Git for development" href="git_development.html" />
     <link rel="prev" title="Following the latest source" href="following_latest.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=Making%20a%20patch&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -80,7 +84,7 @@ type="text/css" />
         <li><a href="../../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li>
-          <li><a href="../index.html" >The Matplotlib Developers&#8217; Guide</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib Developers’ Guide</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Working with <em>Matplotlib</em> source code</a> &raquo;</li> 
       </ul>
     </div>
@@ -88,16 +92,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Making a patch</a><ul>
@@ -114,7 +108,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
-  <li><a href="../index.html">The Matplotlib Developers&#8217; Guide</a><ul>
+  <li><a href="../index.html">The Matplotlib Developers’ Guide</a><ul>
   <li><a href="index.html">Working with <em>Matplotlib</em> source code</a><ul>
       <li>Previous: <a href="following_latest.html" title="previous chapter">Following the latest source</a></li>
       <li>Next: <a href="git_development.html" title="next chapter">Git for development</a></li>
@@ -149,13 +143,13 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
             
   <div class="section" id="making-a-patch">
 <h1>Making a patch<a class="headerlink" href="#making-a-patch" title="Permalink to this headline">¶</a></h1>
-<p>You&#8217;ve discovered a bug or something else you want to change
+<p>You’ve discovered a bug or something else you want to change
 in <a class="reference external" href="http://matplotlib.org">Matplotlib</a> .. — excellent!</p>
-<p>You&#8217;ve worked out a way to fix it — even better!</p>
+<p>You’ve worked out a way to fix it — even better!</p>
 <p>You want to tell us about it — best of all!</p>
 <p>The easiest way is to make a <em>patch</em> or set of patches.  Here
 we explain how.  Making a patch is the simplest and quickest,
-but if you&#8217;re going to be doing anything more than simple
+but if you’re going to be doing anything more than simple
 quick things, please consider following the
 <a class="reference internal" href="git_development.html#git-development"><span class="std std-ref">Git for development</span></a> model instead.</p>
 <div class="section" id="making-patches">
@@ -188,22 +182,22 @@ mailing list</a> — where we will thank you warmly.</p>
 <div class="section" id="in-detail">
 <h3>In detail<a class="headerlink" href="#in-detail" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p class="first">Tell git who you are so it can label the commits you&#8217;ve
+<li><p class="first">Tell git who you are so it can label the commits you’ve
 made:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>git config --global user.email you@yourdomain.example.com
 git config --global user.name <span class="s2">&quot;Your Name Comes Here&quot;</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">If you don&#8217;t already have one, clone a copy of the
+<li><p class="first">If you don’t already have one, clone a copy of the
 <a class="reference external" href="http://matplotlib.org">Matplotlib</a> repository:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>git clone git://github.com/matplotlib/matplotlib.git
 <span class="nb">cd</span> matplotlib
 </pre></div>
 </div>
 </li>
-<li><p class="first">Make a &#8216;feature branch&#8217;.  This will be where you work on
-your bug fix.  It&#8217;s nice and safe and leaves you with
+<li><p class="first">Make a ‘feature branch’.  This will be where you work on
+your bug fix.  It’s nice and safe and leaves you with
 access to an unmodified copy of the code in the main
 branch:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>git branch the-fix-im-thinking-of
@@ -222,7 +216,7 @@ git commit -am <span class="s1">&#39;BF - added fix for Funny bug&#39;</span>
 </pre></div>
 </div>
 <p>Note the <code class="docutils literal"><span class="pre">-am</span></code> options to <code class="docutils literal"><span class="pre">commit</span></code>. The <code class="docutils literal"><span class="pre">m</span></code> flag just
-signals that you&#8217;re going to type a message on the command
+signals that you’re going to type a message on the command
 line.  The <code class="docutils literal"><span class="pre">a</span></code> flag — you can just take on faith —
 or see <a class="reference external" href="http://gitready.com/beginner/2009/01/18/the-staging-area.html">why the -a flag?</a>.</p>
 </li>
@@ -285,9 +279,9 @@ git push origin the-fix-im-thinking-of
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -393,52 +387,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

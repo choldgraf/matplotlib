@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>offsetbox &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>offsetbox &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib API" href="index.html" />
     <link rel="next" title="patches" href="patches_api.html" />
     <link rel="prev" title="mlab" href="mlab_api.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=offsetbox&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../index.html"><img src="../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -87,16 +91,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">offsetbox</a><ul>
@@ -164,12 +158,12 @@ is needed, use other OffsetBox class to enclose them.  By default,
 the offset box is anchored against its parent axes. You may
 explicitly specify the bbox_to_anchor.</p>
 <p>loc is a string or an integer specifying the legend location.
-The valid  location codes are:</p>
+The valid location codes are:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;upper right&#39;</span>  <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 <span class="s1">&#39;upper left&#39;</span>   <span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
 <span class="s1">&#39;lower left&#39;</span>   <span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
 <span class="s1">&#39;lower right&#39;</span>  <span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-<span class="s1">&#39;right&#39;</span>        <span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+<span class="s1">&#39;right&#39;</span>        <span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="p">(</span><span class="n">same</span> <span class="k">as</span> <span class="s1">&#39;center right&#39;</span><span class="p">,</span> <span class="k">for</span> <span class="n">back</span><span class="o">-</span><span class="n">compatibility</span><span class="p">)</span>
 <span class="s1">&#39;center left&#39;</span>  <span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
 <span class="s1">&#39;center right&#39;</span> <span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
 <span class="s1">&#39;lower center&#39;</span> <span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
@@ -423,7 +417,7 @@ to the children</p>
 <dt id="matplotlib.offsetbox.AuxTransformBox.set_offset">
 <code class="descname">set_offset</code><span class="sig-paren">(</span><em>xy</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.offsetbox.AuxTransformBox.set_offset" title="Permalink to this definition">¶</a></dt>
 <dd><p>set offset of the container.</p>
-<p>Accept : tuple of x,y coordinate in disokay units.</p>
+<p>Accept : tuple of x,y coordinate in display units.</p>
 </dd></dl>
 
 <dl class="method">
@@ -453,7 +447,7 @@ to the children</p>
 <dl class="class">
 <dt id="matplotlib.offsetbox.DraggableBase">
 <em class="property">class </em><code class="descclassname">matplotlib.offsetbox.</code><code class="descname">DraggableBase</code><span class="sig-paren">(</span><em>ref_artist</em>, <em>use_blit=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.offsetbox.DraggableBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>helper code for a draggable artist (legend, offsetbox)
 The derived class must override following two method.</p>
 <blockquote>
@@ -482,7 +476,7 @@ meant to save reference position of the artist.</p>
 <dl class="docutils">
 <dt><em>artist_picker</em> is a picker method that will be</dt>
 <dd>used. <em>finalize_offset</em> is called when the mouse is released. In
-current implementaion of DraggableLegend and DraggableAnnotation,
+current implementation of DraggableLegend and DraggableAnnotation,
 <em>update_offset</em> places the artists simply in display
 coordinates. And <em>finalize_offset</em> recalculate their position in
 the normalized axes coordinate and set a relavant attribute.</dd>
@@ -615,7 +609,7 @@ to the children</p>
 <dt id="matplotlib.offsetbox.DrawingArea.set_offset">
 <code class="descname">set_offset</code><span class="sig-paren">(</span><em>xy</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.offsetbox.DrawingArea.set_offset" title="Permalink to this definition">¶</a></dt>
 <dd><p>set offset of the container.</p>
-<p>Accept : tuple of x,y cooridnate in disokay units.</p>
+<p>Accept : tuple of x,y coordinate in display units.</p>
 </dd></dl>
 
 <dl class="method">
@@ -648,7 +642,7 @@ adjusts the relative positions of children at draw time.</p>
 <p><strong>height</strong> : float, optional</p>
 <blockquote>
 <div><p>Width and height of the container box, calculated if
-<a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>.</p>
+<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>.</p>
 </div></blockquote>
 <p><strong>align</strong> : str</p>
 <blockquote>
@@ -839,7 +833,7 @@ to the given <em>renderer</em>.</p>
 <p><strong>height</strong> : float, optional</p>
 <blockquote>
 <div><p>Width and height of the container box, calculated if
-<a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>.</p>
+<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>.</p>
 </div></blockquote>
 <p><strong>align</strong> : str, optional</p>
 <blockquote>
@@ -915,13 +909,13 @@ text.</p>
 <p><strong>textprops</strong> : <a class="reference internal" href="font_manager_api.html#matplotlib.font_manager.FontProperties" title="matplotlib.font_manager.FontProperties"><code class="xref py py-obj docutils literal"><span class="pre">FontProperties</span></code></a>, optional</p>
 <p><strong>multilinebaseline</strong> : bool, optional</p>
 <blockquote>
-<div><p>If <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, baseline for multiline text is adjusted so that
+<div><p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, baseline for multiline text is adjusted so that
 it is (approximatedly) center-aligned with singleline
 text.</p>
 </div></blockquote>
 <p><strong>minimumdescent</strong> : bool, optional</p>
 <blockquote class="last">
-<div><p>If <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, the box has a minimum descent of &#8220;p&#8221;.</p>
+<div><p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, the box has a minimum descent of “p”.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -959,7 +953,7 @@ text.</p>
 <dl class="method">
 <dt id="matplotlib.offsetbox.TextArea.get_text">
 <code class="descname">get_text</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.offsetbox.TextArea.get_text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the string representation of this area&#8217;s text</p>
+<dd><p>Returns the string representation of this area’s text</p>
 </dd></dl>
 
 <dl class="method">
@@ -973,7 +967,7 @@ text.</p>
 <code class="descname">set_minimumdescent</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.offsetbox.TextArea.set_minimumdescent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set minimumdescent .</p>
 <p>If True, extent of the single line text is adjusted so that
-it has minimum descent of &#8220;p&#8221;</p>
+it has minimum descent of “p”</p>
 </dd></dl>
 
 <dl class="method">
@@ -1028,7 +1022,7 @@ adjust the relative positions of children in the drawing time.</p>
 <p><strong>height</strong> : float, optional</p>
 <blockquote>
 <div><p>width and height of the container box, calculated if
-<a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>.</p>
+<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>.</p>
 </div></blockquote>
 <p><strong>align</strong> : str, optional</p>
 <blockquote>
@@ -1071,9 +1065,9 @@ pixels.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -1179,52 +1173,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

@@ -3,37 +3,46 @@
 Transformations Tutorial
 ========================
 
-Transforming visuals in Matplotlib.
-
-Like any graphics packages, matplotlib is built on top of a
+Like any graphics packages, Matplotlib is built on top of a
 transformation framework to easily move between coordinate systems,
 the userland `data` coordinate system, the `axes` coordinate system,
 the `figure` coordinate system, and the `display` coordinate system.
 In 95% of your plotting, you won't need to think about this, as it
 happens under the hood, but as you push the limits of custom figure
 generation, it helps to have an understanding of these objects so you
-can reuse the existing transformations matplotlib makes available to
+can reuse the existing transformations Matplotlib makes available to
 you, or create your own (see :mod:`matplotlib.transforms`).  The table
-below summarizes the existing coordinate systems, the transformation
+below summarizes the some useful coordinate systems, the transformation
 object you should use to work in that coordinate system, and the
 description of that system. In the `Transformation Object` column,
 ``ax`` is a :class:`~matplotlib.axes.Axes` instance, and ``fig`` is a
 :class:`~matplotlib.figure.Figure` instance.
 
-==========  =====================  ====================================================================================
-Coordinate  Transformation Object  Description
-==========  =====================  ====================================================================================
-`data`      ``ax.transData``       The userland data coordinate system, controlled by the xlim and ylim
-`axes`      ``ax.transAxes``       The coordinate system of the :class:`~matplotlib.axes.Axes`; (0,0) is
-                                   bottom left of the axes, and (1,1) is top right of the axes.
-`figure`    ``fig.transFigure``    The coordinate system of the :class:`~matplotlib.figure.Figure`; (0,0)
-                                   is bottom left of the figure, and (1,1) is top right of the figure.
-`display`   `None`                 This is the pixel coordinate system of the display; (0,0) is the bottom
-                                   left of the display, and (width, height) is the top right of the display in pixels.
-                                   Alternatively, the identity transform
-                                   (:class:`matplotlib.transforms.IdentityTransform()`) may be used instead of None.
-==========  =====================  ====================================================================================
-
++-----------+-----------------------------+-----------------------------------+
+|Coordinates|Transformation object        |Description                        |
++-----------+-----------------------------+-----------------------------------+
+|"data"     |``ax.transData``             |The coordinate system for the data,|
+|           |                             |controlled by xlim and ylim.       |
++-----------+-----------------------------+-----------------------------------+
+|"axes"     |``ax.transAxes``             |The coordinate system of the       |
+|           |                             |`~.Axes`; (0, 0) is bottom left of |
+|           |                             |the axes, and (1, 1) is top right  |
+|           |                             |of the axes.                       |
++-----------+-----------------------------+-----------------------------------+
+|"figure"   |``fig.transFigure``          |The coordinate system of the       |
+|           |                             |`~.Figure`; (0, 0) is bottom left  |
+|           |                             |of the figure, and (1, 1) is top   |
+|           |                             |right of the figure.               |
++-----------+-----------------------------+-----------------------------------+
+|"display"  |``None``, or                 |The pixel coordinate system of the |
+|           |``IdentityTransform()``      |display; (0, 0) is bottom left of  |
+|           |                             |the display, and (width, height) is|
+|           |                             |top right of the display in pixels.|
++-----------+-----------------------------+-----------------------------------+
+|"xaxis",   |``ax.get_xaxis_transform()``,|Blended coordinate systems; use    |
+|"yaxis"    |``ax.get_yaxis_transform()`` |data coordinates on one of the axis|
+|           |                             |and axes coordinates on the other. |
++-----------+-----------------------------+-----------------------------------+
 
 All of the transformation objects in the table above take inputs in
 their coordinate system, and transform the input to the `display`
@@ -52,7 +61,7 @@ Data coordinates
 ================
 
 Let's start with the most commonly used coordinate, the `data`
-coordinate system.  Whenever you add data to the axes, matplotlib
+coordinate system.  Whenever you add data to the axes, Matplotlib
 updates the datalimits, most commonly updated with the
 :meth:`~matplotlib.axes.Axes.set_xlim` and
 :meth:`~matplotlib.axes.Axes.set_ylim` methods.  For example, in the
@@ -87,7 +96,7 @@ plt.show()
 #     In [15]: ax.transData.transform((5, 0))
 #     Out[15]: array([ 335.175,  247.   ])
 #
-#     In [16]: ax.transData.transform([(5, 0), (1,2)])
+#     In [16]: ax.transData.transform([(5, 0), (1, 2)])
 #     Out[16]:
 #     array([[ 335.175,  247.   ],
 #            [ 132.435,  642.2  ]])
@@ -170,13 +179,13 @@ plt.show()
 #     In [54]: ax.transData.transform((5, 0))
 #     Out[54]: array([ 335.175,  247.   ])
 #
-#     In [55]: ax.set_ylim(-1,2)
+#     In [55]: ax.set_ylim(-1, 2)
 #     Out[55]: (-1, 2)
 #
 #     In [56]: ax.transData.transform((5, 0))
 #     Out[56]: array([ 335.175     ,  181.13333333])
 #
-#     In [57]: ax.set_xlim(10,20)
+#     In [57]: ax.set_xlim(10, 20)
 #     Out[57]: (10, 20)
 #
 #     In [58]: ax.transData.transform((5, 0))
@@ -189,7 +198,7 @@ plt.show()
 # ================
 #
 # After the `data` coordinate system, `axes` is probably the second most
-# useful coordinate system.  Here the point (0,0) is the bottom left of
+# useful coordinate system.  Here the point (0, 0) is the bottom left of
 # your axes or subplot, (0.5, 0.5) is the center, and (1.0, 1.0) is the
 # top right.  You can also refer to points outside the range, so (-0.1,
 # 1.1) is to the left and above your axes.  This coordinate system is
@@ -272,7 +281,7 @@ trans = transforms.blended_transform_factory(
 # highlight the 1..2 stddev region with a span.
 # We want x to be in data coordinates and y to
 # span from 0..1 in axes coords
-rect = patches.Rectangle((1,0), width=1, height=1,
+rect = patches.Rectangle((1, 0), width=1, height=1,
                          transform=trans, color='yellow',
                          alpha=0.5)
 
@@ -389,7 +398,7 @@ plt.show()
 #   self.transData = self.transScale + (self.transLimits + self.transAxes)
 #
 # We've been introduced to the ``transAxes`` instance above in
-# :ref:`axes-coords`, which maps the (0,0), (1,1) corners of the
+# :ref:`axes-coords`, which maps the (0, 0), (1, 1) corners of the
 # axes or subplot bounding box to `display` space, so let's look at
 # these other two pieces.
 #
@@ -405,19 +414,19 @@ plt.show()
 #     In [81]: ax.set_xlim(0, 10)
 #     Out[81]: (0, 10)
 #
-#     In [82]: ax.set_ylim(-1,1)
+#     In [82]: ax.set_ylim(-1, 1)
 #     Out[82]: (-1, 1)
 #
-#     In [84]: ax.transLimits.transform((0,-1))
+#     In [84]: ax.transLimits.transform((0, -1))
 #     Out[84]: array([ 0.,  0.])
 #
-#     In [85]: ax.transLimits.transform((10,-1))
+#     In [85]: ax.transLimits.transform((10, -1))
 #     Out[85]: array([ 1.,  0.])
 #
-#     In [86]: ax.transLimits.transform((10,1))
+#     In [86]: ax.transLimits.transform((10, 1))
 #     Out[86]: array([ 1.,  1.])
 #
-#     In [87]: ax.transLimits.transform((5,0))
+#     In [87]: ax.transLimits.transform((5, 0))
 #     Out[87]: array([ 0.5,  0.5])
 #
 # and we can use this same inverted transformation to go from the unit
@@ -431,7 +440,7 @@ plt.show()
 # The final piece is the ``self.transScale`` attribute, which is
 # responsible for the optional non-linear scaling of the data, e.g., for
 # logarithmic axes.  When an Axes is initially setup, this is just set to
-# the identity transform, since the basic matplotlib axes has linear
+# the identity transform, since the basic Matplotlib axes has linear
 # scale, but when you call a logarithmic scaling function like
 # :meth:`~matplotlib.axes.Axes.semilogx` or explicitly set the scale to
 # logarithmic with :meth:`~matplotlib.axes.Axes.set_xscale`, then the
@@ -455,7 +464,7 @@ plt.show()
 # data, to a separable Cartesian coordinate system.  There are several
 # projection examples in the ``matplotlib.projections`` package, and the
 # best way to learn more is to open the source for those packages and
-# see how to make your own, since matplotlib supports extensible axes
+# see how to make your own, since Matplotlib supports extensible axes
 # and projections.  Michael Droettboom has provided a nice tutorial
-# example of creating a hammer projection axes; see
+# example of creating a Hammer projection axes; see
 # :ref:`sphx_glr_gallery_api_custom_projection_example.py`.

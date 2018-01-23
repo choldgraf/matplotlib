@@ -31,13 +31,10 @@ if __name__ == "__main__":
     a = np.linspace(0, 1, 256).reshape(1, -1)
     a = np.vstack((a, a))
 
-    maps = sorted(
-        m for m in plt.cm.cmap_d
-        if not m.endswith("_r") and  # Skip reversed colormaps.
-        not m.startswith(('spectral', 'Vega'))  # Skip deprecated colormaps.
-    )
+    maps = sorted(m for m in plt.cm.cmap_d
+                  if not m.endswith("_r"))  # Skip reversed colormaps.
 
-    #fig.subplots_adjust(top=0.99, bottom=0.01, left=0.2, right=0.99)
+    # fig.subplots_adjust(top=0.99, bottom=0.01, left=0.2, right=0.99)
 
     ncol = 2
     nrow = len(maps)//ncol + 1
@@ -50,7 +47,7 @@ if __name__ == "__main__":
 
     for i, m in enumerate(maps):
         ix, iy = divmod(i, nrow)
-        #plt.figimage(a, 10, i*10, cmap=plt.get_cmap(m), origin='lower')
+        # plt.figimage(a, 10, i*10, cmap=plt.get_cmap(m), origin='lower')
         bbox0 = Bbox.from_bounds(ix*dx*(1 + xpad_fraction),
                                  1. - iy*dy*(1 + ypad_fraction) - dy,
                                  dx, dy)

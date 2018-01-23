@@ -51,7 +51,7 @@ plt.show()
 #
 # :func:`~matplotlib.pyplot.plot` is a versatile command, and will take
 # an arbitrary number of arguments.  For example, to plot x versus y,
-# you can issue the command::
+# you can issue the command:
 
 plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
 
@@ -267,7 +267,7 @@ plt.show()
 # ``figure(1)`` will be created by default, just as a ``subplot(111)``
 # will be created by default if you don't manually specify any axes.  The
 # :func:`~matplotlib.pyplot.subplot` command specifies ``numrows,
-# numcols, fignum`` where ``fignum`` ranges from 1 to
+# numcols, plot_number`` where ``plot_number`` ranges from 1 to
 # ``numrows*numcols``.  The commas in the ``subplot`` command are
 # optional if ``numrows*numcols<10``.  So ``subplot(211)`` is identical
 # to ``subplot(2, 1, 1)``.
@@ -277,8 +277,8 @@ plt.show()
 # rectangular grid, use the :func:`~matplotlib.pyplot.axes` command,
 # which allows you to specify the location as ``axes([left, bottom,
 # width, height])`` where all values are in fractional (0 to 1)
-# coordinates.  See :ref:`sphx_glr_gallery_pylab_examples_axes_demo.py` for an example of
-# placing axes manually and :ref:`sphx_glr_gallery_pylab_examples_subplot_demo.py` for an
+# coordinates.  See :ref:`sphx_glr_gallery_subplots_axes_and_figures_axes_demo.py` for an example of
+# placing axes manually and :ref:`sphx_glr_gallery_subplots_axes_and_figures_subplot_demo.py` for an
 # example with lots of subplots.
 #
 #
@@ -307,7 +307,7 @@ plt.show()
 # it annoying that states (specifically the current image, figure and axes)
 # are being maintained for you behind the scenes, don't despair: this is just a thin
 # stateful wrapper around an object oriented API, which you can use
-# instead (see :ref:`sphx_glr_tutorials_02_intermediate_artists.py`)
+# instead (see :ref:`sphx_glr_tutorials_intermediate_artists.py`)
 #
 # If you are making lots of figures, you need to be aware of one
 # more thing: the memory required for a figure is not completely
@@ -406,7 +406,7 @@ plt.show()
 # variety of other coordinate systems one can choose -- see
 # :ref:`annotations-tutorial` and :ref:`plotting-guide-annotation` for
 # details.  More examples can be found in
-# :ref:`sphx_glr_gallery_pylab_examples_annotation_demo.py`.
+# :ref:`sphx_glr_gallery_text_labels_and_annotations_annotation_demo.py`.
 #
 #
 # Logarithmic and other nonlinear axes

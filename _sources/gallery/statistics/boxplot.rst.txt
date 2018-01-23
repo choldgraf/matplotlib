@@ -3,9 +3,9 @@
 .. _sphx_glr_gallery_statistics_boxplot.py:
 
 
-=========================================
-Demo of artist customization in box plots
-=========================================
+=================================
+Artist customization in box plots
+=================================
 
 This example demonstrates how to use the various kwargs
 to fully customize box plots. The first figure demonstrates
@@ -17,24 +17,6 @@ of the whiskers to specific percentiles (lower right axes)
 
 A good general reference on boxplots and their history can be found
 here: http://vita.had.co.nz/papers/boxplots.pdf
-
-
-
-
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/statistics/images/sphx_glr_boxplot_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/statistics/images/sphx_glr_boxplot_002.png
-            :scale: 47
-
 
 
 
@@ -51,7 +33,19 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
     labels = list('ABCD')
     fs = 10  # fontsize
 
-    # demonstrate how to toggle the display of different elements:
+
+
+
+
+
+
+Demonstrate how to toggle the display of different elements:
+
+
+
+.. code-block:: python
+
+
     fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)
     axes[0, 0].boxplot(data, labels=labels)
     axes[0, 0].set_title('Default', fontsize=fs)
@@ -80,7 +74,22 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
     plt.show()
 
 
-    # demonstrate how to customize the display different elements:
+
+
+
+.. image:: /gallery/statistics/images/sphx_glr_boxplot_001.png
+    :align: center
+
+
+
+
+Demonstrate how to customize the display different elements:
+
+
+
+.. code-block:: python
+
+
     boxprops = dict(linestyle='--', linewidth=3, color='darkgoldenrod')
     flierprops = dict(marker='o', markerfacecolor='green', markersize=12,
                       linestyle='none')
@@ -118,7 +127,15 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
     fig.subplots_adjust(hspace=0.4)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  2.657 seconds)
+
+
+.. image:: /gallery/statistics/images/sphx_glr_boxplot_002.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  2.485 seconds)
 
 
 

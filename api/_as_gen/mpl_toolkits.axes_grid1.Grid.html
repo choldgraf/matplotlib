@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>mpl_toolkits.axes_grid1.Grid &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>mpl_toolkits.axes_grid1.Grid &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,29 +28,36 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
+    <link rel="up" title="mpl_toolkits.axes_grid1" href="mpl_toolkits.axes_grid1.html" />
+    <link rel="next" title="mpl_toolkits.axes_grid1.ImageGrid" href="mpl_toolkits.axes_grid1.ImageGrid.html" />
+    <link rel="prev" title="mpl_toolkits.axes_grid1.Divider" href="mpl_toolkits.axes_grid1.Divider.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=mpl_toolkits.axes_grid1.Grid&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -65,28 +72,27 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="mpl_toolkits.axes_grid1.ImageGrid.html" title="mpl_toolkits.axes_grid1.ImageGrid"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mpl_toolkits.axes_grid1.Divider.html" title="mpl_toolkits.axes_grid1.Divider"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib API</a> &raquo;</li>
+          <li><a href="../toolkits/axes_grid.html" >The Matplotlib axes_grid Toolkit API</a> &raquo;</li>
+          <li><a href="mpl_toolkits.axes_grid1.html" accesskey="U">mpl_toolkits.axes_grid1</a> &raquo;</li> 
       </ul>
     </div>
 
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">mpl_toolkits.axes_grid1.Grid</a><ul>
@@ -98,6 +104,14 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">The Matplotlib API</a><ul>
+  <li><a href="../toolkits/axes_grid.html">The Matplotlib axes_grid Toolkit API</a><ul>
+  <li><a href="mpl_toolkits.axes_grid1.html">mpl_toolkits.axes_grid1</a><ul>
+      <li>Previous: <a href="mpl_toolkits.axes_grid1.Divider.html" title="previous chapter">mpl_toolkits.axes_grid1.Divider</a></li>
+      <li>Next: <a href="mpl_toolkits.axes_grid1.ImageGrid.html" title="next chapter">mpl_toolkits.axes_grid1.ImageGrid</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
@@ -141,7 +155,7 @@ be easily done in matplotlib. AxesGrid is used in such case.</p>
 <a class="reference internal" href="matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a> <em>fig</em> with
 <em>rect=[left, bottom, width, height]</em> (in
 <a class="reference internal" href="matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">Figure</span></code></a> coordinates) or
-the subplot position code (e.g., &#8220;121&#8221;).</p>
+the subplot position code (e.g., “121”).</p>
 <p>Optional keyword arguments:</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -158,8 +172,8 @@ the subplot position code (e.g., &#8220;121&#8221;).</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>direction</td>
-<td>&#8220;row&#8221;</td>
-<td>[ &#8220;row&#8221; | &#8220;column&#8221; ]</td>
+<td>“row”</td>
+<td>[ “row” | “column” ]</td>
 </tr>
 <tr class="row-odd"><td>axes_pad</td>
 <td>0.02</td>
@@ -184,8 +198,8 @@ or tuple-like of floats,
 <td>[ True | False ]</td>
 </tr>
 <tr class="row-even"><td>label_mode</td>
-<td>&#8220;L&#8221;</td>
-<td>[ &#8220;L&#8221; | &#8220;1&#8221; | &#8220;all&#8221; ]</td>
+<td>“L”</td>
+<td>[ “L” | “1” | “all” ]</td>
 </tr>
 <tr class="row-odd"><td>axes_class</td>
 <td>None</td>
@@ -195,17 +209,82 @@ of <a class="reference internal" href="../axes_api.html#matplotlib.axes.Axes" ti
 </tbody>
 </table>
 </div></blockquote>
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.get_aspect">
+<code class="descname">get_aspect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.get_aspect" title="Permalink to this definition">¶</a></dt>
+<dd><p>get aspect</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.get_axes_locator">
+<code class="descname">get_axes_locator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.get_axes_locator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.get_axes_pad">
+<code class="descname">get_axes_pad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.get_axes_pad" title="Permalink to this definition">¶</a></dt>
+<dd><p>get axes_pad</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">tuple</p>
+<blockquote class="last">
+<div><p>Padding in inches, (horizontal pad, vertical pad)</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.get_divider">
+<code class="descname">get_divider</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.get_divider" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.get_geometry">
+<code class="descname">get_geometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.get_geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>get geometry of the grid. Returns a tuple of two integer,
+representing number of rows and number of columns.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.get_vsize_hsize">
+<code class="descname">get_vsize_hsize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.get_vsize_hsize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.set_aspect">
+<code class="descname">set_aspect</code><span class="sig-paren">(</span><em>aspect</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.set_aspect" title="Permalink to this definition">¶</a></dt>
+<dd><p>set aspect</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.set_axes_locator">
+<code class="descname">set_axes_locator</code><span class="sig-paren">(</span><em>locator</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.set_axes_locator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.set_axes_pad">
+<code class="descname">set_axes_pad</code><span class="sig-paren">(</span><em>axes_pad</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.set_axes_pad" title="Permalink to this definition">¶</a></dt>
+<dd><p>set axes_pad</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axes_grid1.Grid.set_label_mode">
+<code class="descname">set_label_mode</code><span class="sig-paren">(</span><em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axes_grid1.Grid.set_label_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>set label_mode</p>
+</dd></dl>
+
 </dd></dl>
 
 <div class="section" id="examples-using-mpl-toolkits-axes-grid1-grid">
 <h2>Examples using <code class="docutils literal"><span class="pre">mpl_toolkits.axes_grid1.Grid</span></code><a class="headerlink" href="#examples-using-mpl-toolkits-axes-grid1-grid" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id1">
-<img alt="../../_images/sphx_glr_simple_annotate01_thumb.png" src="../../_images/sphx_glr_simple_annotate01_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/simple_annotate01.html#sphx-glr-gallery-userdemo-simple-annotate01-py"><span class="std std-ref">Simple Annotate01</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="How to use tight-layout to fit plots within your figure cleanly."><div class="figure" id="id2">
+<div class="sphx-glr-thumbcontainer" tooltip="How to use tight-layout to fit plots within your figure cleanly."><div class="figure" id="id1">
 <img alt="../../_images/sphx_glr_tight_layout_guide_thumb.png" src="../../_images/sphx_glr_tight_layout_guide_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/02_intermediate/tight_layout_guide.html#sphx-glr-tutorials-02-intermediate-tight-layout-guide-py"><span class="std std-ref">Tight Layout guide</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/intermediate/tight_layout_guide.html#sphx-glr-tutorials-intermediate-tight-layout-guide-py"><span class="std std-ref">Tight Layout guide</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -219,9 +298,9 @@ of <a class="reference internal" href="../axes_api.html#matplotlib.axes.Axes" ti
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -327,52 +406,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

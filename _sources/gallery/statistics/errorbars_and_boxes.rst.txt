@@ -3,9 +3,9 @@
 .. _sphx_glr_gallery_statistics_errorbars_and_boxes.py:
 
 
-============================================================
-Demo on creating boxes from error bars using PatchCollection
-============================================================
+====================================================
+Creating boxes from error bars using PatchCollection
+====================================================
 
 In this example, we snazz up a pretty standard error bar plot by adding
 a rectangle patch defined by the limits of the bars in both the x- and
@@ -88,7 +88,7 @@ reveal the preferred pattern in writing functions for matplotlib:
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.076 seconds)
+**Total running time of the script:** ( 0 minutes  0.122 seconds)
 
 
 

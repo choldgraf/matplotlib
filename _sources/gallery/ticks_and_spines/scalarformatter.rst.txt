@@ -17,36 +17,25 @@ Example 3 : With Mathtext
 
 
 
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/ticks_and_spines/images/sphx_glr_scalarformatter_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/ticks_and_spines/images/sphx_glr_scalarformatter_002.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/ticks_and_spines/images/sphx_glr_scalarformatter_003.png
-            :scale: 47
-
-
-
-
-
 .. code-block:: python
 
     import matplotlib.pyplot as plt
     import numpy as np
     from matplotlib.ticker import ScalarFormatter
 
-    # Example 1
+
+
+
+
+
+
+Example 1
+
+
+
+.. code-block:: python
+
+
     x = np.arange(0, 1, .01)
     fig, [[ax1, ax2], [ax3, ax4]] = plt.subplots(2, 2, figsize=(6, 6))
     fig.text(0.5, 0.975, 'The new formatter, default settings',
@@ -71,7 +60,22 @@ Example 3 : With Mathtext
 
     fig.subplots_adjust(wspace=0.7, hspace=0.6)
 
-    # Example 2
+
+
+
+.. image:: /gallery/ticks_and_spines/images/sphx_glr_scalarformatter_001.png
+    :align: center
+
+
+
+
+Example 2
+
+
+
+.. code-block:: python
+
+
     x = np.arange(0, 1, .01)
     fig, [[ax1, ax2], [ax3, ax4]] = plt.subplots(2, 2, figsize=(6, 6))
     fig.text(0.5, 0.975, 'The new formatter, no numerical offset',
@@ -96,7 +100,22 @@ Example 3 : With Mathtext
 
     fig.subplots_adjust(wspace=0.7, hspace=0.6)
 
-    # Example 3
+
+
+
+.. image:: /gallery/ticks_and_spines/images/sphx_glr_scalarformatter_002.png
+    :align: center
+
+
+
+
+Example 3
+
+
+
+.. code-block:: python
+
+
     x = np.arange(0, 1, .01)
     fig, [[ax1, ax2], [ax3, ax4]] = plt.subplots(2, 2, figsize=(6, 6))
     fig.text(0.5, 0.975, 'The new formatter, with mathtext',
@@ -123,7 +142,15 @@ Example 3 : With Mathtext
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.967 seconds)
+
+
+.. image:: /gallery/ticks_and_spines/images/sphx_glr_scalarformatter_003.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  0.681 seconds)
 
 
 

@@ -54,7 +54,6 @@ Functions
    deprecated
    disconnect
    draw
-   draw_if_interactive
    errorbar
    eventplot
    figaspect
@@ -112,7 +111,6 @@ Functions
    matshow
    minorticks_off
    minorticks_on
-   new_figure_manager
    nipy_spectral
    over
    pause

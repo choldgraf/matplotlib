@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Set up your fork &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>Set up your fork &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="Git for development" href="git_development.html" />
     <link rel="next" title="Configure git" href="configure_git.html" />
     <link rel="prev" title="Making your own copy (fork) of Matplotlib" href="forking_hell.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=Set%20up%20your%20fork&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -80,7 +84,7 @@ type="text/css" />
         <li><a href="../../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li>
-          <li><a href="../index.html" >The Matplotlib Developers&#8217; Guide</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib Developers’ Guide</a> &raquo;</li>
           <li><a href="index.html" >Working with <em>Matplotlib</em> source code</a> &raquo;</li>
           <li><a href="git_development.html" accesskey="U">Git for development</a> &raquo;</li> 
       </ul>
@@ -89,16 +93,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Set up your fork</a><ul>
@@ -115,7 +109,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
-  <li><a href="../index.html">The Matplotlib Developers&#8217; Guide</a><ul>
+  <li><a href="../index.html">The Matplotlib Developers’ Guide</a><ul>
   <li><a href="index.html">Working with <em>Matplotlib</em> source code</a><ul>
   <li><a href="git_development.html">Git for development</a><ul>
       <li>Previous: <a href="forking_hell.html" title="previous chapter">Making your own copy (fork) of Matplotlib</a></li>
@@ -155,7 +149,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <p>First you follow the instructions for <a class="reference internal" href="forking_hell.html#forking"><span class="std std-ref">Making your own copy (fork) of Matplotlib</span></a>.</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>git clone git@github.com:your-user-name/matplotlib.git
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git clone https://github.com/your-user-name/matplotlib.git
 <span class="nb">cd</span> matplotlib
 git remote add upstream git://github.com/matplotlib/matplotlib.git
 </pre></div>
@@ -167,10 +161,10 @@ git remote add upstream git://github.com/matplotlib/matplotlib.git
 <h3>Clone your fork<a class="headerlink" href="#clone-your-fork" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">Clone your fork to the local computer with <code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span>
-<span class="pre">git&#64;github.com:your-user-name/matplotlib.git</span></code></p>
+<span class="pre">https://github.com/your-user-name/matplotlib.git</span></code></p>
 </li>
 <li><p class="first">Investigate.  Change directory to your new repo: <code class="docutils literal"><span class="pre">cd</span> <span class="pre">matplotlib</span></code>. Then
-<code class="docutils literal"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-a</span></code> to show you all branches.  You&#8217;ll get something
+<code class="docutils literal"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-a</span></code> to show you all branches.  You’ll get something
 like:</p>
 <div class="highlight-none"><div class="highlight"><pre><span></span>* master
 remotes/origin/master
@@ -191,18 +185,18 @@ you can merge in changes from trunk.</p>
 git remote add upstream git://github.com/matplotlib/matplotlib.git
 </pre></div>
 </div>
-<p><code class="docutils literal"><span class="pre">upstream</span></code> here is just the arbitrary name we&#8217;re using to refer to the
+<p><code class="docutils literal"><span class="pre">upstream</span></code> here is just the arbitrary name we’re using to refer to the
 main <a class="reference external" href="http://matplotlib.org">Matplotlib</a> repository at <a class="reference external" href="https://github.com/matplotlib/matplotlib">Matplotlib github</a>.</p>
-<p>Note that we&#8217;ve used <code class="docutils literal"><span class="pre">git://</span></code> for the URL rather than <code class="docutils literal"><span class="pre">git&#64;</span></code>.  The
-<code class="docutils literal"><span class="pre">git://</span></code> URL is read only.  This means we that we can&#8217;t accidentally
+<p>Note that we’ve used <code class="docutils literal"><span class="pre">git://</span></code> for the URL rather than <code class="docutils literal"><span class="pre">https://</span></code> or <code class="docutils literal"><span class="pre">git&#64;</span></code>.  The
+<code class="docutils literal"><span class="pre">git://</span></code> URL is read only.  This means we that we can’t accidentally
 (or deliberately) write to the upstream repo, and we are only going to
 use it to merge into our own code.</p>
 <p>Just for your own satisfaction, show yourself that you now have a new
-&#8216;remote&#8217;, with <code class="docutils literal"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span> <span class="pre">show</span></code>, giving you something like:</p>
+‘remote’, with <code class="docutils literal"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span> <span class="pre">show</span></code>, giving you something like:</p>
 <div class="highlight-none"><div class="highlight"><pre><span></span>upstream     git://github.com/matplotlib/matplotlib.git (fetch)
 upstream     git://github.com/matplotlib/matplotlib.git (push)
-origin       git@github.com:your-user-name/matplotlib.git (fetch)
-origin       git@github.com:your-user-name/matplotlib.git (push)
+origin       https://github.com/your-user-name/matplotlib.git (fetch)
+origin       https://github.com/your-user-name/matplotlib.git (push)
 </pre></div>
 </div>
 </div>
@@ -218,9 +212,9 @@ origin       git@github.com:your-user-name/matplotlib.git (push)
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -326,52 +320,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

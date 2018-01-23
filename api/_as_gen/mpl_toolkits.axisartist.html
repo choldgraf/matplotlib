@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>mpl_toolkits.axisartist &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>mpl_toolkits.axisartist &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,29 +28,36 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
+    <link rel="up" title="The Matplotlib axes_grid Toolkit API" href="../toolkits/axes_grid.html" />
+    <link rel="next" title="mpl_toolkits.axisartist.Axes" href="mpl_toolkits.axisartist.Axes.html" />
+    <link rel="prev" title="mpl_toolkits.axes_grid1.make_axes_locatable" href="mpl_toolkits.axes_grid1.make_axes_locatable.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=mpl_toolkits.axisartist&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -65,28 +72,26 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="mpl_toolkits.axisartist.Axes.html" title="mpl_toolkits.axisartist.Axes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mpl_toolkits.axes_grid1.make_axes_locatable.html" title="mpl_toolkits.axes_grid1.make_axes_locatable"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib API</a> &raquo;</li>
+          <li><a href="../toolkits/axes_grid.html" accesskey="U">The Matplotlib axes_grid Toolkit API</a> &raquo;</li> 
       </ul>
     </div>
 
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">mpl_toolkits.axisartist</a><ul>
@@ -99,6 +104,12 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">The Matplotlib API</a><ul>
+  <li><a href="../toolkits/axes_grid.html">The Matplotlib axes_grid Toolkit API</a><ul>
+      <li>Previous: <a href="mpl_toolkits.axes_grid1.make_axes_locatable.html" title="previous chapter">mpl_toolkits.axes_grid1.make_axes_locatable</a></li>
+      <li>Next: <a href="mpl_toolkits.axisartist.Axes.html" title="next chapter">mpl_toolkits.axisartist.Axes</a></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
@@ -142,7 +153,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <tr class="row-even"><td><a class="reference internal" href="mpl_toolkits.axisartist.AxesZero.html#mpl_toolkits.axisartist.AxesZero" title="mpl_toolkits.axisartist.AxesZero"><code class="xref py py-obj docutils literal"><span class="pre">AxesZero</span></code></a>(*kl,&nbsp;**kw)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="mpl_toolkits.axisartist.AxisArtist.html#mpl_toolkits.axisartist.AxisArtist" title="mpl_toolkits.axisartist.AxisArtist"><code class="xref py py-obj docutils literal"><span class="pre">AxisArtist</span></code></a>(axes,&nbsp;helper[,&nbsp;offset,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="mpl_toolkits.axisartist.AxisArtist.html#mpl_toolkits.axisartist.AxisArtist" title="mpl_toolkits.axisartist.AxisArtist"><code class="xref py py-obj docutils literal"><span class="pre">AxisArtist</span></code></a>(axes,&nbsp;helper[,&nbsp;offset,&nbsp;…])</td>
 <td>An artist which draws axis (a line along which the n-th axes coord is constant) line, ticks, ticklabels, and axis label.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="mpl_toolkits.axisartist.AxisArtistHelper.html#mpl_toolkits.axisartist.AxisArtistHelper" title="mpl_toolkits.axisartist.AxisArtistHelper"><code class="xref py py-obj docutils literal"><span class="pre">AxisArtistHelper</span></code></a></td>
@@ -160,14 +171,14 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <tr class="row-even"><td><a class="reference internal" href="mpl_toolkits.axisartist.GridHelperBase.html#mpl_toolkits.axisartist.GridHelperBase" title="mpl_toolkits.axisartist.GridHelperBase"><code class="xref py py-obj docutils literal"><span class="pre">GridHelperBase</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="mpl_toolkits.axisartist.GridHelperCurveLinear.html#mpl_toolkits.axisartist.GridHelperCurveLinear" title="mpl_toolkits.axisartist.GridHelperCurveLinear"><code class="xref py py-obj docutils literal"><span class="pre">GridHelperCurveLinear</span></code></a>(aux_trans[,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="mpl_toolkits.axisartist.GridHelperCurveLinear.html#mpl_toolkits.axisartist.GridHelperCurveLinear" title="mpl_toolkits.axisartist.GridHelperCurveLinear"><code class="xref py py-obj docutils literal"><span class="pre">GridHelperCurveLinear</span></code></a>(aux_trans[,&nbsp;…])</td>
 <td>aux_trans : a transform from the source (curved) coordinate to</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="mpl_toolkits.axisartist.GridHelperRectlinear.html#mpl_toolkits.axisartist.GridHelperRectlinear" title="mpl_toolkits.axisartist.GridHelperRectlinear"><code class="xref py py-obj docutils literal"><span class="pre">GridHelperRectlinear</span></code></a>(axes)</td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="mpl_toolkits.axisartist.GridlinesCollection.html#mpl_toolkits.axisartist.GridlinesCollection" title="mpl_toolkits.axisartist.GridlinesCollection"><code class="xref py py-obj docutils literal"><span class="pre">GridlinesCollection</span></code></a>(*kl,&nbsp;**kwargs)</td>
-<td><em>which</em> : &#8220;major&#8221; or &#8220;minor&#8221;</td>
+<td><em>which</em> : “major” or “minor”</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="mpl_toolkits.axisartist.HostAxes.html#mpl_toolkits.axisartist.HostAxes" title="mpl_toolkits.axisartist.HostAxes"><code class="xref py py-obj docutils literal"><span class="pre">HostAxes</span></code></a></td>
 <td>alias of <code class="xref py py-class docutils literal"><span class="pre">AxesHostAxes</span></code></td>
@@ -201,7 +212,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <tr class="row-odd"><td><a class="reference internal" href="mpl_toolkits.axisartist.host_axes_class_factory.html#mpl_toolkits.axisartist.host_axes_class_factory" title="mpl_toolkits.axisartist.host_axes_class_factory"><code class="xref py py-obj docutils literal"><span class="pre">host_axes_class_factory</span></code></a>([axes_class])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="mpl_toolkits.axisartist.parasite_axes_auxtrans_class_factory.html#mpl_toolkits.axisartist.parasite_axes_auxtrans_class_factory" title="mpl_toolkits.axisartist.parasite_axes_auxtrans_class_factory"><code class="xref py py-obj docutils literal"><span class="pre">parasite_axes_auxtrans_class_factory</span></code></a>([...])</td>
+<tr class="row-even"><td><a class="reference internal" href="mpl_toolkits.axisartist.parasite_axes_auxtrans_class_factory.html#mpl_toolkits.axisartist.parasite_axes_auxtrans_class_factory" title="mpl_toolkits.axisartist.parasite_axes_auxtrans_class_factory"><code class="xref py py-obj docutils literal"><span class="pre">parasite_axes_auxtrans_class_factory</span></code></a>([…])</td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="mpl_toolkits.axisartist.parasite_axes_class_factory.html#mpl_toolkits.axisartist.parasite_axes_class_factory" title="mpl_toolkits.axisartist.parasite_axes_class_factory"><code class="xref py py-obj docutils literal"><span class="pre">parasite_axes_class_factory</span></code></a>([axes_class])</td>
@@ -224,9 +235,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -332,52 +343,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

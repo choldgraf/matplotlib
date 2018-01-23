@@ -20,7 +20,7 @@ Use a PNG file as a watermark
 
  Out::
 
-    loading /Users/choldgraf/Dropbox/github/forks/python/matplotlib/lib/matplotlib/mpl-data/sample_data/logo2.png
+    loading /mnt/c/Users/chold/Dropbox/github/forks/python/viz/matplotlib/lib/matplotlib/mpl-data/sample_data/logo2.png
 
 
 
@@ -53,7 +53,7 @@ Use a PNG file as a watermark
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.109 seconds)
+**Total running time of the script:** ( 0 minutes  0.047 seconds)
 
 
 

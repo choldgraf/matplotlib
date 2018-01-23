@@ -86,7 +86,7 @@ A simple example of an animated plot... In 3D!
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.405 seconds)
+**Total running time of the script:** ( 0 minutes  0.208 seconds)
 
 
 

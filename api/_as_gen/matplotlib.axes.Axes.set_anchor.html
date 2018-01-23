@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.axes.Axes.set_anchor &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.axes.Axes.set_anchor &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="Axes class" href="../axes_api.html" />
     <link rel="next" title="matplotlib.axes.Axes.get_axes_locator" href="matplotlib.axes.Axes.get_axes_locator.html" />
     <link rel="prev" title="matplotlib.axes.Axes.get_anchor" href="matplotlib.axes.Axes.get_anchor.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.axes.Axes.set_anchor&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -87,17 +91,7 @@ type="text/css" />
 
   
       <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/><div class="relations">
+        <div class="sphinxsidebarwrapper"><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
@@ -139,49 +133,65 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <dl class="method">
 <dt id="matplotlib.axes.Axes.set_anchor">
 <code class="descclassname">Axes.</code><code class="descname">set_anchor</code><span class="sig-paren">(</span><em>anchor</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.axes.Axes.set_anchor" title="Permalink to this definition">¶</a></dt>
-<dd><p><em>anchor</em></p>
-<blockquote>
-<div><table border="1" class="docutils">
-<colgroup>
-<col width="29%" />
-<col width="71%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">value</th>
-<th class="head">description</th>
-</tr>
-</thead>
+<dd><p>Define the anchor location.</p>
+<p>The actual drawing area (active position) of the Axes may be smaller
+than the Bbox (original position) when a fixed aspect is required. The
+anchor defines where the drawing area will be located within the
+available space.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
 <tbody valign="top">
-<tr class="row-even"><td>&#8216;C&#8217;</td>
-<td>Center</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>anchor</strong> : str or 2-tuple of floats</p>
+<blockquote class="last">
+<div><p>The anchor position may be either:</p>
+<ul>
+<li><p class="first">a sequence (<em>cx</em>, <em>cy</em>). <em>cx</em> and <em>cy</em> may range from 0
+to 1, where 0 is left or bottom and 1 is right or top.</p>
+</li>
+<li><p class="first">a string using cardinal directions as abbreviation:</p>
+<ul class="simple">
+<li>‘C’ for centered</li>
+<li>‘S’ (south) for bottom-center</li>
+<li>‘SW’ (south west) for bottom-left</li>
+<li>etc.</li>
+</ul>
+<p>Here is an overview of the possible positions:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>‘NW’</td>
+<td>‘N’</td>
+<td>‘NE’</td>
 </tr>
-<tr class="row-odd"><td>&#8216;SW&#8217;</td>
-<td>bottom left</td>
+<tr class="row-even"><td>‘W’</td>
+<td>‘C’</td>
+<td>‘E’</td>
 </tr>
-<tr class="row-even"><td>&#8216;S&#8217;</td>
-<td>bottom</td>
-</tr>
-<tr class="row-odd"><td>&#8216;SE&#8217;</td>
-<td>bottom right</td>
-</tr>
-<tr class="row-even"><td>&#8216;E&#8217;</td>
-<td>right</td>
-</tr>
-<tr class="row-odd"><td>&#8216;NE&#8217;</td>
-<td>top right</td>
-</tr>
-<tr class="row-even"><td>&#8216;N&#8217;</td>
-<td>top</td>
-</tr>
-<tr class="row-odd"><td>&#8216;NW&#8217;</td>
-<td>top left</td>
-</tr>
-<tr class="row-even"><td>&#8216;W&#8217;</td>
-<td>left</td>
+<tr class="row-odd"><td>‘SW’</td>
+<td>‘S’</td>
+<td>‘SE’</td>
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
 </div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="matplotlib.axes.Axes.set_aspect.html#matplotlib.axes.Axes.set_aspect" title="matplotlib.axes.Axes.set_aspect"><code class="xref py py-obj docutils literal"><span class="pre">matplotlib.axes.Axes.set_aspect</span></code></a></dt>
+<dd>for a description of aspect handling.</dd>
+</dl>
+</div>
 </dd></dl>
 
 <div class="clearer"></div></div>
@@ -195,9 +205,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -303,52 +313,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

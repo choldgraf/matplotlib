@@ -3,9 +3,9 @@
 .. _sphx_glr_gallery_statistics_customized_violin.py:
 
 
-=================================
-Demo of violin plot customization
-=================================
+=========================
+Violin plot customization
+=========================
 
 This example demonstrates how to fully customize violin plots.
 The first plot shows the default style by providing only
@@ -91,7 +91,7 @@ section: http://scikit-learn.org/stable/modules/density.html
     plt.subplots_adjust(bottom=0.15, wspace=0.05)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.299 seconds)
+**Total running time of the script:** ( 0 minutes  0.346 seconds)
 
 
 

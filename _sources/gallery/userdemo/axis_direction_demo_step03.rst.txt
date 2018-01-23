@@ -23,6 +23,7 @@ Axis Direction Demo Step03
     import matplotlib.pyplot as plt
     import mpl_toolkits.axisartist as axisartist
 
+
     def setup_axes(fig, rect):
         ax = axisartist.Subplot(fig, rect)
         fig.add_axes(ax)
@@ -39,7 +40,8 @@ Axis Direction Demo Step03
 
         return ax
 
-    fig = plt.figure(figsize=(6,2.5))
+
+    fig = plt.figure(figsize=(6, 2.5))
     fig.subplots_adjust(bottom=0.2, top=0.8)
 
     ax1 = setup_axes(fig, "121")
@@ -58,10 +60,9 @@ Axis Direction Demo Step03
                  xytext=(0, -10), textcoords="offset points",
                  va="top", ha="center")
 
-
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.166 seconds)
+**Total running time of the script:** ( 0 minutes  0.093 seconds)
 
 
 

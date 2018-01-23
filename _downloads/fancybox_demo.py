@@ -3,11 +3,37 @@
 Fancybox Demo
 =============
 
+Plotting fancy boxes with Matplotlib.
+
+The following examples show how to plot boxes with different
+visual properties.
 """
 import matplotlib.pyplot as plt
 import matplotlib.transforms as mtransforms
+import matplotlib.patches as mpatch
 from matplotlib.patches import FancyBboxPatch
 
+###############################################################################
+# First we'll show some sample boxes with fancybox.
+
+styles = mpatch.BoxStyle.get_styles()
+spacing = 1.2
+
+figheight = (spacing * len(styles) + .5)
+fig1 = plt.figure(1, (4 / 1.5, figheight / 1.5))
+fontsize = 0.3 * 72
+
+for i, stylename in enumerate(sorted(styles)):
+    fig1.text(0.5, (spacing * (len(styles) - i) - 0.5) / figheight, stylename,
+              ha="center",
+              size=fontsize,
+              transform=fig1.transFigure,
+              bbox=dict(boxstyle=stylename, fc="w", ec="k"))
+
+plt.show()
+
+###############################################################################
+# Next we'll show off multiple fancy boxes at once.
 
 # Bbox object around which the fancy box will be drawn.
 bb = mtransforms.Bbox([[0.3, 0.4], [0.7, 0.6]])
@@ -39,8 +65,8 @@ def test1(ax):
             size=10, transform=ax.transAxes)
 
     # draws control points for the fancy box.
-    #l = p_fancy.get_path().vertices
-    #ax.plot(l[:,0], l[:,1], ".")
+    # l = p_fancy.get_path().vertices
+    # ax.plot(l[:,0], l[:,1], ".")
 
     # draw the original bbox in black
     draw_bbox(ax, bb)
@@ -64,15 +90,15 @@ def test2(ax):
 
     p_fancy.set_boxstyle("round,pad=0.1, rounding_size=0.2")
     # or
-    #p_fancy.set_boxstyle("round", pad=0.1, rounding_size=0.2)
+    # p_fancy.set_boxstyle("round", pad=0.1, rounding_size=0.2)
 
     ax.text(0.1, 0.8,
-            ' boxstyle="round,pad=0.1\n rounding\\_size=0.2"',
+            ' boxstyle="round,pad=0.1\n rounding_size=0.2"',
             size=10, transform=ax.transAxes)
 
     # draws control points for the fancy box.
-    #l = p_fancy.get_path().vertices
-    #ax.plot(l[:,0], l[:,1], ".")
+    # l = p_fancy.get_path().vertices
+    # ax.plot(l[:,0], l[:,1], ".")
 
     draw_bbox(ax, bb)
 
@@ -92,12 +118,12 @@ def test3(ax):
     ax.add_patch(p_fancy)
 
     ax.text(0.1, 0.8,
-            ' boxstyle="round,pad=0.1"\n mutation\\_scale=2',
+            ' boxstyle="round,pad=0.1"\n mutation_scale=2',
             size=10, transform=ax.transAxes)
 
     # draws control points for the fancy box.
-    #l = p_fancy.get_path().vertices
-    #ax.plot(l[:,0], l[:,1], ".")
+    # l = p_fancy.get_path().vertices
+    # ax.plot(l[:,0], l[:,1], ".")
 
     draw_bbox(ax, bb)
 
@@ -126,7 +152,7 @@ def test4(ax):
     ax.add_patch(p_fancy)
 
     ax.text(0.1, 0.8,
-            ' boxstyle="round,pad=0.3"\n mutation\\_aspect=.5',
+            ' boxstyle="round,pad=0.3"\n mutation_aspect=.5',
             size=10, transform=ax.transAxes)
 
     draw_bbox(ax, bb)
@@ -165,5 +191,6 @@ def test_all():
 
     plt.draw()
     plt.show()
+
 
 test_all()

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.savefig &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.pyplot.savefig &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
     <link rel="next" title="matplotlib.pyplot.sca" href="matplotlib.pyplot.sca.html" />
     <link rel="prev" title="matplotlib.pyplot.rgrids" href="matplotlib.pyplot.rgrids.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.pyplot.savefig&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -88,16 +92,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">matplotlib.pyplot.savefig</a><ul>
@@ -156,131 +150,141 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 </pre></div>
 </div>
 <p>The output formats available depend on the backend being used.</p>
-<p>Arguments:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>fname</strong> : str or file-like object</p>
 <blockquote>
-<div><dl class="docutils">
-<dt><em>fname</em>:</dt>
-<dd><p class="first">A string containing a path to a filename, or a Python
+<div><p>A string containing a path to a filename, or a Python
 file-like object, or possibly some backend-dependent object
 such as <a class="reference internal" href="../backend_pdf_api.html#matplotlib.backends.backend_pdf.PdfPages" title="matplotlib.backends.backend_pdf.PdfPages"><code class="xref py py-class docutils literal"><span class="pre">PdfPages</span></code></a>.</p>
 <p>If <em>format</em> is <em>None</em> and <em>fname</em> is a string, the output
 format is deduced from the extension of the filename. If
 the filename has no extension, the value of the rc parameter
 <code class="docutils literal"><span class="pre">savefig.format</span></code> is used.</p>
-<p class="last">If <em>fname</em> is not a string, remember to specify <em>format</em> to
+<p>If <em>fname</em> is not a string, remember to specify <em>format</em> to
 ensure that the correct backend is used.</p>
-</dd>
-</dl>
 </div></blockquote>
-<p>Keyword arguments:</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first"><strong>dpi</strong> : [ <em>None</em> | scalar &gt; 0 | ‘figure’]</p>
 <blockquote>
-<div><dl class="docutils">
-<dt><em>dpi</em>: [ <em>None</em> | <code class="docutils literal"><span class="pre">scalar</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> | &#8216;figure&#8217;]</dt>
-<dd>The resolution in dots per inch.  If <em>None</em> it will default to
-the value <code class="docutils literal"><span class="pre">savefig.dpi</span></code> in the matplotlibrc file. If &#8216;figure&#8217;
-it will set the dpi to be the value of the figure.</dd>
-<dt><em>facecolor</em>, <em>edgecolor</em>:</dt>
-<dd>the colors of the figure rectangle</dd>
-<dt><em>orientation</em>: [ &#8216;landscape&#8217; | &#8216;portrait&#8217; ]</dt>
-<dd>not supported on all backends; currently only on postscript output</dd>
-<dt><em>papertype</em>:</dt>
-<dd>One of &#8216;letter&#8217;, &#8216;legal&#8217;, &#8216;executive&#8217;, &#8216;ledger&#8217;, &#8216;a0&#8217; through
-&#8216;a10&#8217;, &#8216;b0&#8217; through &#8216;b10&#8217;. Only supported for postscript
-output.</dd>
-<dt><em>format</em>:</dt>
-<dd>One of the file extensions supported by the active
-backend.  Most backends support png, pdf, ps, eps and svg.</dd>
-<dt><em>transparent</em>:</dt>
-<dd>If <em>True</em>, the axes patches will all be transparent; the
+<div><p>The resolution in dots per inch.  If <em>None</em> it will default to
+the value <code class="docutils literal"><span class="pre">savefig.dpi</span></code> in the matplotlibrc file. If ‘figure’
+it will set the dpi to be the value of the figure.</p>
+</div></blockquote>
+<p><strong>facecolor</strong> : color spec or None, optional</p>
+<blockquote>
+<div><p>the facecolor of the figure; if None, defaults to savefig.facecolor</p>
+</div></blockquote>
+<p><strong>edgecolor</strong> : color spec or None, optional</p>
+<blockquote>
+<div><p>the edgecolor of the figure; if None, defaults to savefig.edgecolor</p>
+</div></blockquote>
+<p><strong>orientation</strong> : {‘landscape’, ‘portrait’}</p>
+<blockquote>
+<div><p>not supported on all backends; currently only on postscript output</p>
+</div></blockquote>
+<p><strong>papertype</strong> : str</p>
+<blockquote>
+<div><p>One of ‘letter’, ‘legal’, ‘executive’, ‘ledger’, ‘a0’ through
+‘a10’, ‘b0’ through ‘b10’. Only supported for postscript
+output.</p>
+</div></blockquote>
+<p><strong>format</strong> : str</p>
+<blockquote>
+<div><p>One of the file extensions supported by the active
+backend.  Most backends support png, pdf, ps, eps and svg.</p>
+</div></blockquote>
+<p><strong>transparent</strong> : bool</p>
+<blockquote>
+<div><p>If <em>True</em>, the axes patches will all be transparent; the
 figure patch will also be transparent unless facecolor
 and/or edgecolor are specified via kwargs.
 This is useful, for example, for displaying
 a plot on top of a colored background on a web page.  The
 transparency of these patches will be restored to their
-original values upon exit of this function.</dd>
-<dt><em>frameon</em>:</dt>
-<dd>If <em>True</em>, the figure patch will be colored, if <em>False</em>, the
-figure background will be transparent.  If not provided, the
-rcParam &#8216;savefig.frameon&#8217; will be used.</dd>
-<dt><em>bbox_inches</em>:</dt>
-<dd>Bbox in inches. Only the given portion of the figure is
-saved. If &#8216;tight&#8217;, try to figure out the tight bbox of
-the figure.</dd>
-<dt><em>pad_inches</em>:</dt>
-<dd>Amount of padding around the figure when bbox_inches is
-&#8216;tight&#8217;.</dd>
-<dt><em>bbox_extra_artists</em>:</dt>
-<dd>A list of extra artists that will be considered when the
-tight bbox is calculated.</dd>
-</dl>
+original values upon exit of this function.</p>
 </div></blockquote>
+<p><strong>frameon</strong> : bool</p>
+<blockquote>
+<div><p>If <em>True</em>, the figure patch will be colored, if <em>False</em>, the
+figure background will be transparent.  If not provided, the
+rcParam ‘savefig.frameon’ will be used.</p>
+</div></blockquote>
+<p><strong>bbox_inches</strong> : str or <a class="reference internal" href="../transformations.html#matplotlib.transforms.Bbox" title="matplotlib.transforms.Bbox"><code class="xref py py-obj docutils literal"><span class="pre">Bbox</span></code></a>, optional</p>
+<blockquote>
+<div><p>Bbox in inches. Only the given portion of the figure is
+saved. If ‘tight’, try to figure out the tight bbox of
+the figure. If None, use savefig.bbox</p>
+</div></blockquote>
+<p><strong>pad_inches</strong> : scalar, optional</p>
+<blockquote>
+<div><p>Amount of padding around the figure when bbox_inches is
+‘tight’. If None, use savefig.pad_inches</p>
+</div></blockquote>
+<p><strong>bbox_extra_artists</strong> : list of <a class="reference internal" href="../artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code></a>, optional</p>
+<blockquote class="last">
+<div><p>A list of extra artists that will be considered when the
+tight bbox is calculated.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <div class="section" id="examples-using-matplotlib-pyplot-savefig">
 <h2>Examples using <code class="docutils literal"><span class="pre">matplotlib.pyplot.savefig</span></code><a class="headerlink" href="#examples-using-matplotlib-pyplot-savefig" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id1">
-<img alt="../../_images/sphx_glr_rasterization_demo_thumb.png" src="../../_images/sphx_glr_rasterization_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/rasterization_demo.html#sphx-glr-gallery-misc-rasterization-demo-py"><span class="std std-ref">Rasterization Demo</span></a></span></p>
+<div class="sphx-glr-thumbcontainer" tooltip="This script demonstrates that font effects specified in your pdftex.map are now supported in pd..."><div class="figure" id="id1">
+<img alt="../../_images/sphx_glr_usetex_fonteffects_thumb.png" src="../../_images/sphx_glr_usetex_fonteffects_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/text_labels_and_annotations/usetex_fonteffects.html#sphx-glr-gallery-text-labels-and-annotations-usetex-fonteffects-py"><span class="std std-ref">Usetex Fonteffects</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrate SVG filtering effects which might be used with mpl."><div class="figure" id="id2">
-<img alt="../../_images/sphx_glr_svg_filter_line_thumb.png" src="../../_images/sphx_glr_svg_filter_line_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/svg_filter_line.html#sphx-glr-gallery-misc-svg-filter-line-py"><span class="std std-ref">SVG Filter Line</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id2">
+<img alt="../../_images/sphx_glr_stix_fonts_demo_thumb.png" src="../../_images/sphx_glr_stix_fonts_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/text_labels_and_annotations/stix_fonts_demo.html#sphx-glr-gallery-text-labels-and-annotations-stix-fonts-demo-py"><span class="std std-ref">STIX Fonts Demo</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrate SVG filtering effects which might be used with mpl. The pie chart drawing code is b..."><div class="figure" id="id3">
-<img alt="../../_images/sphx_glr_svg_filter_pie_thumb.png" src="../../_images/sphx_glr_svg_filter_pie_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/svg_filter_pie.html#sphx-glr-gallery-misc-svg-filter-pie-py"><span class="std std-ref">SVG Filter Pie</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="print png to standard out"><div class="figure" id="id3">
+<img alt="../../_images/sphx_glr_print_stdout_sgskip_thumb.png" src="../../_images/sphx_glr_print_stdout_sgskip_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/print_stdout_sgskip.html#sphx-glr-gallery-misc-print-stdout-sgskip-py"><span class="std std-ref">Print Stdout</span></a></span></p>
 </div>
 </div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id4">
 <img alt="../../_images/sphx_glr_tight_bbox_test_thumb.png" src="../../_images/sphx_glr_tight_bbox_test_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/tight_bbox_test.html#sphx-glr-gallery-misc-tight-bbox-test-py"><span class="std std-ref">Tight Bbox Test</span></a></span></p>
 </div>
 </div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id5">
-<img alt="../../_images/sphx_glr_movie_demo_sgskip_thumb.png" src="../../_images/sphx_glr_movie_demo_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/movie_demo_sgskip.html#sphx-glr-gallery-pylab-examples-movie-demo-sgskip-py"><span class="std std-ref">Movie Demo</span></a></span></p>
+<img alt="../../_images/sphx_glr_rasterization_demo_thumb.png" src="../../_images/sphx_glr_rasterization_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/rasterization_demo.html#sphx-glr-gallery-misc-rasterization-demo-py"><span class="std std-ref">Rasterization Demo</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="print png to standard out"><div class="figure" id="id6">
-<img alt="../../_images/sphx_glr_print_stdout_sgskip_thumb.png" src="../../_images/sphx_glr_print_stdout_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/print_stdout_sgskip.html#sphx-glr-gallery-pylab-examples-print-stdout-sgskip-py"><span class="std std-ref">Print Stdout</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrate SVG filtering effects which might be used with mpl."><div class="figure" id="id6">
+<img alt="../../_images/sphx_glr_svg_filter_line_thumb.png" src="../../_images/sphx_glr_svg_filter_line_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/svg_filter_line.html#sphx-glr-gallery-misc-svg-filter-line-py"><span class="std std-ref">SVG Filter Line</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id7">
-<img alt="../../_images/sphx_glr_simple_plot_thumb.png" src="../../_images/sphx_glr_simple_plot_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/simple_plot.html#sphx-glr-gallery-pylab-examples-simple-plot-py"><span class="std std-ref">Simple Plot</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrate SVG filtering effects which might be used with mpl. The pie chart drawing code is b..."><div class="figure" id="id7">
+<img alt="../../_images/sphx_glr_svg_filter_pie_thumb.png" src="../../_images/sphx_glr_svg_filter_pie_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/svg_filter_pie.html#sphx-glr-gallery-misc-svg-filter-pie-py"><span class="std std-ref">SVG Filter Pie</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id8">
-<img alt="../../_images/sphx_glr_stix_fonts_demo_thumb.png" src="../../_images/sphx_glr_stix_fonts_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/stix_fonts_demo.html#sphx-glr-gallery-pylab-examples-stix-fonts-demo-py"><span class="std std-ref">STIX Fonts Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="You can use TeX to render all of your matplotlib text if the rc parameter text.usetex is set.  ..."><div class="figure" id="id9">
-<img alt="../../_images/sphx_glr_tex_demo_thumb.png" src="../../_images/sphx_glr_tex_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/tex_demo.html#sphx-glr-gallery-pylab-examples-tex-demo-py"><span class="std std-ref">Tex Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This script demonstrates that font effects specified in your pdftex.map are now supported in pd..."><div class="figure" id="id10">
-<img alt="../../_images/sphx_glr_usetex_fonteffects_thumb.png" src="../../_images/sphx_glr_usetex_fonteffects_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/usetex_fonteffects.html#sphx-glr-gallery-pylab-examples-usetex-fonteffects-py"><span class="std std-ref">Usetex Fonteffects</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Demo of TeX rendering."><div class="figure" id="id11">
-<img alt="../../_images/sphx_glr_tex_demo_thumb1.png" src="../../_images/sphx_glr_tex_demo_thumb1.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pyplots/tex_demo.html#sphx-glr-gallery-pyplots-tex-demo-py"><span class="std std-ref">Tex Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrate how to create an interactive histogram, in which bars are hidden or shown by clicki..."><div class="figure" id="id12">
-<img alt="../../_images/sphx_glr_svg_histogram_sgskip_thumb.png" src="../../_images/sphx_glr_svg_histogram_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/user_interfaces/svg_histogram_sgskip.html#sphx-glr-gallery-user-interfaces-svg-histogram-sgskip-py"><span class="std std-ref">SVG Histogram</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to create a tooltip that will show up when hovering over a matplotlib pa..."><div class="figure" id="id13">
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to create a tooltip that will show up when hovering over a matplotlib pa..."><div class="figure" id="id8">
 <img alt="../../_images/sphx_glr_svg_tooltip_sgskip_thumb.png" src="../../_images/sphx_glr_svg_tooltip_sgskip_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/user_interfaces/svg_tooltip_sgskip.html#sphx-glr-gallery-user-interfaces-svg-tooltip-sgskip-py"><span class="std std-ref">SVG Tooltip</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id14">
+</div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrate how to create an interactive histogram, in which bars are hidden or shown by clicki..."><div class="figure" id="id9">
+<img alt="../../_images/sphx_glr_svg_histogram_sgskip_thumb.png" src="../../_images/sphx_glr_svg_histogram_sgskip_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/user_interfaces/svg_histogram_sgskip.html#sphx-glr-gallery-user-interfaces-svg-histogram-sgskip-py"><span class="std std-ref">SVG Histogram</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id10">
+<img alt="../../_images/sphx_glr_pgf_texsystem_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_texsystem_sgskip_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_texsystem_sgskip.html#sphx-glr-gallery-userdemo-pgf-texsystem-sgskip-py"><span class="std std-ref">Pgf Texsystem</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id11">
 <img alt="../../_images/sphx_glr_pgf_fonts_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_fonts_sgskip_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_fonts_sgskip.html#sphx-glr-gallery-userdemo-pgf-fonts-sgskip-py"><span class="std std-ref">Pgf Fonts</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id15">
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id12">
 <img alt="../../_images/sphx_glr_pgf_preamble_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_preamble_sgskip_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_preamble_sgskip.html#sphx-glr-gallery-userdemo-pgf-preamble-sgskip-py"><span class="std std-ref">Pgf Preamble</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id16">
-<img alt="../../_images/sphx_glr_pgf_texsystem_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_texsystem_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_texsystem_sgskip.html#sphx-glr-gallery-userdemo-pgf-texsystem-sgskip-py"><span class="std std-ref">Pgf Texsystem</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -294,9 +298,9 @@ tight bbox is calculated.</dd>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -402,52 +406,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

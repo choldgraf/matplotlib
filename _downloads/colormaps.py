@@ -27,7 +27,7 @@ steps in the color space. Researchers have found that the human brain
 perceives changes in the lightness parameter as changes in the data
 much better than, for example, changes in hue. Therefore, colormaps
 which have monotonically increasing lightness through the colormap
-will be better interpreted by the viewer. A wonderful example of 
+will be better interpreted by the viewer. A wonderful example of
 perceptually uniform colormaps is [colorcet]_.
 
 Color can be represented in 3D space in various ways. One way to represent color
@@ -311,7 +311,7 @@ for cmap_category, cmap_list in cmaps.items():
 # have very little grayscale change. If a colormap like this was used in a plot
 # and then the plot was printed to grayscale, a lot of the information may map to
 # the same gray values. The Diverging colormaps mostly vary from darker gray on
-# the outer edges to white in the middle. Some (PuOr and seismic) have noticably
+# the outer edges to white in the middle. Some (PuOr and seismic) have noticeably
 # darker gray on one side than the other and therefore are not very symmetric.
 # coolwarm has little range of gray scale and would print to a more uniform plot,
 # losing a lot of detail. Note that overlaid, labeled contours could help
@@ -340,11 +340,11 @@ def plot_color_gradients(cmap_category, cmap_list):
     for ax, name in zip(axes, cmap_list):
 
         # Get RGB values for colormap.
-        rgb = cm.get_cmap(plt.get_cmap(name))(x)[np.newaxis,:,:3]
+        rgb = cm.get_cmap(plt.get_cmap(name))(x)[np.newaxis, :, :3]
 
         # Get colormap in CAM02-UCS colorspace. We want the lightness.
         lab = cspace_converter("sRGB1", "CAM02-UCS")(rgb)
-        L = lab[0,:,0]
+        L = lab[0, :, 0]
         L = np.float32(np.vstack((L, L, L)))
 
         ax[0].imshow(gradient, aspect='auto', cmap=plt.get_cmap(name))
@@ -388,8 +388,6 @@ for cmap_category, cmap_list in cmaps.items():
 # .. [list-colormaps] https://gist.github.com/endolith/2719900#id7
 # .. [mycarta-banding] https://mycarta.wordpress.com/2012/10/14/the-rainbow-is-deadlong-live-the-rainbow-part-4-cie-lab-heated-body/
 # .. [mycarta-jet] https://mycarta.wordpress.com/2012/10/06/the-rainbow-is-deadlong-live-the-rainbow-part-3/
-# .. [mycarta-lablinear] https://mycarta.wordpress.com/2012/12/06/the-rainbow-is-deadlong-live-the-rainbow-part-5-cie-lab-linear-l-rainbow/
-# .. [mycarta-cubelaw] https://mycarta.wordpress.com/2013/02/21/perceptual-rainbow-palette-the-method/
 # .. [bw] http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/
 # .. [colorblindness] http://www.color-blindness.com/
 # .. [vischeck] http://www.vischeck.com/vischeck/

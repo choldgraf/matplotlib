@@ -31,9 +31,9 @@ units.
 
     from basic_units import cm, inch
     import matplotlib.pyplot as plt
-    import numpy
+    import numpy as np
 
-    cms = cm * numpy.arange(0, 10, 2)
+    cms = cm * np.arange(0, 10, 2)
 
     fig = plt.figure()
 
@@ -53,7 +53,7 @@ units.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.327 seconds)
+**Total running time of the script:** ( 0 minutes  0.214 seconds)
 
 
 

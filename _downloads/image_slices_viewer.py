@@ -3,9 +3,11 @@
 Image Slices Viewer
 ===================
 
+Scroll through 2D image slices of a 3D array.
 """
 from __future__ import print_function
-import numpy
+
+import numpy as np
 import matplotlib.pyplot as plt
 
 
@@ -24,9 +26,9 @@ class IndexTracker(object):
     def onscroll(self, event):
         print("%s %s" % (event.button, event.step))
         if event.button == 'up':
-            self.ind = numpy.clip(self.ind + 1, 0, self.slices - 1)
+            self.ind = (self.ind + 1) % self.slices
         else:
-            self.ind = numpy.clip(self.ind - 1, 0, self.slices - 1)
+            self.ind = (self.ind - 1) % self.slices
         self.update()
 
     def update(self):
@@ -37,7 +39,7 @@ class IndexTracker(object):
 
 fig, ax = plt.subplots(1, 1)
 
-X = numpy.random.rand(20, 20, 40)
+X = np.random.rand(20, 20, 40)
 
 tracker = IndexTracker(ax, X)
 

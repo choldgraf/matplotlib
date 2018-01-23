@@ -12,24 +12,6 @@ second is an image animation.
 
 
 
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/animation/images/sphx_glr_basic_example_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/animation/images/sphx_glr_basic_example_002.png
-            :scale: 47
-
-
-
-
-
 .. code-block:: python
 
 
@@ -41,6 +23,16 @@ second is an image animation.
     def update_line(num, data, line):
         line.set_data(data[..., :num])
         return line,
+
+
+
+
+
+
+
+
+.. code-block:: python
+
 
     fig1 = plt.figure()
 
@@ -58,6 +50,19 @@ second is an image animation.
 
     # To save the animation, use the command: line_ani.save('lines.mp4')
 
+
+
+
+.. image:: /gallery/animation/images/sphx_glr_basic_example_001.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
+
     fig2 = plt.figure()
 
     x = np.arange(-9, 10)
@@ -74,7 +79,15 @@ second is an image animation.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.679 seconds)
+
+
+.. image:: /gallery/animation/images/sphx_glr_basic_example_002.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  0.689 seconds)
 
 
 

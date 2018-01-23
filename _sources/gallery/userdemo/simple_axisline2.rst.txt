@@ -24,7 +24,7 @@ Simple Axisline2
     from mpl_toolkits.axisartist.axislines import SubplotZero
     import numpy as np
 
-    fig = plt.figure(1, (4,3))
+    fig = plt.figure(1, (4, 3))
 
     # a subplot with two additional axis, "xzero" and "yzero". "xzero" is
     # y=0 line, and "yzero" is x=0 line.
@@ -44,7 +44,7 @@ Simple Axisline2
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.075 seconds)
+**Total running time of the script:** ( 0 minutes  0.044 seconds)
 
 
 

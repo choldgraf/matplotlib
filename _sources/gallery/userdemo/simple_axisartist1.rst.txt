@@ -42,8 +42,7 @@ Simple Axisartist1
 
     plt.show()
 
-
-**Total running time of the script:** ( 0 minutes  0.081 seconds)
+**Total running time of the script:** ( 0 minutes  0.090 seconds)
 
 
 

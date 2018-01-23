@@ -23,13 +23,13 @@ data from the dataset that generated the mean and stddev.
 
 .. code-block:: python
 
-    import numpy
+    import numpy as np
     import matplotlib.pyplot as plt
 
 
-    X = numpy.random.rand(100, 1000)
-    xs = numpy.mean(X, axis=1)
-    ys = numpy.std(X, axis=1)
+    X = np.random.rand(100, 1000)
+    xs = np.mean(X, axis=1)
+    ys = np.std(X, axis=1)
 
     fig, ax = plt.subplots()
     ax.set_title('click on point to plot time series')
@@ -59,7 +59,7 @@ data from the dataset that generated the mean and stddev.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.063 seconds)
+**Total running time of the script:** ( 0 minutes  0.089 seconds)
 
 
 

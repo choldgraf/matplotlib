@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>mpl_toolkits.axisartist.AxisArtist &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>mpl_toolkits.axisartist.AxisArtist &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,29 +28,36 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
+    <link rel="up" title="mpl_toolkits.axisartist" href="mpl_toolkits.axisartist.html" />
+    <link rel="next" title="mpl_toolkits.axisartist.AxisArtistHelper" href="mpl_toolkits.axisartist.AxisArtistHelper.html" />
+    <link rel="prev" title="mpl_toolkits.axisartist.AxesZero" href="mpl_toolkits.axisartist.AxesZero.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=mpl_toolkits.axisartist.AxisArtist&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -65,31 +72,38 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="mpl_toolkits.axisartist.AxisArtistHelper.html" title="mpl_toolkits.axisartist.AxisArtistHelper"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mpl_toolkits.axisartist.AxesZero.html" title="mpl_toolkits.axisartist.AxesZero"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib API</a> &raquo;</li>
+          <li><a href="../toolkits/axes_grid.html" >The Matplotlib axes_grid Toolkit API</a> &raquo;</li>
+          <li><a href="mpl_toolkits.axisartist.html" accesskey="U">mpl_toolkits.axisartist</a> &raquo;</li> 
       </ul>
     </div>
 
   
       <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/><div class="relations">
+        <div class="sphinxsidebarwrapper"><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../index.html">The Matplotlib API</a><ul>
+  <li><a href="../toolkits/axes_grid.html">The Matplotlib axes_grid Toolkit API</a><ul>
+  <li><a href="mpl_toolkits.axisartist.html">mpl_toolkits.axisartist</a><ul>
+      <li>Previous: <a href="mpl_toolkits.axisartist.AxesZero.html" title="previous chapter">mpl_toolkits.axisartist.AxesZero</a></li>
+      <li>Next: <a href="mpl_toolkits.axisartist.AxisArtistHelper.html" title="next chapter">mpl_toolkits.axisartist.AxisArtistHelper</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
@@ -126,6 +140,190 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 is constant) line, ticks, ticklabels, and axis label.</p>
 <p><em>axes</em> : axes
 <em>helper</em> : an AxisArtistHelper instance.</p>
+<dl class="attribute">
+<dt id="mpl_toolkits.axisartist.AxisArtist.LABELPAD">
+<code class="descname">LABELPAD</code><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.LABELPAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="mpl_toolkits.axisartist.AxisArtist.ZORDER">
+<code class="descname">ZORDER</code><em class="property"> = 2.5</em><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.ZORDER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.draw">
+<code class="descname">draw</code><span class="sig-paren">(</span><em>renderer</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw the axis lines, tick lines and labels</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.get_axisline_style">
+<code class="descname">get_axisline_style</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.get_axisline_style" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the current axisline style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.get_helper">
+<code class="descname">get_helper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.get_helper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return axis artist helper instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.get_tightbbox">
+<code class="descname">get_tightbbox</code><span class="sig-paren">(</span><em>renderer</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.get_tightbbox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.get_transform">
+<code class="descname">get_transform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.get_transform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.invert_ticklabel_direction">
+<code class="descname">invert_ticklabel_direction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.invert_ticklabel_direction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.set_axis_direction">
+<code class="descname">set_axis_direction</code><span class="sig-paren">(</span><em>axis_direction</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.set_axis_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adjust the direction, text angle, text alignment of
+ticklabels, labels following the matplotlib convention for
+the rectangle axes.</p>
+<p>The <em>axis_direction</em> must be one of [left, right, bottom,
+top].</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="17%" />
+<col width="15%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">property</th>
+<th class="head">left</th>
+<th class="head">bottom</th>
+<th class="head">right</th>
+<th class="head">top</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ticklabels location</td>
+<td>“-“</td>
+<td>“+”</td>
+<td>“+”</td>
+<td>“-“</td>
+</tr>
+<tr class="row-odd"><td>axislabel location</td>
+<td>“-“</td>
+<td>“+”</td>
+<td>“+”</td>
+<td>“-“</td>
+</tr>
+<tr class="row-even"><td>ticklabels angle</td>
+<td>90</td>
+<td>0</td>
+<td>-90</td>
+<td>180</td>
+</tr>
+<tr class="row-odd"><td>ticklabel va</td>
+<td>center</td>
+<td>baseline</td>
+<td>center</td>
+<td>baseline</td>
+</tr>
+<tr class="row-even"><td>ticklabel ha</td>
+<td>right</td>
+<td>center</td>
+<td>right</td>
+<td>center</td>
+</tr>
+<tr class="row-odd"><td>axislabel angle</td>
+<td>180</td>
+<td>0</td>
+<td>0</td>
+<td>180</td>
+</tr>
+<tr class="row-even"><td>axislabel va</td>
+<td>center</td>
+<td>top</td>
+<td>center</td>
+<td>bottom</td>
+</tr>
+<tr class="row-odd"><td>axislabel ha</td>
+<td>right</td>
+<td>center</td>
+<td>right</td>
+<td>center</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the direction “+” and “-” are relative to the direction of
+the increasing coordinate. Also, the text angles are actually
+relative to (90 + angle of the direction to the ticklabel),
+which gives 0 for bottom axis.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.set_axislabel_direction">
+<code class="descname">set_axislabel_direction</code><span class="sig-paren">(</span><em>label_direction</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.set_axislabel_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adjust the direction of the axislabel.</p>
+<blockquote>
+<div>ACCEPTS: [ “+” | “-” ]</div></blockquote>
+<p>Note that the label_direction ‘+’ and ‘-‘ are relative to the
+direction of the increasing coordinate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.set_axisline_style">
+<code class="descname">set_axisline_style</code><span class="sig-paren">(</span><em>axisline_style=None</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.set_axisline_style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the axisline style.</p>
+<dl class="docutils">
+<dt><em>axisline_style</em> can be a string with axisline style name with optional</dt>
+<dd><p class="first">comma-separated attributes. Alternatively, the attrs can
+be provided as keywords.</p>
+<p class="last">set_arrowstyle(“-&gt;,size=1.5”)
+set_arrowstyle(“-&gt;”, size=1.5)</p>
+</dd>
+</dl>
+<p>Old attrs simply are forgotten.</p>
+<p>Without argument (or with arrowstyle=None), return
+available styles as a list of strings.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.set_label">
+<code class="descname">set_label</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.set_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.set_ticklabel_direction">
+<code class="descname">set_ticklabel_direction</code><span class="sig-paren">(</span><em>tick_direction</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.set_ticklabel_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adjust the direction of the ticklabel.</p>
+<blockquote>
+<div>ACCEPTS: [ “+” | “-” ]</div></blockquote>
+<p>Note that the label_direction ‘+’ and ‘-‘ are relative to the
+direction of the increasing coordinate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpl_toolkits.axisartist.AxisArtist.toggle">
+<code class="descname">toggle</code><span class="sig-paren">(</span><em>all=None</em>, <em>ticks=None</em>, <em>ticklabels=None</em>, <em>label=None</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.axisartist.AxisArtist.toggle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Toggle visibility of ticks, ticklabels, and (axis) label.
+To turn all off,</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">axis</span><span class="o">.</span><span class="n">toggle</span><span class="p">(</span><span class="nb">all</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To turn all off but ticks on</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">axis</span><span class="o">.</span><span class="n">toggle</span><span class="p">(</span><span class="nb">all</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To turn all on but (axis) label off</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">axis</span><span class="o">.</span><span class="n">toggle</span><span class="p">(</span><span class="nb">all</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
 </dd></dl>
 
 <div class="clearer"></div></div>
@@ -139,9 +337,9 @@ is constant) line, ticks, ticklabels, and axis label.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -247,52 +445,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

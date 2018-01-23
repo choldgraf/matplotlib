@@ -11,24 +11,6 @@ Reference for filled- and unfilled-marker types included with Matplotlib.
 
 
 
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/lines_bars_and_markers/images/sphx_glr_marker_reference_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/lines_bars_and_markers/images/sphx_glr_marker_reference_002.png
-            :scale: 47
-
-
-
-
-
 .. code-block:: python
 
     from six import iteritems
@@ -57,8 +39,17 @@ Reference for filled- and unfilled-marker types included with Matplotlib.
         return (a_list[:i_half], a_list[i_half:])
 
 
-    # Plot all un-filled markers
-    # --------------------------
+
+
+
+
+
+Plot all un-filled markers
+
+
+
+.. code-block:: python
+
 
     fig, axes = plt.subplots(ncols=2)
 
@@ -79,8 +70,21 @@ Reference for filled- and unfilled-marker types included with Matplotlib.
     fig.suptitle('un-filled markers', fontsize=14)
 
 
-    # Plot all filled markers.
-    # ------------------------
+
+
+
+.. image:: /gallery/lines_bars_and_markers/images/sphx_glr_marker_reference_001.png
+    :align: center
+
+
+
+
+Plot all filled markers.
+
+
+
+.. code-block:: python
+
 
     fig, axes = plt.subplots(ncols=2)
     for ax, markers in zip(axes, split_list(Line2D.filled_markers)):
@@ -91,6 +95,14 @@ Reference for filled- and unfilled-marker types included with Matplotlib.
     fig.suptitle('filled markers', fontsize=14)
 
     plt.show()
+
+
+
+.. image:: /gallery/lines_bars_and_markers/images/sphx_glr_marker_reference_002.png
+    :align: center
+
+
+
 
 **Total running time of the script:** ( 0 minutes  0.303 seconds)
 

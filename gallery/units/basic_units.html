@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Basic Units &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>Basic Units &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,29 +28,33 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=Basic%20Units&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -76,17 +80,7 @@ type="text/css" />
 
   
       <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/><div class="relations">
+        <div class="sphinxsidebarwrapper"><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
@@ -119,7 +113,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
             
   <div class="section" id="basic-units">
 <span id="sphx-glr-gallery-units-basic-units-py"></span><h1>Basic Units<a class="headerlink" href="#basic-units" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">six</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
@@ -223,7 +219,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="k">return</span> <span class="n">TaggedValue</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="n">ret_unit</span><span class="p">)</span>
 
 
-<span class="k">class</span> <span class="nc">_TaggedValue</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">TaggedValue</span><span class="p">(</span><span class="n">six</span><span class="o">.</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">TaggedValueMeta</span><span class="p">)):</span>
 
     <span class="n">_proxies</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;__add__&#39;</span><span class="p">:</span> <span class="n">ConvertAllProxy</span><span class="p">,</span>
                 <span class="s1">&#39;__sub__&#39;</span><span class="p">:</span> <span class="n">ConvertAllProxy</span><span class="p">,</span>
@@ -241,12 +237,12 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
             <span class="n">subcls</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="s1">&#39;TaggedValue_of_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">value_class</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
                           <span class="nb">tuple</span><span class="p">([</span><span class="bp">cls</span><span class="p">,</span> <span class="n">value_class</span><span class="p">]),</span>
                           <span class="p">{})</span>
-            <span class="k">if</span> <span class="n">subcls</span> <span class="ow">not</span> <span class="ow">in</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">:</span>
-                <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="n">subcls</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
+            <span class="k">if</span> <span class="n">subcls</span> <span class="ow">not</span> <span class="ow">in</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">:</span>
+                <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="n">subcls</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
             <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="n">subcls</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-            <span class="k">if</span> <span class="bp">cls</span> <span class="ow">not</span> <span class="ow">in</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">:</span>
-                <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="bp">cls</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
+            <span class="k">if</span> <span class="bp">cls</span> <span class="ow">not</span> <span class="ow">in</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">:</span>
+                <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="bp">cls</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
             <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
@@ -255,18 +251,15 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="bp">self</span><span class="o">.</span><span class="n">proxy_target</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
 
     <span class="k">def</span> <span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;__&#39;</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;__&#39;</span><span class="p">):</span>
             <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
         <span class="n">variable</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="ow">and</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="ow">and</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
         <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">__array__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">t</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">__array__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">):</span>
+        <span class="k">return</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.asarray.html#numpy.asarray" title="View documentation for numpy.asarray"><span class="n">np</span><span class="o">.</span><span class="n">asarray</span></a><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__array_wrap__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">array</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">TaggedValue</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
@@ -281,23 +274,17 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">class</span> <span class="nc">IteratorProxy</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-            <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">iter</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">iter</span> <span class="o">=</span> <span class="nb">iter</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="n">unit</span>
-
-            <span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-                <span class="n">value</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">iter</span><span class="p">)</span>
-                <span class="k">return</span> <span class="n">TaggedValue</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
-            <span class="nb">next</span> <span class="o">=</span> <span class="n">__next__</span>  <span class="c1"># for Python 2</span>
-        <span class="k">return</span> <span class="n">IteratorProxy</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+        <span class="c1"># Return a generator expression rather than use `yield`, so that</span>
+        <span class="c1"># TypeError is raised by iter(self) if appropriate when checking for</span>
+        <span class="c1"># iterability.</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">TaggedValue</span><span class="p">(</span><span class="n">inner</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span> <span class="k">for</span> <span class="n">inner</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">get_compressed_copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mask</span><span class="p">):</span>
-        <span class="n">new_value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">masked_array</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span><span class="o">.</span><span class="n">compressed</span><span class="p">()</span>
+        <span class="n">new_value</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ma.masked_array.html#numpy.ma.masked_array" title="View documentation for numpy.ma.masked_array"><span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">masked_array</span></a><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span><span class="o">.</span><span class="n">compressed</span><span class="p">()</span>
         <span class="k">return</span> <span class="n">TaggedValue</span><span class="p">(</span><span class="n">new_value</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">convert_to</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">unit</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">unit</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">unit</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span>
         <span class="n">new_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">convert_value_to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">TaggedValue</span><span class="p">(</span><span class="n">new_value</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span>
@@ -307,9 +294,6 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 
     <span class="k">def</span> <span class="nf">get_unit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span>
-
-
-<span class="n">TaggedValue</span> <span class="o">=</span> <span class="n">TaggedValueMeta</span><span class="p">(</span><span class="s1">&#39;TaggedValue&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">_TaggedValue</span><span class="p">,</span> <span class="p">),</span> <span class="p">{})</span>
 
 
 <span class="k">class</span> <span class="nc">BasicUnit</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -347,7 +331,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="k">return</span> <span class="n">TaggedValue</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__array__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="n">ret</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">ret</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array" title="View documentation for numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
         <span class="k">if</span> <span class="n">t</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">ret</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
@@ -374,14 +358,14 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 
 
 <span class="k">class</span> <span class="nc">UnitResolver</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">addition_rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">):</span>
-        <span class="k">for</span> <span class="n">unit_1</span><span class="p">,</span> <span class="n">unit_2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">[</span><span class="mi">1</span><span class="p">:]):</span>
+    <span class="k">def</span> <span class="nf">addition_rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">):</span>
+        <span class="k">for</span> <span class="n">unit_1</span><span class="p">,</span> <span class="n">unit_2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">[</span><span class="mi">1</span><span class="p">:]):</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">unit_1</span> <span class="o">!=</span> <span class="n">unit_2</span><span class="p">):</span>
                 <span class="k">return</span> <span class="bp">NotImplemented</span>
-        <span class="k">return</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-    <span class="k">def</span> <span class="nf">multiplication_rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">):</span>
-        <span class="n">non_null</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span> <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a> <span class="k">if</span> <span class="n">u</span><span class="p">]</span>
+    <span class="k">def</span> <span class="nf">multiplication_rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">):</span>
+        <span class="n">non_null</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span> <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a> <span class="k">if</span> <span class="n">u</span><span class="p">]</span>
         <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">non_null</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">):</span>
             <span class="k">return</span> <span class="bp">NotImplemented</span>
         <span class="k">return</span> <span class="n">non_null</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -394,11 +378,11 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
         <span class="s1">&#39;__sub__&#39;</span><span class="p">:</span> <span class="n">addition_rule</span><span class="p">,</span>
         <span class="s1">&#39;__rsub__&#39;</span><span class="p">:</span> <span class="n">addition_rule</span><span class="p">}</span>
 
-    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">operation</span><span class="p">,</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">operation</span><span class="p">,</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">):</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">operation</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">op_dict</span><span class="p">):</span>
             <span class="k">return</span> <span class="bp">NotImplemented</span>
 
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">op_dict</span><span class="p">[</span><span class="n">operation</span><span class="p">](</span><span class="bp">self</span><span class="p">,</span> <a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">op_dict</span><span class="p">[</span><span class="n">operation</span><span class="p">](</span><span class="bp">self</span><span class="p">,</span> <a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="p">)</span>
 
 
 <span class="n">unit_resolver</span> <span class="o">=</span> <span class="n">UnitResolver</span><span class="p">()</span>
@@ -462,7 +446,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">axis</span><span class="p">):</span>
-        <span class="k">if</span> <a href="../../api/units_api.html#matplotlib.units.ConversionInterface" title="View documentation for matplotlib.units.ConversionInterface"><span class="n">units</span><span class="o">.</span><span class="n">ConversionInterface</span></a><span class="o">.</span><span class="n">is_numlike</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+        <span class="k">if</span> <a href="../../api/units_api.html#matplotlib.units.ConversionInterface.is_numlike" title="View documentation for matplotlib.units.ConversionInterface.is_numlike"><span class="n">units</span><span class="o">.</span><span class="n">ConversionInterface</span><span class="o">.</span><span class="n">is_numlike</span></a><span class="p">(</span><span class="n">val</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">val</span>
         <span class="k">if</span> <a href="../../api/cbook_api.html#matplotlib.cbook.iterable" title="View documentation for matplotlib.cbook.iterable"><span class="n">iterable</span></a><span class="p">(</span><span class="n">val</span><span class="p">):</span>
             <span class="k">return</span> <span class="p">[</span><span class="n">thisval</span><span class="o">.</span><span class="n">convert_to</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span><span class="o">.</span><span class="n">get_value</span><span class="p">()</span> <span class="k">for</span> <span class="n">thisval</span> <span class="ow">in</span> <span class="n">val</span><span class="p">]</span>
@@ -486,18 +470,17 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 
 
 <span class="n">basicConverter</span> <span class="o">=</span> <span class="n">BasicUnitConverter</span><span class="p">()</span>
-<a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="n">BasicUnit</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
-<a href="../../api/units_api.html#matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="n">TaggedValue</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
+<a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="n">BasicUnit</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
+<a href="../../api/units_api.html#module-matplotlib.units" title="View documentation for matplotlib.units"><span class="n">units</span></a><span class="o">.</span><span class="n">registry</span><span class="p">[</span><span class="n">TaggedValue</span><span class="p">]</span> <span class="o">=</span> <span class="n">basicConverter</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.005 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/basic_units.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">basic_units.py</span></code></a></div>
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/basic_units.ipynb" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">basic_units.ipynb</span></code></a></div>
 </div>
-<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Generated by Sphinx-Gallery</a></p>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Gallery generated by Sphinx-Gallery</a></p>
 </div>
 
 
@@ -509,9 +492,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -617,52 +600,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

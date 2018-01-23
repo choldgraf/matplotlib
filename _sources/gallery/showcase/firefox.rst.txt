@@ -86,7 +86,7 @@ This example shows how to create the Firefox logo with path and patches.
     # Display
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.110 seconds)
+**Total running time of the script:** ( 0 minutes  0.151 seconds)
 
 
 

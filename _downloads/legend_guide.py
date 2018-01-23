@@ -46,8 +46,8 @@ generate entries for the resulting legend - it is worth noting however that
 not all artists can be added to a legend, at which point a "proxy" will have
 to be created (see :ref:`proxy_legend_handles` for further details).
 
-# For full control of what is being added to the legend, it is common to pass
-# the appropriate handles directly to :func:`legend`
+For full control of what is being added to the legend, it is common to pass
+the appropriate handles directly to :func:`legend`::
 
     line_up, = plt.plot([1,2,3], label='Line 2')
     line_down, = plt.plot([3,2,1], label='Line 1')
@@ -236,8 +236,10 @@ l = plt.legend([(p1, p2)], ['Two keys'], numpoints=1,
 
 import matplotlib.patches as mpatches
 
+
 class AnyObject(object):
     pass
+
 
 class AnyObjectHandler(object):
     def legend_artist(self, legend, orig_handle, fontsize, handlebox):
@@ -248,6 +250,7 @@ class AnyObjectHandler(object):
                                    transform=handlebox.get_transform())
         handlebox.add_artist(patch)
         return patch
+
 
 plt.legend([AnyObject()], ['My first handler'],
            handler_map={AnyObject: AnyObjectHandler()})
@@ -266,6 +269,7 @@ plt.legend([AnyObject()], ['My first handler'],
 # rectangular ones:
 
 from matplotlib.legend_handler import HandlerPatch
+
 
 class HandlerEllipse(HandlerPatch):
     def create_artists(self, legend, orig_handle,

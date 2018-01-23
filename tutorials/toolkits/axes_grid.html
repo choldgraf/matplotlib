@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Overview of axes_grid1 toolkit &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>Overview of axes_grid1 toolkit &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,29 +28,36 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
+    <link rel="up" title="Tutorials" href="../index.html" />
+    <link rel="next" title="Overview of axisartist toolkit" href="axisartist.html" />
+    <link rel="prev" title="Text in Matplotlib Plots" href="../text/text_intro.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=Overview%20of%20axes_grid1%20toolkit&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -65,28 +72,26 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="axisartist.html" title="Overview of axisartist toolkit"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../text/text_intro.html" title="Text in Matplotlib Plots"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../../users/index.html" >User’s Guide</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Tutorials</a> &raquo;</li> 
       </ul>
     </div>
 
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Overview of axes_grid1 toolkit</a><ul>
@@ -118,6 +123,12 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../../users/index.html">User’s Guide</a><ul>
+  <li><a href="../index.html">Tutorials</a><ul>
+      <li>Previous: <a href="../text/text_intro.html" title="previous chapter">Text in Matplotlib Plots</a></li>
+      <li>Next: <a href="axisartist.html" title="next chapter">Overview of axisartist toolkit</a></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
@@ -154,7 +165,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 (multiple) images with matplotlib.  In matplotlib, the axes location
 (and size) is specified in the normalized figure coordinates, which
 may not be ideal for displaying images that needs to have a given
-aspect ratio.  For example, it helps you to have a colorbar whose
+aspect ratio.  For example, it helps if you have a colorbar whose
 height always matches that of the image.  <a class="reference internal" href="#imagegrid">ImageGrid</a>, <a class="reference internal" href="#rgb-axes">RGB Axes</a> and
 <a class="reference internal" href="#axesdivider">AxesDivider</a> are helper classes that deals with adjusting the
 location of (multiple) Axes.  They provides a framework to adjust the
@@ -242,7 +253,7 @@ axes).</p>
 <td>number of grids. nrows x ncols if None</td>
 </tr>
 <tr class="row-even"><td>direction</td>
-<td>&#8220;row&#8221;</td>
+<td>“row”</td>
 <td>increasing direction of axes number. [row|column]</td>
 </tr>
 <tr class="row-odd"><td>axes_pad</td>
@@ -262,18 +273,18 @@ axes).</p>
 <td>aspect of axes</td>
 </tr>
 <tr class="row-odd"><td>label_mode</td>
-<td>&#8220;L&#8221;</td>
+<td>“L”</td>
 <td>location of tick labels thaw will be displayed.
-&#8220;1&#8221; (only the lower left axes),
-&#8220;L&#8221; (left most and bottom most axes),
-or &#8220;all&#8221;.</td>
+“1” (only the lower left axes),
+“L” (left most and bottom most axes),
+or “all”.</td>
 </tr>
 <tr class="row-even"><td>cbar_mode</td>
 <td>None</td>
 <td>[None|single|each]</td>
 </tr>
 <tr class="row-odd"><td>cbar_location</td>
-<td>&#8220;right&#8221;</td>
+<td>“right”</td>
 <td>[right|top]</td>
 </tr>
 <tr class="row-even"><td>cbar_pad</td>
@@ -281,7 +292,7 @@ or &#8220;all&#8221;.</td>
 <td>pad between image axes and colorbar axes</td>
 </tr>
 <tr class="row-odd"><td>cbar_size</td>
-<td>&#8220;5%&#8221;</td>
+<td>“5%”</td>
 <td>size of the colorbar</td>
 </tr>
 <tr class="row-even"><td>axes_class</td>
@@ -294,7 +305,7 @@ or &#8220;all&#8221;.</td>
 <dt><em>rect</em></dt>
 <dd>specifies the location of the grid. You can either specify
 coordinates of the rectangle to be used (e.g., (0.1, 0.1, 0.8, 0.8)
-as in the Axes), or the subplot-like position (e.g., &#8220;121&#8221;).</dd>
+as in the Axes), or the subplot-like position (e.g., “121”).</dd>
 <dt><em>direction</em></dt>
 <dd>means the increasing direction of the axes number.</dd>
 <dt><em>aspect</em></dt>
@@ -304,7 +315,7 @@ data limits (similar to aspect parameter in mpl).</dd>
 <dt><em>share_all</em></dt>
 <dd>if True, xaxis  and yaxis of all axes are shared.</dd>
 <dt><em>direction</em></dt>
-<dd><p class="first">direction of increasing axes number.   For &#8220;row&#8221;,</p>
+<dd><p class="first">direction of increasing axes number.   For “row”,</p>
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
@@ -321,7 +332,7 @@ data limits (similar to aspect parameter in mpl).</dd>
 </tbody>
 </table>
 </div></blockquote>
-<p>For &#8220;column&#8221;,</p>
+<p>For “column”,</p>
 <blockquote class="last">
 <div><table border="1" class="docutils">
 <colgroup>
@@ -342,8 +353,8 @@ data limits (similar to aspect parameter in mpl).</dd>
 </dl>
 </div></blockquote>
 <p>You can also create a colorbar (or colorbars). You can have colorbar
-for each axes (cbar_mode=&#8221;each&#8221;), or you can have a single colorbar
-for the grid (cbar_mode=&#8221;single&#8221;). The colorbar can be placed on your
+for each axes (cbar_mode=”each”), or you can have a single colorbar
+for the grid (cbar_mode=”single”). The colorbar can be placed on your
 right, or top. The axes for each colorbar is stored as a <em>cbar_axes</em>
 attribute.</p>
 <p>The examples below show what you can do with ImageGrid.</p>
@@ -368,8 +379,8 @@ divider for it.</p>
 </div>
 <p><em>make_axes_locatable</em> returns an instance of the AxesLocator class,
 derived from the Locator. It provides <em>append_axes</em> method that
-creates a new axes on the given side of (&#8220;top&#8221;, &#8220;right&#8221;, &#8220;bottom&#8221; and
-&#8220;left&#8221;) of the original axes.</p>
+creates a new axes on the given side of (“top”, “right”, “bottom” and
+“left”) of the original axes.</p>
 </div>
 <div class="section" id="colorbar-whose-height-or-width-in-sync-with-the-master-axes">
 <h3>colorbar whose height (or width) in sync with the master axes<a class="headerlink" href="#colorbar-whose-height-or-width-in-sync-with-the-master-axes" title="Permalink to this headline">¶</a></h3>
@@ -379,7 +390,7 @@ creates a new axes on the given side of (&#8220;top&#8221;, &#8220;right&#8221;,
 </div>
 <div class="section" id="scatter-hist-py-with-axesdivider">
 <h4>scatter_hist.py with AxesDivider<a class="headerlink" href="#scatter-hist-py-with-axesdivider" title="Permalink to this headline">¶</a></h4>
-<p>The &#8220;scatter_hist.py&#8221; example in mpl can be rewritten using
+<p>The “scatter_hist.py” example in mpl can be rewritten using
 <em>make_axes_locatable</em>.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">axScatter</span> <span class="o">=</span> <span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 <span class="n">axScatter</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -436,7 +447,7 @@ parasite axes.  To create a host axes, you may use <em>host_suplot</em> or
 </div>
 <div class="section" id="example-2-twin">
 <h4>Example 2. twin<a class="headerlink" href="#example-2-twin" title="Permalink to this headline">¶</a></h4>
-<p><em>twin</em> without a transform argument treat the parasite axes to have a
+<p><em>twin</em> without a transform argument assumes that the parasite axes has the
 same data transform as the host. This can be useful when you want the
 top(or right)-axis to have different tick-locations, tick-labels, or
 tick-formatter for bottom(or left)-axis.</p>
@@ -461,7 +472,7 @@ accordingly.</p>
 </div>
 <div class="section" id="anchoredartists">
 <h3>AnchoredArtists<a class="headerlink" href="#anchoredartists" title="Permalink to this headline">¶</a></h3>
-<p>It&#8217;s a collection of artists whose location is anchored to the (axes)
+<p>It’s a collection of artists whose location is anchored to the (axes)
 bbox, like the legend. It is derived from <em>OffsetBox</em> in mpl, and
 artist need to be drawn in the canvas coordinate. But, there is a
 limited support for an arbitrary transform. For example, the ellipse
@@ -474,10 +485,10 @@ coordinate.</p>
 </div>
 <div class="section" id="insetlocator">
 <h3>InsetLocator<a class="headerlink" href="#insetlocator" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../../mpl_toolkits/axes_grid1/api/inset_locator_api.html#module-mpl_toolkits.axes_grid1.inset_locator" title="mpl_toolkits.axes_grid1.inset_locator"><code class="xref py py-mod docutils literal"><span class="pre">mpl_toolkits.axes_grid1.inset_locator</span></code></a> provides helper classes
+<p><code class="xref py py-mod docutils literal"><span class="pre">mpl_toolkits.axes_grid1.inset_locator</span></code> provides helper classes
 and functions to place your (inset) axes at the anchored position of
 the parent axes, similarly to AnchoredArtist.</p>
-<p>Using <a class="reference internal" href="../../mpl_toolkits/axes_grid1/api/inset_locator_api.html#mpl_toolkits.axes_grid1.inset_locator.inset_axes" title="mpl_toolkits.axes_grid1.inset_locator.inset_axes"><code class="xref py py-func docutils literal"><span class="pre">mpl_toolkits.axes_grid1.inset_locator.inset_axes()</span></code></a>, you
+<p>Using <code class="xref py py-func docutils literal"><span class="pre">mpl_toolkits.axes_grid1.inset_locator.inset_axes()</span></code>, you
 can have inset axes whose size is either fixed, or a fixed proportion
 of the parent axes. For example,:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">inset_axes</span> <span class="o">=</span> <span class="n">inset_axes</span><span class="p">(</span><span class="n">parent_axes</span><span class="p">,</span>
@@ -536,21 +547,22 @@ yaxis of each axes are shared.</p>
 </div>
 <div class="section" id="axesdivider">
 <h2>AxesDivider<a class="headerlink" href="#axesdivider" title="Permalink to this headline">¶</a></h2>
-<p>The axes_divider module provide helper classes to adjust the axes
-positions of set of images in the drawing time.</p>
+<p>The axes_divider module provides helper classes to adjust the axes
+positions of a set of images at drawing time.</p>
 <ul class="simple">
-<li><a class="reference internal" href="../../mpl_toolkits/axes_grid1/api/axes_size_api.html#module-mpl_toolkits.axes_grid1.axes_size" title="mpl_toolkits.axes_grid1.axes_size"><code class="xref py py-mod docutils literal"><span class="pre">axes_size</span></code></a> provides a classes of
-units that the size of each axes will be determined. For example,
-you can specify a fixed size</li>
-<li><code class="xref py py-class docutils literal"><span class="pre">Divider</span></code> this is the class
-that is used calculates the axes position. It divides the given
-rectangular area into several areas. You initialize the divider by
-setting the horizontal and vertical list of sizes that the division
-will be based on. You then use the new_locator method, whose return
-value is a callable object that can be used to set the axes_locator
-of the axes.</li>
+<li><code class="xref py py-mod docutils literal"><span class="pre">axes_size</span></code> provides a class of
+units that are used to determine the size of each axes. For example,
+you can specify a fixed size.</li>
+<li><code class="xref py py-class docutils literal"><span class="pre">Divider</span></code> is the class
+that calculates the axes position. It divides the given
+rectangular area into several areas. The divider is initialized by
+setting the lists of horizontal and vertical sizes on which the division
+will be based. Then use
+<code class="xref py py-meth docutils literal"><span class="pre">new_locator()</span></code>,
+which returns a callable object that can be used to set the
+axes_locator of the axes.</li>
 </ul>
-<p>You first initialize the divider by specifying its grids, i.e.,
+<p>First, initialize the divider by specifying its grids, i.e.,
 horizontal and vertical.</p>
 <p>for example,:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rect</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">]</span>
@@ -561,7 +573,7 @@ horizontal and vertical.</p>
 </div>
 <p>where, rect is a bounds of the box that will be divided and h0,..h3,
 v0,..v2 need to be an instance of classes in the
-<a class="reference internal" href="../../mpl_toolkits/axes_grid1/api/axes_size_api.html#module-mpl_toolkits.axes_grid1.axes_size" title="mpl_toolkits.axes_grid1.axes_size"><code class="xref py py-mod docutils literal"><span class="pre">axes_size</span></code></a>.  They have <em>get_size</em> method
+<code class="xref py py-mod docutils literal"><span class="pre">axes_size</span></code>.  They have <em>get_size</em> method
 that returns a tuple of two floats. The first float is the relative
 size, and the second float is the absolute size. Consider a following
 grid.</p>
@@ -596,26 +608,26 @@ grid.</p>
 <li>v2 =&gt; 3, 0</li>
 </ul>
 <p>The height of the bottom row is always 2 (axes_divider internally
-assumes that the unit is inch). The first and the second rows with
-height ratio of 2:3. For example, if the total height of the grid 6,
+assumes that the unit is inches). The first and the second rows have a
+height ratio of 2:3. For example, if the total height of the grid is 6,
 then the first and second row will each occupy 2/(2+3) and 3/(2+3) of
-(6-1) inches. The widths of columns (horiz) will be similarly
-determined. When aspect ratio is set, the total height (or width) will
+(6-1) inches. The widths of the horizontal columns will be similarly
+determined. When the aspect ratio is set, the total height (or width) will
 be adjusted accordingly.</p>
-<p>The <a class="reference internal" href="../../mpl_toolkits/axes_grid1/api/axes_size_api.html#module-mpl_toolkits.axes_grid1.axes_size" title="mpl_toolkits.axes_grid1.axes_size"><code class="xref py py-mod docutils literal"><span class="pre">mpl_toolkits.axes_grid1.axes_size</span></code></a> contains several classes
+<p>The <code class="xref py py-mod docutils literal"><span class="pre">mpl_toolkits.axes_grid1.axes_size</span></code> contains several classes
 that can be used to set the horizontal and vertical configurations. For
-example, for the vertical configuration above will be:</p>
+example, for vertical configuration one could use:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpl_toolkits.axes_grid1.axes_size</span> <span class="k">import</span> <span class="n">Fixed</span><span class="p">,</span> <span class="n">Scaled</span>
 <span class="n">vert</span> <span class="o">=</span> <span class="p">[</span><span class="n">Fixed</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">Scaled</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">Scaled</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
 </pre></div>
 </div>
 <p>After you set up the divider object, then you create a locator
-instance which will be given to the axes.:</p>
+instance that will be given to the axes object.:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">locator</span> <span class="o">=</span> <span class="n">divider</span><span class="o">.</span><span class="n">new_locator</span><span class="p">(</span><span class="n">nx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ny</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_axes_locator</span><span class="p">(</span><span class="n">locator</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The return value of the new_locator method is a instance of the
+<p>The return value of the new_locator method is an instance of the
 AxesLocator class. It is a callable object that returns the
 location and size of the cell at the first column and the second row.
 You may create a locator that spans over multiple cells.:</p>
@@ -623,15 +635,15 @@ You may create a locator that spans over multiple cells.:</p>
 </pre></div>
 </div>
 <p>The above locator, when called, will return the position and size of
-the cells spanning the first and second column and the first row. You
-may consider it as [0:2, 1].</p>
+the cells spanning the first and second column and the first row. In
+this example, it will return [0:2, 1].</p>
 <p>See the example,</p>
 <div class="figure align-center" id="id14">
 <a class="reference external image-reference" href="../../gallery/axes_grid1/simple_axes_divider2.html"><img alt="../../_images/sphx_glr_simple_axes_divider2_0011.png" src="../../_images/sphx_glr_simple_axes_divider2_0011.png" style="width: 275.0px; height: 200.0px;" /></a>
 <p class="caption"><span class="caption-text">Simple Axes Divider2</span></p>
 </div>
-<p>You can adjust the size of the each axes according to their x or y
-data limits (AxesX and AxesY), similar to the axes aspect parameter.</p>
+<p>You can adjust the size of each axes according to its x or y
+data limits (AxesX and AxesY).</p>
 <div class="figure align-center" id="id15">
 <a class="reference external image-reference" href="../../gallery/axes_grid1/simple_axes_divider3.html"><img alt="../../_images/sphx_glr_simple_axes_divider3_0011.png" src="../../_images/sphx_glr_simple_axes_divider3_0011.png" style="width: 275.0px; height: 200.0px;" /></a>
 <p class="caption"><span class="caption-text">Simple Axes Divider3</span></p>
@@ -656,9 +668,9 @@ data limits (AxesX and AxesY), similar to the axes aspect parameter.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -764,52 +776,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

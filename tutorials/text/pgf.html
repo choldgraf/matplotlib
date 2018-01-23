@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Typesetting With XeLaTeX/LuaLaTeX &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>Typesetting With XeLaTeX/LuaLaTeX &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,29 +28,36 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" /> 
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
+    <link rel="up" title="Tutorials" href="../index.html" />
+    <link rel="next" title="Text rendering With LaTeX" href="usetex.html" />
+    <link rel="prev" title="Writing mathematical expressions" href="mathtext.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=Typesetting%20With%20XeLaTeX/LuaLaTeX&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -65,28 +72,26 @@ type="text/css" />
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="usetex.html" title="Text rendering With LaTeX"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mathtext.html" title="Writing mathematical expressions"
+             accesskey="P">previous</a> |</li>
 
         <li><a href="../../index.html">home</a>|&nbsp;</li>
         <li><a href="../../gallery/index.html">examples</a>|&nbsp;</li>
         <li><a href="../index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
-        <li><a href="../../contents.html">docs</a> &raquo;</li> 
+        <li><a href="../../contents.html">docs</a> &raquo;</li>
+          <li><a href="../../users/index.html" >User’s Guide</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Tutorials</a> &raquo;</li> 
       </ul>
     </div>
 
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Typesetting With XeLaTeX/LuaLaTeX</a><ul>
@@ -101,6 +106,12 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
+  <li><a href="../../users/index.html">User’s Guide</a><ul>
+  <li><a href="../index.html">Tutorials</a><ul>
+      <li>Previous: <a href="mathtext.html" title="previous chapter">Writing mathematical expressions</a></li>
+      <li>Next: <a href="usetex.html" title="next chapter">Text rendering With LaTeX</a></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
@@ -149,7 +160,7 @@ switching to the backend</p>
 </div>
 <p>The second method allows you to keep using regular interactive backends and to
 save xelatex, lualatex or pdflatex compiled PDF files from the graphical user interface.</p>
-<p>Matplotlib&#8217;s pgf support requires a recent <a class="reference external" href="http://www.tug.org">LaTeX</a> installation that includes
+<p>Matplotlib’s pgf support requires a recent <a class="reference external" href="http://www.tug.org">LaTeX</a> installation that includes
 the TikZ/PGF packages (such as <a class="reference external" href="http://www.tug.org/texlive/">TeXLive</a>), preferably with XeLaTeX or LuaLaTeX
 installed. If either pdftocairo or ghostscript is present on your system,
 figures can optionally be saved to PNG images as well. The executables
@@ -174,7 +185,7 @@ for all applications must be located on your <span class="target" id="index-0"><
 <td>Setup fonts from rc params using the fontspec package</td>
 </tr>
 <tr class="row-even"><td>pgf.texsystem</td>
-<td>Either &#8220;xelatex&#8221; (default), &#8220;lualatex&#8221; or &#8220;pdflatex&#8221;</td>
+<td>Either “xelatex” (default), “lualatex” or “pdflatex”</td>
 </tr>
 </tbody>
 </table>
@@ -213,13 +224,13 @@ layout of the figure is included in the header of the text file.</p>
 <span class="n">mpl</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">&quot;pgf&quot;</span><span class="p">)</span>
 <span class="n">pgf_with_rc_fonts</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;font.family&quot;</span><span class="p">:</span> <span class="s2">&quot;serif&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;font.serif&quot;</span><span class="p">:</span> <span class="p">[],</span>                   <span class="c1"># use latex default serif font</span>
-    <span class="s2">&quot;font.sans-serif&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;DejaVu Sans&quot;</span><span class="p">],</span> <span class="c1"># use a specific sans-serif font</span>
+    <span class="s2">&quot;font.serif&quot;</span><span class="p">:</span> <span class="p">[],</span>                    <span class="c1"># use latex default serif font</span>
+    <span class="s2">&quot;font.sans-serif&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;DejaVu Sans&quot;</span><span class="p">],</span>  <span class="c1"># use a specific sans-serif font</span>
 <span class="p">}</span>
 <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pgf_with_rc_fonts</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span><span class="mf">2.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="s2">&quot;serif&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="s2">&quot;monospace&quot;</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="s2">&quot;monospace&quot;</span><span class="p">)</span>
@@ -253,21 +264,21 @@ specified in the rc parameters, make sure to disable <code class="docutils liter
 <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="n">mpl</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">&quot;pgf&quot;</span><span class="p">)</span>
 <span class="n">pgf_with_custom_preamble</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;font.family&quot;</span><span class="p">:</span> <span class="s2">&quot;serif&quot;</span><span class="p">,</span> <span class="c1"># use serif/main font for text elements</span>
-    <span class="s2">&quot;text.usetex&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>    <span class="c1"># use inline math for ticks</span>
-    <span class="s2">&quot;pgf.rcfonts&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>   <span class="c1"># don&#39;t setup fonts from rc parameters</span>
+    <span class="s2">&quot;font.family&quot;</span><span class="p">:</span> <span class="s2">&quot;serif&quot;</span><span class="p">,</span>  <span class="c1"># use serif/main font for text elements</span>
+    <span class="s2">&quot;text.usetex&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>     <span class="c1"># use inline math for ticks</span>
+    <span class="s2">&quot;pgf.rcfonts&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>    <span class="c1"># don&#39;t setup fonts from rc parameters</span>
     <span class="s2">&quot;pgf.preamble&quot;</span><span class="p">:</span> <span class="p">[</span>
-         <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">usepackage</span><span class="si">{units}</span><span class="s2">&quot;</span><span class="p">,</span>         <span class="c1"># load additional packages</span>
+         <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">usepackage</span><span class="si">{units}</span><span class="s2">&quot;</span><span class="p">,</span>          <span class="c1"># load additional packages</span>
          <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">usepackage</span><span class="si">{metalogo}</span><span class="s2">&quot;</span><span class="p">,</span>
-         <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">usepackage{unicode-math}&quot;</span><span class="p">,</span>  <span class="c1"># unicode math setup</span>
+         <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">usepackage{unicode-math}&quot;</span><span class="p">,</span>   <span class="c1"># unicode math setup</span>
          <span class="sa">r</span><span class="s2">&quot;\setmathfont{xits-math.otf}&quot;</span><span class="p">,</span>
-         <span class="sa">r</span><span class="s2">&quot;\setmainfont{DejaVu Serif}&quot;</span><span class="p">,</span> <span class="c1"># serif font via preamble</span>
+         <span class="sa">r</span><span class="s2">&quot;\setmainfont{DejaVu Serif}&quot;</span><span class="p">,</span>  <span class="c1"># serif font via preamble</span>
          <span class="p">]</span>
 <span class="p">}</span>
 <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pgf_with_custom_preamble</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span><span class="mf">2.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;unicode text: я, ψ, €, ü, </span><span class="se">\\</span><span class="s2">unitfrac[10]{°}</span><span class="si">{µm}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">XeLaTeX&quot;</span><span class="p">)</span>
@@ -304,7 +315,7 @@ unicode handling must be configured in the preamble.</p>
 <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pgf_with_pdflatex</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span><span class="mf">2.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="s2">&quot;serif&quot;</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="s2">&quot;serif&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="s2">&quot;monospace&quot;</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="s2">&quot;monospace&quot;</span><span class="p">)</span>
@@ -353,10 +364,10 @@ the fonts matplotlib used for the layout.</li>
 <li>Vector images and hence <code class="docutils literal"><span class="pre">.pgf</span></code> files can become bloated if there are a lot
 of objects in the graph. This can be the case for image processing or very
 big scatter graphs.  In an extreme case this can cause TeX to run out of
-memory: &#8220;TeX capacity exceeded, sorry&#8221;  You can configure latex to increase
+memory: “TeX capacity exceeded, sorry”  You can configure latex to increase
 the amount of memory available to generate the <code class="docutils literal"><span class="pre">.pdf</span></code> image as discussed on
 <a class="reference external" href="http://tex.stackexchange.com/questions/7953">tex.stackexchange.com</a>.
-Another way would be to &#8220;rasterize&#8221; parts of the graph causing problems
+Another way would be to “rasterize” parts of the graph causing problems
 using either the <code class="docutils literal"><span class="pre">rasterized=True</span></code> keyword, or <code class="docutils literal"><span class="pre">.set_rasterized(True)</span></code> as per
 <a class="reference external" href="http://matplotlib.org/examples/misc/rasterization_demo.html">this example</a>.</li>
 <li>If you still need help, please see <a class="reference internal" href="../../faq/troubleshooting_faq.html#reporting-problems"><span class="std std-ref">Getting help</span></a></li>
@@ -368,7 +379,7 @@ using either the <code class="docutils literal"><span class="pre">rasterized=Tru
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/pgf.ipynb" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">pgf.ipynb</span></code></a></div>
 </div>
-<p class="sphx-glr-signature"><a class="reference external" href="http://sphinx-gallery.readthedocs.io">Generated by Sphinx-Gallery</a></p>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Generated by Sphinx-Gallery</a></p>
 </div>
 </div>
 
@@ -381,9 +392,9 @@ using either the <code class="docutils literal"><span class="pre">rasterized=Tru
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -489,52 +500,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

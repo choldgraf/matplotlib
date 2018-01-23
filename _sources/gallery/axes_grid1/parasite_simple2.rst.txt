@@ -63,7 +63,7 @@ Parasite Simple2
     plt.draw()
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.363 seconds)
+**Total running time of the script:** ( 0 minutes  0.196 seconds)
 
 
 

@@ -84,7 +84,7 @@ fig, ax_lst = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
 # ------------------------------
 #
 # This is what you think of as 'a plot', it is the region of the image
-# with the data space (marked as the inner blue box).  A given figure
+# with the data space. A given figure
 # can contain many Axes, but a given :class:`~matplotlib.axes.Axes`
 # object can only be in one :class:`~matplotlib.figure.Figure`.  The
 # Axes contains two (or three in the case of 3D)
@@ -104,7 +104,7 @@ fig, ax_lst = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
 # :class:`~matplotlib.axis.Axis`
 # ------------------------------
 #
-# These are the number-line-like objects (circled in green).  They take
+# These are the number-line-like objects. They take
 # care of setting the graph limits and generating the ticks (the marks
 # on the axis) and ticklabels (strings labeling the ticks).  The
 # location of the ticks is determined by a
@@ -284,10 +284,13 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 # Again, for these simple examples this style seems like overkill, however
 # once the graphs get slightly more complex it pays off.
 #
+# Backends
+# ========
+#
 # .. _what-is-a-backend:
 #
 # What is a backend?
-# ==================
+# ------------------
 #
 # A lot of documentation on the website and in the mailing lists refers
 # to the "backend" and many new users are confused by this term.
@@ -314,17 +317,22 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 #
 #
 # #. The ``backend`` parameter in your ``matplotlibrc`` file (see
-#    :ref:`sphx_glr_tutorials_01_introductory_customizing.py`)::
+#    :ref:`sphx_glr_tutorials_introductory_customizing.py`)::
 #
 #        backend : WXAgg   # use wxpython with antigrain (agg) rendering
 #
-# #. Setting the :envvar:`MPLBACKEND` environment
-#    variable, either for your current shell or for a single script::
+# #. Setting the :envvar:`MPLBACKEND` environment variable, either for your
+#    current shell or for a single script.  On Unix::
 #
-#         > export MPLBACKEND="module://my_backend"
+#         > export MPLBACKEND=module://my_backend
 #         > python simple_plot.py
 #
 #         > MPLBACKEND="module://my_backend" python simple_plot.py
+#
+#    On Windows, only the former is possible::
+#
+#         > set MPLBACKEND=module://my_backend
+#         > python simple_plot.py
 #
 #    Setting this environment variable will override the ``backend`` parameter
 #    in *any* ``matplotlibrc``, even if there is a ``matplotlibrc`` in your
@@ -394,15 +402,10 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 #                                `Portable Document Format`_
 # SVG             :term:`svg`    :term:`vector graphics` --
 #                                `Scalable Vector Graphics`_
-# :term:`Cairo`   :term:`png`    :term:`vector graphics` --
-#                 :term:`ps`     `Cairo graphics`_
-#                 :term:`pdf`
+# :term:`Cairo`   :term:`png`    :term:`raster graphics` and
+#                 :term:`ps`     :term:`vector graphics` -- using the
+#                 :term:`pdf`    `Cairo graphics`_ library
 #                 :term:`svg`
-#                 ...
-# :term:`GDK`     :term:`png`    :term:`raster graphics` --
-#                 :term:`jpg`    the `Gimp Drawing Kit`_ Deprecated in 2.0
-#                 :term:`tiff`
-#                 ...
 # =============   ============   ================================================
 #
 # And here are the user interfaces and renderer combinations supported;
@@ -410,37 +413,46 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 # and of using appropriate renderers from the table above to write to
 # a file:
 #
-# ============   ================================================================
-# Backend        Description
-# ============   ================================================================
-# GTKAgg         Agg rendering to a :term:`GTK` 2.x canvas (requires PyGTK_ and
-#                pycairo_ or cairocffi_; Python2 only)
-# GTK3Agg        Agg rendering to a :term:`GTK` 3.x canvas (requires PyGObject_
-#                and pycairo_ or cairocffi_)
-# GTK            GDK rendering to a :term:`GTK` 2.x canvas (not recommended and d
-#                eprecated in 2.0) (requires PyGTK_ and pycairo_ or cairocffi_;
-#                Python2 only)
-# GTKCairo       Cairo rendering to a :term:`GTK` 2.x canvas (requires PyGTK_
-#                and pycairo_ or cairocffi_; Python2 only)
-# GTK3Cairo      Cairo rendering to a :term:`GTK` 3.x canvas (requires PyGObject_
-#                and pycairo_ or cairocffi_)
-# WXAgg          Agg rendering to to a :term:`wxWidgets` canvas
-#                (requires wxPython_)
-# WX             Native :term:`wxWidgets` drawing to a :term:`wxWidgets` Canvas
-#                (not recommended and deprecated in 2.0) (requires wxPython_)
-# TkAgg          Agg rendering to a :term:`Tk` canvas (requires TkInter_)
-# Qt4Agg         Agg rendering to a :term:`Qt4` canvas (requires PyQt4_ or ``pyside``)
-# Qt5Agg         Agg rendering in a :term:`Qt5` canvas (requires PyQt5_)
-# macosx         Cocoa rendering in OSX windows
-#                (presently lacks blocking show() behavior when matplotlib
-#                is in non-interactive mode)
-# ============   ================================================================
+# ========= ================================================================
+# Backend   Description
+# ========= ================================================================
+# Qt5Agg    Agg rendering in a :term:`Qt5` canvas (requires PyQt5_).  This
+#           backend can be activated in IPython with ``%matplotlib qt5``.
+# ipympl    Agg rendering embedded in a Jupyter widget.  (requires ipympl).
+#           This backend can be enabled in a Jupyter notebook with
+#           ``%matplotlib ipympl``.
+# GTK3Agg   Agg rendering to a :term:`GTK` 3.x canvas (requires PyGObject_,
+#           and pycairo_ or cairocffi_).  This backend can be activated in
+#           IPython with ``%matplotlib gtk3``.
+# macosx    Agg rendering into a Cocoa canvas in OSX.  This backend can be
+#           activated in IPython with ``%matplotlib osx``.
+# TkAgg     Agg rendering to a :term:`Tk` canvas (requires TkInter_). This
+#           backend can be activated in IPython with ``%matplotlib tk``.
+# nbAgg     Embed an interactive figure in a Jupyter classic notebook.  This
+#           backend can be enabled in Jupyter notebooks via
+#           ``%matplotlib notebook``.
+# WebAgg    On ``show()`` will start a tornado server with an interactive
+#           figure.
+# GTK3Cairo Cairo rendering to a :term:`GTK` 3.x canvas (requires PyGObject_,
+#           and pycairo_ or cairocffi_).
+# Qt4Agg    Agg rendering to a :term:`Qt4` canvas (requires PyQt4_ or
+#           ``pyside``).  This backend can be activated in IPython with
+#           ``%matplotlib qt4``.
+# GTKAgg    Agg rendering to a :term:`GTK` 2.x canvas (requires PyGTK_, and
+#           pycairo_ or cairocffi_; Python2 only).  This backend can be
+#           activated in IPython with ``%matplotlib gtk``.
+# GTKCairo  Cairo rendering to a :term:`GTK` 2.x canvas (requires PyGTK_,
+#           and pycairo_ or cairocffi_; Python2 only).
+# WXAgg     Agg rendering to a :term:`wxWidgets` canvas (requires wxPython_;
+#           v4.0 (in beta) is required for Python3). This backend can be
+#           activated in IPython with ``%matplotlib wx``.#
+# ========= ================================================================
 #
 # .. _`Anti-Grain Geometry`: http://antigrain.com/
 # .. _Postscript: https://en.wikipedia.org/wiki/PostScript
 # .. _`Portable Document Format`: https://en.wikipedia.org/wiki/Portable_Document_Format
 # .. _`Scalable Vector Graphics`: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
-# .. _`Cairo graphics`: https://en.wikipedia.org/wiki/Cairo_(graphics)
+# .. _`Cairo graphics`: https://wwW.cairographics.org
 # .. _`Gimp Drawing Kit`: https://en.wikipedia.org/wiki/GDK
 # .. _PyGTK: http://www.pygtk.org
 # .. _PyGObject: https://wiki.gnome.org/action/show/Projects/PyGObject
@@ -451,27 +463,37 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 # .. _PyQt4: https://riverbankcomputing.com/software/pyqt/intro
 # .. _PyQt5: https://riverbankcomputing.com/software/pyqt/intro
 #
-# WX backends
-# ===========
+# ipympl
+# ------
 #
-# At present the release version of `wxPython` (also known as wxPython classic)
-# does not support python3. A work in progress redesigned version known as
-# wxPython-Phoenix_ does support python3.
-# Matplotlib should work with both versions.
+# The Jupyter widget ecosystem is moving too fast to support directly in
+# Matplotlib.  To install ipympl
 #
-# .. _wxPython-Phoenix: https://wxpython.org/Phoenix/docs/html/main.html
+# .. code-block:: bash
+#
+#    pip install ipympl
+#    jupyter nbextension enable --py --sys-prefix ipympl
+#
+# or
+#
+# .. code-block:: bash
+#
+#    conda install ipympl -c conda-forge
+#
+# See `jupyter-matplotlib <https://github.com/matplotlib/jupyter-matplotlib>`__
+# for more details.
 #
 # GTK and Cairo
-# =============
+# -------------
 #
 # Both `GTK2` and `GTK3` have implicit dependencies on PyCairo regardless of the
-# specific Matplotlib backend used. Unfortunatly the latest release of PyCairo
+# specific Matplotlib backend used. Unfortunately the latest release of PyCairo
 # for Python3 does not implement the Python wrappers needed for the `GTK3Agg`
 # backend. `Cairocffi` can be used as a replacement which implements the correct
 # wrapper.
 #
 # How do I select PyQt4 or PySide?
-# ========================================
+# --------------------------------
 #
 # You can choose either PyQt4 or PySide when using the `qt4` backend by setting
 # the appropriate value for `backend.qt4` in your :file:`matplotlibrc` file. The
@@ -498,7 +520,7 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 # that are called, and on a state variable that determines whether
 # matplotlib is in "interactive mode".  The default Boolean value is set
 # by the :file:`matplotlibrc` file, and may be customized like any other
-# configuration parameter (see :ref:`sphx_glr_tutorials_01_introductory_customizing.py`).  It
+# configuration parameter (see :ref:`sphx_glr_tutorials_introductory_customizing.py`).  It
 # may also be set via :func:`matplotlib.interactive`, and its
 # value may be queried via :func:`matplotlib.is_interactive`.  Turning
 # interactive mode on and off in the middle of a stream of plotting
@@ -542,24 +564,21 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 #     plt.title("interactive test")
 #     plt.xlabel("index")
 #
-# and you will see the plot being updated after each line.  This is
-# because you are in interactive mode *and* you are using pyplot
-# functions. Now try an alternative method of modifying the
-# plot.  Get a reference to the :class:`~matplotlib.axes.Axes` instance, and
-# call a method of that instance::
+# and you will see the plot being updated after each line.  Since version 1.5,
+# modifying the plot by other means *should* also automatically
+# update the display on most backends. Get a reference to the :class:`~matplotlib.axes.Axes` instance,
+# and call a method of that instance::
 #
 #     ax = plt.gca()
 #     ax.plot([3.1, 2.2])
 #
-# Nothing changed, because the Axes methods do not include an
-# automatic call to :func:`~matplotlib.pyplot.draw_if_interactive`;
-# that call is added by the pyplot functions.  If you are using
-# methods, then when you want to update the plot on the screen,
-# you need to call :func:`~matplotlib.pyplot.draw`::
+# If you are using certain backends (like `macosx`), or an older version
+# of matplotlib, you may not see the new line added to the plot immediately.
+# In this case, you need to explicitly call :func:`~matplotlib.pyplot.draw`
+# in order to update the plot::
 #
 #     plt.draw()
 #
-# Now you should see the new line added to the plot.
 #
 # Non-interactive example
 # -----------------------
@@ -625,3 +644,150 @@ for i in range(3):
 # or generating a new set of figures.  In that case, use
 # :func:`~matplotlib.pyplot.show` to display the figure(s) and
 # to block execution until you have manually destroyed them.
+#
+# .. _performance:
+#
+# Performance
+# ===========
+#
+# Whether exploring data in interactive mode or programmatically
+# saving lots of plots, rendering performance can be a painful
+# bottleneck in your pipeline. Matplotlib provides a couple
+# ways to greatly reduce rendering time at the cost of a slight
+# change (to a settable tolerance) in your plot's appearance.
+# The methods available to reduce rendering time depend on the
+# type of plot that is being created.
+#
+# Line segment simplification
+# ---------------------------
+#
+# For plots that have line segments (e.g. typical line plots,
+# outlines of polygons, etc.), rendering performance can be
+# controlled by the ``path.simplify`` and
+# ``path.simplify_threshold`` parameters in your
+# ``matplotlibrc`` file (see
+# :ref:`sphx_glr_tutorials_introductory_customizing.py` for
+# more information about the ``matplotlibrc`` file).
+# The ``path.simplify`` parameter is a boolean indicating whether
+# or not line segments are simplified at all. The
+# ``path.simplify_threshold`` parameter controls how much line
+# segments are simplified; higher thresholds result in quicker
+# rendering.
+#
+# The following script will first display the data without any
+# simplification, and then display the same data with simplification.
+# Try interacting with both of them::
+#
+#   import numpy as np
+#   import matplotlib.pyplot as plt
+#   import matplotlib as mpl
+#
+#   # Setup, and create the data to plot
+#   y = np.random.rand(100000)
+#   y[50000:] *= 2
+#   y[np.logspace(1, np.log10(50000), 400).astype(int)] = -1
+#   mpl.rcParams['path.simplify'] = True
+#
+#   mpl.rcParams['path.simplify_threshold'] = 0.0
+#   plt.plot(y)
+#   plt.show()
+#
+#   mpl.rcParams['path.simplify_threshold'] = 1.0
+#   plt.plot(y)
+#   plt.show()
+#
+# Matplotlib currently defaults to a conservative simplification
+# threshold of ``1/9``. If you want to change your default settings
+# to use a different value, you can change your ``matplotlibrc``
+# file.  Alternatively, you could create a new style for
+# interactive plotting (with maximal simplification) and another
+# style for publication quality plotting (with minimal
+# simplification) and activate them as necessary. See
+# :ref:`sphx_glr_tutorials_introductory_customizing.py` for
+# instructions on how to perform these actions.
+#
+# The simplification works by iteratively merging line segments
+# into a single vector until the next line segment's perpendicular
+# distance to the vector (measured in display-coordinate space)
+# is greater than the ``path.simplify_threshold`` parameter.
+#
+# .. note::
+#   Changes related to how line segments are simplified were made
+#   in version 2.1. Rendering time will still be improved by these
+#   parameters prior to 2.1, but rendering time for some kinds of
+#   data will be vastly improved in versions 2.1 and greater.
+#
+# Marker simplification
+# ---------------------
+#
+# Markers can also be simplified, albeit less robustly than
+# line segments. Marker simplification is only available
+# to :class:`~matplotlib.lines.Line2D` objects (through the
+# ``markevery`` property). Wherever
+# :class:`~matplotlib.lines.Line2D` construction parameter
+# are passed through, such as
+# :func:`matplotlib.pyplot.plot` and
+# :meth:`matplotlib.axes.Axes.plot`, the ``markevery``
+# parameter can be used::
+#
+#   plt.plot(x, y, markevery=10)
+#
+# The markevery argument allows for naive subsampling, or an
+# attempt at evenly spaced (along the *x* axis) sampling. See the
+# :ref:`sphx_glr_gallery_lines_bars_and_markers_markevery_demo.py`
+# for more information.
+#
+# Splitting lines into smaller chunks
+# -----------------------------------
+#
+# If you are using the Agg backend (see :ref:`what-is-a-backend`),
+# then you can make use of the ``agg.path.chunksize`` rc parameter.
+# This allows you to specify a chunk size, and any lines with
+# greater than that many vertices will be split into multiple
+# lines, each of which have no more than ``agg.path.chunksize``
+# many vertices. (Unless ``agg.path.chunksize`` is zero, in
+# which case there is no chunking.) For some kind of data,
+# chunking the line up into reasonable sizes can greatly
+# decrease rendering time.
+#
+# The following script will first display the data without any
+# chunk size restriction, and then display the same data with
+# a chunk size of 10,000. The difference can best be seen when
+# the figures are large, try maximizing the GUI and then
+# interacting with them::
+#
+#   import numpy as np
+#   import matplotlib.pyplot as plt
+#   import matplotlib as mpl
+#   mpl.rcParams['path.simplify_threshold'] = 1.0
+#
+#   # Setup, and create the data to plot
+#   y = np.random.rand(100000)
+#   y[50000:] *= 2
+#   y[np.logspace(1,np.log10(50000), 400).astype(int)] = -1
+#   mpl.rcParams['path.simplify'] = True
+#
+#   mpl.rcParams['agg.path.chunksize'] = 0
+#   plt.plot(y)
+#   plt.show()
+#
+#   mpl.rcParams['agg.path.chunksize'] = 10000
+#   plt.plot(y)
+#   plt.show()
+#
+# Using the *fast* style
+# ----------------------
+#
+# The *fast* style can be used to automatically set
+# simplification and chunking parameters to reasonable
+# settings to speed up plotting large amounts of data.
+# It can be used simply by running::
+#
+#   import matplotlib.style as mplstyle
+#   mplstyle.use('fast')
+#
+# It is very light weight, so it plays nicely with other
+# styles, just make sure the fast style is applied last
+# so that other styles do not overwrite the settings::
+#
+#   mplstyle.use(['dark_background', 'ggplot', 'fast'])

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>The Matplotlib Developers’ Guide &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>The Matplotlib Developers’ Guide &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,31 +28,35 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../index.html" />
     <link rel="next" title="Contributing" href="contributing.html" />
-    <link rel="prev" title="matplotlib.pyplot.yticks" href="../api/_as_gen/matplotlib.pyplot.yticks.html" /> 
+    <link rel="prev" title="mpl_toolkits.mplot3d.proj3d.world_transformation" href="../api/_as_gen/mpl_toolkits.mplot3d.proj3d.world_transformation.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=The%20Matplotlib%20Developers%E2%80%99%20Guide&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../index.html"><img src="../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -71,7 +75,7 @@ type="text/css" />
           <a href="contributing.html" title="Contributing"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../api/_as_gen/matplotlib.pyplot.yticks.html" title="matplotlib.pyplot.yticks"
+          <a href="../api/_as_gen/mpl_toolkits.mplot3d.proj3d.world_transformation.html" title="mpl_toolkits.mplot3d.proj3d.world_transformation"
              accesskey="P">previous</a> |</li>
 
         <li><a href="../index.html">home</a>|&nbsp;</li>
@@ -84,21 +88,11 @@ type="text/css" />
 
   
       <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/><div class="relations">
+        <div class="sphinxsidebarwrapper"><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../contents.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../api/_as_gen/matplotlib.pyplot.yticks.html" title="previous chapter">matplotlib.pyplot.yticks</a></li>
+      <li>Previous: <a href="../api/_as_gen/mpl_toolkits.mplot3d.proj3d.world_transformation.html" title="previous chapter">mpl_toolkits.mplot3d.proj3d.world_transformation</a></li>
       <li>Next: <a href="contributing.html" title="next chapter">Contributing</a></li>
   </ul></li>
 </ul>
@@ -128,14 +122,14 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
           <div class="body">
             
   <div class="section" id="the-matplotlib-developers-guide">
-<span id="developers-guide-index"></span><h1>The Matplotlib Developers&#8217; Guide<a class="headerlink" href="#the-matplotlib-developers-guide" title="Permalink to this headline">¶</a></h1>
+<span id="developers-guide-index"></span><h1>The Matplotlib Developers’ Guide<a class="headerlink" href="#the-matplotlib-developers-guide" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Release:</th><td class="field-body">2.0.0b1.post5207+g7e5bee994</td>
+<tr class="field-odd field"><th class="field-name">Release:</th><td class="field-body">2.0.0b1.post7580.dev0+ge487118</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">May 10, 2017</td>
+<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">January 23, 2018</td>
 </tr>
 </tbody>
 </table>
@@ -149,11 +143,11 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <li class="toctree-l2"><a class="reference internal" href="contributing.html#coding-guidelines">Coding guidelines</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="testing.html">Developer&#8217;s tips for testing</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Developer’s tips for testing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="testing.html#requirements">Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="testing.html#building-matplotlib-for-image-comparison-tests">Building matplotlib for image comparison tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="testing.html#running-the-tests">Running the tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="testing.html#writing-a-simple-test">Writing a simple test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing.html#random-data-in-tests">Random data in tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="testing.html#writing-an-image-comparison-test">Writing an image comparison test</a></li>
 <li class="toctree-l2"><a class="reference internal" href="testing.html#known-failing-tests">Known failing tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="testing.html#creating-a-new-module-in-matplotlib-tests">Creating a new module in matplotlib.tests</a></li>
@@ -161,25 +155,26 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <li class="toctree-l2"><a class="reference internal" href="testing.html#using-tox">Using tox</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="documenting_mpl.html">Developer&#8217;s tips for documenting matplotlib</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="documenting_mpl.html">Writing documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#getting-started">Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#organization-of-matplotlib-s-documentation">Organization of matplotlib&#8217;s documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#formatting">Formatting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#figures">Figures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#referring-to-mpl-documents">Referring to mpl documents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#internal-section-references">Internal section references</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#section-names-etc">Section names, etc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#inheritance-diagrams">Inheritance diagrams</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#emacs-helpers">Emacs helpers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#writing-rest-pages">Writing ReST pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#writing-docstrings">Writing docstrings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#writing-examples-and-tutorials">Writing examples and tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documenting_mpl.html#miscellaneous">Miscellaneous</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="add_new_projection.html">Developer&#8217;s guide for creating scales and transformations</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="plot_directive.html">Plot directive documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plot_directive.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_directive.html#configuration-options">Configuration options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_projection.html">Developer’s guide for creating scales and transformations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="add_new_projection.html#creating-a-new-scale">Creating a new scale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="add_new_projection.html#creating-a-new-projection">Creating a new projection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="add_new_projection.html#api-documentation">API documentation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="portable_code.html">Developer&#8217;s tips for writing code for Python 2 and 3</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="portable_code.html">Developer’s tips for writing code for Python 2 and 3</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="portable_code.html#welcome-to-the-future">Welcome to the <code class="docutils literal"><span class="pre">__future__</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="portable_code.html#finding-places-to-use-six">Finding places to use six</a></li>
 <li class="toctree-l2"><a class="reference internal" href="portable_code.html#the-dreaded-u-escapes">The dreaded <code class="docutils literal"><span class="pre">\u</span></code> escapes</a></li>
@@ -244,9 +239,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -352,52 +347,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

@@ -12,24 +12,6 @@ frame colors on enter and leave
 
 
 
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/event_handling/images/sphx_glr_figure_axes_enter_leave_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/event_handling/images/sphx_glr_figure_axes_enter_leave_002.png
-            :scale: 47
-
-
-
-
-
 .. code-block:: python
 
     from __future__ import print_function
@@ -59,6 +41,16 @@ frame colors on enter and leave
         event.canvas.figure.patch.set_facecolor('grey')
         event.canvas.draw()
 
+
+
+
+
+
+
+
+.. code-block:: python
+
+
     fig1, (ax, ax2) = plt.subplots(2, 1)
     fig1.suptitle('mouse hover over figure or axes to trigger events')
 
@@ -66,6 +58,19 @@ frame colors on enter and leave
     fig1.canvas.mpl_connect('figure_leave_event', leave_figure)
     fig1.canvas.mpl_connect('axes_enter_event', enter_axes)
     fig1.canvas.mpl_connect('axes_leave_event', leave_axes)
+
+
+
+
+.. image:: /gallery/event_handling/images/sphx_glr_figure_axes_enter_leave_001.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
 
     fig2, (ax, ax2) = plt.subplots(2, 1)
     fig2.suptitle('mouse hover over figure or axes to trigger events')
@@ -77,7 +82,15 @@ frame colors on enter and leave
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.180 seconds)
+
+
+.. image:: /gallery/event_handling/images/sphx_glr_figure_axes_enter_leave_002.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  0.178 seconds)
 
 
 

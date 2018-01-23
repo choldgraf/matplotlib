@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>MEP28: Remove Complexity from Axes.boxplot &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>MEP28: Remove Complexity from Axes.boxplot &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="Matplotlib Enhancement Proposals" href="index.html" />
     <link rel="next" title="MEP29: Text light markup" href="MEP29.html" />
     <link rel="prev" title="MEP27: decouple pyplot from backends" href="MEP27.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=MEP28%3A%20Remove%20Complexity%20from%20Axes.boxplot&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -80,7 +84,7 @@ type="text/css" />
         <li><a href="../../tutorials/index.html">tutorials</a>|&nbsp;</li>
         <li><a href="../../api/pyplot_summary.html">pyplot</a>|&nbsp;</li>
         <li><a href="../../contents.html">docs</a> &raquo;</li>
-          <li><a href="../index.html" >The Matplotlib Developers&#8217; Guide</a> &raquo;</li>
+          <li><a href="../index.html" >The Matplotlib Developers’ Guide</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Matplotlib Enhancement Proposals</a> &raquo;</li> 
       </ul>
     </div>
@@ -88,16 +92,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">MEP28: Remove Complexity from Axes.boxplot</a><ul>
@@ -132,7 +126,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
-  <li><a href="../index.html">The Matplotlib Developers&#8217; Guide</a><ul>
+  <li><a href="../index.html">The Matplotlib Developers’ Guide</a><ul>
   <li><a href="index.html">Matplotlib Enhancement Proposals</a><ul>
       <li>Previous: <a href="MEP27.html" title="previous chapter">MEP27: decouple pyplot from backends</a></li>
       <li>Next: <a href="MEP29.html" title="next chapter">MEP29: Text light markup</a></li>
@@ -325,7 +319,7 @@ as the <code class="docutils literal"><span class="pre">boxplot_stats</span></co
 passed to it. After the list of statistics dictionaries are computed the
 <code class="docutils literal"><span class="pre">transform_out</span></code> function is applied to each value in the dictionaries.</p>
 <p>These transformations can then be added to the call signature of
-<code class="docutils literal"><span class="pre">Axes.boxplot</span></code> with little impact to that method&#8217;s complexity. This is
+<code class="docutils literal"><span class="pre">Axes.boxplot</span></code> with little impact to that method’s complexity. This is
 because they can be directly passed to <code class="docutils literal"><span class="pre">cbook.boxplot_stats</span></code>.
 Alternatively, <code class="docutils literal"><span class="pre">Axes.boxplot</span></code> could be modified to accept an optional
 statistical function kwarg and a dictionary of parameters to be direcly
@@ -350,7 +344,7 @@ and <code class="docutils literal"><span class="pre">Axes.bxp</span></code>.</p>
 </ol>
 </div></blockquote>
 <p>Removing the <code class="docutils literal"><span class="pre">sym</span></code> option allows all code in handling the remaining
-styling parameters to be moved to <code class="docutils literal"><span class="pre">Axes.bxp</span></code>. This doesn&#8217;t remove
+styling parameters to be moved to <code class="docutils literal"><span class="pre">Axes.bxp</span></code>. This doesn’t remove
 any complexity, but does reinforce the single responsibility principle
 among <code class="docutils literal"><span class="pre">Axes.bxp</span></code>, <code class="docutils literal"><span class="pre">cbook.boxplot_stats</span></code>, and <code class="docutils literal"><span class="pre">Axes.boxplot</span></code>.</p>
 <p>Additionally, the <code class="docutils literal"><span class="pre">notch</span></code> parameter could be renamed <code class="docutils literal"><span class="pre">shownotches</span></code>
@@ -418,8 +412,8 @@ be taken to collect community feedback on this.</p>
 <p>The source code (GitHub master as of 2016-10-17) was inspected for
 seaborn and python-ggplot to see if these changes would impact their
 use. None of the parameters nominated for removal in this MEP are used by
-seaborn. The seaborn APIs that use matplotlib&#8217;s boxplot function allow
-user&#8217;s to pass arbitrary <code class="docutils literal"><span class="pre">**kwargs</span></code> through to matplotlib&#8217;s API. Thus
+seaborn. The seaborn APIs that use matplotlib’s boxplot function allow
+user’s to pass arbitrary <code class="docutils literal"><span class="pre">**kwargs</span></code> through to matplotlib’s API. Thus
 seaborn users with modern matplotlib installations will be able to take
 full advantage of any new features added as a result of this MEP.</p>
 <p>Python-ggplot has implemented its own function to draw boxplots. Therefore,
@@ -432,7 +426,7 @@ no impact can come to it as a result of implementing this MEP.</p>
 <h3><a class="toc-backref" href="#id14">Variations on the theme</a><a class="headerlink" href="#variations-on-the-theme" title="Permalink to this headline">¶</a></h3>
 <p>This MEP can be divided into a few loosely coupled components:</p>
 <ol class="arabic simple">
-<li>Allowing pre- and post-computation tranformation function in <code class="docutils literal"><span class="pre">cbook.boxplot_stats</span></code></li>
+<li>Allowing pre- and post-computation transformation function in <code class="docutils literal"><span class="pre">cbook.boxplot_stats</span></code></li>
 <li>Exposing that transformation in the <code class="docutils literal"><span class="pre">Axes.boxplot</span></code> API</li>
 <li>Removing redundant statistical options in <code class="docutils literal"><span class="pre">Axes.boxplot</span></code></li>
 <li>Shifting all styling parameter processing from <code class="docutils literal"><span class="pre">Axes.boxplot</span></code> to <code class="docutils literal"><span class="pre">Axes.bxp</span></code>.</li>
@@ -506,7 +500,7 @@ whiskers set differently depending on some attribute of the data.</p>
             <span class="n">whisker_method</span><span class="o">=</span><span class="s1">&#39;dynamic&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>From the examples above, Option Two seems to have only marginal benifit,
+<p>From the examples above, Option Two seems to have only marginal benefit,
 but in the context of downstream libraries like seaborn, its advantage
 is more apparent as the following would be possible without any patches
 to seaborn:</p>
@@ -552,9 +546,9 @@ them decide how to provide an interface to that.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -660,52 +654,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

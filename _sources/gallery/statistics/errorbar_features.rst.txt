@@ -3,9 +3,9 @@
 .. _sphx_glr_gallery_statistics_errorbar_features.py:
 
 
-===================================================
-Demo of the different ways of specifying error bars
-===================================================
+=======================================
+Different ways of specifying error bars
+=======================================
 
 Errors can be specified as a constant value (as shown in
 `errorbar_demo.py`). However, this example demonstrates
@@ -62,7 +62,7 @@ scale with error bars.
     ax1.set_yscale('log')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.370 seconds)
+**Total running time of the script:** ( 0 minutes  0.107 seconds)
 
 
 

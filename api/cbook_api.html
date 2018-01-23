@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>cbook &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>cbook &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,32 +28,36 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../index.html" />
     <link rel="up" title="The Matplotlib API" href="index.html" />
     <link rel="next" title="cm (colormap)" href="cm_api.html" />
-    <link rel="prev" title="matplotlib.backends.backend_svg" href="backend_svg_api.html" /> 
+    <link rel="prev" title="matplotlib.backends.backend_wxagg" href="backend_wxagg_api.html" /> 
 
 
   </head>
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=cbook&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../index.html"><img src="../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -72,7 +76,7 @@ type="text/css" />
           <a href="cm_api.html" title="cm (colormap)"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="backend_svg_api.html" title="matplotlib.backends.backend_svg"
+          <a href="backend_wxagg_api.html" title="matplotlib.backends.backend_wxagg"
              accesskey="P">previous</a> |</li>
 
         <li><a href="../index.html">home</a>|&nbsp;</li>
@@ -87,16 +91,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">cbook</a><ul>
@@ -109,7 +103,7 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <ul>
   <li><a href="../contents.html">Documentation overview</a><ul>
   <li><a href="index.html">The Matplotlib API</a><ul>
-      <li>Previous: <a href="backend_svg_api.html" title="previous chapter"><code class="docutils literal"><span class="pre">matplotlib.backends.backend_svg</span></code></a></li>
+      <li>Previous: <a href="backend_wxagg_api.html" title="previous chapter"><code class="docutils literal"><span class="pre">matplotlib.backends.backend_wxagg</span></code></a></li>
       <li>Next: <a href="cm_api.html" title="next chapter">cm (colormap)</a></li>
   </ul></li>
   </ul></li>
@@ -144,15 +138,15 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <div class="section" id="module-matplotlib.cbook">
 <span id="matplotlib-cbook"></span><h2><a class="reference internal" href="#module-matplotlib.cbook" title="matplotlib.cbook"><code class="xref py py-mod docutils literal"><span class="pre">matplotlib.cbook</span></code></a><a class="headerlink" href="#module-matplotlib.cbook" title="Permalink to this headline">¶</a></h2>
 <p>A collection of utility functions and classes.  Originally, many
-(but not all) were from the Python Cookbook &#8211; hence the name cbook.</p>
+(but not all) were from the Python Cookbook – hence the name cbook.</p>
 <p>This module is safe to import from anywhere within matplotlib;
 it imports matplotlib only at runtime.</p>
 <dl class="class">
 <dt id="matplotlib.cbook.Bunch">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">Bunch</code><span class="sig-paren">(</span><em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.Bunch" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Often we want to just collect a bunch of stuff together, naming each
-item of the bunch; a dictionary&#8217;s OK for that, but a small do- nothing
+item of the bunch; a dictionary’s OK for that, but a small do- nothing
 class is even handier, and prettier to use.  Whenever you want to
 group a few variables:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">point</span> <span class="o">=</span> <span class="n">Bunch</span><span class="p">(</span><span class="n">datum</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">coord</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
@@ -166,10 +160,9 @@ group a few variables:</p>
 
 <dl class="class">
 <dt id="matplotlib.cbook.CallbackRegistry">
-<em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">CallbackRegistry</code><a class="headerlink" href="#matplotlib.cbook.CallbackRegistry" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
-<p>Handle registering and disconnecting for a set of signals and
-callbacks:</p>
+<em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">CallbackRegistry</code><span class="sig-paren">(</span><em>exception_handler=&lt;function _exception_printer&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.CallbackRegistry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>Handle registering and disconnecting for a set of signals and callbacks:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">oneat</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;eat&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">ondrink</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -199,30 +192,54 @@ leaks).  However, real code in matplotlib rarely does so, and due
 to its design, it is rather difficult to place this kind of code.
 To get around this, and prevent this class of memory leaks, we
 instead store weak references to bound methods only, so when the
-destination object needs to die, the CallbackRegistry won&#8217;t keep
+destination object needs to die, the CallbackRegistry won’t keep
 it alive.  The Python stdlib weakref module can not create weak
 references to bound methods directly, so we need to create a proxy
 object to handle weak references to bound methods (or regular free
 functions).  This technique was shared by Peter Parente on his
-<a class="reference external" href="http://mindtrove.info/python-weak-references/">&#8220;Mindtrove&#8221; blog</a>.</p>
+<a class="reference external" href="http://mindtrove.info/python-weak-references/">“Mindtrove” blog</a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>exception_handler</strong> : callable, optional</p>
+<blockquote class="last">
+<div><p>If provided must have signature</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">handler</span><span class="p">(</span><span class="n">exc</span><span class="p">:</span> <span class="ne">Exception</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>If not None this function will be called with any <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">Exception</span></code></a>
+subclass raised by the callbacks in <a class="reference internal" href="#matplotlib.cbook.CallbackRegistry.process" title="matplotlib.cbook.CallbackRegistry.process"><code class="xref py py-obj docutils literal"><span class="pre">CallbackRegistry.process</span></code></a>.
+The handler may either consume the exception or re-raise.</p>
+<p>The callable must be pickle-able.</p>
+<p>The default handler is</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="n">exc</span><span class="p">):</span>
+    <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 <dl class="method">
 <dt id="matplotlib.cbook.CallbackRegistry.connect">
 <code class="descname">connect</code><span class="sig-paren">(</span><em>s</em>, <em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.CallbackRegistry.connect" title="Permalink to this definition">¶</a></dt>
-<dd><p>register <em>func</em> to be called when a signal <em>s</em> is generated
-func will be called</p>
+<dd><p>Register <em>func</em> to be called when signal <em>s</em> is generated.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.cbook.CallbackRegistry.disconnect">
 <code class="descname">disconnect</code><span class="sig-paren">(</span><em>cid</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.CallbackRegistry.disconnect" title="Permalink to this definition">¶</a></dt>
-<dd><p>disconnect the callback registered with callback id <em>cid</em></p>
+<dd><p>Disconnect the callback registered with callback id <em>cid</em>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.cbook.CallbackRegistry.process">
 <code class="descname">process</code><span class="sig-paren">(</span><em>s</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.CallbackRegistry.process" title="Permalink to this definition">¶</a></dt>
-<dd><p>process signal <code class="xref py py-obj docutils literal"><span class="pre">s</span></code>.  All of the functions registered to receive
-callbacks on <code class="xref py py-obj docutils literal"><span class="pre">s</span></code> will be called with <code class="docutils literal"><span class="pre">**args</span></code> and <code class="docutils literal"><span class="pre">**kwargs</span></code></p>
+<dd><p>Process signal <em>s</em>.</p>
+<p>All of the functions registered to receive callbacks on <em>s</em> will be
+called with <code class="docutils literal"><span class="pre">*args</span></code> and <code class="docutils literal"><span class="pre">**kwargs</span></code>.</p>
 </dd></dl>
 
 </dd></dl>
@@ -230,18 +247,18 @@ callbacks on <code class="xref py py-obj docutils literal"><span class="pre">s</
 <dl class="class">
 <dt id="matplotlib.cbook.GetRealpathAndStat">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">GetRealpathAndStat</code><a class="headerlink" href="#matplotlib.cbook.GetRealpathAndStat" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 </dd></dl>
 
 <dl class="class">
 <dt id="matplotlib.cbook.Grouper">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">Grouper</code><span class="sig-paren">(</span><em>init=()</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.Grouper" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>This class provides a lightweight way to group arbitrary objects
 together into disjoint sets when a full-blown graph data structure
 would be overkill.</p>
 <p>Objects can be joined using <a class="reference internal" href="#matplotlib.cbook.Grouper.join" title="matplotlib.cbook.Grouper.join"><code class="xref py py-meth docutils literal"><span class="pre">join()</span></code></a>, tested for connectedness
-using <a class="reference internal" href="#matplotlib.cbook.Grouper.joined" title="matplotlib.cbook.Grouper.joined"><code class="xref py py-meth docutils literal"><span class="pre">joined()</span></code></a>, and all disjoint sets can be retreived by
+using <a class="reference internal" href="#matplotlib.cbook.Grouper.joined" title="matplotlib.cbook.Grouper.joined"><code class="xref py py-meth docutils literal"><span class="pre">joined()</span></code></a>, and all disjoint sets can be retrieved by
 using the object as an iterator.</p>
 <p>The objects being joined must be hashable and weak-referenceable.</p>
 <p>For example:</p>
@@ -302,7 +319,7 @@ arguments.</p>
 <dl class="exception">
 <dt id="matplotlib.cbook.IgnoredKeywordWarning">
 <em class="property">exception </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">IgnoredKeywordWarning</code><a class="headerlink" href="#matplotlib.cbook.IgnoredKeywordWarning" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">UserWarning</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#UserWarning" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">UserWarning</span></code></a></p>
 <p>A class for issuing warnings about keyword arguments that will be ignored
 by matplotlib</p>
 </dd></dl>
@@ -310,7 +327,7 @@ by matplotlib</p>
 <dl class="class">
 <dt id="matplotlib.cbook.Locked">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">Locked</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.Locked" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Context manager to handle locks.</p>
 <p>Based on code from conda.</p>
 <p>(c) 2012-2013 Continuum Analytics, Inc. / <a class="reference external" href="https://www.continuum.io/">https://www.continuum.io/</a>
@@ -325,7 +342,7 @@ Consult LICENSE_CONDA or <a class="reference external" href="https://opensource.
 <dl class="exception">
 <dt id="matplotlib.cbook.Locked.TimeoutError">
 <em class="property">exception </em><code class="descname">TimeoutError</code><a class="headerlink" href="#matplotlib.cbook.Locked.TimeoutError" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">RuntimeError</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#RuntimeError" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">RuntimeError</span></code></a></p>
 </dd></dl>
 
 </dd></dl>
@@ -333,17 +350,17 @@ Consult LICENSE_CONDA or <a class="reference external" href="https://opensource.
 <dl class="class">
 <dt id="matplotlib.cbook.Null">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">Null</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.Null" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.1: </span>The Null class was deprecated in version 2.1.</p>
 </div>
-<p>Null objects always and reliably &#8220;do nothing.&#8221;</p>
+<p>Null objects always and reliably “do nothing.”</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="matplotlib.cbook.RingBuffer">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">RingBuffer</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.RingBuffer" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.1: </span>The RingBuffer class was deprecated in version 2.1.</p>
 </div>
@@ -365,9 +382,9 @@ Consult LICENSE_CONDA or <a class="reference external" href="https://opensource.
 <dl class="class">
 <dt id="matplotlib.cbook.Sorter">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">Sorter</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.Sorter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <div class="deprecated">
-<p><span class="versionmodified">Deprecated since version 2.1: </span>sorted(..., key=itemgetter(...))</p>
+<p><span class="versionmodified">Deprecated since version 2.1: </span>sorted(…, key=itemgetter(…))</p>
 </div>
 <p>Sort by attribute or item</p>
 <p>Example usage:</p>
@@ -402,7 +419,7 @@ Consult LICENSE_CONDA or <a class="reference external" href="https://opensource.
 <dl class="class">
 <dt id="matplotlib.cbook.Stack">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">Stack</code><span class="sig-paren">(</span><em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.Stack" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Implement a stack where elements can be pushed on and you can move
 back and forth.  But no pop.  Should mimic home / back / forward
 in a browser</p>
@@ -460,7 +477,7 @@ occurring later than the current position are discarded</p>
 <dl class="class">
 <dt id="matplotlib.cbook.Xlator">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">Xlator</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.Xlator" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a></p>
 <div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.1: </span>The Xlator class was deprecated in version 2.1.</p>
 </div>
@@ -572,7 +589,7 @@ dimensions of <code class="xref py py-obj docutils literal"><span class="pre">X<
 </div></blockquote>
 <p><strong>autorange</strong> : bool, optional (False)</p>
 <blockquote>
-<div><p>When <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> and the data are distributed such that the  25th and
+<div><p>When <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> and the data are distributed such that the  25th and
 75th percentiles are equal, <code class="docutils literal"><span class="pre">whis</span></code> is set to <code class="docutils literal"><span class="pre">'range'</span></code> such
 that the whisker ends are at the minimum and maximum of the
 data.</p>
@@ -635,14 +652,14 @@ of data. Keys of each dictionary are the following:</p>
 <p>Non-bootstrapping approach to confidence interval uses Gaussian-
 based asymptotic approximation:</p>
 <img src="../_images/mathmpl/math-1742f7b9ed.png" class="center" /><p>General approach from:
-McGill, R., Tukey, J.W., and Larsen, W.A. (1978) &#8220;Variations of
-Boxplots&#8221;, The American Statistician, 32:12-16.</p>
+McGill, R., Tukey, J.W., and Larsen, W.A. (1978) “Variations of
+Boxplots”, The American Statistician, 32:12-16.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="matplotlib.cbook.converter">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">converter</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.converter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.1: </span>The converter class was deprecated in version 2.1.</p>
 </div>
@@ -702,7 +719,7 @@ written as a helper for Axes.scatter().</p>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.1: </span>The dict_delall function was deprecated in version 2.1.</p>
 </div>
-<p>delete all of the <em>keys</em> from the <a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a> <em>d</em></p>
+<p>delete all of the <em>keys</em> from the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a> <em>d</em></p>
 </dd></dl>
 
 <dl class="function">
@@ -717,7 +734,7 @@ written as a helper for Axes.scatter().</p>
 <dl class="function">
 <dt id="matplotlib.cbook.file_requires_unicode">
 <code class="descclassname">matplotlib.cbook.</code><code class="descname">file_requires_unicode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.file_requires_unicode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> if the given writable file-like object requires Unicode
+<dd><p>Returns <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> if the given writable file-like object requires Unicode
 to be written to it.</p>
 </dd></dl>
 
@@ -755,7 +772,10 @@ and Recipe 1.12 in cookbook</p>
 <dl class="function">
 <dt id="matplotlib.cbook.get_recursive_filelist">
 <code class="descclassname">matplotlib.cbook.</code><code class="descname">get_recursive_filelist</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.get_recursive_filelist" title="Permalink to this definition">¶</a></dt>
-<dd><p>Recurse all the files and dirs in <em>args</em> ignoring symbolic links
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The get_recursive_filelist function was deprecated in version 2.1.</p>
+</div>
+<p>Recurse all the files and dirs in <em>args</em> ignoring symbolic links
 and return the files as a list of strings</p>
 </dd></dl>
 
@@ -763,11 +783,11 @@ and return the files as a list of strings</p>
 <dt id="matplotlib.cbook.get_sample_data">
 <code class="descclassname">matplotlib.cbook.</code><code class="descname">get_sample_data</code><span class="sig-paren">(</span><em>fname</em>, <em>asfileobj=True</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.get_sample_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a sample data file.  <em>fname</em> is a path relative to the
-<code class="xref py py-obj docutils literal"><span class="pre">mpl-data/sample_data</span></code> directory.  If <em>asfileobj</em> is <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>
+<code class="xref py py-obj docutils literal"><span class="pre">mpl-data/sample_data</span></code> directory.  If <em>asfileobj</em> is <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>
 return a file object, otherwise just a file path.</p>
 <p>Set the rc parameter examples.directory to the directory where we should
 look, if sample_data files are stored in a location different than
-default (which is &#8216;mpl-data/sample_data` at the same level of &#8216;matplotlib`
+default (which is ‘mpl-data/sample_data` at the same level of ‘matplotlib`
 Python module files).</p>
 <p>If the filename ends in .gz, the file is implicitly ungzipped.</p>
 </dd></dl>
@@ -775,7 +795,10 @@ Python module files).</p>
 <dl class="function">
 <dt id="matplotlib.cbook.get_split_ind">
 <code class="descclassname">matplotlib.cbook.</code><code class="descname">get_split_ind</code><span class="sig-paren">(</span><em>seq</em>, <em>N</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.get_split_ind" title="Permalink to this definition">¶</a></dt>
-<dd><p><em>seq</em> is a list of words.  Return the index into seq such that:</p>
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The get_split_ind function was deprecated in version 2.1.</p>
+</div>
+<p><em>seq</em> is a list of words.  Return the index into seq such that:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">seq</span><span class="p">[:</span><span class="n">ind</span><span class="p">])</span><span class="o">&lt;=</span><span class="n">N</span>
 </pre></div>
 </div>
@@ -896,7 +919,7 @@ labeled data.</p>
 argument(s) from a kwargs dict. The following possible output values are
 considered in order of priority:</p>
 <blockquote>
-<div>local_var &gt; kwargs[keys[0]] &gt; ... &gt; kwargs[keys[-1]]</div></blockquote>
+<div>local_var &gt; kwargs[keys[0]] &gt; … &gt; kwargs[keys[-1]]</div></blockquote>
 <p>The first of these whose value is not None will be returned. If all are
 None then None will be returned. Each key in keys will be removed from the
 kwargs dict in place.</p>
@@ -941,8 +964,8 @@ the output value</p>
 <dl class="class">
 <dt id="matplotlib.cbook.maxdict">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">maxdict</code><span class="sig-paren">(</span><em>maxsize</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.maxdict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a></p>
-<p>A dictionary with a maximum size; this doesn&#8217;t override all the
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a></p>
+<p>A dictionary with a maximum size; this doesn’t override all the
 relevant methods to constrain the size, just setitem, so use with
 caution</p>
 </dd></dl>
@@ -1022,6 +1045,12 @@ empty, return <em>False</em>.</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="matplotlib.cbook.open_file_cm">
+<code class="descclassname">matplotlib.cbook.</code><code class="descname">open_file_cm</code><span class="sig-paren">(</span><em>path_or_file</em>, <em>mode='r'</em>, <em>encoding=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.open_file_cm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pass through file objects and context-manage <code class="xref py py-obj docutils literal"><span class="pre">PathLike</span></code>s.</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="matplotlib.cbook.pieces">
 <code class="descclassname">matplotlib.cbook.</code><code class="descname">pieces</code><span class="sig-paren">(</span><em>seq</em>, <em>num=2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.pieces" title="Permalink to this definition">¶</a></dt>
 <dd><div class="deprecated">
@@ -1058,9 +1087,9 @@ intervals.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>x</strong> : array</p>
 <blockquote>
-<div><p>The x location of the steps.</p>
+<div><p>The x location of the steps. May be empty.</p>
 </div></blockquote>
-<p><strong>y1, ..., yp</strong> : array</p>
+<p><strong>y1, …, yp</strong> : array</p>
 <blockquote>
 <div><p>y arrays to be turned into steps; all must be the same length as <code class="docutils literal"><span class="pre">x</span></code>.</p>
 </div></blockquote>
@@ -1093,9 +1122,9 @@ the intervals.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>x</strong> : array</p>
 <blockquote>
-<div><p>The x location of the steps.</p>
+<div><p>The x location of the steps. May be empty.</p>
 </div></blockquote>
-<p><strong>y1, ..., yp</strong> : array</p>
+<p><strong>y1, …, yp</strong> : array</p>
 <blockquote>
 <div><p>y arrays to be turned into steps; all must be the same length as <code class="docutils literal"><span class="pre">x</span></code>.</p>
 </div></blockquote>
@@ -1105,7 +1134,8 @@ the intervals.</p>
 <blockquote class="last">
 <div><p>The x and y values converted to steps in the same order as the input;
 can be unpacked as <code class="docutils literal"><span class="pre">x_out,</span> <span class="pre">y1_out,</span> <span class="pre">...,</span> <span class="pre">yp_out</span></code>.  If the input is
-length <code class="docutils literal"><span class="pre">N</span></code>, each of these arrays will be length <code class="docutils literal"><span class="pre">2N</span> <span class="pre">+</span> <span class="pre">1</span></code>.</p>
+length <code class="docutils literal"><span class="pre">N</span></code>, each of these arrays will be length <code class="docutils literal"><span class="pre">2N</span> <span class="pre">+</span> <span class="pre">1</span></code>. For
+<code class="docutils literal"><span class="pre">N=0</span></code>, the length will be 0.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -1128,9 +1158,9 @@ beginning of the intervals.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>x</strong> : array</p>
 <blockquote>
-<div><p>The x location of the steps.</p>
+<div><p>The x location of the steps. May be empty.</p>
 </div></blockquote>
-<p><strong>y1, ..., yp</strong> : array</p>
+<p><strong>y1, …, yp</strong> : array</p>
 <blockquote>
 <div><p>y arrays to be turned into steps; all must be the same length as <code class="docutils literal"><span class="pre">x</span></code>.</p>
 </div></blockquote>
@@ -1140,7 +1170,8 @@ beginning of the intervals.</p>
 <blockquote class="last">
 <div><p>The x and y values converted to steps in the same order as the input;
 can be unpacked as <code class="docutils literal"><span class="pre">x_out,</span> <span class="pre">y1_out,</span> <span class="pre">...,</span> <span class="pre">yp_out</span></code>.  If the input is
-length <code class="docutils literal"><span class="pre">N</span></code>, each of these arrays will be length <code class="docutils literal"><span class="pre">2N</span> <span class="pre">+</span> <span class="pre">1</span></code>.</p>
+length <code class="docutils literal"><span class="pre">N</span></code>, each of these arrays will be length <code class="docutils literal"><span class="pre">2N</span> <span class="pre">+</span> <span class="pre">1</span></code>. For
+<code class="docutils literal"><span class="pre">N=0</span></code>, the length will be 0.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -1168,7 +1199,10 @@ length <code class="docutils literal"><span class="pre">N</span></code>, each of
 <dl class="function">
 <dt id="matplotlib.cbook.restrict_dict">
 <code class="descclassname">matplotlib.cbook.</code><code class="descname">restrict_dict</code><span class="sig-paren">(</span><em>d</em>, <em>keys</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.restrict_dict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return a dictionary that contains those keys that appear in both
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The restrict_dict function was deprecated in version 2.1.</p>
+</div>
+<p>Return a dictionary that contains those keys that appear in both
 d and keys, with values from d.</p>
 </dd></dl>
 
@@ -1178,7 +1212,7 @@ d and keys, with values from d.</p>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.1: </span>The reverse_dict function was deprecated in version 2.1.</p>
 </div>
-<p>reverse the dictionary &#8211; may lose data if values are not unique!</p>
+<p>reverse the dictionary – may lose data if values are not unique!</p>
 </dd></dl>
 
 <dl class="function">
@@ -1206,7 +1240,7 @@ d and keys, with values from d.</p>
 <dl class="class">
 <dt id="matplotlib.cbook.silent_list">
 <em class="property">class </em><code class="descclassname">matplotlib.cbook.</code><code class="descname">silent_list</code><span class="sig-paren">(</span><em>type</em>, <em>seq=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.silent_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#list" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">list</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">list</span></code></a></p>
 <p>override repr when returning a list of matplotlib artists to
 prevent long, meaningless output.  This is meant to be used for a
 homogeneous list of a given type</p>
@@ -1215,7 +1249,23 @@ homogeneous list of a given type</p>
 <dl class="function">
 <dt id="matplotlib.cbook.simple_linear_interpolation">
 <code class="descclassname">matplotlib.cbook.</code><code class="descname">simple_linear_interpolation</code><span class="sig-paren">(</span><em>a</em>, <em>steps</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.simple_linear_interpolation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Resample an array with <code class="docutils literal"><span class="pre">steps</span> <span class="pre">-</span> <span class="pre">1</span></code> points between original point pairs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : array, shape (n, …)</p>
+<p><strong>steps</strong> : int</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">array, shape <code class="docutils literal"><span class="pre">((n</span> <span class="pre">-</span> <span class="pre">1)</span> <span class="pre">*</span> <span class="pre">steps</span> <span class="pre">+</span> <span class="pre">1,</span> <span class="pre">...)</span></code></p>
+<p>Along each column of <em>a</em>, <code class="docutils literal"><span class="pre">(steps</span> <span class="pre">-</span> <span class="pre">1)</span></code> points are introduced between</p>
+<p class="last">each original values; the values are linearly interpolated.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="matplotlib.cbook.soundex">
@@ -1234,10 +1284,10 @@ homogeneous list of a given type</p>
 
 <dl class="function">
 <dt id="matplotlib.cbook.to_filehandle">
-<code class="descclassname">matplotlib.cbook.</code><code class="descname">to_filehandle</code><span class="sig-paren">(</span><em>fname</em>, <em>flag='rU'</em>, <em>return_opened=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.to_filehandle" title="Permalink to this definition">¶</a></dt>
-<dd><p><em>fname</em> can be a filename or a file handle.  Support for gzipped
+<code class="descclassname">matplotlib.cbook.</code><code class="descname">to_filehandle</code><span class="sig-paren">(</span><em>fname</em>, <em>flag='rU'</em>, <em>return_opened=False</em>, <em>encoding=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.cbook.to_filehandle" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>fname</em> can be an <a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">os.PathLike</span></code></a> or a file handle.  Support for gzipped
 files is automatic, if the filename ends in .gz.  <em>flag</em> is a
-read/write flag for <a class="reference external" href="https://docs.python.org/2/library/functions.html#file" title="(in Python v2.7)"><code class="xref py py-func docutils literal"><span class="pre">file()</span></code></a></p>
+read/write flag for <code class="xref py py-func docutils literal"><span class="pre">file()</span></code></p>
 </dd></dl>
 
 <dl class="class">
@@ -1312,12 +1362,12 @@ read/write flag for <a class="reference external" href="https://docs.python.org/
 </div>
 <p>Find index ranges where <em>mask</em> is <em>False</em>.</p>
 <p><em>mask</em> will be flattened if it is not already 1-D.</p>
-<p>Returns Nx2 <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.12)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a> with each row the start and stop
-indices for slices of the compressed <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.12)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a>
+<p>Returns Nx2 <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a> with each row the start and stop
+indices for slices of the compressed <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a>
 corresponding to each of <em>N</em> uninterrupted runs of unmasked
 values.  If optional argument <em>compressed</em> is <em>False</em>, it returns
-the start and stop indices into the original <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.12)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a>,
-not the compressed <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.12)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a>.  Returns <em>None</em> if there
+the start and stop indices into the original <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a>,
+not the compressed <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a>.  Returns <em>None</em> if there
 are no unmasked values.</p>
 <p>Example:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">mask</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
@@ -1410,9 +1460,9 @@ estimate at each of the coordinates given in <code class="xref py py-obj docutil
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -1518,52 +1568,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

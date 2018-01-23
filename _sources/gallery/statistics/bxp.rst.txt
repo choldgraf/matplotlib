@@ -3,9 +3,9 @@
 .. _sphx_glr_gallery_statistics_bxp.py:
 
 
-===================================
-Demo of the boxplot drawer function
-===================================
+=======================
+Boxplot drawer function
+=======================
 
 This example demonstrates how to pass pre-computed box plot
 statistics to the box plot drawer. The first figure demonstrates
@@ -17,33 +17,6 @@ be customized.
 A good general reference on boxplots and their history can be found
 here: http://vita.had.co.nz/papers/boxplots.pdf
 
-
-
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/statistics/images/sphx_glr_bxp_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/statistics/images/sphx_glr_bxp_002.png
-            :scale: 47
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out::
-
-    ['label', 'mean', 'iqr', 'cilo', 'cihi', 'whishi', 'whislo', 'fliers', 'q1', 'med', 'q3']
-
-
-
-
-|
 
 
 .. code-block:: python
@@ -60,9 +33,22 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
 
     # compute the boxplot stats
     stats = cbook.boxplot_stats(data, labels=labels, bootstrap=10000)
-    # After we've computed the stats, we can go through and change anything.
-    # Just to prove it, I'll set the median of each set to the median of all
-    # the data, and double the means
+
+
+
+
+
+
+
+After we've computed the stats, we can go through and change anything.
+Just to prove it, I'll set the median of each set to the median of all
+the data, and double the means
+
+
+
+.. code-block:: python
+
+
     for n in range(len(stats)):
         stats[n]['med'] = np.median(data)
         stats[n]['mean'] *= 2
@@ -71,7 +57,24 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
 
     fs = 10  # fontsize
 
-    # demonstrate how to toggle the display of different elements:
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    ['label', 'mean', 'iqr', 'cilo', 'cihi', 'whishi', 'whislo', 'fliers', 'q1', 'med', 'q3']
+
+
+Demonstrate how to toggle the display of different elements:
+
+
+
+.. code-block:: python
+
+
     fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)
     axes[0, 0].bxp(stats)
     axes[0, 0].set_title('Default', fontsize=fs)
@@ -99,7 +102,22 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
     fig.subplots_adjust(hspace=0.4)
     plt.show()
 
-    # demonstrate how to customize the display different elements:
+
+
+
+.. image:: /gallery/statistics/images/sphx_glr_bxp_001.png
+    :align: center
+
+
+
+
+Demonstrate how to customize the display different elements:
+
+
+
+.. code-block:: python
+
+
     boxprops = dict(linestyle='--', linewidth=3, color='darkgoldenrod')
     flierprops = dict(marker='o', markerfacecolor='green', markersize=12,
                       linestyle='none')
@@ -131,7 +149,15 @@ here: http://vita.had.co.nz/papers/boxplots.pdf
     fig.subplots_adjust(hspace=0.4)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  2.037 seconds)
+
+
+.. image:: /gallery/statistics/images/sphx_glr_bxp_002.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  2.299 seconds)
 
 
 

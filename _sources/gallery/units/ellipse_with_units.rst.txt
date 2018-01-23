@@ -15,24 +15,6 @@ Compare the ellipse generated with arcs versus a polygonal approximation
 
 
 
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image:: /gallery/units/images/sphx_glr_ellipse_with_units_001.png
-            :scale: 47
-
-    *
-
-      .. image:: /gallery/units/images/sphx_glr_ellipse_with_units_002.png
-            :scale: 47
-
-
-
-
-
 .. code-block:: python
 
     from basic_units import cm
@@ -60,6 +42,16 @@ Compare the ellipse generated with arcs versus a polygonal approximation
     x += xcenter
     y += ycenter
 
+
+
+
+
+
+
+
+.. code-block:: python
+
+
     fig = plt.figure()
     ax = fig.add_subplot(211, aspect='auto')
     ax.fill(x, y, alpha=0.2, facecolor='yellow',
@@ -78,6 +70,19 @@ Compare the ellipse generated with arcs versus a polygonal approximation
 
     ax.add_patch(e2)
     fig.savefig('ellipse_compare')
+
+
+
+
+.. image:: /gallery/units/images/sphx_glr_ellipse_with_units_001.png
+    :align: center
+
+
+
+
+
+.. code-block:: python
+
 
     fig = plt.figure()
     ax = fig.add_subplot(211, aspect='auto')
@@ -100,7 +105,15 @@ Compare the ellipse generated with arcs versus a polygonal approximation
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.751 seconds)
+
+
+.. image:: /gallery/units/images/sphx_glr_ellipse_with_units_002.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  0.714 seconds)
 
 
 

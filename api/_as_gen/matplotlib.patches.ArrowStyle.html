@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.patches.ArrowStyle &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.patches.ArrowStyle &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="patches" href="../patches_api.html" />
     <link rel="next" title="matplotlib.patches.BoxStyle" href="matplotlib.patches.BoxStyle.html" />
     <link rel="prev" title="matplotlib.patches.Arrow" href="matplotlib.patches.Arrow.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.patches.ArrowStyle&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -87,17 +91,7 @@ type="text/css" />
 
   
       <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/><div class="relations">
+        <div class="sphinxsidebarwrapper"><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../contents.html">Documentation overview</a><ul>
@@ -241,6 +235,355 @@ stroked. This is meant to be used to correct the location of the
 head so that it does not overshoot the destination point, but not all
 classes support it.</p>
 <p>return the instance of the subclass with the given style name.</p>
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.BarAB">
+<em class="property">class </em><code class="descname">BarAB</code><span class="sig-paren">(</span><em>widthA=1.0</em>, <em>angleA=None</em>, <em>widthB=1.0</em>, <em>angleB=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.BarAB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with a bar(|) at both ends.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>widthA</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the bracket</p>
+</div></blockquote>
+<p><strong>angleA</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Angle between the bracket and the line</p>
+</div></blockquote>
+<p><strong>widthB</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the bracket</p>
+</div></blockquote>
+<p><strong>angleB</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Angle between the bracket and the line</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.BracketA">
+<em class="property">class </em><code class="descname">BracketA</code><span class="sig-paren">(</span><em>widthA=1.0</em>, <em>lengthA=0.2</em>, <em>angleA=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.BracketA" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with a bracket(])  at its end.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>widthA</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the bracket</p>
+</div></blockquote>
+<p><strong>lengthA</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the bracket</p>
+</div></blockquote>
+<p><strong>angleA</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Angle between the bracket and the line</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.BracketAB">
+<em class="property">class </em><code class="descname">BracketAB</code><span class="sig-paren">(</span><em>widthA=1.0</em>, <em>lengthA=0.2</em>, <em>angleA=None</em>, <em>widthB=1.0</em>, <em>lengthB=0.2</em>, <em>angleB=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.BracketAB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with a bracket(]) at both ends.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>widthA</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the bracket</p>
+</div></blockquote>
+<p><strong>lengthA</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the bracket</p>
+</div></blockquote>
+<p><strong>angleA</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Angle between the bracket and the line</p>
+</div></blockquote>
+<p><strong>widthB</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the bracket</p>
+</div></blockquote>
+<p><strong>lengthB</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the bracket</p>
+</div></blockquote>
+<p><strong>angleB</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Angle between the bracket and the line</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.BracketB">
+<em class="property">class </em><code class="descname">BracketB</code><span class="sig-paren">(</span><em>widthB=1.0</em>, <em>lengthB=0.2</em>, <em>angleB=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.BracketB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with a bracket([)  at its end.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>widthB</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the bracket</p>
+</div></blockquote>
+<p><strong>lengthB</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the bracket</p>
+</div></blockquote>
+<p><strong>angleB</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Angle between the bracket and the line</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.Curve">
+<em class="property">class </em><code class="descname">Curve</code><a class="headerlink" href="#matplotlib.patches.ArrowStyle.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple curve without any arrow head.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.CurveA">
+<em class="property">class </em><code class="descname">CurveA</code><span class="sig-paren">(</span><em>head_length=0.4</em>, <em>head_width=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.CurveA" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with a head at its begin point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.CurveAB">
+<em class="property">class </em><code class="descname">CurveAB</code><span class="sig-paren">(</span><em>head_length=0.4</em>, <em>head_width=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.CurveAB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with heads both at the begin and the end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.CurveB">
+<em class="property">class </em><code class="descname">CurveB</code><span class="sig-paren">(</span><em>head_length=0.4</em>, <em>head_width=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.CurveB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with a head at its end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.CurveFilledA">
+<em class="property">class </em><code class="descname">CurveFilledA</code><span class="sig-paren">(</span><em>head_length=0.4</em>, <em>head_width=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.CurveFilledA" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with filled triangle head at the begin.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.CurveFilledAB">
+<em class="property">class </em><code class="descname">CurveFilledAB</code><span class="sig-paren">(</span><em>head_length=0.4</em>, <em>head_width=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.CurveFilledAB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with filled triangle heads at both ends.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.CurveFilledB">
+<em class="property">class </em><code class="descname">CurveFilledB</code><span class="sig-paren">(</span><em>head_length=0.4</em>, <em>head_width=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.CurveFilledB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An arrow with filled triangle head at the end.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.Fancy">
+<em class="property">class </em><code class="descname">Fancy</code><span class="sig-paren">(</span><em>head_length=0.4</em>, <em>head_width=0.4</em>, <em>tail_width=0.4</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.Fancy" title="Permalink to this definition">¶</a></dt>
+<dd><p>A fancy arrow. Only works with a quadratic bezier curve.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+<p><strong>tail_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow tail</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="matplotlib.patches.ArrowStyle.Fancy.transmute">
+<code class="descname">transmute</code><span class="sig-paren">(</span><em>path</em>, <em>mutation_size</em>, <em>linewidth</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.Fancy.transmute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.Simple">
+<em class="property">class </em><code class="descname">Simple</code><span class="sig-paren">(</span><em>head_length=0.5</em>, <em>head_width=0.5</em>, <em>tail_width=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.Simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple arrow. Only works with a quadratic bezier curve.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>head_length</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Length of the arrow head</p>
+</div></blockquote>
+<p><strong>head_width</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the arrow head</p>
+</div></blockquote>
+<p><strong>tail_width</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Width of the arrow tail</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="matplotlib.patches.ArrowStyle.Simple.transmute">
+<code class="descname">transmute</code><span class="sig-paren">(</span><em>path</em>, <em>mutation_size</em>, <em>linewidth</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.Simple.transmute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="matplotlib.patches.ArrowStyle.Wedge">
+<em class="property">class </em><code class="descname">Wedge</code><span class="sig-paren">(</span><em>tail_width=0.3</em>, <em>shrink_factor=0.5</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.Wedge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wedge(?) shape. Only works with a quadratic bezier curve.  The
+begin point has a width of the tail_width and the end point has a
+width of 0. At the middle, the width is shrink_factor*tail_width.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>tail_width</strong> : float, optional, default</p>
+<blockquote>
+<div><p>Width of the tail</p>
+</div></blockquote>
+<p><strong>shrink_factor</strong> : float, optional, default</p>
+<blockquote class="last">
+<div><p>Fraction of the arrow width at the middle point</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="matplotlib.patches.ArrowStyle.Wedge.transmute">
+<code class="descname">transmute</code><span class="sig-paren">(</span><em>path</em>, <em>mutation_size</em>, <em>linewidth</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.patches.ArrowStyle.Wedge.transmute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </dd></dl>
 
 <div class="clearer"></div></div>
@@ -254,9 +597,9 @@ classes support it.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -362,52 +705,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

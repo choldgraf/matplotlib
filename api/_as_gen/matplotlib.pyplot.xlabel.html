@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.xlabel &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.pyplot.xlabel &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
     <link rel="next" title="matplotlib.pyplot.xlim" href="matplotlib.pyplot.xlim.html" />
     <link rel="prev" title="matplotlib.pyplot.xkcd" href="matplotlib.pyplot.xkcd.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.pyplot.xlabel&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -88,16 +92,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">matplotlib.pyplot.xlabel</a><ul>
@@ -167,141 +161,101 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 
 <div class="section" id="examples-using-matplotlib-pyplot-xlabel">
 <h2>Examples using <code class="docutils literal"><span class="pre">matplotlib.pyplot.xlabel</span></code><a class="headerlink" href="#examples-using-matplotlib-pyplot-xlabel" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip="This example contains two animations. The first is a random walk plot. The second is an image a..."><div class="figure" id="id1">
-<img alt="../../_images/sphx_glr_basic_example_thumb.png" src="../../_images/sphx_glr_basic_example_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/animation/basic_example.html#sphx-glr-gallery-animation-basic-example-py"><span class="std std-ref">Simple animation examples</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This example showcases the same animations as `basic_example.py`, but instead of displaying the..."><div class="figure" id="id2">
-<img alt="../../_images/sphx_glr_basic_example_writer_sgskip_thumb.png" src="../../_images/sphx_glr_basic_example_writer_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/animation/basic_example_writer_sgskip.html#sphx-glr-gallery-animation-basic-example-writer-sgskip-py"><span class="std std-ref">Saving an animation</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This example showcases how to create a custom scale, by implementing the scaling use for latitu..."><div class="figure" id="id3">
+<div class="sphx-glr-thumbcontainer" tooltip="Create a custom scale, by implementing the scaling use for latitude data in a Mercator Projecti..."><div class="figure" id="id1">
 <img alt="../../_images/sphx_glr_custom_scale_example_thumb.png" src="../../_images/sphx_glr_custom_scale_example_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/api/custom_scale_example.html#sphx-glr-gallery-api-custom-scale-example-py"><span class="std std-ref">Custom scale</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id4">
-<img alt="../../_images/sphx_glr_axes_demo_thumb.png" src="../../_images/sphx_glr_axes_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/axes_demo.html#sphx-glr-gallery-pylab-examples-axes-demo-py"><span class="std std-ref">Axes Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Bar chart demo with pairs of bars grouped for easy comparison. "><div class="figure" id="id5">
-<img alt="../../_images/sphx_glr_barchart_demo_thumb.png" src="../../_images/sphx_glr_barchart_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/barchart_demo.html#sphx-glr-gallery-pylab-examples-barchart-demo-py"><span class="std std-ref">Barchart Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="matplotlib gives you 5 ways to specify colors,"><div class="figure" id="id6">
-<img alt="../../_images/sphx_glr_color_demo_thumb.png" src="../../_images/sphx_glr_color_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/color_demo.html#sphx-glr-gallery-pylab-examples-color-demo-py"><span class="std std-ref">Color Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id7">
-<img alt="../../_images/sphx_glr_contourf_demo_thumb.png" src="../../_images/sphx_glr_contourf_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/contourf_demo.html#sphx-glr-gallery-pylab-examples-contourf-demo-py"><span class="std std-ref">Contourf Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id8">
-<img alt="../../_images/sphx_glr_figure_title_thumb.png" src="../../_images/sphx_glr_figure_title_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/figure_title.html#sphx-glr-gallery-pylab-examples-figure-title-py"><span class="std std-ref">Figure Title</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Recursively find all objects that match some criteria "><div class="figure" id="id9">
-<img alt="../../_images/sphx_glr_findobj_demo_thumb.png" src="../../_images/sphx_glr_findobj_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/findobj_demo.html#sphx-glr-gallery-pylab-examples-findobj-demo-py"><span class="std std-ref">Findobj Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="You can use decreasing axes by flipping the normal order of the axis limits "><div class="figure" id="id10">
-<img alt="../../_images/sphx_glr_invert_axes_thumb.png" src="../../_images/sphx_glr_invert_axes_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/invert_axes.html#sphx-glr-gallery-pylab-examples-invert-axes-py"><span class="std std-ref">Invert Axes</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Make a legend for specific lines. "><div class="figure" id="id11">
-<img alt="../../_images/sphx_glr_legend_demo2_thumb.png" src="../../_images/sphx_glr_legend_demo2_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/legend_demo2.html#sphx-glr-gallery-pylab-examples-legend-demo2-py"><span class="std std-ref">Legend Demo2</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id12">
-<img alt="../../_images/sphx_glr_log_bar_thumb.png" src="../../_images/sphx_glr_log_bar_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/log_bar.html#sphx-glr-gallery-pylab-examples-log-bar-py"><span class="std std-ref">Log Bar</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id13">
-<img alt="../../_images/sphx_glr_multiline_thumb.png" src="../../_images/sphx_glr_multiline_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/multiline.html#sphx-glr-gallery-pylab-examples-multiline-py"><span class="std std-ref">Multiline</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Example: simple line plots with NaNs inserted. "><div class="figure" id="id14">
-<img alt="../../_images/sphx_glr_nan_test_thumb.png" src="../../_images/sphx_glr_nan_test_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/nan_test.html#sphx-glr-gallery-pylab-examples-nan-test-py"><span class="std std-ref">Nan Test</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id15">
-<img alt="../../_images/sphx_glr_plotfile_demo_thumb.png" src="../../_images/sphx_glr_plotfile_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/plotfile_demo.html#sphx-glr-gallery-pylab-examples-plotfile-demo-py"><span class="std std-ref">Plotfile Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id16">
-<img alt="../../_images/sphx_glr_scatter_symbol_thumb.png" src="../../_images/sphx_glr_scatter_symbol_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/scatter_symbol.html#sphx-glr-gallery-pylab-examples-scatter-symbol-py"><span class="std std-ref">Scatter Symbol</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id17">
-<img alt="../../_images/sphx_glr_simple_plot_thumb.png" src="../../_images/sphx_glr_simple_plot_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/simple_plot.html#sphx-glr-gallery-pylab-examples-simple-plot-py"><span class="std std-ref">Simple Plot</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Simple demo with multiple subplots. "><div class="figure" id="id18">
-<img alt="../../_images/sphx_glr_subplot_demo_thumb.png" src="../../_images/sphx_glr_subplot_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/subplot_demo.html#sphx-glr-gallery-pylab-examples-subplot-demo-py"><span class="std std-ref">Subplot Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="You can use TeX to render all of your matplotlib text if the rc parameter text.usetex is set.  ..."><div class="figure" id="id19">
-<img alt="../../_images/sphx_glr_tex_demo_thumb.png" src="../../_images/sphx_glr_tex_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/tex_demo.html#sphx-glr-gallery-pylab-examples-tex-demo-py"><span class="std std-ref">Tex Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This demo is tex_demo.py modified to have unicode. See that file for more information."><div class="figure" id="id20">
-<img alt="../../_images/sphx_glr_tex_unicode_demo_thumb.png" src="../../_images/sphx_glr_tex_unicode_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/tex_unicode_demo.html#sphx-glr-gallery-pylab-examples-tex-unicode-demo-py"><span class="std std-ref">Tex Unicode Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Contour plots of unstructured triangular grids. "><div class="figure" id="id21">
-<img alt="../../_images/sphx_glr_tricontour_demo_thumb.png" src="../../_images/sphx_glr_tricontour_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/tricontour_demo.html#sphx-glr-gallery-pylab-examples-tricontour-demo-py"><span class="std std-ref">Tricontour Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Pseudocolor plots of unstructured triangular grids. "><div class="figure" id="id22">
-<img alt="../../_images/sphx_glr_tripcolor_demo_thumb.png" src="../../_images/sphx_glr_tripcolor_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/tripcolor_demo.html#sphx-glr-gallery-pylab-examples-tripcolor-demo-py"><span class="std std-ref">Tripcolor Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Creating and plotting unstructured triangular grids. "><div class="figure" id="id23">
-<img alt="../../_images/sphx_glr_triplot_demo_thumb.png" src="../../_images/sphx_glr_triplot_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/triplot_demo.html#sphx-glr-gallery-pylab-examples-triplot-demo-py"><span class="std std-ref">Triplot Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id24">
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id2">
 <img alt="../../_images/sphx_glr_pyplot_mathtext_thumb.png" src="../../_images/sphx_glr_pyplot_mathtext_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pyplots/pyplot_mathtext.html#sphx-glr-gallery-pyplots-pyplot-mathtext-py"><span class="std std-ref">Pyplot Mathtext</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id25">
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id3">
 <img alt="../../_images/sphx_glr_pyplot_text_thumb.png" src="../../_images/sphx_glr_pyplot_text_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pyplots/pyplot_text.html#sphx-glr-gallery-pyplots-pyplot-text-py"><span class="std std-ref">Pyplot Text</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Demo of TeX rendering."><div class="figure" id="id26">
-<img alt="../../_images/sphx_glr_tex_demo_thumb1.png" src="../../_images/sphx_glr_tex_demo_thumb1.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pyplots/tex_demo.html#sphx-glr-gallery-pyplots-tex-demo-py"><span class="std std-ref">Tex Demo</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="You can use decreasing axes by flipping the normal order of the axis limits "><div class="figure" id="id4">
+<img alt="../../_images/sphx_glr_invert_axes_thumb.png" src="../../_images/sphx_glr_invert_axes_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/subplots_axes_and_figures/invert_axes.html#sphx-glr-gallery-subplots-axes-and-figures-invert-axes-py"><span class="std std-ref">Invert Axes</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Shows how to create an xkcd-like plot. "><div class="figure" id="id27">
-<img alt="../../_images/sphx_glr_xkcd_thumb.png" src="../../_images/sphx_glr_xkcd_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/showcase/xkcd.html#sphx-glr-gallery-showcase-xkcd-py"><span class="std std-ref">XKCD</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Simple demo with multiple subplots. "><div class="figure" id="id28">
+</div><div class="sphx-glr-thumbcontainer" tooltip="Simple demo with multiple subplots. "><div class="figure" id="id5">
 <img alt="../../_images/sphx_glr_subplot_thumb.png" src="../../_images/sphx_glr_subplot_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/subplots_axes_and_figures/subplot.html#sphx-glr-gallery-subplots-axes-and-figures-subplot-py"><span class="std std-ref">Multiple subplots</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to share parameters across many text objects and labels by creating a di..."><div class="figure" id="id29">
+</div><div class="sphx-glr-thumbcontainer" tooltip="Create a figure with separate subplot titles and a centered figure title. "><div class="figure" id="id6">
+<img alt="../../_images/sphx_glr_figure_title_thumb.png" src="../../_images/sphx_glr_figure_title_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/subplots_axes_and_figures/figure_title.html#sphx-glr-gallery-subplots-axes-and-figures-figure-title-py"><span class="std std-ref">Figure Title</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Example use of ``plt.axes`` to create inset axes within the main plot axes. "><div class="figure" id="id7">
+<img alt="../../_images/sphx_glr_axes_demo_thumb.png" src="../../_images/sphx_glr_axes_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/subplots_axes_and_figures/axes_demo.html#sphx-glr-gallery-subplots-axes-and-figures-axes-demo-py"><span class="std std-ref">Axes Demo</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id8">
+<img alt="../../_images/sphx_glr_scatter_symbol_thumb.png" src="../../_images/sphx_glr_scatter_symbol_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/lines_bars_and_markers/scatter_symbol.html#sphx-glr-gallery-lines-bars-and-markers-scatter-symbol-py"><span class="std std-ref">Scatter Symbol</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Example: simple line plots with NaNs inserted. "><div class="figure" id="id9">
+<img alt="../../_images/sphx_glr_nan_test_thumb.png" src="../../_images/sphx_glr_nan_test_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/lines_bars_and_markers/nan_test.html#sphx-glr-gallery-lines-bars-and-markers-nan-test-py"><span class="std std-ref">Nan Test</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="How to use the ``contourf`` function to create filled contour plots. "><div class="figure" id="id10">
+<img alt="../../_images/sphx_glr_contourf_demo_thumb.png" src="../../_images/sphx_glr_contourf_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/contourf_demo.html#sphx-glr-gallery-images-contours-and-fields-contourf-demo-py"><span class="std std-ref">Contourf Demo</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Creating and plotting unstructured triangular grids. "><div class="figure" id="id11">
+<img alt="../../_images/sphx_glr_triplot_demo_thumb.png" src="../../_images/sphx_glr_triplot_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/triplot_demo.html#sphx-glr-gallery-images-contours-and-fields-triplot-demo-py"><span class="std std-ref">Triplot Demo</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Contour plots of unstructured triangular grids. "><div class="figure" id="id12">
+<img alt="../../_images/sphx_glr_tricontour_demo_thumb.png" src="../../_images/sphx_glr_tricontour_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/tricontour_demo.html#sphx-glr-gallery-images-contours-and-fields-tricontour-demo-py"><span class="std std-ref">Tricontour Demo</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Pseudocolor plots of unstructured triangular grids. "><div class="figure" id="id13">
+<img alt="../../_images/sphx_glr_tripcolor_demo_thumb.png" src="../../_images/sphx_glr_tripcolor_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/images_contours_and_fields/tripcolor_demo.html#sphx-glr-gallery-images-contours-and-fields-tripcolor-demo-py"><span class="std std-ref">Tripcolor Demo</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to share parameters across many text objects and labels by creating a di..."><div class="figure" id="id14">
 <img alt="../../_images/sphx_glr_text_fontdict_thumb.png" src="../../_images/sphx_glr_text_fontdict_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/text_labels_and_annotations/text_fontdict.html#sphx-glr-gallery-text-labels-and-annotations-text-fontdict-py"><span class="std std-ref">Controlling style of text and labels using a dictionary</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id30">
-<img alt="../../_images/sphx_glr_pgf_fonts_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_fonts_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_fonts_sgskip.html#sphx-glr-gallery-userdemo-pgf-fonts-sgskip-py"><span class="std std-ref">Pgf Fonts</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id15">
+<img alt="../../_images/sphx_glr_multiline_thumb.png" src="../../_images/sphx_glr_multiline_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/text_labels_and_annotations/multiline.html#sphx-glr-gallery-text-labels-and-annotations-multiline-py"><span class="std std-ref">Multiline</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id31">
-<img alt="../../_images/sphx_glr_pgf_preamble_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_preamble_sgskip_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_preamble_sgskip.html#sphx-glr-gallery-userdemo-pgf-preamble-sgskip-py"><span class="std std-ref">Pgf Preamble</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This shows an example of &quot;Solarized_Light&quot; styling, which tries to replicate the styles of:"><div class="figure" id="id16">
+<img alt="../../_images/sphx_glr_plot_solarizedlight2_thumb.png" src="../../_images/sphx_glr_plot_solarizedlight2_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/style_sheets/plot_solarizedlight2.html#sphx-glr-gallery-style-sheets-plot-solarizedlight2-py"><span class="std std-ref">Solarized Light stylesheet</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id32">
+</div><div class="sphx-glr-thumbcontainer" tooltip="Shows how to create an xkcd-like plot. "><div class="figure" id="id17">
+<img alt="../../_images/sphx_glr_xkcd_thumb.png" src="../../_images/sphx_glr_xkcd_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/showcase/xkcd.html#sphx-glr-gallery-showcase-xkcd-py"><span class="std std-ref">XKCD</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Recursively find all objects that match some criteria "><div class="figure" id="id18">
+<img alt="../../_images/sphx_glr_findobj_demo_thumb.png" src="../../_images/sphx_glr_findobj_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/findobj_demo.html#sphx-glr-gallery-misc-findobj-demo-py"><span class="std std-ref">Findobj Demo</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Example use of ``plotfile`` to plot data directly from a file. "><div class="figure" id="id19">
+<img alt="../../_images/sphx_glr_plotfile_demo_thumb.png" src="../../_images/sphx_glr_plotfile_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/misc/plotfile_demo.html#sphx-glr-gallery-misc-plotfile-demo-py"><span class="std std-ref">Plotfile Demo</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id20">
 <img alt="../../_images/sphx_glr_pgf_texsystem_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_texsystem_sgskip_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_texsystem_sgskip.html#sphx-glr-gallery-userdemo-pgf-texsystem-sgskip-py"><span class="std std-ref">Pgf Texsystem</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="An introduction to the pyplot interface."><div class="figure" id="id33">
-<img alt="../../_images/sphx_glr_pyplot_thumb.png" src="../../_images/sphx_glr_pyplot_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/01_introductory/pyplot.html#sphx-glr-tutorials-01-introductory-pyplot-py"><span class="std std-ref">Pyplot tutorial</span></a></span></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id21">
+<img alt="../../_images/sphx_glr_pgf_fonts_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_fonts_sgskip_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_fonts_sgskip.html#sphx-glr-gallery-userdemo-pgf-fonts-sgskip-py"><span class="std std-ref">Pgf Fonts</span></a></span></p>
 </div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This tutorial covers some basic usage patterns and best-practices to help you get started with ..."><div class="figure" id="id34">
+</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id22">
+<img alt="../../_images/sphx_glr_pgf_preamble_sgskip_thumb.png" src="../../_images/sphx_glr_pgf_preamble_sgskip_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/userdemo/pgf_preamble_sgskip.html#sphx-glr-gallery-userdemo-pgf-preamble-sgskip-py"><span class="std std-ref">Pgf Preamble</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This tutorial covers some basic usage patterns and best-practices to help you get started with ..."><div class="figure" id="id23">
 <img alt="../../_images/sphx_glr_usage_thumb.png" src="../../_images/sphx_glr_usage_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/01_introductory/usage.html#sphx-glr-tutorials-01-introductory-usage-py"><span class="std std-ref">Usage Guide</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py"><span class="std std-ref">Usage Guide</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="An introduction to the pyplot interface."><div class="figure" id="id24">
+<img alt="../../_images/sphx_glr_pyplot_thumb.png" src="../../_images/sphx_glr_pyplot_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py"><span class="std std-ref">Pyplot tutorial</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -315,9 +269,9 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -423,52 +377,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

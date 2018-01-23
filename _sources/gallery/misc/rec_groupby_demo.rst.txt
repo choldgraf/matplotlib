@@ -16,7 +16,7 @@ Rec Groupby Demo
 
  Out::
 
-    loading /Users/choldgraf/Dropbox/github/forks/python/matplotlib/lib/matplotlib/mpl-data/sample_data/msft.csv
+    loading /mnt/c/Users/chold/Dropbox/github/forks/python/viz/matplotlib/lib/matplotlib/mpl-data/sample_data/msft.csv
     summary by years
        years   rcnt   rmean   rmedian   rsigma
         2003     65   0.002     0.001    0.016
@@ -110,7 +110,7 @@ Rec Groupby Demo
     rv = mlab.rec_groupby(rsum, ('volcode',), stats)
     print(mlab.rec2txt(rv))
 
-**Total running time of the script:** ( 0 minutes  0.042 seconds)
+**Total running time of the script:** ( 0 minutes  0.034 seconds)
 
 
 

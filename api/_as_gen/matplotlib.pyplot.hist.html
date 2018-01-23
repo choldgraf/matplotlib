@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.pyplot.hist &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.pyplot.hist &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html"
 />
     <link rel="search" title="Search" href="../../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../../index.html" />
     <link rel="up" title="matplotlib.pyplot" href="matplotlib.pyplot.html" />
     <link rel="next" title="matplotlib.pyplot.hist2d" href="matplotlib.pyplot.hist2d.html" />
     <link rel="prev" title="matplotlib.pyplot.hexbin" href="matplotlib.pyplot.hexbin.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.pyplot.hist&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../../index.html"><img src="../../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -88,16 +92,6 @@ type="text/css" />
   
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/>
   <h3><a href="../../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">matplotlib.pyplot.hist</a><ul>
@@ -146,14 +140,14 @@ Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
 <h1>matplotlib.pyplot.hist<a class="headerlink" href="#matplotlib-pyplot-hist" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="matplotlib.pyplot.hist">
-<code class="descclassname">matplotlib.pyplot.</code><code class="descname">hist</code><span class="sig-paren">(</span><em>x</em>, <em>bins=None</em>, <em>range=None</em>, <em>normed=False</em>, <em>weights=None</em>, <em>cumulative=False</em>, <em>bottom=None</em>, <em>histtype='bar'</em>, <em>align='mid'</em>, <em>orientation='vertical'</em>, <em>rwidth=None</em>, <em>log=False</em>, <em>color=None</em>, <em>label=None</em>, <em>stacked=False</em>, <em>hold=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.hist" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">matplotlib.pyplot.</code><code class="descname">hist</code><span class="sig-paren">(</span><em>x</em>, <em>bins=None</em>, <em>range=None</em>, <em>density=None</em>, <em>weights=None</em>, <em>cumulative=False</em>, <em>bottom=None</em>, <em>histtype='bar'</em>, <em>align='mid'</em>, <em>orientation='vertical'</em>, <em>rwidth=None</em>, <em>log=False</em>, <em>color=None</em>, <em>label=None</em>, <em>stacked=False</em>, <em>normed=None</em>, <em>hold=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.pyplot.hist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot a histogram.</p>
 <p>Compute and draw the histogram of <em>x</em>. The return value is a
-tuple (<em>n</em>, <em>bins</em>, <em>patches</em>) or ([<em>n0</em>, <em>n1</em>, ...], <em>bins</em>,
-[<em>patches0</em>, <em>patches1</em>,...]) if the input contains multiple
+tuple (<em>n</em>, <em>bins</em>, <em>patches</em>) or ([<em>n0</em>, <em>n1</em>, …], <em>bins</em>,
+[<em>patches0</em>, <em>patches1</em>,…]) if the input contains multiple
 data.</p>
 <p>Multiple data can be provided via <em>x</em> as a list of datasets
-of potentially different length ([<em>x0</em>, <em>x1</em>, ...]), or as
+of potentially different length ([<em>x0</em>, <em>x1</em>, …]), or as
 a 2-D ndarray in which each column is a dataset.  Note that
 the ndarray form is transposed relative to the list form.</p>
 <p>Masked arrays are not supported at present.</p>
@@ -163,57 +157,71 @@ the ndarray form is transposed relative to the list form.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>x</strong> : (n,) array or sequence of (n,) arrays</p>
 <blockquote>
-<div><p>Input values, this takes either a single array or a sequency of
+<div><p>Input values, this takes either a single array or a sequence of
 arrays which are not required to be of the same length</p>
 </div></blockquote>
-<p><strong>bins</strong> : integer or array_like or &#8216;auto&#8217;, optional</p>
+<p><strong>bins</strong> : integer or sequence or ‘auto’, optional</p>
 <blockquote>
-<div><p>If an integer is given, <code class="xref py py-obj docutils literal"><span class="pre">bins</span> <span class="pre">+</span> <span class="pre">1</span></code> bin edges are returned,
-consistently with <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.histogram.html#numpy.histogram" title="(in NumPy v1.12)"><code class="xref py py-func docutils literal"><span class="pre">numpy.histogram()</span></code></a> for numpy version &gt;=
-1.3.</p>
-<p>Unequally spaced bins are supported if <code class="xref py py-obj docutils literal"><span class="pre">bins</span></code> is a sequence.</p>
+<div><p>If an integer is given, <code class="docutils literal"><span class="pre">bins</span> <span class="pre">+</span> <span class="pre">1</span></code> bin edges are calculated and
+returned, consistent with <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.histogram.html#numpy.histogram" title="(in NumPy v1.14)"><code class="xref py py-func docutils literal"><span class="pre">numpy.histogram()</span></code></a>.</p>
+<p>If <code class="xref py py-obj docutils literal"><span class="pre">bins</span></code> is a sequence, gives bin edges, including left edge of
+first bin and right edge of last bin.  In this case, <code class="xref py py-obj docutils literal"><span class="pre">bins</span></code> is
+returned unmodified.</p>
+<p>All but the last (righthand-most) bin is half-open.  In other
+words, if <code class="xref py py-obj docutils literal"><span class="pre">bins</span></code> is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>then the first bin is <code class="docutils literal"><span class="pre">[1,</span> <span class="pre">2)</span></code> (including 1, but excluding 2) and
+the second <code class="docutils literal"><span class="pre">[2,</span> <span class="pre">3)</span></code>.  The last bin, however, is <code class="docutils literal"><span class="pre">[3,</span> <span class="pre">4]</span></code>, which
+<em>includes</em> 4.</p>
+<p>Unequally spaced bins are supported if <em>bins</em> is a sequence.</p>
 <p>If Numpy 1.11 is installed, may also be <code class="docutils literal"><span class="pre">'auto'</span></code>.</p>
 <p>Default is taken from the rcParam <code class="docutils literal"><span class="pre">hist.bins</span></code>.</p>
 </div></blockquote>
 <p><strong>range</strong> : tuple or None, optional</p>
 <blockquote>
 <div><p>The lower and upper range of the bins. Lower and upper outliers
-are ignored. If not provided, <a class="reference external" href="https://docs.python.org/2/library/functions.html#range" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">range</span></code></a> is (x.min(), x.max()). Range
-has no effect if <code class="xref py py-obj docutils literal"><span class="pre">bins</span></code> is a sequence.</p>
-<p>If <code class="xref py py-obj docutils literal"><span class="pre">bins</span></code> is a sequence or <a class="reference external" href="https://docs.python.org/2/library/functions.html#range" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">range</span></code></a> is specified, autoscaling
+are ignored. If not provided, <em>range</em> is <code class="docutils literal"><span class="pre">(x.min(),</span> <span class="pre">x.max())</span></code>.
+Range has no effect if <em>bins</em> is a sequence.</p>
+<p>If <em>bins</em> is a sequence or <em>range</em> is specified, autoscaling
 is based on the specified bin range instead of the
 range of x.</p>
 <p>Default is <code class="docutils literal"><span class="pre">None</span></code></p>
 </div></blockquote>
-<p><strong>normed</strong> : boolean, optional</p>
+<p><strong>density</strong> : boolean, optional</p>
 <blockquote>
-<div><p>If <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, the first element of the return tuple will
+<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, the first element of the return tuple will
 be the counts normalized to form a probability density, i.e.,
 the area (or integral) under the histogram will sum to 1.
-This is achieved dividing the count by the number of observations
-times the bin width and <em>not</em> dividing by the total number
-of observations. If <code class="xref py py-obj docutils literal"><span class="pre">stacked</span></code> is also <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, the sum of the
-histograms is normalized to 1.</p>
-<p>Default is <code class="docutils literal"><span class="pre">False</span></code></p>
+This is achieved by dividing the count by the number of
+observations times the bin width and not dividing by the total
+number of observations. If <em>stacked</em> is also <code class="docutils literal"><span class="pre">True</span></code>, the sum of
+the histograms is normalized to 1.</p>
+<p>Default is <code class="docutils literal"><span class="pre">None</span></code> for both <em>normed</em> and <em>density</em>. If either is
+set, then that value will be used. If neither are set, then the
+args will be treated as <code class="docutils literal"><span class="pre">False</span></code>.</p>
+<p>If both <em>density</em> and <em>normed</em> are set an error is raised.</p>
 </div></blockquote>
 <p><strong>weights</strong> : (n, ) array_like or None, optional</p>
 <blockquote>
-<div><p>An array of weights, of the same shape as <code class="xref py py-obj docutils literal"><span class="pre">x</span></code>.  Each value in <code class="xref py py-obj docutils literal"><span class="pre">x</span></code>
+<div><p>An array of weights, of the same shape as <em>x</em>.  Each value in <em>x</em>
 only contributes its associated weight towards the bin count
-(instead of 1).  If <code class="xref py py-obj docutils literal"><span class="pre">normed</span></code> is True, the weights are normalized,
-so that the integral of the density over the range remains 1.</p>
+(instead of 1).  If <em>normed</em> or <em>density</em> is <code class="docutils literal"><span class="pre">True</span></code>,
+the weights are normalized, so that the integral of the density
+over the range remains 1.</p>
 <p>Default is <code class="docutils literal"><span class="pre">None</span></code></p>
 </div></blockquote>
 <p><strong>cumulative</strong> : boolean, optional</p>
 <blockquote>
-<div><p>If <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, then a histogram is computed where each bin gives the
+<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, then a histogram is computed where each bin gives the
 counts in that bin plus all bins for smaller values. The last bin
-gives the total number of datapoints.  If <code class="xref py py-obj docutils literal"><span class="pre">normed</span></code> is also <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>
-then the histogram is normalized such that the last bin equals 1.
-If <code class="xref py py-obj docutils literal"><span class="pre">cumulative</span></code> evaluates to less than 0 (e.g., -1), the direction
-of accumulation is reversed.  In this case, if <code class="xref py py-obj docutils literal"><span class="pre">normed</span></code> is also
-<a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, then the histogram is normalized such that the first bin
-equals 1.</p>
+gives the total number of datapoints. If <em>normed</em> or <em>density</em>
+is also <code class="docutils literal"><span class="pre">True</span></code> then the histogram is normalized such that the
+last bin equals 1. If <em>cumulative</em> evaluates to less than 0
+(e.g., -1), the direction of accumulation is reversed.
+In this case, if <em>normed</em> and/or <em>density</em> is also <code class="docutils literal"><span class="pre">True</span></code>, then
+the histogram is normalized such that the first bin equals 1.</p>
 <p>Default is <code class="docutils literal"><span class="pre">False</span></code></p>
 </div></blockquote>
 <p><strong>bottom</strong> : array_like, scalar, or None</p>
@@ -224,56 +232,57 @@ If an array, each bin is shifted independently and the length
 of bottom must match the number of bins.  If None, defaults to 0.</p>
 <p>Default is <code class="docutils literal"><span class="pre">None</span></code></p>
 </div></blockquote>
-<p><strong>histtype</strong> : {&#8216;bar&#8217;, &#8216;barstacked&#8217;, &#8216;step&#8217;,  &#8216;stepfilled&#8217;}, optional</p>
+<p><strong>histtype</strong> : {‘bar’, ‘barstacked’, ‘step’,  ‘stepfilled’}, optional</p>
 <blockquote>
 <div><p>The type of histogram to draw.</p>
 <ul class="simple">
-<li>&#8216;bar&#8217; is a traditional bar-type histogram.  If multiple data
-are given the bars are aranged side by side.</li>
-<li>&#8216;barstacked&#8217; is a bar-type histogram where multiple
+<li>‘bar’ is a traditional bar-type histogram.  If multiple data
+are given the bars are arranged side by side.</li>
+<li>‘barstacked’ is a bar-type histogram where multiple
 data are stacked on top of each other.</li>
-<li>&#8216;step&#8217; generates a lineplot that is by default
+<li>‘step’ generates a lineplot that is by default
 unfilled.</li>
-<li>&#8216;stepfilled&#8217; generates a lineplot that is by default
+<li>‘stepfilled’ generates a lineplot that is by default
 filled.</li>
 </ul>
-<p>Default is &#8216;bar&#8217;</p>
+<p>Default is ‘bar’</p>
 </div></blockquote>
-<p><strong>align</strong> : {&#8216;left&#8217;, &#8216;mid&#8217;, &#8216;right&#8217;}, optional</p>
+<p><strong>align</strong> : {‘left’, ‘mid’, ‘right’}, optional</p>
 <blockquote>
 <div><p>Controls how the histogram is plotted.</p>
 <blockquote>
 <div><ul class="simple">
-<li>&#8216;left&#8217;: bars are centered on the left bin edges.</li>
-<li>&#8216;mid&#8217;: bars are centered between the bin edges.</li>
-<li>&#8216;right&#8217;: bars are centered on the right bin edges.</li>
+<li>‘left’: bars are centered on the left bin edges.</li>
+<li>‘mid’: bars are centered between the bin edges.</li>
+<li>‘right’: bars are centered on the right bin edges.</li>
 </ul>
 </div></blockquote>
-<p>Default is &#8216;mid&#8217;</p>
+<p>Default is ‘mid’</p>
 </div></blockquote>
-<p><strong>orientation</strong> : {&#8216;horizontal&#8217;, &#8216;vertical&#8217;}, optional</p>
+<p><strong>orientation</strong> : {‘horizontal’, ‘vertical’}, optional</p>
 <blockquote>
-<div><p>If &#8216;horizontal&#8217;, <a class="reference internal" href="matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh"><code class="xref py py-obj docutils literal"><span class="pre">barh</span></code></a> will be used for
+<div><p>If ‘horizontal’, <a class="reference internal" href="matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh"><code class="xref py py-obj docutils literal"><span class="pre">barh</span></code></a> will be used for
 bar-type histograms and the <em>bottom</em> kwarg will be the left edges.</p>
 </div></blockquote>
 <p><strong>rwidth</strong> : scalar or None, optional</p>
 <blockquote>
 <div><p>The relative width of the bars as a fraction of the bin width.  If
-<a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, automatically compute the width.</p>
-<p>Ignored if <code class="xref py py-obj docutils literal"><span class="pre">histtype</span></code> is &#8216;step&#8217; or &#8216;stepfilled&#8217;.</p>
+<code class="docutils literal"><span class="pre">None</span></code>, automatically compute the width.</p>
+<p>Ignored if <em>histtype</em> is ‘step’ or ‘stepfilled’.</p>
 <p>Default is <code class="docutils literal"><span class="pre">None</span></code></p>
 </div></blockquote>
 <p><strong>log</strong> : boolean, optional</p>
 <blockquote>
-<div><p>If <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, the histogram axis will be set to a log scale. If <code class="xref py py-obj docutils literal"><span class="pre">log</span></code>
-is <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> and <code class="xref py py-obj docutils literal"><span class="pre">x</span></code> is a 1D array, empty bins will be filtered out
-and only the non-empty (<code class="xref py py-obj docutils literal"><span class="pre">n</span></code>, <code class="xref py py-obj docutils literal"><span class="pre">bins</span></code>, <code class="xref py py-obj docutils literal"><span class="pre">patches</span></code>) will be returned.</p>
+<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, the histogram axis will be set to a log scale. If
+<em>log</em> is <code class="docutils literal"><span class="pre">True</span></code> and <em>x</em> is a 1D array, empty bins will be
+filtered out and only the non-empty <code class="docutils literal"><span class="pre">(n,</span> <span class="pre">bins,</span> <span class="pre">patches)</span></code>
+will be returned.</p>
 <p>Default is <code class="docutils literal"><span class="pre">False</span></code></p>
 </div></blockquote>
 <p><strong>color</strong> : color or array_like of colors or None, optional</p>
 <blockquote>
 <div><p>Color spec or sequence of color specs, one per dataset.  Default
-(<a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>) uses the standard line color sequence.</p>
+(<code class="docutils literal"><span class="pre">None</span></code>) uses the standard line color sequence.</p>
 <p>Default is <code class="docutils literal"><span class="pre">None</span></code></p>
 </div></blockquote>
 <p><strong>label</strong> : string or None, optional</p>
@@ -285,21 +294,26 @@ the label, so that the legend command will work as expected.</p>
 </div></blockquote>
 <p><strong>stacked</strong> : boolean, optional</p>
 <blockquote>
-<div><p>If <a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>, multiple data are stacked on top of each other If
-<a class="reference external" href="https://docs.python.org/2/library/constants.html#False" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">False</span></code></a> multiple data are aranged side by side if histtype is
-&#8216;bar&#8217; or on top of each other if histtype is &#8216;step&#8217;</p>
+<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, multiple data are stacked on top of each other If
+<code class="docutils literal"><span class="pre">False</span></code> multiple data are arranged side by side if histtype is
+‘bar’ or on top of each other if histtype is ‘step’</p>
 <p>Default is <code class="docutils literal"><span class="pre">False</span></code></p>
+</div></blockquote>
+<p><strong>normed</strong> : bool, optional</p>
+<blockquote>
+<div><p>Deprecated; use the density keyword argument instead.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>n</strong> : array or list of arrays</p>
 <blockquote>
-<div><p>The values of the histogram bins. See <strong>normed</strong> and <strong>weights</strong>
-for a description of the possible semantics. If input <strong>x</strong> is an
-array, then this is an array of length <strong>nbins</strong>. If input is a
-sequence arrays <code class="docutils literal"><span class="pre">[data1,</span> <span class="pre">data2,..]</span></code>, then this is a list of
-arrays with the values of the histograms for each of the arrays
-in the same order.</p>
+<div><p>The values of the histogram bins. See <em>normed</em> or <em>density</em>
+and <em>weights</em> for a description of the possible semantics.
+If input <em>x</em> is an array, then this is an array of length
+<em>nbins</em>. If input is a sequence arrays
+<code class="docutils literal"><span class="pre">[data1,</span> <span class="pre">data2,..]</span></code>, then this is a list of arrays with
+the values of the histograms for each of the arrays in the
+same order.</p>
 </div></blockquote>
 <p><strong>bins</strong> : array</p>
 <blockquote>
@@ -315,7 +329,7 @@ or list of such list if multiple input datasets.</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
-<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>kwargs</strong> : <a class="reference internal" href="matplotlib.patches.Patch.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-obj docutils literal"><span class="pre">Patch</span></code></a> properties</p>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>**kwargs</strong> : <a class="reference internal" href="matplotlib.patches.Patch.html#matplotlib.patches.Patch" title="matplotlib.patches.Patch"><code class="xref py py-obj docutils literal"><span class="pre">Patch</span></code></a> properties</p>
 </td>
 </tr>
 </tbody>
@@ -325,33 +339,21 @@ or list of such list if multiple input datasets.</p>
 <dl class="last docutils">
 <dt><a class="reference internal" href="matplotlib.pyplot.hist2d.html#matplotlib.pyplot.hist2d" title="matplotlib.pyplot.hist2d"><code class="xref py py-obj docutils literal"><span class="pre">hist2d</span></code></a></dt>
 <dd>2D histograms</dd>
+<dt><code class="xref py py-obj docutils literal"></code></dt>
+<dd>In addition to the above described arguments, this function can take a <strong>data</strong> keyword argument. If such a <strong>data</strong> argument is given, the following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>: * All arguments with the following names: ‘weights’, ‘x’.</dd>
 </dl>
-</div>
-<p class="rubric">Notes</p>
-<p>Until numpy release 1.5, the underlying numpy histogram function was
-incorrect with <code class="xref py py-obj docutils literal"><span class="pre">normed`=`True</span></code> if bin sizes were unequal.  MPL
-inherited that error.  It is now corrected within MPL when using
-earlier numpy versions.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>In addition to the above described arguments, this function can take a
-<strong>data</strong> keyword argument. If such a <strong>data</strong> argument is given, the
-following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>
-<ul class="last simple">
-<li>All arguments with the following names: &#8216;weights&#8217;, &#8216;x&#8217;.</li>
-</ul>
 </div>
 </dd></dl>
 
 <div class="section" id="examples-using-matplotlib-pyplot-hist">
 <h2>Examples using <code class="docutils literal"><span class="pre">matplotlib.pyplot.hist</span></code><a class="headerlink" href="#examples-using-matplotlib-pyplot-hist" title="Permalink to this headline">¶</a></h2>
 <div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id1">
-<img alt="../../_images/sphx_glr_axes_demo_thumb.png" src="../../_images/sphx_glr_axes_demo_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pylab_examples/axes_demo.html#sphx-glr-gallery-pylab-examples-axes-demo-py"><span class="std std-ref">Axes Demo</span></a></span></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip=""><div class="figure" id="id2">
 <img alt="../../_images/sphx_glr_pyplot_text_thumb.png" src="../../_images/sphx_glr_pyplot_text_thumb.png" />
 <p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/pyplots/pyplot_text.html#sphx-glr-gallery-pyplots-pyplot-text-py"><span class="std std-ref">Pyplot Text</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Example use of ``plt.axes`` to create inset axes within the main plot axes. "><div class="figure" id="id2">
+<img alt="../../_images/sphx_glr_axes_demo_thumb.png" src="../../_images/sphx_glr_axes_demo_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/subplots_axes_and_figures/axes_demo.html#sphx-glr-gallery-subplots-axes-and-figures-axes-demo-py"><span class="std std-ref">Axes Demo</span></a></span></p>
 </div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Demonstrate how to create an interactive histogram, in which bars are hidden or shown by clicki..."><div class="figure" id="id3">
 <img alt="../../_images/sphx_glr_svg_histogram_sgskip_thumb.png" src="../../_images/sphx_glr_svg_histogram_sgskip_thumb.png" />
@@ -359,11 +361,11 @@ following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>
 </div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="A short tutorial on plotting images with Matplotlib."><div class="figure" id="id4">
 <img alt="../../_images/sphx_glr_images_thumb.png" src="../../_images/sphx_glr_images_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/01_introductory/images.html#sphx-glr-tutorials-01-introductory-images-py"><span class="std std-ref">Image tutorial</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/introductory/images.html#sphx-glr-tutorials-introductory-images-py"><span class="std std-ref">Image tutorial</span></a></span></p>
 </div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="An introduction to the pyplot interface."><div class="figure" id="id5">
 <img alt="../../_images/sphx_glr_pyplot_thumb.png" src="../../_images/sphx_glr_pyplot_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/01_introductory/pyplot.html#sphx-glr-tutorials-01-introductory-pyplot-py"><span class="std std-ref">Pyplot tutorial</span></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py"><span class="std std-ref">Pyplot tutorial</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -377,9 +379,9 @@ following arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -485,52 +487,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

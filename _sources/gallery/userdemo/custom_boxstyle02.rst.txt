@@ -24,9 +24,9 @@ Custom Boxstyle02
     from matplotlib.patches import BoxStyle
     import matplotlib.pyplot as plt
 
+
     # we may derive from matplotlib.patches.BoxStyle._Base class.
     # You need to override transmute method in this case.
-
     class MyStyle(BoxStyle._Base):
         """
         A simple box.
@@ -36,7 +36,7 @@ Custom Boxstyle02
             """
             The arguments need to be floating numbers and need to have
             default values.
-        
+
              *pad*
                 amount of padding
             """
@@ -86,8 +86,7 @@ Custom Boxstyle02
     # register the custom style
     BoxStyle._style_list["angled"] = MyStyle
 
-    plt.figure(1, figsize=(3,3))
-    ax = plt.subplot(111)
+    fig, ax = plt.subplots(figsize=(3, 3))
     ax.text(0.5, 0.5, "Test", size=30, va="center", ha="center", rotation=30,
             bbox=dict(boxstyle="angled,pad=0.5", alpha=0.2))
 
@@ -95,7 +94,7 @@ Custom Boxstyle02
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.069 seconds)
+**Total running time of the script:** ( 0 minutes  0.103 seconds)
 
 
 

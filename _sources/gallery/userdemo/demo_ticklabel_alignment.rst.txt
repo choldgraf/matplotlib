@@ -27,7 +27,6 @@ Demo Ticklabel Alignment
 
 
     def setup_axes(fig, rect):
-    
         ax = axisartist.Subplot(fig, rect)
         fig.add_subplot(ax)
 
@@ -38,10 +37,9 @@ Demo Ticklabel Alignment
 
         return ax
 
+
     fig = plt.figure(1, figsize=(3, 5))
     fig.subplots_adjust(left=0.5, hspace=0.7)
-
-
 
     ax = setup_axes(fig, 311)
     ax.set_ylabel("ha=right")
@@ -59,7 +57,9 @@ Demo Ticklabel Alignment
     ax.set_ylabel("ha=left")
     ax.set_xlabel("va=bottom")
 
-**Total running time of the script:** ( 0 minutes  0.258 seconds)
+    plt.show()
+
+**Total running time of the script:** ( 0 minutes  0.334 seconds)
 
 
 

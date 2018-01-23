@@ -1,9 +1,13 @@
 """
-=======
-Dolphin
-=======
+========
+Dolphins
+========
+
+This example shows how to draw, and manipulate shapes given vertices
+and nodes using the `Patches`, `Path` and `Transforms` classes.
 
 """
+
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, PathPatch
@@ -73,8 +77,7 @@ i = 0
 code_map = {
     'M': (Path.MOVETO, 1),
     'C': (Path.CURVE4, 3),
-    'L': (Path.LINETO, 1)
-    }
+    'L': (Path.LINETO, 1)}
 
 while i < len(parts):
     code = parts[i]

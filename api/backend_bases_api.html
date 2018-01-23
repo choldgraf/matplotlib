@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>matplotlib.backend_bases &mdash; Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation</title>
+    <title>matplotlib.backend_bases &mdash; Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation</title>
     
     <link rel="stylesheet" href="../_static/mpl.css"
 type="text/css" />
@@ -17,7 +17,7 @@ type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0.0b1.post5207+g7e5bee994',
+        VERSION:     '2.0.0b1.post7580.dev0+ge487118',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -28,14 +28,14 @@ type="text/css" />
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation"
+          title="Search within Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation"
           href="../_static/opensearch.xml"/>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html"
 />
     <link rel="search" title="Search" href="../search.html"
 />
-    <link rel="top" title="Matplotlib 2.0.0b1.post5207+g7e5bee994 documentation" href="../index.html" />
+    <link rel="top" title="Matplotlib 2.0.0b1.post7580.dev0+ge487118 documentation" href="../index.html" />
     <link rel="up" title="backends" href="index_backend_api.html" />
     <link rel="next" title="matplotlib.backend_managers" href="backend_managers_api.html" />
     <link rel="prev" title="backends" href="index_backend_api.html" /> 
@@ -45,15 +45,19 @@ type="text/css" />
   <body>
 
 
+<div id="unreleased-message">
+    You are reading documentation for the unreleased version of Matplotlib.
+    <a href="https://matplotlib.org/search.html?q=matplotlib.backend_bases&amp;check_keywords=yes&amp;area=default">
+        Try searching for the released version of this page instead?
+    </a>
+</div>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; position: relative;">
+<a href="../index.html">
+    <div style="float: left; position: absolute; width: 496px; bottom: 0; padding-bottom: 24px"><span style="float: right; color: #789; background: white">Version 2.0.0b1.post7580.dev0+ge487118</span></div>
+    <img src="../_static/logo2.png" height="125px" border="0" alt="matplotlib"/></a>
 
 <!-- The "Fork me on github" ribbon -->
-<img style="float: right; margin-bottom: -40px; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" usemap="#ribbonmap"/>
-<map name="ribbonmap">
-    <area shape="poly" coords="15,0,148,-1,148,135" href="https://github.com/matplotlib/matplotlib" title="Fork me on GitHub" />
-</map>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="../index.html"><img src="../_static/logo2.svg" width="540px" border="0" alt="matplotlib"/></a>
+<div id="forkongithub"><a href="https://github.com/matplotlib/matplotlib">Fork me on GitHub</a></div>
 </div>
 
 
@@ -87,17 +91,7 @@ type="text/css" />
 
   
       <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<a href="http://depsy.org/package/python/matplotlib">
-  <img src="../_static/depsy_badge.svg">
-</a>
-
-<br/>
-
-Travis-CI: <a href="https://travis-ci.org/matplotlib/matplotlib">
-  <img src="https://travis-ci.org/matplotlib/matplotlib.svg?branch=master"/>
-</a>
-<br/><div class="relations">
+        <div class="sphinxsidebarwrapper"><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../contents.html">Documentation overview</a><ul>
@@ -146,7 +140,7 @@ graphics contexts must implement to serve as a matplotlib backend</p>
 <a class="reference internal" href="_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a> from the backend specific
 details like a user interface drawing area</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.GraphicsContextBase" title="matplotlib.backend_bases.GraphicsContextBase"><code class="xref py py-class docutils literal"><span class="pre">GraphicsContextBase</span></code></a></dt>
-<dd>An abstract base class that provides color, line styles, etc...</dd>
+<dd>An abstract base class that provides color, line styles, etc…</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.Event" title="matplotlib.backend_bases.Event"><code class="xref py py-class docutils literal"><span class="pre">Event</span></code></a></dt>
 <dd>The base class for all of the matplotlib event
 handling.  Derived classes such as <a class="reference internal" href="#matplotlib.backend_bases.KeyEvent" title="matplotlib.backend_bases.KeyEvent"><code class="xref py py-class docutils literal"><span class="pre">KeyEvent</span></code></a> and
@@ -155,7 +149,7 @@ pressed, x and y locations in pixel and
 <a class="reference internal" href="axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> coordinates.</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.ShowBase" title="matplotlib.backend_bases.ShowBase"><code class="xref py py-class docutils literal"><span class="pre">ShowBase</span></code></a></dt>
 <dd>The base class for the Show class of each interactive backend;
-the &#8216;show&#8217; callable is then set to Show.__call__, inherited from
+the ‘show’ callable is then set to Show.__call__, inherited from
 ShowBase.</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.ToolContainerBase" title="matplotlib.backend_bases.ToolContainerBase"><code class="xref py py-class docutils literal"><span class="pre">ToolContainerBase</span></code></a></dt>
 <dd>The base class for the Toolbar class of each interactive backend.</dd>
@@ -174,16 +168,25 @@ ShowBase.</dd>
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">DrawEvent</code><span class="sig-paren">(</span><em>name</em>, <em>canvas</em>, <em>renderer</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.DrawEvent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#matplotlib.backend_bases.Event" title="matplotlib.backend_bases.Event"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.backend_bases.Event</span></code></a></p>
 <p>An event triggered by a draw operation on the canvas</p>
+<p>In most backends callbacks subscribed to this callback will be
+fired after the rendering is complete but before the screen is
+updated.  Any extra artists drawn to the canvas’s renderer will
+be reflected without an explicit call to <code class="docutils literal"><span class="pre">blit</span></code>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Calling <code class="docutils literal"><span class="pre">canvas.draw</span></code> and <code class="docutils literal"><span class="pre">canvas.blit</span></code> in these callbacks may
+not be safe with all backends and may cause infinite recursion.</p>
+</div>
 <p>In addition to the <a class="reference internal" href="#matplotlib.backend_bases.Event" title="matplotlib.backend_bases.Event"><code class="xref py py-class docutils literal"><span class="pre">Event</span></code></a> attributes, the following event
 attributes are defined:</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="14%" />
-<col width="86%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>renderer</td>
+<tr class="row-odd"><td><strong>renderer</strong></td>
 <td>(<a class="reference internal" href="#matplotlib.backend_bases.RendererBase" title="matplotlib.backend_bases.RendererBase"><code class="xref py py-obj docutils literal"><span class="pre">RendererBase</span></code></a>) the renderer for the draw event</td>
 </tr>
 </tbody>
@@ -193,24 +196,24 @@ attributes are defined:</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.Event">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">Event</code><span class="sig-paren">(</span><em>name</em>, <em>canvas</em>, <em>guiEvent=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.Event" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>A matplotlib event.  Attach additional attributes as defined in
 <a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.mpl_connect" title="matplotlib.backend_bases.FigureCanvasBase.mpl_connect"><code class="xref py py-meth docutils literal"><span class="pre">FigureCanvasBase.mpl_connect()</span></code></a>.  The following attributes
 are defined and shown with their default values</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="9%" />
-<col width="91%" />
+<col width="13%" />
+<col width="87%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>name</td>
+<tr class="row-odd"><td><strong>name</strong></td>
 <td>(str) the event name</td>
 </tr>
-<tr class="row-even"><td>canvas</td>
+<tr class="row-even"><td><strong>canvas</strong></td>
 <td>(<a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase" title="matplotlib.backend_bases.FigureCanvasBase"><code class="xref py py-obj docutils literal"><span class="pre">FigureCanvasBase</span></code></a>) the backend-specific canvas instance generating the event</td>
 </tr>
-<tr class="row-odd"><td>guiEvent</td>
+<tr class="row-odd"><td><strong>guiEvent</strong></td>
 <td>the GUI event that triggered the matplotlib event</td>
 </tr>
 </tbody>
@@ -220,17 +223,17 @@ are defined and shown with their default values</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.FigureCanvasBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">FigureCanvasBase</code><span class="sig-paren">(</span><em>figure</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>The canvas the figure renders into.</p>
 <p>Public attributes</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="10%" />
-<col width="90%" />
+<col width="15%" />
+<col width="85%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>figure</td>
+<tr class="row-odd"><td><strong>figure</strong></td>
 <td>(<a class="reference internal" href="_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure"><code class="xref py py-obj docutils literal"><span class="pre">matplotlib.figure.Figure</span></code></a>) A high-level figure instance</td>
 </tr>
 </tbody>
@@ -248,7 +251,7 @@ are defined and shown with their default values</p>
 button press.  x,y are the canvas coords: 0,0 is lower, left.
 button and key are as defined in <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a>.</p>
 <p>This method will be call all functions connected to the
-&#8216;button_press_event&#8217; with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
+‘button_press_event’ with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
 </dd></dl>
 
 <dl class="method">
@@ -257,7 +260,7 @@ button and key are as defined in <a class="reference internal" href="#matplotlib
 <dd><p>Backend derived classes should call this function on any mouse
 button release.</p>
 <p>This method will call all functions connected to the
-&#8216;button_release_event&#8217; with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
+‘button_release_event’ with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -308,7 +311,7 @@ native GUI drawing for efficiency if possible</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.draw_idle">
 <code class="descname">draw_idle</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.draw_idle" title="Permalink to this definition">¶</a></dt>
-<dd><p><a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.draw" title="matplotlib.backend_bases.FigureCanvasBase.draw"><code class="xref py py-meth docutils literal"><span class="pre">draw()</span></code></a> only if idle; defaults to draw but backends can overrride</p>
+<dd><p><a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.draw" title="matplotlib.backend_bases.FigureCanvasBase.draw"><code class="xref py py-meth docutils literal"><span class="pre">draw()</span></code></a> only if idle; defaults to draw but backends can override</p>
 </dd></dl>
 
 <dl class="method">
@@ -353,8 +356,8 @@ entered</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.flush_events">
 <code class="descname">flush_events</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.flush_events" title="Permalink to this definition">¶</a></dt>
-<dd><p>Flush the GUI events for the figure. Implemented only for
-backends with GUIs.</p>
+<dd><p>Flush the GUI events for the figure.</p>
+<p>Interactive backends need to reimplement this method.</p>
 </dd></dl>
 
 <dl class="method">
@@ -382,9 +385,9 @@ in backends that only support a single file type.</p>
 <dt id="matplotlib.backend_bases.FigureCanvasBase.get_supported_filetypes_grouped">
 <em class="property">classmethod </em><code class="descname">get_supported_filetypes_grouped</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.get_supported_filetypes_grouped" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a dict of savefig file formats supported by this backend,
-where the keys are a file type name, such as &#8216;Joint Photographic
-Experts Group&#8217;, and the values are a list of filename extensions used
-for that filetype, such as [&#8216;jpg&#8217;, &#8216;jpeg&#8217;].</p>
+where the keys are a file type name, such as ‘Joint Photographic
+Experts Group’, and the values are a list of filename extensions used
+for that filetype, such as [‘jpg’, ‘jpeg’].</p>
 </dd></dl>
 
 <dl class="method">
@@ -463,7 +466,7 @@ canvas</p>
 <dd><p>Backend derived classes should call this function on any
 motion-notify-event.</p>
 <p>This method will call all functions connected to the
-&#8216;motion_notify_event&#8217; with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
+‘motion_notify_event’ with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -496,20 +499,20 @@ motion-notify-event.</p>
 <p>where event is a <a class="reference internal" href="#matplotlib.backend_bases.Event" title="matplotlib.backend_bases.Event"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.backend_bases.Event</span></code></a>.  The
 following events are recognized</p>
 <ul class="simple">
-<li>&#8216;button_press_event&#8217;</li>
-<li>&#8216;button_release_event&#8217;</li>
-<li>&#8216;draw_event&#8217;</li>
-<li>&#8216;key_press_event&#8217;</li>
-<li>&#8216;key_release_event&#8217;</li>
-<li>&#8216;motion_notify_event&#8217;</li>
-<li>&#8216;pick_event&#8217;</li>
-<li>&#8216;resize_event&#8217;</li>
-<li>&#8216;scroll_event&#8217;</li>
-<li>&#8216;figure_enter_event&#8217;,</li>
-<li>&#8216;figure_leave_event&#8217;,</li>
-<li>&#8216;axes_enter_event&#8217;,</li>
-<li>&#8216;axes_leave_event&#8217;</li>
-<li>&#8216;close_event&#8217;</li>
+<li>‘button_press_event’</li>
+<li>‘button_release_event’</li>
+<li>‘draw_event’</li>
+<li>‘key_press_event’</li>
+<li>‘key_release_event’</li>
+<li>‘motion_notify_event’</li>
+<li>‘pick_event’</li>
+<li>‘resize_event’</li>
+<li>‘scroll_event’</li>
+<li>‘figure_enter_event’,</li>
+<li>‘figure_leave_event’,</li>
+<li>‘axes_enter_event’,</li>
+<li>‘axes_leave_event’</li>
+<li>‘close_event’</li>
 </ul>
 <p>For the location events (button and key press/release), if the
 mouse is over the axes, the variable <code class="docutils literal"><span class="pre">event.inaxes</span></code> will be
@@ -549,7 +552,7 @@ in data coords.  See
 <code class="descname">new_timer</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.new_timer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a new backend-specific subclass of
 <code class="xref py py-class docutils literal"><span class="pre">backend_bases.Timer</span></code>. This is useful for getting periodic
-events through the backend&#8217;s native event loop. Implemented only for
+events through the backend’s native event loop. Implemented only for
 backends with GUIs.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -560,22 +563,31 @@ backends with GUIs.</p>
 <blockquote>
 <div><p>Timer interval in milliseconds</p>
 </div></blockquote>
-<p><strong>callbacks</strong> : list</p>
+<p><strong>callbacks</strong> : List[Tuple[callable, Tuple, Dict]]</p>
 <blockquote class="last">
 <div><p>Sequence of (func, args, kwargs) where <code class="docutils literal"><span class="pre">func(*args,</span> <span class="pre">**kwargs)</span></code>
 will be executed by the timer every <em>interval</em>.</p>
+<p>callbacks which return <code class="docutils literal"><span class="pre">False</span></code> or <code class="docutils literal"><span class="pre">0</span></code> will be removed from the
+timer.</p>
 </div></blockquote>
 </td>
 </tr>
 </tbody>
 </table>
+<p class="rubric">Examples</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">timer</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">new_timer</span><span class="p">(</span><span class="n">callbacks</span><span class="o">=</span><span class="p">[(</span><span class="n">f1</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">),</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}),])</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.onRemove">
 <code class="descname">onRemove</code><span class="sig-paren">(</span><em>ev</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.onRemove" title="Permalink to this definition">¶</a></dt>
-<dd><p>Mouse event processor which removes the top artist
-under the cursor.  Connect this to the &#8216;mouse_press_event&#8217;
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.2: </span>The onRemove function was deprecated in version 2.2.</p>
+</div>
+<p>Mouse event processor which removes the top artist
+under the cursor.  Connect this to the ‘mouse_press_event’
 using:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">canvas</span><span class="o">.</span><span class="n">mpl_connect</span><span class="p">(</span><span class="s1">&#39;mouse_press_event&#39;</span><span class="p">,</span><span class="n">canvas</span><span class="o">.</span><span class="n">onRemove</span><span class="p">)</span>
 </pre></div>
@@ -599,7 +611,7 @@ fire off <a class="reference internal" href="#matplotlib.backend_bases.PickEvent
 <code class="descname">print_figure</code><span class="sig-paren">(</span><em>filename</em>, <em>dpi=None</em>, <em>facecolor=None</em>, <em>edgecolor=None</em>, <em>orientation='portrait'</em>, <em>format=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.print_figure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Render the figure to hardcopy. Set the figure patch face and edge
 colors.  This is useful because some of the GUIs have a gray figure
-face color background and you&#8217;ll probably want to override this on
+face color background and you’ll probably want to override this on
 hardcopy.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -609,7 +621,7 @@ hardcopy.</p>
 <blockquote>
 <div><p>can also be a file object on image backends</p>
 </div></blockquote>
-<p><strong>orientation</strong> : {&#8216;landscape&#8217;, &#8216;portrait&#8217;}, optional</p>
+<p><strong>orientation</strong> : {‘landscape’, ‘portrait’}, optional</p>
 <blockquote>
 <div><p>only currently applies to PostScript printing.</p>
 </div></blockquote>
@@ -632,13 +644,13 @@ hardcopy.</p>
 <p><strong>bbox_inches</strong> : str or <a class="reference internal" href="transformations.html#matplotlib.transforms.Bbox" title="matplotlib.transforms.Bbox"><code class="xref py py-obj docutils literal"><span class="pre">Bbox</span></code></a>, optional</p>
 <blockquote>
 <div><p>Bbox in inches. Only the given portion of the figure is
-saved. If &#8216;tight&#8217;, try to figure out the tight bbox of
+saved. If ‘tight’, try to figure out the tight bbox of
 the figure. If None, use savefig.bbox</p>
 </div></blockquote>
 <p><strong>pad_inches</strong> : scalar, optional</p>
 <blockquote>
 <div><p>Amount of padding around the figure when bbox_inches is
-&#8216;tight&#8217;. If None, use savefig.pad_inches</p>
+‘tight’. If None, use savefig.pad_inches</p>
 </div></blockquote>
 <p><strong>bbox_extra_artists</strong> : list of <a class="reference internal" href="artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-obj docutils literal"><span class="pre">Artist</span></code></a>, optional</p>
 <blockquote class="last">
@@ -656,7 +668,7 @@ tight bbox is calculated.</p>
 <code class="descname">release_mouse</code><span class="sig-paren">(</span><em>ax</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.release_mouse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Release the mouse grab held by the axes, ax.
 Usually called by the widgets.
-It is ok to call this even if you ax doesn&#8217;t have the mouse
+It is ok to call this even if you ax doesn’t have the mouse
 grab currently.</p>
 </dd></dl>
 
@@ -679,7 +691,7 @@ grab currently.</p>
 scroll wheel event.  x,y are the canvas coords: 0,0 is lower,
 left.  button and key are as defined in MouseEvent.</p>
 <p>This method will be call all functions connected to the
-&#8216;scroll_event&#8217; with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
+‘scroll_event’ with a <a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-class docutils literal"><span class="pre">MouseEvent</span></code></a> instance.</p>
 </dd></dl>
 
 <dl class="method">
@@ -691,47 +703,55 @@ this has no effect if there is no window (e.g., a PS backend).</p>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.start_event_loop">
-<code class="descname">start_event_loop</code><span class="sig-paren">(</span><em>timeout</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.start_event_loop" title="Permalink to this definition">¶</a></dt>
-<dd><p>Start an event loop.  This is used to start a blocking event
-loop so that interactive functions, such as ginput and
-waitforbuttonpress, can wait for events.  This should not be
-confused with the main GUI event loop, which is always running
-and has nothing to do with this.</p>
-<p>This is implemented only for backends with GUIs.</p>
+<code class="descname">start_event_loop</code><span class="sig-paren">(</span><em>timeout=0</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.start_event_loop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start a blocking event loop.</p>
+<p>Such an event loop is used by interactive functions, such as <code class="xref py py-obj docutils literal"><span class="pre">ginput</span></code>
+and <code class="xref py py-obj docutils literal"><span class="pre">waitforbuttonpress</span></code>, to wait for events.</p>
+<p>The event loop blocks until a callback function triggers
+<a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.stop_event_loop" title="matplotlib.backend_bases.FigureCanvasBase.stop_event_loop"><code class="xref py py-obj docutils literal"><span class="pre">stop_event_loop</span></code></a>, or <em>timeout</em> is reached.</p>
+<p>If <em>timeout</em> is negative, never timeout.</p>
+<p>Only interactive backends need to reimplement this method and it relies
+on <a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.flush_events" title="matplotlib.backend_bases.FigureCanvasBase.flush_events"><code class="xref py py-obj docutils literal"><span class="pre">flush_events</span></code></a> being properly implemented.</p>
+<p>Interactive backends should implement this in a more native way.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.start_event_loop_default">
 <code class="descname">start_event_loop_default</code><span class="sig-paren">(</span><em>timeout=0</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.start_event_loop_default" title="Permalink to this definition">¶</a></dt>
-<dd><p>Start an event loop.  This is used to start a blocking event
-loop so that interactive functions, such as ginput and
-waitforbuttonpress, can wait for events.  This should not be
-confused with the main GUI event loop, which is always running
-and has nothing to do with this.</p>
-<p>This function provides default event loop functionality based
-on time.sleep that is meant to be used until event loop
-functions for each of the GUI backends can be written.  As
-such, it throws a deprecated warning.</p>
-<p>This call blocks until a callback function triggers
-stop_event_loop() or <em>timeout</em> is reached.  If <em>timeout</em> is
-&lt;=0, never timeout.</p>
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The start_event_loop_default function was deprecated in version 2.1.</p>
+</div>
+<p>Start a blocking event loop.</p>
+<blockquote>
+<div><p>Such an event loop is used by interactive functions, such as <code class="xref py py-obj docutils literal"><span class="pre">ginput</span></code>
+and <code class="xref py py-obj docutils literal"><span class="pre">waitforbuttonpress</span></code>, to wait for events.</p>
+<p>The event loop blocks until a callback function triggers
+<a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.stop_event_loop" title="matplotlib.backend_bases.FigureCanvasBase.stop_event_loop"><code class="xref py py-obj docutils literal"><span class="pre">stop_event_loop</span></code></a>, or <em>timeout</em> is reached.</p>
+<p>If <em>timeout</em> is negative, never timeout.</p>
+<p>Only interactive backends need to reimplement this method and it relies
+on <a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.flush_events" title="matplotlib.backend_bases.FigureCanvasBase.flush_events"><code class="xref py py-obj docutils literal"><span class="pre">flush_events</span></code></a> being properly implemented.</p>
+<p>Interactive backends should implement this in a more native way.</p>
+</div></blockquote>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.stop_event_loop">
 <code class="descname">stop_event_loop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.stop_event_loop" title="Permalink to this definition">¶</a></dt>
-<dd><p>Stop an event loop.  This is used to stop a blocking event
-loop so that interactive functions, such as ginput and
-waitforbuttonpress, can wait for events.</p>
-<p>This is implemented only for backends with GUIs.</p>
+<dd><p>Stop the current blocking event loop.</p>
+<p>Interactive backends need to reimplement this to match
+<a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.start_event_loop" title="matplotlib.backend_bases.FigureCanvasBase.start_event_loop"><code class="xref py py-obj docutils literal"><span class="pre">start_event_loop</span></code></a></p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureCanvasBase.stop_event_loop_default">
 <code class="descname">stop_event_loop_default</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureCanvasBase.stop_event_loop_default" title="Permalink to this definition">¶</a></dt>
-<dd><p>Stop an event loop.  This is used to stop a blocking event
-loop so that interactive functions, such as ginput and
-waitforbuttonpress, can wait for events.</p>
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The stop_event_loop_default function was deprecated in version 2.1.</p>
+</div>
+<p>Stop the current blocking event loop.</p>
+<blockquote>
+<div>Interactive backends need to reimplement this to match
+<a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.start_event_loop" title="matplotlib.backend_bases.FigureCanvasBase.start_event_loop"><code class="xref py py-obj docutils literal"><span class="pre">start_event_loop</span></code></a></div></blockquote>
 </dd></dl>
 
 <dl class="attribute">
@@ -754,20 +774,23 @@ figure size or line props), will be reflected in the other</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.FigureManagerBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">FigureManagerBase</code><span class="sig-paren">(</span><em>canvas</em>, <em>num</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureManagerBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Helper class for pyplot mode, wraps everything up into a neat bundle</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="9%" />
-<col width="91%" />
+<col width="11%" />
+<col width="89%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>canvas</td>
+<tr class="row-odd"><td><strong>canvas</strong></td>
 <td>(<a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase" title="matplotlib.backend_bases.FigureCanvasBase"><code class="xref py py-class docutils literal"><span class="pre">FigureCanvasBase</span></code></a>) The backend-specific canvas instance</td>
 </tr>
-<tr class="row-even"><td>num</td>
+<tr class="row-even"><td><strong>num</strong></td>
 <td>(int or str) The figure number</td>
+</tr>
+<tr class="row-odd"><td><strong>key_press_handler_id</strong></td>
+<td>(int) The default key handler cid, when using the toolmanager.  Can be used to disable default key press handling ::  figure.canvas.mpl_disconnect( figure.canvas.manager.key_press_handler_id)</td>
 </tr>
 </tbody>
 </table>
@@ -798,7 +821,7 @@ figure size or line props), will be reflected in the other</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureManagerBase.resize">
 <code class="descname">resize</code><span class="sig-paren">(</span><em>w</em>, <em>h</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureManagerBase.resize" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8220;For GUI backends, resize the window (in pixels).</p>
+<dd><p>“For GUI backends, resize the window (in pixels).</p>
 </dd></dl>
 
 <dl class="method">
@@ -813,14 +836,17 @@ figure size or line props), will be reflected in the other</p>
 <code class="descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureManagerBase.show" title="Permalink to this definition">¶</a></dt>
 <dd><p>For GUI backends, show the figure window and redraw.
 For non-GUI backends, raise an exception to be caught
-by <code class="xref py py-meth docutils literal"><span class="pre">show()</span></code>, for an
+by <a class="reference internal" href="_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure.show" title="matplotlib.figure.Figure.show"><code class="xref py py-meth docutils literal"><span class="pre">show()</span></code></a>, for an
 optional warning.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.FigureManagerBase.show_popup">
 <code class="descname">show_popup</code><span class="sig-paren">(</span><em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.FigureManagerBase.show_popup" title="Permalink to this definition">¶</a></dt>
-<dd><p>Display message in a popup &#8211; GUI only.</p>
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.2: </span>The show_popup function was deprecated in version 2.2.</p>
+</div>
+<p>Display message in a popup – GUI only.</p>
 </dd></dl>
 
 </dd></dl>
@@ -828,8 +854,8 @@ optional warning.</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.GraphicsContextBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">GraphicsContextBase</code><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
-<p>An abstract base class that provides color, line styles, etc...</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>An abstract base class that provides color, line styles, etc…</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.GraphicsContextBase.copy_properties">
 <code class="descname">copy_properties</code><span class="sig-paren">(</span><em>gc</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase.copy_properties" title="Permalink to this definition">¶</a></dt>
@@ -852,7 +878,7 @@ all backends</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.GraphicsContextBase.get_capstyle">
 <code class="descname">get_capstyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase.get_capstyle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the capstyle as a string in (&#8216;butt&#8217;, &#8216;round&#8217;, &#8216;projecting&#8217;)</p>
+<dd><p>Return the capstyle as a string in (‘butt’, ‘round’, ‘projecting’)</p>
 </dd></dl>
 
 <dl class="method">
@@ -921,14 +947,17 @@ override any other alpha-channel values.</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.GraphicsContextBase.get_joinstyle">
 <code class="descname">get_joinstyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase.get_joinstyle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the line join style as one of (&#8216;miter&#8217;, &#8216;round&#8217;, &#8216;bevel&#8217;)</p>
+<dd><p>Return the line join style as one of (‘miter’, ‘round’, ‘bevel’)</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.GraphicsContextBase.get_linestyle">
 <code class="descname">get_linestyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase.get_linestyle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the linestyle: one of (&#8216;solid&#8217;, &#8216;dashed&#8217;, &#8216;dashdot&#8217;,
-&#8216;dotted&#8217;).</p>
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The get_linestyle function was deprecated in version 2.1.</p>
+</div>
+<p>Return the linestyle: one of (‘solid’, ‘dashed’, ‘dashdot’,
+‘dotted’).</p>
 </dd></dl>
 
 <dl class="method">
@@ -951,7 +980,7 @@ override any other alpha-channel values.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>sketch_params</strong> : tuple or <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a></p>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>sketch_params</strong> : tuple or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a></p>
 <p>A 3-tuple with the following elements:</p>
 <blockquote>
 <div><ul class="simple">
@@ -962,7 +991,7 @@ source line.</li>
 shrunken or expanded.</li>
 </ul>
 </div></blockquote>
-<p class="last">May return <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a> if no sketch parameters were set.</p>
+<p class="last">May return <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a> if no sketch parameters were set.</p>
 </td>
 </tr>
 </tbody>
@@ -1015,7 +1044,7 @@ them.</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.GraphicsContextBase.set_capstyle">
 <code class="descname">set_capstyle</code><span class="sig-paren">(</span><em>cs</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase.set_capstyle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the capstyle as a string in (&#8216;butt&#8217;, &#8216;round&#8217;, &#8216;projecting&#8217;)</p>
+<dd><p>Set the capstyle as a string in (‘butt’, ‘round’, ‘projecting’)</p>
 </dd></dl>
 
 <dl class="method">
@@ -1084,14 +1113,17 @@ and 1.  In the latter case, grayscale is used.</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.GraphicsContextBase.set_joinstyle">
 <code class="descname">set_joinstyle</code><span class="sig-paren">(</span><em>js</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase.set_joinstyle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the join style to be one of (&#8216;miter&#8217;, &#8216;round&#8217;, &#8216;bevel&#8217;)</p>
+<dd><p>Set the join style to be one of (‘miter’, ‘round’, ‘bevel’)</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.GraphicsContextBase.set_linestyle">
 <code class="descname">set_linestyle</code><span class="sig-paren">(</span><em>style</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.GraphicsContextBase.set_linestyle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the linestyle to be one of (&#8216;solid&#8217;, &#8216;dashed&#8217;, &#8216;dashdot&#8217;,
-&#8216;dotted&#8217;). These are defined in the rcParams
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The set_linestyle function was deprecated in version 2.1.</p>
+</div>
+<p>Set the linestyle to be one of (‘solid’, ‘dashed’, ‘dashdot’,
+‘dotted’). These are defined in the rcParams
 <code class="xref py py-obj docutils literal"><span class="pre">lines.dashed_pattern</span></code>, <code class="xref py py-obj docutils literal"><span class="pre">lines.dashdot_pattern</span></code> and
 <code class="xref py py-obj docutils literal"><span class="pre">lines.dotted_pattern</span></code>.  One may also specify customized dash
 styles by providing a tuple of (offset, dash pairs).</p>
@@ -1114,18 +1146,18 @@ styles by providing a tuple of (offset, dash pairs).</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>scale</strong> : float, optional</p>
 <blockquote>
 <div><p>The amplitude of the wiggle perpendicular to the source
-line, in pixels.  If scale is <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, or not provided, no
+line, in pixels.  If scale is <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a>, or not provided, no
 sketch filter will be provided.</p>
 </div></blockquote>
 <p><strong>length</strong> : float, optional</p>
 <blockquote>
 <div><p>The length of the wiggle along the line, in pixels
-(default 128.0)</p>
+(default 128)</p>
 </div></blockquote>
 <p><strong>randomness</strong> : float, optional</p>
 <blockquote class="last">
 <div><p>The scale factor by which the length is shrunken or
-expanded (default 16.0)</p>
+expanded (default 16)</p>
 </div></blockquote>
 </td>
 </tr>
@@ -1162,7 +1194,7 @@ segments, round to the nearest pixel center</li>
 <div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 2.1: </span>The IdleEvent class was deprecated in version 2.1.</p>
 </div>
-<p>An event triggered by the GUI backend when it is idle &#8211; useful
+<p>An event triggered by the GUI backend when it is idle – useful
 for passive animation</p>
 </dd></dl>
 
@@ -1177,8 +1209,8 @@ for passive animation</p>
 attributes, the following attributes are defined:</p>
 <p class="rubric">Notes</p>
 <p>Modifier keys will be prefixed to the pressed key and will be in the order
-&#8220;ctrl&#8221;, &#8220;alt&#8221;, &#8220;super&#8221;. The exception to this rule is when the pressed key
-is itself a modifier key, therefore &#8220;ctrl+alt&#8221; and &#8220;alt+control&#8221; can both
+“ctrl”, “alt”, “super”. The exception to this rule is when the pressed key
+is itself a modifier key, therefore “ctrl+alt” and “alt+control” can both
 be valid key values.</p>
 <p class="rubric">Examples</p>
 <p>Usage:</p>
@@ -1191,12 +1223,12 @@ be valid key values.</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="1%" />
-<col width="99%" />
+<col width="3%" />
+<col width="97%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>key</td>
-<td>(None or str) the key(s) pressed. Could be <strong>None</strong>, a single case sensitive ascii character (&#8220;g&#8221;, &#8220;G&#8221;, &#8220;#&#8221;, etc.), a special key (&#8220;control&#8221;, &#8220;shift&#8221;, &#8220;f1&#8221;, &#8220;up&#8221;, etc.) or a combination of the above (e.g., &#8220;ctrl+alt+g&#8221;, &#8220;ctrl+alt+G&#8221;).</td>
+<tr class="row-odd"><td><strong>key</strong></td>
+<td>(None or str) the key(s) pressed. Could be <strong>None</strong>, a single case sensitive ascii character (“g”, “G”, “#”, etc.), a special key (“control”, “shift”, “f1”, “up”, etc.) or a combination of the above (e.g., “ctrl+alt+g”, “ctrl+alt+G”).</td>
 </tr>
 </tbody>
 </table>
@@ -1214,23 +1246,23 @@ event attributes are defined:</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="8%" />
-<col width="92%" />
+<col width="12%" />
+<col width="88%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>x</td>
+<tr class="row-odd"><td><strong>x</strong></td>
 <td>(scalar) x position - pixels from left of canvas</td>
 </tr>
-<tr class="row-even"><td>y</td>
+<tr class="row-even"><td><strong>y</strong></td>
 <td>(scalar) y position - pixels from bottom of canvas</td>
 </tr>
-<tr class="row-odd"><td>inaxes</td>
+<tr class="row-odd"><td><strong>inaxes</strong></td>
 <td>(bool) the <a class="reference internal" href="axes_api.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes"><code class="xref py py-class docutils literal"><span class="pre">Axes</span></code></a> instance if mouse is over axes</td>
 </tr>
-<tr class="row-even"><td>xdata</td>
+<tr class="row-even"><td><strong>xdata</strong></td>
 <td>(scalar) x coord of mouse in data coords</td>
 </tr>
-<tr class="row-odd"><td>ydata</td>
+<tr class="row-odd"><td><strong>ydata</strong></td>
 <td>(scalar) y coord of mouse in data coords</td>
 </tr>
 </tbody>
@@ -1273,10 +1305,10 @@ event attributes are defined:</p>
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">MouseEvent</code><span class="sig-paren">(</span><em>name</em>, <em>canvas</em>, <em>x</em>, <em>y</em>, <em>button=None</em>, <em>key=None</em>, <em>step=0</em>, <em>dblclick=False</em>, <em>guiEvent=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.MouseEvent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#matplotlib.backend_bases.LocationEvent" title="matplotlib.backend_bases.LocationEvent"><code class="xref py py-class docutils literal"><span class="pre">matplotlib.backend_bases.LocationEvent</span></code></a></p>
 <dl class="docutils">
-<dt>A mouse event (&#8216;button_press_event&#8217;,</dt>
-<dd>&#8216;button_release_event&#8217;,
-&#8216;scroll_event&#8217;,
-&#8216;motion_notify_event&#8217;).</dd>
+<dt>A mouse event (‘button_press_event’,</dt>
+<dd>‘button_release_event’,
+‘scroll_event’,
+‘motion_notify_event’).</dd>
 </dl>
 <p>In addition to the <a class="reference internal" href="#matplotlib.backend_bases.Event" title="matplotlib.backend_bases.Event"><code class="xref py py-class docutils literal"><span class="pre">Event</span></code></a> and <a class="reference internal" href="#matplotlib.backend_bases.LocationEvent" title="matplotlib.backend_bases.LocationEvent"><code class="xref py py-class docutils literal"><span class="pre">LocationEvent</span></code></a>
 attributes, the following attributes are defined:</p>
@@ -1291,23 +1323,23 @@ attributes, the following attributes are defined:</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="2%" />
-<col width="98%" />
+<col width="4%" />
+<col width="96%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>button</td>
-<td>(None, scalar, or str) button pressed None, 1, 2, 3, &#8216;up&#8217;, &#8216;down&#8217; (up and down are used for scroll events).  Note that in the nbagg backend, both the middle and right clicks return 3 since right clicking will bring up the context menu in some browsers.</td>
+<tr class="row-odd"><td><strong>button</strong></td>
+<td>(None, scalar, or str) button pressed None, 1, 2, 3, ‘up’, ‘down’ (up and down are used for scroll events).  Note that in the nbagg backend, both the middle and right clicks return 3 since right clicking will bring up the context menu in some browsers.</td>
 </tr>
-<tr class="row-even"><td>key</td>
+<tr class="row-even"><td><strong>key</strong></td>
 <td>(None, or str) the key depressed when the mouse event triggered (see <a class="reference internal" href="#matplotlib.backend_bases.KeyEvent" title="matplotlib.backend_bases.KeyEvent"><code class="xref py py-class docutils literal"><span class="pre">KeyEvent</span></code></a>)</td>
 </tr>
-<tr class="row-odd"><td>step</td>
-<td>(scalar) number of scroll steps (positive for &#8216;up&#8217;, negative for &#8216;down&#8217;)</td>
+<tr class="row-odd"><td><strong>step</strong></td>
+<td>(scalar) number of scroll steps (positive for ‘up’, negative for ‘down’)</td>
 </tr>
 </tbody>
 </table>
 <p>x, y in figure coords, 0,0 = bottom, left
-button pressed None, 1, 2, 3, &#8216;up&#8217;, &#8216;down&#8217;</p>
+button pressed None, 1, 2, 3, ‘up’, ‘down’</p>
 <dl class="attribute">
 <dt id="matplotlib.backend_bases.MouseEvent.button">
 <code class="descname">button</code><em class="property"> = None</em><a class="headerlink" href="#matplotlib.backend_bases.MouseEvent.button" title="Permalink to this definition">¶</a></dt>
@@ -1353,10 +1385,10 @@ button pressed None, 1, 2, 3, &#8216;up&#8217;, &#8216;down&#8217;</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.NavigationToolbar2">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">NavigationToolbar2</code><span class="sig-paren">(</span><em>canvas</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.NavigationToolbar2" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Base class for the navigation cursor, version 2</p>
 <p>backends must implement a canvas that handles connections for
-&#8216;button_press_event&#8217; and &#8216;button_release_event&#8217;.  See
+‘button_press_event’ and ‘button_release_event’.  See
 <a class="reference internal" href="#matplotlib.backend_bases.FigureCanvasBase.mpl_connect" title="matplotlib.backend_bases.FigureCanvasBase.mpl_connect"><code class="xref py py-meth docutils literal"><span class="pre">FigureCanvasBase.mpl_connect()</span></code></a> for more information</p>
 <p>They must also define</p>
 <blockquote>
@@ -1368,15 +1400,13 @@ button pressed None, 1, 2, 3, &#8216;up&#8217;, &#8216;down&#8217;</p>
 <dt><code class="xref py py-meth docutils literal"><span class="pre">_init_toolbar()</span></code></dt>
 <dd>create your toolbar widget</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.NavigationToolbar2.draw_rubberband" title="matplotlib.backend_bases.NavigationToolbar2.draw_rubberband"><code class="xref py py-meth docutils literal"><span class="pre">draw_rubberband()</span></code></a> (optional)</dt>
-<dd>draw the zoom to rect &#8220;rubberband&#8221; rectangle</dd>
+<dd>draw the zoom to rect “rubberband” rectangle</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.NavigationToolbar2.press" title="matplotlib.backend_bases.NavigationToolbar2.press"><code class="xref py py-meth docutils literal"><span class="pre">press()</span></code></a>  (optional)</dt>
-<dd>whenever a mouse button is pressed, you&#8217;ll be notified with
+<dd>whenever a mouse button is pressed, you’ll be notified with
 the event</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.NavigationToolbar2.release" title="matplotlib.backend_bases.NavigationToolbar2.release"><code class="xref py py-meth docutils literal"><span class="pre">release()</span></code></a> (optional)</dt>
-<dd>whenever a mouse button is released, you&#8217;ll be notified with
+<dd>whenever a mouse button is released, you’ll be notified with
 the event</dd>
-<dt><a class="reference internal" href="#matplotlib.backend_bases.NavigationToolbar2.dynamic_update" title="matplotlib.backend_bases.NavigationToolbar2.dynamic_update"><code class="xref py py-meth docutils literal"><span class="pre">dynamic_update()</span></code></a> (optional)</dt>
-<dd>dynamically update the window while navigating</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.NavigationToolbar2.set_message" title="matplotlib.backend_bases.NavigationToolbar2.set_message"><code class="xref py py-meth docutils literal"><span class="pre">set_message()</span></code></a> (optional)</dt>
 <dd>display message</dd>
 <dt><a class="reference internal" href="#matplotlib.backend_bases.NavigationToolbar2.set_history_buttons" title="matplotlib.backend_bases.NavigationToolbar2.set_history_buttons"><code class="xref py py-meth docutils literal"><span class="pre">set_history_buttons()</span></code></a> (optional)</dt>
@@ -1384,7 +1414,7 @@ the event</dd>
 indicate disabled / enabled state.</dd>
 </dl>
 </div></blockquote>
-<p>That&#8217;s it, we&#8217;ll do the rest!</p>
+<p>That’s it, we’ll do the rest!</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.NavigationToolbar2.back">
 <code class="descname">back</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.NavigationToolbar2.back" title="Permalink to this definition">¶</a></dt>
@@ -1413,12 +1443,17 @@ indicate disabled / enabled state.</dd>
 <dt id="matplotlib.backend_bases.NavigationToolbar2.draw_rubberband">
 <code class="descname">draw_rubberband</code><span class="sig-paren">(</span><em>event</em>, <em>x0</em>, <em>y0</em>, <em>x1</em>, <em>y1</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.NavigationToolbar2.draw_rubberband" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw a rectangle rubberband to indicate zoom limits.</p>
+<p>Note that it is not guaranteed that <code class="docutils literal"><span class="pre">x0</span> <span class="pre">&lt;=</span> <span class="pre">x1</span></code> and <code class="docutils literal"><span class="pre">y0</span> <span class="pre">&lt;=</span> <span class="pre">y1</span></code>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.NavigationToolbar2.dynamic_update">
 <code class="descname">dynamic_update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.NavigationToolbar2.dynamic_update" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.1: </span>The dynamic_update function was deprecated in version 2.1. Use canvas.draw_idle instead.</p>
+</div>
+<p></p>
+</dd></dl>
 
 <dl class="method">
 <dt id="matplotlib.backend_bases.NavigationToolbar2.forward">
@@ -1446,7 +1481,7 @@ indicate disabled / enabled state.</dd>
 <dl class="method">
 <dt id="matplotlib.backend_bases.NavigationToolbar2.press">
 <code class="descname">press</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.NavigationToolbar2.press" title="Permalink to this definition">¶</a></dt>
-<dd><p>Called whenver a mouse button is pressed.</p>
+<dd><p>Called whenever a mouse button is pressed.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1501,6 +1536,10 @@ indicate disabled / enabled state.</dd>
 <dt id="matplotlib.backend_bases.NavigationToolbar2.set_cursor">
 <code class="descname">set_cursor</code><span class="sig-paren">(</span><em>cursor</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.NavigationToolbar2.set_cursor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the current cursor to one of the <code class="xref py py-class docutils literal"><span class="pre">Cursors</span></code> enums values.</p>
+<p>If required by the backend, this method should trigger an update in
+the backend event loop after the cursor is set, as this method may be
+called e.g. before a long-running task during which the GUI is not
+updated.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1537,7 +1576,7 @@ indicate disabled / enabled state.</dd>
 <dl class="exception">
 <dt id="matplotlib.backend_bases.NonGuiException">
 <em class="property">exception </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">NonGuiException</code><a class="headerlink" href="#matplotlib.backend_bases.NonGuiException" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></a></p>
 </dd></dl>
 
 <dl class="class">
@@ -1563,18 +1602,18 @@ sufficiently close to an artist.</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="5%" />
-<col width="95%" />
+<col width="7%" />
+<col width="93%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>mouseevent</td>
+<tr class="row-odd"><td><strong>mouseevent</strong></td>
 <td>(<a class="reference internal" href="#matplotlib.backend_bases.MouseEvent" title="matplotlib.backend_bases.MouseEvent"><code class="xref py py-obj docutils literal"><span class="pre">MouseEvent</span></code></a>) the mouse event that generated the pick</td>
 </tr>
-<tr class="row-even"><td>artist</td>
+<tr class="row-even"><td><strong>artist</strong></td>
 <td>(<a class="reference internal" href="artist_api.html#matplotlib.artist.Artist" title="matplotlib.artist.Artist"><code class="xref py py-obj docutils literal"><span class="pre">matplotlib.artist.Artist</span></code></a>) the picked artist</td>
 </tr>
-<tr class="row-odd"><td>other</td>
-<td>extra class dependent attrs &#8211; e.g., a <a class="reference internal" href="_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a> pick may define different extra attributes than a <a class="reference internal" href="collections_api.html#matplotlib.collections.PatchCollection" title="matplotlib.collections.PatchCollection"><code class="xref py py-class docutils literal"><span class="pre">PatchCollection</span></code></a> pick event</td>
+<tr class="row-odd"><td><strong>other</strong></td>
+<td>extra class dependent attrs – e.g., a <a class="reference internal" href="_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="matplotlib.lines.Line2D"><code class="xref py py-class docutils literal"><span class="pre">Line2D</span></code></a> pick may define different extra attributes than a <a class="reference internal" href="collections_api.html#matplotlib.collections.PatchCollection" title="matplotlib.collections.PatchCollection"><code class="xref py py-class docutils literal"><span class="pre">PatchCollection</span></code></a> pick event</td>
 </tr>
 </tbody>
 </table>
@@ -1583,7 +1622,7 @@ sufficiently close to an artist.</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.RendererBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">RendererBase</code><a class="headerlink" href="#matplotlib.backend_bases.RendererBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>An abstract base class to handle drawing/rendering operations.</p>
 <p>The following methods must be implemented in the backend for full
 functionality (though just implementing <a class="reference internal" href="#matplotlib.backend_bases.RendererBase.draw_path" title="matplotlib.backend_bases.RendererBase.draw_path"><code class="xref py py-meth docutils literal"><span class="pre">draw_path()</span></code></a> alone would
@@ -1752,7 +1791,7 @@ the lists <em>facecolors</em>, <em>edgecolors</em>, <em>linewidths</em>,
 <em>linestyles</em> and <em>antialiaseds</em>. <em>offsets</em> is a list of
 offsets to apply to each of the paths.  The offsets in
 <em>offsets</em> are first transformed by <em>offsetTrans</em> before being
-applied.  <em>offset_position</em> may be either &#8220;screen&#8221; or &#8220;data&#8221;
+applied.  <em>offset_position</em> may be either “screen” or “data”
 depending on the space that the offsets are in.</p>
 <p>This provides a fallback implementation of
 <a class="reference internal" href="#matplotlib.backend_bases.RendererBase.draw_path_collection" title="matplotlib.backend_bases.RendererBase.draw_path_collection"><code class="xref py py-meth docutils literal"><span class="pre">draw_path_collection()</span></code></a> that makes multiple calls to
@@ -1863,9 +1902,9 @@ artists.</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.RendererBase.get_text_width_height_descent">
 <code class="descname">get_text_width_height_descent</code><span class="sig-paren">(</span><em>s</em>, <em>prop</em>, <em>ismath</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.RendererBase.get_text_width_height_descent" title="Permalink to this definition">¶</a></dt>
-<dd><p>get the width and height, and the offset from the bottom to the
-baseline (descent), in display coords of the string s with
-<a class="reference internal" href="font_manager_api.html#matplotlib.font_manager.FontProperties" title="matplotlib.font_manager.FontProperties"><code class="xref py py-class docutils literal"><span class="pre">FontProperties</span></code></a> prop</p>
+<dd><p>Get the width, height, and descent (offset from the bottom
+to the baseline), in display coords, of the string <em>s</em> with
+<a class="reference internal" href="font_manager_api.html#matplotlib.font_manager.FontProperties" title="matplotlib.font_manager.FontProperties"><code class="xref py py-class docutils literal"><span class="pre">FontProperties</span></code></a> <em>prop</em></p>
 </dd></dl>
 
 <dl class="method">
@@ -1901,7 +1940,7 @@ transformations in <a class="reference internal" href="#matplotlib.backend_bases
 <code class="descname">points_to_pixels</code><span class="sig-paren">(</span><em>points</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.RendererBase.points_to_pixels" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert points to display units</p>
 <p>You need to override this function (unless your backend
-doesn&#8217;t have a dpi, e.g., postscript or svg).  Some imaging
+doesn’t have a dpi, e.g., postscript or svg).  Some imaging
 systems assume some value for pixels per inch:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">points</span> <span class="n">to</span> <span class="n">pixels</span> <span class="o">=</span> <span class="n">points</span> <span class="o">*</span> <span class="n">pixels_per_inch</span><span class="o">/</span><span class="mf">72.0</span> <span class="o">*</span> <span class="n">dpi</span><span class="o">/</span><span class="mf">72.0</span>
 </pre></div>
@@ -1970,14 +2009,14 @@ attributes are defined:</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="13%" />
-<col width="87%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>width</td>
+<tr class="row-odd"><td><strong>width</strong></td>
 <td>(scalar) width of the canvas in pixels</td>
 </tr>
-<tr class="row-even"><td>height</td>
+<tr class="row-even"><td><strong>height</strong></td>
 <td>(scalar) height of the canvas in pixels</td>
 </tr>
 </tbody>
@@ -1987,20 +2026,15 @@ attributes are defined:</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.ShowBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">ShowBase</code><a class="headerlink" href="#matplotlib.backend_bases.ShowBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">matplotlib.backend_bases._Backend</span></code></p>
 <p>Simple base class to generate a show() callable in backends.</p>
 <p>Subclass must override mainloop() method.</p>
-<dl class="method">
-<dt id="matplotlib.backend_bases.ShowBase.mainloop">
-<code class="descname">mainloop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.ShowBase.mainloop" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="class">
 <dt id="matplotlib.backend_bases.StatusbarBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">StatusbarBase</code><span class="sig-paren">(</span><em>toolmanager</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.StatusbarBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Base class for the statusbar</p>
 <dl class="method">
 <dt id="matplotlib.backend_bases.StatusbarBase.set_message">
@@ -2025,7 +2059,7 @@ attributes are defined:</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.TimerBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">TimerBase</code><span class="sig-paren">(</span><em>interval=None</em>, <em>callbacks=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.TimerBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>A base class for providing timer events, useful for things animations.
 Backends need to implement a few specific methods in order to use their
 own timing mechanisms so that the timer events are integrated into their
@@ -2062,14 +2096,14 @@ all callbacks that have been set.</li>
 <col width="94%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>interval</td>
+<tr class="row-odd"><td><strong>interval</strong></td>
 <td>(scalar) The time between timer events in milliseconds. Default is 1000 ms.</td>
 </tr>
-<tr class="row-even"><td>single_shot</td>
-<td>(bool) Boolean flag indicating whether this timer should operate as single shot (run once and then stop). Defaults to <a class="reference external" href="https://docs.python.org/2/library/constants.html#False" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">False</span></code></a>.</td>
+<tr class="row-even"><td><strong>single_shot</strong></td>
+<td>(bool) Boolean flag indicating whether this timer should operate as single shot (run once and then stop). Defaults to <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">False</span></code></a>.</td>
 </tr>
-<tr class="row-odd"><td>callbacks</td>
-<td>(list) Stores list of (func, args) tuples that will be called upon timer events. This list can be manipulated directly, or the functions <a class="reference internal" href="#matplotlib.backend_bases.TimerBase.add_callback" title="matplotlib.backend_bases.TimerBase.add_callback"><code class="xref py py-obj docutils literal"><span class="pre">add_callback</span></code></a> and <a class="reference internal" href="#matplotlib.backend_bases.TimerBase.remove_callback" title="matplotlib.backend_bases.TimerBase.remove_callback"><code class="xref py py-obj docutils literal"><span class="pre">remove_callback</span></code></a> can be used.</td>
+<tr class="row-odd"><td><strong>callbacks</strong></td>
+<td>(List[Tuple[callable, Tuple, Dict]]) Stores list of (func, args, kwargs) tuples that will be called upon timer events. This list can be manipulated directly, or the functions <a class="reference internal" href="#matplotlib.backend_bases.TimerBase.add_callback" title="matplotlib.backend_bases.TimerBase.add_callback"><code class="xref py py-obj docutils literal"><span class="pre">add_callback</span></code></a> and <a class="reference internal" href="#matplotlib.backend_bases.TimerBase.remove_callback" title="matplotlib.backend_bases.TimerBase.remove_callback"><code class="xref py py-obj docutils literal"><span class="pre">remove_callback</span></code></a> can be used.</td>
 </tr>
 </tbody>
 </table>
@@ -2116,16 +2150,16 @@ to reset the timer interval first if provided.</p>
 <dl class="class">
 <dt id="matplotlib.backend_bases.ToolContainerBase">
 <em class="property">class </em><code class="descclassname">matplotlib.backend_bases.</code><code class="descname">ToolContainerBase</code><span class="sig-paren">(</span><em>toolmanager</em><span class="sig-paren">)</span><a class="headerlink" href="#matplotlib.backend_bases.ToolContainerBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Base class for all tool containers, e.g. toolbars.</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="12%" />
-<col width="88%" />
+<col width="16%" />
+<col width="84%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>toolmanager</td>
+<tr class="row-odd"><td><strong>toolmanager</strong></td>
 <td>(<code class="xref py py-obj docutils literal"><span class="pre">ToolManager</span></code>) The tools with which this <code class="xref py py-obj docutils literal"><span class="pre">ToolContainer</span></code> wants to communicate.</td>
 </tr>
 </tbody>
@@ -2169,7 +2203,7 @@ must be <strong>EXACTLY</strong> <code class="xref py py-obj docutils literal"><
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string</p>
 <blockquote>
-<div><p>Name of the tool to add, this gets used as the tool&#8217;s ID and as the
+<div><p>Name of the tool to add, this gets used as the tool’s ID and as the
 default label of the buttons</p>
 </div></blockquote>
 <p><strong>group</strong> : String</p>
@@ -2182,7 +2216,7 @@ default label of the buttons</p>
 </div></blockquote>
 <p><strong>image_file</strong> : String</p>
 <blockquote>
-<div><p>Filename of the image for the button or <a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a></p>
+<div><p>Filename of the image for the button or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a></p>
 </div></blockquote>
 <p><strong>description</strong> : String</p>
 <blockquote>
@@ -2191,9 +2225,9 @@ default label of the buttons</p>
 <p><strong>toggle</strong> : Bool</p>
 <blockquote class="last">
 <div><ul class="simple">
-<li><a class="reference external" href="https://docs.python.org/2/library/constants.html#True" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> : The button is a toggle (change the pressed/unpressed
+<li><a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a> : The button is a toggle (change the pressed/unpressed
 state between consecutive clicks)</li>
-<li><a class="reference external" href="https://docs.python.org/2/library/constants.html#False" title="(in Python v2.7)"><code class="xref py py-obj docutils literal"><span class="pre">False</span></code></a> : The button is a normal button (returns to unpressed
+<li><a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">False</span></code></a> : The button is a normal button (returns to unpressed
 state after release)</li>
 </ul>
 </div></blockquote>
@@ -2336,9 +2370,9 @@ described at <a class="reference internal" href="../users/navigation_toolbar.htm
     </div>
     <div class="footer">
         &copy; Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team; 2012 - 2017 The Matplotlib development team.
-      Last updated on May 10, 2017.
+      Last updated on Jan 23, 2018.
       Created using <a
-href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
     </div>
 
 <script>
@@ -2444,52 +2478,6 @@ position:fixed; z-index:999999; overflow: auto;
 }
 
 </style>
-
-<script>
-
-function open_window(cause_id) {
-var  protocol=String(document.location.protocol);
-var new_url;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-new_url="https://www.flipcause.com/widget/"+cause_id
-window.open(new_url);
-}
-
-else {
-document.getElementById("fc-fade").style.display = "block";
-document.getElementById("fc-fade").style.webkitAnimation = "backfadesin 1s";
-document.getElementById("fc-fade").style.animation = "backfadesin 1s";
-document.getElementById("fc-fade").style.mozAnimation = "backfadesin 1s";
-document.getElementById("fc-light").style.display = "block";
-document.getElementById("fc-light").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-light").style.animation = "fadesin 1.5s";
-document.getElementById("fc-light").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.display = "block";
-document.getElementById("fc-main").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-main").style.animation = "fadesin 1.5s";
-document.getElementById("fc-main").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.display = "block";
-document.getElementById("fc-close").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-close").style.animation = "fadesin 1.5s";
-document.getElementById("fc-close").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.display = "block";
-document.getElementById("fc-myFrame").style.webkitAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.animation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").style.mozAnimation = "fadesin 1.5s";
-document.getElementById("fc-myFrame").src="https://www.flipcause.com/widget/"+cause_id;
-}
-}
-
-
-function close_window() {
-document.getElementById("fc-fade").style.display="none";
-document.getElementById("fc-light").style.display="none";
-document.getElementById("fc-main").style.display="none";
-document.getElementById("fc-close").style.display="none";
-document.getElementById("fc-myFrame").style.display="none";
-}
-
-</script>
 
 <div id="fc-fade" class="fc-black_overlay" onclick="close_window()"></div>
 <div id="fc-light" class="fc-white_content">

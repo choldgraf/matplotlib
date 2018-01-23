@@ -5,7 +5,7 @@ Custom Ticker1
 
 The new ticker code was designed to explicitly support user customized
 ticking.  The documentation
-http://matplotlib.org/matplotlib.ticker.html details this
+http://matplotlib.org/api/ticker_api.html#module-matplotlib.ticker details this
 process.  That code defines a lot of preset tickers but was primarily
 designed to be user extensible.
 
@@ -22,7 +22,8 @@ money = [1.5e5, 2.5e6, 5.5e6, 2.0e7]
 
 def millions(x, pos):
     'The two args are the value and tick position'
-    return '$%1.1fM' % (x*1e-6)
+    return '$%1.1fM' % (x * 1e-6)
+
 
 formatter = FuncFormatter(millions)
 
