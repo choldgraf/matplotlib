@@ -58,11 +58,21 @@ Animated image using a precomputed list of images
 
     plt.show()
 
+**Total running time of the script:** ( 0 minutes  1.220 seconds)
+
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/dynamic_image.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

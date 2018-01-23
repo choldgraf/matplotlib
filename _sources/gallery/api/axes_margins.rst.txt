@@ -54,6 +54,14 @@ instead of `~.Axes.set_xlim` and `~.Axes.set_ylim`.
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/axes_margins.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

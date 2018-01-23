@@ -297,13 +297,21 @@ line plot and histogram,
 
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  7.438 seconds)
+**Total running time of the script:** ( 0 minutes  17.391 seconds)
 
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/style_sheets_reference.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

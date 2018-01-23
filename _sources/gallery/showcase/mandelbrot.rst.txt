@@ -90,13 +90,21 @@ take a few seconds on most modern laptops.
 
         plt.show()
 
-**Total running time of the script:** ( 0 minutes  4.569 seconds)
+**Total running time of the script:** ( 0 minutes  10.201 seconds)
 
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/mandelbrot.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

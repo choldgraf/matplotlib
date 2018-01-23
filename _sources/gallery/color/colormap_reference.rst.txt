@@ -112,13 +112,21 @@ colormaps, including colorblind-friendliness.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  2.536 seconds)
+**Total running time of the script:** ( 0 minutes  3.845 seconds)
 
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/colormap_reference.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

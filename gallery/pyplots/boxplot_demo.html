@@ -133,26 +133,26 @@ type="text/css" />
 <span class="n">ax1</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/sphx_glr_boxplot_demo_0011.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_0011.png" />
+<img alt="../../_images/sphx_glr_boxplot_demo_001.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_001.png" />
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">fig2</span><span class="p">,</span> <span class="n">ax2</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="View documentation for matplotlib.pyplot.subplots"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">()</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Notched boxes&#39;</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">notch</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/sphx_glr_boxplot_demo_0021.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_0021.png" />
+<img alt="../../_images/sphx_glr_boxplot_demo_002.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_002.png" />
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">green_diamond</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span>
 <span class="n">fig3</span><span class="p">,</span> <span class="n">ax3</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="View documentation for matplotlib.pyplot.subplots"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">()</span>
 <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Changed Outlier Symbols&#39;</span><span class="p">)</span>
 <span class="n">ax3</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">flierprops</span><span class="o">=</span><span class="n">green_diamond</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/sphx_glr_boxplot_demo_0031.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_0031.png" />
+<img alt="../../_images/sphx_glr_boxplot_demo_003.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_003.png" />
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">fig4</span><span class="p">,</span> <span class="n">ax4</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="View documentation for matplotlib.pyplot.subplots"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">()</span>
 <span class="n">ax4</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Hide Outlier Points&#39;</span><span class="p">)</span>
 <span class="n">ax4</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">showfliers</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/sphx_glr_boxplot_demo_0041.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_0041.png" />
+<img alt="../../_images/sphx_glr_boxplot_demo_004.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_004.png" />
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">red_square</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 <span class="n">fig5</span><span class="p">,</span> <span class="n">ax5</span> <span class="o">=</span> <a href="../../api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="View documentation for matplotlib.pyplot.subplots"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">()</span>
 <span class="n">ax5</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Horizontal Boxes&#39;</span><span class="p">)</span>
@@ -189,14 +189,16 @@ a 2-D array into a list of vectors internally anyway.</p>
 </pre></div>
 </div>
 <img alt="../../_images/sphx_glr_boxplot_demo_007.png" class="align-center" src="../../_images/sphx_glr_boxplot_demo_007.png" />
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.572 seconds)</p>
-<div class="sphx-glr-footer docutils container">
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container">
+<div class="binder-badge docutils container">
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/boxplot_demo.ipynb"><img alt="https://static.mybinder.org/badge.svg" src="https://static.mybinder.org/badge.svg" width="150px" /></a>
+</div>
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/boxplot_demo.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">boxplot_demo.py</span></code></a></div>
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/boxplot_demo.ipynb" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">boxplot_demo.ipynb</span></code></a></div>
 </div>
-<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Generated by Sphinx-Gallery</a></p>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Gallery generated by Sphinx-Gallery</a></p>
 </div>
 
 

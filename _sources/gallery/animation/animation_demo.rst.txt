@@ -43,13 +43,21 @@ Note that calling `time.sleep` instead of `~.pyplot.pause` would *not* work.
         # Note that using time.sleep does *not* work here!
         plt.pause(0.1)
 
-**Total running time of the script:** ( 0 minutes  7.619 seconds)
+**Total running time of the script:** ( 0 minutes  11.940 seconds)
 
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/animation_demo.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

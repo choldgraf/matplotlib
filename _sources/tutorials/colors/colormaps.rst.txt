@@ -586,13 +586,21 @@ References
 .. [IBM] http://www.research.ibm.com/people/l/lloydt/color/color.HTM
 
 
-**Total running time of the script:** ( 0 minutes  8.154 seconds)
+**Total running time of the script:** ( 0 minutes  17.390 seconds)
 
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/colormaps.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

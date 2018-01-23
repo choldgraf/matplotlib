@@ -61,6 +61,14 @@ Animated line plot
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/simple_anim.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

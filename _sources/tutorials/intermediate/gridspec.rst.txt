@@ -356,13 +356,21 @@ spines in each of the inner 3x3 grids.
 
 
 
-**Total running time of the script:** ( 0 minutes  5.954 seconds)
+**Total running time of the script:** ( 0 minutes  12.368 seconds)
 
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/gridspec.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

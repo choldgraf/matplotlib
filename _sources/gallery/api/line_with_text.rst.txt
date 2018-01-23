@@ -86,6 +86,14 @@ artist.  In this case, the line contains a Text instance to label it.
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/line_with_text.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

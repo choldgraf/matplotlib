@@ -104,6 +104,14 @@ So for your example, if a is your axes object, you can do::
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/pythonic_matplotlib.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

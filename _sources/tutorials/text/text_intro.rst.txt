@@ -668,13 +668,21 @@ Legends and Annotations
 
 
 
-**Total running time of the script:** ( 0 minutes  1.061 seconds)
+**Total running time of the script:** ( 0 minutes  1.799 seconds)
 
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/text_intro.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

@@ -172,7 +172,7 @@ modifying the object and adding z coordinate information.</p>
 <dd><p>Convenience method for simple axis view autoscaling.
 See <a class="reference internal" href="matplotlib.axes.Axes.autoscale.html#matplotlib.axes.Axes.autoscale" title="matplotlib.axes.Axes.autoscale"><code class="xref py py-meth docutils literal"><span class="pre">matplotlib.axes.Axes.autoscale()</span></code></a> for full explanation.
 Note that this function behaves the same, but for all
-three axes.  Therfore, ‘z’ can be passed for <em>axis</em>,
+three axes.  Therefore, ‘z’ can be passed for <em>axis</em>,
 and ‘both’ applies to all three axes.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.0: </span>This function was added, but not tested. Please report any bugs.</p>
@@ -564,7 +564,7 @@ back on the zaxis major formatter</p>
 <dl class="method">
 <dt id="mpl_toolkits.mplot3d.axes3d.Axes3D.get_frame_on">
 <code class="descname">get_frame_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.mplot3d.axes3d.Axes3D.get_frame_on" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get whether the 3D axes panels are drawn</p>
+<dd><p>Get whether the 3D axes panels are drawn.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.0.</span></p>
 </div>
@@ -1109,11 +1109,11 @@ in the triangulation.</p>
 <p><strong>Examples:</strong></p>
 <p>(<a class="reference external" href="../../gallery/mplot3d/trisurf3d.py">Source code</a>, <a class="reference external" href="../../gallery/mplot3d/trisurf3d.png">png</a>, <a class="reference external" href="../../gallery/mplot3d/trisurf3d.pdf">pdf</a>)</p>
 <div class="figure">
-<img alt="../../_images/trisurf3d1.png" src="../../_images/trisurf3d1.png" />
+<img alt="../../_images/trisurf3d.png" src="../../_images/trisurf3d.png" />
 </div>
 <p>(<a class="reference external" href="../../gallery/mplot3d/trisurf3d_2.py">Source code</a>, <a class="reference external" href="../../gallery/mplot3d/trisurf3d_2.png">png</a>, <a class="reference external" href="../../gallery/mplot3d/trisurf3d_2.pdf">pdf</a>)</p>
 <div class="figure">
-<img alt="../../_images/trisurf3d_21.png" src="../../_images/trisurf3d_21.png" />
+<img alt="../../_images/trisurf3d_2.png" src="../../_images/trisurf3d_2.png" />
 </div>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.2.0: </span>This plotting function was added for the v1.2.0 release.</p>
@@ -1206,7 +1206,7 @@ default to 0.3</dd>
 <dd>The part of the arrow that is at the grid point; the arrow
 rotates about this point, hence the name <em>pivot</em>.
 Default is ‘tail’</dd>
-<dt><em>normalize</em>: [False | True]</dt>
+<dt><em>normalize</em>: bool</dt>
 <dd>When True, all of the arrows will be the same length. This
 defaults to False, where the arrows will be different lengths
 depending on the values of u,v,w.</dd>
@@ -1251,7 +1251,7 @@ default to 0.3</dd>
 <dd>The part of the arrow that is at the grid point; the arrow
 rotates about this point, hence the name <em>pivot</em>.
 Default is ‘tail’</dd>
-<dt><em>normalize</em>: [False | True]</dt>
+<dt><em>normalize</em>: bool</dt>
 <dd>When True, all of the arrows will be the same length. This
 defaults to False, where the arrows will be different lengths
 depending on the values of u,v,w.</dd>
@@ -1373,20 +1373,40 @@ the appearance of depth. Default is <em>True</em>.</td>
 <dt id="mpl_toolkits.mplot3d.axes3d.Axes3D.set_autoscale_on">
 <code class="descname">set_autoscale_on</code><span class="sig-paren">(</span><em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.mplot3d.axes3d.Axes3D.set_autoscale_on" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set whether autoscaling is applied on plot commands</p>
-<p>accepts: [ <em>True</em> | <em>False</em> ]</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.0: </span>This function was added, but not tested. Please report any bugs.</p>
 </div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>b</strong> : bool</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="mpl_toolkits.mplot3d.axes3d.Axes3D.set_autoscalez_on">
 <code class="descname">set_autoscalez_on</code><span class="sig-paren">(</span><em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.mplot3d.axes3d.Axes3D.set_autoscalez_on" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set whether autoscaling for the z-axis is applied on plot commands</p>
-<p>accepts: [ <em>True</em> | <em>False</em> ]</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.0: </span>This function was added, but not tested. Please report any bugs.</p>
 </div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>b</strong> : bool</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -1402,23 +1422,42 @@ the appearance of depth. Default is <em>True</em>.</td>
 <dl class="method">
 <dt id="mpl_toolkits.mplot3d.axes3d.Axes3D.set_axisbelow">
 <code class="descname">set_axisbelow</code><span class="sig-paren">(</span><em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.mplot3d.axes3d.Axes3D.set_axisbelow" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set whether the axis ticks and gridlines are above or below
-most artists</p>
+<dd><p>Set whether axis ticks and gridlines are above or below most artists.</p>
 <p>For axes3d objects, this will ignore any settings and just use <em>True</em></p>
-<p>ACCEPTS: [ <em>True</em> | <em>False</em> ]</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.0: </span>This function was added for completeness.</p>
 </div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>b</strong> : bool</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="mpl_toolkits.mplot3d.axes3d.Axes3D.set_frame_on">
 <code class="descname">set_frame_on</code><span class="sig-paren">(</span><em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.mplot3d.axes3d.Axes3D.set_frame_on" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set whether the 3D axes panels are drawn</p>
-<p>ACCEPTS: [ <em>True</em> | <em>False</em> ]</p>
+<dd><p>Set whether the 3D axes panels are drawn.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.0.</span></p>
 </div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>b</strong> : bool</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -1970,7 +2009,7 @@ longstanding bug in 3D PolyCollection rendering.</p>
 <dt id="mpl_toolkits.mplot3d.axes3d.Axes3D.view_init">
 <code class="descname">view_init</code><span class="sig-paren">(</span><em>elev=None</em>, <em>azim=None</em><span class="sig-paren">)</span><a class="headerlink" href="#mpl_toolkits.mplot3d.axes3d.Axes3D.view_init" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the elevation and azimuth of the axes.</p>
-<p>This can be used to rotate the axes programatically.</p>
+<p>This can be used to rotate the axes programmatically.</p>
 <p>‘elev’ stores the elevation angle in the z plane.
 ‘azim’ stores the azimuth angle in the x,y plane.</p>
 <p>if elev or azim are None (default), then the initial value

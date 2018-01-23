@@ -106,6 +106,14 @@ See :doc:`fonts_demo` to achieve the same effect using setters.
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/matplotlib/gh-pages?filepath=_downloads/fonts_demo_kw.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download
