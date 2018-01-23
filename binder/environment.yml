@@ -1,0 +1,11 @@
+name: matplotlib
+repositories:
+  - conda-force
+dependencies:
+  - graphviz
+  - numpy
+  - python
+  - colorspacious
+  - ipython
+  - ipywidgets
+  - pillow

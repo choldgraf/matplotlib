@@ -134,6 +134,13 @@ sphinx_gallery_conf = {
     'backreferences_dir': 'api/_as_gen',
     'subsection_order': ExplicitOrder(explicit_order_folders),
     'min_reported_time': 1,
+    'binder': {
+        'org': 'matplotlib',
+        'repo': 'matplotlib',
+        'url': 'https://mybinder.org',
+        'branch': 'v2.1.2',
+        'dependencies': ['../binder/environment.yml']
+     }
 }
 
 plot_gallery = 'True'
