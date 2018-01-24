@@ -1,5 +1,5 @@
 name: matplotlib-env
-repositories:
+channels:
   - conda-force
 dependencies:
   - graphviz
