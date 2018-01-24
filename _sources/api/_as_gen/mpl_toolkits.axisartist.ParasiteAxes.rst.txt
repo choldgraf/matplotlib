@@ -1,0 +1,16 @@
+mpl\_toolkits\.axisartist\.ParasiteAxes
+=======================================
+
+
+.. currentmodule:: mpl_toolkits.axisartist
+
+.. autoclass:: ParasiteAxes
+
+
+
+.. include:: mpl_toolkits.axisartist.ParasiteAxes.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

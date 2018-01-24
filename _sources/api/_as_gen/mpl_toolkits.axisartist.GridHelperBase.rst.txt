@@ -1,0 +1,16 @@
+mpl\_toolkits\.axisartist\.GridHelperBase
+=========================================
+
+
+.. currentmodule:: mpl_toolkits.axisartist
+
+.. autoclass:: GridHelperBase
+
+
+
+.. include:: mpl_toolkits.axisartist.GridHelperBase.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

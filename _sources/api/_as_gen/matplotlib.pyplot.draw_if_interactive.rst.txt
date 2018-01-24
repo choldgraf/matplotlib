@@ -1,0 +1,16 @@
+matplotlib\.pyplot\.draw\_if\_interactive
+=========================================
+
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: draw_if_interactive
+
+
+
+.. include:: matplotlib.pyplot.draw_if_interactive.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

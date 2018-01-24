@@ -1,0 +1,16 @@
+matplotlib\.pyplot\.cycler
+==========================
+
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: cycler
+
+
+
+.. include:: matplotlib.pyplot.cycler.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

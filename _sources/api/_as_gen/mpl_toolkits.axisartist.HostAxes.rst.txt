@@ -1,0 +1,16 @@
+mpl\_toolkits\.axisartist\.HostAxes
+===================================
+
+
+.. currentmodule:: mpl_toolkits.axisartist
+
+.. autoclass:: HostAxes
+
+
+
+.. include:: mpl_toolkits.axisartist.HostAxes.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+

@@ -1,0 +1,16 @@
+matplotlib\.pyplot\.pylab\_setup
+================================
+
+
+.. currentmodule:: matplotlib.pyplot
+
+.. autofunction:: pylab_setup
+
+
+
+.. include:: matplotlib.pyplot.pylab_setup.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
+
