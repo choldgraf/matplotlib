@@ -1,4 +1,4 @@
-name: matplotlib
+name: matplotlib-env
 repositories:
   - conda-force
 dependencies:
@@ -9,3 +9,4 @@ dependencies:
   - ipython
   - ipywidgets
   - pillow
+  - matplotlib
