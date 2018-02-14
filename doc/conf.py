@@ -138,7 +138,7 @@ sphinx_gallery_conf = {
         'org': 'choldgraf',
         'repo': 'matplotlib',
         'url': 'https://mybinder.org',
-        'branch': 'a2b84c4',
+        'branch': 'gh-pages',
         'dependencies': ['../binder/environment.yml']
      }
 }

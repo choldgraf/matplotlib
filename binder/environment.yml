@@ -1,11 +1,13 @@
-name: matplotlib
-repositories:
-  - conda-force
+name: matplotlib-env
+channels:
+  - conda-forge
 dependencies:
   - graphviz
   - numpy
   - python
-  - colorspacious
   - ipython
   - ipywidgets
-  - pillow
+  - matplotlib
+  - pip:
+    - colorspacious
+    - pillow
