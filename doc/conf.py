@@ -15,6 +15,7 @@ import sys
 
 import matplotlib
 import sphinx
+import yaml
 
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
@@ -110,9 +111,27 @@ sphinx_gallery_conf = {
     'subsection_order': gallery_order.sectionorder,
     'within_subsection_order': gallery_order.subsectionorder,
     'min_reported_time': 1,
+    'binder': {'org': 'matplotlib', 'repo': 'matplotlib',
+               'url': "https://mybinder.org", 'branch': 'master',
+               'dependencies': ['binder/requirements.txt', 'binder/apt.txt'],
+               'notebooks_dir': 'notebooks'}
 }
 
 plot_gallery = 'True'
+
+# Copy over requirements files for Binder image
+shutil.copy('../doc-requirements.txt', './binder/requirements.txt')
+with open('./binder/requirements.txt', 'a') as ff:
+    # Add an install for matplotlib
+    ff.write('-ve ../\n')
+
+# Copy apt-installed files in the circle build
+with open('../.circleci/config.yml', 'r') as ff:
+    circle = yaml.load(ff)
+apt_packages = [ii.strip()
+                for ii in circle['apt-run']['command'].split('\\\n')[1:]]
+with open('./binder/apt.txt', 'w') as ff:
+    ff.write('\n'.join(apt_packages))
 
 # Monkey-patching gallery signature to include search keywords
 gen_rst.SPHX_GLR_SIG = """\n
